@@ -1,0 +1,15 @@
+MODULE Test;
+  CONST p = 0+1+2;
+  VAR x, y, z : INTEGER;
+      f : BOOLEAN;
+  BEGIN
+    x := 0;
+    IF (x > 0) & f THEN y := x ELSE y := z END;
+    WHILE f DO
+      IF f THEN x := 1
+      ELSIF f THEN x := 2; y := 4*(x+z)
+      ELSIF f THEN x := 3 ELSE y := 0
+      END
+    END;
+    WHILE x < 100 DO x := x+1 END
+END Test.

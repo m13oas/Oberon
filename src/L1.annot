@@ -1,0 +1,6994 @@
+"L1.ml" 10 168 185 "L1.ml" 10 168 188
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     getLITERAL : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                  Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'e * Ostap.Msg.Coord.t ]; .. >
+   as 'a,
+   [> `Binop of
+        [> `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'f * 'f
+    | `Const of [> `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [> `Neg | `Not ] * 'f ]
+   as 'f, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.loc
+)
+"L1.ml" 10 168 195 "L1.ml" 10 168 200
+type(
+  string
+)
+ident(
+  def name "L1.ml" 10 168 207 "L1.ml" 10 168 218
+)
+"L1.ml" 10 168 200 "L1.ml" 10 168 205
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.ident
+)
+"L1.ml" 10 168 214 "L1.ml" 10 168 218
+type(
+  string
+)
+ident(
+  int_ref name "L1.ml" 10 168 195 "L1.ml" 10 168 200
+)
+"L1.ml" 10 168 207 "L1.ml" 10 168 218
+type(
+  'f
+)
+"L1.ml" 10 168 195 "L1.ml" 10 168 219
+type(
+  string -> 'f
+)
+type(
+  string
+)
+ident(
+  def _0 "L1.ml" 10 168 207 "L1.ml" 10 168 218
+)
+type(
+  (string -> 'f) ->
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"L1.ml" 10 168 189 "L1.ml" 10 168 220
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 10 168 189 "L1.ml" 10 168 220
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 10 168 189 "L1.ml" 10 168 220
+)
+"L1.ml" 10 168 185 "L1.ml" 10 168 221
+call(
+  tail
+)
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 10 168 185 "L1.ml" 10 168 221
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 10 168 185 "L1.ml" 10 168 221
+)
+"L1.ml" 10 168 174 "L1.ml" 10 168 221
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 10 168 174 "L1.ml" 10 168 221
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 10 168 174 "L1.ml" 10 168 221
+)
+"L1.ml" 11 223 243 "L1.ml" 11 223 265
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref SimpleExpression.parse
+)
+"L1.ml" 11 223 267 "L1.ml" 11 223 276
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 11 223 241 "L1.ml" 11 223 277
+call(
+  tail
+)
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 11 223 241 "L1.ml" 11 223 277
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 11 223 241 "L1.ml" 11 223 277
+)
+"L1.ml" 11 223 229 "L1.ml" 11 223 277
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 11 223 229 "L1.ml" 11 223 277
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 11 223 229 "L1.ml" 11 223 277
+)
+"L1.ml" 12 279 298 "L1.ml" 12 279 301
+type(
+  ('a, [> `User of string ], Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def typ "L1.ml" 12 279 285 "L1.ml" 16 482 489
+)
+"L1.ml" 12 279 304 "L1.ml" 12 279 306
+type(
+  (string * 'f) list option
+)
+ident(
+  def c "L1.ml" 12 279 304 "L1.ml" 16 482 489
+)
+"L1.ml" 12 279 308 "L1.ml" 12 279 323
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, (string * 'f) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref ConstDecl.parse
+)
+"L1.ml" 12 279 325 "L1.ml" 12 279 335
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref expression "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 12 279 306 "L1.ml" 12 279 336
+call(
+  tail
+)
+type(
+  ('a, (string * 'f) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'f) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 12 279 306 "L1.ml" 12 279 336
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 12 279 306 "L1.ml" 12 279 336
+)
+"L1.ml" 12 279 306 "L1.ml" 12 279 337
+call(
+  stack
+)
+type(
+  ('a, (string * 'f) list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'f) list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'f) list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"L1.ml" 13 339 364 "L1.ml" 13 339 366
+type(
+  (string * ([> `User of string ] as 'g)) list option
+)
+ident(
+  def t "L1.ml" 12 279 304 "L1.ml" 16 482 489
+)
+"L1.ml" 13 339 368 "L1.ml" 13 339 382
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref TypeDecl.parse
+)
+"L1.ml" 13 339 384 "L1.ml" 13 339 387
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "L1.ml" 12 279 298 "L1.ml" 12 279 301
+)
+"L1.ml" 13 339 366 "L1.ml" 13 339 388
+call(
+  tail
+)
+type(
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 13 339 366 "L1.ml" 13 339 388
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 13 339 366 "L1.ml" 13 339 388
+)
+"L1.ml" 13 339 366 "L1.ml" 13 339 389
+call(
+  stack
+)
+type(
+  ('a, (string * 'g) list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'g) list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"L1.ml" 14 390 415 "L1.ml" 14 390 417
+type(
+  (string list * 'g) list option
+)
+ident(
+  def v "L1.ml" 15 442 450 "L1.ml" 15 442 481
+)
+"L1.ml" 14 390 419 "L1.ml" 14 390 432
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref VarDecl.parse
+)
+"L1.ml" 14 390 434 "L1.ml" 14 390 437
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "L1.ml" 12 279 298 "L1.ml" 12 279 301
+)
+"L1.ml" 14 390 417 "L1.ml" 14 390 438
+call(
+  tail
+)
+type(
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 14 390 417 "L1.ml" 14 390 438
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 14 390 417 "L1.ml" 14 390 438
+)
+"L1.ml" 14 390 417 "L1.ml" 14 390 439
+call(
+  stack
+)
+type(
+  ('a, (string list * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string list * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"L1.ml" 15 442 450 "L1.ml" 15 442 457
+type(
+  (string * 'f) list option -> (string * 'f) list
+)
+ident(
+  ext_ref Common.listify
+)
+"L1.ml" 15 442 458 "L1.ml" 15 442 459
+type(
+  (string * 'f) list option
+)
+ident(
+  int_ref c "L1.ml" 12 279 304 "L1.ml" 12 279 306
+)
+"L1.ml" 15 442 450 "L1.ml" 15 442 459
+call(
+  stack
+)
+type(
+  (string * 'f) list
+)
+"L1.ml" 15 442 461 "L1.ml" 15 442 468
+type(
+  (string * 'g) list option -> (string * 'g) list
+)
+ident(
+  ext_ref Common.listify
+)
+"L1.ml" 15 442 469 "L1.ml" 15 442 470
+type(
+  (string * 'g) list option
+)
+ident(
+  int_ref t "L1.ml" 13 339 364 "L1.ml" 13 339 366
+)
+"L1.ml" 15 442 461 "L1.ml" 15 442 470
+call(
+  stack
+)
+type(
+  (string * 'g) list
+)
+"L1.ml" 15 442 472 "L1.ml" 15 442 479
+type(
+  (string list * 'g) list option -> (string list * 'g) list
+)
+ident(
+  ext_ref Common.listify
+)
+"L1.ml" 15 442 480 "L1.ml" 15 442 481
+type(
+  (string list * 'g) list option
+)
+ident(
+  int_ref v "L1.ml" 14 390 415 "L1.ml" 14 390 417
+)
+"L1.ml" 15 442 472 "L1.ml" 15 442 481
+call(
+  stack
+)
+type(
+  (string list * 'g) list
+)
+"L1.ml" 15 442 450 "L1.ml" 15 442 481
+type(
+  (string * 'f) list * (string * 'g) list * (string list * 'g) list
+)
+"L1.ml" 12 279 304 "L1.ml" 16 482 489
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  (string * 'f) list option ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  (string * 'g) list option ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  (string list * 'g) list option ->
+  (string * 'f) list * (string * 'g) list * (string list * 'g) list
+)
+type(
+  (string list * 'g) list option
+)
+ident(
+  def _0 "L1.ml" 15 442 450 "L1.ml" 15 442 481
+)
+type(
+  ((string list * 'g) list option ->
+   (string * 'f) list * (string * 'g) list * (string list * 'g) list) ->
+  ('a, (string list * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  (string * 'g) list option
+)
+ident(
+  def _1 "L1.ml" 12 279 304 "L1.ml" 16 482 489
+)
+type(
+  ('a, (string * 'g) list option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ((string * 'g) list option ->
+   ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+    Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  (string * 'f) list option
+)
+ident(
+  def _2 "L1.ml" 12 279 304 "L1.ml" 16 482 489
+)
+type(
+  ('a, (string * 'f) list option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ((string * 'f) list option ->
+   ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+    Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"L1.ml" 12 279 285 "L1.ml" 16 482 489
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  'a ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 12 279 285 "L1.ml" 16 482 489
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 12 279 285 "L1.ml" 16 482 489
+)
+"L1.ml" 17 491 510 "L1.ml" 17 491 531
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a,
+   [> `Assign of 'f * 'f
+    | `If of ('f * 'h list) list * 'h list
+    | `While of 'f * 'h list ]
+   as 'h, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  'a -> ('a, 'h, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref SimpleStatement.parse
+)
+"L1.ml" 17 491 533 "L1.ml" 17 491 542
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 17 491 544 "L1.ml" 17 491 554
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref expression "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 17 491 556 "L1.ml" 17 491 565
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref statement "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 17 491 508 "L1.ml" 17 491 566
+call(
+  tail
+)
+type(
+  'a -> ('a, 'h, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 17 491 508 "L1.ml" 17 491 566
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 17 491 508 "L1.ml" 17 491 566
+)
+"L1.ml" 17 491 497 "L1.ml" 17 491 566
+type(
+  'a -> ('a, 'h, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 17 491 497 "L1.ml" 17 491 566
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 17 491 497 "L1.ml" 17 491 566
+)
+"L1.ml" 18 568 585 "L1.ml" 18 568 597
+type(
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  ext_ref Module.parse
+)
+"L1.ml" 18 568 599 "L1.ml" 18 568 611
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  int_ref declarations "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 18 568 612 "L1.ml" 18 568 631
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref PrimitiveType.parse
+)
+"L1.ml" 18 568 599 "L1.ml" 18 568 631
+call(
+  stack
+)
+type(
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+"L1.ml" 18 568 633 "L1.ml" 18 568 642
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref statement "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 18 568 583 "L1.ml" 18 568 643
+call(
+  tail
+)
+type(
+  'a ->
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 18 568 583 "L1.ml" 18 568 643
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 18 568 583 "L1.ml" 18 568 643
+)
+"L1.ml" 18 568 574 "L1.ml" 18 568 643
+type(
+  'a ->
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "L1.ml" 18 568 574 "L1.ml" 18 568 643
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "L1.ml" 18 568 574 "L1.ml" 18 568 643
+)
+"L1.ml" 10 168 174 "L1.ml" 18 568 643
+type(
+  'a ->
+  ('a,
+   string *
+   ((string * 'f) list * (string * 'g) list * (string list * 'g) list) *
+   'h list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  def program "L1.ml" 9 156 160 "L1.ml" 20 650 655
+)
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def statement "L1.ml" 9 156 160 "L1.ml" 20 650 655
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'f) list * (string * 'g) list * (string list * 'g) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  def declarations "L1.ml" 9 156 160 "L1.ml" 20 650 655
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def expression "L1.ml" 9 156 160 "L1.ml" 20 650 655
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def reference "L1.ml" 9 156 160 "L1.ml" 20 650 655
+)
+"L1.ml" 26 771 779 "L1.ml" 26 771 788
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'a * 'a
+    | `Const of [< `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [< `Neg | `Not ] * 'a ]
+   as 'a) ->
+  Ostap.Pretty.printer
+)
+ident(
+  def reference "L1.ml" 36 1270 1351 "L1.ml" 37 1352 1357
+)
+"L1.ml" 26 771 790 "L1.ml" 26 771 800
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'b * 'b
+    | `Const of [< `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [< `Neg | `Not ] * 'b ]
+   as 'b) ->
+  Ostap.Pretty.printer
+)
+ident(
+  def expression "L1.ml" 36 1270 1351 "L1.ml" 37 1352 1357
+)
+"L1.ml" 26 771 802 "L1.ml" 26 771 814
+type(
+  ('c -> Ostap.Pretty.printer) ->
+  ('d -> Ostap.Pretty.printer) ->
+  (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+  Ostap.Pretty.printer
+)
+ident(
+  def declarations "L1.ml" 36 1270 1351 "L1.ml" 37 1352 1357
+)
+"L1.ml" 26 771 816 "L1.ml" 26 771 825
+type(
+  ('e -> Ostap.Pretty.printer Monad.Id.t) ->
+  ((([> `Assign of 'e * 'e
+      | `If of ('e * 'f list) list * 'f list
+      | `While of 'e * 'f list ]
+     as 'f) ->
+    Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) ->
+  'f -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def statement "L1.ml" 36 1270 1351 "L1.ml" 37 1352 1357
+)
+"L1.ml" 26 771 827 "L1.ml" 26 771 834
+type(
+  string *
+  ((string *
+    ([> `Binop of
+          [< `Add
+           | `And
+           | `Div
+           | `Eq
+           | `Ge
+           | `Gt
+           | `Le
+           | `Lt
+           | `Mod
+           | `Mul
+           | `Ne
+           | `Or
+           | `Sub ] *
+          'g * 'g
+      | `Const of [< `False | `Literal of int | `True ]
+      | `Ident of string
+      | `Unop of [< `Neg | `Not ] * 'g ]
+     as 'g))
+   list * (string * ([< `Bool | `Int | `User of string ] as 'h)) list *
+   (string list * 'h) list) *
+  ([> `Assign of
+        ([> `Binop of
+              [< `Add
+               | `And
+               | `Div
+               | `Eq
+               | `Ge
+               | `Gt
+               | `Le
+               | `Lt
+               | `Mod
+               | `Mul
+               | `Ne
+               | `Or
+               | `Sub ] *
+              'j * 'j
+          | `Const of [< `False | `Literal of int | `True ]
+          | `Ident of string
+          | `Unop of [< `Neg | `Not ] * 'j ]
+         as 'j) *
+        'j
+    | `If of ('j * 'i list) list * 'i list
+    | `While of 'j * 'i list ]
+   as 'i)
+  list -> Ostap.Pretty.printer
+)
+ident(
+  def program "L1.ml" 36 1270 1351 "L1.ml" 37 1352 1357
+)
+"L1.ml" 26 771 779 "L1.ml" 26 771 834
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 27 837 851 "L1.ml" 27 837 854
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'k * 'k
+    | `Const of [< `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [< `Neg | `Not ] * 'k ]
+   as 'k) ->
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def ref "L1.ml" 27 837 843 "L1.ml" 36 1270 1351
+)
+"L1.ml" 27 837 873 "L1.ml" 27 837 874
+type(
+  string
+)
+ident(
+  def s "L1.ml" 27 837 878 "L1.ml" 27 837 889
+)
+"L1.ml" 27 837 866 "L1.ml" 27 837 874
+type(
+  'k
+)
+"L1.ml" 27 837 878 "L1.ml" 27 837 884
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"L1.ml" 27 837 885 "L1.ml" 27 837 886
+type(
+  string
+)
+ident(
+  int_ref s "L1.ml" 27 837 873 "L1.ml" 27 837 874
+)
+"L1.ml" 27 837 878 "L1.ml" 27 837 886
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 27 837 888 "L1.ml" 27 837 889
+type(
+  int
+)
+"L1.ml" 27 837 878 "L1.ml" 27 837 889
+type(
+  Ostap.Pretty.printer * int
+)
+"L1.ml" 27 837 892 "L1.ml" 27 837 893
+type(
+  'k
+)
+ident(
+  def x "L1.ml" 27 837 897 "L1.ml" 27 837 903
+)
+"L1.ml" 27 837 897 "L1.ml" 27 837 901
+type(
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref expr "L1.ml" 28 905 915 "L1.ml" 28 905 919
+)
+"L1.ml" 27 837 902 "L1.ml" 27 837 903
+type(
+  'k
+)
+ident(
+  int_ref x "L1.ml" 27 837 892 "L1.ml" 27 837 893
+)
+"L1.ml" 27 837 897 "L1.ml" 27 837 903
+call(
+  tail
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 27 837 857 "L1.ml" 27 837 903
+type(
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 28 905 915 "L1.ml" 28 905 919
+type(
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def expr "L1.ml" 27 837 843 "L1.ml" 36 1270 1351
+)
+"L1.ml" 28 905 920 "L1.ml" 28 905 921
+type(
+  'k
+)
+ident(
+  def s "L1.ml" 28 905 925 "L1.ml" 28 905 962
+)
+"L1.ml" 28 905 925 "L1.ml" 28 905 947
+type(
+  (('k -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'k -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  ext_ref SimpleExpression.print
+)
+"L1.ml" 28 905 949 "L1.ml" 28 905 955
+type(
+  ('k -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  ('k -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 28 905 956 "L1.ml" 28 905 959
+type(
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref ref "L1.ml" 27 837 851 "L1.ml" 27 837 854
+)
+"L1.ml" 28 905 948 "L1.ml" 28 905 960
+call(
+  stack
+)
+type(
+  ('k -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 28 905 961 "L1.ml" 28 905 962
+type(
+  'k
+)
+ident(
+  int_ref s "L1.ml" 28 905 920 "L1.ml" 28 905 921
+)
+"L1.ml" 28 905 925 "L1.ml" 28 905 962
+call(
+  tail
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 28 905 920 "L1.ml" 28 905 962
+type(
+  'k -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 29 966 976 "L1.ml" 29 966 979
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'l * 'l
+    | `Const of [< `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [< `Neg | `Not ] * 'l ]
+   as 'l) ->
+  Ostap.Pretty.printer
+)
+ident(
+  def ref "L1.ml" 30 1002 1008 "L1.ml" 36 1270 1351
+)
+"L1.ml" 29 966 981 "L1.ml" 29 966 982
+type(
+  'l
+)
+ident(
+  def x "L1.ml" 29 966 986 "L1.ml" 29 966 998
+)
+"L1.ml" 29 966 986 "L1.ml" 29 966 989
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"L1.ml" 29 966 991 "L1.ml" 29 966 994
+type(
+  'l -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref ref "L1.ml" 27 837 851 "L1.ml" 27 837 854
+)
+"L1.ml" 29 966 996 "L1.ml" 29 966 997
+type(
+  'l
+)
+ident(
+  int_ref x "L1.ml" 29 966 981 "L1.ml" 29 966 982
+)
+"L1.ml" 29 966 990 "L1.ml" 29 966 998
+call(
+  stack
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 29 966 986 "L1.ml" 29 966 998
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 29 966 981 "L1.ml" 29 966 998
+type(
+  'l -> Ostap.Pretty.printer
+)
+"L1.ml" 30 1002 1012 "L1.ml" 30 1002 1016
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'm * 'm
+    | `Const of [< `False | `Literal of int | `True ]
+    | `Ident of string
+    | `Unop of [< `Neg | `Not ] * 'm ]
+   as 'm) ->
+  Ostap.Pretty.printer
+)
+ident(
+  def expr "L1.ml" 31 1038 1044 "L1.ml" 36 1270 1351
+)
+"L1.ml" 30 1002 1017 "L1.ml" 30 1002 1018
+type(
+  'm
+)
+ident(
+  def x "L1.ml" 30 1002 1022 "L1.ml" 30 1002 1034
+)
+"L1.ml" 30 1002 1022 "L1.ml" 30 1002 1025
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"L1.ml" 30 1002 1027 "L1.ml" 30 1002 1031
+type(
+  'm -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref expr "L1.ml" 28 905 915 "L1.ml" 28 905 919
+)
+"L1.ml" 30 1002 1032 "L1.ml" 30 1002 1033
+type(
+  'm
+)
+ident(
+  int_ref x "L1.ml" 30 1002 1017 "L1.ml" 30 1002 1018
+)
+"L1.ml" 30 1002 1026 "L1.ml" 30 1002 1034
+call(
+  stack
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"L1.ml" 30 1002 1022 "L1.ml" 30 1002 1034
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 30 1002 1017 "L1.ml" 30 1002 1034
+type(
+  'm -> Ostap.Pretty.printer
+)
+"L1.ml" 31 1038 1048 "L1.ml" 31 1038 1052
+type(
+  ('n -> Ostap.Pretty.printer) ->
+  ('o -> Ostap.Pretty.printer) ->
+  (string * 'n) list * (string * 'o) list * (string list * 'o) list ->
+  Ostap.Pretty.printer
+)
+ident(
+  def decl "L1.ml" 34 1176 1182 "L1.ml" 36 1270 1351
+)
+"L1.ml" 31 1038 1053 "L1.ml" 31 1038 1057
+type(
+  'n -> Ostap.Pretty.printer
+)
+ident(
+  def expr "L1.ml" 31 1038 1058 "L1.ml" 32 1075 1163
+)
+"L1.ml" 31 1038 1058 "L1.ml" 31 1038 1061
+type(
+  'o -> Ostap.Pretty.printer
+)
+ident(
+  def typ "L1.ml" 31 1038 1062 "L1.ml" 32 1075 1163
+)
+"L1.ml" 31 1038 1063 "L1.ml" 31 1038 1064
+type(
+  (string * 'n) list
+)
+ident(
+  def c "L1.ml" 32 1075 1083 "L1.ml" 32 1075 1163
+)
+"L1.ml" 31 1038 1066 "L1.ml" 31 1038 1067
+type(
+  (string * 'o) list
+)
+ident(
+  def t "L1.ml" 32 1075 1083 "L1.ml" 32 1075 1163
+)
+"L1.ml" 31 1038 1069 "L1.ml" 31 1038 1070
+type(
+  (string list * 'o) list
+)
+ident(
+  def v "L1.ml" 32 1075 1083 "L1.ml" 32 1075 1163
+)
+"L1.ml" 31 1038 1063 "L1.ml" 31 1038 1070
+type(
+  (string * 'n) list * (string * 'o) list * (string list * 'o) list
+)
+"L1.ml" 32 1075 1083 "L1.ml" 32 1075 1087
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"L1.ml" 32 1075 1090 "L1.ml" 32 1075 1105
+type(
+  ('n -> Ostap.Pretty.printer) ->
+  (string * 'n) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref ConstDecl.print
+)
+"L1.ml" 32 1075 1106 "L1.ml" 32 1075 1110
+type(
+  'n -> Ostap.Pretty.printer
+)
+ident(
+  int_ref expr "L1.ml" 31 1038 1053 "L1.ml" 31 1038 1057
+)
+"L1.ml" 32 1075 1111 "L1.ml" 32 1075 1112
+type(
+  (string * 'n) list
+)
+ident(
+  int_ref c "L1.ml" 31 1038 1063 "L1.ml" 31 1038 1064
+)
+"L1.ml" 32 1075 1089 "L1.ml" 32 1075 1113
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"L1.ml" 32 1075 1117 "L1.ml" 32 1075 1131
+type(
+  ('o -> Ostap.Pretty.printer) ->
+  (string * 'o) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref TypeDecl.print
+)
+"L1.ml" 32 1075 1132 "L1.ml" 32 1075 1135
+type(
+  'o -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "L1.ml" 31 1038 1058 "L1.ml" 31 1038 1061
+)
+"L1.ml" 32 1075 1136 "L1.ml" 32 1075 1137
+type(
+  (string * 'o) list
+)
+ident(
+  int_ref t "L1.ml" 31 1038 1066 "L1.ml" 31 1038 1067
+)
+"L1.ml" 32 1075 1116 "L1.ml" 32 1075 1138
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"L1.ml" 32 1075 1142 "L1.ml" 32 1075 1155
+type(
+  ('o -> Ostap.Pretty.printer) ->
+  (string list * 'o) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref VarDecl.print
+)
+"L1.ml" 32 1075 1156 "L1.ml" 32 1075 1159
+type(
+  'o -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "L1.ml" 31 1038 1058 "L1.ml" 31 1038 1061
+)
+"L1.ml" 32 1075 1160 "L1.ml" 32 1075 1161
+type(
+  (string list * 'o) list
+)
+ident(
+  int_ref v "L1.ml" 31 1038 1069 "L1.ml" 31 1038 1070
+)
+"L1.ml" 32 1075 1141 "L1.ml" 32 1075 1162
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"L1.ml" 32 1075 1116 "L1.ml" 32 1075 1162
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"L1.ml" 32 1075 1089 "L1.ml" 32 1075 1162
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"L1.ml" 32 1075 1088 "L1.ml" 32 1075 1163
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"L1.ml" 32 1075 1083 "L1.ml" 32 1075 1163
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 31 1038 1062 "L1.ml" 32 1075 1163
+type(
+  (string * 'n) list * (string * 'o) list * (string list * 'o) list ->
+  Ostap.Pretty.printer
+)
+"L1.ml" 31 1038 1058 "L1.ml" 32 1075 1163
+type(
+  ('o -> Ostap.Pretty.printer) ->
+  (string * 'n) list * (string * 'o) list * (string list * 'o) list ->
+  Ostap.Pretty.printer
+)
+"L1.ml" 31 1038 1053 "L1.ml" 32 1075 1163
+type(
+  ('n -> Ostap.Pretty.printer) ->
+  ('o -> Ostap.Pretty.printer) ->
+  (string * 'n) list * (string * 'o) list * (string list * 'o) list ->
+  Ostap.Pretty.printer
+)
+"L1.ml" 34 1176 1186 "L1.ml" 34 1176 1190
+type(
+  ('p -> Ostap.Pretty.printer Monad.Id.t) ->
+  ((([> `Assign of 'p * 'p
+      | `If of ('p * 'q list) list * 'q list
+      | `While of 'p * 'q list ]
+     as 'q) ->
+    Ostap.Pretty.printer Monad.Id.t) ->
+   'q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def stmt "L1.ml" 35 1240 1246 "L1.ml" 36 1270 1351
+)
+"L1.ml" 34 1176 1191 "L1.ml" 34 1176 1195
+type(
+  'p -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def expr "L1.ml" 34 1176 1196 "L1.ml" 34 1176 1236
+)
+"L1.ml" 34 1176 1196 "L1.ml" 34 1176 1199
+type(
+  ('q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def ext "L1.ml" 34 1176 1200 "L1.ml" 34 1176 1236
+)
+"L1.ml" 34 1176 1200 "L1.ml" 34 1176 1201
+type(
+  'q
+)
+ident(
+  def s "L1.ml" 34 1176 1204 "L1.ml" 34 1176 1236
+)
+"L1.ml" 34 1176 1204 "L1.ml" 34 1176 1225
+type(
+  ('p -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('q -> Ostap.Pretty.printer Monad.Id.t) ->
+   'q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  ext_ref SimpleStatement.print
+)
+"L1.ml" 34 1176 1226 "L1.ml" 34 1176 1230
+type(
+  'p -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref expr "L1.ml" 34 1176 1191 "L1.ml" 34 1176 1195
+)
+"L1.ml" 34 1176 1231 "L1.ml" 34 1176 1234
+type(
+  ('q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref ext "L1.ml" 34 1176 1196 "L1.ml" 34 1176 1199
+)
+"L1.ml" 34 1176 1235 "L1.ml" 34 1176 1236
+type(
+  'q
+)
+ident(
+  int_ref s "L1.ml" 34 1176 1200 "L1.ml" 34 1176 1201
+)
+"L1.ml" 34 1176 1204 "L1.ml" 34 1176 1236
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer Monad.Id.t
+)
+"L1.ml" 34 1176 1200 "L1.ml" 34 1176 1236
+type(
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+"L1.ml" 34 1176 1196 "L1.ml" 34 1176 1236
+type(
+  (('q -> Ostap.Pretty.printer Monad.Id.t) ->
+   'q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+"L1.ml" 34 1176 1191 "L1.ml" 34 1176 1236
+type(
+  ('p -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('q -> Ostap.Pretty.printer Monad.Id.t) ->
+   'q -> Ostap.Pretty.printer Monad.Id.t) ->
+  'q -> Ostap.Pretty.printer Monad.Id.t
+)
+"L1.ml" 35 1240 1246 "L1.ml" 35 1240 1249
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref ref "L1.ml" 29 966 976 "L1.ml" 29 966 979
+)
+"L1.ml" 35 1240 1251 "L1.ml" 35 1240 1255
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref expr "L1.ml" 30 1002 1012 "L1.ml" 30 1002 1016
+)
+"L1.ml" 35 1240 1257 "L1.ml" 35 1240 1261
+type(
+  ('c -> Ostap.Pretty.printer) ->
+  ('d -> Ostap.Pretty.printer) ->
+  (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref decl "L1.ml" 31 1038 1048 "L1.ml" 31 1038 1052
+)
+"L1.ml" 35 1240 1263 "L1.ml" 35 1240 1267
+type(
+  ('e -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) ->
+  'f -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref stmt "L1.ml" 34 1176 1186 "L1.ml" 34 1176 1190
+)
+"L1.ml" 36 1270 1281 "L1.ml" 36 1270 1282
+type(
+  string *
+  ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+  'i list
+)
+ident(
+  def m "L1.ml" 36 1270 1286 "L1.ml" 36 1270 1350
+)
+"L1.ml" 36 1270 1286 "L1.ml" 36 1270 1298
+type(
+  ((string * 'g) list * (string * 'h) list * (string list * 'h) list ->
+   Ostap.Pretty.printer) ->
+  ('i -> Ostap.Pretty.printer) ->
+  string *
+  ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+  'i list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Module.print
+)
+"L1.ml" 36 1270 1300 "L1.ml" 36 1270 1304
+type(
+  ('g -> Ostap.Pretty.printer) ->
+  ('h -> Ostap.Pretty.printer) ->
+  (string * 'g) list * (string * 'h) list * (string list * 'h) list ->
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref decl "L1.ml" 31 1038 1048 "L1.ml" 31 1038 1052
+)
+"L1.ml" 36 1270 1305 "L1.ml" 36 1270 1309
+type(
+  'g -> Ostap.Pretty.printer
+)
+ident(
+  int_ref expr "L1.ml" 30 1002 1012 "L1.ml" 30 1002 1016
+)
+"L1.ml" 36 1270 1310 "L1.ml" 36 1270 1329
+type(
+  'h -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref PrimitiveType.print
+)
+"L1.ml" 36 1270 1299 "L1.ml" 36 1270 1330
+call(
+  stack
+)
+type(
+  (string * 'g) list * (string * 'h) list * (string list * 'h) list ->
+  Ostap.Pretty.printer
+)
+"L1.ml" 36 1270 1332 "L1.ml" 36 1270 1336
+type(
+  ('j -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('i -> Ostap.Pretty.printer Monad.Id.t) ->
+   'i -> Ostap.Pretty.printer Monad.Id.t) ->
+  'i -> Ostap.Pretty.printer
+)
+ident(
+  int_ref stmt "L1.ml" 34 1176 1186 "L1.ml" 34 1176 1190
+)
+"L1.ml" 36 1270 1337 "L1.ml" 36 1270 1341
+type(
+  'j -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref expr "L1.ml" 30 1002 1012 "L1.ml" 30 1002 1016
+)
+"L1.ml" 36 1270 1342 "L1.ml" 36 1270 1347
+type(
+  ('i -> Ostap.Pretty.printer Monad.Id.t) ->
+  'i -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  ext_ref Common.apply
+)
+"L1.ml" 36 1270 1331 "L1.ml" 36 1270 1348
+call(
+  stack
+)
+type(
+  'i -> Ostap.Pretty.printer
+)
+"L1.ml" 36 1270 1349 "L1.ml" 36 1270 1350
+type(
+  string *
+  ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+  'i list
+)
+ident(
+  int_ref m "L1.ml" 36 1270 1281 "L1.ml" 36 1270 1282
+)
+"L1.ml" 36 1270 1286 "L1.ml" 36 1270 1350
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 36 1270 1276 "L1.ml" 36 1270 1351
+type(
+  string *
+  ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+  'i list -> Ostap.Pretty.printer
+)
+"L1.ml" 35 1240 1246 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 34 1176 1182 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 31 1038 1044 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 30 1002 1008 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 29 966 972 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 27 837 843 "L1.ml" 36 1270 1351
+type(
+  ('a -> Ostap.Pretty.printer) * ('b -> Ostap.Pretty.printer) *
+  (('c -> Ostap.Pretty.printer) ->
+   ('d -> Ostap.Pretty.printer) ->
+   (string * 'c) list * (string * 'd) list * (string list * 'd) list ->
+   Ostap.Pretty.printer) *
+  (('e -> Ostap.Pretty.printer Monad.Id.t) ->
+   (('f -> Ostap.Pretty.printer Monad.Id.t) ->
+    'f -> Ostap.Pretty.printer Monad.Id.t) ->
+   'f -> Ostap.Pretty.printer Monad.Id.t) *
+  (string *
+   ((string * 'g) list * (string * 'h) list * (string list * 'h) list) *
+   'i list -> Ostap.Pretty.printer)
+)
+"L1.ml" 47 1511 1524 "L1.ml" 47 1511 1528
+type(
+  < extractInternal : ([> `Const of 'b
+                        | `Type of string * [> `Bool | `Int ]
+                        | `Var of string * 'c ]
+                       as 'a) ->
+                      string;
+    getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupConst : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupVar : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    namer : unit -> < getName : String.t -> String.t >;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateConst : String.t -> 'b -> (unit, Ostap.Msg.t) Checked.t;
+    updateVars : String.t list -> 'c -> (unit, Ostap.Msg.t) Checked.t; .. >
+)
+"L1.ml" 48 1530 1551 "L1.ml" 48 1530 1565
+type(
+  String.t ->
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref Namespace.make
+)
+"L1.ml" 48 1530 1566 "L1.ml" 48 1530 1578
+type(
+  String.t
+)
+"L1.ml" 48 1530 1551 "L1.ml" 48 1530 1578
+call(
+  stack
+)
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 50 1600 1610 "L1.ml" 50 1600 1616
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 50 1600 1610 "L1.ml" 50 1600 1623
+call(
+  stack
+)
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 50 1600 1624 "L1.ml" 50 1600 1633
+type(
+  String.t
+)
+"L1.ml" 50 1600 1642 "L1.ml" 50 1600 1651
+type(
+  string
+)
+"L1.ml" 50 1600 1653 "L1.ml" 50 1600 1657
+type(
+  [> `Bool | `Int ] as 'd
+)
+"L1.ml" 50 1600 1641 "L1.ml" 50 1600 1658
+type(
+  string * 'd
+)
+"L1.ml" 50 1600 1634 "L1.ml" 50 1600 1659
+type(
+  'a
+)
+"L1.ml" 50 1600 1610 "L1.ml" 50 1600 1659
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 51 1661 1671 "L1.ml" 51 1661 1677
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 51 1661 1671 "L1.ml" 51 1661 1684
+call(
+  stack
+)
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 51 1661 1685 "L1.ml" 51 1661 1694
+type(
+  String.t
+)
+"L1.ml" 51 1661 1703 "L1.ml" 51 1661 1712
+type(
+  string
+)
+"L1.ml" 51 1661 1714 "L1.ml" 51 1661 1719
+type(
+  'd
+)
+"L1.ml" 51 1661 1702 "L1.ml" 51 1661 1720
+type(
+  string * 'd
+)
+"L1.ml" 51 1661 1695 "L1.ml" 51 1661 1721
+type(
+  'a
+)
+"L1.ml" 51 1661 1671 "L1.ml" 51 1661 1721
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 52 1723 1733 "L1.ml" 52 1723 1739
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 52 1723 1733 "L1.ml" 52 1723 1750
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"L1.ml" 52 1723 1751 "L1.ml" 52 1723 1759
+type(
+  string
+)
+"L1.ml" 52 1723 1733 "L1.ml" 52 1723 1759
+type(
+  unit
+)
+"L1.ml" 50 1600 1610 "L1.ml" 52 1723 1759
+type(
+  (< extractInternal : 'a -> string; getInternal : String.t -> string;
+     lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+     lookupConst : String.t -> ('a, Ostap.Msg.t) Checked.t;
+     lookupVar : String.t -> ('a, Ostap.Msg.t) Checked.t;
+     namer : unit -> < getName : String.t -> String.t >;
+     update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+     updateConst : String.t -> 'b -> (unit, Ostap.Msg.t) Checked.t;
+     updateVars : String.t list -> 'c -> (unit, Ostap.Msg.t) Checked.t; .. >
+   as 'e) ->
+  unit
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"L1.ml" 53 1760 1792 "L1.ml" 53 1760 1793
+type(
+  'a
+)
+ident(
+  def x "L1.ml" 54 1801 1811 "L1.ml" 56 1905 1953
+)
+"L1.ml" 54 1801 1817 "L1.ml" 54 1801 1818
+type(
+  'a
+)
+ident(
+  int_ref x "L1.ml" 53 1760 1792 "L1.ml" 53 1760 1793
+)
+"L1.ml" 55 1825 1843 "L1.ml" 55 1825 1848
+type(
+  string
+)
+ident(
+  def iname "L1.ml" 55 1825 1875 "L1.ml" 55 1825 1880
+)
+"L1.ml" 55 1825 1850 "L1.ml" 55 1825 1851
+type(
+  'c
+)
+"L1.ml" 55 1825 1843 "L1.ml" 55 1825 1851
+type(
+  string * 'c
+)
+"L1.ml" 55 1825 1837 "L1.ml" 55 1825 1852
+type(
+  'a
+)
+"L1.ml" 55 1825 1862 "L1.ml" 55 1825 1867
+type(
+  string
+)
+ident(
+  def iname "L1.ml" 55 1825 1875 "L1.ml" 55 1825 1880
+)
+"L1.ml" 55 1825 1869 "L1.ml" 55 1825 1870
+type(
+  'd
+)
+"L1.ml" 55 1825 1862 "L1.ml" 55 1825 1870
+type(
+  string * 'd
+)
+"L1.ml" 55 1825 1855 "L1.ml" 55 1825 1871
+type(
+  'a
+)
+"L1.ml" 55 1825 1837 "L1.ml" 55 1825 1871
+type(
+  'a
+)
+"L1.ml" 55 1825 1875 "L1.ml" 55 1825 1880
+type(
+  string
+)
+ident(
+  int_ref iname "L1.ml" 55 1825 1843 "L1.ml" 55 1825 1848
+)
+"L1.ml" 55 1825 1890 "L1.ml" 55 1825 1891
+type(
+  'b
+)
+"L1.ml" 55 1825 1883 "L1.ml" 55 1825 1891
+type(
+  'a
+)
+"L1.ml" 55 1825 1895 "L1.ml" 55 1825 1904
+type(
+  string
+)
+"L1.ml" 56 1905 1917 "L1.ml" 56 1905 1918
+type(
+  'a
+)
+"L1.ml" 56 1905 1922 "L1.ml" 56 1905 1933
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"L1.ml" 56 1905 1934 "L1.ml" 56 1905 1953
+type(
+  string
+)
+"L1.ml" 56 1905 1922 "L1.ml" 56 1905 1953
+call(
+  tail
+)
+type(
+  string
+)
+"L1.ml" 54 1801 1811 "L1.ml" 56 1905 1953
+type(
+  string
+)
+"L1.ml" 53 1760 1791 "L1.ml" 56 1905 1953
+type(
+  'a -> string
+)
+type(
+  'a -> string
+)
+"L1.ml" 53 1760 1768 "L1.ml" 56 1905 1953
+type(
+  'e -> 'a -> string
+)
+"L1.ml" 57 1967 1989 "L1.ml" 57 1967 1993
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 57 1967 1996 "L1.ml" 57 1967 2045
+)
+"L1.ml" 57 1967 1997 "L1.ml" 57 1967 2003
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 57 1967 1997 "L1.ml" 57 1967 2017
+call(
+  tail
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 57 1967 2018 "L1.ml" 57 1967 2022
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 57 1967 1989 "L1.ml" 57 1967 1993
+)
+"L1.ml" 57 1967 1997 "L1.ml" 57 1967 2022
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 57 1967 1989 "L1.ml" 57 1967 2045
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 57 1967 1975 "L1.ml" 57 1967 2045
+type(
+  'e -> String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 58 2046 2071 "L1.ml" 58 2046 2075
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 59 2078 2088 "L1.ml" 63 2217 2228
+)
+"L1.ml" 59 2078 2088 "L1.ml" 59 2078 2092
+type(
+  'e
+)
+ident(
+  int_ref self "L1.ml" 47 1511 1524 "L1.ml" 47 1511 1528
+)
+"L1.ml" 59 2078 2088 "L1.ml" 59 2078 2099
+call(
+  stack
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 59 2078 2100 "L1.ml" 59 2078 2104
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 58 2046 2071 "L1.ml" 58 2046 2075
+)
+"L1.ml" 59 2078 2088 "L1.ml" 59 2078 2104
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 61 2133 2151 "L1.ml" 61 2133 2152
+type(
+  string * 'c
+)
+"L1.ml" 61 2133 2146 "L1.ml" 61 2133 2152
+type(
+  'a
+)
+"L1.ml" 61 2133 2146 "L1.ml" 61 2133 2157
+type(
+  'a
+)
+ident(
+  def x "L1.ml" 61 2133 2161 "L1.ml" 61 2133 2170
+)
+"L1.ml" 61 2133 2165 "L1.ml" 61 2133 2166
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref x "L1.ml" 61 2133 2146 "L1.ml" 61 2133 2157
+)
+"L1.ml" 61 2133 2161 "L1.ml" 61 2133 2170
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  'a -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 62 2172 2185 "L1.ml" 62 2172 2186
+type(
+  'a
+)
+"L1.ml" 62 2172 2190 "L1.ml" 62 2172 2195
+type(
+  String.t -> String.t -> String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.wrong
+)
+"L1.ml" 62 2172 2196 "L1.ml" 62 2172 2206
+type(
+  String.t
+)
+"L1.ml" 62 2172 2207 "L1.ml" 62 2172 2211
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 58 2046 2071 "L1.ml" 58 2046 2075
+)
+"L1.ml" 62 2172 2212 "L1.ml" 62 2172 2216
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 58 2046 2071 "L1.ml" 58 2046 2075
+)
+"L1.ml" 62 2172 2190 "L1.ml" 62 2172 2216
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 60 2112 2122 "L1.ml" 63 2217 2228
+type(
+  'a -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 59 2078 2088 "L1.ml" 63 2217 2228
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t ->
+  ('a -> ('a, Ostap.Msg.t) Checked.t) -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 58 2046 2071 "L1.ml" 63 2217 2228
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 58 2046 2054 "L1.ml" 63 2217 2228
+type(
+  'e -> String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 64 2229 2256 "L1.ml" 64 2229 2260
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 65 2264 2274 "L1.ml" 69 2405 2416
+)
+"L1.ml" 65 2264 2274 "L1.ml" 65 2264 2278
+type(
+  'e
+)
+ident(
+  int_ref self "L1.ml" 47 1511 1524 "L1.ml" 47 1511 1528
+)
+"L1.ml" 65 2264 2274 "L1.ml" 65 2264 2285
+call(
+  stack
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 65 2264 2286 "L1.ml" 65 2264 2290
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 64 2229 2256 "L1.ml" 64 2229 2260
+)
+"L1.ml" 65 2264 2274 "L1.ml" 65 2264 2290
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 67 2319 2339 "L1.ml" 67 2319 2340
+type(
+  'b
+)
+"L1.ml" 67 2319 2332 "L1.ml" 67 2319 2340
+type(
+  'a
+)
+"L1.ml" 67 2319 2332 "L1.ml" 67 2319 2345
+type(
+  'a
+)
+ident(
+  def x "L1.ml" 67 2319 2349 "L1.ml" 67 2319 2358
+)
+"L1.ml" 67 2319 2353 "L1.ml" 67 2319 2354
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref x "L1.ml" 67 2319 2332 "L1.ml" 67 2319 2345
+)
+"L1.ml" 67 2319 2349 "L1.ml" 67 2319 2358
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  'a -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 68 2360 2373 "L1.ml" 68 2360 2374
+type(
+  'a
+)
+"L1.ml" 68 2360 2378 "L1.ml" 68 2360 2383
+type(
+  String.t -> String.t -> String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.wrong
+)
+"L1.ml" 68 2360 2384 "L1.ml" 68 2360 2394
+type(
+  String.t
+)
+"L1.ml" 68 2360 2395 "L1.ml" 68 2360 2399
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 64 2229 2256 "L1.ml" 64 2229 2260
+)
+"L1.ml" 68 2360 2400 "L1.ml" 68 2360 2404
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 64 2229 2256 "L1.ml" 64 2229 2260
+)
+"L1.ml" 68 2360 2378 "L1.ml" 68 2360 2404
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 66 2298 2308 "L1.ml" 69 2405 2416
+type(
+  'a -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 65 2264 2274 "L1.ml" 69 2405 2416
+call(
+  tail
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a, Ostap.Msg.t) Checked.t ->
+  ('a -> ('a, Ostap.Msg.t) Checked.t) -> ('a, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 64 2229 2256 "L1.ml" 69 2405 2416
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 64 2229 2237 "L1.ml" 69 2405 2416
+type(
+  'e -> String.t -> ('a, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 70 2417 2444 "L1.ml" 70 2417 2448
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 70 2417 2454 "L1.ml" 70 2417 2477
+)
+"L1.ml" 70 2417 2454 "L1.ml" 70 2417 2460
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 70 2417 2454 "L1.ml" 70 2417 2472
+call(
+  tail
+)
+type(
+  String.t -> string
+)
+"L1.ml" 70 2417 2473 "L1.ml" 70 2417 2477
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 70 2417 2444 "L1.ml" 70 2417 2448
+)
+"L1.ml" 70 2417 2454 "L1.ml" 70 2417 2477
+type(
+  string
+)
+"L1.ml" 70 2417 2444 "L1.ml" 70 2417 2477
+type(
+  String.t -> string
+)
+type(
+  String.t -> string
+)
+"L1.ml" 70 2417 2425 "L1.ml" 70 2417 2477
+type(
+  'e -> String.t -> string
+)
+"L1.ml" 71 2478 2505 "L1.ml" 71 2478 2509
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 71 2478 2511 "L1.ml" 71 2478 2535
+)
+"L1.ml" 71 2478 2511 "L1.ml" 71 2478 2512
+type(
+  'a
+)
+ident(
+  def v "L1.ml" 71 2478 2515 "L1.ml" 71 2478 2535
+)
+"L1.ml" 71 2478 2515 "L1.ml" 71 2478 2521
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 71 2478 2515 "L1.ml" 71 2478 2528
+call(
+  tail
+)
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 71 2478 2529 "L1.ml" 71 2478 2533
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 71 2478 2505 "L1.ml" 71 2478 2509
+)
+"L1.ml" 71 2478 2534 "L1.ml" 71 2478 2535
+type(
+  'a
+)
+ident(
+  int_ref v "L1.ml" 71 2478 2511 "L1.ml" 71 2478 2512
+)
+"L1.ml" 71 2478 2515 "L1.ml" 71 2478 2535
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 71 2478 2511 "L1.ml" 71 2478 2535
+type(
+  'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 71 2478 2505 "L1.ml" 71 2478 2535
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 71 2478 2486 "L1.ml" 71 2478 2535
+type(
+  'e -> String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 72 2536 2563 "L1.ml" 72 2536 2568
+type(
+  String.t list
+)
+ident(
+  def names "L1.ml" 72 2536 2569 "L1.ml" 73 2574 2670
+)
+"L1.ml" 72 2536 2569 "L1.ml" 72 2536 2570
+type(
+  'c
+)
+ident(
+  def t "L1.ml" 73 2574 2584 "L1.ml" 73 2574 2670
+)
+"L1.ml" 73 2574 2584 "L1.ml" 73 2574 2590
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 73 2574 2584 "L1.ml" 73 2574 2601
+call(
+  tail
+)
+type(
+  (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 73 2574 2603 "L1.ml" 73 2574 2611
+type(
+  (String.t -> String.t * 'a) -> String.t list -> (String.t * 'a) list
+)
+ident(
+  ext_ref List.map
+)
+"L1.ml" 73 2574 2617 "L1.ml" 73 2574 2621
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 73 2574 2625 "L1.ml" 73 2574 2662
+)
+"L1.ml" 73 2574 2625 "L1.ml" 73 2574 2629
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 73 2574 2617 "L1.ml" 73 2574 2621
+)
+"L1.ml" 73 2574 2637 "L1.ml" 73 2574 2641
+type(
+  'e
+)
+ident(
+  int_ref self "L1.ml" 47 1511 1524 "L1.ml" 47 1511 1528
+)
+"L1.ml" 73 2574 2637 "L1.ml" 73 2574 2653
+call(
+  stack
+)
+type(
+  String.t -> string
+)
+"L1.ml" 73 2574 2654 "L1.ml" 73 2574 2658
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 73 2574 2617 "L1.ml" 73 2574 2621
+)
+"L1.ml" 73 2574 2637 "L1.ml" 73 2574 2658
+type(
+  string
+)
+"L1.ml" 73 2574 2660 "L1.ml" 73 2574 2661
+type(
+  'c
+)
+ident(
+  int_ref t "L1.ml" 72 2536 2569 "L1.ml" 72 2536 2570
+)
+"L1.ml" 73 2574 2636 "L1.ml" 73 2574 2662
+type(
+  string * 'c
+)
+"L1.ml" 73 2574 2631 "L1.ml" 73 2574 2662
+type(
+  'a
+)
+"L1.ml" 73 2574 2625 "L1.ml" 73 2574 2662
+type(
+  String.t * 'a
+)
+"L1.ml" 73 2574 2612 "L1.ml" 73 2574 2663
+type(
+  String.t -> String.t * 'a
+)
+"L1.ml" 73 2574 2664 "L1.ml" 73 2574 2669
+type(
+  String.t list
+)
+ident(
+  int_ref names "L1.ml" 72 2536 2563 "L1.ml" 72 2536 2568
+)
+"L1.ml" 73 2574 2602 "L1.ml" 73 2574 2670
+call(
+  stack
+)
+type(
+  (String.t * 'a) list
+)
+"L1.ml" 73 2574 2584 "L1.ml" 73 2574 2670
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 72 2536 2569 "L1.ml" 73 2574 2670
+type(
+  'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 72 2536 2563 "L1.ml" 73 2574 2670
+type(
+  String.t list -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t list -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 72 2536 2544 "L1.ml" 73 2574 2670
+type(
+  'e -> String.t list -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 74 2671 2698 "L1.ml" 74 2671 2702
+type(
+  String.t
+)
+ident(
+  def name "L1.ml" 74 2671 2704 "L1.ml" 74 2671 2737
+)
+"L1.ml" 74 2671 2704 "L1.ml" 74 2671 2705
+type(
+  'b
+)
+ident(
+  def v "L1.ml" 74 2671 2708 "L1.ml" 74 2671 2737
+)
+"L1.ml" 74 2671 2708 "L1.ml" 74 2671 2714
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 74 2671 2708 "L1.ml" 74 2671 2721
+call(
+  tail
+)
+type(
+  String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 74 2671 2722 "L1.ml" 74 2671 2726
+type(
+  String.t
+)
+ident(
+  int_ref name "L1.ml" 74 2671 2698 "L1.ml" 74 2671 2702
+)
+"L1.ml" 74 2671 2735 "L1.ml" 74 2671 2736
+type(
+  'b
+)
+ident(
+  int_ref v "L1.ml" 74 2671 2704 "L1.ml" 74 2671 2705
+)
+"L1.ml" 74 2671 2727 "L1.ml" 74 2671 2737
+type(
+  'a
+)
+"L1.ml" 74 2671 2708 "L1.ml" 74 2671 2737
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 74 2671 2704 "L1.ml" 74 2671 2737
+type(
+  'b -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 74 2671 2698 "L1.ml" 74 2671 2737
+type(
+  String.t -> 'b -> (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  String.t -> 'b -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 74 2671 2679 "L1.ml" 74 2671 2737
+type(
+  'e -> String.t -> 'b -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 75 2738 2759 "L1.ml" 75 2738 2761
+type(
+  unit
+)
+"L1.ml" 75 2738 2764 "L1.ml" 75 2738 2770
+type(
+  < down : string -> unit; downGlobal : string -> unit;
+    genericDown : string -> bool -> unit; getInternal : String.t -> string;
+    lookup : String.t -> ('a, Ostap.Msg.t) Checked.t;
+    lookupShallow : String.t -> ('a, Ostap.Msg.t) Checked.t; name : String.t;
+    namer : unit -> < getName : String.t -> String.t >; up : unit -> unit;
+    update : String.t -> 'a -> (unit, Ostap.Msg.t) Checked.t;
+    updateList : (String.t * 'a) list -> (unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  ext_ref idents
+)
+"L1.ml" 75 2738 2764 "L1.ml" 75 2738 2776
+call(
+  tail
+)
+type(
+  unit -> < getName : String.t -> String.t >
+)
+"L1.ml" 75 2738 2777 "L1.ml" 75 2738 2779
+type(
+  unit
+)
+"L1.ml" 75 2738 2764 "L1.ml" 75 2738 2779
+type(
+  < getName : String.t -> String.t >
+)
+"L1.ml" 75 2738 2759 "L1.ml" 75 2738 2779
+type(
+  unit -> < getName : String.t -> String.t >
+)
+type(
+  unit -> < getName : String.t -> String.t >
+)
+"L1.ml" 75 2738 2746 "L1.ml" 75 2738 2779
+type(
+  'e -> unit -> < getName : String.t -> String.t >
+)
+"L1.ml" 78 2791 2799 "L1.ml" 78 2791 2805
+type(
+  < lookup : 'f -> 'g; .. > -> 'f -> 'g
+)
+ident(
+  def lookup "L1.ml" 79 2840 2844 "L1.ml" 147 4942 4947
+)
+"L1.ml" 78 2791 2810 "L1.ml" 78 2791 2813
+type(
+  < lookup : 'f -> 'g; .. > as 'h
+)
+ident(
+  def env "L1.ml" 78 2791 2814 "L1.ml" 78 2791 2839
+)
+"L1.ml" 78 2791 2814 "L1.ml" 78 2791 2818
+type(
+  'f
+)
+ident(
+  def name "L1.ml" 78 2791 2821 "L1.ml" 78 2791 2839
+)
+"L1.ml" 78 2791 2821 "L1.ml" 78 2791 2824
+type(
+  'h
+)
+ident(
+  int_ref env "L1.ml" 78 2791 2810 "L1.ml" 78 2791 2813
+)
+"L1.ml" 78 2791 2821 "L1.ml" 78 2791 2831
+call(
+  tail
+)
+type(
+  'f -> 'g
+)
+"L1.ml" 78 2791 2835 "L1.ml" 78 2791 2839
+type(
+  'f
+)
+ident(
+  int_ref name "L1.ml" 78 2791 2814 "L1.ml" 78 2791 2818
+)
+"L1.ml" 78 2791 2821 "L1.ml" 78 2791 2839
+type(
+  'g
+)
+"L1.ml" 78 2791 2814 "L1.ml" 78 2791 2839
+type(
+  'f -> 'g
+)
+"L1.ml" 78 2791 2810 "L1.ml" 78 2791 2839
+type(
+  'h -> 'f -> 'g
+)
+"L1.ml" 79 2840 2848 "L1.ml" 79 2840 2858
+type(
+  < lookupVar : 'i -> 'j; .. > -> 'i -> 'j
+)
+ident(
+  def lookupDest "L1.ml" 81 2890 2894 "L1.ml" 147 4942 4947
+)
+"L1.ml" 79 2840 2859 "L1.ml" 79 2840 2862
+type(
+  < lookupVar : 'i -> 'j; .. > as 'k
+)
+ident(
+  def env "L1.ml" 79 2840 2863 "L1.ml" 79 2840 2888
+)
+"L1.ml" 79 2840 2863 "L1.ml" 79 2840 2867
+type(
+  'i
+)
+ident(
+  def name "L1.ml" 79 2840 2870 "L1.ml" 79 2840 2888
+)
+"L1.ml" 79 2840 2870 "L1.ml" 79 2840 2873
+type(
+  'k
+)
+ident(
+  int_ref env "L1.ml" 79 2840 2859 "L1.ml" 79 2840 2862
+)
+"L1.ml" 79 2840 2870 "L1.ml" 79 2840 2883
+call(
+  tail
+)
+type(
+  'i -> 'j
+)
+"L1.ml" 79 2840 2884 "L1.ml" 79 2840 2888
+type(
+  'i
+)
+ident(
+  int_ref name "L1.ml" 79 2840 2863 "L1.ml" 79 2840 2867
+)
+"L1.ml" 79 2840 2870 "L1.ml" 79 2840 2888
+type(
+  'j
+)
+"L1.ml" 79 2840 2863 "L1.ml" 79 2840 2888
+type(
+  'i -> 'j
+)
+"L1.ml" 79 2840 2859 "L1.ml" 79 2840 2888
+type(
+  'k -> 'i -> 'j
+)
+"L1.ml" 81 2890 2898 "L1.ml" 81 2890 2903
+type(
+  'l -> ('m, Ostap.Msg.t) Checked.t
+)
+ident(
+  def noext "L1.ml" 83 2939 2943 "L1.ml" 147 4942 4947
+)
+"L1.ml" 81 2890 2904 "L1.ml" 81 2890 2905
+type(
+  'l
+)
+ident(
+  def x "L1.ml" 81 2890 2908 "L1.ml" 81 2890 2937
+)
+"L1.ml" 81 2890 2908 "L1.ml" 81 2890 2912
+type(
+  string -> string array -> 'l -> ('m, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.fail
+)
+"L1.ml" 81 2890 2913 "L1.ml" 81 2890 2930
+type(
+  string
+)
+"L1.ml" 81 2890 2931 "L1.ml" 81 2890 2935
+type(
+  string array
+)
+"L1.ml" 81 2890 2936 "L1.ml" 81 2890 2937
+type(
+  'l
+)
+ident(
+  int_ref x "L1.ml" 81 2890 2904 "L1.ml" 81 2890 2905
+)
+"L1.ml" 81 2890 2908 "L1.ml" 81 2890 2937
+call(
+  tail
+)
+type(
+  ('m, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 81 2890 2904 "L1.ml" 81 2890 2937
+type(
+  'l -> ('m, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 83 2939 2947 "L1.ml" 83 2939 2956
+type(
+  ((< extractInternal : ([> `Const of [> `Ident of 'q * 'o ] as 'p ] as 'o) ->
+                        'q;
+      .. >
+    as 'n) ->
+   'r -> ('o, 's) Checked.t) ->
+  'n ->
+  (([> `Ident of 'r ] as 't) -> ('p, 's) Checked.t) ->
+  't -> ('p, 's) Checked.t
+)
+ident(
+  def reference "L1.ml" 90 3190 3194 "L1.ml" 147 4942 4947
+)
+"L1.ml" 83 2939 2957 "L1.ml" 83 2939 2963
+type(
+  'n -> 'r -> ('o, 's) Checked.t
+)
+ident(
+  def lookup "L1.ml" 83 2939 2964 "L1.ml" 88 3172 3188
+)
+"L1.ml" 83 2939 2964 "L1.ml" 83 2939 2967
+type(
+  'n
+)
+ident(
+  def env "L1.ml" 83 2939 2968 "L1.ml" 88 3172 3188
+)
+"L1.ml" 83 2939 2968 "L1.ml" 83 2939 2971
+type(
+  't -> ('p, 's) Checked.t
+)
+ident(
+  def ext "L1.ml" 83 2939 2974 "L1.ml" 88 3172 3188
+)
+"L1.ml" 84 2983 2996 "L1.ml" 84 2983 3000
+type(
+  'r
+)
+ident(
+  def name "L1.ml" 85 3012 3020 "L1.ml" 87 3084 3171
+)
+"L1.ml" 84 2983 2989 "L1.ml" 84 2983 3000
+type(
+  't
+)
+"L1.ml" 84 2983 2989 "L1.ml" 84 2983 3007
+type(
+  't
+)
+ident(
+  def ref "L1.ml" 85 3012 3020 "L1.ml" 87 3084 3171
+)
+"L1.ml" 85 3012 3024 "L1.ml" 85 3012 3029
+type(
+  'p -> 'p
+)
+ident(
+  def reloc "L1.ml" 86 3054 3062 "L1.ml" 87 3084 3171
+)
+"L1.ml" 85 3012 3032 "L1.ml" 85 3012 3037
+type(
+  Ostap.Msg.Locator.t -> 'p -> 'p
+)
+ident(
+  ext_ref Common.reloc
+)
+"L1.ml" 85 3012 3039 "L1.ml" 85 3012 3045
+type(
+  _[> `Ident of 'r ] -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"L1.ml" 85 3012 3046 "L1.ml" 85 3012 3049
+type(
+  _[> `Ident of 'r ] as 'u
+)
+ident(
+  int_ref ref "L1.ml" 84 2983 2989 "L1.ml" 84 2983 3007
+)
+"L1.ml" 85 3012 3038 "L1.ml" 85 3012 3050
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"L1.ml" 85 3012 3032 "L1.ml" 85 3012 3050
+call(
+  stack
+)
+type(
+  'p -> 'p
+)
+"L1.ml" 86 3054 3062 "L1.ml" 86 3054 3068
+type(
+  'n -> 'r -> ('o, 's) Checked.t
+)
+ident(
+  int_ref lookup "L1.ml" 83 2939 2957 "L1.ml" 83 2939 2963
+)
+"L1.ml" 86 3054 3069 "L1.ml" 86 3054 3072
+type(
+  'n
+)
+ident(
+  int_ref env "L1.ml" 83 2939 2964 "L1.ml" 83 2939 2967
+)
+"L1.ml" 86 3054 3073 "L1.ml" 86 3054 3077
+type(
+  'r
+)
+ident(
+  int_ref name "L1.ml" 84 2983 2996 "L1.ml" 84 2983 3000
+)
+"L1.ml" 86 3054 3062 "L1.ml" 86 3054 3077
+call(
+  stack
+)
+type(
+  ('o, 's) Checked.t
+)
+"L1.ml" 87 3084 3109 "L1.ml" 87 3084 3110
+type(
+  'p
+)
+ident(
+  def x "L1.ml" 87 3084 3114 "L1.ml" 87 3084 3121
+)
+"L1.ml" 87 3084 3102 "L1.ml" 87 3084 3110
+type(
+  'o
+)
+"L1.ml" 87 3084 3114 "L1.ml" 87 3084 3119
+type(
+  'p -> 'p
+)
+ident(
+  int_ref reloc "L1.ml" 85 3012 3024 "L1.ml" 85 3012 3029
+)
+"L1.ml" 87 3084 3120 "L1.ml" 87 3084 3121
+type(
+  'p
+)
+ident(
+  int_ref x "L1.ml" 87 3084 3109 "L1.ml" 87 3084 3110
+)
+"L1.ml" 87 3084 3114 "L1.ml" 87 3084 3121
+call(
+  tail
+)
+type(
+  'p
+)
+"L1.ml" 87 3084 3124 "L1.ml" 87 3084 3125
+type(
+  'o
+)
+ident(
+  def x "L1.ml" 87 3084 3129 "L1.ml" 87 3084 3170
+)
+"L1.ml" 87 3084 3129 "L1.ml" 87 3084 3134
+type(
+  'p -> 'p
+)
+ident(
+  int_ref reloc "L1.ml" 85 3012 3024 "L1.ml" 85 3012 3029
+)
+"L1.ml" 87 3084 3144 "L1.ml" 87 3084 3147
+type(
+  'n
+)
+ident(
+  int_ref env "L1.ml" 83 2939 2964 "L1.ml" 83 2939 2967
+)
+"L1.ml" 87 3084 3144 "L1.ml" 87 3084 3163
+call(
+  stack
+)
+type(
+  'o -> 'q
+)
+"L1.ml" 87 3084 3164 "L1.ml" 87 3084 3165
+type(
+  'o
+)
+ident(
+  int_ref x "L1.ml" 87 3084 3124 "L1.ml" 87 3084 3125
+)
+"L1.ml" 87 3084 3144 "L1.ml" 87 3084 3165
+type(
+  'q
+)
+"L1.ml" 87 3084 3167 "L1.ml" 87 3084 3168
+type(
+  'o
+)
+ident(
+  int_ref x "L1.ml" 87 3084 3124 "L1.ml" 87 3084 3125
+)
+"L1.ml" 87 3084 3143 "L1.ml" 87 3084 3169
+type(
+  'q * 'o
+)
+"L1.ml" 87 3084 3135 "L1.ml" 87 3084 3170
+type(
+  'p
+)
+"L1.ml" 87 3084 3129 "L1.ml" 87 3084 3170
+call(
+  tail
+)
+type(
+  'p
+)
+"L1.ml" 87 3084 3092 "L1.ml" 87 3084 3171
+type(
+  'o -> 'p
+)
+"L1.ml" 86 3054 3062 "L1.ml" 87 3084 3171
+call(
+  tail
+)
+type(
+  ('p, 's) Checked.t
+)
+type(
+  ('o, 's) Checked.t -> ('o -> 'p) -> ('p, 's) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 85 3012 3020 "L1.ml" 87 3084 3171
+type(
+  ('p, 's) Checked.t
+)
+"L1.ml" 88 3172 3178 "L1.ml" 88 3172 3179
+type(
+  't
+)
+ident(
+  def x "L1.ml" 88 3172 3183 "L1.ml" 88 3172 3188
+)
+"L1.ml" 88 3172 3183 "L1.ml" 88 3172 3186
+type(
+  't -> ('p, 's) Checked.t
+)
+ident(
+  int_ref ext "L1.ml" 83 2939 2968 "L1.ml" 83 2939 2971
+)
+"L1.ml" 88 3172 3187 "L1.ml" 88 3172 3188
+type(
+  't
+)
+ident(
+  int_ref x "L1.ml" 88 3172 3178 "L1.ml" 88 3172 3179
+)
+"L1.ml" 88 3172 3183 "L1.ml" 88 3172 3188
+call(
+  tail
+)
+type(
+  ('p, 's) Checked.t
+)
+"L1.ml" 83 2939 2974 "L1.ml" 88 3172 3188
+type(
+  't -> ('p, 's) Checked.t
+)
+"L1.ml" 83 2939 2968 "L1.ml" 88 3172 3188
+type(
+  ('t -> ('p, 's) Checked.t) -> 't -> ('p, 's) Checked.t
+)
+"L1.ml" 83 2939 2964 "L1.ml" 88 3172 3188
+type(
+  'n -> ('t -> ('p, 's) Checked.t) -> 't -> ('p, 's) Checked.t
+)
+"L1.ml" 83 2939 2957 "L1.ml" 88 3172 3188
+type(
+  ('n -> 'r -> ('o, 's) Checked.t) ->
+  'n -> ('t -> ('p, 's) Checked.t) -> 't -> ('p, 's) Checked.t
+)
+"L1.ml" 90 3190 3198 "L1.ml" 90 3190 3209
+type(
+  < extractInternal : ([> `Const of [> `Ident of 'x * 'v ] as 'w ] as 'v) ->
+                      'x;
+    lookupVar : 'y -> ('v, Ostap.Msg.t) Checked.t; .. > ->
+  [> `Ident of 'y ] -> ('w, Ostap.Msg.t) Checked.t
+)
+ident(
+  def destination "L1.ml" 92 3258 3262 "L1.ml" 147 4942 4947
+)
+"L1.ml" 90 3190 3210 "L1.ml" 90 3190 3213
+type(
+  < extractInternal : 'v -> 'x;
+    lookupVar : 'y -> ('v, Ostap.Msg.t) Checked.t; .. >
+  as 'z
+)
+ident(
+  def env "L1.ml" 90 3190 3214 "L1.ml" 90 3190 3256
+)
+"L1.ml" 90 3190 3214 "L1.ml" 90 3190 3218
+type(
+  [> `Ident of 'y ] as 'a1
+)
+ident(
+  def expr "L1.ml" 90 3190 3221 "L1.ml" 90 3190 3256
+)
+"L1.ml" 90 3190 3221 "L1.ml" 90 3190 3230
+type(
+  ('z -> 'y -> ('v, Ostap.Msg.t) Checked.t) ->
+  'z ->
+  ('a1 -> ('w, Ostap.Msg.t) Checked.t) -> 'a1 -> ('w, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref reference "L1.ml" 83 2939 2947 "L1.ml" 83 2939 2956
+)
+"L1.ml" 90 3190 3231 "L1.ml" 90 3190 3241
+type(
+  'z -> 'y -> ('v, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref lookupDest "L1.ml" 79 2840 2848 "L1.ml" 79 2840 2858
+)
+"L1.ml" 90 3190 3242 "L1.ml" 90 3190 3245
+type(
+  'z
+)
+ident(
+  int_ref env "L1.ml" 90 3190 3210 "L1.ml" 90 3190 3213
+)
+"L1.ml" 90 3190 3246 "L1.ml" 90 3190 3251
+type(
+  'a1 -> ('w, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref noext "L1.ml" 81 2890 2898 "L1.ml" 81 2890 2903
+)
+"L1.ml" 90 3190 3252 "L1.ml" 90 3190 3256
+type(
+  'a1
+)
+ident(
+  int_ref expr "L1.ml" 90 3190 3214 "L1.ml" 90 3190 3218
+)
+"L1.ml" 90 3190 3221 "L1.ml" 90 3190 3256
+call(
+  tail
+)
+type(
+  ('w, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 90 3190 3214 "L1.ml" 90 3190 3256
+type(
+  'a1 -> ('w, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 90 3190 3210 "L1.ml" 90 3190 3256
+type(
+  'z -> 'a1 -> ('w, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 92 3258 3266 "L1.ml" 92 3258 3278
+type(
+  < extractInternal : ([> `Const of
+                            [> `Binop of
+                                 ([< `Add
+                                   | `And
+                                   | `Div
+                                   | `Eq
+                                   | `Ge
+                                   | `Gt
+                                   | `Le
+                                   | `Lt
+                                   | `Mod
+                                   | `Mul
+                                   | `Ne
+                                   | `Or
+                                   | `Sub
+                                   > `Add `Div `Mod `Mul `Sub ]
+                                  as 'd1) *
+                                 'c1 * 'c1
+                             | `Const of
+                                 [< `False
+                                  | `Literal of int Monad.Id.t
+                                  | `True
+                                  > `Literal ]
+                                 as 'e1
+                             | `Ident of 'f1 * 'b1
+                             | `Unop of [ `Neg | `Not ] * 'c1 ]
+                            as 'c1 ]
+                       as 'b1) ->
+                      'f1;
+    lookupConst : 'g1 -> ('b1, Ostap.Msg.t) Checked.t; .. > ->
+  ([> `Binop of 'd1 * 'h1 * 'h1
+    | `Const of 'e1
+    | `Ident of 'g1
+    | `Unop of [ `Neg | `Not ] * 'h1 ]
+   as 'h1) ->
+  ([> `Const of [> `False | `Literal of int Monad.Id.t | `True ] ],
+   Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  def constantExpr "L1.ml" 103 3672 3676 "L1.ml" 147 4942 4947
+)
+"L1.ml" 92 3258 3279 "L1.ml" 92 3258 3282
+type(
+  < extractInternal : 'b1 -> 'f1;
+    lookupConst : 'g1 -> ('b1, Ostap.Msg.t) Checked.t; .. >
+  as 'i1
+)
+ident(
+  def env "L1.ml" 92 3258 3283 "L1.ml" 101 3663 3670
+)
+"L1.ml" 92 3258 3283 "L1.ml" 92 3258 3287
+type(
+  'h1
+)
+ident(
+  def expr "L1.ml" 93 3291 3297 "L1.ml" 101 3663 3670
+)
+"L1.ml" 93 3291 3297 "L1.ml" 93 3291 3321
+type(
+  (('h1 -> 'c1 Monad.Checked.t) -> 'h1 -> 'c1 Monad.Checked.t) ->
+  'h1 -> 'c1 Monad.Checked.t
+)
+ident(
+  ext_ref SimpleExpression.resolve
+)
+"L1.ml" 93 3291 3323 "L1.ml" 93 3291 3332
+type(
+  ('i1 -> 'g1 -> ('b1, Ostap.Msg.t) Checked.t) ->
+  'i1 -> ('h1 -> 'c1 Monad.Checked.t) -> 'h1 -> 'c1 Monad.Checked.t
+)
+ident(
+  int_ref reference "L1.ml" 83 2939 2947 "L1.ml" 83 2939 2956
+)
+"L1.ml" 93 3291 3338 "L1.ml" 93 3291 3341
+type(
+  'i1
+)
+ident(
+  def env "L1.ml" 93 3291 3345 "L1.ml" 93 3291 3360
+)
+"L1.ml" 93 3291 3345 "L1.ml" 93 3291 3348
+type(
+  'i1
+)
+ident(
+  int_ref env "L1.ml" 93 3291 3338 "L1.ml" 93 3291 3341
+)
+"L1.ml" 93 3291 3345 "L1.ml" 93 3291 3360
+call(
+  tail
+)
+type(
+  'g1 -> ('b1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 93 3291 3333 "L1.ml" 93 3291 3361
+type(
+  'i1 -> 'g1 -> ('b1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 93 3291 3362 "L1.ml" 93 3291 3365
+type(
+  'i1
+)
+ident(
+  int_ref env "L1.ml" 92 3258 3279 "L1.ml" 92 3258 3282
+)
+"L1.ml" 93 3291 3322 "L1.ml" 93 3291 3366
+call(
+  stack
+)
+type(
+  ('h1 -> 'c1 Monad.Checked.t) -> 'h1 -> 'c1 Monad.Checked.t
+)
+"L1.ml" 93 3291 3367 "L1.ml" 93 3291 3371
+type(
+  'h1
+)
+ident(
+  int_ref expr "L1.ml" 92 3258 3283 "L1.ml" 92 3258 3287
+)
+"L1.ml" 93 3291 3297 "L1.ml" 93 3291 3371
+call(
+  stack
+)
+type(
+  'c1 Monad.Checked.t
+)
+"L1.ml" 94 3379 3390 "L1.ml" 94 3379 3394
+type(
+  'c1
+)
+ident(
+  def expr "L1.ml" 95 3399 3408 "L1.ml" 100 3650 3662
+)
+"L1.ml" 95 3399 3416 "L1.ml" 95 3399 3421
+type(
+  Ostap.Msg.Locator.t ->
+  ([> `Const of [> `False | `Literal of int Monad.Id.t | `True ] ] as 'j1) ->
+  'j1
+)
+ident(
+  ext_ref Common.reloc
+)
+"L1.ml" 95 3399 3423 "L1.ml" 95 3399 3429
+type(
+  'c1 -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"L1.ml" 95 3399 3430 "L1.ml" 95 3399 3434
+type(
+  'c1
+)
+ident(
+  int_ref expr "L1.ml" 94 3379 3390 "L1.ml" 94 3379 3394
+)
+"L1.ml" 95 3399 3422 "L1.ml" 95 3399 3435
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"L1.ml" 95 3399 3437 "L1.ml" 95 3399 3462
+type(
+  'c1 -> 'j1
+)
+ident(
+  ext_ref SimpleExpression.evaluate
+)
+"L1.ml" 95 3399 3463 "L1.ml" 95 3399 3467
+type(
+  'c1
+)
+ident(
+  int_ref expr "L1.ml" 94 3379 3390 "L1.ml" 94 3379 3394
+)
+"L1.ml" 95 3399 3436 "L1.ml" 95 3399 3468
+call(
+  stack
+)
+type(
+  'j1
+)
+"L1.ml" 95 3399 3415 "L1.ml" 95 3399 3469
+call(
+  stack
+)
+type(
+  'j1
+)
+"L1.ml" 95 3399 3412 "L1.ml" 95 3399 3469
+call(
+  stack
+)
+type(
+  ('j1, Ostap.Msg.t) Checked.t
+)
+type(
+  'j1 -> ('j1, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 96 3470 3484 "L1.ml" 96 3470 3500
+type(
+  exn
+)
+"L1.ml" 97 3505 3521 "L1.ml" 97 3505 3535
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"L1.ml" 97 3505 3536 "L1.ml" 97 3505 3592
+type(
+  string
+)
+"L1.ml" 98 3594 3612 "L1.ml" 98 3594 3616
+type(
+  string array
+)
+"L1.ml" 99 3618 3637 "L1.ml" 99 3618 3643
+type(
+  'c1 -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"L1.ml" 99 3618 3644 "L1.ml" 99 3618 3648
+type(
+  'c1
+)
+ident(
+  int_ref expr "L1.ml" 94 3379 3390 "L1.ml" 94 3379 3394
+)
+"L1.ml" 99 3618 3636 "L1.ml" 99 3618 3649
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"L1.ml" 97 3505 3521 "L1.ml" 99 3618 3649
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"L1.ml" 97 3505 3520 "L1.ml" 100 3650 3662
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"L1.ml" 97 3505 3516 "L1.ml" 100 3650 3662
+type(
+  ('j1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 95 3399 3408 "L1.ml" 100 3650 3662
+type(
+  ('j1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 94 3379 3385 "L1.ml" 101 3663 3670
+type(
+  'c1 -> ('j1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 93 3291 3297 "L1.ml" 101 3663 3670
+call(
+  tail
+)
+type(
+  ('j1, Ostap.Msg.t) Checked.t
+)
+type(
+  'c1 Monad.Checked.t ->
+  ('c1 -> ('j1, Ostap.Msg.t) Checked.t) -> ('j1, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 92 3258 3283 "L1.ml" 101 3663 3670
+type(
+  'h1 -> ('j1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 92 3258 3279 "L1.ml" 101 3663 3670
+type(
+  'i1 -> 'h1 -> ('j1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 103 3672 3680 "L1.ml" 103 3672 3690
+type(
+  < extractInternal : ([> `Const of
+                            [> `Binop of 'm1 * 'l1 * 'l1
+                             | `Const of 'n1
+                             | `Ident of 'o1 * 'k1
+                             | `Unop of 'p1 * 'l1 ]
+                            as 'l1 ]
+                       as 'k1) ->
+                      'o1;
+    lookup : 'q1 -> ('k1, Ostap.Msg.t) Checked.t; .. > ->
+  ([> `Binop of 'm1 * 'r1 * 'r1
+    | `Const of 'n1
+    | `Ident of 'q1
+    | `Unop of 'p1 * 'r1 ]
+   as 'r1) ->
+  'l1 Monad.Checked.t
+)
+ident(
+  def expression "L1.ml" 105 3757 3761 "L1.ml" 147 4942 4947
+)
+"L1.ml" 103 3672 3691 "L1.ml" 103 3672 3694
+type(
+  < extractInternal : 'k1 -> 'o1;
+    lookup : 'q1 -> ('k1, Ostap.Msg.t) Checked.t; .. >
+  as 's1
+)
+ident(
+  def env "L1.ml" 103 3672 3695 "L1.ml" 103 3672 3754
+)
+"L1.ml" 103 3672 3695 "L1.ml" 103 3672 3699
+type(
+  'r1
+)
+ident(
+  def expr "L1.ml" 103 3672 3702 "L1.ml" 103 3672 3754
+)
+"L1.ml" 103 3672 3702 "L1.ml" 103 3672 3726
+type(
+  (('r1 -> 'l1 Monad.Checked.t) -> 'r1 -> 'l1 Monad.Checked.t) ->
+  'r1 -> 'l1 Monad.Checked.t
+)
+ident(
+  ext_ref SimpleExpression.resolve
+)
+"L1.ml" 103 3672 3728 "L1.ml" 103 3672 3737
+type(
+  ('s1 -> 'q1 -> ('k1, Ostap.Msg.t) Checked.t) ->
+  's1 -> ('r1 -> 'l1 Monad.Checked.t) -> 'r1 -> 'l1 Monad.Checked.t
+)
+ident(
+  int_ref reference "L1.ml" 83 2939 2947 "L1.ml" 83 2939 2956
+)
+"L1.ml" 103 3672 3738 "L1.ml" 103 3672 3744
+type(
+  's1 -> 'q1 -> ('k1, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref lookup "L1.ml" 78 2791 2799 "L1.ml" 78 2791 2805
+)
+"L1.ml" 103 3672 3745 "L1.ml" 103 3672 3748
+type(
+  's1
+)
+ident(
+  int_ref env "L1.ml" 103 3672 3691 "L1.ml" 103 3672 3694
+)
+"L1.ml" 103 3672 3727 "L1.ml" 103 3672 3749
+call(
+  stack
+)
+type(
+  ('r1 -> 'l1 Monad.Checked.t) -> 'r1 -> 'l1 Monad.Checked.t
+)
+"L1.ml" 103 3672 3750 "L1.ml" 103 3672 3754
+type(
+  'r1
+)
+ident(
+  int_ref expr "L1.ml" 103 3672 3695 "L1.ml" 103 3672 3699
+)
+"L1.ml" 103 3672 3702 "L1.ml" 103 3672 3754
+call(
+  tail
+)
+type(
+  'l1 Monad.Checked.t
+)
+"L1.ml" 103 3672 3695 "L1.ml" 103 3672 3754
+type(
+  'r1 -> 'l1 Monad.Checked.t
+)
+"L1.ml" 103 3672 3691 "L1.ml" 103 3672 3754
+type(
+  's1 -> 'r1 -> 'l1 Monad.Checked.t
+)
+"L1.ml" 105 3757 3765 "L1.ml" 105 3757 3777
+type(
+  ((< extractInternal : ([> `Const of
+                              [> `Binop of
+                                   ([< `Add
+                                     | `And
+                                     | `Div
+                                     | `Eq
+                                     | `Ge
+                                     | `Gt
+                                     | `Le
+                                     | `Lt
+                                     | `Mod
+                                     | `Mul
+                                     | `Ne
+                                     | `Or
+                                     | `Sub
+                                     > `Add `Div `Mod `Mul `Sub ]
+                                    as 'w1) *
+                                   'v1 * 'v1
+                               | `Const of
+                                   [< `False
+                                    | `Literal of int Monad.Id.t
+                                    | `True
+                                    > `Literal ]
+                                   as 'x1
+                               | `Ident of 'y1 * 'u1
+                               | `Unop of [ `Neg | `Not ] * 'v1 ]
+                              as 'v1 ]
+                         as 'u1) ->
+                        'y1;
+      getInternal : 'z1 -> 'a2;
+      lookupConst : 'b2 -> ('u1, Ostap.Msg.t) Checked.t;
+      update : 'z1 -> [> `Type of 'a2 * 'c2 ] -> ('d2, Ostap.Msg.t) Checked.t;
+      updateConst : 'e2 ->
+                    ([> `Const of
+                          [> `False | `Literal of int Monad.Id.t | `True ] ]
+                     as 'f2) ->
+                    ('g2, Ostap.Msg.t) Checked.t;
+      updateVars : 'z1 list -> 'c2 -> ('h2, Ostap.Msg.t) Checked.t; .. >
+    as 't1) ->
+   'i2 -> ('c2, Ostap.Msg.t) Checked.t) ->
+  't1 ->
+  ('e2 *
+   ([> `Binop of 'w1 * 'j2 * 'j2
+     | `Const of 'x1
+     | `Ident of 'b2
+     | `Unop of [ `Neg | `Not ] * 'j2 ]
+    as 'j2))
+  list * ('z1 * 'i2) list * ('z1 list * 'i2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+ident(
+  def declarations "L1.ml" 138 4693 4697 "L1.ml" 147 4942 4947
+)
+"L1.ml" 105 3757 3778 "L1.ml" 105 3757 3781
+type(
+  't1 -> 'i2 -> ('c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  def typ "L1.ml" 105 3757 3782 "L1.ml" 136 4626 4688
+)
+"L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+type(
+  't1
+)
+ident(
+  def env "L1.ml" 105 3757 3786 "L1.ml" 136 4626 4688
+)
+"L1.ml" 105 3757 3787 "L1.ml" 105 3757 3788
+type(
+  ('e2 * 'j2) list
+)
+ident(
+  def c "L1.ml" 106 3798 3804 "L1.ml" 136 4626 4688
+)
+"L1.ml" 105 3757 3790 "L1.ml" 105 3757 3791
+type(
+  ('z1 * 'i2) list
+)
+ident(
+  def t "L1.ml" 106 3798 3804 "L1.ml" 136 4626 4688
+)
+"L1.ml" 105 3757 3793 "L1.ml" 105 3757 3794
+type(
+  ('z1 list * 'i2) list
+)
+ident(
+  def v "L1.ml" 106 3798 3804 "L1.ml" 136 4626 4688
+)
+"L1.ml" 105 3757 3787 "L1.ml" 105 3757 3794
+type(
+  ('e2 * 'j2) list * ('z1 * 'i2) list * ('z1 list * 'i2) list
+)
+"L1.ml" 106 3798 3808 "L1.ml" 106 3798 3810
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def mc "L1.ml" 114 4031 4037 "L1.ml" 136 4626 4688
+)
+"L1.ml" 106 3798 3812 "L1.ml" 106 3798 3813
+type(
+  ('e2 * 'f2) list
+)
+ident(
+  def c "L1.ml" 114 4031 4037 "L1.ml" 136 4626 4688
+)
+"L1.ml" 106 3798 3808 "L1.ml" 106 3798 3813
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t * ('e2 * 'f2) list
+)
+"L1.ml" 107 3817 3825 "L1.ml" 107 3817 3837
+type(
+  ('e2 * 'j2 -> ('e2 * 'f2, Ostap.Msg.t) Checked.t) ->
+  ('e2 * 'j2) list ->
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t * ('e2 * 'f2) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"L1.ml" 108 3839 3855 "L1.ml" 108 3839 3859
+type(
+  'e2
+)
+ident(
+  def name "L1.ml" 109 3872 3885 "L1.ml" 110 3915 3995
+)
+"L1.ml" 108 3839 3861 "L1.ml" 108 3839 3866
+type(
+  'j2
+)
+ident(
+  def value "L1.ml" 109 3872 3885 "L1.ml" 110 3915 3995
+)
+"L1.ml" 108 3839 3855 "L1.ml" 108 3839 3866
+type(
+  'e2 * 'j2
+)
+"L1.ml" 109 3872 3885 "L1.ml" 109 3872 3897
+type(
+  't1 -> 'j2 -> ('f2, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref constantExpr "L1.ml" 92 3258 3266 "L1.ml" 92 3258 3278
+)
+"L1.ml" 109 3872 3898 "L1.ml" 109 3872 3901
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 109 3872 3902 "L1.ml" 109 3872 3907
+type(
+  'j2
+)
+ident(
+  int_ref value "L1.ml" 108 3839 3861 "L1.ml" 108 3839 3866
+)
+"L1.ml" 109 3872 3885 "L1.ml" 109 3872 3907
+call(
+  stack
+)
+type(
+  ('f2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 110 3915 3933 "L1.ml" 110 3915 3938
+type(
+  'f2
+)
+ident(
+  def value "L1.ml" 110 3915 3942 "L1.ml" 110 3915 3994
+)
+"L1.ml" 110 3915 3942 "L1.ml" 110 3915 3945
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 110 3915 3942 "L1.ml" 110 3915 3957
+call(
+  stack
+)
+type(
+  'e2 -> 'f2 -> ('g2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 110 3915 3958 "L1.ml" 110 3915 3962
+type(
+  'e2
+)
+ident(
+  int_ref name "L1.ml" 108 3839 3855 "L1.ml" 108 3839 3859
+)
+"L1.ml" 110 3915 3963 "L1.ml" 110 3915 3968
+type(
+  'f2
+)
+ident(
+  int_ref value "L1.ml" 110 3915 3933 "L1.ml" 110 3915 3938
+)
+"L1.ml" 110 3915 3942 "L1.ml" 110 3915 3968
+type(
+  ('g2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 110 3915 3974 "L1.ml" 110 3915 3980
+type(
+  'e2 * 'f2 -> 'g2 -> 'e2 * 'f2
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 110 3915 3982 "L1.ml" 110 3915 3986
+type(
+  'e2
+)
+ident(
+  int_ref name "L1.ml" 108 3839 3855 "L1.ml" 108 3839 3859
+)
+"L1.ml" 110 3915 3988 "L1.ml" 110 3915 3993
+type(
+  'f2
+)
+ident(
+  int_ref value "L1.ml" 110 3915 3933 "L1.ml" 110 3915 3938
+)
+"L1.ml" 110 3915 3981 "L1.ml" 110 3915 3994
+type(
+  'e2 * 'f2
+)
+"L1.ml" 110 3915 3974 "L1.ml" 110 3915 3994
+call(
+  stack
+)
+type(
+  'g2 -> 'e2 * 'f2
+)
+"L1.ml" 110 3915 3942 "L1.ml" 110 3915 3994
+call(
+  tail
+)
+type(
+  ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('g2, Ostap.Msg.t) Checked.t ->
+  ('g2 -> 'e2 * 'f2) -> ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 110 3915 3928 "L1.ml" 110 3915 3995
+type(
+  'f2 -> ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 109 3872 3885 "L1.ml" 110 3915 3995
+call(
+  tail
+)
+type(
+  ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('f2, Ostap.Msg.t) Checked.t ->
+  ('f2 -> ('e2 * 'f2, Ostap.Msg.t) Checked.t) ->
+  ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 108 3839 3849 "L1.ml" 111 3996 4007
+type(
+  'e2 * 'j2 -> ('e2 * 'f2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 112 4009 4019 "L1.ml" 112 4009 4020
+type(
+  ('e2 * 'j2) list
+)
+ident(
+  int_ref c "L1.ml" 105 3757 3787 "L1.ml" 105 3757 3788
+)
+"L1.ml" 107 3817 3825 "L1.ml" 112 4009 4020
+call(
+  stack
+)
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t * ('e2 * 'f2) list
+)
+"L1.ml" 114 4031 4041 "L1.ml" 114 4031 4043
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def mt "L1.ml" 125 4331 4337 "L1.ml" 136 4626 4688
+)
+"L1.ml" 114 4031 4045 "L1.ml" 114 4031 4046
+type(
+  ('a2 * 'c2) list
+)
+ident(
+  def t "L1.ml" 125 4331 4337 "L1.ml" 136 4626 4688
+)
+"L1.ml" 114 4031 4041 "L1.ml" 114 4031 4046
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 * 'c2) list
+)
+"L1.ml" 115 4049 4057 "L1.ml" 115 4049 4069
+type(
+  ('z1 * 'i2 -> ('a2 * 'c2, Ostap.Msg.t) Checked.t) ->
+  ('z1 * 'i2) list ->
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 * 'c2) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"L1.ml" 116 4070 4086 "L1.ml" 116 4070 4090
+type(
+  'z1
+)
+ident(
+  def name "L1.ml" 117 4099 4112 "L1.ml" 121 4278 4292
+)
+"L1.ml" 116 4070 4092 "L1.ml" 116 4070 4093
+type(
+  'i2
+)
+ident(
+  def t "L1.ml" 117 4099 4112 "L1.ml" 121 4278 4292
+)
+"L1.ml" 116 4070 4086 "L1.ml" 116 4070 4093
+type(
+  'z1 * 'i2
+)
+"L1.ml" 117 4099 4112 "L1.ml" 117 4099 4115
+type(
+  't1 -> 'i2 -> ('c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref typ "L1.ml" 105 3757 3778 "L1.ml" 105 3757 3781
+)
+"L1.ml" 117 4099 4116 "L1.ml" 117 4099 4119
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 117 4099 4120 "L1.ml" 117 4099 4121
+type(
+  'i2
+)
+ident(
+  int_ref t "L1.ml" 116 4070 4092 "L1.ml" 116 4070 4093
+)
+"L1.ml" 117 4099 4112 "L1.ml" 117 4099 4121
+call(
+  stack
+)
+type(
+  ('c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 118 4128 4146 "L1.ml" 118 4128 4147
+type(
+  'c2
+)
+ident(
+  def t "L1.ml" 119 4152 4168 "L1.ml" 120 4204 4277
+)
+"L1.ml" 119 4152 4172 "L1.ml" 119 4152 4177
+type(
+  'a2
+)
+ident(
+  def iname "L1.ml" 120 4204 4220 "L1.ml" 120 4204 4277
+)
+"L1.ml" 119 4152 4180 "L1.ml" 119 4152 4183
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 119 4152 4180 "L1.ml" 119 4152 4195
+call(
+  stack
+)
+type(
+  'z1 -> 'a2
+)
+"L1.ml" 119 4152 4196 "L1.ml" 119 4152 4200
+type(
+  'z1
+)
+ident(
+  int_ref name "L1.ml" 116 4070 4086 "L1.ml" 116 4070 4090
+)
+"L1.ml" 119 4152 4180 "L1.ml" 119 4152 4200
+type(
+  'a2
+)
+"L1.ml" 120 4204 4220 "L1.ml" 120 4204 4223
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 120 4204 4220 "L1.ml" 120 4204 4230
+call(
+  stack
+)
+type(
+  'z1 -> ([> `Type of 'a2 * 'c2 ] as 'l2) -> ('d2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 120 4204 4231 "L1.ml" 120 4204 4235
+type(
+  'z1
+)
+ident(
+  int_ref name "L1.ml" 116 4070 4086 "L1.ml" 116 4070 4090
+)
+"L1.ml" 120 4204 4244 "L1.ml" 120 4204 4249
+type(
+  'a2
+)
+ident(
+  int_ref iname "L1.ml" 119 4152 4172 "L1.ml" 119 4152 4177
+)
+"L1.ml" 120 4204 4251 "L1.ml" 120 4204 4252
+type(
+  'c2
+)
+ident(
+  int_ref t "L1.ml" 118 4128 4146 "L1.ml" 118 4128 4147
+)
+"L1.ml" 120 4204 4243 "L1.ml" 120 4204 4253
+type(
+  'a2 * 'c2
+)
+"L1.ml" 120 4204 4236 "L1.ml" 120 4204 4254
+type(
+  'l2
+)
+"L1.ml" 120 4204 4220 "L1.ml" 120 4204 4254
+type(
+  ('d2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 120 4204 4260 "L1.ml" 120 4204 4266
+type(
+  'a2 * 'c2 -> 'd2 -> 'a2 * 'c2
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 120 4204 4268 "L1.ml" 120 4204 4273
+type(
+  'a2
+)
+ident(
+  int_ref iname "L1.ml" 119 4152 4172 "L1.ml" 119 4152 4177
+)
+"L1.ml" 120 4204 4275 "L1.ml" 120 4204 4276
+type(
+  'c2
+)
+ident(
+  int_ref t "L1.ml" 118 4128 4146 "L1.ml" 118 4128 4147
+)
+"L1.ml" 120 4204 4267 "L1.ml" 120 4204 4277
+type(
+  'a2 * 'c2
+)
+"L1.ml" 120 4204 4260 "L1.ml" 120 4204 4277
+call(
+  stack
+)
+type(
+  'd2 -> 'a2 * 'c2
+)
+"L1.ml" 120 4204 4220 "L1.ml" 120 4204 4277
+call(
+  tail
+)
+type(
+  ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('d2, Ostap.Msg.t) Checked.t ->
+  ('d2 -> 'a2 * 'c2) -> ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 119 4152 4168 "L1.ml" 120 4204 4277
+type(
+  ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 118 4128 4141 "L1.ml" 121 4278 4292
+type(
+  'c2 -> ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 117 4099 4112 "L1.ml" 121 4278 4292
+call(
+  tail
+)
+type(
+  ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('c2, Ostap.Msg.t) Checked.t ->
+  ('c2 -> ('a2 * 'c2, Ostap.Msg.t) Checked.t) ->
+  ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 116 4070 4080 "L1.ml" 122 4293 4304
+type(
+  'z1 * 'i2 -> ('a2 * 'c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 123 4306 4316 "L1.ml" 123 4306 4317
+type(
+  ('z1 * 'i2) list
+)
+ident(
+  int_ref t "L1.ml" 105 3757 3790 "L1.ml" 105 3757 3791
+)
+"L1.ml" 115 4049 4057 "L1.ml" 123 4306 4317
+call(
+  stack
+)
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 * 'c2) list
+)
+"L1.ml" 125 4331 4341 "L1.ml" 125 4331 4343
+type(
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def mv "L1.ml" 136 4626 4632 "L1.ml" 136 4626 4688
+)
+"L1.ml" 125 4331 4345 "L1.ml" 125 4331 4346
+type(
+  ('a2 list * 'c2) list
+)
+ident(
+  def v "L1.ml" 136 4626 4632 "L1.ml" 136 4626 4688
+)
+"L1.ml" 125 4331 4341 "L1.ml" 125 4331 4346
+type(
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 list * 'c2) list
+)
+"L1.ml" 126 4350 4358 "L1.ml" 126 4350 4370
+type(
+  ('z1 list * 'i2 -> ('a2 list * 'c2, Ostap.Msg.t) Checked.t) ->
+  ('z1 list * 'i2) list ->
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 list * 'c2) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"L1.ml" 127 4371 4387 "L1.ml" 127 4371 4392
+type(
+  'z1 list
+)
+ident(
+  def names "L1.ml" 128 4401 4414 "L1.ml" 132 4577 4591
+)
+"L1.ml" 127 4371 4394 "L1.ml" 127 4371 4395
+type(
+  'i2
+)
+ident(
+  def t "L1.ml" 128 4401 4414 "L1.ml" 132 4577 4591
+)
+"L1.ml" 127 4371 4387 "L1.ml" 127 4371 4395
+type(
+  'z1 list * 'i2
+)
+"L1.ml" 128 4401 4414 "L1.ml" 128 4401 4417
+type(
+  't1 -> 'i2 -> ('c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref typ "L1.ml" 105 3757 3778 "L1.ml" 105 3757 3781
+)
+"L1.ml" 128 4401 4418 "L1.ml" 128 4401 4421
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 128 4401 4422 "L1.ml" 128 4401 4423
+type(
+  'i2
+)
+ident(
+  int_ref t "L1.ml" 127 4371 4394 "L1.ml" 127 4371 4395
+)
+"L1.ml" 128 4401 4414 "L1.ml" 128 4401 4423
+call(
+  stack
+)
+type(
+  ('c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 129 4430 4448 "L1.ml" 129 4430 4449
+type(
+  'c2
+)
+ident(
+  def t "L1.ml" 130 4454 4470 "L1.ml" 131 4499 4576
+)
+"L1.ml" 130 4454 4470 "L1.ml" 130 4454 4473
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 130 4454 4470 "L1.ml" 130 4454 4484
+call(
+  stack
+)
+type(
+  'z1 list -> 'c2 -> ('h2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 130 4454 4485 "L1.ml" 130 4454 4490
+type(
+  'z1 list
+)
+ident(
+  int_ref names "L1.ml" 127 4371 4387 "L1.ml" 127 4371 4392
+)
+"L1.ml" 130 4454 4491 "L1.ml" 130 4454 4492
+type(
+  'c2
+)
+ident(
+  int_ref t "L1.ml" 129 4430 4448 "L1.ml" 129 4430 4449
+)
+"L1.ml" 130 4454 4470 "L1.ml" 130 4454 4492
+type(
+  ('h2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 131 4499 4515 "L1.ml" 131 4499 4521
+type(
+  'a2 list * 'c2 -> 'h2 -> 'a2 list * 'c2
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 131 4499 4523 "L1.ml" 131 4499 4531
+type(
+  ('z1 -> 'a2) -> 'z1 list -> 'a2 list
+)
+ident(
+  ext_ref List.map
+)
+"L1.ml" 131 4499 4537 "L1.ml" 131 4499 4541
+type(
+  'z1
+)
+ident(
+  def name "L1.ml" 131 4499 4545 "L1.ml" 131 4499 4565
+)
+"L1.ml" 131 4499 4545 "L1.ml" 131 4499 4548
+type(
+  't1
+)
+ident(
+  int_ref env "L1.ml" 105 3757 3782 "L1.ml" 105 3757 3785
+)
+"L1.ml" 131 4499 4545 "L1.ml" 131 4499 4560
+call(
+  tail
+)
+type(
+  'z1 -> 'a2
+)
+"L1.ml" 131 4499 4561 "L1.ml" 131 4499 4565
+type(
+  'z1
+)
+ident(
+  int_ref name "L1.ml" 131 4499 4537 "L1.ml" 131 4499 4541
+)
+"L1.ml" 131 4499 4545 "L1.ml" 131 4499 4565
+type(
+  'a2
+)
+"L1.ml" 131 4499 4532 "L1.ml" 131 4499 4566
+type(
+  'z1 -> 'a2
+)
+"L1.ml" 131 4499 4567 "L1.ml" 131 4499 4572
+type(
+  'z1 list
+)
+ident(
+  int_ref names "L1.ml" 127 4371 4387 "L1.ml" 127 4371 4392
+)
+"L1.ml" 131 4499 4523 "L1.ml" 131 4499 4572
+call(
+  stack
+)
+type(
+  'a2 list
+)
+"L1.ml" 131 4499 4574 "L1.ml" 131 4499 4575
+type(
+  'c2
+)
+ident(
+  int_ref t "L1.ml" 129 4430 4448 "L1.ml" 129 4430 4449
+)
+"L1.ml" 131 4499 4522 "L1.ml" 131 4499 4576
+type(
+  'a2 list * 'c2
+)
+"L1.ml" 131 4499 4515 "L1.ml" 131 4499 4576
+call(
+  stack
+)
+type(
+  'h2 -> 'a2 list * 'c2
+)
+"L1.ml" 130 4454 4470 "L1.ml" 131 4499 4576
+call(
+  tail
+)
+type(
+  ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('h2, Ostap.Msg.t) Checked.t ->
+  ('h2 -> 'a2 list * 'c2) -> ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 129 4430 4443 "L1.ml" 132 4577 4591
+type(
+  'c2 -> ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 128 4401 4414 "L1.ml" 132 4577 4591
+call(
+  tail
+)
+type(
+  ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+type(
+  ('c2, Ostap.Msg.t) Checked.t ->
+  ('c2 -> ('a2 list * 'c2, Ostap.Msg.t) Checked.t) ->
+  ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 127 4371 4381 "L1.ml" 133 4592 4603
+type(
+  'z1 list * 'i2 -> ('a2 list * 'c2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 134 4605 4615 "L1.ml" 134 4605 4616
+type(
+  ('z1 list * 'i2) list
+)
+ident(
+  int_ref v "L1.ml" 105 3757 3793 "L1.ml" 105 3757 3794
+)
+"L1.ml" 126 4350 4358 "L1.ml" 134 4605 4616
+call(
+  stack
+)
+type(
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t * ('a2 list * 'c2) list
+)
+"L1.ml" 136 4626 4633 "L1.ml" 136 4626 4638
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t *
+  (('a2 * 'c2) list * ('a2 list * 'c2) list, Ostap.Msg.t) Checked.t ->
+  (('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list),
+   Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"L1.ml" 136 4626 4640 "L1.ml" 136 4626 4642
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref mc "L1.ml" 106 3798 3808 "L1.ml" 106 3798 3810
+)
+"L1.ml" 136 4626 4644 "L1.ml" 136 4626 4649
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t *
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t ->
+  (('a2 * 'c2) list * ('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"L1.ml" 136 4626 4651 "L1.ml" 136 4626 4653
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref mt "L1.ml" 114 4031 4041 "L1.ml" 114 4031 4043
+)
+"L1.ml" 136 4626 4655 "L1.ml" 136 4626 4657
+type(
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref mv "L1.ml" 125 4331 4341 "L1.ml" 125 4331 4343
+)
+"L1.ml" 136 4626 4650 "L1.ml" 136 4626 4658
+type(
+  (('a2 * 'c2) list, Ostap.Msg.t) Checked.t *
+  (('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 136 4626 4644 "L1.ml" 136 4626 4658
+call(
+  stack
+)
+type(
+  (('a2 * 'c2) list * ('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 136 4626 4639 "L1.ml" 136 4626 4659
+type(
+  (('e2 * 'f2) list, Ostap.Msg.t) Checked.t *
+  (('a2 * 'c2) list * ('a2 list * 'c2) list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 136 4626 4633 "L1.ml" 136 4626 4659
+call(
+  stack
+)
+type(
+  (('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list),
+   Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 136 4626 4665 "L1.ml" 136 4626 4671
+type(
+  unit ->
+  ('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list) -> unit
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 136 4626 4672 "L1.ml" 136 4626 4674
+type(
+  unit
+)
+"L1.ml" 136 4626 4665 "L1.ml" 136 4626 4674
+call(
+  stack
+)
+type(
+  ('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list) -> unit
+)
+"L1.ml" 136 4626 4633 "L1.ml" 136 4626 4674
+type(
+  (('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list),
+   Ostap.Msg.t)
+  Checked.t ->
+  (('e2 * 'f2) list * (('a2 * 'c2) list * ('a2 list * 'c2) list) -> unit) ->
+  (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 136 4626 4632 "L1.ml" 136 4626 4675
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 136 4626 4680 "L1.ml" 136 4626 4681
+type(
+  ('e2 * 'f2) list
+)
+ident(
+  int_ref c "L1.ml" 106 3798 3812 "L1.ml" 106 3798 3813
+)
+"L1.ml" 136 4626 4683 "L1.ml" 136 4626 4684
+type(
+  ('a2 * 'c2) list
+)
+ident(
+  int_ref t "L1.ml" 114 4031 4045 "L1.ml" 114 4031 4046
+)
+"L1.ml" 136 4626 4686 "L1.ml" 136 4626 4687
+type(
+  ('a2 list * 'c2) list
+)
+ident(
+  int_ref v "L1.ml" 125 4331 4345 "L1.ml" 125 4331 4346
+)
+"L1.ml" 136 4626 4679 "L1.ml" 136 4626 4688
+type(
+  ('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list
+)
+"L1.ml" 136 4626 4677 "L1.ml" 136 4626 4688
+call(
+  stack
+)
+type(
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+type(
+  ('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list ->
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 136 4626 4632 "L1.ml" 136 4626 4688
+type(
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 125 4331 4337 "L1.ml" 136 4626 4688
+type(
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 114 4031 4037 "L1.ml" 136 4626 4688
+type(
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 106 3798 3804 "L1.ml" 136 4626 4688
+type(
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 105 3757 3786 "L1.ml" 136 4626 4688
+type(
+  ('e2 * 'j2) list * ('z1 * 'i2) list * ('z1 list * 'i2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 105 3757 3782 "L1.ml" 136 4626 4688
+type(
+  't1 ->
+  ('e2 * 'j2) list * ('z1 * 'i2) list * ('z1 list * 'i2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 105 3757 3778 "L1.ml" 136 4626 4688
+type(
+  ('t1 -> 'i2 -> ('c2, Ostap.Msg.t) Checked.t) ->
+  't1 ->
+  ('e2 * 'j2) list * ('z1 * 'i2) list * ('z1 list * 'i2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  (('e2 * 'f2) list * ('a2 * 'c2) list * ('a2 list * 'c2) list, 'k2)
+  Checked.t
+)
+"L1.ml" 138 4693 4701 "L1.ml" 138 4693 4708
+type(
+  'm2 *
+  ((String.t *
+    ([> `Binop of
+          ([< `Add
+            | `And
+            | `Div
+            | `Eq
+            | `Ge
+            | `Gt
+            | `Le
+            | `Lt
+            | `Mod
+            | `Mul
+            | `Ne
+            | `Or
+            | `Sub
+            > `Add `Div `Mod `Mul `Sub ]
+           as 'o2) *
+          'n2 * 'n2
+      | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+      | `Ident of String.t
+      | `Unop of [ `Neg | `Not ] * 'n2 ]
+     as 'n2))
+   list * (String.t * ([< `Bool | `Int | `User of String.t ] as 'p2)) list *
+   (String.t list * 'p2) list) *
+  ([> `Assign of
+        [> `Ident of String.t ] *
+        ([> `Binop of 'o2 * 'r2 * 'r2
+          | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+          | `Ident of String.t
+          | `Unop of [ `Neg | `Not ] * 'r2 ]
+         as 'r2)
+    | `If of ('r2 * 'q2 list) list * 'q2 list
+    | `While of 'r2 * 'q2 list ]
+   as 'q2)
+  list ->
+  (('m2 *
+    ((String.t *
+      ([> `Binop of 'o2 * 's2 * 's2
+        | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+        | `Ident of
+            string *
+            [> `Const of 's2
+             | `Type of
+                 string *
+                 ([> `Bool | `Int | `User of String.t * string * 't2 ] as 't2)
+             | `Var of string * 't2 ]
+        | `Unop of [ `Neg | `Not ] * 's2 ]
+       as 's2))
+     list * (string * 't2) list * (string list * 't2) list) *
+    ([> `Assign of 's2 * 's2
+      | `If of ('s2 * 'u2 list) list * 'u2 list
+      | `While of 's2 * 'u2 list ]
+     as 'u2)
+    list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  def program "L1.ml" 145 4903 4940 "L1.ml" 147 4942 4947
+)
+"L1.ml" 138 4693 4709 "L1.ml" 138 4693 4710
+type(
+  'm2 *
+  ((String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list) *
+  'q2 list
+)
+ident(
+  def m "L1.ml" 139 4713 4719 "L1.ml" 145 4903 4940
+)
+"L1.ml" 139 4713 4723 "L1.ml" 139 4713 4726
+type(
+  ([> `Const of 's2 | `Type of string * 't2 | `Var of string * 't2 ] as 'v2)
+  env
+)
+ident(
+  def env "L1.ml" 140 4740 4746 "L1.ml" 145 4903 4940
+)
+"L1.ml" 139 4713 4729 "L1.ml" 139 4713 4736
+type(
+  'v2 env
+)
+"L1.ml" 140 4740 4746 "L1.ml" 140 4740 4760
+type(
+  'v2 env ->
+  ('v2 env ->
+   (String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list ->
+   (unit, Ostap.Msg.t) Checked.t *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list,
+    Ostap.Msg.t)
+   Checked.t) ->
+  ('q2 -> 'u2 Monad.Checked.t) ->
+  'm2 *
+  ((String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list) *
+  'q2 list ->
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  ext_ref Module.resolve
+)
+"L1.ml" 141 4761 4769 "L1.ml" 141 4761 4772
+type(
+  'v2 env
+)
+ident(
+  int_ref env "L1.ml" 139 4713 4723 "L1.ml" 139 4713 4726
+)
+"L1.ml" 142 4773 4782 "L1.ml" 142 4773 4794
+type(
+  ('v2 env -> 'p2 -> ('t2, Ostap.Msg.t) Checked.t) ->
+  'v2 env ->
+  (String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list,
+   Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  int_ref declarations "L1.ml" 105 3757 3765 "L1.ml" 105 3757 3777
+)
+"L1.ml" 142 4773 4795 "L1.ml" 142 4773 4816
+type(
+  'v2 env -> 'p2 -> ('t2, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref PrimitiveType.resolve
+)
+"L1.ml" 142 4773 4781 "L1.ml" 142 4773 4817
+call(
+  stack
+)
+type(
+  'v2 env ->
+  (String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list ->
+  (unit, Ostap.Msg.t) Checked.t *
+  ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list,
+   Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 143 4818 4827 "L1.ml" 143 4818 4850
+type(
+  (([> `Ident of String.t ] as 'w2) -> 's2 Monad.Checked.t) ->
+  ('r2 -> 's2 Monad.Checked.t) ->
+  (('q2 -> 'u2 Monad.Checked.t) -> 'q2 -> 'u2 Monad.Checked.t) ->
+  'q2 -> 'u2 Monad.Checked.t
+)
+ident(
+  ext_ref SimpleStatement.resolve
+)
+"L1.ml" 143 4818 4852 "L1.ml" 143 4818 4863
+type(
+  'v2 env -> 'w2 -> 's2 Monad.Checked.t
+)
+ident(
+  int_ref destination "L1.ml" 90 3190 3198 "L1.ml" 90 3190 3209
+)
+"L1.ml" 143 4818 4864 "L1.ml" 143 4818 4867
+type(
+  'v2 env
+)
+ident(
+  int_ref env "L1.ml" 139 4713 4723 "L1.ml" 139 4713 4726
+)
+"L1.ml" 143 4818 4851 "L1.ml" 143 4818 4868
+call(
+  stack
+)
+type(
+  'w2 -> 's2 Monad.Checked.t
+)
+"L1.ml" 143 4818 4870 "L1.ml" 143 4818 4880
+type(
+  'v2 env -> 'r2 -> 's2 Monad.Checked.t
+)
+ident(
+  int_ref expression "L1.ml" 103 3672 3680 "L1.ml" 103 3672 3690
+)
+"L1.ml" 143 4818 4881 "L1.ml" 143 4818 4884
+type(
+  'v2 env
+)
+ident(
+  int_ref env "L1.ml" 139 4713 4723 "L1.ml" 139 4713 4726
+)
+"L1.ml" 143 4818 4869 "L1.ml" 143 4818 4885
+call(
+  stack
+)
+type(
+  'r2 -> 's2 Monad.Checked.t
+)
+"L1.ml" 143 4818 4886 "L1.ml" 143 4818 4891
+type(
+  ('q2 -> 'u2 Monad.Checked.t) -> 'q2 -> 'u2 Monad.Checked.t
+)
+ident(
+  ext_ref Common.apply
+)
+"L1.ml" 143 4818 4826 "L1.ml" 143 4818 4892
+call(
+  stack
+)
+type(
+  'q2 -> 'u2 Monad.Checked.t
+)
+"L1.ml" 144 4893 4901 "L1.ml" 144 4893 4902
+type(
+  'm2 *
+  ((String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list) *
+  'q2 list
+)
+ident(
+  int_ref m "L1.ml" 138 4693 4709 "L1.ml" 138 4693 4710
+)
+"L1.ml" 140 4740 4746 "L1.ml" 144 4893 4902
+call(
+  stack
+)
+type(
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list, Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 145 4903 4919 "L1.ml" 145 4903 4920
+type(
+  'm2 *
+  ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+  'u2 list
+)
+ident(
+  def x "L1.ml" 145 4903 4924 "L1.ml" 145 4903 4939
+)
+"L1.ml" 145 4903 4924 "L1.ml" 145 4903 4925
+type(
+  'm2 *
+  ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+  'u2 list
+)
+ident(
+  int_ref x "L1.ml" 145 4903 4919 "L1.ml" 145 4903 4920
+)
+"L1.ml" 145 4903 4927 "L1.ml" 145 4903 4930
+type(
+  'v2 env
+)
+ident(
+  int_ref env "L1.ml" 139 4713 4723 "L1.ml" 139 4713 4726
+)
+"L1.ml" 145 4903 4927 "L1.ml" 145 4903 4936
+call(
+  stack
+)
+type(
+  unit -> < getName : String.t -> String.t >
+)
+"L1.ml" 145 4903 4937 "L1.ml" 145 4903 4939
+type(
+  unit
+)
+"L1.ml" 145 4903 4927 "L1.ml" 145 4903 4939
+type(
+  < getName : String.t -> String.t >
+)
+"L1.ml" 145 4903 4924 "L1.ml" 145 4903 4939
+type(
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list) *
+  < getName : String.t -> String.t >
+)
+"L1.ml" 145 4903 4914 "L1.ml" 145 4903 4940
+type(
+  'm2 *
+  ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+  'u2 list ->
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list) *
+  < getName : String.t -> String.t >
+)
+"L1.ml" 140 4740 4746 "L1.ml" 145 4903 4940
+call(
+  tail
+)
+type(
+  (('m2 *
+    ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+    'u2 list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+type(
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list, Ostap.Msg.t)
+  Checked.t ->
+  ('m2 *
+   ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+   'u2 list ->
+   ('m2 *
+    ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+    'u2 list) *
+   < getName : String.t -> String.t >) ->
+  (('m2 *
+    ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+    'u2 list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 139 4713 4719 "L1.ml" 145 4903 4940
+type(
+  (('m2 *
+    ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+    'u2 list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 138 4693 4709 "L1.ml" 145 4903 4940
+type(
+  'm2 *
+  ((String.t * 'n2) list * (String.t * 'p2) list * (String.t list * 'p2) list) *
+  'q2 list ->
+  (('m2 *
+    ((String.t * 's2) list * (string * 't2) list * (string list * 't2) list) *
+    'u2 list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 154 5069 5081 "L1.ml" 154 5069 5092
+type(
+  [> `Binop of [> `Add | `Div | `Mod | `Mul | `Sub ] * 'a * 'b
+   | `Const of [> `Literal of 'd ] as 'c
+   | `Ident of 'e * [> `Const of 'c ]
+   | `Unop of [> `Neg | `Not ] * 'f ] ->
+  [> `Bool | `Int ]
+)
+ident(
+  def typeOfConst "L1.ml" 154 5069 5073 "L1.ml" 173 5752 5757
+)
+"L1.ml" 155 5105 5120 "L1.ml" 155 5105 5121
+type(
+  'e
+)
+"L1.ml" 155 5105 5131 "L1.ml" 155 5105 5132
+type(
+  'c
+)
+"L1.ml" 155 5105 5124 "L1.ml" 155 5105 5132
+type(
+  [> `Const of 'c ] as 'g
+)
+"L1.ml" 155 5105 5124 "L1.ml" 155 5105 5137
+type(
+  'g
+)
+ident(
+  def v "L1.ml" 155 5105 5144 "L1.ml" 155 5105 5181
+)
+"L1.ml" 155 5105 5120 "L1.ml" 155 5105 5138
+type(
+  'e * 'g
+)
+"L1.ml" 155 5105 5112 "L1.ml" 155 5105 5139
+type(
+  [> `Binop of [> `Add | `Div | `Mod | `Mul | `Sub ] * 'a * 'b
+   | `Const of 'c
+   | `Ident of 'e * 'g
+   | `Unop of [> `Neg | `Not ] * 'f ]
+  as 'h
+)
+"L1.ml" 155 5105 5144 "L1.ml" 155 5105 5167
+type(
+  ('h -> ([> `Bool | `Int ] as 'i)) -> 'h -> 'i
+)
+ident(
+  ext_ref SimpleExpression.typeOf
+)
+"L1.ml" 155 5105 5168 "L1.ml" 155 5105 5179
+type(
+  'h -> 'i
+)
+ident(
+  int_ref typeOfConst "L1.ml" 154 5069 5081 "L1.ml" 154 5069 5092
+)
+"L1.ml" 155 5105 5180 "L1.ml" 155 5105 5181
+type(
+  'h
+)
+ident(
+  int_ref v "L1.ml" 155 5105 5124 "L1.ml" 155 5105 5137
+)
+"L1.ml" 155 5105 5144 "L1.ml" 155 5105 5181
+call(
+  tail
+)
+type(
+  'i
+)
+"L1.ml" 156 5183 5189 "L1.ml" 156 5183 5190
+type(
+  'h
+)
+"L1.ml" 156 5183 5194 "L1.ml" 156 5183 5205
+type(
+  string -> 'i
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"L1.ml" 156 5183 5206 "L1.ml" 156 5183 5208
+type(
+  string
+)
+"L1.ml" 156 5183 5194 "L1.ml" 156 5183 5208
+call(
+  tail
+)
+type(
+  'i
+)
+"L1.ml" 154 5069 5095 "L1.ml" 156 5183 5208
+type(
+  'h -> 'i
+)
+"L1.ml" 158 5210 5218 "L1.ml" 158 5210 5227
+type(
+  (([> `Ident of
+         'k *
+         [> `Const of [> `Literal of 'm ] as 'l
+          | `Var of 'n * ([> `Bool | `Int ] as 'o) ] ]
+    as 'j) ->
+   (([> `Ident of 'k * [> `Const of 'l | `Var of 'n * 'o ] ] as 'p) * 'o, 'q)
+   Checked.t) ->
+  'j -> ('p * 'o, 'q) Checked.t
+)
+ident(
+  def reference "L1.ml" 163 5366 5370 "L1.ml" 173 5752 5757
+)
+"L1.ml" 158 5210 5228 "L1.ml" 158 5210 5231
+type(
+  'j -> ('p * 'o, 'q) Checked.t
+)
+ident(
+  def ext "L1.ml" 158 5210 5234 "L1.ml" 161 5348 5364
+)
+"L1.ml" 159 5243 5257 "L1.ml" 159 5243 5258
+type(
+  'k
+)
+"L1.ml" 159 5243 5267 "L1.ml" 159 5243 5268
+type(
+  'l
+)
+"L1.ml" 159 5243 5260 "L1.ml" 159 5243 5268
+type(
+  [> `Const of 'l | `Var of 'n * 'o ] as 'r
+)
+"L1.ml" 159 5243 5257 "L1.ml" 159 5243 5268
+type(
+  'k * 'r
+)
+"L1.ml" 159 5243 5249 "L1.ml" 159 5243 5269
+type(
+  'j
+)
+"L1.ml" 159 5243 5249 "L1.ml" 159 5243 5274
+type(
+  'j
+)
+ident(
+  def x "L1.ml" 159 5243 5278 "L1.ml" 159 5243 5299
+)
+"L1.ml" 159 5243 5282 "L1.ml" 159 5243 5283
+type(
+  'p
+)
+ident(
+  int_ref x "L1.ml" 159 5243 5249 "L1.ml" 159 5243 5274
+)
+"L1.ml" 159 5243 5285 "L1.ml" 159 5243 5296
+type(
+  _[> `Binop of _[> `Add | `Div | `Mod | `Mul | `Sub ] * '_s * '_t
+    | `Const of 'l
+    | `Ident of 'k * _[> `Const of 'l ]
+    | `Unop of _[> `Neg | `Not ] * '_u ] ->
+  'o
+)
+ident(
+  int_ref typeOfConst "L1.ml" 154 5069 5081 "L1.ml" 154 5069 5092
+)
+"L1.ml" 159 5243 5297 "L1.ml" 159 5243 5298
+type(
+  _[> `Binop of _[> `Add | `Div | `Mod | `Mul | `Sub ] * '_s * '_t
+    | `Const of 'l
+    | `Ident of 'k * _[> `Const of 'l ]
+    | `Unop of _[> `Neg | `Not ] * '_u ]
+  as 'v
+)
+ident(
+  int_ref x "L1.ml" 159 5243 5249 "L1.ml" 159 5243 5274
+)
+"L1.ml" 159 5243 5285 "L1.ml" 159 5243 5298
+call(
+  stack
+)
+type(
+  'o
+)
+"L1.ml" 159 5243 5281 "L1.ml" 159 5243 5299
+type(
+  'p * 'o
+)
+"L1.ml" 159 5243 5278 "L1.ml" 159 5243 5299
+call(
+  tail
+)
+type(
+  ('p * 'o, 'q) Checked.t
+)
+type(
+  'p * 'o -> ('p * 'o, 'q) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 160 5300 5314 "L1.ml" 160 5300 5315
+type(
+  'k
+)
+"L1.ml" 160 5300 5323 "L1.ml" 160 5300 5324
+type(
+  'n
+)
+"L1.ml" 160 5300 5326 "L1.ml" 160 5300 5327
+type(
+  'o
+)
+ident(
+  def t "L1.ml" 160 5300 5338 "L1.ml" 160 5300 5347
+)
+"L1.ml" 160 5300 5323 "L1.ml" 160 5300 5327
+type(
+  'n * 'o
+)
+"L1.ml" 160 5300 5317 "L1.ml" 160 5300 5328
+type(
+  'r
+)
+"L1.ml" 160 5300 5314 "L1.ml" 160 5300 5328
+type(
+  'k * 'r
+)
+"L1.ml" 160 5300 5306 "L1.ml" 160 5300 5329
+type(
+  'j
+)
+"L1.ml" 160 5300 5306 "L1.ml" 160 5300 5334
+type(
+  'j
+)
+ident(
+  def x "L1.ml" 160 5300 5338 "L1.ml" 160 5300 5347
+)
+"L1.ml" 160 5300 5342 "L1.ml" 160 5300 5343
+type(
+  'p
+)
+ident(
+  int_ref x "L1.ml" 160 5300 5306 "L1.ml" 160 5300 5334
+)
+"L1.ml" 160 5300 5345 "L1.ml" 160 5300 5346
+type(
+  'o
+)
+ident(
+  int_ref t "L1.ml" 160 5300 5326 "L1.ml" 160 5300 5327
+)
+"L1.ml" 160 5300 5341 "L1.ml" 160 5300 5347
+type(
+  'p * 'o
+)
+"L1.ml" 160 5300 5338 "L1.ml" 160 5300 5347
+call(
+  tail
+)
+type(
+  ('p * 'o, 'q) Checked.t
+)
+type(
+  'p * 'o -> ('p * 'o, 'q) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"L1.ml" 161 5348 5354 "L1.ml" 161 5348 5355
+type(
+  'j
+)
+ident(
+  def x "L1.ml" 161 5348 5359 "L1.ml" 161 5348 5364
+)
+"L1.ml" 161 5348 5359 "L1.ml" 161 5348 5362
+type(
+  'j -> ('p * 'o, 'q) Checked.t
+)
+ident(
+  int_ref ext "L1.ml" 158 5210 5228 "L1.ml" 158 5210 5231
+)
+"L1.ml" 161 5348 5363 "L1.ml" 161 5348 5364
+type(
+  'j
+)
+ident(
+  int_ref x "L1.ml" 161 5348 5354 "L1.ml" 161 5348 5355
+)
+"L1.ml" 161 5348 5359 "L1.ml" 161 5348 5364
+call(
+  tail
+)
+type(
+  ('p * 'o, 'q) Checked.t
+)
+"L1.ml" 158 5210 5234 "L1.ml" 161 5348 5364
+type(
+  'j -> ('p * 'o, 'q) Checked.t
+)
+"L1.ml" 158 5210 5228 "L1.ml" 161 5348 5364
+type(
+  ('j -> ('p * 'o, 'q) Checked.t) -> 'j -> ('p * 'o, 'q) Checked.t
+)
+"L1.ml" 163 5366 5374 "L1.ml" 163 5366 5386
+type(
+  < equal : [> `Bool | `Int ] -> ([> `Bool | `Int ] as 'w) -> bool; .. > ->
+  ('x *
+   ([> `Binop of
+         [> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] * 'y * 'y
+     | `Const of [< `False | `Literal of 'z | `True ]
+     | `Ident of 'a1 * [> `Const of [> `Literal of 'b1 ] | `Var of 'c1 * 'w ]
+     | `Unop of [< `Neg | `Not ] * 'y ]
+    as 'y))
+  list * 'd1 * 'e1 -> (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+ident(
+  def declarations "L1.ml" 169 5559 5562 "L1.ml" 173 5752 5757
+)
+"L1.ml" 163 5366 5387 "L1.ml" 163 5366 5389
+type(
+  < equal : [> `Bool | `Int ] -> 'w -> bool; .. > as 'f1
+)
+ident(
+  def ts "L1.ml" 163 5366 5390 "L1.ml" 167 5527 5557
+)
+"L1.ml" 163 5366 5391 "L1.ml" 163 5366 5392
+type(
+  ('x * 'y) list
+)
+ident(
+  def c "L1.ml" 164 5402 5408 "L1.ml" 167 5527 5557
+)
+"L1.ml" 163 5366 5394 "L1.ml" 163 5366 5395
+type(
+  'd1
+)
+ident(
+  def t "L1.ml" 164 5402 5408 "L1.ml" 167 5527 5557
+)
+"L1.ml" 163 5366 5397 "L1.ml" 163 5366 5398
+type(
+  'e1
+)
+ident(
+  def v "L1.ml" 164 5402 5408 "L1.ml" 167 5527 5557
+)
+"L1.ml" 163 5366 5391 "L1.ml" 163 5366 5398
+type(
+  ('x * 'y) list * 'd1 * 'e1
+)
+"L1.ml" 164 5402 5412 "L1.ml" 164 5402 5414
+type(
+  (('x * 'y) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def mc "L1.ml" 167 5527 5533 "L1.ml" 167 5527 5557
+)
+"L1.ml" 164 5402 5416 "L1.ml" 164 5402 5417
+type(
+  ('x * 'y) list
+)
+ident(
+  def c "L1.ml" 167 5527 5533 "L1.ml" 167 5527 5557
+)
+"L1.ml" 164 5402 5412 "L1.ml" 164 5402 5417
+type(
+  (('x * 'y) list, Ostap.Msg.t) Checked.t * ('x * 'y) list
+)
+"L1.ml" 165 5421 5429 "L1.ml" 165 5421 5441
+type(
+  ('x * 'y -> ('x * 'y, Ostap.Msg.t) Checked.t) ->
+  ('x * 'y) list -> (('x * 'y) list, Ostap.Msg.t) Checked.t * ('x * 'y) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"L1.ml" 165 5421 5447 "L1.ml" 165 5421 5448
+type(
+  'x * 'y
+)
+ident(
+  def x "L1.ml" 165 5421 5452 "L1.ml" 165 5421 5513
+)
+"L1.ml" 165 5421 5452 "L1.ml" 165 5421 5478
+type(
+  'f1 ->
+  (('y ->
+    ((_[> `Binop of
+            ([> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] as 'i1) *
+            'g1 * 'g1
+        | `Const of [< `False | `Literal of 'z | `True ] as 'j1
+        | `Ident of
+            'a1 *
+            _[> `Const of [> `Literal of 'b1 ] as 'k1 | `Var of 'c1 * 'w ]
+        | `Unop of _[> `Neg | `Not ] * ('h1 * 'w) ]
+      as 'h1) *
+     'w as 'g1)
+    Monad.Checked.t) ->
+   'y -> 'g1 Monad.Checked.t) ->
+  'y -> 'g1 Monad.Checked.t
+)
+ident(
+  ext_ref SimpleExpression.typecheck
+)
+"L1.ml" 165 5421 5479 "L1.ml" 165 5421 5481
+type(
+  'f1
+)
+ident(
+  int_ref ts "L1.ml" 163 5366 5387 "L1.ml" 163 5366 5389
+)
+"L1.ml" 165 5421 5482 "L1.ml" 165 5421 5491
+type(
+  ('y -> 'g1 Monad.Checked.t) -> 'y -> 'g1 Monad.Checked.t
+)
+ident(
+  int_ref reference "L1.ml" 158 5210 5218 "L1.ml" 158 5210 5227
+)
+"L1.ml" 165 5421 5493 "L1.ml" 165 5421 5496
+type(
+  'x * 'y -> 'y
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"L1.ml" 165 5421 5497 "L1.ml" 165 5421 5498
+type(
+  'x * 'y
+)
+ident(
+  int_ref x "L1.ml" 165 5421 5447 "L1.ml" 165 5421 5448
+)
+"L1.ml" 165 5421 5492 "L1.ml" 165 5421 5499
+type(
+  'y
+)
+"L1.ml" 165 5421 5452 "L1.ml" 165 5421 5499
+call(
+  stack
+)
+type(
+  'g1 Monad.Checked.t
+)
+"L1.ml" 165 5421 5505 "L1.ml" 165 5421 5511
+type(
+  'x * 'y -> 'g1 -> 'x * 'y
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 165 5421 5512 "L1.ml" 165 5421 5513
+type(
+  'x * 'y
+)
+ident(
+  int_ref x "L1.ml" 165 5421 5447 "L1.ml" 165 5421 5448
+)
+"L1.ml" 165 5421 5505 "L1.ml" 165 5421 5513
+call(
+  stack
+)
+type(
+  'g1 -> 'x * 'y
+)
+"L1.ml" 165 5421 5452 "L1.ml" 165 5421 5513
+call(
+  tail
+)
+type(
+  ('x * 'y, Ostap.Msg.t) Checked.t
+)
+type(
+  'g1 Monad.Checked.t -> ('g1 -> 'x * 'y) -> ('x * 'y, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 165 5421 5442 "L1.ml" 165 5421 5514
+type(
+  'x * 'y -> ('x * 'y, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 165 5421 5515 "L1.ml" 165 5421 5516
+type(
+  ('x * 'y) list
+)
+ident(
+  int_ref c "L1.ml" 163 5366 5391 "L1.ml" 163 5366 5392
+)
+"L1.ml" 165 5421 5429 "L1.ml" 165 5421 5516
+call(
+  stack
+)
+type(
+  (('x * 'y) list, Ostap.Msg.t) Checked.t * ('x * 'y) list
+)
+"L1.ml" 167 5527 5533 "L1.ml" 167 5527 5535
+type(
+  (('x * 'y) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref mc "L1.ml" 164 5402 5412 "L1.ml" 164 5402 5414
+)
+"L1.ml" 167 5527 5541 "L1.ml" 167 5527 5547
+type(
+  ('x * 'y) list * 'd1 * 'e1 -> ('x * 'y) list -> ('x * 'y) list * 'd1 * 'e1
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 167 5527 5549 "L1.ml" 167 5527 5550
+type(
+  ('x * 'y) list
+)
+ident(
+  int_ref c "L1.ml" 164 5402 5416 "L1.ml" 164 5402 5417
+)
+"L1.ml" 167 5527 5552 "L1.ml" 167 5527 5553
+type(
+  'd1
+)
+ident(
+  int_ref t "L1.ml" 163 5366 5394 "L1.ml" 163 5366 5395
+)
+"L1.ml" 167 5527 5555 "L1.ml" 167 5527 5556
+type(
+  'e1
+)
+ident(
+  int_ref v "L1.ml" 163 5366 5397 "L1.ml" 163 5366 5398
+)
+"L1.ml" 167 5527 5548 "L1.ml" 167 5527 5557
+type(
+  ('x * 'y) list * 'd1 * 'e1
+)
+"L1.ml" 167 5527 5541 "L1.ml" 167 5527 5557
+call(
+  stack
+)
+type(
+  ('x * 'y) list -> ('x * 'y) list * 'd1 * 'e1
+)
+"L1.ml" 167 5527 5533 "L1.ml" 167 5527 5557
+call(
+  tail
+)
+type(
+  (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+type(
+  (('x * 'y) list, Ostap.Msg.t) Checked.t ->
+  (('x * 'y) list -> ('x * 'y) list * 'd1 * 'e1) ->
+  (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 164 5402 5408 "L1.ml" 167 5527 5557
+type(
+  (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 163 5366 5390 "L1.ml" 167 5527 5557
+type(
+  ('x * 'y) list * 'd1 * 'e1 ->
+  (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 163 5366 5387 "L1.ml" 167 5527 5557
+type(
+  'f1 ->
+  ('x * 'y) list * 'd1 * 'e1 ->
+  (('x * 'y) list * 'd1 * 'e1, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 169 5559 5566 "L1.ml" 169 5559 5573
+type(
+  (< equal : ([> `User of 'm1 * 'n1 * 'l1 ] as 'l1) -> 'l1 -> bool;
+     primitive : ([> `Bool | `Int | `User of 'p1 * 'q1 * 'o1 ] as 'o1) ->
+                 bool;
+     string : [< `Bool | `Int | `User of string * 'r1 * 's1 ] -> string > ->
+   (([> `Binop of
+          ([> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] as 'u1) *
+          't1 * 't1
+      | `Const of [< `False | `Literal of 'w1 | `True ] as 'v1
+      | `Ident of
+          'x1 *
+          [> `Const of [> `Literal of 'z1 ] as 'y1
+           | `Var of
+               'a2 * ([> `Bool | `Int | `User of 'c2 * 'd2 * 'b2 ] as 'b2) ]
+      | `Unop of [< `Neg | `Not ] * 't1 ]
+     as 't1) ->
+    (([> `Binop of 'u1 * 'e2 * 'e2
+       | `Const of 'v1
+       | `Ident of 'x1 * [> `Const of 'y1 | `Var of 'a2 * 'b2 ]
+       | `Unop of [> `Neg | `Not ] * ('f2 * 'b2) ]
+      as 'f2) *
+     'b2 as 'e2)
+    Monad.Checked.t) ->
+   (('g2 -> 'h2) -> 'g2 -> 'h2) -> 'i2 -> ('j2, Ostap.Msg.t) Checked.t) ->
+  'k2 *
+  (('l2 *
+    ([> `Binop of
+          [> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] * 'm2 * 'm2
+      | `Const of [< `False | `Literal of 'n2 | `True ]
+      | `Ident of
+          'o2 *
+          [> `Const of [> `Literal of 'p2 ]
+           | `Var of
+               'q2 * ([> `Bool | `Int | `User of 's2 * 't2 * 'r2 ] as 'r2) ]
+      | `Unop of [< `Neg | `Not ] * 'm2 ]
+     as 'm2))
+   list * 'u2 * 'v2) *
+  'i2 list ->
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def program "L1.ml" 171 5660 5750 "L1.ml" 173 5752 5757
+)
+"L1.ml" 169 5559 5574 "L1.ml" 169 5559 5578
+type(
+  < equal : 'l1 -> 'l1 -> bool; primitive : 'o1 -> bool;
+    string : ([< `Bool | `Int | `User of string * 'r1 * 's1 ] as 'w2) ->
+             string > ->
+  ('t1 -> 'e2 Monad.Checked.t) ->
+  (('g2 -> 'h2) -> 'g2 -> 'h2) -> 'i2 -> ('j2, Ostap.Msg.t) Checked.t
+)
+ident(
+  def stmt "L1.ml" 169 5559 5579 "L1.ml" 171 5660 5750
+)
+"L1.ml" 169 5559 5579 "L1.ml" 169 5559 5580
+type(
+  'k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'i2 list
+)
+ident(
+  def m "L1.ml" 170 5583 5588 "L1.ml" 171 5660 5750
+)
+"L1.ml" 170 5583 5592 "L1.ml" 170 5583 5596
+type(
+  ([> `Binop of
+        ([> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] as 'y2) * 'x2 *
+        'x2
+    | `Const of [< `False | `Literal of 'a3 | `True ] as 'z2
+    | `Ident of
+        'b3 *
+        [> `Const of [> `Literal of 'd3 ] as 'c3
+         | `Var of
+             'e3 * ([> `Bool | `Int | `User of 'g3 * 'h3 * 'f3 ] as 'f3) ]
+    | `Unop of [< `Neg | `Not ] * 'x2 ]
+   as 'x2) ->
+  (([> `Binop of 'y2 * 'i3 * 'i3
+     | `Const of 'z2
+     | `Ident of 'b3 * [> `Const of 'c3 | `Var of 'e3 * 'f3 ]
+     | `Unop of [> `Neg | `Not ] * ('j3 * 'f3) ]
+    as 'j3) *
+   'f3 as 'i3)
+  Monad.Checked.t
+)
+ident(
+  def expr "L1.ml" 171 5660 5665 "L1.ml" 171 5660 5750
+)
+"L1.ml" 170 5583 5597 "L1.ml" 170 5583 5598
+type(
+  'x2
+)
+ident(
+  def e "L1.ml" 170 5583 5601 "L1.ml" 170 5583 5656
+)
+"L1.ml" 170 5583 5601 "L1.ml" 170 5583 5627
+type(
+  < equal : 'f3 -> 'f3 -> bool;
+    primitive : (_[> `Bool | `Int | `User of '_l3 * '_m3 * 'k3 ] as 'k3) ->
+                bool;
+    string : _[< `Bool | `Int | `User of string * '_n3 * '_o3 ] -> string > ->
+  (('x2 -> 'i3 Monad.Checked.t) -> 'x2 -> 'i3 Monad.Checked.t) ->
+  'x2 -> 'i3 Monad.Checked.t
+)
+ident(
+  ext_ref SimpleExpression.typecheck
+)
+"L1.ml" 170 5583 5628 "L1.ml" 170 5583 5644
+type(
+  < equal : 'f3 -> 'f3 -> bool; primitive : 'k3 -> bool;
+    string : (_[< `Bool | `Int | `User of string * '_n3 * '_o3 ] as 'p3) ->
+             string >
+)
+ident(
+  ext_ref PrimitiveType.ts
+)
+"L1.ml" 170 5583 5645 "L1.ml" 170 5583 5654
+type(
+  ('x2 -> 'i3 Monad.Checked.t) -> 'x2 -> 'i3 Monad.Checked.t
+)
+ident(
+  int_ref reference "L1.ml" 158 5210 5218 "L1.ml" 158 5210 5227
+)
+"L1.ml" 170 5583 5655 "L1.ml" 170 5583 5656
+type(
+  'x2
+)
+ident(
+  int_ref e "L1.ml" 170 5583 5597 "L1.ml" 170 5583 5598
+)
+"L1.ml" 170 5583 5601 "L1.ml" 170 5583 5656
+call(
+  tail
+)
+type(
+  'i3 Monad.Checked.t
+)
+"L1.ml" 170 5583 5597 "L1.ml" 170 5583 5656
+type(
+  'x2 -> 'i3 Monad.Checked.t
+)
+"L1.ml" 171 5660 5665 "L1.ml" 171 5660 5681
+type(
+  (('l2 * 'm2) list * 'u2 * 'v2 ->
+   (('l2 * 'm2) list * 'u2 * 'v2, Ostap.Msg.t) Checked.t) ->
+  ('i2 -> ('j2, Ostap.Msg.t) Checked.t) ->
+  'k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'i2 list ->
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Module.typecheck
+)
+"L1.ml" 171 5660 5683 "L1.ml" 171 5660 5695
+type(
+  < equal : 'r2 -> 'r2 -> bool;
+    primitive : (_[> `Bool | `Int | `User of '_r3 * '_s3 * 'q3 ] as 'q3) ->
+                bool;
+    string : _[< `Bool | `Int | `User of string * '_t3 * '_u3 ] -> string > ->
+  ('l2 * 'm2) list * 'u2 * 'v2 ->
+  (('l2 * 'm2) list * 'u2 * 'v2, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref declarations "L1.ml" 163 5366 5374 "L1.ml" 163 5366 5386
+)
+"L1.ml" 171 5660 5696 "L1.ml" 171 5660 5712
+type(
+  < equal : 'r2 -> 'r2 -> bool; primitive : 'q3 -> bool;
+    string : (_[< `Bool | `Int | `User of string * '_t3 * '_u3 ] as 'v3) ->
+             string >
+)
+ident(
+  ext_ref PrimitiveType.ts
+)
+"L1.ml" 171 5660 5682 "L1.ml" 171 5660 5713
+call(
+  stack
+)
+type(
+  ('l2 * 'm2) list * 'u2 * 'v2 ->
+  (('l2 * 'm2) list * 'u2 * 'v2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 171 5660 5715 "L1.ml" 171 5660 5719
+type(
+  < equal : 'l1 -> 'l1 -> bool; primitive : 'o1 -> bool;
+    string : 'w2 -> string > ->
+  ('t1 -> 'e2 Monad.Checked.t) ->
+  (('g2 -> 'h2) -> 'g2 -> 'h2) -> 'i2 -> ('j2, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref stmt "L1.ml" 169 5559 5574 "L1.ml" 169 5559 5578
+)
+"L1.ml" 171 5660 5720 "L1.ml" 171 5660 5736
+type(
+  < equal : 'l1 -> 'l1 -> bool; primitive : 'o1 -> bool;
+    string : 'w2 -> string >
+)
+ident(
+  ext_ref PrimitiveType.ts
+)
+"L1.ml" 171 5660 5737 "L1.ml" 171 5660 5741
+type(
+  't1 -> 'e2 Monad.Checked.t
+)
+ident(
+  int_ref expr "L1.ml" 170 5583 5592 "L1.ml" 170 5583 5596
+)
+"L1.ml" 171 5660 5742 "L1.ml" 171 5660 5747
+type(
+  ('g2 -> 'h2) -> 'g2 -> 'h2
+)
+ident(
+  ext_ref Common.apply
+)
+"L1.ml" 171 5660 5714 "L1.ml" 171 5660 5748
+call(
+  stack
+)
+type(
+  'i2 -> ('j2, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 171 5660 5749 "L1.ml" 171 5660 5750
+type(
+  'k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'i2 list
+)
+ident(
+  int_ref m "L1.ml" 169 5559 5579 "L1.ml" 169 5559 5580
+)
+"L1.ml" 171 5660 5665 "L1.ml" 171 5660 5750
+call(
+  tail
+)
+type(
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 170 5583 5588 "L1.ml" 171 5660 5750
+type(
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 169 5559 5579 "L1.ml" 171 5660 5750
+type(
+  'k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'i2 list ->
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 169 5559 5574 "L1.ml" 171 5660 5750
+type(
+  (< equal : 'l1 -> 'l1 -> bool; primitive : 'o1 -> bool;
+     string : 'w2 -> string > ->
+   ('t1 -> 'e2 Monad.Checked.t) ->
+   (('g2 -> 'h2) -> 'g2 -> 'h2) -> 'i2 -> ('j2, Ostap.Msg.t) Checked.t) ->
+  'k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'i2 list ->
+  ('k2 * (('l2 * 'm2) list * 'u2 * 'v2) * 'j2 list, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 180 5874 5878 "L1.ml" 180 5874 5883
+type(
+  'a -> string * string
+)
+ident(
+  def empty "L1.ml" 182 5942 5942 "L1.ml" 1 0 -1
+)
+"L1.ml" 180 5874 5884 "L1.ml" 180 5874 5885
+type(
+  'a
+)
+"L1.ml" 180 5874 5888 "L1.ml" 180 5874 5913
+type(
+  string
+)
+"L1.ml" 180 5874 5915 "L1.ml" 180 5874 5940
+type(
+  string
+)
+"L1.ml" 180 5874 5888 "L1.ml" 180 5874 5940
+type(
+  string * string
+)
+"L1.ml" 180 5874 5884 "L1.ml" 180 5874 5940
+type(
+  'a -> string * string
+)
+"L1.ml" 182 5942 5946 "L1.ml" 182 5942 5954
+type(
+  ('a * 'b -> 'c) ->
+  (Lexer.t ->
+   ('d, 'e,
+    < retrieve : [> `First of int ] ->
+                 [> `Desc ] ->
+                 (Ostap.Msg.Locator.t *
+                  [< `Comment of string * 'f | `Msg of Ostap.Msg.t ] list)
+                 list;
+      .. >)
+   Ostap.Combinators.result) *
+  ('e -> Ostap.Pretty.printer) * ('e -> ('a * 'b, Ostap.Msg.t) Checked.t) *
+  ('a -> ('g, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  def toplevel "L1.ml" 194 6595 6595 "L1.ml" 1 0 -1
+)
+"L1.ml" 182 5942 5955 "L1.ml" 182 5942 5963
+type(
+  'a * 'b -> 'c
+)
+ident(
+  def generate "L1.ml" 182 5942 5964 "L1.ml" 192 6588 6593
+)
+"L1.ml" 182 5942 5965 "L1.ml" 182 5942 5970
+type(
+  Lexer.t ->
+  ('d, 'e,
+   < retrieve : [> `First of int ] ->
+                [> `Desc ] ->
+                (Ostap.Msg.Locator.t *
+                 [< `Comment of string * 'f | `Msg of Ostap.Msg.t ] list)
+                list;
+     .. >
+   as 'i)
+  Ostap.Combinators.result
+)
+ident(
+  def parse "L1.ml" 182 5942 5999 "L1.ml" 192 6588 6593
+)
+"L1.ml" 182 5942 5972 "L1.ml" 182 5942 5977
+type(
+  'e -> Ostap.Pretty.printer
+)
+ident(
+  def print "L1.ml" 182 5942 5999 "L1.ml" 192 6588 6593
+)
+"L1.ml" 182 5942 5979 "L1.ml" 182 5942 5986
+type(
+  'e -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  def resolve "L1.ml" 182 5942 5999 "L1.ml" 192 6588 6593
+)
+"L1.ml" 182 5942 5988 "L1.ml" 182 5942 5997
+type(
+  'a -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  def typecheck "L1.ml" 182 5942 5999 "L1.ml" 192 6588 6593
+)
+"L1.ml" 182 5942 5965 "L1.ml" 182 5942 5997
+type(
+  (Lexer.t -> ('d, 'e, 'i) Ostap.Combinators.result) *
+  ('e -> Ostap.Pretty.printer) * ('e -> ('a * 'b, Ostap.Msg.t) Checked.t) *
+  ('a -> ('g, Ostap.Msg.t) Checked.t)
+)
+"L1.ml" 182 5942 5999 "L1.ml" 182 5942 6005
+type(
+  string
+)
+ident(
+  def source "L1.ml" 183 6008 6010 "L1.ml" 192 6588 6593
+)
+"L1.ml" 183 6008 6014 "L1.ml" 183 6008 6020
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  def parsed "L1.ml" 184 6088 6090 "L1.ml" 192 6588 6593
+)
+"L1.ml" 183 6008 6025 "L1.ml" 183 6008 6038
+type(
+  (unit -> ('e, Ostap.Msg.t) Checked.t) -> ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  ext_ref Lazy.lazy_from_fun
+)
+"L1.ml" 183 6008 6044 "L1.ml" 183 6008 6045
+type(
+  unit
+)
+"L1.ml" 183 6008 6049 "L1.ml" 183 6008 6054
+type(
+  ('d, 'e, 'i) Ostap.Combinators.result -> ('e, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.check
+)
+"L1.ml" 183 6008 6056 "L1.ml" 183 6008 6061
+type(
+  Lexer.t -> ('d, 'e, 'i) Ostap.Combinators.result
+)
+ident(
+  int_ref parse "L1.ml" 182 5942 5965 "L1.ml" 182 5942 5970
+)
+"L1.ml" 183 6008 6063 "L1.ml" 183 6008 6074
+type(
+  string -> Lexer.t
+)
+"L1.ml" 183 6008 6075 "L1.ml" 183 6008 6081
+type(
+  string
+)
+ident(
+  int_ref source "L1.ml" 182 5942 5999 "L1.ml" 182 5942 6005
+)
+"L1.ml" 183 6008 6062 "L1.ml" 183 6008 6082
+call(
+  stack
+)
+type(
+  Lexer.t
+)
+"L1.ml" 183 6008 6055 "L1.ml" 183 6008 6083
+call(
+  stack
+)
+type(
+  ('d, 'e, 'i) Ostap.Combinators.result
+)
+"L1.ml" 183 6008 6049 "L1.ml" 183 6008 6083
+call(
+  tail
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 183 6008 6039 "L1.ml" 183 6008 6084
+type(
+  unit -> ('e, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 183 6008 6025 "L1.ml" 183 6008 6084
+call(
+  stack
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+"L1.ml" 184 6088 6094 "L1.ml" 184 6088 6102
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  def resolved "L1.ml" 185 6162 6164 "L1.ml" 192 6588 6593
+)
+"L1.ml" 184 6088 6105 "L1.ml" 184 6088 6118
+type(
+  (unit -> ('a * 'b, Ostap.Msg.t) Checked.t) ->
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  ext_ref Lazy.lazy_from_fun
+)
+"L1.ml" 184 6088 6124 "L1.ml" 184 6088 6125
+type(
+  unit
+)
+"L1.ml" 184 6088 6129 "L1.ml" 184 6088 6134
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t -> ('e, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 184 6088 6135 "L1.ml" 184 6088 6141
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref parsed "L1.ml" 183 6008 6014 "L1.ml" 183 6008 6020
+)
+"L1.ml" 184 6088 6129 "L1.ml" 184 6088 6141
+call(
+  stack
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 184 6088 6148 "L1.ml" 184 6088 6155
+type(
+  'e -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref resolve "L1.ml" 182 5942 5979 "L1.ml" 182 5942 5986
+)
+"L1.ml" 184 6088 6129 "L1.ml" 184 6088 6155
+call(
+  tail
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t ->
+  ('e -> ('a * 'b, Ostap.Msg.t) Checked.t) ->
+  ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 184 6088 6119 "L1.ml" 184 6088 6156
+type(
+  unit -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 184 6088 6105 "L1.ml" 184 6088 6156
+call(
+  stack
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+"L1.ml" 185 6162 6168 "L1.ml" 185 6162 6175
+type(
+  ('g, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  def checked "L1.ml" 186 6256 6258 "L1.ml" 192 6588 6593
+)
+"L1.ml" 185 6162 6179 "L1.ml" 185 6162 6192
+type(
+  (unit -> ('g, Ostap.Msg.t) Checked.t) -> ('g, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  ext_ref Lazy.lazy_from_fun
+)
+"L1.ml" 185 6162 6198 "L1.ml" 185 6162 6199
+type(
+  unit
+)
+"L1.ml" 185 6162 6203 "L1.ml" 185 6162 6208
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 185 6162 6209 "L1.ml" 185 6162 6217
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref resolved "L1.ml" 184 6088 6094 "L1.ml" 184 6088 6102
+)
+"L1.ml" 185 6162 6203 "L1.ml" 185 6162 6217
+call(
+  stack
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 185 6162 6230 "L1.ml" 185 6162 6231
+type(
+  'a
+)
+ident(
+  def t "L1.ml" 185 6162 6239 "L1.ml" 185 6162 6250
+)
+"L1.ml" 185 6162 6233 "L1.ml" 185 6162 6234
+type(
+  'b
+)
+"L1.ml" 185 6162 6230 "L1.ml" 185 6162 6234
+type(
+  'a * 'b
+)
+"L1.ml" 185 6162 6239 "L1.ml" 185 6162 6248
+type(
+  'a -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref typecheck "L1.ml" 182 5942 5988 "L1.ml" 182 5942 5997
+)
+"L1.ml" 185 6162 6249 "L1.ml" 185 6162 6250
+type(
+  'a
+)
+ident(
+  int_ref t "L1.ml" 185 6162 6230 "L1.ml" 185 6162 6231
+)
+"L1.ml" 185 6162 6239 "L1.ml" 185 6162 6250
+call(
+  tail
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 185 6162 6224 "L1.ml" 185 6162 6251
+type(
+  'a * 'b -> ('g, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 185 6162 6203 "L1.ml" 185 6162 6251
+call(
+  tail
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t ->
+  ('a * 'b -> ('g, Ostap.Msg.t) Checked.t) -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"L1.ml" 185 6162 6193 "L1.ml" 185 6162 6252
+type(
+  unit -> ('g, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 185 6162 6179 "L1.ml" 185 6162 6252
+call(
+  stack
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t Lazy.t
+)
+"L1.ml" 187 6265 6286 "L1.ml" 187 6265 6288
+type(
+  unit
+)
+"L1.ml" 187 6265 6291 "L1.ml" 187 6265 6296
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t -> ('e, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 187 6265 6297 "L1.ml" 187 6265 6303
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref parsed "L1.ml" 183 6008 6014 "L1.ml" 183 6008 6020
+)
+"L1.ml" 187 6265 6291 "L1.ml" 187 6265 6303
+call(
+  stack
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 187 6265 6311 "L1.ml" 187 6265 6317
+type(
+  unit -> 'e -> unit
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 187 6265 6318 "L1.ml" 187 6265 6320
+type(
+  unit
+)
+"L1.ml" 187 6265 6311 "L1.ml" 187 6265 6320
+call(
+  stack
+)
+type(
+  'e -> unit
+)
+"L1.ml" 187 6265 6291 "L1.ml" 187 6265 6320
+call(
+  tail
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t ->
+  ('e -> unit) -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 187 6265 6286 "L1.ml" 187 6265 6320
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 187 6265 6269 "L1.ml" 187 6265 6320
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t > ->
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 188 6321 6342 "L1.ml" 188 6321 6344
+type(
+  unit
+)
+"L1.ml" 188 6321 6347 "L1.ml" 188 6321 6352
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t -> ('e, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 188 6321 6353 "L1.ml" 188 6321 6359
+type(
+  ('e, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref parsed "L1.ml" 183 6008 6014 "L1.ml" 183 6008 6020
+)
+"L1.ml" 188 6321 6347 "L1.ml" 188 6321 6359
+call(
+  stack
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 188 6321 6372 "L1.ml" 188 6321 6373
+type(
+  'e
+)
+ident(
+  def t "L1.ml" 188 6321 6377 "L1.ml" 188 6321 6408
+)
+"L1.ml" 188 6321 6377 "L1.ml" 188 6321 6398
+type(
+  Ostap.Pretty.printer -> string
+)
+ident(
+  ext_ref Ostap.Pretty.toString
+)
+"L1.ml" 188 6321 6400 "L1.ml" 188 6321 6405
+type(
+  'e -> Ostap.Pretty.printer
+)
+ident(
+  int_ref print "L1.ml" 182 5942 5972 "L1.ml" 182 5942 5977
+)
+"L1.ml" 188 6321 6406 "L1.ml" 188 6321 6407
+type(
+  'e
+)
+ident(
+  int_ref t "L1.ml" 188 6321 6372 "L1.ml" 188 6321 6373
+)
+"L1.ml" 188 6321 6399 "L1.ml" 188 6321 6408
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"L1.ml" 188 6321 6377 "L1.ml" 188 6321 6408
+call(
+  tail
+)
+type(
+  string
+)
+"L1.ml" 188 6321 6367 "L1.ml" 188 6321 6409
+type(
+  'e -> string
+)
+"L1.ml" 188 6321 6347 "L1.ml" 188 6321 6409
+call(
+  tail
+)
+type(
+  (string, Ostap.Msg.t) Checked.t
+)
+type(
+  ('e, Ostap.Msg.t) Checked.t ->
+  ('e -> string) -> (string, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 188 6321 6342 "L1.ml" 188 6321 6409
+type(
+  unit -> (string, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> (string, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 188 6321 6325 "L1.ml" 188 6321 6409
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t > ->
+  unit -> (string, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 189 6410 6431 "L1.ml" 189 6410 6433
+type(
+  unit
+)
+"L1.ml" 189 6410 6436 "L1.ml" 189 6410 6441
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 189 6410 6442 "L1.ml" 189 6410 6450
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref resolved "L1.ml" 184 6088 6094 "L1.ml" 184 6088 6102
+)
+"L1.ml" 189 6410 6436 "L1.ml" 189 6410 6450
+call(
+  stack
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 189 6410 6456 "L1.ml" 189 6410 6462
+type(
+  unit -> 'a * 'b -> unit
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 189 6410 6463 "L1.ml" 189 6410 6465
+type(
+  unit
+)
+"L1.ml" 189 6410 6456 "L1.ml" 189 6410 6465
+call(
+  stack
+)
+type(
+  'a * 'b -> unit
+)
+"L1.ml" 189 6410 6436 "L1.ml" 189 6410 6465
+call(
+  tail
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t ->
+  ('a * 'b -> unit) -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 189 6410 6431 "L1.ml" 189 6410 6465
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 189 6410 6414 "L1.ml" 189 6410 6465
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t > ->
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 190 6466 6487 "L1.ml" 190 6466 6489
+type(
+  unit
+)
+"L1.ml" 190 6466 6492 "L1.ml" 190 6466 6497
+type(
+  ('g, Ostap.Msg.t) Checked.t Lazy.t -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 190 6466 6498 "L1.ml" 190 6466 6505
+type(
+  ('g, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref checked "L1.ml" 185 6162 6168 "L1.ml" 185 6162 6175
+)
+"L1.ml" 190 6466 6492 "L1.ml" 190 6466 6505
+call(
+  stack
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 190 6466 6517 "L1.ml" 190 6466 6518
+type(
+  'g
+)
+ident(
+  def x "L1.ml" 190 6466 6522 "L1.ml" 190 6466 6531
+)
+"L1.ml" 190 6466 6522 "L1.ml" 190 6466 6528
+type(
+  unit -> 'h -> unit
+)
+ident(
+  ext_ref Common.return
+)
+"L1.ml" 190 6466 6529 "L1.ml" 190 6466 6531
+type(
+  unit
+)
+"L1.ml" 190 6466 6522 "L1.ml" 190 6466 6531
+call(
+  tail
+)
+type(
+  'h -> unit
+)
+"L1.ml" 190 6466 6512 "L1.ml" 190 6466 6532
+type(
+  'g -> 'h -> unit
+)
+"L1.ml" 190 6466 6492 "L1.ml" 190 6466 6532
+call(
+  tail
+)
+type(
+  ('h -> unit, Ostap.Msg.t) Checked.t
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t ->
+  ('g -> 'h -> unit) -> ('h -> unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 190 6466 6487 "L1.ml" 190 6466 6532
+type(
+  unit -> ('h -> unit, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> ('h -> unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 190 6466 6470 "L1.ml" 190 6466 6532
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t > ->
+  unit -> ('h -> unit, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 191 6533 6554 "L1.ml" 191 6533 6556
+type(
+  unit
+)
+"L1.ml" 191 6533 6559 "L1.ml" 191 6533 6564
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t -> ('a * 'b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Lazy.force
+)
+"L1.ml" 191 6533 6565 "L1.ml" 191 6533 6573
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t Lazy.t
+)
+ident(
+  int_ref resolved "L1.ml" 184 6088 6094 "L1.ml" 184 6088 6102
+)
+"L1.ml" 191 6533 6559 "L1.ml" 191 6533 6573
+call(
+  stack
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 191 6533 6579 "L1.ml" 191 6533 6587
+type(
+  'a * 'b -> 'c
+)
+ident(
+  int_ref generate "L1.ml" 182 5942 5955 "L1.ml" 182 5942 5963
+)
+"L1.ml" 191 6533 6559 "L1.ml" 191 6533 6587
+call(
+  tail
+)
+type(
+  ('c, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a * 'b, Ostap.Msg.t) Checked.t ->
+  ('a * 'b -> 'c) -> ('c, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"L1.ml" 191 6533 6554 "L1.ml" 191 6533 6587
+type(
+  unit -> ('c, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> ('c, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 191 6533 6537 "L1.ml" 191 6533 6587
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t > ->
+  unit -> ('c, Ostap.Msg.t) Checked.t
+)
+"L1.ml" 186 6256 6258 "L1.ml" 192 6588 6593
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 185 6162 6164 "L1.ml" 192 6588 6593
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 184 6088 6090 "L1.ml" 192 6588 6593
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 183 6008 6010 "L1.ml" 192 6588 6593
+type(
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 182 5942 5999 "L1.ml" 192 6588 6593
+type(
+  string ->
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 182 5942 5964 "L1.ml" 192 6588 6593
+type(
+  (Lexer.t -> ('d, 'e, 'i) Ostap.Combinators.result) *
+  ('e -> Ostap.Pretty.printer) * ('e -> ('a * 'b, Ostap.Msg.t) Checked.t) *
+  ('a -> ('g, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 182 5942 5955 "L1.ml" 192 6588 6593
+type(
+  ('a * 'b -> 'c) ->
+  (Lexer.t -> ('d, 'e, 'i) Ostap.Combinators.result) *
+  ('e -> Ostap.Pretty.printer) * ('e -> ('a * 'b, Ostap.Msg.t) Checked.t) *
+  ('a -> ('g, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> ('c, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('h -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 194 6595 6599 "L1.ml" 194 6595 6608
+type(
+  (Lexer.t ->
+   ('a, 'b,
+    < retrieve : [> `First of int ] ->
+                 [> `Desc ] ->
+                 (Ostap.Msg.Locator.t *
+                  [< `Comment of string * 'c | `Msg of Ostap.Msg.t ] list)
+                 list;
+      .. >)
+   Ostap.Combinators.result) *
+  ('b -> Ostap.Pretty.printer) * ('b -> ('d * 'e, Ostap.Msg.t) Checked.t) *
+  ('d -> ('f, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('g -> unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  def toplevel0 "L1.ml" 195 6634 6634 "L1.ml" 1 0 -1
+)
+"L1.ml" 194 6595 6609 "L1.ml" 194 6595 6610
+type(
+  (Lexer.t ->
+   ('a, 'b,
+    < retrieve : [> `First of int ] ->
+                 [> `Desc ] ->
+                 (Ostap.Msg.Locator.t *
+                  [< `Comment of string * 'c | `Msg of Ostap.Msg.t ] list)
+                 list;
+      .. >
+    as 'h)
+   Ostap.Combinators.result) *
+  ('b -> Ostap.Pretty.printer) * ('b -> ('d * 'e, Ostap.Msg.t) Checked.t) *
+  ('d -> ('f, Ostap.Msg.t) Checked.t)
+)
+ident(
+  def s "L1.ml" 194 6595 6611 "L1.ml" 194 6595 6633
+)
+"L1.ml" 194 6595 6611 "L1.ml" 194 6595 6612
+type(
+  string
+)
+ident(
+  def t "L1.ml" 194 6595 6615 "L1.ml" 194 6595 6633
+)
+"L1.ml" 194 6595 6615 "L1.ml" 194 6595 6623
+type(
+  ('d * 'e -> string * string) ->
+  (Lexer.t -> ('a, 'b, 'h) Ostap.Combinators.result) *
+  ('b -> Ostap.Pretty.printer) * ('b -> ('d * 'e, Ostap.Msg.t) Checked.t) *
+  ('d -> ('f, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('g -> unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  int_ref toplevel "L1.ml" 182 5942 5946 "L1.ml" 182 5942 5954
+)
+"L1.ml" 194 6595 6624 "L1.ml" 194 6595 6629
+type(
+  'd * 'e -> string * string
+)
+ident(
+  int_ref empty "L1.ml" 180 5874 5878 "L1.ml" 180 5874 5883
+)
+"L1.ml" 194 6595 6630 "L1.ml" 194 6595 6631
+type(
+  (Lexer.t -> ('a, 'b, 'h) Ostap.Combinators.result) *
+  ('b -> Ostap.Pretty.printer) * ('b -> ('d * 'e, Ostap.Msg.t) Checked.t) *
+  ('d -> ('f, Ostap.Msg.t) Checked.t)
+)
+ident(
+  int_ref s "L1.ml" 194 6595 6609 "L1.ml" 194 6595 6610
+)
+"L1.ml" 194 6595 6632 "L1.ml" 194 6595 6633
+type(
+  string
+)
+ident(
+  int_ref t "L1.ml" 194 6595 6611 "L1.ml" 194 6595 6612
+)
+"L1.ml" 194 6595 6615 "L1.ml" 194 6595 6633
+call(
+  tail
+)
+type(
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('g -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 194 6595 6611 "L1.ml" 194 6595 6633
+type(
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('g -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 194 6595 6609 "L1.ml" 194 6595 6633
+type(
+  (Lexer.t -> ('a, 'b, 'h) Ostap.Combinators.result) *
+  ('b -> Ostap.Pretty.printer) * ('b -> ('d * 'e, Ostap.Msg.t) Checked.t) *
+  ('d -> ('f, Ostap.Msg.t) Checked.t) ->
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('g -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 195 6634 6638 "L1.ml" 195 6634 6641
+type(
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('a -> unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  def top "L1.ml" 198 6764 6775 "L1.ml" 1 0 -1
+)
+"L1.ml" 195 6634 6642 "L1.ml" 195 6634 6648
+type(
+  string
+)
+ident(
+  def source "L1.ml" 196 6652 6654 "L1.ml" 198 6764 6775
+)
+"L1.ml" 196 6652 6654 "L1.ml" 196 6652 6663
+type(
+  (Lexer.t ->
+   (Lexer.t,
+    string *
+    ((String.t *
+      (_[> `Binop of
+             [ `Add
+             | `And
+             | `Div
+             | `Eq
+             | `Ge
+             | `Gt
+             | `Le
+             | `Lt
+             | `Mod
+             | `Mul
+             | `Ne
+             | `Or
+             | `Sub ] * 'b * 'b
+         | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+         | `Ident of String.t
+         | `Unop of [ `Neg | `Not ] * 'b ]
+       as 'b))
+     list *
+     (String.t * (_[< `Bool | `Int | `User of String.t > `User ] as 'c)) list *
+     (String.t list * 'c) list) *
+    (_[> `Assign of 'b * 'b
+       | `If of ('b * 'd list) list * 'd list
+       | `While of 'b * 'd list ]
+     as 'd)
+    list, Ostap.Reason.t)
+   Ostap.Combinators.result) *
+  (string *
+   ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+   'd list -> Ostap.Pretty.printer) *
+  (string *
+   ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+   'd list ->
+   ((string *
+     ((String.t *
+       (_[> `Binop of
+              [ `Add
+              | `And
+              | `Div
+              | `Eq
+              | `Ge
+              | `Gt
+              | `Le
+              | `Lt
+              | `Mod
+              | `Mul
+              | `Ne
+              | `Or
+              | `Sub ] * 'e * 'e
+          | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+          | `Ident of
+              string *
+              _[> `Const of 'e
+                | `Type of
+                    string *
+                    ([ `Bool | `Int | `User of String.t * string * 'f ] as 'f)
+                | `Var of string * 'f ]
+          | `Literal of '_g
+          | `Unop of [ `Neg | `Not ] * 'e ]
+        as 'e))
+      list * (string * 'f) list * (string list * 'f) list) *
+     (_[> `Assign of 'e * 'e
+        | `If of ('e * 'h list) list * 'h list
+        | `While of 'e * 'h list ]
+      as 'h)
+     list) *
+    < getName : String.t -> String.t >, Ostap.Msg.t)
+   Checked.t) *
+  (string *
+   ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+   'h list ->
+   (string *
+    ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+    (_[> `Assign of
+           ((_[> `Binop of
+                   [ `Add
+                   | `And
+                   | `Div
+                   | `Eq
+                   | `Ge
+                   | `Gt
+                   | `Le
+                   | `Lt
+                   | `Mod
+                   | `Mul
+                   | `Ne
+                   | `Or
+                   | `Sub ] * ('j * 'f) * ('j * 'f)
+               | `Const of [ `False | `Literal of int Monad.Id.t | `True ]
+               | `Ident of string * _[> `Const of 'e | `Var of string * 'f ]
+               | `Unop of _[> `Neg | `Not ] * ('j * 'f) ]
+             as 'j) *
+            'f) *
+           ('j * 'f)
+       | `If of (('j * 'f) * 'i list) list * 'i list
+       | `While of ('j * 'f) * 'i list ]
+     as 'i)
+    list, Ostap.Msg.t)
+   Checked.t) ->
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('a -> unit, Ostap.Msg.t) Checked.t >
+)
+ident(
+  int_ref toplevel0 "L1.ml" 194 6595 6599 "L1.ml" 194 6595 6608
+)
+"L1.ml" 197 6665 6671 "L1.ml" 197 6665 6684
+type(
+  Lexer.t ->
+  (Lexer.t,
+   string *
+   ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+   'd list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  int_ref Parse.program "L1.ml" 10 168 174 "L1.ml" 18 568 643
+)
+"L1.ml" 197 6665 6686 "L1.ml" 197 6665 6699
+type(
+  string *
+  ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+  'd list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref Print.program "L1.ml" 26 771 827 "L1.ml" 26 771 834
+)
+"L1.ml" 197 6665 6701 "L1.ml" 197 6665 6716
+type(
+  string *
+  ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+  'd list ->
+  ((string *
+    ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+    'h list) *
+   < getName : String.t -> String.t >, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  int_ref Resolve.program "L1.ml" 138 4693 4701 "L1.ml" 138 4693 4708
+)
+"L1.ml" 197 6665 6718 "L1.ml" 197 6665 6735
+type(
+  (< equal : 'f -> 'f -> bool; primitive : 'f -> bool;
+     string : 'f -> String.t > ->
+   ('e -> ('j * 'f) Monad.Checked.t) ->
+   (('h -> 'i Monad.Checked.t) -> 'h -> 'i Monad.Checked.t) ->
+   'h -> 'i Monad.Checked.t) ->
+  string *
+  ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+  'h list ->
+  (string *
+   ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+   'i list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  int_ref Typecheck.program "L1.ml" 169 5559 5566 "L1.ml" 169 5559 5573
+)
+"L1.ml" 197 6665 6736 "L1.ml" 197 6665 6761
+type(
+  < equal : 'f -> 'f -> bool; primitive : 'f -> bool;
+    string : 'f -> String.t > ->
+  ('e -> ('j * 'f) Monad.Checked.t) ->
+  (('h -> 'i Monad.Checked.t) -> 'h -> 'i Monad.Checked.t) ->
+  'h -> 'i Monad.Checked.t
+)
+ident(
+  ext_ref SimpleStatement.typecheck
+)
+"L1.ml" 197 6665 6718 "L1.ml" 197 6665 6761
+call(
+  stack
+)
+type(
+  string *
+  ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+  'h list ->
+  (string *
+   ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+   'i list, Ostap.Msg.t)
+  Checked.t
+)
+"L1.ml" 197 6665 6670 "L1.ml" 197 6665 6762
+type(
+  (Lexer.t ->
+   (Lexer.t,
+    string *
+    ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+    'd list, Ostap.Reason.t)
+   Ostap.Combinators.result) *
+  (string *
+   ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+   'd list -> Ostap.Pretty.printer) *
+  (string *
+   ((String.t * 'b) list * (String.t * 'c) list * (String.t list * 'c) list) *
+   'd list ->
+   ((string *
+     ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+     'h list) *
+    < getName : String.t -> String.t >, Ostap.Msg.t)
+   Checked.t) *
+  (string *
+   ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+   'h list ->
+   (string *
+    ((String.t * 'e) list * (string * 'f) list * (string list * 'f) list) *
+    'i list, Ostap.Msg.t)
+   Checked.t)
+)
+"L1.ml" 198 6764 6769 "L1.ml" 198 6764 6775
+type(
+  string
+)
+ident(
+  int_ref source "L1.ml" 195 6634 6642 "L1.ml" 195 6634 6648
+)
+"L1.ml" 196 6652 6654 "L1.ml" 198 6764 6775
+call(
+  tail
+)
+type(
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('a -> unit, Ostap.Msg.t) Checked.t >
+)
+"L1.ml" 195 6634 6642 "L1.ml" 198 6764 6775
+type(
+  string ->
+  < generate : unit -> (string * string, Ostap.Msg.t) Checked.t;
+    parse : unit -> (unit, Ostap.Msg.t) Checked.t;
+    print : unit -> (string, Ostap.Msg.t) Checked.t;
+    resolve : unit -> (unit, Ostap.Msg.t) Checked.t;
+    typecheck : unit -> ('a -> unit, Ostap.Msg.t) Checked.t >
+)

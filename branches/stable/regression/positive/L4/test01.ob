@@ -1,0 +1,36 @@
+MODULE Test;
+
+  CONST p = 2 + 1;
+        q = p*3 > 0;
+  TYPE A = ARRAY p OF ARRAY 10 OF INTEGER;
+       B = BOOLEAN;
+       C = RECORD X : A; Y, B : B END;
+  VAR i, y, z : INTEGER; x : A;
+      f : BOOLEAN;
+
+  PROCEDURE ff;
+  BEGIN
+    fun (x[1][2], TRUE)
+  END ff;
+
+  PROCEDURE fun (VAR x : INTEGER; ppp : BOOLEAN);
+  CONST N = 100;
+  TYPE F = ARRAY N OF C;
+  VAR y : F;
+  BEGIN
+   x := 1
+  END fun;
+
+  BEGIN
+    fun (x[1][2], TRUE);
+    fun (x[0][1], TRUE);
+    IF 1>0 THEN x[1][2] := 1 END;
+    FOR i:=0 TO 100 BY 2 DO f := x[2][3]+y>0 END;
+    CASE i OF 
+      1: x[0][1] := 1; y := 8 | 
+      2: x[1][0] := 2; i := 9 | 
+      3..4: x[2][3]:=8
+      ELSE x[4][5]:=100 
+    END
+ 
+END Test.

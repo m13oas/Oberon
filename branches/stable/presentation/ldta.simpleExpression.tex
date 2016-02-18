@@ -1,0 +1,16 @@
+\osprule{factor}{[reference]}{\osfralt \osrnonterm{located}\osrargs{\osrnonterm{literal}}\osralt \osrnonterm{located}\osrargs{\osrterm{TRUE}}\osralt \osrnonterm{located}\osrargs{\osrterm{FALSE}}\osralt \osrnonterm{located}\osrargs{\osrblock{\osrterm{``(''}\osbr \osrnonterm{expression}\osrargs{reference}\osbr \osrterm{``)''}}}\osralt \osrnonterm{located}\osrargs{\osrblock{\osrterm{``$\tilde{}$''}\osbr \osrnonterm{factor}\osrargs{reference}}}\osralt \osrnonterm{located}\osrargs{reference}}
+
+\osprule{term}{[reference]}{\osrnonterm{located}\osrargs{\osrblock{\osrnonterm{factor}\osrargs{reference}\osbr \osraster{\osrgroup{\osrblock{\osrnonterm{multiplicative}\osbr \osrnonterm{factor}\osrargs{reference}}}}}}}
+
+\osrule{multiplicative}{\osfralt \osrterm{``*''}\osralt \osrterm{DIV}\osralt \osrterm{MOD}\osralt \osrterm{``\&''}}
+
+\osprule{simpleExpression}{[reference]}{\osrnonterm{located}\osrargs{\osrblock{\osropt{\osrnonterm{unary}}\osbr \osrnonterm{term}\osrargs{reference}\osbr \osraster{\osrgroup{\osrblock{\osrnonterm{additive}\osbr \osrnonterm{term}\osrargs{reference}}}}}}}
+
+\osrule{additive}{\osfralt \osrterm{``+''}\osralt \osrterm{``-''}\osralt \osrterm{OR}}
+
+\osrule{unary}{\osfralt \osrterm{``+''}\osralt \osrterm{``-''}}
+
+\osprule{expression}{[reference]}{\osrnonterm{located}\osrargs{\osrblock{\osrnonterm{simpleExpression}\osrargs{reference}\osbr \osropt{\osrblock{\osrnonterm{comparison}\osbr \osrnonterm{simpleExpression}\osrargs{reference}}}}}}
+
+\osrule{comparison}{\osfralt \osrterm{``=''}\osralt \osrterm{``\#''}\osralt \osrterm{``$<$''}\osralt \osrterm{``$<$=''}\osralt \osrterm{``$>$''}\osralt \osrterm{``$>$=''}}
+

@@ -1,0 +1,5 @@
+version = "Revision: 2"
+description = ""
+requires = ""
+archive(byte) = "oberon0.cma"
+archive(native) = "oberon0.cmxa"

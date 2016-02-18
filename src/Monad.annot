@@ -1,0 +1,508 @@
+"Monad.ml" 15 338 346 "Monad.ml" 15 338 352
+type(
+  'a -> ('a, 'b) Checked.t
+)
+ident(
+  def return "Monad.ml" 16 360 364 "Monad.ml" 21 493 498
+)
+"Monad.ml" 15 338 355 "Monad.ml" 15 338 359
+type(
+  'a -> ('a, 'b) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"Monad.ml" 16 360 368 "Monad.ml" 16 360 373
+type(
+  ('c, 'd) Checked.t -> ('c -> ('e, 'd) Checked.t) -> ('e, 'd) Checked.t
+)
+ident(
+  def >>= "Monad.ml" 17 385 389 "Monad.ml" 21 493 498
+)
+"Monad.ml" 16 360 377 "Monad.ml" 16 360 384
+type(
+  ('c, 'd) Checked.t -> ('c -> ('e, 'd) Checked.t) -> ('e, 'd) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"Monad.ml" 17 385 393 "Monad.ml" 17 385 397
+type(
+  ('f, 'g) Checked.t -> ('f -> 'h) -> ('h, 'g) Checked.t
+)
+ident(
+  def >= "Monad.ml" 18 409 413 "Monad.ml" 21 493 498
+)
+"Monad.ml" 17 385 402 "Monad.ml" 17 385 408
+type(
+  ('f, 'g) Checked.t -> ('f -> 'h) -> ('h, 'g) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"Monad.ml" 18 409 417 "Monad.ml" 18 409 421
+type(
+  ('i, 'j) Checked.t list -> ('i list, 'j) Checked.t
+)
+ident(
+  def list "Monad.ml" 19 433 437 "Monad.ml" 21 493 498
+)
+"Monad.ml" 18 409 426 "Monad.ml" 18 409 432
+type(
+  ('i, 'j) Checked.t list -> ('i list, 'j) Checked.t
+)
+ident(
+  ext_ref Checked.( ?| )
+)
+"Monad.ml" 19 433 441 "Monad.ml" 19 433 446
+type(
+  ('k, 'l) Checked.t * ('m, 'l) Checked.t -> ('k * 'm, 'l) Checked.t
+)
+ident(
+  def tuple "Monad.ml" 20 456 460 "Monad.ml" 21 493 498
+)
+"Monad.ml" 19 433 450 "Monad.ml" 19 433 455
+type(
+  ('k, 'l) Checked.t * ('m, 'l) Checked.t -> ('k * 'm, 'l) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"Monad.ml" 20 456 464 "Monad.ml" 20 456 470
+type(
+  (('n, 'o) Checked.t -> ('n -> ('p, 'o) Checked.t) -> ('p, 'o) Checked.t) *
+  (('q, 'r) Checked.t list -> ('q list, 'r) Checked.t) *
+  (('s, 't) Checked.t * ('u, 't) Checked.t -> ('s * 'u, 't) Checked.t)
+)
+ident(
+  def scheme "Monad.ml" 20 456 492 "Monad.ml" 21 493 498
+)
+"Monad.ml" 20 456 474 "Monad.ml" 20 456 478
+type(
+  ('n, 'o) Checked.t -> ('n -> ('p, 'o) Checked.t) -> ('p, 'o) Checked.t
+)
+ident(
+  ext_ref Checked.bind
+)
+"Monad.ml" 20 456 480 "Monad.ml" 20 456 484
+type(
+  ('q, 'r) Checked.t list -> ('q list, 'r) Checked.t
+)
+ident(
+  int_ref list "Monad.ml" 18 409 417 "Monad.ml" 18 409 421
+)
+"Monad.ml" 20 456 486 "Monad.ml" 20 456 491
+type(
+  ('s, 't) Checked.t * ('u, 't) Checked.t -> ('s * 'u, 't) Checked.t
+)
+ident(
+  int_ref tuple "Monad.ml" 19 433 441 "Monad.ml" 19 433 446
+)
+"Monad.ml" 20 456 473 "Monad.ml" 20 456 492
+type(
+  (('n, 'o) Checked.t -> ('n -> ('p, 'o) Checked.t) -> ('p, 'o) Checked.t) *
+  (('q, 'r) Checked.t list -> ('q list, 'r) Checked.t) *
+  (('s, 't) Checked.t * ('u, 't) Checked.t -> ('s * 'u, 't) Checked.t)
+)
+"Monad.ml" 26 540 548 "Monad.ml" 26 540 554
+type(
+  'a -> 'a
+)
+ident(
+  def return "Monad.ml" 27 563 567 "Monad.ml" 31 662 667
+)
+"Monad.ml" 26 540 555 "Monad.ml" 26 540 556
+type(
+  'a
+)
+ident(
+  def x "Monad.ml" 26 540 561 "Monad.ml" 26 540 562
+)
+"Monad.ml" 26 540 561 "Monad.ml" 26 540 562
+type(
+  'a
+)
+ident(
+  int_ref x "Monad.ml" 26 540 555 "Monad.ml" 26 540 556
+)
+"Monad.ml" 26 540 555 "Monad.ml" 26 540 562
+type(
+  'a -> 'a
+)
+"Monad.ml" 27 563 571 "Monad.ml" 27 563 576
+type(
+  'b -> ('b -> 'c) -> 'c
+)
+ident(
+  def >>= "Monad.ml" 28 588 592 "Monad.ml" 31 662 667
+)
+"Monad.ml" 27 563 578 "Monad.ml" 27 563 579
+type(
+  'b
+)
+ident(
+  def x "Monad.ml" 27 563 580 "Monad.ml" 27 563 587
+)
+"Monad.ml" 27 563 580 "Monad.ml" 27 563 581
+type(
+  'b -> 'c
+)
+ident(
+  def f "Monad.ml" 27 563 584 "Monad.ml" 27 563 587
+)
+"Monad.ml" 27 563 584 "Monad.ml" 27 563 585
+type(
+  'b -> 'c
+)
+ident(
+  int_ref f "Monad.ml" 27 563 580 "Monad.ml" 27 563 581
+)
+"Monad.ml" 27 563 586 "Monad.ml" 27 563 587
+type(
+  'b
+)
+ident(
+  int_ref x "Monad.ml" 27 563 578 "Monad.ml" 27 563 579
+)
+"Monad.ml" 27 563 584 "Monad.ml" 27 563 587
+call(
+  tail
+)
+type(
+  'c
+)
+"Monad.ml" 27 563 580 "Monad.ml" 27 563 587
+type(
+  ('b -> 'c) -> 'c
+)
+"Monad.ml" 27 563 578 "Monad.ml" 27 563 587
+type(
+  'b -> ('b -> 'c) -> 'c
+)
+"Monad.ml" 28 588 596 "Monad.ml" 28 588 600
+type(
+  'd -> ('d -> 'e) -> 'e
+)
+ident(
+  def >= "Monad.ml" 29 616 620 "Monad.ml" 31 662 667
+)
+"Monad.ml" 28 588 609 "Monad.ml" 28 588 614
+type(
+  'd -> ('d -> 'e) -> 'e
+)
+ident(
+  int_ref >>= "Monad.ml" 27 563 571 "Monad.ml" 27 563 576
+)
+"Monad.ml" 29 616 624 "Monad.ml" 29 616 628
+type(
+  'f -> 'f
+)
+ident(
+  def list "Monad.ml" 30 639 643 "Monad.ml" 31 662 667
+)
+"Monad.ml" 29 616 631 "Monad.ml" 29 616 632
+type(
+  'f
+)
+ident(
+  def x "Monad.ml" 29 616 637 "Monad.ml" 29 616 638
+)
+"Monad.ml" 29 616 637 "Monad.ml" 29 616 638
+type(
+  'f
+)
+ident(
+  int_ref x "Monad.ml" 29 616 631 "Monad.ml" 29 616 632
+)
+"Monad.ml" 29 616 631 "Monad.ml" 29 616 638
+type(
+  'f -> 'f
+)
+"Monad.ml" 30 639 647 "Monad.ml" 30 639 652
+type(
+  'g -> 'g
+)
+ident(
+  def tuple "Monad.ml" 30 639 661 "Monad.ml" 31 662 667
+)
+"Monad.ml" 30 639 654 "Monad.ml" 30 639 655
+type(
+  'g
+)
+ident(
+  def x "Monad.ml" 30 639 660 "Monad.ml" 30 639 661
+)
+"Monad.ml" 30 639 660 "Monad.ml" 30 639 661
+type(
+  'g
+)
+ident(
+  int_ref x "Monad.ml" 30 639 654 "Monad.ml" 30 639 655
+)
+"Monad.ml" 30 639 654 "Monad.ml" 30 639 661
+type(
+  'g -> 'g
+)
+"Monad.ml" 36 717 725 "Monad.ml" 36 717 731
+type(
+  'a -> 'a list
+)
+ident(
+  def return "Monad.ml" 37 744 748 "Monad.ml" 41 911 916
+)
+"Monad.ml" 36 717 732 "Monad.ml" 36 717 733
+type(
+  'a
+)
+ident(
+  def x "Monad.ml" 36 717 740 "Monad.ml" 36 717 743
+)
+"Monad.ml" 36 717 741 "Monad.ml" 36 717 742
+type(
+  'a
+)
+ident(
+  int_ref x "Monad.ml" 36 717 732 "Monad.ml" 36 717 733
+)
+"Monad.ml" 36 717 740 "Monad.ml" 36 717 743
+type(
+  'a list
+)
+type(
+  'a list
+)
+"Monad.ml" 36 717 732 "Monad.ml" 36 717 743
+type(
+  'a -> 'a list
+)
+"Monad.ml" 37 744 752 "Monad.ml" 37 744 757
+type(
+  'b list -> ('b -> 'c list) -> 'c list
+)
+ident(
+  def >>= "Monad.ml" 38 795 799 "Monad.ml" 41 911 916
+)
+"Monad.ml" 37 744 759 "Monad.ml" 37 744 760
+type(
+  'b list
+)
+ident(
+  def x "Monad.ml" 37 744 761 "Monad.ml" 37 744 794
+)
+"Monad.ml" 37 744 761 "Monad.ml" 37 744 762
+type(
+  'b -> 'c list
+)
+ident(
+  def f "Monad.ml" 37 744 767 "Monad.ml" 37 744 794
+)
+"Monad.ml" 37 744 767 "Monad.ml" 37 744 779
+type(
+  'c list list -> 'c list
+)
+ident(
+  ext_ref List.flatten
+)
+"Monad.ml" 37 744 781 "Monad.ml" 37 744 789
+type(
+  ('b -> 'c list) -> 'b list -> 'c list list
+)
+ident(
+  ext_ref List.map
+)
+"Monad.ml" 37 744 790 "Monad.ml" 37 744 791
+type(
+  'b -> 'c list
+)
+ident(
+  int_ref f "Monad.ml" 37 744 761 "Monad.ml" 37 744 762
+)
+"Monad.ml" 37 744 792 "Monad.ml" 37 744 793
+type(
+  'b list
+)
+ident(
+  int_ref x "Monad.ml" 37 744 759 "Monad.ml" 37 744 760
+)
+"Monad.ml" 37 744 780 "Monad.ml" 37 744 794
+call(
+  stack
+)
+type(
+  'c list list
+)
+"Monad.ml" 37 744 767 "Monad.ml" 37 744 794
+call(
+  tail
+)
+type(
+  'c list
+)
+"Monad.ml" 37 744 761 "Monad.ml" 37 744 794
+type(
+  ('b -> 'c list) -> 'c list
+)
+"Monad.ml" 37 744 759 "Monad.ml" 37 744 794
+type(
+  'b list -> ('b -> 'c list) -> 'c list
+)
+"Monad.ml" 38 795 803 "Monad.ml" 38 795 807
+type(
+  'd list -> ('d -> 'e) -> 'e list
+)
+ident(
+  def >= "Monad.ml" 39 831 835 "Monad.ml" 41 911 916
+)
+"Monad.ml" 38 795 810 "Monad.ml" 38 795 811
+type(
+  'd list
+)
+ident(
+  def x "Monad.ml" 38 795 812 "Monad.ml" 38 795 830
+)
+"Monad.ml" 38 795 812 "Monad.ml" 38 795 813
+type(
+  'd -> 'e
+)
+ident(
+  def f "Monad.ml" 38 795 818 "Monad.ml" 38 795 830
+)
+"Monad.ml" 38 795 818 "Monad.ml" 38 795 826
+type(
+  ('d -> 'e) -> 'd list -> 'e list
+)
+ident(
+  ext_ref List.map
+)
+"Monad.ml" 38 795 827 "Monad.ml" 38 795 828
+type(
+  'd -> 'e
+)
+ident(
+  int_ref f "Monad.ml" 38 795 812 "Monad.ml" 38 795 813
+)
+"Monad.ml" 38 795 829 "Monad.ml" 38 795 830
+type(
+  'd list
+)
+ident(
+  int_ref x "Monad.ml" 38 795 810 "Monad.ml" 38 795 811
+)
+"Monad.ml" 38 795 818 "Monad.ml" 38 795 830
+call(
+  tail
+)
+type(
+  'e list
+)
+"Monad.ml" 38 795 812 "Monad.ml" 38 795 830
+type(
+  ('d -> 'e) -> 'e list
+)
+"Monad.ml" 38 795 810 "Monad.ml" 38 795 830
+type(
+  'd list -> ('d -> 'e) -> 'e list
+)
+"Monad.ml" 39 831 839 "Monad.ml" 39 831 843
+type(
+  'f list list -> 'f list list
+)
+ident(
+  def list "Monad.ml" 40 871 875 "Monad.ml" 41 911 916
+)
+"Monad.ml" 39 831 846 "Monad.ml" 39 831 847
+type(
+  'f list list
+)
+ident(
+  def x "Monad.ml" 39 831 854 "Monad.ml" 39 831 870
+)
+"Monad.ml" 39 831 855 "Monad.ml" 39 831 867
+type(
+  'f list list -> 'f list
+)
+ident(
+  ext_ref List.flatten
+)
+"Monad.ml" 39 831 868 "Monad.ml" 39 831 869
+type(
+  'f list list
+)
+ident(
+  int_ref x "Monad.ml" 39 831 846 "Monad.ml" 39 831 847
+)
+"Monad.ml" 39 831 855 "Monad.ml" 39 831 869
+call(
+  stack
+)
+type(
+  'f list
+)
+"Monad.ml" 39 831 854 "Monad.ml" 39 831 870
+type(
+  'f list list
+)
+type(
+  'f list list
+)
+"Monad.ml" 39 831 846 "Monad.ml" 39 831 870
+type(
+  'f list list -> 'f list list
+)
+"Monad.ml" 40 871 879 "Monad.ml" 40 871 884
+type(
+  'g list * 'h list -> ('g * 'h) list
+)
+ident(
+  def tuple "Monad.ml" 40 871 910 "Monad.ml" 41 911 916
+)
+"Monad.ml" 40 871 886 "Monad.ml" 40 871 887
+type(
+  'g list
+)
+ident(
+  def x "Monad.ml" 40 871 894 "Monad.ml" 40 871 910
+)
+"Monad.ml" 40 871 889 "Monad.ml" 40 871 890
+type(
+  'h list
+)
+ident(
+  def y "Monad.ml" 40 871 894 "Monad.ml" 40 871 910
+)
+"Monad.ml" 40 871 886 "Monad.ml" 40 871 890
+type(
+  'g list * 'h list
+)
+"Monad.ml" 40 871 894 "Monad.ml" 40 871 906
+type(
+  'g list -> 'h list -> ('g * 'h) list
+)
+ident(
+  ext_ref List.combine
+)
+"Monad.ml" 40 871 907 "Monad.ml" 40 871 908
+type(
+  'g list
+)
+ident(
+  int_ref x "Monad.ml" 40 871 886 "Monad.ml" 40 871 887
+)
+"Monad.ml" 40 871 909 "Monad.ml" 40 871 910
+type(
+  'h list
+)
+ident(
+  int_ref y "Monad.ml" 40 871 889 "Monad.ml" 40 871 890
+)
+"Monad.ml" 40 871 894 "Monad.ml" 40 871 910
+call(
+  tail
+)
+type(
+  ('g * 'h) list
+)
+"Monad.ml" 40 871 885 "Monad.ml" 40 871 910
+type(
+  'g list * 'h list -> ('g * 'h) list
+)

@@ -1,0 +1,10 @@
+\osprule{compositeType}{[expr][typ]}{\osfralt \osrnonterm{arrayType}\osrargs{expr}\osrargs{typ}\osralt \osrnonterm{recordType}\osrargs{typ}\osralt \osrnonterm{procedureType}\osrargs{typ}\osralt \osrnonterm{ident}}
+
+\osprule{arrayType}{[expr][typ]}{\osrblock{\osrterm{ARRAY}\osbr \osropt{expr}\osbr \osrterm{OF}\osbr typ}}
+
+\osprule{recordType}{[typ]}{\osrblock{\osrterm{RECORD}\osbr \osrnonterm{sequence}\osrargs{\osrnonterm{fieldList}\osrargs{typ}}\osbr \osrterm{END}}}
+
+\osprule{fieldList}{[typ]}{\osrblock{\osrnonterm{list}\osrargs{\osrnonterm{ident}}\osbr \osrterm{``:''}\osbr typ}}
+
+\osprule{procedureType}{[typ]}{\osrblock{\osrterm{PROCEDURE}\osbr \osropt{\osrnonterm{formalParameters}\osrargs{typ}}\osbr \osropt{\osrblock{\osrterm{``:''}\osbr typ}}}}
+

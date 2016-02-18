@@ -1,0 +1,52 @@
+Oberon0* compiler build instructions
+====================================
+
+1. Prerequisites:
+   a. Objective Caml v.3.12.0 and above (http://caml.inria.fr);
+   b. Camlp5 v.6.02.1 and above (http://pauillac.inria.fr/~ddr/camlp5/), configured
+      as "--strict";
+   c. Findlib (http://www.camlcity.org/archive/programming/findlib.html);
+   d. make, autoconf, automake, m4 etc.
+   e. Subversion client.
+   f. Custom libraries: logger, typeutil, setting, checked, ostap. All available
+      through anonymous svn from http://oops.math.spbu.ru/svn. Just do
+
+      $ svn co http://oops.math.spbu.ru/svn/$libname/trunk $libname
+
+      where $libname is one of those names. Then:
+
+      $ cd $libname
+      $ ./autogen.sh
+      $ ./configure
+      $ make
+      $ sudo make install
+
+2. Build instructions --- just like for the custom libraries:
+
+   $ ./autogen.sh
+   $ ./configure
+   $ make
+
+3. Binary name --- oberon0.opt and oberon0.byte (native vs. bytecode versions).
+
+4. Command line: oberon0.(opt | byte) [options] file-list
+
+   Options are:
+     -l, --level   --- specify language level (2-4).
+     -p, --print   --- pretty-print file.                  
+     -r, --resolve --- perform name binding.        
+     -t, --type    --- perform type-check.          
+     -h, --help    --- show help on options.  
+
+   Source file is always parsed; option -r forces name binding to be performed, option -t forces
+   both name binding and type checking to be performed.
+
+   Errors (if any) are written both to stderr and "*.errors" file.
+   Pretty-printed version is written to "*_pp.ob"
+
+
+Cheers,
+Dmitry Boulytchev,
+St.Petersburg State University.
+
+      

@@ -1,0 +1,14 @@
+\osrule{reference}{\osrnonterm{located}\osrargs{\osfralt \osrblock{\osraster{\osrterm{``$\hat{}$''}}\osbr \osrnonterm{ident}\osbr \osraster{\osrnonterm{selector}}}\osralt \osrblock{\osrterm{NEW}\osbr \osrnonterm{extendedType}}}}
+
+\osrule{selector}{\osrnonterm{located}\osrargs{\osfralt \osrgroup{\osrblock{\osrterm{``.''}\osbr \osrnonterm{ident}}}\osralt \osrgroup{\osrblock{\osrterm{``[''}\osbr \osrnonterm{expr}\osbr \osrterm{``]''}}}\osralt \osrgroup{\osrblock{\osrterm{``(''}\osbr \osrnonterm{list0}\osrargs{\osrnonterm{expr}}\osbr \osrterm{``)''}}}\osralt \osrterm{``$\hat{}$''}}}
+
+\osrule{expr}{\osrnonterm{expression}\osrargs{\osrnonterm{reference}}}
+
+\osrule{extendedType}{\osfralt \osrnonterm{primitiveType}\osralt \osrnonterm{compositeType}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{extendedType}}\osralt \osrnonterm{pointerType}\osrargs{\osrnonterm{extendedType}}}
+
+\osrule{declarations}{\osrblock{\osropt{\osrnonterm{constantDeclaration}\osrargs{\osrnonterm{expr}}}\osbr \osropt{\osrnonterm{typeDeclaration}\osrargs{\osrnonterm{extendedType}}}\osbr \osropt{\osrnonterm{variableDeclaration}\osrargs{\osrnonterm{extendedType}}}\osbr \osraster{\osrnonterm{procedureDeclaration}\osrargs{\osrnonterm{extendedType}}\osrargs{\osrnonterm{declarations}}\osrargs{\osrnonterm{statement}}}}}
+
+\osrule{statement}{\osfralt \osrnonterm{simpleStatement}\osrargs{\osrnonterm{reference}}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{statement}}\osralt \osrnonterm{extendedStatement}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{statement}}\osralt \osrblock{\osrterm{FREE}\osbr \osrnonterm{expr}}}
+
+\osrule{level5}{\osrnonterm{moduleDefinition}\osrargs{\osrnonterm{declarations}}\osrargs{\osrnonterm{statement}}}
+

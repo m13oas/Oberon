@@ -1,0 +1,902 @@
+"VarDecl.ml" 6 119 132 "VarDecl.ml" 6 119 135
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'f * Ostap.Msg.Coord.t ]; .. >
+   as 'a, 'g, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  def typ "VarDecl.ml" 6 119 126 "VarDecl.ml" 6 119 187
+)
+"VarDecl.ml" 6 119 139 "VarDecl.ml" 6 119 142
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"VarDecl.ml" 6 119 143 "VarDecl.ml" 6 119 148
+type(
+  string
+)
+"VarDecl.ml" 6 119 139 "VarDecl.ml" 6 119 149
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 139 "VarDecl.ml" 6 119 149
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 139 "VarDecl.ml" 6 119 149
+)
+"VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 155
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, string list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Ostap.Util.list
+)
+"VarDecl.ml" 6 119 163 "VarDecl.ml" 6 119 168
+type(
+  'a -> ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.ident
+)
+"VarDecl.ml" 6 119 156 "VarDecl.ml" 6 119 169
+call(
+  tail
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 156 "VarDecl.ml" 6 119 169
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 156 "VarDecl.ml" 6 119 169
+)
+"VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 170
+call(
+  tail
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 170
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 170
+)
+"VarDecl.ml" 6 119 172 "VarDecl.ml" 6 119 175
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 172 "VarDecl.ml" 6 119 175
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 172 "VarDecl.ml" 6 119 175
+)
+"VarDecl.ml" 6 119 176 "VarDecl.ml" 6 119 179
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "VarDecl.ml" 6 119 132 "VarDecl.ml" 6 119 135
+)
+"VarDecl.ml" 6 119 181 "VarDecl.ml" 6 119 184
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 181 "VarDecl.ml" 6 119 184
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 181 "VarDecl.ml" 6 119 184
+)
+"VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 184
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  string list ->
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'g -> ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> string list * 'g
+)
+type(
+  string list * 'g
+)
+type(
+  'g
+)
+ident(
+  int_ref _0 "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 184
+)
+type(
+  string list
+)
+ident(
+  int_ref _1 "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 184
+)
+type(
+  'c
+)
+type(
+  ('c -> string list * 'g) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g
+)
+ident(
+  def _0 "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 184
+)
+type(
+  'g
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('g -> ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c -> ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  string list
+)
+ident(
+  def _1 "VarDecl.ml" 6 119 151 "VarDecl.ml" 6 119 184
+)
+type(
+  string list
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (string list ->
+   ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"VarDecl.ml" 6 119 150 "VarDecl.ml" 6 119 187
+call(
+  tail
+)
+type(
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list * 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.many
+)
+"VarDecl.ml" 6 119 138 "VarDecl.ml" 6 119 187
+type(
+  'e -> ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e ->
+   ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"VarDecl.ml" 6 119 126 "VarDecl.ml" 6 119 187
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "VarDecl.ml" 6 119 126 "VarDecl.ml" 6 119 187
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "VarDecl.ml" 6 119 126 "VarDecl.ml" 6 119 187
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string list * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def parse "VarDecl.ml" 6 119 119 "VarDecl.ml" 1 0 -1
+)
+"VarDecl.ml" 13 310 314 "VarDecl.ml" 13 310 319
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  def print "VarDecl.ml" 30 654 654 "VarDecl.ml" 1 0 -1
+)
+"VarDecl.ml" 13 310 320 "VarDecl.ml" 13 310 323
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "VarDecl.ml" 13 310 326 "VarDecl.ml" 28 647 652
+)
+"VarDecl.ml" 14 335 337 "VarDecl.ml" 14 335 339
+type(
+  (string list * 'a) list
+)
+"VarDecl.ml" 14 335 343 "VarDecl.ml" 14 335 345
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 15 346 348 "VarDecl.ml" 15 346 349
+type(
+  (string list * 'a) list
+)
+ident(
+  def t "VarDecl.ml" 16 353 357 "VarDecl.ml" 28 647 652
+)
+"VarDecl.ml" 16 353 358 "VarDecl.ml" 16 353 363
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"VarDecl.ml" 16 353 365 "VarDecl.ml" 16 353 371
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 16 353 372 "VarDecl.ml" 16 353 377
+type(
+  string
+)
+"VarDecl.ml" 16 353 364 "VarDecl.ml" 16 353 378
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 17 379 386 "VarDecl.ml" 17 379 390
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"VarDecl.ml" 18 392 402 "VarDecl.ml" 18 392 405
+type(
+  (string list * 'a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"VarDecl.ml" 19 407 424 "VarDecl.ml" 19 407 429
+type(
+  string list
+)
+ident(
+  def names "VarDecl.ml" 20 438 452 "VarDecl.ml" 23 579 594
+)
+"VarDecl.ml" 19 407 431 "VarDecl.ml" 19 407 432
+type(
+  'a
+)
+ident(
+  def t "VarDecl.ml" 20 438 452 "VarDecl.ml" 23 579 594
+)
+"VarDecl.ml" 19 407 424 "VarDecl.ml" 19 407 432
+type(
+  string list * 'a
+)
+"VarDecl.ml" 20 438 452 "VarDecl.ml" 20 438 455
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"VarDecl.ml" 20 438 457 "VarDecl.ml" 20 438 465
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.hovboxed
+)
+"VarDecl.ml" 20 438 467 "VarDecl.ml" 20 438 483
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listByCommaBreak
+)
+"VarDecl.ml" 20 438 485 "VarDecl.ml" 20 438 488
+type(
+  (string -> Ostap.Pretty.printer) ->
+  string list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"VarDecl.ml" 20 438 489 "VarDecl.ml" 20 438 495
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 20 438 496 "VarDecl.ml" 20 438 501
+type(
+  string list
+)
+ident(
+  int_ref names "VarDecl.ml" 19 407 424 "VarDecl.ml" 19 407 429
+)
+"VarDecl.ml" 20 438 484 "VarDecl.ml" 20 438 502
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 20 438 466 "VarDecl.ml" 20 438 503
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 20 438 457 "VarDecl.ml" 20 438 503
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 21 505 524 "VarDecl.ml" 21 505 530
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 21 505 531 "VarDecl.ml" 21 505 534
+type(
+  string
+)
+"VarDecl.ml" 21 505 524 "VarDecl.ml" 21 505 534
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 22 536 555 "VarDecl.ml" 22 536 558
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"VarDecl.ml" 22 536 560 "VarDecl.ml" 22 536 563
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "VarDecl.ml" 13 310 320 "VarDecl.ml" 13 310 323
+)
+"VarDecl.ml" 22 536 564 "VarDecl.ml" 22 536 565
+type(
+  'a
+)
+ident(
+  int_ref t "VarDecl.ml" 19 407 431 "VarDecl.ml" 19 407 432
+)
+"VarDecl.ml" 22 536 560 "VarDecl.ml" 22 536 565
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 22 536 567 "VarDecl.ml" 22 536 573
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 22 536 574 "VarDecl.ml" 22 536 577
+type(
+  string
+)
+"VarDecl.ml" 22 536 567 "VarDecl.ml" 22 536 577
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 22 536 559 "VarDecl.ml" 22 536 578
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 22 536 555 "VarDecl.ml" 22 536 578
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 20 438 456 "VarDecl.ml" 23 579 594
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 20 438 452 "VarDecl.ml" 23 579 594
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 19 407 418 "VarDecl.ml" 24 595 607
+type(
+  string list * 'a -> Ostap.Pretty.printer
+)
+"VarDecl.ml" 25 609 620 "VarDecl.ml" 25 609 621
+type(
+  (string list * 'a) list
+)
+ident(
+  int_ref t "VarDecl.ml" 15 346 348 "VarDecl.ml" 15 346 349
+)
+"VarDecl.ml" 18 392 401 "VarDecl.ml" 26 622 631
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 17 379 385 "VarDecl.ml" 27 639 646
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 16 353 358 "VarDecl.ml" 27 639 646
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 16 353 357 "VarDecl.ml" 28 647 652
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 13 310 326 "VarDecl.ml" 28 647 652
+type(
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+"VarDecl.ml" 13 310 320 "VarDecl.ml" 28 647 652
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+"VarDecl.ml" 30 654 658 "VarDecl.ml" 30 654 665
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  def print_c "VarDecl.ml" 40 861 864 "VarDecl.ml" 1 0 -1
+)
+"VarDecl.ml" 30 654 666 "VarDecl.ml" 30 654 669
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "VarDecl.ml" 30 654 672 "VarDecl.ml" 40 861 864
+)
+"VarDecl.ml" 31 681 683 "VarDecl.ml" 31 681 685
+type(
+  (string list * 'a) list
+)
+"VarDecl.ml" 31 681 689 "VarDecl.ml" 31 681 691
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 32 692 694 "VarDecl.ml" 32 692 695
+type(
+  (string list * 'a) list
+)
+ident(
+  def t "VarDecl.ml" 33 699 701 "VarDecl.ml" 40 861 864
+)
+"VarDecl.ml" 33 699 702 "VarDecl.ml" 33 699 706
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"VarDecl.ml" 34 708 713 "VarDecl.ml" 34 708 716
+type(
+  (string list * 'a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"VarDecl.ml" 35 718 730 "VarDecl.ml" 35 718 735
+type(
+  string list
+)
+ident(
+  def names "VarDecl.ml" 36 744 753 "VarDecl.ml" 36 744 830
+)
+"VarDecl.ml" 35 718 737 "VarDecl.ml" 35 718 738
+type(
+  'a
+)
+ident(
+  def t "VarDecl.ml" 36 744 753 "VarDecl.ml" 36 744 830
+)
+"VarDecl.ml" 35 718 730 "VarDecl.ml" 35 718 738
+type(
+  string list * 'a
+)
+"VarDecl.ml" 36 744 753 "VarDecl.ml" 36 744 756
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"VarDecl.ml" 36 744 758 "VarDecl.ml" 36 744 761
+type(
+  (string -> Ostap.Pretty.printer) ->
+  string list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"VarDecl.ml" 36 744 767 "VarDecl.ml" 36 744 771
+type(
+  string
+)
+ident(
+  def name "VarDecl.ml" 36 744 775 "VarDecl.ml" 36 744 822
+)
+"VarDecl.ml" 36 744 775 "VarDecl.ml" 36 744 778
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"VarDecl.ml" 36 744 780 "VarDecl.ml" 36 744 783
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "VarDecl.ml" 30 654 666 "VarDecl.ml" 30 654 669
+)
+"VarDecl.ml" 36 744 785 "VarDecl.ml" 36 744 791
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 36 744 793 "VarDecl.ml" 36 744 797
+type(
+  string
+)
+ident(
+  int_ref name "VarDecl.ml" 36 744 767 "VarDecl.ml" 36 744 771
+)
+"VarDecl.ml" 36 744 800 "VarDecl.ml" 36 744 805
+type(
+  string
+)
+"VarDecl.ml" 36 744 793 "VarDecl.ml" 36 744 805
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"VarDecl.ml" 36 744 792 "VarDecl.ml" 36 744 806
+call(
+  stack
+)
+type(
+  string
+)
+"VarDecl.ml" 36 744 784 "VarDecl.ml" 36 744 807
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 36 744 808 "VarDecl.ml" 36 744 809
+type(
+  'a
+)
+ident(
+  int_ref t "VarDecl.ml" 35 718 737 "VarDecl.ml" 35 718 738
+)
+"VarDecl.ml" 36 744 780 "VarDecl.ml" 36 744 809
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 36 744 811 "VarDecl.ml" 36 744 817
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"VarDecl.ml" 36 744 818 "VarDecl.ml" 36 744 821
+type(
+  string
+)
+"VarDecl.ml" 36 744 811 "VarDecl.ml" 36 744 821
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 36 744 779 "VarDecl.ml" 36 744 822
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 36 744 775 "VarDecl.ml" 36 744 822
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 36 744 762 "VarDecl.ml" 36 744 823
+type(
+  string -> Ostap.Pretty.printer
+)
+"VarDecl.ml" 36 744 824 "VarDecl.ml" 36 744 829
+type(
+  string list
+)
+ident(
+  int_ref names "VarDecl.ml" 35 718 730 "VarDecl.ml" 35 718 735
+)
+"VarDecl.ml" 36 744 757 "VarDecl.ml" 36 744 830
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 36 744 753 "VarDecl.ml" 36 744 830
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 35 718 724 "VarDecl.ml" 37 831 838
+type(
+  string list * 'a -> Ostap.Pretty.printer
+)
+"VarDecl.ml" 38 840 846 "VarDecl.ml" 38 840 847
+type(
+  (string list * 'a) list
+)
+ident(
+  int_ref t "VarDecl.ml" 32 692 694 "VarDecl.ml" 32 692 695
+)
+"VarDecl.ml" 34 708 712 "VarDecl.ml" 39 848 853
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 33 699 702 "VarDecl.ml" 39 848 853
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"VarDecl.ml" 33 699 701 "VarDecl.ml" 40 861 864
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"VarDecl.ml" 30 654 672 "VarDecl.ml" 40 861 864
+type(
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)
+"VarDecl.ml" 30 654 666 "VarDecl.ml" 40 861 864
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string list * 'a) list -> Ostap.Pretty.printer list
+)

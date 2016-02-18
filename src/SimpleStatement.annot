@@ -1,0 +1,6346 @@
+"SimpleStatement.ml" 10 179 191 "SimpleStatement.ml" 10 179 195
+type(
+  < assign : ([> `Assign of 'b * 'c
+               | `If of ('c * 'a list) list * 'a list
+               | `While of 'c * 'a list ]
+              as 'a) ->
+             'd -> 'e -> 'f M.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f M.t;
+    whilec : 'a -> 'e -> 'f list -> 'f M.t; .. > ->
+  ('b -> 'd M.t) ->
+  ('c -> 'e M.t) -> (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+ident(
+  def gmap "SimpleStatement.ml" 10 179 183 "SimpleStatement.ml" 20 702 707
+)
+"SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 10 179 197
+type(
+  < assign : 'a -> 'd -> 'e -> 'f M.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f M.t;
+    whilec : 'a -> 'e -> 'f list -> 'f M.t; .. >
+  as 'g
+)
+ident(
+  def t "SimpleStatement.ml" 10 179 198 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 10 179 198 "SimpleStatement.ml" 10 179 201
+type(
+  'b -> 'd M.t
+)
+ident(
+  def ref "SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 10 179 206
+type(
+  'c -> 'e M.t
+)
+ident(
+  def expr "SimpleStatement.ml" 10 179 207 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 10 179 207 "SimpleStatement.ml" 10 179 210
+type(
+  ('a -> 'f M.t) -> 'a -> 'f M.t
+)
+ident(
+  def ext "SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 10 179 215
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 11 218 224 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 11 218 228 "SimpleStatement.ml" 11 218 232
+type(
+  'a -> 'f M.t
+)
+ident(
+  def self "SimpleStatement.ml" 12 258 264 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 11 218 235 "SimpleStatement.ml" 11 218 239
+type(
+  'g ->
+  ('b -> 'd M.t) ->
+  ('c -> 'e M.t) -> (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+ident(
+  int_ref gmap "SimpleStatement.ml" 10 179 191 "SimpleStatement.ml" 10 179 195
+)
+"SimpleStatement.ml" 11 218 240 "SimpleStatement.ml" 11 218 241
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 10 179 197
+)
+"SimpleStatement.ml" 11 218 242 "SimpleStatement.ml" 11 218 245
+type(
+  'b -> 'd M.t
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 10 179 198 "SimpleStatement.ml" 10 179 201
+)
+"SimpleStatement.ml" 11 218 246 "SimpleStatement.ml" 11 218 250
+type(
+  'c -> 'e M.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 10 179 206
+)
+"SimpleStatement.ml" 11 218 251 "SimpleStatement.ml" 11 218 254
+type(
+  ('a -> 'f M.t) -> 'a -> 'f M.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 10 179 207 "SimpleStatement.ml" 10 179 210
+)
+"SimpleStatement.ml" 11 218 235 "SimpleStatement.ml" 11 218 254
+call(
+  stack
+)
+type(
+  'a -> 'f M.t
+)
+"SimpleStatement.ml" 12 258 270 "SimpleStatement.ml" 12 258 274
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 10 179 215
+)
+"SimpleStatement.ml" 13 280 297 "SimpleStatement.ml" 13 280 298
+type(
+  'b
+)
+ident(
+  def x "SimpleStatement.ml" 13 280 306 "SimpleStatement.ml" 13 280 365
+)
+"SimpleStatement.ml" 13 280 300 "SimpleStatement.ml" 13 280 301
+type(
+  'c
+)
+ident(
+  def y "SimpleStatement.ml" 13 280 306 "SimpleStatement.ml" 13 280 365
+)
+"SimpleStatement.ml" 13 280 297 "SimpleStatement.ml" 13 280 301
+type(
+  'b * 'c
+)
+"SimpleStatement.ml" 13 280 288 "SimpleStatement.ml" 13 280 302
+type(
+  'a
+)
+"SimpleStatement.ml" 13 280 306 "SimpleStatement.ml" 13 280 311
+type(
+  'd M.t * 'e M.t -> ('d * 'e) M.t
+)
+ident(
+  ext_ref M.tuple
+)
+"SimpleStatement.ml" 13 280 313 "SimpleStatement.ml" 13 280 316
+type(
+  'b -> 'd M.t
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 10 179 198 "SimpleStatement.ml" 10 179 201
+)
+"SimpleStatement.ml" 13 280 317 "SimpleStatement.ml" 13 280 318
+type(
+  'b
+)
+ident(
+  int_ref x "SimpleStatement.ml" 13 280 297 "SimpleStatement.ml" 13 280 298
+)
+"SimpleStatement.ml" 13 280 313 "SimpleStatement.ml" 13 280 318
+call(
+  stack
+)
+type(
+  'd M.t
+)
+"SimpleStatement.ml" 13 280 320 "SimpleStatement.ml" 13 280 324
+type(
+  'c -> 'e M.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 10 179 206
+)
+"SimpleStatement.ml" 13 280 325 "SimpleStatement.ml" 13 280 326
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 13 280 300 "SimpleStatement.ml" 13 280 301
+)
+"SimpleStatement.ml" 13 280 320 "SimpleStatement.ml" 13 280 326
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleStatement.ml" 13 280 312 "SimpleStatement.ml" 13 280 327
+type(
+  'd M.t * 'e M.t
+)
+"SimpleStatement.ml" 13 280 306 "SimpleStatement.ml" 13 280 327
+call(
+  stack
+)
+type(
+  ('d * 'e) M.t
+)
+"SimpleStatement.ml" 13 280 338 "SimpleStatement.ml" 13 280 339
+type(
+  'd
+)
+ident(
+  def x "SimpleStatement.ml" 13 280 347 "SimpleStatement.ml" 13 280 364
+)
+"SimpleStatement.ml" 13 280 341 "SimpleStatement.ml" 13 280 342
+type(
+  'e
+)
+ident(
+  def y "SimpleStatement.ml" 13 280 347 "SimpleStatement.ml" 13 280 364
+)
+"SimpleStatement.ml" 13 280 338 "SimpleStatement.ml" 13 280 342
+type(
+  'd * 'e
+)
+"SimpleStatement.ml" 13 280 347 "SimpleStatement.ml" 13 280 348
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 10 179 197
+)
+"SimpleStatement.ml" 13 280 347 "SimpleStatement.ml" 13 280 355
+call(
+  tail
+)
+type(
+  'a -> 'd -> 'e -> 'f M.t
+)
+"SimpleStatement.ml" 13 280 356 "SimpleStatement.ml" 13 280 360
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 10 179 215
+)
+"SimpleStatement.ml" 13 280 361 "SimpleStatement.ml" 13 280 362
+type(
+  'd
+)
+ident(
+  int_ref x "SimpleStatement.ml" 13 280 338 "SimpleStatement.ml" 13 280 339
+)
+"SimpleStatement.ml" 13 280 363 "SimpleStatement.ml" 13 280 364
+type(
+  'e
+)
+ident(
+  int_ref y "SimpleStatement.ml" 13 280 341 "SimpleStatement.ml" 13 280 342
+)
+"SimpleStatement.ml" 13 280 347 "SimpleStatement.ml" 13 280 364
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 13 280 332 "SimpleStatement.ml" 13 280 365
+type(
+  'd * 'e -> 'f M.t
+)
+"SimpleStatement.ml" 13 280 306 "SimpleStatement.ml" 13 280 365
+call(
+  tail
+)
+type(
+  'f M.t
+)
+type(
+  ('d * 'e) M.t -> ('d * 'e -> 'f M.t) -> 'f M.t
+)
+ident(
+  ext_ref M.( >>= )
+)
+"SimpleStatement.ml" 14 366 379 "SimpleStatement.ml" 14 366 380
+type(
+  ('c * 'a list) list
+)
+ident(
+  def b "SimpleStatement.ml" 15 389 400 "SimpleStatement.ml" 17 531 578
+)
+"SimpleStatement.ml" 14 366 382 "SimpleStatement.ml" 14 366 383
+type(
+  'a list
+)
+ident(
+  def e "SimpleStatement.ml" 15 389 400 "SimpleStatement.ml" 17 531 578
+)
+"SimpleStatement.ml" 14 366 379 "SimpleStatement.ml" 14 366 383
+type(
+  ('c * 'a list) list * 'a list
+)
+"SimpleStatement.ml" 14 366 374 "SimpleStatement.ml" 14 366 384
+type(
+  'a
+)
+"SimpleStatement.ml" 15 389 400 "SimpleStatement.ml" 15 389 405
+type(
+  ('e * 'f list) list M.t * 'f list M.t ->
+  (('e * 'f list) list * 'f list) M.t
+)
+ident(
+  ext_ref M.tuple
+)
+"SimpleStatement.ml" 15 389 407 "SimpleStatement.ml" 15 389 411
+type(
+  ('e * 'f list) M.t list -> ('e * 'f list) list M.t
+)
+ident(
+  ext_ref M.list
+)
+"SimpleStatement.ml" 15 389 413 "SimpleStatement.ml" 15 389 416
+type(
+  ('c * 'a list -> ('e * 'f list) M.t) ->
+  ('c * 'a list) list -> ('e * 'f list) M.t list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 15 389 423 "SimpleStatement.ml" 15 389 424
+type(
+  'c
+)
+ident(
+  def e "SimpleStatement.ml" 15 389 432 "SimpleStatement.ml" 15 389 489
+)
+"SimpleStatement.ml" 15 389 426 "SimpleStatement.ml" 15 389 427
+type(
+  'a list
+)
+ident(
+  def s "SimpleStatement.ml" 15 389 432 "SimpleStatement.ml" 15 389 489
+)
+"SimpleStatement.ml" 15 389 423 "SimpleStatement.ml" 15 389 427
+type(
+  'c * 'a list
+)
+"SimpleStatement.ml" 15 389 432 "SimpleStatement.ml" 15 389 437
+type(
+  'e M.t * 'f list M.t -> ('e * 'f list) M.t
+)
+ident(
+  ext_ref M.tuple
+)
+"SimpleStatement.ml" 15 389 439 "SimpleStatement.ml" 15 389 443
+type(
+  'c -> 'e M.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 10 179 206
+)
+"SimpleStatement.ml" 15 389 444 "SimpleStatement.ml" 15 389 445
+type(
+  'c
+)
+ident(
+  int_ref e "SimpleStatement.ml" 15 389 423 "SimpleStatement.ml" 15 389 424
+)
+"SimpleStatement.ml" 15 389 439 "SimpleStatement.ml" 15 389 445
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleStatement.ml" 15 389 447 "SimpleStatement.ml" 15 389 451
+type(
+  'f M.t list -> 'f list M.t
+)
+ident(
+  ext_ref M.list
+)
+"SimpleStatement.ml" 15 389 453 "SimpleStatement.ml" 15 389 456
+type(
+  ('a -> 'f M.t) -> 'a list -> 'f M.t list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 15 389 457 "SimpleStatement.ml" 15 389 461
+type(
+  'a -> 'f M.t
+)
+ident(
+  int_ref self "SimpleStatement.ml" 11 218 228 "SimpleStatement.ml" 11 218 232
+)
+"SimpleStatement.ml" 15 389 462 "SimpleStatement.ml" 15 389 463
+type(
+  'a list
+)
+ident(
+  int_ref s "SimpleStatement.ml" 15 389 426 "SimpleStatement.ml" 15 389 427
+)
+"SimpleStatement.ml" 15 389 452 "SimpleStatement.ml" 15 389 464
+call(
+  stack
+)
+type(
+  'f M.t list
+)
+"SimpleStatement.ml" 15 389 447 "SimpleStatement.ml" 15 389 464
+call(
+  stack
+)
+type(
+  'f list M.t
+)
+"SimpleStatement.ml" 15 389 438 "SimpleStatement.ml" 15 389 465
+type(
+  'e M.t * 'f list M.t
+)
+"SimpleStatement.ml" 15 389 432 "SimpleStatement.ml" 15 389 465
+call(
+  stack
+)
+type(
+  ('e * 'f list) M.t
+)
+"SimpleStatement.ml" 15 389 475 "SimpleStatement.ml" 15 389 476
+type(
+  'e
+)
+ident(
+  def e "SimpleStatement.ml" 15 389 484 "SimpleStatement.ml" 15 389 488
+)
+"SimpleStatement.ml" 15 389 478 "SimpleStatement.ml" 15 389 479
+type(
+  'f list
+)
+ident(
+  def s "SimpleStatement.ml" 15 389 484 "SimpleStatement.ml" 15 389 488
+)
+"SimpleStatement.ml" 15 389 475 "SimpleStatement.ml" 15 389 479
+type(
+  'e * 'f list
+)
+"SimpleStatement.ml" 15 389 484 "SimpleStatement.ml" 15 389 485
+type(
+  'e
+)
+ident(
+  int_ref e "SimpleStatement.ml" 15 389 475 "SimpleStatement.ml" 15 389 476
+)
+"SimpleStatement.ml" 15 389 487 "SimpleStatement.ml" 15 389 488
+type(
+  'f list
+)
+ident(
+  int_ref s "SimpleStatement.ml" 15 389 478 "SimpleStatement.ml" 15 389 479
+)
+"SimpleStatement.ml" 15 389 484 "SimpleStatement.ml" 15 389 488
+type(
+  'e * 'f list
+)
+"SimpleStatement.ml" 15 389 469 "SimpleStatement.ml" 15 389 489
+type(
+  'e * 'f list -> 'e * 'f list
+)
+"SimpleStatement.ml" 15 389 432 "SimpleStatement.ml" 15 389 489
+call(
+  tail
+)
+type(
+  ('e * 'f list) M.t
+)
+type(
+  ('e * 'f list) M.t -> ('e * 'f list -> 'e * 'f list) -> ('e * 'f list) M.t
+)
+ident(
+  ext_ref M.( >= )
+)
+"SimpleStatement.ml" 15 389 417 "SimpleStatement.ml" 15 389 490
+type(
+  'c * 'a list -> ('e * 'f list) M.t
+)
+"SimpleStatement.ml" 15 389 491 "SimpleStatement.ml" 15 389 492
+type(
+  ('c * 'a list) list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 14 366 379 "SimpleStatement.ml" 14 366 380
+)
+"SimpleStatement.ml" 15 389 412 "SimpleStatement.ml" 15 389 493
+call(
+  stack
+)
+type(
+  ('e * 'f list) M.t list
+)
+"SimpleStatement.ml" 15 389 407 "SimpleStatement.ml" 15 389 493
+call(
+  stack
+)
+type(
+  ('e * 'f list) list M.t
+)
+"SimpleStatement.ml" 16 495 513 "SimpleStatement.ml" 16 495 517
+type(
+  'f M.t list -> 'f list M.t
+)
+ident(
+  ext_ref M.list
+)
+"SimpleStatement.ml" 16 495 519 "SimpleStatement.ml" 16 495 522
+type(
+  ('a -> 'f M.t) -> 'a list -> 'f M.t list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 16 495 523 "SimpleStatement.ml" 16 495 527
+type(
+  'a -> 'f M.t
+)
+ident(
+  int_ref self "SimpleStatement.ml" 11 218 228 "SimpleStatement.ml" 11 218 232
+)
+"SimpleStatement.ml" 16 495 528 "SimpleStatement.ml" 16 495 529
+type(
+  'a list
+)
+ident(
+  int_ref e "SimpleStatement.ml" 14 366 382 "SimpleStatement.ml" 14 366 383
+)
+"SimpleStatement.ml" 16 495 518 "SimpleStatement.ml" 16 495 530
+call(
+  stack
+)
+type(
+  'f M.t list
+)
+"SimpleStatement.ml" 16 495 513 "SimpleStatement.ml" 16 495 530
+call(
+  stack
+)
+type(
+  'f list M.t
+)
+"SimpleStatement.ml" 15 389 406 "SimpleStatement.ml" 17 531 543
+type(
+  ('e * 'f list) list M.t * 'f list M.t
+)
+"SimpleStatement.ml" 15 389 400 "SimpleStatement.ml" 17 531 543
+call(
+  stack
+)
+type(
+  (('e * 'f list) list * 'f list) M.t
+)
+"SimpleStatement.ml" 17 531 554 "SimpleStatement.ml" 17 531 555
+type(
+  ('e * 'f list) list
+)
+ident(
+  def b "SimpleStatement.ml" 17 531 563 "SimpleStatement.ml" 17 531 577
+)
+"SimpleStatement.ml" 17 531 557 "SimpleStatement.ml" 17 531 558
+type(
+  'f list
+)
+ident(
+  def e "SimpleStatement.ml" 17 531 563 "SimpleStatement.ml" 17 531 577
+)
+"SimpleStatement.ml" 17 531 554 "SimpleStatement.ml" 17 531 558
+type(
+  ('e * 'f list) list * 'f list
+)
+"SimpleStatement.ml" 17 531 563 "SimpleStatement.ml" 17 531 564
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 10 179 197
+)
+"SimpleStatement.ml" 17 531 563 "SimpleStatement.ml" 17 531 568
+call(
+  tail
+)
+type(
+  'a -> ('e * 'f list) list -> 'f list -> 'f M.t
+)
+"SimpleStatement.ml" 17 531 569 "SimpleStatement.ml" 17 531 573
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 10 179 215
+)
+"SimpleStatement.ml" 17 531 574 "SimpleStatement.ml" 17 531 575
+type(
+  ('e * 'f list) list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 17 531 554 "SimpleStatement.ml" 17 531 555
+)
+"SimpleStatement.ml" 17 531 576 "SimpleStatement.ml" 17 531 577
+type(
+  'f list
+)
+ident(
+  int_ref e "SimpleStatement.ml" 17 531 557 "SimpleStatement.ml" 17 531 558
+)
+"SimpleStatement.ml" 17 531 563 "SimpleStatement.ml" 17 531 577
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 17 531 548 "SimpleStatement.ml" 17 531 578
+type(
+  ('e * 'f list) list * 'f list -> 'f M.t
+)
+"SimpleStatement.ml" 15 389 400 "SimpleStatement.ml" 17 531 578
+call(
+  tail
+)
+type(
+  'f M.t
+)
+type(
+  (('e * 'f list) list * 'f list) M.t ->
+  (('e * 'f list) list * 'f list -> 'f M.t) -> 'f M.t
+)
+ident(
+  ext_ref M.( >>= )
+)
+"SimpleStatement.ml" 18 580 597 "SimpleStatement.ml" 18 580 598
+type(
+  'c
+)
+ident(
+  def c "SimpleStatement.ml" 18 580 606 "SimpleStatement.ml" 18 580 677
+)
+"SimpleStatement.ml" 18 580 600 "SimpleStatement.ml" 18 580 601
+type(
+  'a list
+)
+ident(
+  def b "SimpleStatement.ml" 18 580 606 "SimpleStatement.ml" 18 580 677
+)
+"SimpleStatement.ml" 18 580 597 "SimpleStatement.ml" 18 580 601
+type(
+  'c * 'a list
+)
+"SimpleStatement.ml" 18 580 588 "SimpleStatement.ml" 18 580 602
+type(
+  'a
+)
+"SimpleStatement.ml" 18 580 606 "SimpleStatement.ml" 18 580 611
+type(
+  'e M.t * 'f list M.t -> ('e * 'f list) M.t
+)
+ident(
+  ext_ref M.tuple
+)
+"SimpleStatement.ml" 18 580 613 "SimpleStatement.ml" 18 580 617
+type(
+  'c -> 'e M.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 10 179 206
+)
+"SimpleStatement.ml" 18 580 618 "SimpleStatement.ml" 18 580 619
+type(
+  'c
+)
+ident(
+  int_ref c "SimpleStatement.ml" 18 580 597 "SimpleStatement.ml" 18 580 598
+)
+"SimpleStatement.ml" 18 580 613 "SimpleStatement.ml" 18 580 619
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleStatement.ml" 18 580 621 "SimpleStatement.ml" 18 580 625
+type(
+  'f M.t list -> 'f list M.t
+)
+ident(
+  ext_ref M.list
+)
+"SimpleStatement.ml" 18 580 627 "SimpleStatement.ml" 18 580 630
+type(
+  ('a -> 'f M.t) -> 'a list -> 'f M.t list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 18 580 631 "SimpleStatement.ml" 18 580 635
+type(
+  'a -> 'f M.t
+)
+ident(
+  int_ref self "SimpleStatement.ml" 11 218 228 "SimpleStatement.ml" 11 218 232
+)
+"SimpleStatement.ml" 18 580 636 "SimpleStatement.ml" 18 580 637
+type(
+  'a list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 18 580 600 "SimpleStatement.ml" 18 580 601
+)
+"SimpleStatement.ml" 18 580 626 "SimpleStatement.ml" 18 580 638
+call(
+  stack
+)
+type(
+  'f M.t list
+)
+"SimpleStatement.ml" 18 580 621 "SimpleStatement.ml" 18 580 638
+call(
+  stack
+)
+type(
+  'f list M.t
+)
+"SimpleStatement.ml" 18 580 612 "SimpleStatement.ml" 18 580 639
+type(
+  'e M.t * 'f list M.t
+)
+"SimpleStatement.ml" 18 580 606 "SimpleStatement.ml" 18 580 639
+call(
+  stack
+)
+type(
+  ('e * 'f list) M.t
+)
+"SimpleStatement.ml" 18 580 650 "SimpleStatement.ml" 18 580 651
+type(
+  'e
+)
+ident(
+  def c "SimpleStatement.ml" 18 580 659 "SimpleStatement.ml" 18 580 676
+)
+"SimpleStatement.ml" 18 580 653 "SimpleStatement.ml" 18 580 654
+type(
+  'f list
+)
+ident(
+  def b "SimpleStatement.ml" 18 580 659 "SimpleStatement.ml" 18 580 676
+)
+"SimpleStatement.ml" 18 580 650 "SimpleStatement.ml" 18 580 654
+type(
+  'e * 'f list
+)
+"SimpleStatement.ml" 18 580 659 "SimpleStatement.ml" 18 580 660
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 10 179 197
+)
+"SimpleStatement.ml" 18 580 659 "SimpleStatement.ml" 18 580 667
+call(
+  tail
+)
+type(
+  'a -> 'e -> 'f list -> 'f M.t
+)
+"SimpleStatement.ml" 18 580 668 "SimpleStatement.ml" 18 580 672
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 10 179 215
+)
+"SimpleStatement.ml" 18 580 673 "SimpleStatement.ml" 18 580 674
+type(
+  'e
+)
+ident(
+  int_ref c "SimpleStatement.ml" 18 580 650 "SimpleStatement.ml" 18 580 651
+)
+"SimpleStatement.ml" 18 580 675 "SimpleStatement.ml" 18 580 676
+type(
+  'f list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 18 580 653 "SimpleStatement.ml" 18 580 654
+)
+"SimpleStatement.ml" 18 580 659 "SimpleStatement.ml" 18 580 676
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 18 580 644 "SimpleStatement.ml" 18 580 677
+type(
+  'e * 'f list -> 'f M.t
+)
+"SimpleStatement.ml" 18 580 606 "SimpleStatement.ml" 18 580 677
+call(
+  tail
+)
+type(
+  'f M.t
+)
+type(
+  ('e * 'f list) M.t -> ('e * 'f list -> 'f M.t) -> 'f M.t
+)
+ident(
+  ext_ref M.( >>= )
+)
+"SimpleStatement.ml" 19 678 686 "SimpleStatement.ml" 19 678 687
+type(
+  'a
+)
+ident(
+  def x "SimpleStatement.ml" 19 678 691 "SimpleStatement.ml" 19 678 701
+)
+"SimpleStatement.ml" 19 678 691 "SimpleStatement.ml" 19 678 694
+type(
+  ('a -> 'f M.t) -> 'a -> 'f M.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 10 179 207 "SimpleStatement.ml" 10 179 210
+)
+"SimpleStatement.ml" 19 678 695 "SimpleStatement.ml" 19 678 699
+type(
+  'a -> 'f M.t
+)
+ident(
+  int_ref self "SimpleStatement.ml" 11 218 228 "SimpleStatement.ml" 11 218 232
+)
+"SimpleStatement.ml" 19 678 700 "SimpleStatement.ml" 19 678 701
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleStatement.ml" 19 678 686 "SimpleStatement.ml" 19 678 687
+)
+"SimpleStatement.ml" 19 678 691 "SimpleStatement.ml" 19 678 701
+call(
+  tail
+)
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 12 258 264 "SimpleStatement.ml" 19 678 701
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 11 218 224 "SimpleStatement.ml" 19 678 701
+type(
+  'f M.t
+)
+"SimpleStatement.ml" 10 179 211 "SimpleStatement.ml" 19 678 701
+type(
+  'a -> 'f M.t
+)
+"SimpleStatement.ml" 10 179 207 "SimpleStatement.ml" 19 678 701
+type(
+  (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+"SimpleStatement.ml" 10 179 202 "SimpleStatement.ml" 19 678 701
+type(
+  ('c -> 'e M.t) -> (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+"SimpleStatement.ml" 10 179 198 "SimpleStatement.ml" 19 678 701
+type(
+  ('b -> 'd M.t) ->
+  ('c -> 'e M.t) -> (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+"SimpleStatement.ml" 10 179 196 "SimpleStatement.ml" 19 678 701
+type(
+  'g ->
+  ('b -> 'd M.t) ->
+  ('c -> 'e M.t) -> (('a -> 'f M.t) -> 'a -> 'f M.t) -> 'a -> 'f M.t
+)
+"SimpleStatement.ml" 22 709 713 "SimpleStatement.ml" 22 709 717
+type(
+  < assign : ([> `Assign of 'b * 'c
+               | `If of ('c * 'a list) list * 'a list
+               | `While of 'c * 'a list ]
+              as 'a) ->
+             'd -> 'e -> 'f Monad.Id.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f Monad.Id.t;
+    whilec : 'a -> 'e -> 'f list -> 'f Monad.Id.t; .. > ->
+  ('b -> 'd Monad.Id.t) ->
+  ('c -> 'e Monad.Id.t) ->
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+ident(
+  def imap "SimpleStatement.ml" 26 808 808 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 22 709 718 "SimpleStatement.ml" 22 709 719
+type(
+  < assign : 'a -> 'd -> 'e -> 'f Monad.Id.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f Monad.Id.t;
+    whilec : 'a -> 'e -> 'f list -> 'f Monad.Id.t; .. >
+  as 'g
+)
+ident(
+  def t "SimpleStatement.ml" 22 709 720 "SimpleStatement.ml" 24 778 806
+)
+"SimpleStatement.ml" 22 709 720 "SimpleStatement.ml" 22 709 723
+type(
+  'b -> 'd Monad.Id.t
+)
+ident(
+  def ref "SimpleStatement.ml" 22 709 724 "SimpleStatement.ml" 24 778 806
+)
+"SimpleStatement.ml" 22 709 724 "SimpleStatement.ml" 22 709 728
+type(
+  'c -> 'e Monad.Id.t
+)
+ident(
+  def expr "SimpleStatement.ml" 22 709 729 "SimpleStatement.ml" 24 778 806
+)
+"SimpleStatement.ml" 22 709 729 "SimpleStatement.ml" 22 709 732
+type(
+  ('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+ident(
+  def ext "SimpleStatement.ml" 22 709 733 "SimpleStatement.ml" 24 778 806
+)
+"SimpleStatement.ml" 22 709 733 "SimpleStatement.ml" 22 709 737
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 23 740 742 "SimpleStatement.ml" 24 778 806
+)
+"SimpleStatement.ml" 23 740 757 "SimpleStatement.ml" 23 740 774
+call(
+  stack
+)
+"SimpleStatement.ml" 24 778 780 "SimpleStatement.ml" 24 778 786
+type(
+  'g ->
+  ('b -> 'd Monad.Id.t) ->
+  ('c -> 'e Monad.Id.t) ->
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+ident(
+  int_ref M.gmap "SimpleStatement.ml" 10 179 191 "SimpleStatement.ml" 10 179 195
+)
+"SimpleStatement.ml" 24 778 787 "SimpleStatement.ml" 24 778 788
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 22 709 718 "SimpleStatement.ml" 22 709 719
+)
+"SimpleStatement.ml" 24 778 789 "SimpleStatement.ml" 24 778 792
+type(
+  'b -> 'd Monad.Id.t
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 22 709 720 "SimpleStatement.ml" 22 709 723
+)
+"SimpleStatement.ml" 24 778 793 "SimpleStatement.ml" 24 778 797
+type(
+  'c -> 'e Monad.Id.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 22 709 724 "SimpleStatement.ml" 22 709 728
+)
+"SimpleStatement.ml" 24 778 798 "SimpleStatement.ml" 24 778 801
+type(
+  ('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 22 709 729 "SimpleStatement.ml" 22 709 732
+)
+"SimpleStatement.ml" 24 778 802 "SimpleStatement.ml" 24 778 806
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 22 709 733 "SimpleStatement.ml" 22 709 737
+)
+"SimpleStatement.ml" 24 778 780 "SimpleStatement.ml" 24 778 806
+call(
+  tail
+)
+type(
+  'f Monad.Id.t
+)
+"SimpleStatement.ml" 23 740 742 "SimpleStatement.ml" 24 778 806
+type(
+  'f Monad.Id.t
+)
+"SimpleStatement.ml" 22 709 733 "SimpleStatement.ml" 24 778 806
+type(
+  'a -> 'f Monad.Id.t
+)
+"SimpleStatement.ml" 22 709 729 "SimpleStatement.ml" 24 778 806
+type(
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+"SimpleStatement.ml" 22 709 724 "SimpleStatement.ml" 24 778 806
+type(
+  ('c -> 'e Monad.Id.t) ->
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+"SimpleStatement.ml" 22 709 720 "SimpleStatement.ml" 24 778 806
+type(
+  ('b -> 'd Monad.Id.t) ->
+  ('c -> 'e Monad.Id.t) ->
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+"SimpleStatement.ml" 22 709 718 "SimpleStatement.ml" 24 778 806
+type(
+  'g ->
+  ('b -> 'd Monad.Id.t) ->
+  ('c -> 'e Monad.Id.t) ->
+  (('a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t) -> 'a -> 'f Monad.Id.t
+)
+"SimpleStatement.ml" 26 808 812 "SimpleStatement.ml" 26 808 816
+type(
+  < assign : ([> `Assign of 'b * 'c
+               | `If of ('c * 'a list) list * 'a list
+               | `While of 'c * 'a list ]
+              as 'a) ->
+             'd -> 'e -> 'f Monad.Checked.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f Monad.Checked.t;
+    whilec : 'a -> 'e -> 'f list -> 'f Monad.Checked.t; .. > ->
+  ('b -> 'd Monad.Checked.t) ->
+  ('c -> 'e Monad.Checked.t) ->
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+ident(
+  def cmap "SimpleStatement.ml" 30 912 912 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 26 808 817 "SimpleStatement.ml" 26 808 818
+type(
+  < assign : 'a -> 'd -> 'e -> 'f Monad.Checked.t;
+    ifc : 'a -> ('e * 'f list) list -> 'f list -> 'f Monad.Checked.t;
+    whilec : 'a -> 'e -> 'f list -> 'f Monad.Checked.t; .. >
+  as 'g
+)
+ident(
+  def t "SimpleStatement.ml" 26 808 819 "SimpleStatement.ml" 28 882 910
+)
+"SimpleStatement.ml" 26 808 819 "SimpleStatement.ml" 26 808 822
+type(
+  'b -> 'd Monad.Checked.t
+)
+ident(
+  def ref "SimpleStatement.ml" 26 808 823 "SimpleStatement.ml" 28 882 910
+)
+"SimpleStatement.ml" 26 808 823 "SimpleStatement.ml" 26 808 827
+type(
+  'c -> 'e Monad.Checked.t
+)
+ident(
+  def expr "SimpleStatement.ml" 26 808 828 "SimpleStatement.ml" 28 882 910
+)
+"SimpleStatement.ml" 26 808 828 "SimpleStatement.ml" 26 808 831
+type(
+  ('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t
+)
+ident(
+  def ext "SimpleStatement.ml" 26 808 832 "SimpleStatement.ml" 28 882 910
+)
+"SimpleStatement.ml" 26 808 832 "SimpleStatement.ml" 26 808 836
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 27 839 841 "SimpleStatement.ml" 28 882 910
+)
+"SimpleStatement.ml" 27 839 856 "SimpleStatement.ml" 27 839 878
+call(
+  stack
+)
+"SimpleStatement.ml" 28 882 884 "SimpleStatement.ml" 28 882 890
+type(
+  'g ->
+  ('b -> 'd Monad.Checked.t) ->
+  ('c -> 'e Monad.Checked.t) ->
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+ident(
+  int_ref M.gmap "SimpleStatement.ml" 10 179 191 "SimpleStatement.ml" 10 179 195
+)
+"SimpleStatement.ml" 28 882 891 "SimpleStatement.ml" 28 882 892
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleStatement.ml" 26 808 817 "SimpleStatement.ml" 26 808 818
+)
+"SimpleStatement.ml" 28 882 893 "SimpleStatement.ml" 28 882 896
+type(
+  'b -> 'd Monad.Checked.t
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 26 808 819 "SimpleStatement.ml" 26 808 822
+)
+"SimpleStatement.ml" 28 882 897 "SimpleStatement.ml" 28 882 901
+type(
+  'c -> 'e Monad.Checked.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 26 808 823 "SimpleStatement.ml" 26 808 827
+)
+"SimpleStatement.ml" 28 882 902 "SimpleStatement.ml" 28 882 905
+type(
+  ('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 26 808 828 "SimpleStatement.ml" 26 808 831
+)
+"SimpleStatement.ml" 28 882 906 "SimpleStatement.ml" 28 882 910
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 26 808 832 "SimpleStatement.ml" 26 808 836
+)
+"SimpleStatement.ml" 28 882 884 "SimpleStatement.ml" 28 882 910
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+"SimpleStatement.ml" 27 839 841 "SimpleStatement.ml" 28 882 910
+type(
+  'f Monad.Checked.t
+)
+"SimpleStatement.ml" 26 808 832 "SimpleStatement.ml" 28 882 910
+type(
+  'a -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 26 808 828 "SimpleStatement.ml" 28 882 910
+type(
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 26 808 823 "SimpleStatement.ml" 28 882 910
+type(
+  ('c -> 'e Monad.Checked.t) ->
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 26 808 819 "SimpleStatement.ml" 28 882 910
+type(
+  ('b -> 'd Monad.Checked.t) ->
+  ('c -> 'e Monad.Checked.t) ->
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 26 808 817 "SimpleStatement.ml" 28 882 910
+type(
+  'g ->
+  ('b -> 'd Monad.Checked.t) ->
+  ('c -> 'e Monad.Checked.t) ->
+  (('a -> 'f Monad.Checked.t) -> 'a -> 'f Monad.Checked.t) ->
+  'a -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 30 912 916 "SimpleStatement.ml" 30 912 920
+type(
+  ('a -> [> `Assign of 'b * 'c | `If of 'd * 'e | `While of 'f * 'g ] -> 'h) ->
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h >
+)
+ident(
+  def mapT "SimpleStatement.ml" 38 1232 1232 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 30 912 921 "SimpleStatement.ml" 30 912 922
+type(
+  'a ->
+  ([> `Assign of 'b * 'c | `If of 'd * 'e | `While of 'f * 'g ] as 'i) -> 'h
+)
+ident(
+  def f "SimpleStatement.ml" 30 912 925 "SimpleStatement.ml" 34 1124 1140
+)
+"SimpleStatement.ml" 31 932 961 "SimpleStatement.ml" 31 932 965
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 31 932 966 "SimpleStatement.ml" 31 932 995
+)
+"SimpleStatement.ml" 31 932 966 "SimpleStatement.ml" 31 932 967
+type(
+  'b
+)
+ident(
+  def x "SimpleStatement.ml" 31 932 968 "SimpleStatement.ml" 31 932 995
+)
+"SimpleStatement.ml" 31 932 968 "SimpleStatement.ml" 31 932 969
+type(
+  'c
+)
+ident(
+  def y "SimpleStatement.ml" 31 932 972 "SimpleStatement.ml" 31 932 995
+)
+"SimpleStatement.ml" 31 932 972 "SimpleStatement.ml" 31 932 973
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleStatement.ml" 30 912 921 "SimpleStatement.ml" 30 912 922
+)
+"SimpleStatement.ml" 31 932 974 "SimpleStatement.ml" 31 932 978
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 31 932 961 "SimpleStatement.ml" 31 932 965
+)
+"SimpleStatement.ml" 31 932 989 "SimpleStatement.ml" 31 932 990
+type(
+  'b
+)
+ident(
+  int_ref x "SimpleStatement.ml" 31 932 966 "SimpleStatement.ml" 31 932 967
+)
+"SimpleStatement.ml" 31 932 992 "SimpleStatement.ml" 31 932 993
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 31 932 968 "SimpleStatement.ml" 31 932 969
+)
+"SimpleStatement.ml" 31 932 988 "SimpleStatement.ml" 31 932 994
+type(
+  'b * 'c
+)
+"SimpleStatement.ml" 31 932 979 "SimpleStatement.ml" 31 932 995
+type(
+  'i
+)
+"SimpleStatement.ml" 31 932 972 "SimpleStatement.ml" 31 932 995
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleStatement.ml" 31 932 968 "SimpleStatement.ml" 31 932 995
+type(
+  'c -> 'h
+)
+"SimpleStatement.ml" 31 932 966 "SimpleStatement.ml" 31 932 995
+type(
+  'b -> 'c -> 'h
+)
+"SimpleStatement.ml" 31 932 961 "SimpleStatement.ml" 31 932 995
+type(
+  'a -> 'b -> 'c -> 'h
+)
+type(
+  'a -> 'b -> 'c -> 'h
+)
+"SimpleStatement.ml" 31 932 947 "SimpleStatement.ml" 31 932 995
+type(
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'b -> 'c -> 'h
+)
+"SimpleStatement.ml" 32 996 1025 "SimpleStatement.ml" 32 996 1029
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 32 996 1030 "SimpleStatement.ml" 32 996 1059
+)
+"SimpleStatement.ml" 32 996 1030 "SimpleStatement.ml" 32 996 1031
+type(
+  'd
+)
+ident(
+  def b "SimpleStatement.ml" 32 996 1032 "SimpleStatement.ml" 32 996 1059
+)
+"SimpleStatement.ml" 32 996 1032 "SimpleStatement.ml" 32 996 1033
+type(
+  'e
+)
+ident(
+  def e "SimpleStatement.ml" 32 996 1036 "SimpleStatement.ml" 32 996 1059
+)
+"SimpleStatement.ml" 32 996 1036 "SimpleStatement.ml" 32 996 1037
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleStatement.ml" 30 912 921 "SimpleStatement.ml" 30 912 922
+)
+"SimpleStatement.ml" 32 996 1038 "SimpleStatement.ml" 32 996 1042
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 32 996 1025 "SimpleStatement.ml" 32 996 1029
+)
+"SimpleStatement.ml" 32 996 1053 "SimpleStatement.ml" 32 996 1054
+type(
+  'd
+)
+ident(
+  int_ref b "SimpleStatement.ml" 32 996 1030 "SimpleStatement.ml" 32 996 1031
+)
+"SimpleStatement.ml" 32 996 1056 "SimpleStatement.ml" 32 996 1057
+type(
+  'e
+)
+ident(
+  int_ref e "SimpleStatement.ml" 32 996 1032 "SimpleStatement.ml" 32 996 1033
+)
+"SimpleStatement.ml" 32 996 1052 "SimpleStatement.ml" 32 996 1058
+type(
+  'd * 'e
+)
+"SimpleStatement.ml" 32 996 1043 "SimpleStatement.ml" 32 996 1059
+type(
+  'i
+)
+"SimpleStatement.ml" 32 996 1036 "SimpleStatement.ml" 32 996 1059
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleStatement.ml" 32 996 1032 "SimpleStatement.ml" 32 996 1059
+type(
+  'e -> 'h
+)
+"SimpleStatement.ml" 32 996 1030 "SimpleStatement.ml" 32 996 1059
+type(
+  'd -> 'e -> 'h
+)
+"SimpleStatement.ml" 32 996 1025 "SimpleStatement.ml" 32 996 1059
+type(
+  'a -> 'd -> 'e -> 'h
+)
+type(
+  'a -> 'd -> 'e -> 'h
+)
+"SimpleStatement.ml" 32 996 1011 "SimpleStatement.ml" 32 996 1059
+type(
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'd -> 'e -> 'h
+)
+"SimpleStatement.ml" 33 1060 1089 "SimpleStatement.ml" 33 1060 1093
+type(
+  'a
+)
+ident(
+  def stmt "SimpleStatement.ml" 33 1060 1094 "SimpleStatement.ml" 33 1060 1123
+)
+"SimpleStatement.ml" 33 1060 1094 "SimpleStatement.ml" 33 1060 1095
+type(
+  'f
+)
+ident(
+  def c "SimpleStatement.ml" 33 1060 1096 "SimpleStatement.ml" 33 1060 1123
+)
+"SimpleStatement.ml" 33 1060 1096 "SimpleStatement.ml" 33 1060 1097
+type(
+  'g
+)
+ident(
+  def b "SimpleStatement.ml" 33 1060 1100 "SimpleStatement.ml" 33 1060 1123
+)
+"SimpleStatement.ml" 33 1060 1100 "SimpleStatement.ml" 33 1060 1101
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleStatement.ml" 30 912 921 "SimpleStatement.ml" 30 912 922
+)
+"SimpleStatement.ml" 33 1060 1102 "SimpleStatement.ml" 33 1060 1106
+type(
+  'a
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 33 1060 1089 "SimpleStatement.ml" 33 1060 1093
+)
+"SimpleStatement.ml" 33 1060 1117 "SimpleStatement.ml" 33 1060 1118
+type(
+  'f
+)
+ident(
+  int_ref c "SimpleStatement.ml" 33 1060 1094 "SimpleStatement.ml" 33 1060 1095
+)
+"SimpleStatement.ml" 33 1060 1120 "SimpleStatement.ml" 33 1060 1121
+type(
+  'g
+)
+ident(
+  int_ref b "SimpleStatement.ml" 33 1060 1096 "SimpleStatement.ml" 33 1060 1097
+)
+"SimpleStatement.ml" 33 1060 1116 "SimpleStatement.ml" 33 1060 1122
+type(
+  'f * 'g
+)
+"SimpleStatement.ml" 33 1060 1107 "SimpleStatement.ml" 33 1060 1123
+type(
+  'i
+)
+"SimpleStatement.ml" 33 1060 1100 "SimpleStatement.ml" 33 1060 1123
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleStatement.ml" 33 1060 1096 "SimpleStatement.ml" 33 1060 1123
+type(
+  'g -> 'h
+)
+"SimpleStatement.ml" 33 1060 1094 "SimpleStatement.ml" 33 1060 1123
+type(
+  'f -> 'g -> 'h
+)
+"SimpleStatement.ml" 33 1060 1089 "SimpleStatement.ml" 33 1060 1123
+type(
+  'a -> 'f -> 'g -> 'h
+)
+type(
+  'a -> 'f -> 'g -> 'h
+)
+"SimpleStatement.ml" 33 1060 1075 "SimpleStatement.ml" 33 1060 1123
+type(
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'f -> 'g -> 'h
+)
+"SimpleStatement.ml" 30 912 925 "SimpleStatement.ml" 34 1124 1140
+type(
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h >
+)
+type(
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h >
+)
+"SimpleStatement.ml" 30 912 921 "SimpleStatement.ml" 34 1124 1140
+type(
+  ('a -> 'i -> 'h) ->
+  < assign : 'a -> 'b -> 'c -> 'h; ifc : 'a -> 'd -> 'e -> 'h;
+    whilec : 'a -> 'f -> 'g -> 'h >
+)
+"SimpleStatement.ml" 39 1240 1248 "SimpleStatement.ml" 39 1240 1251
+type(
+  (< look : string ->
+            ('a, 'b, < add : 'c -> 'c; .. > as 'c) Ostap.Combinators.result;
+     regexp : string -> string -> ('a, 'd, 'c) Ostap.Combinators.result; .. >
+   as 'a, 'e, 'c)
+  Ostap.Combinators.parse
+)
+ident(
+  def ref "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+)
+"SimpleStatement.ml" 39 1240 1253 "SimpleStatement.ml" 39 1240 1257
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  def expr "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+)
+"SimpleStatement.ml" 39 1240 1259 "SimpleStatement.ml" 39 1240 1263
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  def stmt "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+)
+"SimpleStatement.ml" 40 1267 1271 "SimpleStatement.ml" 40 1267 1281
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  'a ->
+  ('a,
+   [> `Assign of 'e * 'f
+    | `If of ('f * 'g list) list * 'g list
+    | `While of 'f * 'g list ],
+   'c)
+  Ostap.Combinators.result
+)
+ident(
+  int_ref assignment "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 40 1267 1282 "SimpleStatement.ml" 40 1267 1285
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 39 1240 1248 "SimpleStatement.ml" 39 1240 1251
+)
+"SimpleStatement.ml" 40 1267 1287 "SimpleStatement.ml" 40 1267 1291
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 39 1240 1253 "SimpleStatement.ml" 39 1240 1257
+)
+"SimpleStatement.ml" 40 1267 1271 "SimpleStatement.ml" 40 1267 1292
+call(
+  tail
+)
+type(
+  ('a,
+   [> `Assign of 'e * 'f
+    | `If of ('f * 'g list) list * 'g list
+    | `While of 'f * 'g list ]
+   as 'h, 'c)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 40 1267 1271 "SimpleStatement.ml" 40 1267 1292
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 40 1267 1271 "SimpleStatement.ml" 40 1267 1292
+)
+"SimpleStatement.ml" 41 1294 1298 "SimpleStatement.ml" 41 1294 1309
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  int_ref ifStatement "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 41 1294 1310 "SimpleStatement.ml" 41 1294 1314
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 39 1240 1253 "SimpleStatement.ml" 39 1240 1257
+)
+"SimpleStatement.ml" 41 1294 1316 "SimpleStatement.ml" 41 1294 1320
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 39 1240 1259 "SimpleStatement.ml" 39 1240 1263
+)
+"SimpleStatement.ml" 41 1294 1298 "SimpleStatement.ml" 41 1294 1321
+call(
+  tail
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 41 1294 1298 "SimpleStatement.ml" 41 1294 1321
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 41 1294 1298 "SimpleStatement.ml" 41 1294 1321
+)
+"SimpleStatement.ml" 42 1323 1327 "SimpleStatement.ml" 42 1323 1341
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  int_ref whileStatement "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 42 1323 1342 "SimpleStatement.ml" 42 1323 1346
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 39 1240 1253 "SimpleStatement.ml" 39 1240 1257
+)
+"SimpleStatement.ml" 42 1323 1348 "SimpleStatement.ml" 42 1323 1352
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 39 1240 1259 "SimpleStatement.ml" 39 1240 1263
+)
+"SimpleStatement.ml" 42 1323 1327 "SimpleStatement.ml" 42 1323 1353
+call(
+  tail
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 42 1323 1327 "SimpleStatement.ml" 42 1323 1353
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 42 1323 1327 "SimpleStatement.ml" 42 1323 1353
+)
+"SimpleStatement.ml" 40 1267 1271 "SimpleStatement.ml" 42 1323 1353
+call(
+  stack
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+call(
+  tail
+)
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 42 1323 1353
+)
+"SimpleStatement.ml" 43 1355 1368 "SimpleStatement.ml" 43 1355 1371
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse
+)
+ident(
+  def ref "SimpleStatement.ml" 43 1355 1357 "SimpleStatement.ml" 43 1355 1422
+)
+"SimpleStatement.ml" 43 1355 1373 "SimpleStatement.ml" 43 1355 1377
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  def expr "SimpleStatement.ml" 43 1355 1357 "SimpleStatement.ml" 43 1355 1422
+)
+"SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1384
+type(
+  'e
+)
+ident(
+  def dst "SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1422
+)
+"SimpleStatement.ml" 43 1355 1384 "SimpleStatement.ml" 43 1355 1387
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 43 1355 1368 "SimpleStatement.ml" 43 1355 1371
+)
+"SimpleStatement.ml" 43 1355 1388 "SimpleStatement.ml" 43 1355 1392
+call(
+  tail
+)
+type(
+  ('a, 'b, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'b, 'c) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'b, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 43 1355 1388 "SimpleStatement.ml" 43 1355 1392
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 43 1355 1388 "SimpleStatement.ml" 43 1355 1392
+)
+"SimpleStatement.ml" 43 1355 1393 "SimpleStatement.ml" 43 1355 1397
+type(
+  'f
+)
+ident(
+  def src "SimpleStatement.ml" 43 1355 1403 "SimpleStatement.ml" 43 1355 1421
+)
+"SimpleStatement.ml" 43 1355 1397 "SimpleStatement.ml" 43 1355 1401
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 43 1355 1373 "SimpleStatement.ml" 43 1355 1377
+)
+"SimpleStatement.ml" 43 1355 1412 "SimpleStatement.ml" 43 1355 1415
+type(
+  'e
+)
+ident(
+  int_ref dst "SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1384
+)
+"SimpleStatement.ml" 43 1355 1417 "SimpleStatement.ml" 43 1355 1420
+type(
+  'f
+)
+ident(
+  int_ref src "SimpleStatement.ml" 43 1355 1393 "SimpleStatement.ml" 43 1355 1397
+)
+"SimpleStatement.ml" 43 1355 1411 "SimpleStatement.ml" 43 1355 1421
+type(
+  'e * 'f
+)
+"SimpleStatement.ml" 43 1355 1403 "SimpleStatement.ml" 43 1355 1421
+type(
+  'h
+)
+"SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1422
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'b -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'f -> 'h
+)
+type(
+  'f
+)
+ident(
+  def _0 "SimpleStatement.ml" 43 1355 1403 "SimpleStatement.ml" 43 1355 1421
+)
+type(
+  ('f -> 'h) ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'b
+)
+ident(
+  def _1 "SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1422
+)
+type(
+  'b
+)
+type(
+  ('a, 'b, 'c) Ostap.Combinators.parse ->
+  ('b -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e
+)
+ident(
+  def _2 "SimpleStatement.ml" 43 1355 1380 "SimpleStatement.ml" 43 1355 1422
+)
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('e -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleStatement.ml" 43 1355 1357 "SimpleStatement.ml" 43 1355 1422
+call(
+  tail
+)
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 43 1355 1357 "SimpleStatement.ml" 43 1355 1422
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 43 1355 1357 "SimpleStatement.ml" 43 1355 1422
+)
+"SimpleStatement.ml" 44 1424 1438 "SimpleStatement.ml" 44 1424 1442
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  def expr "SimpleStatement.ml" 44 1424 1426 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 44 1424 1444 "SimpleStatement.ml" 44 1424 1448
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  def stmt "SimpleStatement.ml" 44 1424 1426 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 45 1452 1459
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 45 1452 1460 "SimpleStatement.ml" 45 1452 1464
+type(
+  string
+)
+"SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 45 1452 1465
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 45 1452 1465
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 45 1452 1465
+)
+"SimpleStatement.ml" 45 1452 1466 "SimpleStatement.ml" 45 1452 1471
+type(
+  'f
+)
+ident(
+  def cond "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 45 1452 1471 "SimpleStatement.ml" 45 1452 1475
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 44 1424 1438 "SimpleStatement.ml" 44 1424 1442
+)
+"SimpleStatement.ml" 46 1477 1484 "SimpleStatement.ml" 46 1477 1487
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 46 1477 1488 "SimpleStatement.ml" 46 1477 1494
+type(
+  string
+)
+"SimpleStatement.ml" 46 1477 1484 "SimpleStatement.ml" 46 1477 1495
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 46 1477 1484 "SimpleStatement.ml" 46 1477 1495
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 46 1477 1484 "SimpleStatement.ml" 46 1477 1495
+)
+"SimpleStatement.ml" 46 1477 1496 "SimpleStatement.ml" 46 1477 1505
+type(
+  'g list
+)
+ident(
+  def thenPart "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 46 1477 1505 "SimpleStatement.ml" 46 1477 1509
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'g list, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"SimpleStatement.ml" 46 1477 1510 "SimpleStatement.ml" 46 1477 1514
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 44 1424 1444 "SimpleStatement.ml" 44 1424 1448
+)
+"SimpleStatement.ml" 46 1477 1505 "SimpleStatement.ml" 46 1477 1515
+call(
+  tail
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 46 1477 1505 "SimpleStatement.ml" 46 1477 1515
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 46 1477 1505 "SimpleStatement.ml" 46 1477 1515
+)
+"SimpleStatement.ml" 47 1516 1523 "SimpleStatement.ml" 47 1516 1532
+type(
+  ('f * 'g list) list
+)
+ident(
+  def branches "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 47 1516 1534 "SimpleStatement.ml" 47 1516 1537
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 47 1516 1538 "SimpleStatement.ml" 47 1516 1545
+type(
+  string
+)
+"SimpleStatement.ml" 47 1516 1534 "SimpleStatement.ml" 47 1516 1546
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 47 1516 1534 "SimpleStatement.ml" 47 1516 1546
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 47 1516 1534 "SimpleStatement.ml" 47 1516 1546
+)
+"SimpleStatement.ml" 47 1516 1547 "SimpleStatement.ml" 47 1516 1551
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 44 1424 1438 "SimpleStatement.ml" 44 1424 1442
+)
+"SimpleStatement.ml" 47 1516 1553 "SimpleStatement.ml" 47 1516 1556
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 47 1516 1557 "SimpleStatement.ml" 47 1516 1563
+type(
+  string
+)
+"SimpleStatement.ml" 47 1516 1553 "SimpleStatement.ml" 47 1516 1564
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 47 1516 1553 "SimpleStatement.ml" 47 1516 1564
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 47 1516 1553 "SimpleStatement.ml" 47 1516 1564
+)
+"SimpleStatement.ml" 47 1516 1565 "SimpleStatement.ml" 47 1516 1569
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'g list, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"SimpleStatement.ml" 47 1516 1570 "SimpleStatement.ml" 47 1516 1574
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 44 1424 1444 "SimpleStatement.ml" 44 1424 1448
+)
+"SimpleStatement.ml" 47 1516 1565 "SimpleStatement.ml" 47 1516 1575
+call(
+  tail
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 47 1516 1565 "SimpleStatement.ml" 47 1516 1575
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 47 1516 1565 "SimpleStatement.ml" 47 1516 1575
+)
+"SimpleStatement.ml" 47 1516 1533 "SimpleStatement.ml" 47 1516 1575
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'f -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'g list -> 'f * 'g list
+)
+type(
+  'f * 'g list
+)
+type(
+  'g list
+)
+ident(
+  int_ref _0 "SimpleStatement.ml" 47 1516 1533 "SimpleStatement.ml" 47 1516 1575
+)
+type(
+  'f
+)
+ident(
+  int_ref _1 "SimpleStatement.ml" 47 1516 1533 "SimpleStatement.ml" 47 1516 1575
+)
+type(
+  'g list
+)
+ident(
+  def _0 "SimpleStatement.ml" 47 1516 1533 "SimpleStatement.ml" 47 1516 1575
+)
+type(
+  'g list
+)
+type(
+  ('g list -> 'f * 'g list) ->
+  ('a, 'g list, 'c) Ostap.Combinators.parse ->
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse) ->
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'f
+)
+ident(
+  def _1 "SimpleStatement.ml" 47 1516 1533 "SimpleStatement.ml" 47 1516 1575
+)
+type(
+  'f
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('f -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse) ->
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'f * 'g list, 'c) Ostap.Combinators.parse) ->
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleStatement.ml" 47 1516 1532 "SimpleStatement.ml" 47 1516 1577
+call(
+  stack
+)
+type(
+  ('a, ('f * 'g list) list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f * 'g list, 'c) Ostap.Combinators.parse ->
+  ('a, ('f * 'g list) list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.many
+)
+"SimpleStatement.ml" 48 1578 1585 "SimpleStatement.ml" 48 1578 1594
+type(
+  'g list option
+)
+ident(
+  def elsePart "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 48 1578 1596 "SimpleStatement.ml" 48 1578 1599
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 48 1578 1600 "SimpleStatement.ml" 48 1578 1606
+type(
+  string
+)
+"SimpleStatement.ml" 48 1578 1596 "SimpleStatement.ml" 48 1578 1607
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 48 1578 1596 "SimpleStatement.ml" 48 1578 1607
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 48 1578 1596 "SimpleStatement.ml" 48 1578 1607
+)
+"SimpleStatement.ml" 48 1578 1608 "SimpleStatement.ml" 48 1578 1612
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'g list, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"SimpleStatement.ml" 48 1578 1613 "SimpleStatement.ml" 48 1578 1617
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 44 1424 1444 "SimpleStatement.ml" 44 1424 1448
+)
+"SimpleStatement.ml" 48 1578 1608 "SimpleStatement.ml" 48 1578 1618
+call(
+  tail
+)
+type(
+  'a -> ('a, 'g list, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 48 1578 1608 "SimpleStatement.ml" 48 1578 1618
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 48 1578 1608 "SimpleStatement.ml" 48 1578 1618
+)
+"SimpleStatement.ml" 48 1578 1595 "SimpleStatement.ml" 48 1578 1618
+call(
+  stack
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'g list, 'c) Ostap.Combinators.parse) ->
+  ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleStatement.ml" 48 1578 1594 "SimpleStatement.ml" 48 1578 1620
+call(
+  stack
+)
+type(
+  ('a, 'g list option, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse ->
+  ('a, 'g list option, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"SimpleStatement.ml" 49 1621 1625 "SimpleStatement.ml" 49 1621 1628
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 49 1621 1629 "SimpleStatement.ml" 49 1621 1634
+type(
+  string
+)
+"SimpleStatement.ml" 49 1621 1625 "SimpleStatement.ml" 49 1621 1635
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 49 1621 1625 "SimpleStatement.ml" 49 1621 1635
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 49 1621 1625 "SimpleStatement.ml" 49 1621 1635
+)
+"SimpleStatement.ml" 50 1638 1648 "SimpleStatement.ml" 50 1638 1652
+type(
+  'f
+)
+ident(
+  int_ref cond "SimpleStatement.ml" 45 1452 1466 "SimpleStatement.ml" 45 1452 1471
+)
+"SimpleStatement.ml" 50 1638 1654 "SimpleStatement.ml" 50 1638 1662
+type(
+  'g list
+)
+ident(
+  int_ref thenPart "SimpleStatement.ml" 46 1477 1496 "SimpleStatement.ml" 46 1477 1505
+)
+"SimpleStatement.ml" 50 1638 1647 "SimpleStatement.ml" 50 1638 1663
+type(
+  'f * 'g list
+)
+"SimpleStatement.ml" 50 1638 1665 "SimpleStatement.ml" 50 1638 1673
+type(
+  ('f * 'g list) list
+)
+ident(
+  int_ref branches "SimpleStatement.ml" 47 1516 1523 "SimpleStatement.ml" 47 1516 1532
+)
+"SimpleStatement.ml" 50 1638 1647 "SimpleStatement.ml" 50 1638 1673
+type(
+  ('f * 'g list) list
+)
+"SimpleStatement.ml" 50 1638 1675 "SimpleStatement.ml" 50 1638 1682
+type(
+  'g list option -> 'g list
+)
+ident(
+  ext_ref Common.listify
+)
+"SimpleStatement.ml" 50 1638 1683 "SimpleStatement.ml" 50 1638 1691
+type(
+  'g list option
+)
+ident(
+  int_ref elsePart "SimpleStatement.ml" 48 1578 1585 "SimpleStatement.ml" 48 1578 1594
+)
+"SimpleStatement.ml" 50 1638 1675 "SimpleStatement.ml" 50 1638 1691
+call(
+  stack
+)
+type(
+  'g list
+)
+"SimpleStatement.ml" 50 1638 1646 "SimpleStatement.ml" 50 1638 1692
+type(
+  ('f * 'g list) list * 'g list
+)
+"SimpleStatement.ml" 50 1638 1642 "SimpleStatement.ml" 50 1638 1692
+type(
+  'h
+)
+"SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'd -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'f -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'g list -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('f * 'g list) list -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'g list option -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> 'h
+)
+type(
+  'd
+)
+ident(
+  def _0 "SimpleStatement.ml" 50 1638 1642 "SimpleStatement.ml" 50 1638 1692
+)
+type(
+  'd
+)
+type(
+  ('d -> 'h) ->
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g list option
+)
+ident(
+  def _1 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  ('a, 'g list option, 'c) Ostap.Combinators.parse ->
+  ('g list option -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  ('f * 'g list) list
+)
+ident(
+  def _2 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  ('a, ('f * 'g list) list, 'c) Ostap.Combinators.parse ->
+  (('f * 'g list) list -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'g list
+)
+ident(
+  def _3 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse ->
+  ('g list -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'd
+)
+ident(
+  def _4 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'f
+)
+ident(
+  def _5 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('f -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'd
+)
+ident(
+  def _6 "SimpleStatement.ml" 45 1452 1456 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleStatement.ml" 44 1424 1426 "SimpleStatement.ml" 51 1693 1696
+call(
+  tail
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 44 1424 1426 "SimpleStatement.ml" 51 1693 1696
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 44 1424 1426 "SimpleStatement.ml" 51 1693 1696
+)
+"SimpleStatement.ml" 52 1698 1715 "SimpleStatement.ml" 52 1698 1719
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  def expr "SimpleStatement.ml" 52 1698 1700 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 52 1698 1721 "SimpleStatement.ml" 52 1698 1725
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  def stmt "SimpleStatement.ml" 52 1698 1700 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 53 1729 1736
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 53 1729 1737 "SimpleStatement.ml" 53 1729 1744
+type(
+  string
+)
+"SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 53 1729 1745
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 53 1729 1745
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 53 1729 1745
+)
+"SimpleStatement.ml" 53 1729 1746 "SimpleStatement.ml" 53 1729 1751
+type(
+  'f
+)
+ident(
+  def cond "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 53 1729 1751 "SimpleStatement.ml" 53 1729 1755
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 52 1698 1715 "SimpleStatement.ml" 52 1698 1719
+)
+"SimpleStatement.ml" 53 1729 1756 "SimpleStatement.ml" 53 1729 1759
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 53 1729 1760 "SimpleStatement.ml" 53 1729 1764
+type(
+  string
+)
+"SimpleStatement.ml" 53 1729 1756 "SimpleStatement.ml" 53 1729 1765
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 53 1729 1756 "SimpleStatement.ml" 53 1729 1765
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 53 1729 1756 "SimpleStatement.ml" 53 1729 1765
+)
+"SimpleStatement.ml" 53 1729 1766 "SimpleStatement.ml" 53 1729 1772
+type(
+  'g list
+)
+ident(
+  def stmts "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 53 1729 1772 "SimpleStatement.ml" 53 1729 1776
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'g list, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"SimpleStatement.ml" 53 1729 1777 "SimpleStatement.ml" 53 1729 1781
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 52 1698 1721 "SimpleStatement.ml" 52 1698 1725
+)
+"SimpleStatement.ml" 53 1729 1772 "SimpleStatement.ml" 53 1729 1782
+call(
+  tail
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 53 1729 1772 "SimpleStatement.ml" 53 1729 1782
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 53 1729 1772 "SimpleStatement.ml" 53 1729 1782
+)
+"SimpleStatement.ml" 53 1729 1783 "SimpleStatement.ml" 53 1729 1786
+type(
+  string -> 'a -> ('a, 'd, 'c) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleStatement.ml" 53 1729 1787 "SimpleStatement.ml" 53 1729 1792
+type(
+  string
+)
+"SimpleStatement.ml" 53 1729 1783 "SimpleStatement.ml" 53 1729 1793
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 53 1729 1783 "SimpleStatement.ml" 53 1729 1793
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 53 1729 1783 "SimpleStatement.ml" 53 1729 1793
+)
+"SimpleStatement.ml" 54 1796 1808 "SimpleStatement.ml" 54 1796 1812
+type(
+  'f
+)
+ident(
+  int_ref cond "SimpleStatement.ml" 53 1729 1746 "SimpleStatement.ml" 53 1729 1751
+)
+"SimpleStatement.ml" 54 1796 1814 "SimpleStatement.ml" 54 1796 1819
+type(
+  'g list
+)
+ident(
+  int_ref stmts "SimpleStatement.ml" 53 1729 1766 "SimpleStatement.ml" 53 1729 1772
+)
+"SimpleStatement.ml" 54 1796 1807 "SimpleStatement.ml" 54 1796 1820
+type(
+  'f * 'g list
+)
+"SimpleStatement.ml" 54 1796 1800 "SimpleStatement.ml" 54 1796 1820
+type(
+  'h
+)
+"SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'd -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'f -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'g list -> ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+type(
+  'd -> 'h
+)
+type(
+  'd
+)
+ident(
+  def _0 "SimpleStatement.ml" 54 1796 1800 "SimpleStatement.ml" 54 1796 1820
+)
+type(
+  'd
+)
+type(
+  ('d -> 'h) ->
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g list
+)
+ident(
+  def _1 "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+type(
+  ('a, 'g list, 'c) Ostap.Combinators.parse ->
+  ('g list -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'd
+)
+ident(
+  def _2 "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'f
+)
+ident(
+  def _3 "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('f -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'd
+)
+ident(
+  def _4 "SimpleStatement.ml" 53 1729 1733 "SimpleStatement.ml" 55 1821 1824
+)
+type(
+  'd
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('d -> ('a, 'h, 'c) Ostap.Combinators.parse) ->
+  ('a, 'h, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleStatement.ml" 52 1698 1700 "SimpleStatement.ml" 55 1821 1824
+call(
+  tail
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleStatement.ml" 52 1698 1700 "SimpleStatement.ml" 55 1821 1824
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleStatement.ml" 52 1698 1700 "SimpleStatement.ml" 55 1821 1824
+)
+"SimpleStatement.ml" 39 1240 1242 "SimpleStatement.ml" 55 1821 1824
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  def whileStatement "SimpleStatement.ml" 38 1232 1232 "SimpleStatement.ml" 1 0 -1
+)
+type(
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  def ifStatement "SimpleStatement.ml" 38 1232 1232 "SimpleStatement.ml" 1 0 -1
+)
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  def assignment "SimpleStatement.ml" 38 1232 1232 "SimpleStatement.ml" 1 0 -1
+)
+type(
+  ('a, 'e, 'c) Ostap.Combinators.parse ->
+  ('a, 'f, 'c) Ostap.Combinators.parse ->
+  ('a, 'g, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'h, 'c) Ostap.Combinators.result
+)
+ident(
+  def parse "SimpleStatement.ml" 38 1232 1232 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 62 1937 1941 "SimpleStatement.ml" 62 1937 1947
+type(
+  < assign : 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [> `Elsif | `If ] -> 'a -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> 'b;
+    thenPart : 'b -> Ostap.Pretty.printer;
+    whileBody : 'b -> Ostap.Pretty.printer;
+    whileHead : 'a -> Ostap.Pretty.printer; .. > ->
+  ('c -> 'a Monad.Id.t) ->
+  ((([> `Assign of 'c * 'c
+      | `If of ('c * 'd list) list * 'd list
+      | `While of 'c * 'd list ]
+     as 'd) ->
+    Ostap.Pretty.printer Monad.Id.t) ->
+   'd -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def gprint "SimpleStatement.ml" 81 2552 2552 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+type(
+  < assign : 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [> `Elsif | `If ] -> 'a -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> 'b;
+    thenPart : 'b -> Ostap.Pretty.printer;
+    whileBody : 'b -> Ostap.Pretty.printer;
+    whileHead : 'a -> Ostap.Pretty.printer; .. >
+  as 'e
+)
+ident(
+  def ps "SimpleStatement.ml" 62 1937 1951 "SimpleStatement.ml" 79 2526 2550
+)
+"SimpleStatement.ml" 62 1937 1951 "SimpleStatement.ml" 62 1937 1955
+type(
+  'c -> 'a Monad.Id.t
+)
+ident(
+  def expr "SimpleStatement.ml" 62 1937 1956 "SimpleStatement.ml" 79 2526 2550
+)
+"SimpleStatement.ml" 62 1937 1956 "SimpleStatement.ml" 62 1937 1959
+type(
+  ('d -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def ext "SimpleStatement.ml" 62 1937 1960 "SimpleStatement.ml" 79 2526 2550
+)
+"SimpleStatement.ml" 62 1937 1960 "SimpleStatement.ml" 62 1937 1964
+type(
+  'd
+)
+ident(
+  def stmt "SimpleStatement.ml" 63 1967 1969 "SimpleStatement.ml" 79 2526 2550
+)
+"SimpleStatement.ml" 63 1967 1969 "SimpleStatement.ml" 63 1967 1973
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t > ->
+  ('c -> 'a Monad.Id.t) ->
+  ('c -> 'a Monad.Id.t) ->
+  (('d -> Ostap.Pretty.printer Monad.Id.t) ->
+   'd -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref imap "SimpleStatement.ml" 22 709 713 "SimpleStatement.ml" 22 709 717
+)
+"SimpleStatement.ml" 65 1988 2009 "SimpleStatement.ml" 65 1988 2010
+type(
+  'd
+)
+"SimpleStatement.ml" 65 1988 2011 "SimpleStatement.ml" 65 1988 2012
+type(
+  'a Monad.Id.t
+)
+ident(
+  def x "SimpleStatement.ml" 65 1988 2013 "SimpleStatement.ml" 65 1988 2030
+)
+"SimpleStatement.ml" 65 1988 2013 "SimpleStatement.ml" 65 1988 2014
+type(
+  'a
+)
+ident(
+  def y "SimpleStatement.ml" 65 1988 2017 "SimpleStatement.ml" 65 1988 2030
+)
+"SimpleStatement.ml" 65 1988 2017 "SimpleStatement.ml" 65 1988 2019
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 65 1988 2017 "SimpleStatement.ml" 65 1988 2026
+call(
+  tail
+)
+type(
+  'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 65 1988 2027 "SimpleStatement.ml" 65 1988 2028
+type(
+  'a Monad.Id.t
+)
+ident(
+  int_ref x "SimpleStatement.ml" 65 1988 2011 "SimpleStatement.ml" 65 1988 2012
+)
+"SimpleStatement.ml" 65 1988 2029 "SimpleStatement.ml" 65 1988 2030
+type(
+  'a
+)
+ident(
+  int_ref y "SimpleStatement.ml" 65 1988 2013 "SimpleStatement.ml" 65 1988 2014
+)
+"SimpleStatement.ml" 65 1988 2017 "SimpleStatement.ml" 65 1988 2030
+type(
+  Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 65 1988 2013 "SimpleStatement.ml" 65 1988 2030
+type(
+  'a -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 65 1988 2011 "SimpleStatement.ml" 65 1988 2030
+type(
+  'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 65 1988 2009 "SimpleStatement.ml" 65 1988 2030
+type(
+  'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t
+)
+type(
+  'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 65 1988 1995 "SimpleStatement.ml" 65 1988 2030
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t > ->
+  'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 66 2031 2049 "SimpleStatement.ml" 66 2031 2050
+type(
+  'd
+)
+"SimpleStatement.ml" 66 2031 2051 "SimpleStatement.ml" 66 2031 2052
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+ident(
+  def b "SimpleStatement.ml" 66 2031 2053 "SimpleStatement.ml" 76 2424 2438
+)
+"SimpleStatement.ml" 66 2031 2053 "SimpleStatement.ml" 66 2031 2054
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def e "SimpleStatement.ml" 67 2057 2066 "SimpleStatement.ml" 76 2424 2438
+)
+"SimpleStatement.ml" 67 2057 2070 "SimpleStatement.ml" 67 2057 2076
+type(
+  ([> `Elsif | `If ] as 'f) ->
+  'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  def branch "SimpleStatement.ml" 70 2180 2189 "SimpleStatement.ml" 76 2424 2438
+)
+"SimpleStatement.ml" 67 2057 2077 "SimpleStatement.ml" 67 2057 2080
+type(
+  'f
+)
+ident(
+  def typ "SimpleStatement.ml" 67 2057 2081 "SimpleStatement.ml" 68 2101 2167
+)
+"SimpleStatement.ml" 67 2057 2082 "SimpleStatement.ml" 67 2057 2086
+type(
+  'a
+)
+ident(
+  def cond "SimpleStatement.ml" 68 2101 2112 "SimpleStatement.ml" 68 2101 2167
+)
+"SimpleStatement.ml" 67 2057 2088 "SimpleStatement.ml" 67 2057 2096
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def thenPart "SimpleStatement.ml" 68 2101 2112 "SimpleStatement.ml" 68 2101 2167
+)
+"SimpleStatement.ml" 67 2057 2082 "SimpleStatement.ml" 67 2057 2096
+type(
+  'a * Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 68 2101 2112 "SimpleStatement.ml" 68 2101 2115
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 68 2101 2117 "SimpleStatement.ml" 68 2101 2119
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 68 2101 2117 "SimpleStatement.ml" 68 2101 2126
+call(
+  stack
+)
+type(
+  'f -> 'a -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 68 2101 2127 "SimpleStatement.ml" 68 2101 2130
+type(
+  'f
+)
+ident(
+  int_ref typ "SimpleStatement.ml" 67 2057 2077 "SimpleStatement.ml" 67 2057 2080
+)
+"SimpleStatement.ml" 68 2101 2131 "SimpleStatement.ml" 68 2101 2135
+type(
+  'a
+)
+ident(
+  int_ref cond "SimpleStatement.ml" 67 2057 2082 "SimpleStatement.ml" 67 2057 2086
+)
+"SimpleStatement.ml" 68 2101 2117 "SimpleStatement.ml" 68 2101 2135
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 68 2101 2137 "SimpleStatement.ml" 68 2101 2139
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 68 2101 2137 "SimpleStatement.ml" 68 2101 2148
+call(
+  stack
+)
+type(
+  'b -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 68 2101 2150 "SimpleStatement.ml" 68 2101 2152
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 68 2101 2150 "SimpleStatement.ml" 68 2101 2156
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> 'b
+)
+"SimpleStatement.ml" 68 2101 2157 "SimpleStatement.ml" 68 2101 2165
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref thenPart "SimpleStatement.ml" 67 2057 2088 "SimpleStatement.ml" 67 2057 2096
+)
+"SimpleStatement.ml" 68 2101 2149 "SimpleStatement.ml" 68 2101 2166
+type(
+  'b
+)
+"SimpleStatement.ml" 68 2101 2137 "SimpleStatement.ml" 68 2101 2166
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 68 2101 2116 "SimpleStatement.ml" 68 2101 2167
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 68 2101 2112 "SimpleStatement.ml" 68 2101 2167
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 67 2057 2081 "SimpleStatement.ml" 68 2101 2167
+type(
+  'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 67 2057 2077 "SimpleStatement.ml" 68 2101 2167
+type(
+  'f -> 'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 70 2180 2195 "SimpleStatement.ml" 70 2180 2196
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 66 2031 2051 "SimpleStatement.ml" 66 2031 2052
+)
+"SimpleStatement.ml" 71 2203 2215 "SimpleStatement.ml" 71 2203 2219
+type(
+  'a * Ostap.Pretty.printer list
+)
+ident(
+  def head "SimpleStatement.ml" 71 2203 2224 "SimpleStatement.ml" 71 2203 2265
+)
+"SimpleStatement.ml" 71 2203 2214 "SimpleStatement.ml" 71 2203 2220
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+"SimpleStatement.ml" 71 2203 2224 "SimpleStatement.ml" 71 2203 2227
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 71 2203 2230 "SimpleStatement.ml" 71 2203 2236
+type(
+  'f -> 'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref branch "SimpleStatement.ml" 67 2057 2070 "SimpleStatement.ml" 67 2057 2076
+)
+"SimpleStatement.ml" 71 2203 2237 "SimpleStatement.ml" 71 2203 2240
+type(
+  'f
+)
+"SimpleStatement.ml" 71 2203 2241 "SimpleStatement.ml" 71 2203 2245
+type(
+  'a * Ostap.Pretty.printer list
+)
+ident(
+  int_ref head "SimpleStatement.ml" 71 2203 2215 "SimpleStatement.ml" 71 2203 2219
+)
+"SimpleStatement.ml" 71 2203 2230 "SimpleStatement.ml" 71 2203 2245
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 71 2203 2229 "SimpleStatement.ml" 71 2203 2246
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 71 2203 2250 "SimpleStatement.ml" 71 2203 2252
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 71 2203 2250 "SimpleStatement.ml" 71 2203 2261
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 71 2203 2262 "SimpleStatement.ml" 71 2203 2263
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref e "SimpleStatement.ml" 66 2031 2053 "SimpleStatement.ml" 66 2031 2054
+)
+"SimpleStatement.ml" 71 2203 2249 "SimpleStatement.ml" 71 2203 2264
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 71 2203 2229 "SimpleStatement.ml" 71 2203 2264
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"SimpleStatement.ml" 71 2203 2228 "SimpleStatement.ml" 71 2203 2265
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 71 2203 2224 "SimpleStatement.ml" 71 2203 2265
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 72 2266 2277 "SimpleStatement.ml" 72 2266 2281
+type(
+  'a * Ostap.Pretty.printer list
+)
+ident(
+  def head "SimpleStatement.ml" 73 2296 2309 "SimpleStatement.ml" 76 2424 2438
+)
+"SimpleStatement.ml" 72 2266 2283 "SimpleStatement.ml" 72 2266 2291
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+ident(
+  def branches "SimpleStatement.ml" 73 2296 2309 "SimpleStatement.ml" 76 2424 2438
+)
+"SimpleStatement.ml" 72 2266 2277 "SimpleStatement.ml" 72 2266 2291
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+"SimpleStatement.ml" 73 2296 2309 "SimpleStatement.ml" 73 2296 2313
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"SimpleStatement.ml" 73 2296 2316 "SimpleStatement.ml" 73 2296 2322
+type(
+  'f -> 'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref branch "SimpleStatement.ml" 67 2057 2070 "SimpleStatement.ml" 67 2057 2076
+)
+"SimpleStatement.ml" 73 2296 2323 "SimpleStatement.ml" 73 2296 2326
+type(
+  'f
+)
+"SimpleStatement.ml" 73 2296 2327 "SimpleStatement.ml" 73 2296 2331
+type(
+  'a * Ostap.Pretty.printer list
+)
+ident(
+  int_ref head "SimpleStatement.ml" 72 2266 2277 "SimpleStatement.ml" 72 2266 2281
+)
+"SimpleStatement.ml" 73 2296 2316 "SimpleStatement.ml" 73 2296 2331
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 73 2296 2315 "SimpleStatement.ml" 73 2296 2332
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 74 2336 2356 "SimpleStatement.ml" 74 2336 2359
+type(
+  ('a * Ostap.Pretty.printer list -> Ostap.Pretty.printer) ->
+  ('a * Ostap.Pretty.printer list) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 74 2336 2361 "SimpleStatement.ml" 74 2336 2367
+type(
+  'f -> 'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref branch "SimpleStatement.ml" 67 2057 2070 "SimpleStatement.ml" 67 2057 2076
+)
+"SimpleStatement.ml" 74 2336 2368 "SimpleStatement.ml" 74 2336 2374
+type(
+  'f
+)
+"SimpleStatement.ml" 74 2336 2360 "SimpleStatement.ml" 74 2336 2375
+call(
+  stack
+)
+type(
+  'a * Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 74 2336 2376 "SimpleStatement.ml" 74 2336 2384
+type(
+  ('a * Ostap.Pretty.printer list) list
+)
+ident(
+  int_ref branches "SimpleStatement.ml" 72 2266 2283 "SimpleStatement.ml" 72 2266 2291
+)
+"SimpleStatement.ml" 74 2336 2355 "SimpleStatement.ml" 74 2336 2385
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 75 2389 2409 "SimpleStatement.ml" 75 2389 2411
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 75 2389 2409 "SimpleStatement.ml" 75 2389 2420
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 75 2389 2421 "SimpleStatement.ml" 75 2389 2422
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref e "SimpleStatement.ml" 66 2031 2053 "SimpleStatement.ml" 66 2031 2054
+)
+"SimpleStatement.ml" 75 2389 2408 "SimpleStatement.ml" 75 2389 2423
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 74 2336 2355 "SimpleStatement.ml" 75 2389 2423
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"SimpleStatement.ml" 73 2296 2315 "SimpleStatement.ml" 75 2389 2423
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"SimpleStatement.ml" 73 2296 2314 "SimpleStatement.ml" 76 2424 2438
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 73 2296 2309 "SimpleStatement.ml" 76 2424 2438
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 70 2180 2189 "SimpleStatement.ml" 76 2424 2438
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 67 2057 2066 "SimpleStatement.ml" 76 2424 2438
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 66 2031 2053 "SimpleStatement.ml" 76 2424 2438
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 66 2031 2051 "SimpleStatement.ml" 76 2424 2438
+type(
+  ('a * Ostap.Pretty.printer list) list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 66 2031 2049 "SimpleStatement.ml" 76 2424 2438
+type(
+  'd ->
+  ('a * Ostap.Pretty.printer list) list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+type(
+  'd ->
+  ('a * Ostap.Pretty.printer list) list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 66 2031 2038 "SimpleStatement.ml" 76 2424 2438
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t > ->
+  'd ->
+  ('a * Ostap.Pretty.printer list) list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 77 2439 2460 "SimpleStatement.ml" 77 2439 2461
+type(
+  'd
+)
+"SimpleStatement.ml" 77 2439 2462 "SimpleStatement.ml" 77 2439 2463
+type(
+  'a
+)
+ident(
+  def c "SimpleStatement.ml" 77 2439 2464 "SimpleStatement.ml" 77 2439 2516
+)
+"SimpleStatement.ml" 77 2439 2464 "SimpleStatement.ml" 77 2439 2465
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def b "SimpleStatement.ml" 77 2439 2468 "SimpleStatement.ml" 77 2439 2516
+)
+"SimpleStatement.ml" 77 2439 2468 "SimpleStatement.ml" 77 2439 2473
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"SimpleStatement.ml" 77 2439 2475 "SimpleStatement.ml" 77 2439 2477
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 77 2439 2475 "SimpleStatement.ml" 77 2439 2487
+call(
+  stack
+)
+type(
+  'a -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2488 "SimpleStatement.ml" 77 2439 2489
+type(
+  'a
+)
+ident(
+  int_ref c "SimpleStatement.ml" 77 2439 2462 "SimpleStatement.ml" 77 2439 2463
+)
+"SimpleStatement.ml" 77 2439 2474 "SimpleStatement.ml" 77 2439 2490
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2492 "SimpleStatement.ml" 77 2439 2494
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 77 2439 2492 "SimpleStatement.ml" 77 2439 2504
+call(
+  stack
+)
+type(
+  'b -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2506 "SimpleStatement.ml" 77 2439 2508
+type(
+  'e
+)
+ident(
+  int_ref ps "SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 62 1937 1950
+)
+"SimpleStatement.ml" 77 2439 2506 "SimpleStatement.ml" 77 2439 2512
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> 'b
+)
+"SimpleStatement.ml" 77 2439 2513 "SimpleStatement.ml" 77 2439 2514
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 77 2439 2464 "SimpleStatement.ml" 77 2439 2465
+)
+"SimpleStatement.ml" 77 2439 2505 "SimpleStatement.ml" 77 2439 2515
+type(
+  'b
+)
+"SimpleStatement.ml" 77 2439 2491 "SimpleStatement.ml" 77 2439 2516
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2468 "SimpleStatement.ml" 77 2439 2516
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2464 "SimpleStatement.ml" 77 2439 2516
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 77 2439 2462 "SimpleStatement.ml" 77 2439 2516
+type(
+  'a -> Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 77 2439 2460 "SimpleStatement.ml" 77 2439 2516
+type(
+  'd -> 'a -> Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+type(
+  'd -> 'a -> Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 77 2439 2446 "SimpleStatement.ml" 77 2439 2516
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t > ->
+  'd -> 'a -> Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 64 1975 1979 "SimpleStatement.ml" 79 2526 2531
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t >
+)
+type(
+  < assign : 'd -> 'a Monad.Id.t -> 'a -> Ostap.Pretty.printer Monad.Id.t;
+    ifc : 'd ->
+          ('a * Ostap.Pretty.printer list) list ->
+          Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t;
+    whilec : 'd ->
+             'a ->
+             Ostap.Pretty.printer list -> Ostap.Pretty.printer Monad.Id.t >
+)
+"SimpleStatement.ml" 79 2526 2532 "SimpleStatement.ml" 79 2526 2536
+type(
+  'c -> 'a Monad.Id.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 62 1937 1951 "SimpleStatement.ml" 62 1937 1955
+)
+"SimpleStatement.ml" 79 2526 2537 "SimpleStatement.ml" 79 2526 2541
+type(
+  'c -> 'a Monad.Id.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 62 1937 1951 "SimpleStatement.ml" 62 1937 1955
+)
+"SimpleStatement.ml" 79 2526 2542 "SimpleStatement.ml" 79 2526 2545
+type(
+  ('d -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 62 1937 1956 "SimpleStatement.ml" 62 1937 1959
+)
+"SimpleStatement.ml" 79 2526 2546 "SimpleStatement.ml" 79 2526 2550
+type(
+  'd
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 62 1937 1960 "SimpleStatement.ml" 62 1937 1964
+)
+"SimpleStatement.ml" 63 1967 1969 "SimpleStatement.ml" 79 2526 2550
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 62 1937 1960 "SimpleStatement.ml" 79 2526 2550
+type(
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 62 1937 1956 "SimpleStatement.ml" 79 2526 2550
+type(
+  (('d -> Ostap.Pretty.printer Monad.Id.t) ->
+   'd -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 62 1937 1951 "SimpleStatement.ml" 79 2526 2550
+type(
+  ('c -> 'a Monad.Id.t) ->
+  (('d -> Ostap.Pretty.printer Monad.Id.t) ->
+   'd -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 62 1937 1948 "SimpleStatement.ml" 79 2526 2550
+type(
+  'e ->
+  ('c -> 'a Monad.Id.t) ->
+  (('d -> Ostap.Pretty.printer Monad.Id.t) ->
+   'd -> Ostap.Pretty.printer Monad.Id.t) ->
+  'd -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 81 2552 2556 "SimpleStatement.ml" 81 2552 2561
+type(
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  ((([> `Assign of 'a * 'a
+      | `If of ('a * 'b list) list * 'b list
+      | `While of 'a * 'b list ]
+     as 'b) ->
+    Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def print "SimpleStatement.ml" 94 3165 3165 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 81 2552 2562 "SimpleStatement.ml" 81 2552 2566
+type(
+  'a -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def expr "SimpleStatement.ml" 81 2552 2567 "SimpleStatement.ml" 92 3135 3163
+)
+"SimpleStatement.ml" 81 2552 2567 "SimpleStatement.ml" 81 2552 2570
+type(
+  ('b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def ext "SimpleStatement.ml" 81 2552 2571 "SimpleStatement.ml" 92 3135 3163
+)
+"SimpleStatement.ml" 81 2552 2571 "SimpleStatement.ml" 81 2552 2575
+type(
+  'b
+)
+ident(
+  def stmt "SimpleStatement.ml" 82 2579 2581 "SimpleStatement.ml" 92 3135 3163
+)
+"SimpleStatement.ml" 82 2579 2581 "SimpleStatement.ml" 82 2579 2587
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref gprint "SimpleStatement.ml" 62 1937 1941 "SimpleStatement.ml" 62 1937 1947
+)
+"SimpleStatement.ml" 82 2579 2596 "SimpleStatement.ml" 82 2579 2600
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+"SimpleStatement.ml" 83 2602 2631 "SimpleStatement.ml" 83 2602 2632
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def x "SimpleStatement.ml" 83 2602 2637 "SimpleStatement.ml" 83 2602 2643
+)
+"SimpleStatement.ml" 83 2602 2637 "SimpleStatement.ml" 83 2602 2641
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.pseq
+)
+"SimpleStatement.ml" 83 2602 2642 "SimpleStatement.ml" 83 2602 2643
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref x "SimpleStatement.ml" 83 2602 2631 "SimpleStatement.ml" 83 2602 2632
+)
+"SimpleStatement.ml" 83 2602 2637 "SimpleStatement.ml" 83 2602 2643
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 83 2602 2631 "SimpleStatement.ml" 83 2602 2643
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 83 2602 2614 "SimpleStatement.ml" 83 2602 2643
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 84 2645 2674 "SimpleStatement.ml" 84 2645 2675
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def d "SimpleStatement.ml" 84 2645 2676 "SimpleStatement.ml" 84 2645 2703
+)
+"SimpleStatement.ml" 84 2645 2676 "SimpleStatement.ml" 84 2645 2677
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 84 2645 2680 "SimpleStatement.ml" 84 2645 2703
+)
+"SimpleStatement.ml" 84 2645 2680 "SimpleStatement.ml" 84 2645 2683
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 84 2645 2685 "SimpleStatement.ml" 84 2645 2686
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref d "SimpleStatement.ml" 84 2645 2674 "SimpleStatement.ml" 84 2645 2675
+)
+"SimpleStatement.ml" 84 2645 2688 "SimpleStatement.ml" 84 2645 2694
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 84 2645 2695 "SimpleStatement.ml" 84 2645 2699
+type(
+  string
+)
+"SimpleStatement.ml" 84 2645 2688 "SimpleStatement.ml" 84 2645 2699
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 84 2645 2701 "SimpleStatement.ml" 84 2645 2702
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 84 2645 2676 "SimpleStatement.ml" 84 2645 2677
+)
+"SimpleStatement.ml" 84 2645 2684 "SimpleStatement.ml" 84 2645 2703
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 84 2645 2680 "SimpleStatement.ml" 84 2645 2703
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 84 2645 2676 "SimpleStatement.ml" 84 2645 2703
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 84 2645 2674 "SimpleStatement.ml" 84 2645 2703
+type(
+  Ostap.Pretty.printer Monad.Id.t ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+type(
+  Ostap.Pretty.printer ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 84 2645 2657 "SimpleStatement.ml" 84 2645 2703
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer Monad.Id.t ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 85 2704 2733 "SimpleStatement.ml" 85 2704 2734
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def c "SimpleStatement.ml" 85 2704 2739 "SimpleStatement.ml" 85 2704 2770
+)
+"SimpleStatement.ml" 85 2704 2739 "SimpleStatement.ml" 85 2704 2750
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySpace
+)
+"SimpleStatement.ml" 85 2704 2752 "SimpleStatement.ml" 85 2704 2758
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 85 2704 2759 "SimpleStatement.ml" 85 2704 2766
+type(
+  string
+)
+"SimpleStatement.ml" 85 2704 2752 "SimpleStatement.ml" 85 2704 2766
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 85 2704 2768 "SimpleStatement.ml" 85 2704 2769
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref c "SimpleStatement.ml" 85 2704 2733 "SimpleStatement.ml" 85 2704 2734
+)
+"SimpleStatement.ml" 85 2704 2751 "SimpleStatement.ml" 85 2704 2770
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 85 2704 2739 "SimpleStatement.ml" 85 2704 2770
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 85 2704 2733 "SimpleStatement.ml" 85 2704 2770
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 85 2704 2716 "SimpleStatement.ml" 85 2704 2770
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 86 2771 2800 "SimpleStatement.ml" 86 2771 2801
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 86 2771 2806 "SimpleStatement.ml" 86 2771 2825
+)
+"SimpleStatement.ml" 86 2771 2806 "SimpleStatement.ml" 86 2771 2812
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"SimpleStatement.ml" 86 2771 2813 "SimpleStatement.ml" 86 2771 2817
+type(
+  string
+)
+"SimpleStatement.ml" 86 2771 2818 "SimpleStatement.ml" 86 2771 2823
+type(
+  string
+)
+"SimpleStatement.ml" 86 2771 2824 "SimpleStatement.ml" 86 2771 2825
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 86 2771 2800 "SimpleStatement.ml" 86 2771 2801
+)
+"SimpleStatement.ml" 86 2771 2806 "SimpleStatement.ml" 86 2771 2825
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 86 2771 2800 "SimpleStatement.ml" 86 2771 2825
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 86 2771 2783 "SimpleStatement.ml" 86 2771 2825
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 87 2826 2855 "SimpleStatement.ml" 87 2826 2856
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 87 2826 2861 "SimpleStatement.ml" 87 2826 2883
+)
+"SimpleStatement.ml" 87 2826 2861 "SimpleStatement.ml" 87 2826 2864
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 87 2826 2866 "SimpleStatement.ml" 87 2826 2872
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 87 2826 2873 "SimpleStatement.ml" 87 2826 2879
+type(
+  string
+)
+"SimpleStatement.ml" 87 2826 2866 "SimpleStatement.ml" 87 2826 2879
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 87 2826 2881 "SimpleStatement.ml" 87 2826 2882
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 87 2826 2855 "SimpleStatement.ml" 87 2826 2856
+)
+"SimpleStatement.ml" 87 2826 2865 "SimpleStatement.ml" 87 2826 2883
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 87 2826 2861 "SimpleStatement.ml" 87 2826 2883
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 87 2826 2855 "SimpleStatement.ml" 87 2826 2883
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 87 2826 2838 "SimpleStatement.ml" 87 2826 2883
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 88 2884 2913 "SimpleStatement.ml" 88 2884 2914
+type(
+  [ `Elsif | `If ]
+)
+ident(
+  def t "SimpleStatement.ml" 88 2884 2915 "SimpleStatement.ml" 88 2884 2981
+)
+"SimpleStatement.ml" 88 2884 2915 "SimpleStatement.ml" 88 2884 2916
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def c "SimpleStatement.ml" 88 2884 2919 "SimpleStatement.ml" 88 2884 2981
+)
+"SimpleStatement.ml" 88 2884 2919 "SimpleStatement.ml" 88 2884 2922
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 88 2884 2924 "SimpleStatement.ml" 88 2884 2930
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 88 2884 2938 "SimpleStatement.ml" 88 2884 2939
+type(
+  [ `Elsif | `If ]
+)
+ident(
+  int_ref t "SimpleStatement.ml" 88 2884 2913 "SimpleStatement.ml" 88 2884 2914
+)
+"SimpleStatement.ml" 88 2884 2945 "SimpleStatement.ml" 88 2884 2948
+type(
+  [ `Elsif | `If ]
+)
+"SimpleStatement.ml" 88 2884 2952 "SimpleStatement.ml" 88 2884 2956
+type(
+  string
+)
+"SimpleStatement.ml" 88 2884 2959 "SimpleStatement.ml" 88 2884 2965
+type(
+  [ `Elsif | `If ]
+)
+"SimpleStatement.ml" 88 2884 2969 "SimpleStatement.ml" 88 2884 2976
+type(
+  string
+)
+"SimpleStatement.ml" 88 2884 2931 "SimpleStatement.ml" 88 2884 2977
+type(
+  string
+)
+"SimpleStatement.ml" 88 2884 2924 "SimpleStatement.ml" 88 2884 2977
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 88 2884 2979 "SimpleStatement.ml" 88 2884 2980
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref c "SimpleStatement.ml" 88 2884 2915 "SimpleStatement.ml" 88 2884 2916
+)
+"SimpleStatement.ml" 88 2884 2923 "SimpleStatement.ml" 88 2884 2981
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 88 2884 2919 "SimpleStatement.ml" 88 2884 2981
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 88 2884 2915 "SimpleStatement.ml" 88 2884 2981
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 88 2884 2913 "SimpleStatement.ml" 88 2884 2981
+type(
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 88 2884 2896 "SimpleStatement.ml" 88 2884 2981
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 90 3021 3035 "SimpleStatement.ml" 90 3021 3037
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 90 3021 3045 "SimpleStatement.ml" 90 3021 3051
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 90 3021 3052 "SimpleStatement.ml" 90 3021 3057
+type(
+  string
+)
+"SimpleStatement.ml" 90 3021 3045 "SimpleStatement.ml" 90 3021 3057
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 90 3021 3044 "SimpleStatement.ml" 90 3021 3058
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 91 3060 3074 "SimpleStatement.ml" 91 3060 3079
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def stmts "SimpleStatement.ml" 91 3060 3083 "SimpleStatement.ml" 91 3060 3134
+)
+"SimpleStatement.ml" 91 3060 3084 "SimpleStatement.ml" 91 3060 3087
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 91 3060 3089 "SimpleStatement.ml" 91 3060 3095
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 91 3060 3096 "SimpleStatement.ml" 91 3060 3102
+type(
+  string
+)
+"SimpleStatement.ml" 91 3060 3089 "SimpleStatement.ml" 91 3060 3102
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 91 3060 3104 "SimpleStatement.ml" 91 3060 3108
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+ident(
+  int_ref self "SimpleStatement.ml" 82 2579 2596 "SimpleStatement.ml" 82 2579 2600
+)
+"SimpleStatement.ml" 91 3060 3104 "SimpleStatement.ml" 91 3060 3112
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 91 3060 3113 "SimpleStatement.ml" 91 3060 3118
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref stmts "SimpleStatement.ml" 91 3060 3074 "SimpleStatement.ml" 91 3060 3079
+)
+"SimpleStatement.ml" 91 3060 3104 "SimpleStatement.ml" 91 3060 3118
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 91 3060 3088 "SimpleStatement.ml" 91 3060 3119
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 91 3060 3084 "SimpleStatement.ml" 91 3060 3119
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 91 3060 3121 "SimpleStatement.ml" 91 3060 3127
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 91 3060 3128 "SimpleStatement.ml" 91 3060 3133
+type(
+  string
+)
+"SimpleStatement.ml" 91 3060 3121 "SimpleStatement.ml" 91 3060 3133
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 91 3060 3083 "SimpleStatement.ml" 91 3060 3134
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 89 2982 3012 "SimpleStatement.ml" 91 3060 3134
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 89 2982 2994 "SimpleStatement.ml" 91 3060 3134
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 82 2579 2588 "SimpleStatement.ml" 92 3135 3149
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+"SimpleStatement.ml" 92 3135 3150 "SimpleStatement.ml" 92 3135 3154
+type(
+  'a -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 81 2552 2562 "SimpleStatement.ml" 81 2552 2566
+)
+"SimpleStatement.ml" 92 3135 3155 "SimpleStatement.ml" 92 3135 3158
+type(
+  ('b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 81 2552 2567 "SimpleStatement.ml" 81 2552 2570
+)
+"SimpleStatement.ml" 92 3135 3159 "SimpleStatement.ml" 92 3135 3163
+type(
+  'b
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 81 2552 2571 "SimpleStatement.ml" 81 2552 2575
+)
+"SimpleStatement.ml" 82 2579 2581 "SimpleStatement.ml" 92 3135 3163
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 81 2552 2571 "SimpleStatement.ml" 92 3135 3163
+type(
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 81 2552 2567 "SimpleStatement.ml" 92 3135 3163
+type(
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 81 2552 2562 "SimpleStatement.ml" 92 3135 3163
+type(
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 94 3165 3169 "SimpleStatement.ml" 94 3165 3176
+type(
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  ((([> `Assign of 'a * 'a
+      | `If of ('a * 'b list) list * 'b list
+      | `While of 'a * 'b list ]
+     as 'b) ->
+    Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def print_c "SimpleStatement.ml" 109 3884 3884 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 94 3165 3177 "SimpleStatement.ml" 94 3165 3181
+type(
+  'a -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def expr "SimpleStatement.ml" 94 3165 3182 "SimpleStatement.ml" 105 3764 3792
+)
+"SimpleStatement.ml" 94 3165 3182 "SimpleStatement.ml" 94 3165 3185
+type(
+  ('b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  def ext "SimpleStatement.ml" 94 3165 3186 "SimpleStatement.ml" 105 3764 3792
+)
+"SimpleStatement.ml" 94 3165 3186 "SimpleStatement.ml" 94 3165 3190
+type(
+  'b
+)
+ident(
+  def stmt "SimpleStatement.ml" 95 3194 3196 "SimpleStatement.ml" 105 3764 3792
+)
+"SimpleStatement.ml" 95 3194 3196 "SimpleStatement.ml" 95 3194 3202
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref gprint "SimpleStatement.ml" 62 1937 1941 "SimpleStatement.ml" 62 1937 1947
+)
+"SimpleStatement.ml" 95 3194 3211 "SimpleStatement.ml" 95 3194 3215
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+"SimpleStatement.ml" 96 3217 3246 "SimpleStatement.ml" 96 3217 3247
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def x "SimpleStatement.ml" 96 3217 3252 "SimpleStatement.ml" 96 3217 3276
+)
+"SimpleStatement.ml" 96 3217 3252 "SimpleStatement.ml" 96 3217 3255
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"SimpleStatement.ml" 96 3217 3257 "SimpleStatement.ml" 96 3217 3261
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.pseq
+)
+"SimpleStatement.ml" 96 3217 3262 "SimpleStatement.ml" 96 3217 3263
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref x "SimpleStatement.ml" 96 3217 3246 "SimpleStatement.ml" 96 3217 3247
+)
+"SimpleStatement.ml" 96 3217 3257 "SimpleStatement.ml" 96 3217 3263
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 96 3217 3265 "SimpleStatement.ml" 96 3217 3271
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 96 3217 3272 "SimpleStatement.ml" 96 3217 3275
+type(
+  string
+)
+"SimpleStatement.ml" 96 3217 3265 "SimpleStatement.ml" 96 3217 3275
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 96 3217 3256 "SimpleStatement.ml" 96 3217 3276
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 96 3217 3252 "SimpleStatement.ml" 96 3217 3276
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 96 3217 3246 "SimpleStatement.ml" 96 3217 3276
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 96 3217 3229 "SimpleStatement.ml" 96 3217 3276
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 97 3277 3306 "SimpleStatement.ml" 97 3277 3307
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def d "SimpleStatement.ml" 97 3277 3308 "SimpleStatement.ml" 97 3277 3334
+)
+"SimpleStatement.ml" 97 3277 3308 "SimpleStatement.ml" 97 3277 3309
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 97 3277 3312 "SimpleStatement.ml" 97 3277 3334
+)
+"SimpleStatement.ml" 97 3277 3312 "SimpleStatement.ml" 97 3277 3315
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 97 3277 3317 "SimpleStatement.ml" 97 3277 3318
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref d "SimpleStatement.ml" 97 3277 3306 "SimpleStatement.ml" 97 3277 3307
+)
+"SimpleStatement.ml" 97 3277 3320 "SimpleStatement.ml" 97 3277 3326
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 97 3277 3327 "SimpleStatement.ml" 97 3277 3330
+type(
+  string
+)
+"SimpleStatement.ml" 97 3277 3320 "SimpleStatement.ml" 97 3277 3330
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 97 3277 3332 "SimpleStatement.ml" 97 3277 3333
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 97 3277 3308 "SimpleStatement.ml" 97 3277 3309
+)
+"SimpleStatement.ml" 97 3277 3316 "SimpleStatement.ml" 97 3277 3334
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 97 3277 3312 "SimpleStatement.ml" 97 3277 3334
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 97 3277 3308 "SimpleStatement.ml" 97 3277 3334
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 97 3277 3306 "SimpleStatement.ml" 97 3277 3334
+type(
+  Ostap.Pretty.printer Monad.Id.t ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+type(
+  Ostap.Pretty.printer ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 97 3277 3289 "SimpleStatement.ml" 97 3277 3334
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer Monad.Id.t ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 98 3335 3364 "SimpleStatement.ml" 98 3335 3365
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def c "SimpleStatement.ml" 98 3335 3370 "SimpleStatement.ml" 98 3335 3408
+)
+"SimpleStatement.ml" 98 3335 3370 "SimpleStatement.ml" 98 3335 3381
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySpace
+)
+"SimpleStatement.ml" 98 3335 3383 "SimpleStatement.ml" 98 3335 3389
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 98 3335 3390 "SimpleStatement.ml" 98 3335 3397
+type(
+  string
+)
+"SimpleStatement.ml" 98 3335 3383 "SimpleStatement.ml" 98 3335 3397
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 98 3335 3399 "SimpleStatement.ml" 98 3335 3405
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.rboxed
+)
+"SimpleStatement.ml" 98 3335 3406 "SimpleStatement.ml" 98 3335 3407
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref c "SimpleStatement.ml" 98 3335 3364 "SimpleStatement.ml" 98 3335 3365
+)
+"SimpleStatement.ml" 98 3335 3399 "SimpleStatement.ml" 98 3335 3407
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 98 3335 3382 "SimpleStatement.ml" 98 3335 3408
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 98 3335 3370 "SimpleStatement.ml" 98 3335 3408
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 98 3335 3364 "SimpleStatement.ml" 98 3335 3408
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 98 3335 3347 "SimpleStatement.ml" 98 3335 3408
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 99 3409 3438 "SimpleStatement.ml" 99 3409 3439
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 99 3409 3444 "SimpleStatement.ml" 99 3409 3460
+)
+"SimpleStatement.ml" 99 3409 3444 "SimpleStatement.ml" 99 3409 3450
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"SimpleStatement.ml" 99 3409 3451 "SimpleStatement.ml" 99 3409 3454
+type(
+  string
+)
+"SimpleStatement.ml" 99 3409 3455 "SimpleStatement.ml" 99 3409 3458
+type(
+  string
+)
+"SimpleStatement.ml" 99 3409 3459 "SimpleStatement.ml" 99 3409 3460
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 99 3409 3438 "SimpleStatement.ml" 99 3409 3439
+)
+"SimpleStatement.ml" 99 3409 3444 "SimpleStatement.ml" 99 3409 3460
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 99 3409 3438 "SimpleStatement.ml" 99 3409 3460
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 99 3409 3421 "SimpleStatement.ml" 99 3409 3460
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 100 3461 3490 "SimpleStatement.ml" 100 3461 3491
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleStatement.ml" 100 3461 3496 "SimpleStatement.ml" 100 3461 3512
+)
+"SimpleStatement.ml" 100 3461 3496 "SimpleStatement.ml" 100 3461 3502
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"SimpleStatement.ml" 100 3461 3503 "SimpleStatement.ml" 100 3461 3506
+type(
+  string
+)
+"SimpleStatement.ml" 100 3461 3507 "SimpleStatement.ml" 100 3461 3510
+type(
+  string
+)
+"SimpleStatement.ml" 100 3461 3511 "SimpleStatement.ml" 100 3461 3512
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleStatement.ml" 100 3461 3490 "SimpleStatement.ml" 100 3461 3491
+)
+"SimpleStatement.ml" 100 3461 3496 "SimpleStatement.ml" 100 3461 3512
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 100 3461 3490 "SimpleStatement.ml" 100 3461 3512
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 100 3461 3473 "SimpleStatement.ml" 100 3461 3512
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3542 "SimpleStatement.ml" 101 3513 3543
+type(
+  [ `Elsif | `If ]
+)
+ident(
+  def t "SimpleStatement.ml" 101 3513 3544 "SimpleStatement.ml" 101 3513 3619
+)
+"SimpleStatement.ml" 101 3513 3544 "SimpleStatement.ml" 101 3513 3545
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def c "SimpleStatement.ml" 101 3513 3548 "SimpleStatement.ml" 101 3513 3619
+)
+"SimpleStatement.ml" 101 3513 3548 "SimpleStatement.ml" 101 3513 3551
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 101 3513 3553 "SimpleStatement.ml" 101 3513 3559
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 101 3513 3567 "SimpleStatement.ml" 101 3513 3568
+type(
+  [ `Elsif | `If ]
+)
+ident(
+  int_ref t "SimpleStatement.ml" 101 3513 3542 "SimpleStatement.ml" 101 3513 3543
+)
+"SimpleStatement.ml" 101 3513 3574 "SimpleStatement.ml" 101 3513 3577
+type(
+  [ `Elsif | `If ]
+)
+"SimpleStatement.ml" 101 3513 3581 "SimpleStatement.ml" 101 3513 3585
+type(
+  string
+)
+"SimpleStatement.ml" 101 3513 3588 "SimpleStatement.ml" 101 3513 3594
+type(
+  [ `Elsif | `If ]
+)
+"SimpleStatement.ml" 101 3513 3598 "SimpleStatement.ml" 101 3513 3607
+type(
+  string
+)
+"SimpleStatement.ml" 101 3513 3560 "SimpleStatement.ml" 101 3513 3608
+type(
+  string
+)
+"SimpleStatement.ml" 101 3513 3553 "SimpleStatement.ml" 101 3513 3608
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3610 "SimpleStatement.ml" 101 3513 3616
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.rboxed
+)
+"SimpleStatement.ml" 101 3513 3617 "SimpleStatement.ml" 101 3513 3618
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref c "SimpleStatement.ml" 101 3513 3544 "SimpleStatement.ml" 101 3513 3545
+)
+"SimpleStatement.ml" 101 3513 3610 "SimpleStatement.ml" 101 3513 3618
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3552 "SimpleStatement.ml" 101 3513 3619
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 101 3513 3548 "SimpleStatement.ml" 101 3513 3619
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3544 "SimpleStatement.ml" 101 3513 3619
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3542 "SimpleStatement.ml" 101 3513 3619
+type(
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+type(
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 101 3513 3525 "SimpleStatement.ml" 101 3513 3619
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 103 3659 3673 "SimpleStatement.ml" 103 3659 3675
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 103 3659 3682 "SimpleStatement.ml" 103 3659 3684
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 104 3686 3700 "SimpleStatement.ml" 104 3686 3705
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def stmts "SimpleStatement.ml" 104 3686 3709 "SimpleStatement.ml" 104 3686 3763
+)
+"SimpleStatement.ml" 104 3686 3710 "SimpleStatement.ml" 104 3686 3713
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"SimpleStatement.ml" 104 3686 3715 "SimpleStatement.ml" 104 3686 3721
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleStatement.ml" 104 3686 3722 "SimpleStatement.ml" 104 3686 3728
+type(
+  string
+)
+"SimpleStatement.ml" 104 3686 3715 "SimpleStatement.ml" 104 3686 3728
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 104 3686 3730 "SimpleStatement.ml" 104 3686 3736
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"SimpleStatement.ml" 104 3686 3737 "SimpleStatement.ml" 104 3686 3740
+type(
+  string
+)
+"SimpleStatement.ml" 104 3686 3741 "SimpleStatement.ml" 104 3686 3744
+type(
+  string
+)
+"SimpleStatement.ml" 104 3686 3746 "SimpleStatement.ml" 104 3686 3750
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+ident(
+  int_ref self "SimpleStatement.ml" 95 3194 3211 "SimpleStatement.ml" 95 3194 3215
+)
+"SimpleStatement.ml" 104 3686 3746 "SimpleStatement.ml" 104 3686 3754
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 104 3686 3755 "SimpleStatement.ml" 104 3686 3760
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref stmts "SimpleStatement.ml" 104 3686 3700 "SimpleStatement.ml" 104 3686 3705
+)
+"SimpleStatement.ml" 104 3686 3745 "SimpleStatement.ml" 104 3686 3761
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 104 3686 3730 "SimpleStatement.ml" 104 3686 3761
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 104 3686 3714 "SimpleStatement.ml" 104 3686 3762
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 104 3686 3710 "SimpleStatement.ml" 104 3686 3762
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleStatement.ml" 104 3686 3709 "SimpleStatement.ml" 104 3686 3763
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 102 3620 3650 "SimpleStatement.ml" 104 3686 3763
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 102 3620 3632 "SimpleStatement.ml" 104 3686 3763
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer > ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+"SimpleStatement.ml" 95 3194 3203 "SimpleStatement.ml" 105 3764 3778
+type(
+  < assign : Ostap.Pretty.printer Monad.Id.t ->
+             Ostap.Pretty.printer -> Ostap.Pretty.printer Monad.Id.t;
+    elsePart : Ostap.Pretty.printer list -> Ostap.Pretty.printer list;
+    ifHead : [ `Elsif | `If ] -> Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    seq : Ostap.Pretty.printer list -> Ostap.Pretty.printer;
+    thenPart : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileBody : Ostap.Pretty.printer -> Ostap.Pretty.printer;
+    whileHead : Ostap.Pretty.printer -> Ostap.Pretty.printer >
+)
+"SimpleStatement.ml" 105 3764 3779 "SimpleStatement.ml" 105 3764 3783
+type(
+  'a -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 94 3165 3177 "SimpleStatement.ml" 94 3165 3181
+)
+"SimpleStatement.ml" 105 3764 3784 "SimpleStatement.ml" 105 3764 3787
+type(
+  ('b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 94 3165 3182 "SimpleStatement.ml" 94 3165 3185
+)
+"SimpleStatement.ml" 105 3764 3788 "SimpleStatement.ml" 105 3764 3792
+type(
+  'b
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 94 3165 3186 "SimpleStatement.ml" 94 3165 3190
+)
+"SimpleStatement.ml" 95 3194 3196 "SimpleStatement.ml" 105 3764 3792
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 94 3165 3186 "SimpleStatement.ml" 105 3764 3792
+type(
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 94 3165 3182 "SimpleStatement.ml" 105 3764 3792
+type(
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 94 3165 3177 "SimpleStatement.ml" 105 3764 3792
+type(
+  ('a -> Ostap.Pretty.printer Monad.Id.t) ->
+  (('b -> Ostap.Pretty.printer Monad.Id.t) ->
+   'b -> Ostap.Pretty.printer Monad.Id.t) ->
+  'b -> Ostap.Pretty.printer Monad.Id.t
+)
+"SimpleStatement.ml" 111 3898 3902 "SimpleStatement.ml" 111 3898 3909
+type(
+  ('a -> 'b Monad.Checked.t) ->
+  ('c -> 'd Monad.Checked.t) ->
+  ((([> `Assign of 'a * 'c
+      | `If of ('c * 'e list) list * 'e list
+      | `While of 'c * 'e list ]
+     as 'e) ->
+    ([> `Assign of 'b * 'd
+      | `If of ('d * 'f list) list * 'f list
+      | `While of 'd * 'f list ]
+     as 'f)
+    Monad.Checked.t) ->
+   'e -> 'f Monad.Checked.t) ->
+  'e -> 'f Monad.Checked.t
+)
+ident(
+  def resolve "SimpleStatement.ml" 117 4126 4126 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 111 3898 3910 "SimpleStatement.ml" 111 3898 3913
+type(
+  'a -> 'b Monad.Checked.t
+)
+ident(
+  def ref "SimpleStatement.ml" 111 3898 3914 "SimpleStatement.ml" 113 3970 4034
+)
+"SimpleStatement.ml" 111 3898 3914 "SimpleStatement.ml" 111 3898 3918
+type(
+  'c -> 'd Monad.Checked.t
+)
+ident(
+  def expr "SimpleStatement.ml" 111 3898 3919 "SimpleStatement.ml" 113 3970 4034
+)
+"SimpleStatement.ml" 111 3898 3919 "SimpleStatement.ml" 111 3898 3922
+type(
+  ('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t
+)
+ident(
+  def ext "SimpleStatement.ml" 111 3898 3923 "SimpleStatement.ml" 113 3970 4034
+)
+"SimpleStatement.ml" 111 3898 3923 "SimpleStatement.ml" 111 3898 3927
+type(
+  'e
+)
+ident(
+  def stmt "SimpleStatement.ml" 112 3930 3932 "SimpleStatement.ml" 113 3970 4034
+)
+"SimpleStatement.ml" 112 3930 3936 "SimpleStatement.ml" 112 3930 3941
+type(
+  'g -> 'h -> 'h
+)
+ident(
+  def reloc "SimpleStatement.ml" 113 3970 3972 "SimpleStatement.ml" 113 3970 4034
+)
+"SimpleStatement.ml" 112 3930 3942 "SimpleStatement.ml" 112 3930 3943
+type(
+  'g
+)
+ident(
+  def x "SimpleStatement.ml" 112 3930 3944 "SimpleStatement.ml" 112 3930 3966
+)
+"SimpleStatement.ml" 112 3930 3944 "SimpleStatement.ml" 112 3930 3945
+type(
+  'h
+)
+ident(
+  def y "SimpleStatement.ml" 112 3930 3948 "SimpleStatement.ml" 112 3930 3966
+)
+"SimpleStatement.ml" 112 3930 3948 "SimpleStatement.ml" 112 3930 3953
+type(
+  Ostap.Msg.Locator.t -> 'h -> 'h
+)
+ident(
+  ext_ref Common.reloc
+)
+"SimpleStatement.ml" 112 3930 3955 "SimpleStatement.ml" 112 3930 3961
+type(
+  'g -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"SimpleStatement.ml" 112 3930 3962 "SimpleStatement.ml" 112 3930 3963
+type(
+  'g
+)
+ident(
+  int_ref x "SimpleStatement.ml" 112 3930 3942 "SimpleStatement.ml" 112 3930 3943
+)
+"SimpleStatement.ml" 112 3930 3954 "SimpleStatement.ml" 112 3930 3964
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleStatement.ml" 112 3930 3965 "SimpleStatement.ml" 112 3930 3966
+type(
+  'h
+)
+ident(
+  int_ref y "SimpleStatement.ml" 112 3930 3944 "SimpleStatement.ml" 112 3930 3945
+)
+"SimpleStatement.ml" 112 3930 3948 "SimpleStatement.ml" 112 3930 3966
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleStatement.ml" 112 3930 3944 "SimpleStatement.ml" 112 3930 3966
+type(
+  'h -> 'h
+)
+"SimpleStatement.ml" 112 3930 3942 "SimpleStatement.ml" 112 3930 3966
+type(
+  'g -> 'h -> 'h
+)
+"SimpleStatement.ml" 113 3970 3972 "SimpleStatement.ml" 113 3970 3976
+type(
+  < assign : 'e -> 'b -> 'd -> 'f Monad.Checked.t;
+    ifc : 'e -> ('d * 'f list) list -> 'f list -> 'f Monad.Checked.t;
+    whilec : 'e -> 'd -> 'f list -> 'f Monad.Checked.t > ->
+  ('a -> 'b Monad.Checked.t) ->
+  ('c -> 'd Monad.Checked.t) ->
+  (('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t) ->
+  'e -> 'f Monad.Checked.t
+)
+ident(
+  int_ref cmap "SimpleStatement.ml" 26 808 812 "SimpleStatement.ml" 26 808 816
+)
+"SimpleStatement.ml" 113 3970 3978 "SimpleStatement.ml" 113 3970 3982
+type(
+  ('e -> 'f -> 'f Monad.Checked.t) ->
+  < assign : 'e -> 'b -> 'd -> 'f Monad.Checked.t;
+    ifc : 'e -> ('d * 'f list) list -> 'f list -> 'f Monad.Checked.t;
+    whilec : 'e -> 'd -> 'f list -> 'f Monad.Checked.t >
+)
+ident(
+  int_ref mapT "SimpleStatement.ml" 30 912 916 "SimpleStatement.ml" 30 912 920
+)
+"SimpleStatement.ml" 113 3970 3988 "SimpleStatement.ml" 113 3970 3992
+type(
+  'e
+)
+ident(
+  def stmt "SimpleStatement.ml" 113 3970 3993 "SimpleStatement.ml" 113 3970 4014
+)
+"SimpleStatement.ml" 113 3970 3993 "SimpleStatement.ml" 113 3970 3994
+type(
+  'f
+)
+ident(
+  def s "SimpleStatement.ml" 113 3970 3998 "SimpleStatement.ml" 113 3970 4014
+)
+"SimpleStatement.ml" 113 3970 4001 "SimpleStatement.ml" 113 3970 4006
+type(
+  'e -> 'f -> 'f
+)
+ident(
+  int_ref reloc "SimpleStatement.ml" 112 3930 3936 "SimpleStatement.ml" 112 3930 3941
+)
+"SimpleStatement.ml" 113 3970 4007 "SimpleStatement.ml" 113 3970 4011
+type(
+  'e
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 113 3970 3988 "SimpleStatement.ml" 113 3970 3992
+)
+"SimpleStatement.ml" 113 3970 4012 "SimpleStatement.ml" 113 3970 4013
+type(
+  'f
+)
+ident(
+  int_ref s "SimpleStatement.ml" 113 3970 3993 "SimpleStatement.ml" 113 3970 3994
+)
+"SimpleStatement.ml" 113 3970 4000 "SimpleStatement.ml" 113 3970 4014
+call(
+  stack
+)
+type(
+  'f
+)
+"SimpleStatement.ml" 113 3970 3998 "SimpleStatement.ml" 113 3970 4014
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+type(
+  'f -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"SimpleStatement.ml" 113 3970 3993 "SimpleStatement.ml" 113 3970 4014
+type(
+  'f -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 113 3970 3983 "SimpleStatement.ml" 113 3970 4015
+type(
+  'e -> 'f -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 113 3970 3977 "SimpleStatement.ml" 113 3970 4016
+call(
+  stack
+)
+type(
+  < assign : 'e -> 'b -> 'd -> 'f Monad.Checked.t;
+    ifc : 'e -> ('d * 'f list) list -> 'f list -> 'f Monad.Checked.t;
+    whilec : 'e -> 'd -> 'f list -> 'f Monad.Checked.t >
+)
+"SimpleStatement.ml" 113 3970 4017 "SimpleStatement.ml" 113 3970 4020
+type(
+  'a -> 'b Monad.Checked.t
+)
+ident(
+  int_ref ref "SimpleStatement.ml" 111 3898 3910 "SimpleStatement.ml" 111 3898 3913
+)
+"SimpleStatement.ml" 113 3970 4021 "SimpleStatement.ml" 113 3970 4025
+type(
+  'c -> 'd Monad.Checked.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 111 3898 3914 "SimpleStatement.ml" 111 3898 3918
+)
+"SimpleStatement.ml" 113 3970 4026 "SimpleStatement.ml" 113 3970 4029
+type(
+  ('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 111 3898 3919 "SimpleStatement.ml" 111 3898 3922
+)
+"SimpleStatement.ml" 113 3970 4030 "SimpleStatement.ml" 113 3970 4034
+type(
+  'e
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 111 3898 3923 "SimpleStatement.ml" 111 3898 3927
+)
+"SimpleStatement.ml" 113 3970 3972 "SimpleStatement.ml" 113 3970 4034
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+"SimpleStatement.ml" 112 3930 3932 "SimpleStatement.ml" 113 3970 4034
+type(
+  'f Monad.Checked.t
+)
+"SimpleStatement.ml" 111 3898 3923 "SimpleStatement.ml" 113 3970 4034
+type(
+  'e -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 111 3898 3919 "SimpleStatement.ml" 113 3970 4034
+type(
+  (('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t) ->
+  'e -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 111 3898 3914 "SimpleStatement.ml" 113 3970 4034
+type(
+  ('c -> 'd Monad.Checked.t) ->
+  (('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t) ->
+  'e -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 111 3898 3910 "SimpleStatement.ml" 113 3970 4034
+type(
+  ('a -> 'b Monad.Checked.t) ->
+  ('c -> 'd Monad.Checked.t) ->
+  (('e -> 'f Monad.Checked.t) -> 'e -> 'f Monad.Checked.t) ->
+  'e -> 'f Monad.Checked.t
+)
+"SimpleStatement.ml" 117 4126 4130 "SimpleStatement.ml" 117 4126 4139
+type(
+  < equal : ([> `Bool ] as 'a) -> 'a -> bool; primitive : 'a -> bool;
+    string : 'a -> string; .. > ->
+  ('b -> ('c * 'a) Monad.Checked.t) ->
+  ((([> `Assign of 'b * 'b
+      | `If of ('b * 'd list) list * 'd list
+      | `While of 'b * 'd list ]
+     as 'd) ->
+    ([> `Assign of ('c * 'a) * ('c * 'a)
+      | `If of (('c * 'a) * 'e list) list * 'e list
+      | `While of ('c * 'a) * 'e list ]
+     as 'e)
+    Monad.Checked.t) ->
+   'd -> 'e Monad.Checked.t) ->
+  'd -> 'e Monad.Checked.t
+)
+ident(
+  def typecheck "SimpleStatement.ml" 127 4704 4735 "SimpleStatement.ml" 1 0 -1
+)
+"SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+type(
+  < equal : 'a -> 'a -> bool; primitive : 'a -> bool; string : 'a -> string;
+    .. >
+  as 'f
+)
+ident(
+  def ts "SimpleStatement.ml" 117 4126 4143 "SimpleStatement.ml" 127 4704 4735
+)
+"SimpleStatement.ml" 117 4126 4143 "SimpleStatement.ml" 117 4126 4147
+type(
+  'b -> ('c * 'a) Monad.Checked.t
+)
+ident(
+  def expr "SimpleStatement.ml" 117 4126 4148 "SimpleStatement.ml" 127 4704 4735
+)
+"SimpleStatement.ml" 117 4126 4148 "SimpleStatement.ml" 117 4126 4151
+type(
+  ('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t
+)
+ident(
+  def ext "SimpleStatement.ml" 117 4126 4152 "SimpleStatement.ml" 127 4704 4735
+)
+"SimpleStatement.ml" 117 4126 4152 "SimpleStatement.ml" 117 4126 4156
+type(
+  'd
+)
+ident(
+  def stmt "SimpleStatement.ml" 118 4159 4161 "SimpleStatement.ml" 127 4704 4735
+)
+"SimpleStatement.ml" 118 4159 4161 "SimpleStatement.ml" 118 4159 4165
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t > ->
+  ('b -> ('c * 'a) Monad.Checked.t) ->
+  ('b -> ('c * 'a) Monad.Checked.t) ->
+  (('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t) ->
+  'd -> 'e Monad.Checked.t
+)
+ident(
+  int_ref cmap "SimpleStatement.ml" 26 808 812 "SimpleStatement.ml" 26 808 816
+)
+"SimpleStatement.ml" 119 4174 4198 "SimpleStatement.ml" 119 4174 4199
+type(
+  'd
+)
+"SimpleStatement.ml" 119 4174 4202 "SimpleStatement.ml" 119 4174 4203
+type(
+  'c
+)
+"SimpleStatement.ml" 119 4174 4205 "SimpleStatement.ml" 119 4174 4207
+type(
+  'a
+)
+ident(
+  def dt "SimpleStatement.ml" 119 4174 4215 "SimpleStatement.ml" 122 4354 4457
+)
+"SimpleStatement.ml" 119 4174 4202 "SimpleStatement.ml" 119 4174 4207
+type(
+  'c * 'a
+)
+"SimpleStatement.ml" 119 4174 4201 "SimpleStatement.ml" 119 4174 4213
+type(
+  'c * 'a
+)
+ident(
+  def d "SimpleStatement.ml" 119 4174 4215 "SimpleStatement.ml" 122 4354 4457
+)
+"SimpleStatement.ml" 119 4174 4217 "SimpleStatement.ml" 119 4174 4218
+type(
+  'c
+)
+ident(
+  def y "SimpleStatement.ml" 120 4233 4245 "SimpleStatement.ml" 122 4354 4457
+)
+"SimpleStatement.ml" 119 4174 4220 "SimpleStatement.ml" 119 4174 4222
+type(
+  'a
+)
+ident(
+  def st "SimpleStatement.ml" 120 4233 4245 "SimpleStatement.ml" 122 4354 4457
+)
+"SimpleStatement.ml" 119 4174 4217 "SimpleStatement.ml" 119 4174 4222
+type(
+  'c * 'a
+)
+"SimpleStatement.ml" 119 4174 4216 "SimpleStatement.ml" 119 4174 4228
+type(
+  'c * 'a
+)
+ident(
+  def s "SimpleStatement.ml" 120 4233 4245 "SimpleStatement.ml" 122 4354 4457
+)
+"SimpleStatement.ml" 120 4233 4248 "SimpleStatement.ml" 120 4233 4250
+type(
+  'f
+)
+ident(
+  int_ref ts "SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+)
+"SimpleStatement.ml" 120 4233 4248 "SimpleStatement.ml" 120 4233 4260
+call(
+  stack
+)
+type(
+  'a -> bool
+)
+"SimpleStatement.ml" 120 4233 4261 "SimpleStatement.ml" 120 4233 4263
+type(
+  'a
+)
+ident(
+  int_ref dt "SimpleStatement.ml" 119 4174 4205 "SimpleStatement.ml" 119 4174 4207
+)
+"SimpleStatement.ml" 120 4233 4248 "SimpleStatement.ml" 120 4233 4263
+type(
+  bool
+)
+"SimpleStatement.ml" 120 4233 4267 "SimpleStatement.ml" 120 4233 4269
+type(
+  'f
+)
+ident(
+  int_ref ts "SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+)
+"SimpleStatement.ml" 120 4233 4267 "SimpleStatement.ml" 120 4233 4279
+call(
+  stack
+)
+type(
+  'a -> bool
+)
+"SimpleStatement.ml" 120 4233 4280 "SimpleStatement.ml" 120 4233 4282
+type(
+  'a
+)
+ident(
+  int_ref st "SimpleStatement.ml" 119 4174 4220 "SimpleStatement.ml" 119 4174 4222
+)
+"SimpleStatement.ml" 120 4233 4267 "SimpleStatement.ml" 120 4233 4282
+type(
+  bool
+)
+"SimpleStatement.ml" 120 4233 4248 "SimpleStatement.ml" 120 4233 4282
+type(
+  bool
+)
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"SimpleStatement.ml" 121 4283 4300 "SimpleStatement.ml" 121 4283 4311
+type(
+  'f -> 'a -> 'a -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.same
+)
+"SimpleStatement.ml" 121 4283 4312 "SimpleStatement.ml" 121 4283 4314
+type(
+  'f
+)
+ident(
+  int_ref ts "SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+)
+"SimpleStatement.ml" 121 4283 4315 "SimpleStatement.ml" 121 4283 4317
+type(
+  'a
+)
+ident(
+  int_ref dt "SimpleStatement.ml" 119 4174 4205 "SimpleStatement.ml" 119 4174 4207
+)
+"SimpleStatement.ml" 121 4283 4318 "SimpleStatement.ml" 121 4283 4320
+type(
+  'a
+)
+ident(
+  int_ref st "SimpleStatement.ml" 119 4174 4220 "SimpleStatement.ml" 119 4174 4222
+)
+"SimpleStatement.ml" 121 4283 4321 "SimpleStatement.ml" 121 4283 4322
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 119 4174 4217 "SimpleStatement.ml" 119 4174 4218
+)
+"SimpleStatement.ml" 121 4283 4300 "SimpleStatement.ml" 121 4283 4322
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"SimpleStatement.ml" 121 4283 4333 "SimpleStatement.ml" 121 4283 4334
+type(
+  unit
+)
+"SimpleStatement.ml" 121 4283 4347 "SimpleStatement.ml" 121 4283 4348
+type(
+  'c * 'a
+)
+ident(
+  int_ref d "SimpleStatement.ml" 119 4174 4201 "SimpleStatement.ml" 119 4174 4213
+)
+"SimpleStatement.ml" 121 4283 4350 "SimpleStatement.ml" 121 4283 4351
+type(
+  'c * 'a
+)
+ident(
+  int_ref s "SimpleStatement.ml" 119 4174 4216 "SimpleStatement.ml" 119 4174 4228
+)
+"SimpleStatement.ml" 121 4283 4346 "SimpleStatement.ml" 121 4283 4352
+type(
+  ('c * 'a) * ('c * 'a)
+)
+"SimpleStatement.ml" 121 4283 4338 "SimpleStatement.ml" 121 4283 4352
+type(
+  'e
+)
+"SimpleStatement.ml" 121 4283 4328 "SimpleStatement.ml" 121 4283 4353
+type(
+  unit -> 'e
+)
+"SimpleStatement.ml" 121 4283 4300 "SimpleStatement.ml" 121 4283 4353
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t -> (unit -> 'e) -> 'e Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"SimpleStatement.ml" 122 4354 4377 "SimpleStatement.ml" 122 4354 4391
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"SimpleStatement.ml" 122 4354 4392 "SimpleStatement.ml" 122 4354 4440
+type(
+  string
+)
+"SimpleStatement.ml" 122 4354 4441 "SimpleStatement.ml" 122 4354 4445
+type(
+  string array
+)
+"SimpleStatement.ml" 122 4354 4447 "SimpleStatement.ml" 122 4354 4453
+type(
+  'c -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"SimpleStatement.ml" 122 4354 4454 "SimpleStatement.ml" 122 4354 4455
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 119 4174 4217 "SimpleStatement.ml" 119 4174 4218
+)
+"SimpleStatement.ml" 122 4354 4446 "SimpleStatement.ml" 122 4354 4456
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleStatement.ml" 122 4354 4377 "SimpleStatement.ml" 122 4354 4456
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"SimpleStatement.ml" 122 4354 4376 "SimpleStatement.ml" 122 4354 4457
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"SimpleStatement.ml" 122 4354 4371 "SimpleStatement.ml" 122 4354 4457
+type(
+  'e Monad.Checked.t
+)
+"SimpleStatement.ml" 120 4233 4245 "SimpleStatement.ml" 122 4354 4457
+type(
+  'e Monad.Checked.t
+)
+"SimpleStatement.ml" 119 4174 4215 "SimpleStatement.ml" 122 4354 4457
+type(
+  'c * 'a -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 119 4174 4200 "SimpleStatement.ml" 122 4354 4457
+type(
+  'c * 'a -> 'c * 'a -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 119 4174 4198 "SimpleStatement.ml" 122 4354 4457
+type(
+  'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t
+)
+type(
+  'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 119 4174 4184 "SimpleStatement.ml" 122 4354 4457
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t > ->
+  'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 123 4458 4479 "SimpleStatement.ml" 123 4458 4480
+type(
+  'd
+)
+"SimpleStatement.ml" 123 4458 4481 "SimpleStatement.ml" 123 4458 4482
+type(
+  (('c * 'a) * 'e list) list
+)
+ident(
+  def b "SimpleStatement.ml" 123 4458 4483 "SimpleStatement.ml" 124 4488 4588
+)
+"SimpleStatement.ml" 123 4458 4483 "SimpleStatement.ml" 123 4458 4484
+type(
+  'e list
+)
+ident(
+  def e "SimpleStatement.ml" 124 4488 4500 "SimpleStatement.ml" 124 4488 4588
+)
+"SimpleStatement.ml" 124 4488 4504 "SimpleStatement.ml" 124 4488 4512
+type(
+  (('c * 'a) * 'e list -> ('c * (_[> `Bool ] as 'g), Ostap.Msg.t) Checked.t) ->
+  (('c * 'a) * 'e list) list -> ('c * 'g, Ostap.Msg.t) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleStatement.ml" 124 4488 4520 "SimpleStatement.ml" 124 4488 4521
+type(
+  'c
+)
+ident(
+  def y "SimpleStatement.ml" 124 4488 4533 "SimpleStatement.ml" 124 4488 4557
+)
+"SimpleStatement.ml" 124 4488 4523 "SimpleStatement.ml" 124 4488 4524
+type(
+  'a
+)
+ident(
+  def t "SimpleStatement.ml" 124 4488 4533 "SimpleStatement.ml" 124 4488 4557
+)
+"SimpleStatement.ml" 124 4488 4520 "SimpleStatement.ml" 124 4488 4524
+type(
+  'c * 'a
+)
+"SimpleStatement.ml" 124 4488 4527 "SimpleStatement.ml" 124 4488 4528
+type(
+  'e list
+)
+"SimpleStatement.ml" 124 4488 4519 "SimpleStatement.ml" 124 4488 4528
+type(
+  ('c * 'a) * 'e list
+)
+"SimpleStatement.ml" 124 4488 4533 "SimpleStatement.ml" 124 4488 4544
+type(
+  'f -> 'c -> 'a -> 'g -> ('c * 'g, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.bool
+)
+"SimpleStatement.ml" 124 4488 4545 "SimpleStatement.ml" 124 4488 4547
+type(
+  'f
+)
+ident(
+  int_ref ts "SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+)
+"SimpleStatement.ml" 124 4488 4548 "SimpleStatement.ml" 124 4488 4549
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 124 4488 4520 "SimpleStatement.ml" 124 4488 4521
+)
+"SimpleStatement.ml" 124 4488 4550 "SimpleStatement.ml" 124 4488 4551
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleStatement.ml" 124 4488 4523 "SimpleStatement.ml" 124 4488 4524
+)
+"SimpleStatement.ml" 124 4488 4552 "SimpleStatement.ml" 124 4488 4557
+type(
+  'g
+)
+"SimpleStatement.ml" 124 4488 4533 "SimpleStatement.ml" 124 4488 4557
+call(
+  tail
+)
+type(
+  ('c * 'g, Ostap.Msg.t) Checked.t
+)
+"SimpleStatement.ml" 124 4488 4513 "SimpleStatement.ml" 124 4488 4558
+type(
+  ('c * 'a) * 'e list -> ('c * 'g, Ostap.Msg.t) Checked.t
+)
+"SimpleStatement.ml" 124 4488 4559 "SimpleStatement.ml" 124 4488 4560
+type(
+  (('c * 'a) * 'e list) list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 123 4458 4481 "SimpleStatement.ml" 123 4458 4482
+)
+"SimpleStatement.ml" 124 4488 4503 "SimpleStatement.ml" 124 4488 4561
+call(
+  stack
+)
+type(
+  ('c * 'g, Ostap.Msg.t) Checked.t list
+)
+"SimpleStatement.ml" 124 4488 4500 "SimpleStatement.ml" 124 4488 4561
+call(
+  stack
+)
+type(
+  (('c * 'g) list, Ostap.Msg.t) Checked.t
+)
+type(
+  ('c * 'g, Ostap.Msg.t) Checked.t list ->
+  (('c * 'g) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( ?| )
+)
+"SimpleStatement.ml" 124 4488 4572 "SimpleStatement.ml" 124 4488 4573
+type(
+  ('c * 'g) list
+)
+"SimpleStatement.ml" 124 4488 4582 "SimpleStatement.ml" 124 4488 4583
+type(
+  (('c * 'a) * 'e list) list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 123 4458 4481 "SimpleStatement.ml" 123 4458 4482
+)
+"SimpleStatement.ml" 124 4488 4585 "SimpleStatement.ml" 124 4488 4586
+type(
+  'e list
+)
+ident(
+  int_ref e "SimpleStatement.ml" 123 4458 4483 "SimpleStatement.ml" 123 4458 4484
+)
+"SimpleStatement.ml" 124 4488 4581 "SimpleStatement.ml" 124 4488 4587
+type(
+  (('c * 'a) * 'e list) list * 'e list
+)
+"SimpleStatement.ml" 124 4488 4577 "SimpleStatement.ml" 124 4488 4587
+type(
+  'e
+)
+"SimpleStatement.ml" 124 4488 4567 "SimpleStatement.ml" 124 4488 4588
+type(
+  ('c * 'g) list -> 'e
+)
+"SimpleStatement.ml" 124 4488 4500 "SimpleStatement.ml" 124 4488 4588
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+type(
+  (('c * 'g) list, Ostap.Msg.t) Checked.t ->
+  (('c * 'g) list -> 'e) -> 'e Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"SimpleStatement.ml" 123 4458 4483 "SimpleStatement.ml" 124 4488 4588
+type(
+  'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 123 4458 4481 "SimpleStatement.ml" 124 4488 4588
+type(
+  (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 123 4458 4479 "SimpleStatement.ml" 124 4488 4588
+type(
+  'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t
+)
+type(
+  'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 123 4458 4468 "SimpleStatement.ml" 124 4488 4588
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t > ->
+  'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 125 4589 4613 "SimpleStatement.ml" 125 4589 4614
+type(
+  'd
+)
+"SimpleStatement.ml" 125 4589 4617 "SimpleStatement.ml" 125 4589 4618
+type(
+  'c
+)
+ident(
+  def y "SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 126 4634 4701
+)
+"SimpleStatement.ml" 125 4589 4620 "SimpleStatement.ml" 125 4589 4622
+type(
+  'a
+)
+ident(
+  def ct "SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 126 4634 4701
+)
+"SimpleStatement.ml" 125 4589 4617 "SimpleStatement.ml" 125 4589 4622
+type(
+  'c * 'a
+)
+"SimpleStatement.ml" 125 4589 4616 "SimpleStatement.ml" 125 4589 4628
+type(
+  'c * 'a
+)
+ident(
+  def c "SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 126 4634 4701
+)
+"SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 125 4589 4631
+type(
+  'e list
+)
+ident(
+  def b "SimpleStatement.ml" 126 4634 4646 "SimpleStatement.ml" 126 4634 4701
+)
+"SimpleStatement.ml" 126 4634 4646 "SimpleStatement.ml" 126 4634 4657
+type(
+  'f -> 'c -> 'a -> (_[> `Bool ] as 'h) -> ('c * 'h, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.bool
+)
+"SimpleStatement.ml" 126 4634 4658 "SimpleStatement.ml" 126 4634 4660
+type(
+  'f
+)
+ident(
+  int_ref ts "SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 117 4126 4142
+)
+"SimpleStatement.ml" 126 4634 4661 "SimpleStatement.ml" 126 4634 4662
+type(
+  'c
+)
+ident(
+  int_ref y "SimpleStatement.ml" 125 4589 4617 "SimpleStatement.ml" 125 4589 4618
+)
+"SimpleStatement.ml" 126 4634 4663 "SimpleStatement.ml" 126 4634 4665
+type(
+  'a
+)
+ident(
+  int_ref ct "SimpleStatement.ml" 125 4589 4620 "SimpleStatement.ml" 125 4589 4622
+)
+"SimpleStatement.ml" 126 4634 4666 "SimpleStatement.ml" 126 4634 4671
+type(
+  'h
+)
+"SimpleStatement.ml" 126 4634 4646 "SimpleStatement.ml" 126 4634 4671
+call(
+  stack
+)
+type(
+  ('c * 'h, Ostap.Msg.t) Checked.t
+)
+"SimpleStatement.ml" 126 4634 4682 "SimpleStatement.ml" 126 4634 4683
+type(
+  'c * 'h
+)
+"SimpleStatement.ml" 126 4634 4695 "SimpleStatement.ml" 126 4634 4696
+type(
+  'c * 'a
+)
+ident(
+  int_ref c "SimpleStatement.ml" 125 4589 4616 "SimpleStatement.ml" 125 4589 4628
+)
+"SimpleStatement.ml" 126 4634 4698 "SimpleStatement.ml" 126 4634 4699
+type(
+  'e list
+)
+ident(
+  int_ref b "SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 125 4589 4631
+)
+"SimpleStatement.ml" 126 4634 4694 "SimpleStatement.ml" 126 4634 4700
+type(
+  ('c * 'a) * 'e list
+)
+"SimpleStatement.ml" 126 4634 4687 "SimpleStatement.ml" 126 4634 4700
+type(
+  'e
+)
+"SimpleStatement.ml" 126 4634 4677 "SimpleStatement.ml" 126 4634 4701
+type(
+  'c * 'h -> 'e
+)
+"SimpleStatement.ml" 126 4634 4646 "SimpleStatement.ml" 126 4634 4701
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+type(
+  ('c * 'h, Ostap.Msg.t) Checked.t -> ('c * 'h -> 'e) -> 'e Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"SimpleStatement.ml" 125 4589 4630 "SimpleStatement.ml" 126 4634 4701
+type(
+  'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 125 4589 4615 "SimpleStatement.ml" 126 4634 4701
+type(
+  'c * 'a -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 125 4589 4613 "SimpleStatement.ml" 126 4634 4701
+type(
+  'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t
+)
+type(
+  'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 125 4589 4599 "SimpleStatement.ml" 126 4634 4701
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t > ->
+  'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 118 4159 4166 "SimpleStatement.ml" 127 4704 4716
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t >
+)
+type(
+  < assign : 'd -> 'c * 'a -> 'c * 'a -> 'e Monad.Checked.t;
+    ifc : 'd -> (('c * 'a) * 'e list) list -> 'e list -> 'e Monad.Checked.t;
+    whilec : 'd -> 'c * 'a -> 'e list -> 'e Monad.Checked.t >
+)
+"SimpleStatement.ml" 127 4704 4717 "SimpleStatement.ml" 127 4704 4721
+type(
+  'b -> ('c * 'a) Monad.Checked.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 117 4126 4143 "SimpleStatement.ml" 117 4126 4147
+)
+"SimpleStatement.ml" 127 4704 4722 "SimpleStatement.ml" 127 4704 4726
+type(
+  'b -> ('c * 'a) Monad.Checked.t
+)
+ident(
+  int_ref expr "SimpleStatement.ml" 117 4126 4143 "SimpleStatement.ml" 117 4126 4147
+)
+"SimpleStatement.ml" 127 4704 4727 "SimpleStatement.ml" 127 4704 4730
+type(
+  ('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleStatement.ml" 117 4126 4148 "SimpleStatement.ml" 117 4126 4151
+)
+"SimpleStatement.ml" 127 4704 4731 "SimpleStatement.ml" 127 4704 4735
+type(
+  'd
+)
+ident(
+  int_ref stmt "SimpleStatement.ml" 117 4126 4152 "SimpleStatement.ml" 117 4126 4156
+)
+"SimpleStatement.ml" 118 4159 4161 "SimpleStatement.ml" 127 4704 4735
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+"SimpleStatement.ml" 117 4126 4152 "SimpleStatement.ml" 127 4704 4735
+type(
+  'd -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 117 4126 4148 "SimpleStatement.ml" 127 4704 4735
+type(
+  (('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t) ->
+  'd -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 117 4126 4143 "SimpleStatement.ml" 127 4704 4735
+type(
+  ('b -> ('c * 'a) Monad.Checked.t) ->
+  (('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t) ->
+  'd -> 'e Monad.Checked.t
+)
+"SimpleStatement.ml" 117 4126 4140 "SimpleStatement.ml" 127 4704 4735
+type(
+  'f ->
+  ('b -> ('c * 'a) Monad.Checked.t) ->
+  (('d -> 'e Monad.Checked.t) -> 'd -> 'e Monad.Checked.t) ->
+  'd -> 'e Monad.Checked.t
+)

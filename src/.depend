@@ -1,0 +1,54 @@
+Monad.cmo :
+Monad.cmx :
+Common.cmo :
+Common.cmx :
+Namespace.cmo : Common.cmo
+Namespace.cmx : Common.cmx
+Lexer.cmo :
+Lexer.cmx :
+PrimitiveType.cmo : Common.cmo
+PrimitiveType.cmx : Common.cmx
+Module.cmo : Common.cmo
+Module.cmx : Common.cmx
+ConstDecl.cmo : Common.cmo
+ConstDecl.cmx : Common.cmx
+VarDecl.cmo : Common.cmo
+VarDecl.cmx : Common.cmx
+SimpleExpression.cmo : Monad.cmo Common.cmo
+SimpleExpression.cmx : Monad.cmx Common.cmx
+SimpleStatement.cmo : Monad.cmo Common.cmo
+SimpleStatement.cmx : Monad.cmx Common.cmx
+ExtendedStatement.cmo : Monad.cmo Common.cmo
+ExtendedStatement.cmx : Monad.cmx Common.cmx
+ProcDecl.cmo : Common.cmo
+ProcDecl.cmx : Common.cmx
+TypeDecl.cmo : Common.cmo
+TypeDecl.cmx : Common.cmx
+CompositeType.cmo : Monad.cmo Common.cmo
+CompositeType.cmx : Monad.cmx Common.cmx
+L1.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
+    PrimitiveType.cmo Namespace.cmo Module.cmo Lexer.cmo ConstDecl.cmo \
+    Common.cmo
+L1.cmx : VarDecl.cmx TypeDecl.cmx SimpleStatement.cmx SimpleExpression.cmx \
+    PrimitiveType.cmx Namespace.cmx Module.cmx Lexer.cmx ConstDecl.cmx \
+    Common.cmx
+L2.cmo : SimpleStatement.cmo SimpleExpression.cmo PrimitiveType.cmo \
+    Module.cmo L1.cmo ExtendedStatement.cmo Common.cmo
+L2.cmx : SimpleStatement.cmx SimpleExpression.cmx PrimitiveType.cmx \
+    Module.cmx L1.cmx ExtendedStatement.cmx Common.cmx
+L3.cmo : SimpleExpression.cmo ProcDecl.cmo PrimitiveType.cmo Module.cmo \
+    L2.cmo L1.cmo Common.cmo
+L3.cmx : SimpleExpression.cmx ProcDecl.cmx PrimitiveType.cmx Module.cmx \
+    L2.cmx L1.cmx Common.cmx
+L4.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
+    ProcDecl.cmo PrimitiveType.cmo Monad.cmo Module.cmo Lexer.cmo L3.cmo \
+    L2.cmo L1.cmo ExtendedStatement.cmo CompositeType.cmo Common.cmo
+L4.cmx : VarDecl.cmx TypeDecl.cmx SimpleStatement.cmx SimpleExpression.cmx \
+    ProcDecl.cmx PrimitiveType.cmx Monad.cmx Module.cmx Lexer.cmx L3.cmx \
+    L2.cmx L1.cmx ExtendedStatement.cmx CompositeType.cmx Common.cmx
+L5.cmo : SimpleStatement.cmo SimpleExpression.cmo L4.cmo L3.cmo L1.cmo \
+    ExtendedStatement.cmo Common.cmo
+L5.cmx : SimpleStatement.cmx SimpleExpression.cmx L4.cmx L3.cmx L1.cmx \
+    ExtendedStatement.cmx Common.cmx
+Driver.cmo : L5.cmo L4.cmo L3.cmo L2.cmo L1.cmo
+Driver.cmx : L5.cmx L4.cmx L3.cmx L2.cmx L1.cmx

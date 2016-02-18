@@ -1,0 +1,216 @@
+\documentclass{beamer}
+
+\usepackage{listings}
+
+\title{Extensions and Combinators in Objective CAML}
+\author{Dmitri Boulytchev}
+\institute{St.Petersburg State University, Russia}
+\date{LDTA'11 Tool Challenge, March 26-27, 2009, Saarbr\"ucken}
+
+\lstdefinelanguage{Coolkit}{
+keywords={let, rec, as, in, function, fun, match, with, val, ostap},
+sensitive=true
+}
+
+\lstset{
+basicstyle=\small,
+identifierstyle=\ttfamily,
+keywordstyle=\bfseries,
+commentstyle=\scriptsize\rmfamily,
+basewidth={0.5em,0.5em},
+fontadjust=true,
+escapechar=!,
+language=Coolkit
+}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+\sloppy
+\maketitle
+
+\begin{frame}[fragile]
+  \frametitle{Tool Challenge Solution Overview}
+
+  \begin{itemize}
+    \item T1-T3 $\times$ L1-L5;
+    \item Parser combinators + syntax extension (\texttt{http://oops.math.spbu.ru/projects/ostap});
+    \item Pretty-printer combinators;
+    \item Extensible types (polymorphic variants).     
+    \item Generic monadic transformers;
+  \end{itemize}
+
+  \begin{table}
+\centering
+
+\begin{tabular}{l|r}
+\hline
+ Files                   &   22 \\
+ Lines of Code           & 2838 \\
+ In Toplevels            &  973 \\
+ In Language Components  & 1074 \\
+ Commits                 &   14 \\
+ Man-days                &    9 \\ 
+  
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Ostap (parser combinator library)}
+  \begin{itemize}
+     \item Direct style monadic parser combinators;
+     \item Syntax extension for OCaml;
+     \item Higher-order parsers, streams with structural
+subtyping. 
+  \end{itemize}
+  \begin{lstlisting}
+   ostap (
+    sample[a][b][c]: a "," b? DELIMITER c*  
+   )
+
+   val sample :
+     (< getDELIMITER : ('a, 'b, < add : 'c -> 'c; .. > as 'c)
+                      Combinators.result;
+        look : string -> ('a, 'd, 'c) Combinators.result; 
+        .. >
+        as 'a) ->
+     ('a, 'e, 'c) Combinators.parse ->
+     ('a, 'f, 'c) Combinators.parse ->
+     ('a, 'g, 'c) Combinators.parse ->
+     ('a, 'e * 'd * 'f option * 'b * 'g list, 'c) 
+        Combinators.result
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Polymorphic Variants}
+    \begin{lstlisting}
+     val cattle : [< `Cow | `Sheep ] -> string 
+     let cattle = function `Cow   -> "a cow" 
+                         | `Sheep -> "a sheep" 
+
+     let _ = 
+       List.iter 
+         (Printf.printf "%s\n") 
+         (List.map cattle [`Cow; `Sheep; `Sheep; `Cow])
+  \end{lstlisting}  
+  
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Polymorphic Variants (continue)}
+  \begin{lstlisting}
+     val cattle : [< `Cow | `Sheep ] -> string 
+     let cattle = function `Cow   -> "a cow" 
+                         | `Sheep -> "a sheep" 
+
+     let _ = 
+       List.iter 
+         (Printf.printf "%s\n") 
+         (List.map cattle [`Cow; `Sheep; `Sheep; `Cow; 
+                           `Cat; `Dog])
+  \end{lstlisting}  
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Polymorphic Variants (continue)}
+  \begin{lstlisting}
+     val cattle : [< `Cow | `Sheep ] -> string 
+     let cattle = function `Cow   -> "a cow" 
+                         | `Sheep -> "a sheep" 
+     val friend : [< `Cat | `Dog ] -> string
+     let friend = function `Cat -> "a cat" 
+                         | `Dog -> "a dog"
+
+     let _ = 
+       List.iter 
+         (Printf.printf "%s\n") 
+         (List.map (function 
+                    | (`Cow | `Sheep) as x -> cattle x 
+                    | (`Cat | `Dog  ) as x -> friend x)
+            [`Cow; `Sheep; `Sheep; `Cow; `Cat; `Dog]
+         )
+  \end{lstlisting}  
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Polymorphic Variants (continue)}
+  \begin{lstlisting}
+     val cattle : ([> `Cow | `Sheep] as'a -> string) -> 
+                  'a -> string 
+     let cattle other = function `Cow   -> "a cow" 
+                               | `Sheep -> "a sheep"
+                               | x      -> other x 
+     val friend : ([> `Cat | `Dog ] as 'a) -> string -> 
+                  'a -> string
+     let friend other = function `Cat -> "a cat" 
+                               | `Dog -> "a dog"
+                               | x    -> other x
+
+     let rec all x = cattle (friend all) x
+
+     let _ = 
+       List.iter 
+         (Printf.printf "%s\n") 
+         (List.map all [`Cow; `Sheep; `Sheep; `Cow; 
+                           `Cat; `Dog])
+  \end{lstlisting}  
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Polymorphic Variants (continue)}
+  \begin{lstlisting}
+     val cattle : ([> `Cow | `Sheep] as'a -> string) -> 
+                  'a -> string
+     let cattle other = function `Cow   -> "a cow" 
+                               | `Sheep -> "a sheep"
+                               | x      -> other x 
+     val friend : ([> `Cat | `Dog ] as 'a) -> string -> 
+                  'a -> string
+     let friend other = function `Cat -> "a cat" 
+                               | `Dog -> "a dog"
+                               | x    -> other x
+
+     let rec fix f x = f (fix f) x
+     let all y = fix (fun x -> cattle (friend x)) y 
+
+     let _ = 
+       List.iter 
+         (Printf.printf "%s\n") 
+         (List.map all [`Cow; `Sheep; `Sheep; `Cow; 
+                           `Cat; `Dog])
+  \end{lstlisting}  
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Drawbacks}
+  
+  \begin{itemize}
+     \item Often types become ``too open'':
+     \begin{lstlisting}
+       val all : [> `Cat | `Cow | `Dog | `Sheep ] -> string
+       let all y = fix (fun x -> cattle (friend x)) y 
+
+       let _ = 
+         List.iter 
+           (Printf.printf "%s\n") 
+           (List.map all [`Cow; `Sheep; `Sheep; `Cow; 
+                          `Cat; `Dog; `Pig])
+     \end{lstlisting}
+     \item Type-error notification can be verbose.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+  {\Large Thank you!}
+  \end{center}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,10 @@
+\osrule{reference}{\osrnonterm{located}\osrargs{\osrblock{\osrnonterm{ident}\osbr \osropt{\osrblock{\osrterm{``(''}\osbr \osrnonterm{list0}\osrargs{\osrnonterm{expr}}\osbr \osrterm{``)''}}}}}}
+
+\osrule{expr}{\osrnonterm{expression}\osrargs{\osrnonterm{reference}}}
+
+\osrule{declarations}{\osrblock{\osropt{\osrnonterm{constantDeclaration}\osrargs{\osrnonterm{expr}}}\osbr \osropt{\osrnonterm{variableDeclaration}\osrargs{\osrnonterm{primitiveType}}}\osbr \osraster{\osrnonterm{procedureDeclaration}\osrargs{\osrnonterm{primitiveType}}\osrargs{\osrnonterm{declarations}}\osrargs{\osrnonterm{statement}}}}}
+
+\osrule{statement}{\osfralt \osrnonterm{simpleStatement}\osrargs{\osrnonterm{reference}}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{statement}}\osralt \osrnonterm{extendedStatement}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{statement}}}
+
+\osrule{level3}{\osrnonterm{moduleDefinition}\osrargs{\osrnonterm{declarations}}\osrargs{\osrnonterm{statement}}}
+

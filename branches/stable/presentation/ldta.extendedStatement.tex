@@ -1,0 +1,8 @@
+\osprule{extendedStatement}{[expr][stmt]}{\osfralt \osrnonterm{forStatement}\osrargs{expr}\osrargs{stmt}\osralt \osrnonterm{caseStatement}\osrargs{expr}\osrargs{stmt}}
+
+\osprule{forStatement}{[expr][stmt]}{\osrblock{\osrterm{FOR}\osbr \osrnonterm{ident}\osbr \osrterm{``:=''}\osbr expr\osbr \osrgroup{\osfralt \osrterm{TO}\osralt \osrterm{DOWNTO}}\osbr expr\osbr \osropt{\osrblock{\osrterm{STEP}\osbr expr}}\osbr \osrterm{DO}\osbr \osrnonterm{sequence}\osrargs{stmt}\osbr \osrterm{END}}}
+
+\osrule{caseCondition}{\osrblock{\osrnonterm{literal}\osbr \osropt{\osrblock{\osrterm{``..''}\osbr \osrnonterm{literal}}}}}
+
+\osprule{caseStatement}{[expr][stmt]}{\osrblock{\osrterm{CASE}\osbr expr\osbr \osrterm{OF}\osbr \osrplus{\osrgroup{\osrblock{\osrnonterm{caseCondition}\osbr \osrterm{``:''}\osbr \osrnonterm{sequence}\osrargs{stmt}}}}\osbr \osropt{\osrblock{\osrterm{ELSE}\osbr \osrnonterm{sequence}\osrargs{stmt}}}\osbr \osrterm{END}}}
+

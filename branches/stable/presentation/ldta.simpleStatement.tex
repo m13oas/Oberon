@@ -1,0 +1,10 @@
+\osprule{simpleStatement}{[ref][expr][stmt]}{\osfralt \osrnonterm{assignment}\osrargs{ref}\osrargs{expr}\osralt \osrnonterm{ifStatement}\osrargs{expr}\osrargs{stmt}\osralt \osrnonterm{whileStatement}\osrargs{expr}\osrargs{stmt}\osralt \osrnonterm{callStatement}\osrargs{ref}\osrargs{expr}}
+
+\osprule{assignment}{[ref][expr]}{\osrblock{ref\osbr \osrterm{``:=''}\osbr expr}}
+
+\osprule{ifStatement}{[expr][stmt]}{\osrblock{\osrterm{IF}\osbr expr\osbr \osrterm{THEN}\osbr \osrnonterm{sequence}\osrargs{stmt}\osbr \osraster{\osrgroup{\osrblock{\osrterm{ELSIF}\osbr expr\osbr \osrterm{THEN}\osbr \osrnonterm{sequence}\osrargs{stmt}}}}\osbr \osropt{\osrblock{\osrterm{ELSE}\osbr \osrnonterm{sequence}\osrargs{stmt}}}\osbr \osrterm{END}}}
+
+\osprule{whileStatement}{[expr][stmt]}{\osrblock{\osrterm{WHILE}\osbr expr\osbr \osrterm{DO}\osbr \osrnonterm{sequence}\osrargs{stmt}\osbr \osrterm{END}}}
+
+\osprule{callStatement}{[ref][expr]}{\osrblock{ref\osbr \osropt{\osrblock{\osrterm{``(''}\osbr \osrnonterm{list}\osrargs{expr}\osbr \osrterm{``)''}}}}}
+

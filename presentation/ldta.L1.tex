@@ -1,0 +1,10 @@
+\osrule{reference}{\osrnonterm{located}\osrargs{\osrnonterm{ident}}}
+
+\osrule{expr}{\osrnonterm{expression}\osrargs{\osrnonterm{reference}}}
+
+\osrule{declarations}{\osrblock{\osropt{\osrnonterm{constantDeclaration}\osrargs{\osrnonterm{expr}}}\osbr \osropt{\osrnonterm{variableDeclaration}\osrargs{\osrnonterm{primitiveType}}}}}
+
+\osrule{statement}{\osrnonterm{simpleStatement}\osrargs{\osrnonterm{reference}}\osrargs{\osrnonterm{expr}}\osrargs{\osrnonterm{statement}}}
+
+\osrule{level1}{\osrnonterm{moduleDefinition}\osrargs{\osrnonterm{declarations}}\osrargs{\osrnonterm{statement}}}
+

@@ -1,0 +1,7441 @@
+"SimpleExpression.ml" 11 197 209 "SimpleExpression.ml" 11 197 213
+type(
+  < binop : ([> `Binop of 'b * 'a * 'a | `Const of 'c | `Unop of 'd * 'a ]
+             as 'a) ->
+            'b -> 'e -> 'e -> 'e M.t;
+    const : 'a -> 'c -> 'e M.t; unop : 'a -> 'd -> 'e -> 'e M.t; .. > ->
+  (('a -> 'e M.t) -> 'a -> 'e M.t) -> 'a -> 'e M.t
+)
+ident(
+  def gmap "SimpleExpression.ml" 11 197 201 "SimpleExpression.ml" 18 526 531
+)
+"SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 11 197 215
+type(
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e M.t; const : 'a -> 'c -> 'e M.t;
+    unop : 'a -> 'd -> 'e -> 'e M.t; .. >
+  as 'f
+)
+ident(
+  def t "SimpleExpression.ml" 11 197 216 "SimpleExpression.ml" 17 485 524
+)
+"SimpleExpression.ml" 11 197 216 "SimpleExpression.ml" 11 197 219
+type(
+  ('a -> 'e M.t) -> 'a -> 'e M.t
+)
+ident(
+  def ext "SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 17 485 524
+)
+"SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 11 197 224
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 12 228 234 "SimpleExpression.ml" 17 485 524
+)
+"SimpleExpression.ml" 12 228 238 "SimpleExpression.ml" 12 228 242
+type(
+  'a -> 'e M.t
+)
+ident(
+  def self "SimpleExpression.ml" 13 259 265 "SimpleExpression.ml" 17 485 524
+)
+"SimpleExpression.ml" 12 228 245 "SimpleExpression.ml" 12 228 249
+type(
+  'f -> (('a -> 'e M.t) -> 'a -> 'e M.t) -> 'a -> 'e M.t
+)
+ident(
+  int_ref gmap "SimpleExpression.ml" 11 197 209 "SimpleExpression.ml" 11 197 213
+)
+"SimpleExpression.ml" 12 228 250 "SimpleExpression.ml" 12 228 251
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 11 197 215
+)
+"SimpleExpression.ml" 12 228 252 "SimpleExpression.ml" 12 228 255
+type(
+  ('a -> 'e M.t) -> 'a -> 'e M.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 11 197 216 "SimpleExpression.ml" 11 197 219
+)
+"SimpleExpression.ml" 12 228 245 "SimpleExpression.ml" 12 228 255
+call(
+  stack
+)
+type(
+  'a -> 'e M.t
+)
+"SimpleExpression.ml" 13 259 271 "SimpleExpression.ml" 13 259 275
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 11 197 224
+)
+"SimpleExpression.ml" 14 281 297 "SimpleExpression.ml" 14 281 299
+type(
+  'b
+)
+ident(
+  def op "SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 372
+)
+"SimpleExpression.ml" 14 281 301 "SimpleExpression.ml" 14 281 302
+type(
+  'a
+)
+ident(
+  def x "SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 372
+)
+"SimpleExpression.ml" 14 281 304 "SimpleExpression.ml" 14 281 305
+type(
+  'a
+)
+ident(
+  def y "SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 372
+)
+"SimpleExpression.ml" 14 281 297 "SimpleExpression.ml" 14 281 305
+type(
+  'b * 'a * 'a
+)
+"SimpleExpression.ml" 14 281 289 "SimpleExpression.ml" 14 281 306
+type(
+  'a
+)
+"SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 315
+type(
+  'e M.t * 'e M.t -> ('e * 'e) M.t
+)
+ident(
+  ext_ref M.tuple
+)
+"SimpleExpression.ml" 14 281 317 "SimpleExpression.ml" 14 281 321
+type(
+  'a -> 'e M.t
+)
+ident(
+  int_ref self "SimpleExpression.ml" 12 228 238 "SimpleExpression.ml" 12 228 242
+)
+"SimpleExpression.ml" 14 281 322 "SimpleExpression.ml" 14 281 323
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleExpression.ml" 14 281 301 "SimpleExpression.ml" 14 281 302
+)
+"SimpleExpression.ml" 14 281 317 "SimpleExpression.ml" 14 281 323
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 14 281 325 "SimpleExpression.ml" 14 281 329
+type(
+  'a -> 'e M.t
+)
+ident(
+  int_ref self "SimpleExpression.ml" 12 228 238 "SimpleExpression.ml" 12 228 242
+)
+"SimpleExpression.ml" 14 281 330 "SimpleExpression.ml" 14 281 331
+type(
+  'a
+)
+ident(
+  int_ref y "SimpleExpression.ml" 14 281 304 "SimpleExpression.ml" 14 281 305
+)
+"SimpleExpression.ml" 14 281 325 "SimpleExpression.ml" 14 281 331
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 14 281 316 "SimpleExpression.ml" 14 281 332
+type(
+  'e M.t * 'e M.t
+)
+"SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 332
+call(
+  stack
+)
+type(
+  ('e * 'e) M.t
+)
+"SimpleExpression.ml" 14 281 343 "SimpleExpression.ml" 14 281 344
+type(
+  'e
+)
+ident(
+  def x "SimpleExpression.ml" 14 281 352 "SimpleExpression.ml" 14 281 371
+)
+"SimpleExpression.ml" 14 281 346 "SimpleExpression.ml" 14 281 347
+type(
+  'e
+)
+ident(
+  def y "SimpleExpression.ml" 14 281 352 "SimpleExpression.ml" 14 281 371
+)
+"SimpleExpression.ml" 14 281 343 "SimpleExpression.ml" 14 281 347
+type(
+  'e * 'e
+)
+"SimpleExpression.ml" 14 281 352 "SimpleExpression.ml" 14 281 353
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 11 197 215
+)
+"SimpleExpression.ml" 14 281 352 "SimpleExpression.ml" 14 281 359
+call(
+  tail
+)
+type(
+  'a -> 'b -> 'e -> 'e -> 'e M.t
+)
+"SimpleExpression.ml" 14 281 360 "SimpleExpression.ml" 14 281 364
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 11 197 224
+)
+"SimpleExpression.ml" 14 281 365 "SimpleExpression.ml" 14 281 367
+type(
+  'b
+)
+ident(
+  int_ref op "SimpleExpression.ml" 14 281 297 "SimpleExpression.ml" 14 281 299
+)
+"SimpleExpression.ml" 14 281 368 "SimpleExpression.ml" 14 281 369
+type(
+  'e
+)
+ident(
+  int_ref x "SimpleExpression.ml" 14 281 343 "SimpleExpression.ml" 14 281 344
+)
+"SimpleExpression.ml" 14 281 370 "SimpleExpression.ml" 14 281 371
+type(
+  'e
+)
+ident(
+  int_ref y "SimpleExpression.ml" 14 281 346 "SimpleExpression.ml" 14 281 347
+)
+"SimpleExpression.ml" 14 281 352 "SimpleExpression.ml" 14 281 371
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 14 281 337 "SimpleExpression.ml" 14 281 372
+type(
+  'e * 'e -> 'e M.t
+)
+"SimpleExpression.ml" 14 281 310 "SimpleExpression.ml" 14 281 372
+call(
+  tail
+)
+type(
+  'e M.t
+)
+type(
+  ('e * 'e) M.t -> ('e * 'e -> 'e M.t) -> 'e M.t
+)
+ident(
+  ext_ref M.( >>= )
+)
+"SimpleExpression.ml" 15 373 389 "SimpleExpression.ml" 15 373 391
+type(
+  'd
+)
+ident(
+  def op "SimpleExpression.ml" 15 373 402 "SimpleExpression.ml" 15 373 440
+)
+"SimpleExpression.ml" 15 373 393 "SimpleExpression.ml" 15 373 394
+type(
+  'a
+)
+ident(
+  def x "SimpleExpression.ml" 15 373 402 "SimpleExpression.ml" 15 373 440
+)
+"SimpleExpression.ml" 15 373 389 "SimpleExpression.ml" 15 373 394
+type(
+  'd * 'a
+)
+"SimpleExpression.ml" 15 373 381 "SimpleExpression.ml" 15 373 395
+type(
+  'a
+)
+"SimpleExpression.ml" 15 373 402 "SimpleExpression.ml" 15 373 406
+type(
+  'a -> 'e M.t
+)
+ident(
+  int_ref self "SimpleExpression.ml" 12 228 238 "SimpleExpression.ml" 12 228 242
+)
+"SimpleExpression.ml" 15 373 407 "SimpleExpression.ml" 15 373 408
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleExpression.ml" 15 373 393 "SimpleExpression.ml" 15 373 394
+)
+"SimpleExpression.ml" 15 373 402 "SimpleExpression.ml" 15 373 408
+call(
+  stack
+)
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 15 373 418 "SimpleExpression.ml" 15 373 419
+type(
+  'e
+)
+ident(
+  def x "SimpleExpression.ml" 15 373 423 "SimpleExpression.ml" 15 373 439
+)
+"SimpleExpression.ml" 15 373 423 "SimpleExpression.ml" 15 373 424
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 11 197 215
+)
+"SimpleExpression.ml" 15 373 423 "SimpleExpression.ml" 15 373 429
+call(
+  tail
+)
+type(
+  'a -> 'd -> 'e -> 'e M.t
+)
+"SimpleExpression.ml" 15 373 430 "SimpleExpression.ml" 15 373 434
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 11 197 224
+)
+"SimpleExpression.ml" 15 373 435 "SimpleExpression.ml" 15 373 437
+type(
+  'd
+)
+ident(
+  int_ref op "SimpleExpression.ml" 15 373 389 "SimpleExpression.ml" 15 373 391
+)
+"SimpleExpression.ml" 15 373 438 "SimpleExpression.ml" 15 373 439
+type(
+  'e
+)
+ident(
+  int_ref x "SimpleExpression.ml" 15 373 418 "SimpleExpression.ml" 15 373 419
+)
+"SimpleExpression.ml" 15 373 423 "SimpleExpression.ml" 15 373 439
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 15 373 413 "SimpleExpression.ml" 15 373 440
+type(
+  'e -> 'e M.t
+)
+"SimpleExpression.ml" 15 373 402 "SimpleExpression.ml" 15 373 440
+call(
+  tail
+)
+type(
+  'e M.t
+)
+type(
+  'e M.t -> ('e -> 'e M.t) -> 'e M.t
+)
+ident(
+  ext_ref M.( >>= )
+)
+"SimpleExpression.ml" 16 441 457 "SimpleExpression.ml" 16 441 458
+type(
+  'c
+)
+ident(
+  def x "SimpleExpression.ml" 16 441 470 "SimpleExpression.ml" 16 441 484
+)
+"SimpleExpression.ml" 16 441 449 "SimpleExpression.ml" 16 441 458
+type(
+  'a
+)
+"SimpleExpression.ml" 16 441 470 "SimpleExpression.ml" 16 441 471
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 11 197 215
+)
+"SimpleExpression.ml" 16 441 470 "SimpleExpression.ml" 16 441 477
+call(
+  tail
+)
+type(
+  'a -> 'c -> 'e M.t
+)
+"SimpleExpression.ml" 16 441 478 "SimpleExpression.ml" 16 441 482
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 11 197 224
+)
+"SimpleExpression.ml" 16 441 483 "SimpleExpression.ml" 16 441 484
+type(
+  'c
+)
+ident(
+  int_ref x "SimpleExpression.ml" 16 441 457 "SimpleExpression.ml" 16 441 458
+)
+"SimpleExpression.ml" 16 441 470 "SimpleExpression.ml" 16 441 484
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 17 485 494 "SimpleExpression.ml" 17 485 495
+type(
+  'a
+)
+ident(
+  def x "SimpleExpression.ml" 17 485 514 "SimpleExpression.ml" 17 485 524
+)
+"SimpleExpression.ml" 17 485 514 "SimpleExpression.ml" 17 485 517
+type(
+  ('a -> 'e M.t) -> 'a -> 'e M.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 11 197 216 "SimpleExpression.ml" 11 197 219
+)
+"SimpleExpression.ml" 17 485 518 "SimpleExpression.ml" 17 485 522
+type(
+  'a -> 'e M.t
+)
+ident(
+  int_ref self "SimpleExpression.ml" 12 228 238 "SimpleExpression.ml" 12 228 242
+)
+"SimpleExpression.ml" 17 485 523 "SimpleExpression.ml" 17 485 524
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleExpression.ml" 17 485 494 "SimpleExpression.ml" 17 485 495
+)
+"SimpleExpression.ml" 17 485 514 "SimpleExpression.ml" 17 485 524
+call(
+  tail
+)
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 13 259 265 "SimpleExpression.ml" 17 485 524
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 12 228 234 "SimpleExpression.ml" 17 485 524
+type(
+  'e M.t
+)
+"SimpleExpression.ml" 11 197 220 "SimpleExpression.ml" 17 485 524
+type(
+  'a -> 'e M.t
+)
+"SimpleExpression.ml" 11 197 216 "SimpleExpression.ml" 17 485 524
+type(
+  (('a -> 'e M.t) -> 'a -> 'e M.t) -> 'a -> 'e M.t
+)
+"SimpleExpression.ml" 11 197 214 "SimpleExpression.ml" 17 485 524
+type(
+  'f -> (('a -> 'e M.t) -> 'a -> 'e M.t) -> 'a -> 'e M.t
+)
+"SimpleExpression.ml" 20 533 537 "SimpleExpression.ml" 20 533 541
+type(
+  < binop : ([> `Binop of 'b * 'a * 'a | `Const of 'c | `Unop of 'd * 'a ]
+             as 'a) ->
+            'b -> 'e -> 'e -> 'e Monad.Id.t;
+    const : 'a -> 'c -> 'e Monad.Id.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Id.t; .. > ->
+  (('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+ident(
+  def imap "SimpleExpression.ml" 24 614 614 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 20 533 542 "SimpleExpression.ml" 20 533 543
+type(
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e Monad.Id.t;
+    const : 'a -> 'c -> 'e Monad.Id.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Id.t; .. >
+  as 'f
+)
+ident(
+  def t "SimpleExpression.ml" 20 533 544 "SimpleExpression.ml" 22 593 612
+)
+"SimpleExpression.ml" 20 533 544 "SimpleExpression.ml" 20 533 547
+type(
+  ('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+ident(
+  def ext "SimpleExpression.ml" 20 533 548 "SimpleExpression.ml" 22 593 612
+)
+"SimpleExpression.ml" 20 533 548 "SimpleExpression.ml" 20 533 552
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 21 555 557 "SimpleExpression.ml" 22 593 612
+)
+"SimpleExpression.ml" 21 555 572 "SimpleExpression.ml" 21 555 589
+call(
+  stack
+)
+"SimpleExpression.ml" 22 593 595 "SimpleExpression.ml" 22 593 601
+type(
+  'f -> (('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+ident(
+  int_ref M.gmap "SimpleExpression.ml" 11 197 209 "SimpleExpression.ml" 11 197 213
+)
+"SimpleExpression.ml" 22 593 602 "SimpleExpression.ml" 22 593 603
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 20 533 542 "SimpleExpression.ml" 20 533 543
+)
+"SimpleExpression.ml" 22 593 604 "SimpleExpression.ml" 22 593 607
+type(
+  ('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 20 533 544 "SimpleExpression.ml" 20 533 547
+)
+"SimpleExpression.ml" 22 593 608 "SimpleExpression.ml" 22 593 612
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 20 533 548 "SimpleExpression.ml" 20 533 552
+)
+"SimpleExpression.ml" 22 593 595 "SimpleExpression.ml" 22 593 612
+call(
+  tail
+)
+type(
+  'e Monad.Id.t
+)
+"SimpleExpression.ml" 21 555 557 "SimpleExpression.ml" 22 593 612
+type(
+  'e Monad.Id.t
+)
+"SimpleExpression.ml" 20 533 548 "SimpleExpression.ml" 22 593 612
+type(
+  'a -> 'e Monad.Id.t
+)
+"SimpleExpression.ml" 20 533 544 "SimpleExpression.ml" 22 593 612
+type(
+  (('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+"SimpleExpression.ml" 20 533 542 "SimpleExpression.ml" 22 593 612
+type(
+  'f -> (('a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t) -> 'a -> 'e Monad.Id.t
+)
+"SimpleExpression.ml" 24 614 618 "SimpleExpression.ml" 24 614 622
+type(
+  < binop : ([> `Binop of 'b * 'a * 'a | `Const of 'c | `Unop of 'd * 'a ]
+             as 'a) ->
+            'b -> 'e -> 'e -> 'e Monad.Checked.t;
+    const : 'a -> 'c -> 'e Monad.Checked.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Checked.t; .. > ->
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+ident(
+  def cmap "SimpleExpression.ml" 28 700 700 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 24 614 623 "SimpleExpression.ml" 24 614 624
+type(
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e Monad.Checked.t;
+    const : 'a -> 'c -> 'e Monad.Checked.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Checked.t; .. >
+  as 'f
+)
+ident(
+  def t "SimpleExpression.ml" 24 614 625 "SimpleExpression.ml" 26 679 698
+)
+"SimpleExpression.ml" 24 614 625 "SimpleExpression.ml" 24 614 628
+type(
+  ('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t
+)
+ident(
+  def ext "SimpleExpression.ml" 24 614 629 "SimpleExpression.ml" 26 679 698
+)
+"SimpleExpression.ml" 24 614 629 "SimpleExpression.ml" 24 614 633
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 25 636 638 "SimpleExpression.ml" 26 679 698
+)
+"SimpleExpression.ml" 25 636 653 "SimpleExpression.ml" 25 636 675
+call(
+  stack
+)
+"SimpleExpression.ml" 26 679 681 "SimpleExpression.ml" 26 679 687
+type(
+  'f ->
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+ident(
+  int_ref M.gmap "SimpleExpression.ml" 11 197 209 "SimpleExpression.ml" 11 197 213
+)
+"SimpleExpression.ml" 26 679 688 "SimpleExpression.ml" 26 679 689
+type(
+  'f
+)
+ident(
+  int_ref t "SimpleExpression.ml" 24 614 623 "SimpleExpression.ml" 24 614 624
+)
+"SimpleExpression.ml" 26 679 690 "SimpleExpression.ml" 26 679 693
+type(
+  ('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 24 614 625 "SimpleExpression.ml" 24 614 628
+)
+"SimpleExpression.ml" 26 679 694 "SimpleExpression.ml" 26 679 698
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 24 614 629 "SimpleExpression.ml" 24 614 633
+)
+"SimpleExpression.ml" 26 679 681 "SimpleExpression.ml" 26 679 698
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+"SimpleExpression.ml" 25 636 638 "SimpleExpression.ml" 26 679 698
+type(
+  'e Monad.Checked.t
+)
+"SimpleExpression.ml" 24 614 629 "SimpleExpression.ml" 26 679 698
+type(
+  'a -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 24 614 625 "SimpleExpression.ml" 26 679 698
+type(
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 24 614 623 "SimpleExpression.ml" 26 679 698
+type(
+  'f ->
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 28 700 704 "SimpleExpression.ml" 28 700 708
+type(
+  ('a -> [> `Binop of 'b * 'c * 'd | `Const of 'e | `Unop of 'f * 'g ] -> 'h) ->
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h >
+)
+ident(
+  def mapT "SimpleExpression.ml" 36 1023 1023 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 28 700 709 "SimpleExpression.ml" 28 700 710
+type(
+  'a ->
+  ([> `Binop of 'b * 'c * 'd | `Const of 'e | `Unop of 'f * 'g ] as 'i) -> 'h
+)
+ident(
+  def f "SimpleExpression.ml" 28 700 713 "SimpleExpression.ml" 32 915 931
+)
+"SimpleExpression.ml" 29 721 749 "SimpleExpression.ml" 29 721 753
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 29 721 754 "SimpleExpression.ml" 29 721 789
+)
+"SimpleExpression.ml" 29 721 754 "SimpleExpression.ml" 29 721 756
+type(
+  'b
+)
+ident(
+  def op "SimpleExpression.ml" 29 721 757 "SimpleExpression.ml" 29 721 789
+)
+"SimpleExpression.ml" 29 721 757 "SimpleExpression.ml" 29 721 758
+type(
+  'c
+)
+ident(
+  def x "SimpleExpression.ml" 29 721 759 "SimpleExpression.ml" 29 721 789
+)
+"SimpleExpression.ml" 29 721 759 "SimpleExpression.ml" 29 721 760
+type(
+  'd
+)
+ident(
+  def y "SimpleExpression.ml" 29 721 763 "SimpleExpression.ml" 29 721 789
+)
+"SimpleExpression.ml" 29 721 763 "SimpleExpression.ml" 29 721 764
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleExpression.ml" 28 700 709 "SimpleExpression.ml" 28 700 710
+)
+"SimpleExpression.ml" 29 721 765 "SimpleExpression.ml" 29 721 769
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 29 721 749 "SimpleExpression.ml" 29 721 753
+)
+"SimpleExpression.ml" 29 721 779 "SimpleExpression.ml" 29 721 781
+type(
+  'b
+)
+ident(
+  int_ref op "SimpleExpression.ml" 29 721 754 "SimpleExpression.ml" 29 721 756
+)
+"SimpleExpression.ml" 29 721 783 "SimpleExpression.ml" 29 721 784
+type(
+  'c
+)
+ident(
+  int_ref x "SimpleExpression.ml" 29 721 757 "SimpleExpression.ml" 29 721 758
+)
+"SimpleExpression.ml" 29 721 786 "SimpleExpression.ml" 29 721 787
+type(
+  'd
+)
+ident(
+  int_ref y "SimpleExpression.ml" 29 721 759 "SimpleExpression.ml" 29 721 760
+)
+"SimpleExpression.ml" 29 721 778 "SimpleExpression.ml" 29 721 788
+type(
+  'b * 'c * 'd
+)
+"SimpleExpression.ml" 29 721 770 "SimpleExpression.ml" 29 721 789
+type(
+  'i
+)
+"SimpleExpression.ml" 29 721 763 "SimpleExpression.ml" 29 721 789
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleExpression.ml" 29 721 759 "SimpleExpression.ml" 29 721 789
+type(
+  'd -> 'h
+)
+"SimpleExpression.ml" 29 721 757 "SimpleExpression.ml" 29 721 789
+type(
+  'c -> 'd -> 'h
+)
+"SimpleExpression.ml" 29 721 754 "SimpleExpression.ml" 29 721 789
+type(
+  'b -> 'c -> 'd -> 'h
+)
+"SimpleExpression.ml" 29 721 749 "SimpleExpression.ml" 29 721 789
+type(
+  'a -> 'b -> 'c -> 'd -> 'h
+)
+type(
+  'a -> 'b -> 'c -> 'd -> 'h
+)
+"SimpleExpression.ml" 29 721 736 "SimpleExpression.ml" 29 721 789
+type(
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'b -> 'c -> 'd -> 'h
+)
+"SimpleExpression.ml" 30 790 818 "SimpleExpression.ml" 30 790 822
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 30 790 823 "SimpleExpression.ml" 30 790 854
+)
+"SimpleExpression.ml" 30 790 823 "SimpleExpression.ml" 30 790 825
+type(
+  'f
+)
+ident(
+  def op "SimpleExpression.ml" 30 790 826 "SimpleExpression.ml" 30 790 854
+)
+"SimpleExpression.ml" 30 790 826 "SimpleExpression.ml" 30 790 827
+type(
+  'g
+)
+ident(
+  def x "SimpleExpression.ml" 30 790 832 "SimpleExpression.ml" 30 790 854
+)
+"SimpleExpression.ml" 30 790 832 "SimpleExpression.ml" 30 790 833
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleExpression.ml" 28 700 709 "SimpleExpression.ml" 28 700 710
+)
+"SimpleExpression.ml" 30 790 834 "SimpleExpression.ml" 30 790 838
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 30 790 818 "SimpleExpression.ml" 30 790 822
+)
+"SimpleExpression.ml" 30 790 847 "SimpleExpression.ml" 30 790 849
+type(
+  'f
+)
+ident(
+  int_ref op "SimpleExpression.ml" 30 790 823 "SimpleExpression.ml" 30 790 825
+)
+"SimpleExpression.ml" 30 790 851 "SimpleExpression.ml" 30 790 852
+type(
+  'g
+)
+ident(
+  int_ref x "SimpleExpression.ml" 30 790 826 "SimpleExpression.ml" 30 790 827
+)
+"SimpleExpression.ml" 30 790 846 "SimpleExpression.ml" 30 790 853
+type(
+  'f * 'g
+)
+"SimpleExpression.ml" 30 790 839 "SimpleExpression.ml" 30 790 854
+type(
+  'i
+)
+"SimpleExpression.ml" 30 790 832 "SimpleExpression.ml" 30 790 854
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleExpression.ml" 30 790 826 "SimpleExpression.ml" 30 790 854
+type(
+  'g -> 'h
+)
+"SimpleExpression.ml" 30 790 823 "SimpleExpression.ml" 30 790 854
+type(
+  'f -> 'g -> 'h
+)
+"SimpleExpression.ml" 30 790 818 "SimpleExpression.ml" 30 790 854
+type(
+  'a -> 'f -> 'g -> 'h
+)
+type(
+  'a -> 'f -> 'g -> 'h
+)
+"SimpleExpression.ml" 30 790 805 "SimpleExpression.ml" 30 790 854
+type(
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'f -> 'g -> 'h
+)
+"SimpleExpression.ml" 31 855 883 "SimpleExpression.ml" 31 855 887
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 31 855 888 "SimpleExpression.ml" 31 855 914
+)
+"SimpleExpression.ml" 31 855 888 "SimpleExpression.ml" 31 855 889
+type(
+  'e
+)
+ident(
+  def x "SimpleExpression.ml" 31 855 897 "SimpleExpression.ml" 31 855 914
+)
+"SimpleExpression.ml" 31 855 897 "SimpleExpression.ml" 31 855 898
+type(
+  'a -> 'i -> 'h
+)
+ident(
+  int_ref f "SimpleExpression.ml" 28 700 709 "SimpleExpression.ml" 28 700 710
+)
+"SimpleExpression.ml" 31 855 899 "SimpleExpression.ml" 31 855 903
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 31 855 883 "SimpleExpression.ml" 31 855 887
+)
+"SimpleExpression.ml" 31 855 912 "SimpleExpression.ml" 31 855 913
+type(
+  'e
+)
+ident(
+  int_ref x "SimpleExpression.ml" 31 855 888 "SimpleExpression.ml" 31 855 889
+)
+"SimpleExpression.ml" 31 855 904 "SimpleExpression.ml" 31 855 914
+type(
+  'i
+)
+"SimpleExpression.ml" 31 855 897 "SimpleExpression.ml" 31 855 914
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleExpression.ml" 31 855 888 "SimpleExpression.ml" 31 855 914
+type(
+  'e -> 'h
+)
+"SimpleExpression.ml" 31 855 883 "SimpleExpression.ml" 31 855 914
+type(
+  'a -> 'e -> 'h
+)
+type(
+  'a -> 'e -> 'h
+)
+"SimpleExpression.ml" 31 855 870 "SimpleExpression.ml" 31 855 914
+type(
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h > ->
+  'a -> 'e -> 'h
+)
+"SimpleExpression.ml" 28 700 713 "SimpleExpression.ml" 32 915 931
+type(
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h >
+)
+type(
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h >
+)
+"SimpleExpression.ml" 28 700 709 "SimpleExpression.ml" 32 915 931
+type(
+  ('a -> 'i -> 'h) ->
+  < binop : 'a -> 'b -> 'c -> 'd -> 'h; const : 'a -> 'e -> 'h;
+    unop : 'a -> 'f -> 'g -> 'h >
+)
+"SimpleExpression.ml" 36 1023 1027 "SimpleExpression.ml" 36 1023 1028
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  def r "SimpleExpression.ml" 37 1056 1056 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 36 1023 1031 "SimpleExpression.ml" 36 1023 1055
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"SimpleExpression.ml" 37 1056 1060 "SimpleExpression.ml" 37 1056 1061
+type(
+  Ostap.Matcher.Token.t -> Ostap.Msg.Locator.t
+)
+ident(
+  def l "SimpleExpression.ml" 39 1090 1090 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 37 1056 1064 "SimpleExpression.ml" 37 1056 1087
+type(
+  Ostap.Matcher.Token.t -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Ostap.Matcher.Token.loc
+)
+"SimpleExpression.ml" 39 1090 1098 "SimpleExpression.ml" 39 1090 1103
+type(
+  (< coord : 'b;
+     getLITERAL : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                  Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'e * Ostap.Msg.Coord.t ]; .. >
+   as 'a,
+   [> `Binop of
+        [> `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub ] *
+        'f * 'f
+    | `Const of [> `False | `Literal of int | `True ]
+    | `Unop of [> `Neg | `Not ] * 'f ]
+   as 'f, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def parse "SimpleExpression.ml" 39 1090 1090 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 39 1090 1104 "SimpleExpression.ml" 39 1090 1113
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def reference "SimpleExpression.ml" 39 1090 1114 "SimpleExpression.ml" 50 1577 1580
+)
+"SimpleExpression.ml" 39 1090 1114 "SimpleExpression.ml" 39 1090 1115
+type(
+  'a
+)
+ident(
+  def s "SimpleExpression.ml" 40 1119 1121 "SimpleExpression.ml" 50 1577 1580
+)
+"SimpleExpression.ml" 40 1119 1125 "SimpleExpression.ml" 40 1119 1130
+type(
+  'g -> 'h -> 'i -> [> `Binop of 'g * 'h * 'i ]
+)
+ident(
+  def binop "SimpleExpression.ml" 41 1159 1161 "SimpleExpression.ml" 50 1577 1580
+)
+"SimpleExpression.ml" 40 1119 1131 "SimpleExpression.ml" 40 1119 1132
+type(
+  'g
+)
+ident(
+  def t "SimpleExpression.ml" 40 1119 1133 "SimpleExpression.ml" 40 1119 1155
+)
+"SimpleExpression.ml" 40 1119 1133 "SimpleExpression.ml" 40 1119 1134
+type(
+  'h
+)
+ident(
+  def x "SimpleExpression.ml" 40 1119 1135 "SimpleExpression.ml" 40 1119 1155
+)
+"SimpleExpression.ml" 40 1119 1135 "SimpleExpression.ml" 40 1119 1136
+type(
+  'i
+)
+ident(
+  def y "SimpleExpression.ml" 40 1119 1139 "SimpleExpression.ml" 40 1119 1155
+)
+"SimpleExpression.ml" 40 1119 1147 "SimpleExpression.ml" 40 1119 1148
+type(
+  'g
+)
+ident(
+  int_ref t "SimpleExpression.ml" 40 1119 1131 "SimpleExpression.ml" 40 1119 1132
+)
+"SimpleExpression.ml" 40 1119 1150 "SimpleExpression.ml" 40 1119 1151
+type(
+  'h
+)
+ident(
+  int_ref x "SimpleExpression.ml" 40 1119 1133 "SimpleExpression.ml" 40 1119 1134
+)
+"SimpleExpression.ml" 40 1119 1153 "SimpleExpression.ml" 40 1119 1154
+type(
+  'i
+)
+ident(
+  int_ref y "SimpleExpression.ml" 40 1119 1135 "SimpleExpression.ml" 40 1119 1136
+)
+"SimpleExpression.ml" 40 1119 1146 "SimpleExpression.ml" 40 1119 1155
+type(
+  'g * 'h * 'i
+)
+"SimpleExpression.ml" 40 1119 1139 "SimpleExpression.ml" 40 1119 1155
+type(
+  [> `Binop of 'g * 'h * 'i ] as 'j
+)
+"SimpleExpression.ml" 40 1119 1135 "SimpleExpression.ml" 40 1119 1155
+type(
+  'i -> 'j
+)
+"SimpleExpression.ml" 40 1119 1133 "SimpleExpression.ml" 40 1119 1155
+type(
+  'h -> 'i -> 'j
+)
+"SimpleExpression.ml" 40 1119 1131 "SimpleExpression.ml" 40 1119 1155
+type(
+  'g -> 'h -> 'i -> 'j
+)
+"SimpleExpression.ml" 41 1159 1161 "SimpleExpression.ml" 41 1159 1165
+type(
+  (('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+   ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ([ `Lefta | `Nona | `Righta ] *
+   (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list)
+  array ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Util.expr
+)
+"SimpleExpression.ml" 41 1159 1166 "SimpleExpression.ml" 41 1159 1169
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.loc
+)
+"SimpleExpression.ml" 42 1173 1176 "SimpleExpression.ml" 42 1173 1181
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"SimpleExpression.ml" 42 1173 1184 "SimpleExpression.ml" 42 1173 1192
+type(
+  (string *
+   ([> `Add
+     | `And
+     | `Div
+     | `Eq
+     | `Ge
+     | `Gt
+     | `Le
+     | `Lt
+     | `Mod
+     | `Mul
+     | `Ne
+     | `Or
+     | `Sub ]
+    as 'k) ->
+   ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) ->
+  (string * 'k) list ->
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleExpression.ml" 42 1173 1199 "SimpleExpression.ml" 42 1173 1200
+type(
+  string
+)
+ident(
+  def s "SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1228
+)
+"SimpleExpression.ml" 42 1173 1202 "SimpleExpression.ml" 42 1173 1203
+type(
+  'k
+)
+ident(
+  def t "SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1228
+)
+"SimpleExpression.ml" 42 1173 1199 "SimpleExpression.ml" 42 1173 1203
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 42 1173 1216 "SimpleExpression.ml" 42 1173 1217
+type(
+  string
+)
+ident(
+  int_ref s "SimpleExpression.ml" 42 1173 1199 "SimpleExpression.ml" 42 1173 1200
+)
+"SimpleExpression.ml" 42 1173 1214 "SimpleExpression.ml" 42 1173 1218
+call(
+  tail
+)
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 42 1173 1214 "SimpleExpression.ml" 42 1173 1218
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 42 1173 1214 "SimpleExpression.ml" 42 1173 1218
+)
+"SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1219
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1219
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1219
+)
+"SimpleExpression.ml" 42 1173 1221 "SimpleExpression.ml" 42 1173 1226
+type(
+  'k -> 'f -> 'f -> 'f
+)
+ident(
+  int_ref binop "SimpleExpression.ml" 40 1119 1125 "SimpleExpression.ml" 40 1119 1130
+)
+"SimpleExpression.ml" 42 1173 1227 "SimpleExpression.ml" 42 1173 1228
+type(
+  'k
+)
+ident(
+  int_ref t "SimpleExpression.ml" 42 1173 1202 "SimpleExpression.ml" 42 1173 1203
+)
+"SimpleExpression.ml" 42 1173 1221 "SimpleExpression.ml" 42 1173 1228
+call(
+  stack
+)
+type(
+  'f -> 'f -> 'f
+)
+"SimpleExpression.ml" 42 1173 1208 "SimpleExpression.ml" 42 1173 1228
+type(
+  ('a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result) *
+  ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 42 1173 1193 "SimpleExpression.ml" 42 1173 1229
+type(
+  string * 'k ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 43 1231 1243 "SimpleExpression.ml" 43 1231 1246
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1248 "SimpleExpression.ml" 43 1231 1251
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1243 "SimpleExpression.ml" 43 1231 1251
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1253 "SimpleExpression.ml" 43 1231 1256
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1258 "SimpleExpression.ml" 43 1231 1261
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1253 "SimpleExpression.ml" 43 1231 1261
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1263 "SimpleExpression.ml" 43 1231 1267
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1269 "SimpleExpression.ml" 43 1231 1272
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1263 "SimpleExpression.ml" 43 1231 1272
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1274 "SimpleExpression.ml" 43 1231 1277
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1279 "SimpleExpression.ml" 43 1231 1282
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1274 "SimpleExpression.ml" 43 1231 1282
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1284 "SimpleExpression.ml" 43 1231 1288
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1290 "SimpleExpression.ml" 43 1231 1293
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1284 "SimpleExpression.ml" 43 1231 1293
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1295 "SimpleExpression.ml" 43 1231 1298
+type(
+  string
+)
+"SimpleExpression.ml" 43 1231 1300 "SimpleExpression.ml" 43 1231 1303
+type(
+  'k
+)
+"SimpleExpression.ml" 43 1231 1295 "SimpleExpression.ml" 43 1231 1303
+type(
+  string * 'k
+)
+"SimpleExpression.ml" 43 1231 1242 "SimpleExpression.ml" 43 1231 1304
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+type(
+  (string * 'k) list
+)
+"SimpleExpression.ml" 42 1173 1184 "SimpleExpression.ml" 43 1231 1304
+call(
+  stack
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 42 1173 1176 "SimpleExpression.ml" 43 1231 1304
+type(
+  [ `Lefta | `Nona | `Righta ] *
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 44 1306 1309 "SimpleExpression.ml" 44 1306 1315
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"SimpleExpression.ml" 44 1306 1317 "SimpleExpression.ml" 44 1306 1325
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k ->
+   ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) ->
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list ->
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleExpression.ml" 44 1306 1332 "SimpleExpression.ml" 44 1306 1333
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def s "SimpleExpression.ml" 44 1306 1341 "SimpleExpression.ml" 44 1306 1351
+)
+"SimpleExpression.ml" 44 1306 1335 "SimpleExpression.ml" 44 1306 1336
+type(
+  'k
+)
+ident(
+  def t "SimpleExpression.ml" 44 1306 1341 "SimpleExpression.ml" 44 1306 1351
+)
+"SimpleExpression.ml" 44 1306 1332 "SimpleExpression.ml" 44 1306 1336
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 44 1306 1341 "SimpleExpression.ml" 44 1306 1342
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref s "SimpleExpression.ml" 44 1306 1332 "SimpleExpression.ml" 44 1306 1333
+)
+"SimpleExpression.ml" 44 1306 1344 "SimpleExpression.ml" 44 1306 1349
+type(
+  'k -> 'f -> 'f -> 'f
+)
+ident(
+  int_ref binop "SimpleExpression.ml" 40 1119 1125 "SimpleExpression.ml" 40 1119 1130
+)
+"SimpleExpression.ml" 44 1306 1350 "SimpleExpression.ml" 44 1306 1351
+type(
+  'k
+)
+ident(
+  int_ref t "SimpleExpression.ml" 44 1306 1335 "SimpleExpression.ml" 44 1306 1336
+)
+"SimpleExpression.ml" 44 1306 1344 "SimpleExpression.ml" 44 1306 1351
+call(
+  stack
+)
+type(
+  'f -> 'f -> 'f
+)
+"SimpleExpression.ml" 44 1306 1341 "SimpleExpression.ml" 44 1306 1351
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 44 1306 1326 "SimpleExpression.ml" 44 1306 1352
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 45 1353 1372 "SimpleExpression.ml" 45 1353 1375
+call(
+  tail
+)
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 45 1353 1372 "SimpleExpression.ml" 45 1353 1375
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 45 1353 1372 "SimpleExpression.ml" 45 1353 1375
+)
+"SimpleExpression.ml" 45 1353 1365 "SimpleExpression.ml" 45 1353 1376
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 45 1353 1365 "SimpleExpression.ml" 45 1353 1376
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 45 1353 1365 "SimpleExpression.ml" 45 1353 1376
+)
+"SimpleExpression.ml" 45 1353 1378 "SimpleExpression.ml" 45 1353 1382
+type(
+  'k
+)
+"SimpleExpression.ml" 45 1353 1365 "SimpleExpression.ml" 45 1353 1382
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 45 1353 1391 "SimpleExpression.ml" 45 1353 1394
+call(
+  tail
+)
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 45 1353 1391 "SimpleExpression.ml" 45 1353 1394
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 45 1353 1391 "SimpleExpression.ml" 45 1353 1394
+)
+"SimpleExpression.ml" 45 1353 1384 "SimpleExpression.ml" 45 1353 1395
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 45 1353 1384 "SimpleExpression.ml" 45 1353 1395
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 45 1353 1384 "SimpleExpression.ml" 45 1353 1395
+)
+"SimpleExpression.ml" 45 1353 1397 "SimpleExpression.ml" 45 1353 1401
+type(
+  'k
+)
+"SimpleExpression.ml" 45 1353 1384 "SimpleExpression.ml" 45 1353 1401
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 45 1353 1403 "SimpleExpression.ml" 45 1353 1406
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleExpression.ml" 45 1353 1407 "SimpleExpression.ml" 45 1353 1411
+type(
+  string
+)
+"SimpleExpression.ml" 45 1353 1403 "SimpleExpression.ml" 45 1353 1411
+call(
+  stack
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+"SimpleExpression.ml" 45 1353 1413 "SimpleExpression.ml" 45 1353 1416
+type(
+  'k
+)
+"SimpleExpression.ml" 45 1353 1403 "SimpleExpression.ml" 45 1353 1416
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 45 1353 1364 "SimpleExpression.ml" 45 1353 1417
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+"SimpleExpression.ml" 44 1306 1317 "SimpleExpression.ml" 45 1353 1417
+call(
+  stack
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 44 1306 1309 "SimpleExpression.ml" 45 1353 1417
+type(
+  [ `Lefta | `Nona | `Righta ] *
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 46 1419 1422 "SimpleExpression.ml" 46 1419 1428
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"SimpleExpression.ml" 46 1419 1430 "SimpleExpression.ml" 46 1419 1438
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k ->
+   ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) ->
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list ->
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+ident(
+  ext_ref List.map
+)
+"SimpleExpression.ml" 46 1419 1445 "SimpleExpression.ml" 46 1419 1446
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def s "SimpleExpression.ml" 46 1419 1454 "SimpleExpression.ml" 46 1419 1464
+)
+"SimpleExpression.ml" 46 1419 1448 "SimpleExpression.ml" 46 1419 1449
+type(
+  'k
+)
+ident(
+  def t "SimpleExpression.ml" 46 1419 1454 "SimpleExpression.ml" 46 1419 1464
+)
+"SimpleExpression.ml" 46 1419 1445 "SimpleExpression.ml" 46 1419 1449
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 46 1419 1454 "SimpleExpression.ml" 46 1419 1455
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref s "SimpleExpression.ml" 46 1419 1445 "SimpleExpression.ml" 46 1419 1446
+)
+"SimpleExpression.ml" 46 1419 1457 "SimpleExpression.ml" 46 1419 1462
+type(
+  'k -> 'f -> 'f -> 'f
+)
+ident(
+  int_ref binop "SimpleExpression.ml" 40 1119 1125 "SimpleExpression.ml" 40 1119 1130
+)
+"SimpleExpression.ml" 46 1419 1463 "SimpleExpression.ml" 46 1419 1464
+type(
+  'k
+)
+ident(
+  int_ref t "SimpleExpression.ml" 46 1419 1448 "SimpleExpression.ml" 46 1419 1449
+)
+"SimpleExpression.ml" 46 1419 1457 "SimpleExpression.ml" 46 1419 1464
+call(
+  stack
+)
+type(
+  'f -> 'f -> 'f
+)
+"SimpleExpression.ml" 46 1419 1454 "SimpleExpression.ml" 46 1419 1464
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 46 1419 1439 "SimpleExpression.ml" 46 1419 1465
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)
+)
+"SimpleExpression.ml" 47 1466 1485 "SimpleExpression.ml" 47 1466 1488
+call(
+  tail
+)
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 47 1466 1485 "SimpleExpression.ml" 47 1466 1488
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 47 1466 1485 "SimpleExpression.ml" 47 1466 1488
+)
+"SimpleExpression.ml" 47 1466 1478 "SimpleExpression.ml" 47 1466 1489
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 47 1466 1478 "SimpleExpression.ml" 47 1466 1489
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 47 1466 1478 "SimpleExpression.ml" 47 1466 1489
+)
+"SimpleExpression.ml" 47 1466 1491 "SimpleExpression.ml" 47 1466 1495
+type(
+  'k
+)
+"SimpleExpression.ml" 47 1466 1478 "SimpleExpression.ml" 47 1466 1495
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 47 1466 1497 "SimpleExpression.ml" 47 1466 1500
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleExpression.ml" 47 1466 1501 "SimpleExpression.ml" 47 1466 1506
+type(
+  string
+)
+"SimpleExpression.ml" 47 1466 1497 "SimpleExpression.ml" 47 1466 1506
+call(
+  stack
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+"SimpleExpression.ml" 47 1466 1508 "SimpleExpression.ml" 47 1466 1512
+type(
+  'k
+)
+"SimpleExpression.ml" 47 1466 1497 "SimpleExpression.ml" 47 1466 1512
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 47 1466 1514 "SimpleExpression.ml" 47 1466 1517
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.key
+)
+"SimpleExpression.ml" 47 1466 1518 "SimpleExpression.ml" 47 1466 1523
+type(
+  string
+)
+"SimpleExpression.ml" 47 1466 1514 "SimpleExpression.ml" 47 1466 1523
+call(
+  stack
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+"SimpleExpression.ml" 47 1466 1525 "SimpleExpression.ml" 47 1466 1529
+type(
+  'k
+)
+"SimpleExpression.ml" 47 1466 1514 "SimpleExpression.ml" 47 1466 1529
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 47 1466 1538 "SimpleExpression.ml" 47 1466 1541
+call(
+  tail
+)
+type(
+  'a -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 47 1466 1538 "SimpleExpression.ml" 47 1466 1541
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 47 1466 1538 "SimpleExpression.ml" 47 1466 1541
+)
+"SimpleExpression.ml" 47 1466 1531 "SimpleExpression.ml" 47 1466 1542
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 47 1466 1531 "SimpleExpression.ml" 47 1466 1542
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 47 1466 1531 "SimpleExpression.ml" 47 1466 1542
+)
+"SimpleExpression.ml" 47 1466 1544 "SimpleExpression.ml" 47 1466 1548
+type(
+  'k
+)
+"SimpleExpression.ml" 47 1466 1531 "SimpleExpression.ml" 47 1466 1548
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k
+)
+"SimpleExpression.ml" 47 1466 1477 "SimpleExpression.ml" 47 1466 1549
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * 'k) list
+)
+"SimpleExpression.ml" 46 1419 1430 "SimpleExpression.ml" 47 1466 1549
+call(
+  stack
+)
+type(
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 46 1419 1422 "SimpleExpression.ml" 47 1466 1549
+type(
+  [ `Lefta | `Nona | `Righta ] *
+  (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list
+)
+"SimpleExpression.ml" 41 1159 1170 "SimpleExpression.ml" 48 1550 1554
+type(
+  ([ `Lefta | `Nona | `Righta ] *
+   (('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse * ('f -> 'f -> 'f)) list)
+  array
+)
+"SimpleExpression.ml" 49 1555 1558 "SimpleExpression.ml" 49 1555 1565
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref primary "SimpleExpression.ml" 51 1581 1585 "SimpleExpression.ml" 65 2181 2182
+)
+"SimpleExpression.ml" 49 1555 1566 "SimpleExpression.ml" 49 1555 1575
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "SimpleExpression.ml" 39 1090 1104 "SimpleExpression.ml" 39 1090 1113
+)
+"SimpleExpression.ml" 49 1555 1557 "SimpleExpression.ml" 49 1555 1576
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+"SimpleExpression.ml" 50 1577 1579 "SimpleExpression.ml" 50 1577 1580
+type(
+  'a
+)
+ident(
+  int_ref s "SimpleExpression.ml" 39 1090 1114 "SimpleExpression.ml" 39 1090 1115
+)
+"SimpleExpression.ml" 41 1159 1161 "SimpleExpression.ml" 50 1577 1580
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+"SimpleExpression.ml" 40 1119 1121 "SimpleExpression.ml" 50 1577 1580
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+"SimpleExpression.ml" 39 1090 1114 "SimpleExpression.ml" 50 1577 1580
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+"SimpleExpression.ml" 39 1090 1104 "SimpleExpression.ml" 50 1577 1580
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+"SimpleExpression.ml" 52 1593 1603 "SimpleExpression.ml" 52 1593 1612
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def reference "SimpleExpression.ml" 52 1593 1595 "SimpleExpression.ml" 64 2173 2180
+)
+"SimpleExpression.ml" 53 1616 1619 "SimpleExpression.ml" 53 1616 1622
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.loc
+)
+"SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 54 1630 1641
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "SimpleExpression.ml" 55 1710 1732 "SimpleExpression.ml" 56 1752 1845
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "SimpleExpression.ml" 54 1630 1652 "SimpleExpression.ml" 54 1630 1706
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "SimpleExpression.ml" 57 1846 1872 "SimpleExpression.ml" 57 1846 1911
+)
+"SimpleExpression.ml" 54 1630 1641 "SimpleExpression.ml" 54 1630 1648
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 54 1630 1641 "SimpleExpression.ml" 54 1630 1648
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 54 1630 1641 "SimpleExpression.ml" 54 1630 1648
+)
+"SimpleExpression.ml" 54 1630 1656 "SimpleExpression.ml" 54 1630 1662
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"SimpleExpression.ml" 54 1630 1664 "SimpleExpression.ml" 54 1630 1677
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"SimpleExpression.ml" 54 1630 1679 "SimpleExpression.ml" 54 1630 1680
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  int_ref r "SimpleExpression.ml" 36 1023 1027 "SimpleExpression.ml" 36 1023 1028
+)
+"SimpleExpression.ml" 54 1630 1681 "SimpleExpression.ml" 54 1630 1682
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 54 1630 1641
+)
+"SimpleExpression.ml" 54 1630 1678 "SimpleExpression.ml" 54 1630 1683
+call(
+  stack
+)
+type(
+  string
+)
+"SimpleExpression.ml" 54 1630 1663 "SimpleExpression.ml" 54 1630 1684
+type(
+  int
+)
+"SimpleExpression.ml" 54 1630 1656 "SimpleExpression.ml" 54 1630 1684
+type(
+  unit
+)
+"SimpleExpression.ml" 54 1630 1686 "SimpleExpression.ml" 54 1630 1690
+type(
+  bool
+)
+"SimpleExpression.ml" 54 1630 1656 "SimpleExpression.ml" 54 1630 1690
+type(
+  bool
+)
+"SimpleExpression.ml" 54 1630 1696 "SimpleExpression.ml" 54 1630 1697
+type(
+  exn
+)
+"SimpleExpression.ml" 54 1630 1701 "SimpleExpression.ml" 54 1630 1706
+type(
+  bool
+)
+"SimpleExpression.ml" 54 1630 1652 "SimpleExpression.ml" 54 1630 1706
+type(
+  bool
+)
+"SimpleExpression.ml" 55 1710 1732 "SimpleExpression.ml" 55 1710 1750
+type(
+  Ostap.Msg.t -> Ostap.Reason.t
+)
+"SimpleExpression.ml" 56 1752 1777 "SimpleExpression.ml" 56 1752 1791
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"SimpleExpression.ml" 56 1752 1792 "SimpleExpression.ml" 56 1752 1830
+type(
+  string
+)
+"SimpleExpression.ml" 56 1752 1833 "SimpleExpression.ml" 56 1752 1834
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  int_ref r "SimpleExpression.ml" 36 1023 1027 "SimpleExpression.ml" 36 1023 1028
+)
+"SimpleExpression.ml" 56 1752 1835 "SimpleExpression.ml" 56 1752 1836
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 54 1630 1641
+)
+"SimpleExpression.ml" 56 1752 1833 "SimpleExpression.ml" 56 1752 1836
+call(
+  stack
+)
+type(
+  string
+)
+"SimpleExpression.ml" 56 1752 1831 "SimpleExpression.ml" 56 1752 1838
+type(
+  string array
+)
+"SimpleExpression.ml" 56 1752 1840 "SimpleExpression.ml" 56 1752 1841
+type(
+  Ostap.Matcher.Token.t -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 37 1056 1060 "SimpleExpression.ml" 37 1056 1061
+)
+"SimpleExpression.ml" 56 1752 1842 "SimpleExpression.ml" 56 1752 1843
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 54 1630 1641
+)
+"SimpleExpression.ml" 56 1752 1839 "SimpleExpression.ml" 56 1752 1844
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 56 1752 1776 "SimpleExpression.ml" 56 1752 1845
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"SimpleExpression.ml" 55 1710 1732 "SimpleExpression.ml" 56 1752 1845
+call(
+  tail
+)
+type(
+  Ostap.Reason.t
+)
+"SimpleExpression.ml" 57 1846 1890 "SimpleExpression.ml" 57 1846 1903
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"SimpleExpression.ml" 57 1846 1905 "SimpleExpression.ml" 57 1846 1906
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  int_ref r "SimpleExpression.ml" 36 1023 1027 "SimpleExpression.ml" 36 1023 1028
+)
+"SimpleExpression.ml" 57 1846 1907 "SimpleExpression.ml" 57 1846 1908
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 54 1630 1641
+)
+"SimpleExpression.ml" 57 1846 1904 "SimpleExpression.ml" 57 1846 1909
+call(
+  stack
+)
+type(
+  string
+)
+"SimpleExpression.ml" 57 1846 1889 "SimpleExpression.ml" 57 1846 1910
+type(
+  int
+)
+"SimpleExpression.ml" 57 1846 1879 "SimpleExpression.ml" 57 1846 1911
+type(
+  [> `False | `Literal of int | `True ] as 'l
+)
+"SimpleExpression.ml" 57 1846 1872 "SimpleExpression.ml" 57 1846 1911
+type(
+  'f
+)
+"SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 57 1846 1912
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  Ostap.Matcher.Token.t -> Ostap.Reason.t
+)
+type(
+  (Ostap.Matcher.Token.t -> Ostap.Reason.t) option
+)
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (Ostap.Matcher.Token.t -> bool) ->
+  (Ostap.Matcher.Token.t -> Ostap.Reason.t) option ->
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.guard
+)
+type(
+  Ostap.Matcher.Token.t -> 'f
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _0 "SimpleExpression.ml" 57 1846 1872 "SimpleExpression.ml" 57 1846 1911
+)
+type(
+  (Ostap.Matcher.Token.t -> 'f) ->
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"SimpleExpression.ml" 58 1914 1925 "SimpleExpression.ml" 58 1914 1934
+type(
+  string
+)
+"SimpleExpression.ml" 58 1914 1936 "SimpleExpression.ml" 58 1914 1942
+type(
+  string
+)
+"SimpleExpression.ml" 58 1914 1923 "SimpleExpression.ml" 58 1914 1944
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string -> string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 58 1914 1923 "SimpleExpression.ml" 58 1914 1944
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 58 1914 1923 "SimpleExpression.ml" 58 1914 1944
+)
+"SimpleExpression.ml" 58 1914 1953 "SimpleExpression.ml" 58 1914 1958
+type(
+  'l
+)
+"SimpleExpression.ml" 58 1914 1946 "SimpleExpression.ml" 58 1914 1958
+type(
+  'f
+)
+"SimpleExpression.ml" 58 1914 1923 "SimpleExpression.ml" 58 1914 1959
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> 'f
+)
+type(
+  'c
+)
+ident(
+  def _0 "SimpleExpression.ml" 58 1914 1946 "SimpleExpression.ml" 58 1914 1958
+)
+type(
+  'c
+)
+type(
+  ('c -> 'f) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"SimpleExpression.ml" 59 1960 1971 "SimpleExpression.ml" 59 1960 1981
+type(
+  string
+)
+"SimpleExpression.ml" 59 1960 1982 "SimpleExpression.ml" 59 1960 1989
+type(
+  string
+)
+"SimpleExpression.ml" 59 1960 1969 "SimpleExpression.ml" 59 1960 1990
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string -> string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 59 1960 1969 "SimpleExpression.ml" 59 1960 1990
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 59 1960 1969 "SimpleExpression.ml" 59 1960 1990
+)
+"SimpleExpression.ml" 59 1960 1999 "SimpleExpression.ml" 59 1960 2005
+type(
+  'l
+)
+"SimpleExpression.ml" 59 1960 1992 "SimpleExpression.ml" 59 1960 2005
+type(
+  'f
+)
+"SimpleExpression.ml" 59 1960 1969 "SimpleExpression.ml" 59 1960 2006
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> 'f
+)
+type(
+  'c
+)
+ident(
+  def _0 "SimpleExpression.ml" 59 1960 1992 "SimpleExpression.ml" 59 1960 2005
+)
+type(
+  'c
+)
+type(
+  ('c -> 'f) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"SimpleExpression.ml" 60 2007 2017 "SimpleExpression.ml" 60 2007 2020
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 60 2007 2017 "SimpleExpression.ml" 60 2007 2020
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 60 2007 2017 "SimpleExpression.ml" 60 2007 2020
+)
+"SimpleExpression.ml" 60 2007 2021 "SimpleExpression.ml" 60 2007 2023
+type(
+  'f
+)
+ident(
+  def x "SimpleExpression.ml" 60 2007 2016 "SimpleExpression.ml" 60 2007 2044
+)
+"SimpleExpression.ml" 60 2007 2023 "SimpleExpression.ml" 60 2007 2028
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref parse "SimpleExpression.ml" 39 1090 1098 "SimpleExpression.ml" 39 1090 1103
+)
+"SimpleExpression.ml" 60 2007 2029 "SimpleExpression.ml" 60 2007 2038
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "SimpleExpression.ml" 52 1593 1603 "SimpleExpression.ml" 52 1593 1612
+)
+"SimpleExpression.ml" 60 2007 2023 "SimpleExpression.ml" 60 2007 2039
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 60 2007 2023 "SimpleExpression.ml" 60 2007 2039
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 60 2007 2023 "SimpleExpression.ml" 60 2007 2039
+)
+"SimpleExpression.ml" 60 2007 2041 "SimpleExpression.ml" 60 2007 2044
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 60 2007 2041 "SimpleExpression.ml" 60 2007 2044
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 60 2007 2041 "SimpleExpression.ml" 60 2007 2044
+)
+"SimpleExpression.ml" 60 2007 2016 "SimpleExpression.ml" 60 2007 2044
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'f -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> 'f
+)
+type(
+  'f
+)
+ident(
+  int_ref _0 "SimpleExpression.ml" 60 2007 2016 "SimpleExpression.ml" 60 2007 2044
+)
+type(
+  'c
+)
+type(
+  ('c -> 'f) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'f
+)
+ident(
+  def _0 "SimpleExpression.ml" 60 2007 2016 "SimpleExpression.ml" 60 2007 2044
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('f -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleExpression.ml" 61 2045 2054 "SimpleExpression.ml" 61 2045 2057
+type(
+  [> `Neg | `Not ] as 'm
+)
+ident(
+  def op "SimpleExpression.ml" 61 2045 2054 "SimpleExpression.ml" 61 2045 2119
+)
+"SimpleExpression.ml" 61 2045 2058 "SimpleExpression.ml" 61 2045 2061
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 61 2045 2058 "SimpleExpression.ml" 61 2045 2061
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 61 2045 2058 "SimpleExpression.ml" 61 2045 2061
+)
+"SimpleExpression.ml" 61 2045 2063 "SimpleExpression.ml" 61 2045 2067
+type(
+  'm
+)
+"SimpleExpression.ml" 61 2045 2058 "SimpleExpression.ml" 61 2045 2068
+call(
+  stack
+)
+type(
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> 'm
+)
+type(
+  'c
+)
+ident(
+  def _0 "SimpleExpression.ml" 61 2045 2063 "SimpleExpression.ml" 61 2045 2067
+)
+type(
+  'c
+)
+type(
+  ('c -> 'm) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"SimpleExpression.ml" 61 2045 2071 "SimpleExpression.ml" 61 2045 2074
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 61 2045 2071 "SimpleExpression.ml" 61 2045 2074
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 61 2045 2071 "SimpleExpression.ml" 61 2045 2074
+)
+"SimpleExpression.ml" 61 2045 2076 "SimpleExpression.ml" 61 2045 2080
+type(
+  'm
+)
+"SimpleExpression.ml" 61 2045 2071 "SimpleExpression.ml" 61 2045 2081
+call(
+  stack
+)
+type(
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> 'm
+)
+type(
+  'c
+)
+ident(
+  def _0 "SimpleExpression.ml" 61 2045 2076 "SimpleExpression.ml" 61 2045 2080
+)
+type(
+  'c
+)
+type(
+  ('c -> 'm) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"SimpleExpression.ml" 61 2045 2058 "SimpleExpression.ml" 61 2045 2081
+call(
+  stack
+)
+type(
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"SimpleExpression.ml" 61 2045 2083 "SimpleExpression.ml" 61 2045 2085
+type(
+  'f
+)
+ident(
+  def x "SimpleExpression.ml" 61 2045 2105 "SimpleExpression.ml" 61 2045 2118
+)
+"SimpleExpression.ml" 61 2045 2085 "SimpleExpression.ml" 61 2045 2092
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref primary "SimpleExpression.ml" 51 1581 1585 "SimpleExpression.ml" 65 2181 2182
+)
+"SimpleExpression.ml" 61 2045 2093 "SimpleExpression.ml" 61 2045 2102
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "SimpleExpression.ml" 52 1593 1603 "SimpleExpression.ml" 52 1593 1612
+)
+"SimpleExpression.ml" 61 2045 2085 "SimpleExpression.ml" 61 2045 2103
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 61 2045 2085 "SimpleExpression.ml" 61 2045 2103
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 61 2045 2085 "SimpleExpression.ml" 61 2045 2103
+)
+"SimpleExpression.ml" 61 2045 2112 "SimpleExpression.ml" 61 2045 2114
+type(
+  'm
+)
+ident(
+  int_ref op "SimpleExpression.ml" 61 2045 2054 "SimpleExpression.ml" 61 2045 2057
+)
+"SimpleExpression.ml" 61 2045 2116 "SimpleExpression.ml" 61 2045 2117
+type(
+  'f
+)
+ident(
+  int_ref x "SimpleExpression.ml" 61 2045 2083 "SimpleExpression.ml" 61 2045 2085
+)
+"SimpleExpression.ml" 61 2045 2111 "SimpleExpression.ml" 61 2045 2118
+type(
+  'm * 'f
+)
+"SimpleExpression.ml" 61 2045 2105 "SimpleExpression.ml" 61 2045 2118
+type(
+  'f
+)
+"SimpleExpression.ml" 61 2045 2054 "SimpleExpression.ml" 61 2045 2119
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'm -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'f -> 'f
+)
+type(
+  'f
+)
+ident(
+  def _0 "SimpleExpression.ml" 61 2045 2105 "SimpleExpression.ml" 61 2045 2118
+)
+type(
+  ('f -> 'f) ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'm
+)
+ident(
+  def _1 "SimpleExpression.ml" 61 2045 2054 "SimpleExpression.ml" 61 2045 2119
+)
+type(
+  ('a, 'm, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('m -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleExpression.ml" 62 2120 2130 "SimpleExpression.ml" 62 2120 2133
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 62 2120 2130 "SimpleExpression.ml" 62 2120 2133
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 62 2120 2130 "SimpleExpression.ml" 62 2120 2133
+)
+"SimpleExpression.ml" 62 2120 2134 "SimpleExpression.ml" 62 2120 2141
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref primary "SimpleExpression.ml" 51 1581 1585 "SimpleExpression.ml" 65 2181 2182
+)
+"SimpleExpression.ml" 62 2120 2142 "SimpleExpression.ml" 62 2120 2151
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "SimpleExpression.ml" 52 1593 1603 "SimpleExpression.ml" 52 1593 1612
+)
+"SimpleExpression.ml" 62 2120 2134 "SimpleExpression.ml" 62 2120 2152
+call(
+  tail
+)
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 62 2120 2134 "SimpleExpression.ml" 62 2120 2152
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 62 2120 2134 "SimpleExpression.ml" 62 2120 2152
+)
+"SimpleExpression.ml" 62 2120 2129 "SimpleExpression.ml" 62 2120 2152
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"SimpleExpression.ml" 63 2153 2162 "SimpleExpression.ml" 63 2153 2171
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref reference "SimpleExpression.ml" 52 1593 1603 "SimpleExpression.ml" 52 1593 1612
+)
+"SimpleExpression.ml" 54 1630 1639 "SimpleExpression.ml" 63 2153 2171
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"SimpleExpression.ml" 53 1616 1623 "SimpleExpression.ml" 63 2153 2172
+call(
+  tail
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 53 1616 1623 "SimpleExpression.ml" 63 2153 2172
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 53 1616 1623 "SimpleExpression.ml" 63 2153 2172
+)
+"SimpleExpression.ml" 53 1616 1619 "SimpleExpression.ml" 64 2173 2180
+call(
+  tail
+)
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 53 1616 1619 "SimpleExpression.ml" 64 2173 2180
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 53 1616 1619 "SimpleExpression.ml" 64 2173 2180
+)
+"SimpleExpression.ml" 52 1593 1595 "SimpleExpression.ml" 64 2173 2180
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'a -> ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "SimpleExpression.ml" 52 1593 1595 "SimpleExpression.ml" 64 2173 2180
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "SimpleExpression.ml" 52 1593 1595 "SimpleExpression.ml" 64 2173 2180
+)
+"SimpleExpression.ml" 51 1581 1585 "SimpleExpression.ml" 65 2181 2182
+type(
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'f, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def primary "SimpleExpression.ml" 39 1090 1090 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 69 2274 2278 "SimpleExpression.ml" 69 2274 2284
+type(
+  < binop : 'a -> string * 'b;
+    const : 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'd -> string * 'b; .. > ->
+  ((([> `Binop of 'a * 'e * 'e | `Const of 'c | `Unop of 'd * 'e ] as 'e) ->
+    (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+   'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+ident(
+  def gprint "SimpleExpression.ml" 83 2686 2686 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 69 2274 2285 "SimpleExpression.ml" 69 2274 2287
+type(
+  < binop : 'a -> string * 'b;
+    const : 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'd -> string * 'b; .. >
+  as 'f
+)
+ident(
+  def ps "SimpleExpression.ml" 69 2274 2288 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 69 2274 2288 "SimpleExpression.ml" 69 2274 2291
+type(
+  ('e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+ident(
+  def ext "SimpleExpression.ml" 69 2274 2292 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 69 2274 2292 "SimpleExpression.ml" 69 2274 2296
+type(
+  'e
+)
+ident(
+  def expr "SimpleExpression.ml" 70 2299 2301 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 70 2299 2305 "SimpleExpression.ml" 70 2299 2306
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  def b "SimpleExpression.ml" 71 2344 2346 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 70 2299 2307 "SimpleExpression.ml" 70 2299 2308
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def x "SimpleExpression.ml" 70 2299 2311 "SimpleExpression.ml" 70 2299 2340
+)
+"SimpleExpression.ml" 70 2299 2311 "SimpleExpression.ml" 70 2299 2319
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.hovboxed
+)
+"SimpleExpression.ml" 70 2299 2321 "SimpleExpression.ml" 70 2299 2337
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySpaceBreak
+)
+"SimpleExpression.ml" 70 2299 2338 "SimpleExpression.ml" 70 2299 2339
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref x "SimpleExpression.ml" 70 2299 2307 "SimpleExpression.ml" 70 2299 2308
+)
+"SimpleExpression.ml" 70 2299 2320 "SimpleExpression.ml" 70 2299 2340
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 70 2299 2311 "SimpleExpression.ml" 70 2299 2340
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 70 2299 2307 "SimpleExpression.ml" 70 2299 2340
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 71 2344 2350 "SimpleExpression.ml" 71 2344 2352
+type(
+  string * 'g -> Ostap.Pretty.printer * 'g
+)
+ident(
+  def op "SimpleExpression.ml" 72 2377 2379 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 71 2344 2354 "SimpleExpression.ml" 71 2344 2355
+type(
+  string
+)
+ident(
+  def s "SimpleExpression.ml" 71 2344 2362 "SimpleExpression.ml" 71 2344 2373
+)
+"SimpleExpression.ml" 71 2344 2357 "SimpleExpression.ml" 71 2344 2358
+type(
+  'g
+)
+ident(
+  def p "SimpleExpression.ml" 71 2344 2362 "SimpleExpression.ml" 71 2344 2373
+)
+"SimpleExpression.ml" 71 2344 2354 "SimpleExpression.ml" 71 2344 2358
+type(
+  string * 'g
+)
+"SimpleExpression.ml" 71 2344 2362 "SimpleExpression.ml" 71 2344 2368
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleExpression.ml" 71 2344 2369 "SimpleExpression.ml" 71 2344 2370
+type(
+  string
+)
+ident(
+  int_ref s "SimpleExpression.ml" 71 2344 2354 "SimpleExpression.ml" 71 2344 2355
+)
+"SimpleExpression.ml" 71 2344 2362 "SimpleExpression.ml" 71 2344 2370
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 71 2344 2372 "SimpleExpression.ml" 71 2344 2373
+type(
+  'g
+)
+ident(
+  int_ref p "SimpleExpression.ml" 71 2344 2357 "SimpleExpression.ml" 71 2344 2358
+)
+"SimpleExpression.ml" 71 2344 2362 "SimpleExpression.ml" 71 2344 2373
+type(
+  Ostap.Pretty.printer * 'g
+)
+"SimpleExpression.ml" 71 2344 2353 "SimpleExpression.ml" 71 2344 2373
+type(
+  string * 'g -> Ostap.Pretty.printer * 'g
+)
+"SimpleExpression.ml" 72 2377 2383 "SimpleExpression.ml" 72 2377 2384
+type(
+  'h -> Ostap.Pretty.printer * 'h -> Ostap.Pretty.printer
+)
+ident(
+  def w "SimpleExpression.ml" 73 2432 2434 "SimpleExpression.ml" 81 2676 2684
+)
+"SimpleExpression.ml" 72 2377 2385 "SimpleExpression.ml" 72 2377 2387
+type(
+  'h
+)
+ident(
+  def p' "SimpleExpression.ml" 72 2377 2388 "SimpleExpression.ml" 72 2377 2427
+)
+"SimpleExpression.ml" 72 2377 2389 "SimpleExpression.ml" 72 2377 2390
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def x "SimpleExpression.ml" 72 2377 2397 "SimpleExpression.ml" 72 2377 2427
+)
+"SimpleExpression.ml" 72 2377 2392 "SimpleExpression.ml" 72 2377 2393
+type(
+  'h
+)
+ident(
+  def p "SimpleExpression.ml" 72 2377 2397 "SimpleExpression.ml" 72 2377 2427
+)
+"SimpleExpression.ml" 72 2377 2389 "SimpleExpression.ml" 72 2377 2393
+type(
+  Ostap.Pretty.printer * 'h
+)
+"SimpleExpression.ml" 72 2377 2400 "SimpleExpression.ml" 72 2377 2402
+type(
+  'h
+)
+ident(
+  int_ref p' "SimpleExpression.ml" 72 2377 2385 "SimpleExpression.ml" 72 2377 2387
+)
+"SimpleExpression.ml" 72 2377 2405 "SimpleExpression.ml" 72 2377 2406
+type(
+  'h
+)
+ident(
+  int_ref p "SimpleExpression.ml" 72 2377 2392 "SimpleExpression.ml" 72 2377 2393
+)
+"SimpleExpression.ml" 72 2377 2400 "SimpleExpression.ml" 72 2377 2406
+type(
+  bool
+)
+type(
+  'h -> 'h -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"SimpleExpression.ml" 72 2377 2412 "SimpleExpression.ml" 72 2377 2418
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.rboxed
+)
+"SimpleExpression.ml" 72 2377 2419 "SimpleExpression.ml" 72 2377 2420
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref x "SimpleExpression.ml" 72 2377 2389 "SimpleExpression.ml" 72 2377 2390
+)
+"SimpleExpression.ml" 72 2377 2412 "SimpleExpression.ml" 72 2377 2420
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 72 2377 2426 "SimpleExpression.ml" 72 2377 2427
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref x "SimpleExpression.ml" 72 2377 2389 "SimpleExpression.ml" 72 2377 2390
+)
+"SimpleExpression.ml" 72 2377 2397 "SimpleExpression.ml" 72 2377 2427
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 72 2377 2388 "SimpleExpression.ml" 72 2377 2427
+type(
+  Ostap.Pretty.printer * 'h -> Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 72 2377 2385 "SimpleExpression.ml" 72 2377 2427
+type(
+  'h -> Ostap.Pretty.printer * 'h -> Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 73 2432 2434 "SimpleExpression.ml" 73 2432 2438
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t > ->
+  (('e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+   'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+ident(
+  int_ref imap "SimpleExpression.ml" 20 533 537 "SimpleExpression.ml" 20 533 541
+)
+"SimpleExpression.ml" 75 2454 2474 "SimpleExpression.ml" 75 2454 2475
+type(
+  'e
+)
+"SimpleExpression.ml" 75 2454 2476 "SimpleExpression.ml" 75 2454 2477
+type(
+  'a
+)
+ident(
+  def o "SimpleExpression.ml" 75 2454 2478 "SimpleExpression.ml" 75 2454 2536
+)
+"SimpleExpression.ml" 75 2454 2478 "SimpleExpression.ml" 75 2454 2479
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  def x "SimpleExpression.ml" 75 2454 2480 "SimpleExpression.ml" 75 2454 2536
+)
+"SimpleExpression.ml" 75 2454 2480 "SimpleExpression.ml" 75 2454 2481
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  def y "SimpleExpression.ml" 75 2454 2484 "SimpleExpression.ml" 75 2454 2536
+)
+"SimpleExpression.ml" 75 2454 2488 "SimpleExpression.ml" 75 2454 2489
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleExpression.ml" 75 2454 2514 "SimpleExpression.ml" 75 2454 2536
+)
+"SimpleExpression.ml" 75 2454 2491 "SimpleExpression.ml" 75 2454 2492
+type(
+  'b
+)
+ident(
+  def p "SimpleExpression.ml" 75 2454 2514 "SimpleExpression.ml" 75 2454 2536
+)
+"SimpleExpression.ml" 75 2454 2488 "SimpleExpression.ml" 75 2454 2492
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 75 2454 2495 "SimpleExpression.ml" 75 2454 2497
+type(
+  string * 'b -> Ostap.Pretty.printer * 'b
+)
+ident(
+  int_ref op "SimpleExpression.ml" 71 2344 2350 "SimpleExpression.ml" 71 2344 2352
+)
+"SimpleExpression.ml" 75 2454 2499 "SimpleExpression.ml" 75 2454 2501
+type(
+  'f
+)
+ident(
+  int_ref ps "SimpleExpression.ml" 69 2274 2285 "SimpleExpression.ml" 69 2274 2287
+)
+"SimpleExpression.ml" 75 2454 2499 "SimpleExpression.ml" 75 2454 2507
+call(
+  stack
+)
+type(
+  'a -> string * 'b
+)
+"SimpleExpression.ml" 75 2454 2508 "SimpleExpression.ml" 75 2454 2509
+type(
+  'a
+)
+ident(
+  int_ref o "SimpleExpression.ml" 75 2454 2476 "SimpleExpression.ml" 75 2454 2477
+)
+"SimpleExpression.ml" 75 2454 2498 "SimpleExpression.ml" 75 2454 2510
+type(
+  string * 'b
+)
+"SimpleExpression.ml" 75 2454 2495 "SimpleExpression.ml" 75 2454 2510
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 75 2454 2514 "SimpleExpression.ml" 75 2454 2515
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref b "SimpleExpression.ml" 70 2299 2305 "SimpleExpression.ml" 70 2299 2306
+)
+"SimpleExpression.ml" 75 2454 2517 "SimpleExpression.ml" 75 2454 2518
+type(
+  'b -> Ostap.Pretty.printer * 'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref w "SimpleExpression.ml" 72 2377 2383 "SimpleExpression.ml" 72 2377 2384
+)
+"SimpleExpression.ml" 75 2454 2519 "SimpleExpression.ml" 75 2454 2520
+type(
+  'b
+)
+ident(
+  int_ref p "SimpleExpression.ml" 75 2454 2491 "SimpleExpression.ml" 75 2454 2492
+)
+"SimpleExpression.ml" 75 2454 2521 "SimpleExpression.ml" 75 2454 2522
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  int_ref x "SimpleExpression.ml" 75 2454 2478 "SimpleExpression.ml" 75 2454 2479
+)
+"SimpleExpression.ml" 75 2454 2517 "SimpleExpression.ml" 75 2454 2522
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 75 2454 2524 "SimpleExpression.ml" 75 2454 2525
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleExpression.ml" 75 2454 2488 "SimpleExpression.ml" 75 2454 2489
+)
+"SimpleExpression.ml" 75 2454 2527 "SimpleExpression.ml" 75 2454 2528
+type(
+  'b -> Ostap.Pretty.printer * 'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref w "SimpleExpression.ml" 72 2377 2383 "SimpleExpression.ml" 72 2377 2384
+)
+"SimpleExpression.ml" 75 2454 2529 "SimpleExpression.ml" 75 2454 2530
+type(
+  'b
+)
+ident(
+  int_ref p "SimpleExpression.ml" 75 2454 2491 "SimpleExpression.ml" 75 2454 2492
+)
+"SimpleExpression.ml" 75 2454 2531 "SimpleExpression.ml" 75 2454 2532
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  int_ref y "SimpleExpression.ml" 75 2454 2480 "SimpleExpression.ml" 75 2454 2481
+)
+"SimpleExpression.ml" 75 2454 2527 "SimpleExpression.ml" 75 2454 2532
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 75 2454 2516 "SimpleExpression.ml" 75 2454 2533
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleExpression.ml" 75 2454 2514 "SimpleExpression.ml" 75 2454 2533
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 75 2454 2535 "SimpleExpression.ml" 75 2454 2536
+type(
+  'b
+)
+ident(
+  int_ref p "SimpleExpression.ml" 75 2454 2491 "SimpleExpression.ml" 75 2454 2492
+)
+"SimpleExpression.ml" 75 2454 2514 "SimpleExpression.ml" 75 2454 2536
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 75 2454 2484 "SimpleExpression.ml" 75 2454 2536
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 75 2454 2480 "SimpleExpression.ml" 75 2454 2536
+type(
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 75 2454 2478 "SimpleExpression.ml" 75 2454 2536
+type(
+  Ostap.Pretty.printer * 'b ->
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 75 2454 2476 "SimpleExpression.ml" 75 2454 2536
+type(
+  'a ->
+  Ostap.Pretty.printer * 'b ->
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 75 2454 2474 "SimpleExpression.ml" 75 2454 2536
+type(
+  'e ->
+  'a ->
+  Ostap.Pretty.printer * 'b ->
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+type(
+  'e ->
+  'a ->
+  Ostap.Pretty.printer * 'b ->
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 75 2454 2461 "SimpleExpression.ml" 75 2454 2536
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t > ->
+  'e ->
+  'a ->
+  Ostap.Pretty.printer * 'b ->
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 76 2537 2557 "SimpleExpression.ml" 76 2537 2558
+type(
+  'e
+)
+"SimpleExpression.ml" 76 2537 2559 "SimpleExpression.ml" 76 2537 2560
+type(
+  'd
+)
+ident(
+  def o "SimpleExpression.ml" 76 2537 2561 "SimpleExpression.ml" 76 2537 2611
+)
+"SimpleExpression.ml" 76 2537 2561 "SimpleExpression.ml" 76 2537 2562
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  def x "SimpleExpression.ml" 76 2537 2567 "SimpleExpression.ml" 76 2537 2611
+)
+"SimpleExpression.ml" 76 2537 2571 "SimpleExpression.ml" 76 2537 2572
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def s "SimpleExpression.ml" 76 2537 2596 "SimpleExpression.ml" 76 2537 2611
+)
+"SimpleExpression.ml" 76 2537 2574 "SimpleExpression.ml" 76 2537 2575
+type(
+  'b
+)
+ident(
+  def p "SimpleExpression.ml" 76 2537 2596 "SimpleExpression.ml" 76 2537 2611
+)
+"SimpleExpression.ml" 76 2537 2571 "SimpleExpression.ml" 76 2537 2575
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 76 2537 2578 "SimpleExpression.ml" 76 2537 2580
+type(
+  string * 'b -> Ostap.Pretty.printer * 'b
+)
+ident(
+  int_ref op "SimpleExpression.ml" 71 2344 2350 "SimpleExpression.ml" 71 2344 2352
+)
+"SimpleExpression.ml" 76 2537 2582 "SimpleExpression.ml" 76 2537 2584
+type(
+  'f
+)
+ident(
+  int_ref ps "SimpleExpression.ml" 69 2274 2285 "SimpleExpression.ml" 69 2274 2287
+)
+"SimpleExpression.ml" 76 2537 2582 "SimpleExpression.ml" 76 2537 2589
+call(
+  stack
+)
+type(
+  'd -> string * 'b
+)
+"SimpleExpression.ml" 76 2537 2590 "SimpleExpression.ml" 76 2537 2591
+type(
+  'd
+)
+ident(
+  int_ref o "SimpleExpression.ml" 76 2537 2559 "SimpleExpression.ml" 76 2537 2560
+)
+"SimpleExpression.ml" 76 2537 2581 "SimpleExpression.ml" 76 2537 2592
+type(
+  string * 'b
+)
+"SimpleExpression.ml" 76 2537 2578 "SimpleExpression.ml" 76 2537 2592
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 76 2537 2596 "SimpleExpression.ml" 76 2537 2597
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref b "SimpleExpression.ml" 70 2299 2305 "SimpleExpression.ml" 70 2299 2306
+)
+"SimpleExpression.ml" 76 2537 2599 "SimpleExpression.ml" 76 2537 2600
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref s "SimpleExpression.ml" 76 2537 2571 "SimpleExpression.ml" 76 2537 2572
+)
+"SimpleExpression.ml" 76 2537 2602 "SimpleExpression.ml" 76 2537 2603
+type(
+  'b -> Ostap.Pretty.printer * 'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref w "SimpleExpression.ml" 72 2377 2383 "SimpleExpression.ml" 72 2377 2384
+)
+"SimpleExpression.ml" 76 2537 2604 "SimpleExpression.ml" 76 2537 2605
+type(
+  'b
+)
+ident(
+  int_ref p "SimpleExpression.ml" 76 2537 2574 "SimpleExpression.ml" 76 2537 2575
+)
+"SimpleExpression.ml" 76 2537 2606 "SimpleExpression.ml" 76 2537 2607
+type(
+  Ostap.Pretty.printer * 'b
+)
+ident(
+  int_ref x "SimpleExpression.ml" 76 2537 2561 "SimpleExpression.ml" 76 2537 2562
+)
+"SimpleExpression.ml" 76 2537 2602 "SimpleExpression.ml" 76 2537 2607
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 76 2537 2598 "SimpleExpression.ml" 76 2537 2608
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"SimpleExpression.ml" 76 2537 2596 "SimpleExpression.ml" 76 2537 2608
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 76 2537 2610 "SimpleExpression.ml" 76 2537 2611
+type(
+  'b
+)
+ident(
+  int_ref p "SimpleExpression.ml" 76 2537 2574 "SimpleExpression.ml" 76 2537 2575
+)
+"SimpleExpression.ml" 76 2537 2596 "SimpleExpression.ml" 76 2537 2611
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 76 2537 2567 "SimpleExpression.ml" 76 2537 2611
+type(
+  Ostap.Pretty.printer * 'b
+)
+"SimpleExpression.ml" 76 2537 2561 "SimpleExpression.ml" 76 2537 2611
+type(
+  Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 76 2537 2559 "SimpleExpression.ml" 76 2537 2611
+type(
+  'd -> Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 76 2537 2557 "SimpleExpression.ml" 76 2537 2611
+type(
+  'e ->
+  'd -> Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+type(
+  'e ->
+  'd -> Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 76 2537 2544 "SimpleExpression.ml" 76 2537 2611
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t > ->
+  'e ->
+  'd -> Ostap.Pretty.printer * 'b -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 77 2612 2632 "SimpleExpression.ml" 77 2612 2633
+type(
+  'e
+)
+"SimpleExpression.ml" 77 2612 2636 "SimpleExpression.ml" 77 2612 2637
+type(
+  'c
+)
+ident(
+  def x "SimpleExpression.ml" 77 2612 2642 "SimpleExpression.ml" 77 2612 2652
+)
+"SimpleExpression.ml" 77 2612 2642 "SimpleExpression.ml" 77 2612 2644
+type(
+  'f
+)
+ident(
+  int_ref ps "SimpleExpression.ml" 69 2274 2285 "SimpleExpression.ml" 69 2274 2287
+)
+"SimpleExpression.ml" 77 2612 2642 "SimpleExpression.ml" 77 2612 2650
+call(
+  tail
+)
+type(
+  'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 77 2612 2651 "SimpleExpression.ml" 77 2612 2652
+type(
+  'c
+)
+ident(
+  int_ref x "SimpleExpression.ml" 77 2612 2636 "SimpleExpression.ml" 77 2612 2637
+)
+"SimpleExpression.ml" 77 2612 2642 "SimpleExpression.ml" 77 2612 2652
+type(
+  (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 77 2612 2636 "SimpleExpression.ml" 77 2612 2652
+type(
+  'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 77 2612 2632 "SimpleExpression.ml" 77 2612 2652
+type(
+  'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+type(
+  'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 77 2612 2619 "SimpleExpression.ml" 77 2612 2652
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t > ->
+  'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 74 2441 2445 "SimpleExpression.ml" 79 2662 2667
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t >
+)
+type(
+  < binop : 'e ->
+            'a ->
+            Ostap.Pretty.printer * 'b ->
+            Ostap.Pretty.printer * 'b ->
+            (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    const : 'e -> 'c -> (Ostap.Pretty.printer * 'b) Monad.Id.t;
+    unop : 'e ->
+           'd ->
+           Ostap.Pretty.printer * 'b ->
+           (Ostap.Pretty.printer * 'b) Monad.Id.t >
+)
+"SimpleExpression.ml" 80 2668 2672 "SimpleExpression.ml" 80 2668 2675
+type(
+  ('e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 69 2274 2288 "SimpleExpression.ml" 69 2274 2291
+)
+"SimpleExpression.ml" 81 2676 2680 "SimpleExpression.ml" 81 2676 2684
+type(
+  'e
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 69 2274 2292 "SimpleExpression.ml" 69 2274 2296
+)
+"SimpleExpression.ml" 73 2432 2434 "SimpleExpression.ml" 81 2676 2684
+call(
+  tail
+)
+type(
+  (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 72 2377 2379 "SimpleExpression.ml" 81 2676 2684
+type(
+  (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 71 2344 2346 "SimpleExpression.ml" 81 2676 2684
+type(
+  (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 70 2299 2301 "SimpleExpression.ml" 81 2676 2684
+type(
+  (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 69 2274 2292 "SimpleExpression.ml" 81 2676 2684
+type(
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 69 2274 2288 "SimpleExpression.ml" 81 2676 2684
+type(
+  (('e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+   'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 69 2274 2285 "SimpleExpression.ml" 81 2676 2684
+type(
+  'f ->
+  (('e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+   'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t) ->
+  'e -> (Ostap.Pretty.printer * 'b) Monad.Id.t
+)
+"SimpleExpression.ml" 83 2686 2690 "SimpleExpression.ml" 83 2686 2695
+type(
+  ((([> `Binop of
+          [< `Add
+           | `And
+           | `Div
+           | `Eq
+           | `Ge
+           | `Gt
+           | `Le
+           | `Lt
+           | `Mod
+           | `Mul
+           | `Ne
+           | `Or
+           | `Sub ] *
+          'a * 'a
+      | `Const of [< `False | `Literal of int | `True ]
+      | `Unop of [< `Neg | `Not ] * 'a ]
+     as 'a) ->
+    (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def print "SimpleExpression.ml" 97 3322 3322 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 83 2686 2696 "SimpleExpression.ml" 83 2686 2699
+type(
+  ('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def ext "SimpleExpression.ml" 83 2686 2700 "SimpleExpression.ml" 95 3297 3320
+)
+"SimpleExpression.ml" 83 2686 2700 "SimpleExpression.ml" 83 2686 2704
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 84 2708 2710 "SimpleExpression.ml" 95 3297 3320
+)
+"SimpleExpression.ml" 84 2708 2710 "SimpleExpression.ml" 84 2708 2716
+type(
+  < binop : ([< `Add
+              | `And
+              | `Div
+              | `Eq
+              | `Ge
+              | `Gt
+              | `Le
+              | `Lt
+              | `Mod
+              | `Mul
+              | `Ne
+              | `Or
+              | `Sub ]
+             as 'b) ->
+            string * int;
+    const : ([< `False | `Literal of int | `True ] as 'c) ->
+            (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : ([< `Neg | `Not ] as 'd) -> string * int > ->
+  (('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref gprint "SimpleExpression.ml" 69 2274 2278 "SimpleExpression.ml" 69 2274 2284
+)
+"SimpleExpression.ml" 85 2725 2760 "SimpleExpression.ml" 85 2725 2764
+type(
+  'd
+)
+"SimpleExpression.ml" 85 2725 2768 "SimpleExpression.ml" 85 2725 2771
+type(
+  string
+)
+"SimpleExpression.ml" 85 2725 2773 "SimpleExpression.ml" 85 2725 2774
+type(
+  int
+)
+"SimpleExpression.ml" 85 2725 2768 "SimpleExpression.ml" 85 2725 2774
+type(
+  string * int
+)
+"SimpleExpression.ml" 85 2725 2777 "SimpleExpression.ml" 85 2725 2781
+type(
+  'd
+)
+"SimpleExpression.ml" 85 2725 2785 "SimpleExpression.ml" 85 2725 2788
+type(
+  string
+)
+"SimpleExpression.ml" 85 2725 2790 "SimpleExpression.ml" 85 2725 2791
+type(
+  int
+)
+"SimpleExpression.ml" 85 2725 2785 "SimpleExpression.ml" 85 2725 2791
+type(
+  string * int
+)
+"SimpleExpression.ml" 85 2725 2751 "SimpleExpression.ml" 85 2725 2791
+type(
+  'd -> string * int
+)
+type(
+  'd -> string * int
+)
+"SimpleExpression.ml" 85 2725 2737 "SimpleExpression.ml" 85 2725 2791
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'd -> string * int
+)
+"SimpleExpression.ml" 87 2830 2844 "SimpleExpression.ml" 87 2830 2848
+type(
+  'b
+)
+"SimpleExpression.ml" 87 2830 2852 "SimpleExpression.ml" 87 2830 2855
+type(
+  string
+)
+"SimpleExpression.ml" 87 2830 2858 "SimpleExpression.ml" 87 2830 2859
+type(
+  int
+)
+"SimpleExpression.ml" 87 2830 2852 "SimpleExpression.ml" 87 2830 2859
+type(
+  string * int
+)
+"SimpleExpression.ml" 87 2830 2862 "SimpleExpression.ml" 87 2830 2866
+type(
+  'b
+)
+"SimpleExpression.ml" 87 2830 2870 "SimpleExpression.ml" 87 2830 2875
+type(
+  string
+)
+"SimpleExpression.ml" 87 2830 2877 "SimpleExpression.ml" 87 2830 2878
+type(
+  int
+)
+"SimpleExpression.ml" 87 2830 2870 "SimpleExpression.ml" 87 2830 2878
+type(
+  string * int
+)
+"SimpleExpression.ml" 87 2830 2881 "SimpleExpression.ml" 87 2830 2885
+type(
+  'b
+)
+"SimpleExpression.ml" 87 2830 2889 "SimpleExpression.ml" 87 2830 2894
+type(
+  string
+)
+"SimpleExpression.ml" 87 2830 2896 "SimpleExpression.ml" 87 2830 2897
+type(
+  int
+)
+"SimpleExpression.ml" 87 2830 2889 "SimpleExpression.ml" 87 2830 2897
+type(
+  string * int
+)
+"SimpleExpression.ml" 87 2830 2900 "SimpleExpression.ml" 87 2830 2904
+type(
+  'b
+)
+"SimpleExpression.ml" 87 2830 2908 "SimpleExpression.ml" 87 2830 2911
+type(
+  string
+)
+"SimpleExpression.ml" 87 2830 2913 "SimpleExpression.ml" 87 2830 2914
+type(
+  int
+)
+"SimpleExpression.ml" 87 2830 2908 "SimpleExpression.ml" 87 2830 2914
+type(
+  string * int
+)
+"SimpleExpression.ml" 88 2915 2929 "SimpleExpression.ml" 88 2915 2933
+type(
+  'b
+)
+"SimpleExpression.ml" 88 2915 2937 "SimpleExpression.ml" 88 2915 2940
+type(
+  string
+)
+"SimpleExpression.ml" 88 2915 2943 "SimpleExpression.ml" 88 2915 2944
+type(
+  int
+)
+"SimpleExpression.ml" 88 2915 2937 "SimpleExpression.ml" 88 2915 2944
+type(
+  string * int
+)
+"SimpleExpression.ml" 88 2915 2947 "SimpleExpression.ml" 88 2915 2951
+type(
+  'b
+)
+"SimpleExpression.ml" 88 2915 2955 "SimpleExpression.ml" 88 2915 2958
+type(
+  string
+)
+"SimpleExpression.ml" 88 2915 2962 "SimpleExpression.ml" 88 2915 2963
+type(
+  int
+)
+"SimpleExpression.ml" 88 2915 2955 "SimpleExpression.ml" 88 2915 2963
+type(
+  string * int
+)
+"SimpleExpression.ml" 88 2915 2966 "SimpleExpression.ml" 88 2915 2969
+type(
+  'b
+)
+"SimpleExpression.ml" 88 2915 2974 "SimpleExpression.ml" 88 2915 2978
+type(
+  string
+)
+"SimpleExpression.ml" 88 2915 2981 "SimpleExpression.ml" 88 2915 2982
+type(
+  int
+)
+"SimpleExpression.ml" 88 2915 2974 "SimpleExpression.ml" 88 2915 2982
+type(
+  string * int
+)
+"SimpleExpression.ml" 89 2984 2998 "SimpleExpression.ml" 89 2984 3001
+type(
+  'b
+)
+"SimpleExpression.ml" 89 2984 3006 "SimpleExpression.ml" 89 2984 3010
+type(
+  string
+)
+"SimpleExpression.ml" 89 2984 3012 "SimpleExpression.ml" 89 2984 3013
+type(
+  int
+)
+"SimpleExpression.ml" 89 2984 3006 "SimpleExpression.ml" 89 2984 3013
+type(
+  string * int
+)
+"SimpleExpression.ml" 89 2984 3016 "SimpleExpression.ml" 89 2984 3019
+type(
+  'b
+)
+"SimpleExpression.ml" 89 2984 3024 "SimpleExpression.ml" 89 2984 3027
+type(
+  string
+)
+"SimpleExpression.ml" 89 2984 3031 "SimpleExpression.ml" 89 2984 3032
+type(
+  int
+)
+"SimpleExpression.ml" 89 2984 3024 "SimpleExpression.ml" 89 2984 3032
+type(
+  string * int
+)
+"SimpleExpression.ml" 89 2984 3035 "SimpleExpression.ml" 89 2984 3038
+type(
+  'b
+)
+"SimpleExpression.ml" 89 2984 3043 "SimpleExpression.ml" 89 2984 3047
+type(
+  string
+)
+"SimpleExpression.ml" 89 2984 3050 "SimpleExpression.ml" 89 2984 3051
+type(
+  int
+)
+"SimpleExpression.ml" 89 2984 3043 "SimpleExpression.ml" 89 2984 3051
+type(
+  string * int
+)
+"SimpleExpression.ml" 89 2984 3054 "SimpleExpression.ml" 89 2984 3057
+type(
+  'b
+)
+"SimpleExpression.ml" 89 2984 3062 "SimpleExpression.ml" 89 2984 3065
+type(
+  string
+)
+"SimpleExpression.ml" 89 2984 3067 "SimpleExpression.ml" 89 2984 3068
+type(
+  int
+)
+"SimpleExpression.ml" 89 2984 3062 "SimpleExpression.ml" 89 2984 3068
+type(
+  string * int
+)
+"SimpleExpression.ml" 90 3070 3084 "SimpleExpression.ml" 90 3070 3087
+type(
+  'b
+)
+"SimpleExpression.ml" 90 3070 3092 "SimpleExpression.ml" 90 3070 3095
+type(
+  string
+)
+"SimpleExpression.ml" 90 3070 3098 "SimpleExpression.ml" 90 3070 3099
+type(
+  int
+)
+"SimpleExpression.ml" 90 3070 3092 "SimpleExpression.ml" 90 3070 3099
+type(
+  string * int
+)
+"SimpleExpression.ml" 90 3070 3102 "SimpleExpression.ml" 90 3070 3105
+type(
+  'b
+)
+"SimpleExpression.ml" 90 3070 3110 "SimpleExpression.ml" 90 3070 3113
+type(
+  string
+)
+"SimpleExpression.ml" 90 3070 3117 "SimpleExpression.ml" 90 3070 3118
+type(
+  int
+)
+"SimpleExpression.ml" 90 3070 3110 "SimpleExpression.ml" 90 3070 3118
+type(
+  string * int
+)
+"SimpleExpression.ml" 86 2792 2820 "SimpleExpression.ml" 90 3070 3118
+type(
+  'b -> string * int
+)
+type(
+  'b -> string * int
+)
+"SimpleExpression.ml" 86 2792 2804 "SimpleExpression.ml" 90 3070 3118
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'b -> string * int
+)
+"SimpleExpression.ml" 92 3157 3180 "SimpleExpression.ml" 92 3157 3181
+type(
+  int
+)
+ident(
+  def s "SimpleExpression.ml" 92 3157 3185 "SimpleExpression.ml" 92 3157 3202
+)
+"SimpleExpression.ml" 92 3157 3171 "SimpleExpression.ml" 92 3157 3181
+type(
+  'c
+)
+"SimpleExpression.ml" 92 3157 3185 "SimpleExpression.ml" 92 3157 3188
+type(
+  int -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.int
+)
+"SimpleExpression.ml" 92 3157 3189 "SimpleExpression.ml" 92 3157 3190
+type(
+  int
+)
+ident(
+  int_ref s "SimpleExpression.ml" 92 3157 3180 "SimpleExpression.ml" 92 3157 3181
+)
+"SimpleExpression.ml" 92 3157 3185 "SimpleExpression.ml" 92 3157 3190
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 92 3157 3201 "SimpleExpression.ml" 92 3157 3202
+type(
+  int
+)
+"SimpleExpression.ml" 92 3157 3185 "SimpleExpression.ml" 92 3157 3202
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 93 3204 3218 "SimpleExpression.ml" 93 3204 3223
+type(
+  'c
+)
+"SimpleExpression.ml" 93 3204 3232 "SimpleExpression.ml" 93 3204 3238
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleExpression.ml" 93 3204 3239 "SimpleExpression.ml" 93 3204 3245
+type(
+  string
+)
+"SimpleExpression.ml" 93 3204 3232 "SimpleExpression.ml" 93 3204 3245
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 93 3204 3248 "SimpleExpression.ml" 93 3204 3249
+type(
+  int
+)
+"SimpleExpression.ml" 93 3204 3232 "SimpleExpression.ml" 93 3204 3249
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 94 3251 3265 "SimpleExpression.ml" 94 3251 3271
+type(
+  'c
+)
+"SimpleExpression.ml" 94 3251 3279 "SimpleExpression.ml" 94 3251 3285
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleExpression.ml" 94 3251 3286 "SimpleExpression.ml" 94 3251 3293
+type(
+  string
+)
+"SimpleExpression.ml" 94 3251 3279 "SimpleExpression.ml" 94 3251 3293
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 94 3251 3295 "SimpleExpression.ml" 94 3251 3296
+type(
+  int
+)
+"SimpleExpression.ml" 94 3251 3279 "SimpleExpression.ml" 94 3251 3296
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 91 3120 3147 "SimpleExpression.ml" 94 3251 3296
+type(
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+type(
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 91 3120 3132 "SimpleExpression.ml" 94 3251 3296
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 84 2708 2717 "SimpleExpression.ml" 95 3297 3311
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int >
+)
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int >
+)
+"SimpleExpression.ml" 95 3297 3312 "SimpleExpression.ml" 95 3297 3315
+type(
+  ('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 83 2686 2696 "SimpleExpression.ml" 83 2686 2699
+)
+"SimpleExpression.ml" 95 3297 3316 "SimpleExpression.ml" 95 3297 3320
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 83 2686 2700 "SimpleExpression.ml" 83 2686 2704
+)
+"SimpleExpression.ml" 84 2708 2710 "SimpleExpression.ml" 95 3297 3320
+call(
+  tail
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 83 2686 2700 "SimpleExpression.ml" 95 3297 3320
+type(
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 83 2686 2696 "SimpleExpression.ml" 95 3297 3320
+type(
+  (('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 97 3322 3326 "SimpleExpression.ml" 97 3322 3333
+type(
+  ((([> `Binop of
+          [< `Add
+           | `And
+           | `Div
+           | `Eq
+           | `Ge
+           | `Gt
+           | `Le
+           | `Lt
+           | `Mod
+           | `Mul
+           | `Ne
+           | `Or
+           | `Sub ] *
+          'a * 'a
+      | `Const of [< `False | `Literal of int | `True ]
+      | `Unop of [< `Neg | `Not ] * 'a ]
+     as 'a) ->
+    (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def print_c "SimpleExpression.ml" 113 4031 4031 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 97 3322 3334 "SimpleExpression.ml" 97 3322 3337
+type(
+  ('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  def ext "SimpleExpression.ml" 97 3322 3338 "SimpleExpression.ml" 109 3916 3939
+)
+"SimpleExpression.ml" 97 3322 3338 "SimpleExpression.ml" 97 3322 3342
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 98 3346 3348 "SimpleExpression.ml" 109 3916 3939
+)
+"SimpleExpression.ml" 98 3346 3348 "SimpleExpression.ml" 98 3346 3354
+type(
+  < binop : ([< `Add
+              | `And
+              | `Div
+              | `Eq
+              | `Ge
+              | `Gt
+              | `Le
+              | `Lt
+              | `Mod
+              | `Mul
+              | `Ne
+              | `Or
+              | `Sub ]
+             as 'b) ->
+            string * int;
+    const : ([< `False | `Literal of int | `True ] as 'c) ->
+            (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : ([< `Neg | `Not ] as 'd) -> string * int > ->
+  (('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref gprint "SimpleExpression.ml" 69 2274 2278 "SimpleExpression.ml" 69 2274 2284
+)
+"SimpleExpression.ml" 99 3363 3398 "SimpleExpression.ml" 99 3363 3402
+type(
+  'd
+)
+"SimpleExpression.ml" 99 3363 3406 "SimpleExpression.ml" 99 3363 3409
+type(
+  string
+)
+"SimpleExpression.ml" 99 3363 3411 "SimpleExpression.ml" 99 3363 3412
+type(
+  int
+)
+"SimpleExpression.ml" 99 3363 3406 "SimpleExpression.ml" 99 3363 3412
+type(
+  string * int
+)
+"SimpleExpression.ml" 99 3363 3415 "SimpleExpression.ml" 99 3363 3419
+type(
+  'd
+)
+"SimpleExpression.ml" 99 3363 3423 "SimpleExpression.ml" 99 3363 3426
+type(
+  string
+)
+"SimpleExpression.ml" 99 3363 3428 "SimpleExpression.ml" 99 3363 3429
+type(
+  int
+)
+"SimpleExpression.ml" 99 3363 3423 "SimpleExpression.ml" 99 3363 3429
+type(
+  string * int
+)
+"SimpleExpression.ml" 99 3363 3389 "SimpleExpression.ml" 99 3363 3429
+type(
+  'd -> string * int
+)
+type(
+  'd -> string * int
+)
+"SimpleExpression.ml" 99 3363 3375 "SimpleExpression.ml" 99 3363 3429
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'd -> string * int
+)
+"SimpleExpression.ml" 101 3467 3481 "SimpleExpression.ml" 101 3467 3485
+type(
+  'b
+)
+"SimpleExpression.ml" 101 3467 3489 "SimpleExpression.ml" 101 3467 3492
+type(
+  string
+)
+"SimpleExpression.ml" 101 3467 3495 "SimpleExpression.ml" 101 3467 3496
+type(
+  int
+)
+"SimpleExpression.ml" 101 3467 3489 "SimpleExpression.ml" 101 3467 3496
+type(
+  string * int
+)
+"SimpleExpression.ml" 101 3467 3499 "SimpleExpression.ml" 101 3467 3503
+type(
+  'b
+)
+"SimpleExpression.ml" 101 3467 3507 "SimpleExpression.ml" 101 3467 3510
+type(
+  string
+)
+"SimpleExpression.ml" 101 3467 3513 "SimpleExpression.ml" 101 3467 3514
+type(
+  int
+)
+"SimpleExpression.ml" 101 3467 3507 "SimpleExpression.ml" 101 3467 3514
+type(
+  string * int
+)
+"SimpleExpression.ml" 101 3467 3517 "SimpleExpression.ml" 101 3467 3521
+type(
+  'b
+)
+"SimpleExpression.ml" 101 3467 3525 "SimpleExpression.ml" 101 3467 3528
+type(
+  string
+)
+"SimpleExpression.ml" 101 3467 3531 "SimpleExpression.ml" 101 3467 3532
+type(
+  int
+)
+"SimpleExpression.ml" 101 3467 3525 "SimpleExpression.ml" 101 3467 3532
+type(
+  string * int
+)
+"SimpleExpression.ml" 101 3467 3535 "SimpleExpression.ml" 101 3467 3539
+type(
+  'b
+)
+"SimpleExpression.ml" 101 3467 3543 "SimpleExpression.ml" 101 3467 3547
+type(
+  string
+)
+"SimpleExpression.ml" 101 3467 3549 "SimpleExpression.ml" 101 3467 3550
+type(
+  int
+)
+"SimpleExpression.ml" 101 3467 3543 "SimpleExpression.ml" 101 3467 3550
+type(
+  string * int
+)
+"SimpleExpression.ml" 102 3551 3565 "SimpleExpression.ml" 102 3551 3569
+type(
+  'b
+)
+"SimpleExpression.ml" 102 3551 3573 "SimpleExpression.ml" 102 3551 3576
+type(
+  string
+)
+"SimpleExpression.ml" 102 3551 3579 "SimpleExpression.ml" 102 3551 3580
+type(
+  int
+)
+"SimpleExpression.ml" 102 3551 3573 "SimpleExpression.ml" 102 3551 3580
+type(
+  string * int
+)
+"SimpleExpression.ml" 102 3551 3583 "SimpleExpression.ml" 102 3551 3587
+type(
+  'b
+)
+"SimpleExpression.ml" 102 3551 3591 "SimpleExpression.ml" 102 3551 3594
+type(
+  string
+)
+"SimpleExpression.ml" 102 3551 3597 "SimpleExpression.ml" 102 3551 3598
+type(
+  int
+)
+"SimpleExpression.ml" 102 3551 3591 "SimpleExpression.ml" 102 3551 3598
+type(
+  string * int
+)
+"SimpleExpression.ml" 102 3551 3601 "SimpleExpression.ml" 102 3551 3604
+type(
+  'b
+)
+"SimpleExpression.ml" 102 3551 3609 "SimpleExpression.ml" 102 3551 3613
+type(
+  string
+)
+"SimpleExpression.ml" 102 3551 3615 "SimpleExpression.ml" 102 3551 3616
+type(
+  int
+)
+"SimpleExpression.ml" 102 3551 3609 "SimpleExpression.ml" 102 3551 3616
+type(
+  string * int
+)
+"SimpleExpression.ml" 103 3618 3632 "SimpleExpression.ml" 103 3618 3635
+type(
+  'b
+)
+"SimpleExpression.ml" 103 3618 3640 "SimpleExpression.ml" 103 3618 3644
+type(
+  string
+)
+"SimpleExpression.ml" 103 3618 3646 "SimpleExpression.ml" 103 3618 3647
+type(
+  int
+)
+"SimpleExpression.ml" 103 3618 3640 "SimpleExpression.ml" 103 3618 3647
+type(
+  string * int
+)
+"SimpleExpression.ml" 103 3618 3650 "SimpleExpression.ml" 103 3618 3653
+type(
+  'b
+)
+"SimpleExpression.ml" 103 3618 3658 "SimpleExpression.ml" 103 3618 3661
+type(
+  string
+)
+"SimpleExpression.ml" 103 3618 3664 "SimpleExpression.ml" 103 3618 3665
+type(
+  int
+)
+"SimpleExpression.ml" 103 3618 3658 "SimpleExpression.ml" 103 3618 3665
+type(
+  string * int
+)
+"SimpleExpression.ml" 103 3618 3668 "SimpleExpression.ml" 103 3618 3671
+type(
+  'b
+)
+"SimpleExpression.ml" 103 3618 3676 "SimpleExpression.ml" 103 3618 3680
+type(
+  string
+)
+"SimpleExpression.ml" 103 3618 3682 "SimpleExpression.ml" 103 3618 3683
+type(
+  int
+)
+"SimpleExpression.ml" 103 3618 3676 "SimpleExpression.ml" 103 3618 3683
+type(
+  string * int
+)
+"SimpleExpression.ml" 103 3618 3686 "SimpleExpression.ml" 103 3618 3689
+type(
+  'b
+)
+"SimpleExpression.ml" 103 3618 3694 "SimpleExpression.ml" 103 3618 3697
+type(
+  string
+)
+"SimpleExpression.ml" 103 3618 3700 "SimpleExpression.ml" 103 3618 3701
+type(
+  int
+)
+"SimpleExpression.ml" 103 3618 3694 "SimpleExpression.ml" 103 3618 3701
+type(
+  string * int
+)
+"SimpleExpression.ml" 104 3703 3717 "SimpleExpression.ml" 104 3703 3720
+type(
+  'b
+)
+"SimpleExpression.ml" 104 3703 3725 "SimpleExpression.ml" 104 3703 3729
+type(
+  string
+)
+"SimpleExpression.ml" 104 3703 3731 "SimpleExpression.ml" 104 3703 3732
+type(
+  int
+)
+"SimpleExpression.ml" 104 3703 3725 "SimpleExpression.ml" 104 3703 3732
+type(
+  string * int
+)
+"SimpleExpression.ml" 104 3703 3735 "SimpleExpression.ml" 104 3703 3738
+type(
+  'b
+)
+"SimpleExpression.ml" 104 3703 3743 "SimpleExpression.ml" 104 3703 3747
+type(
+  string
+)
+"SimpleExpression.ml" 104 3703 3749 "SimpleExpression.ml" 104 3703 3750
+type(
+  int
+)
+"SimpleExpression.ml" 104 3703 3743 "SimpleExpression.ml" 104 3703 3750
+type(
+  string * int
+)
+"SimpleExpression.ml" 100 3430 3458 "SimpleExpression.ml" 104 3703 3750
+type(
+  'b -> string * int
+)
+type(
+  'b -> string * int
+)
+"SimpleExpression.ml" 100 3430 3442 "SimpleExpression.ml" 104 3703 3750
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'b -> string * int
+)
+"SimpleExpression.ml" 106 3788 3811 "SimpleExpression.ml" 106 3788 3812
+type(
+  int
+)
+ident(
+  def s "SimpleExpression.ml" 106 3788 3816 "SimpleExpression.ml" 106 3788 3829
+)
+"SimpleExpression.ml" 106 3788 3802 "SimpleExpression.ml" 106 3788 3812
+type(
+  'c
+)
+"SimpleExpression.ml" 106 3788 3816 "SimpleExpression.ml" 106 3788 3819
+type(
+  int -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.int
+)
+"SimpleExpression.ml" 106 3788 3820 "SimpleExpression.ml" 106 3788 3821
+type(
+  int
+)
+ident(
+  int_ref s "SimpleExpression.ml" 106 3788 3811 "SimpleExpression.ml" 106 3788 3812
+)
+"SimpleExpression.ml" 106 3788 3816 "SimpleExpression.ml" 106 3788 3821
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 106 3788 3828 "SimpleExpression.ml" 106 3788 3829
+type(
+  int
+)
+"SimpleExpression.ml" 106 3788 3816 "SimpleExpression.ml" 106 3788 3829
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 107 3831 3845 "SimpleExpression.ml" 107 3831 3850
+type(
+  'c
+)
+"SimpleExpression.ml" 107 3831 3859 "SimpleExpression.ml" 107 3831 3865
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleExpression.ml" 107 3831 3866 "SimpleExpression.ml" 107 3831 3869
+type(
+  string
+)
+"SimpleExpression.ml" 107 3831 3859 "SimpleExpression.ml" 107 3831 3869
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 107 3831 3871 "SimpleExpression.ml" 107 3831 3872
+type(
+  int
+)
+"SimpleExpression.ml" 107 3831 3859 "SimpleExpression.ml" 107 3831 3872
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 108 3874 3888 "SimpleExpression.ml" 108 3874 3894
+type(
+  'c
+)
+"SimpleExpression.ml" 108 3874 3902 "SimpleExpression.ml" 108 3874 3908
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"SimpleExpression.ml" 108 3874 3909 "SimpleExpression.ml" 108 3874 3912
+type(
+  string
+)
+"SimpleExpression.ml" 108 3874 3902 "SimpleExpression.ml" 108 3874 3912
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"SimpleExpression.ml" 108 3874 3914 "SimpleExpression.ml" 108 3874 3915
+type(
+  int
+)
+"SimpleExpression.ml" 108 3874 3902 "SimpleExpression.ml" 108 3874 3915
+type(
+  Ostap.Pretty.printer * int
+)
+"SimpleExpression.ml" 105 3751 3778 "SimpleExpression.ml" 108 3874 3915
+type(
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+type(
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 105 3751 3763 "SimpleExpression.ml" 108 3874 3915
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int > ->
+  'c -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 98 3346 3355 "SimpleExpression.ml" 109 3916 3930
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int >
+)
+type(
+  < binop : 'b -> string * int;
+    const : 'c -> (Ostap.Pretty.printer * int) Monad.Id.t;
+    unop : 'd -> string * int >
+)
+"SimpleExpression.ml" 109 3916 3931 "SimpleExpression.ml" 109 3916 3934
+type(
+  ('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 97 3322 3334 "SimpleExpression.ml" 97 3322 3337
+)
+"SimpleExpression.ml" 109 3916 3935 "SimpleExpression.ml" 109 3916 3939
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 97 3322 3338 "SimpleExpression.ml" 97 3322 3342
+)
+"SimpleExpression.ml" 98 3346 3348 "SimpleExpression.ml" 109 3916 3939
+call(
+  tail
+)
+type(
+  (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 97 3322 3338 "SimpleExpression.ml" 109 3916 3939
+type(
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 97 3322 3334 "SimpleExpression.ml" 109 3916 3939
+type(
+  (('a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+   'a -> (Ostap.Pretty.printer * int) Monad.Id.t) ->
+  'a -> (Ostap.Pretty.printer * int) Monad.Id.t
+)
+"SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+type(
+  ([> `Binop of 'b * 'a * 'a ] as 'a) -> Ostap.Msg.Locator.t
+)
+ident(
+  def safeLocate "SimpleExpression.ml" 115 4046 4046 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 115 4046 4065 "SimpleExpression.ml" 115 4046 4066
+type(
+  'a
+)
+ident(
+  def e "SimpleExpression.ml" 116 4069 4071 "SimpleExpression.ml" 122 4273 4278
+)
+"SimpleExpression.ml" 116 4069 4075 "SimpleExpression.ml" 116 4069 4082
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.ulocate
+)
+"SimpleExpression.ml" 116 4069 4083 "SimpleExpression.ml" 116 4069 4084
+type(
+  'a
+)
+ident(
+  int_ref e "SimpleExpression.ml" 115 4046 4065 "SimpleExpression.ml" 115 4046 4066
+)
+"SimpleExpression.ml" 116 4069 4075 "SimpleExpression.ml" 116 4069 4084
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 116 4069 4090 "SimpleExpression.ml" 116 4069 4099
+type(
+  exn
+)
+"SimpleExpression.ml" 117 4103 4114 "SimpleExpression.ml" 117 4103 4115
+type(
+  'a
+)
+ident(
+  int_ref e "SimpleExpression.ml" 115 4046 4065 "SimpleExpression.ml" 115 4046 4066
+)
+"SimpleExpression.ml" 118 4121 4136 "SimpleExpression.ml" 118 4121 4137
+type(
+  'b
+)
+"SimpleExpression.ml" 118 4121 4139 "SimpleExpression.ml" 118 4121 4140
+type(
+  'a
+)
+ident(
+  def x "SimpleExpression.ml" 119 4148 4156 "SimpleExpression.ml" 120 4197 4239
+)
+"SimpleExpression.ml" 118 4121 4142 "SimpleExpression.ml" 118 4121 4143
+type(
+  'a
+)
+ident(
+  def y "SimpleExpression.ml" 119 4148 4156 "SimpleExpression.ml" 120 4197 4239
+)
+"SimpleExpression.ml" 118 4121 4136 "SimpleExpression.ml" 118 4121 4143
+type(
+  'b * 'a * 'a
+)
+"SimpleExpression.ml" 118 4121 4128 "SimpleExpression.ml" 118 4121 4144
+type(
+  'a
+)
+"SimpleExpression.ml" 119 4148 4160 "SimpleExpression.ml" 119 4148 4161
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def l "SimpleExpression.ml" 120 4197 4205 "SimpleExpression.ml" 120 4197 4239
+)
+"SimpleExpression.ml" 119 4148 4163 "SimpleExpression.ml" 119 4148 4164
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def r "SimpleExpression.ml" 120 4197 4205 "SimpleExpression.ml" 120 4197 4239
+)
+"SimpleExpression.ml" 119 4148 4160 "SimpleExpression.ml" 119 4148 4164
+type(
+  Ostap.Msg.Locator.t * Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 119 4148 4167 "SimpleExpression.ml" 119 4148 4177
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref safeLocate "SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+)
+"SimpleExpression.ml" 119 4148 4178 "SimpleExpression.ml" 119 4148 4179
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleExpression.ml" 118 4121 4139 "SimpleExpression.ml" 118 4121 4140
+)
+"SimpleExpression.ml" 119 4148 4167 "SimpleExpression.ml" 119 4148 4179
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 119 4148 4181 "SimpleExpression.ml" 119 4148 4191
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref safeLocate "SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+)
+"SimpleExpression.ml" 119 4148 4192 "SimpleExpression.ml" 119 4148 4193
+type(
+  'a
+)
+ident(
+  int_ref y "SimpleExpression.ml" 118 4121 4142 "SimpleExpression.ml" 118 4121 4143
+)
+"SimpleExpression.ml" 119 4148 4181 "SimpleExpression.ml" 119 4148 4193
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 119 4148 4167 "SimpleExpression.ml" 119 4148 4193
+type(
+  Ostap.Msg.Locator.t * Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 120 4197 4205 "SimpleExpression.ml" 120 4197 4235
+type(
+  Ostap.Msg.Locator.t -> Ostap.Msg.Locator.t -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Ostap.Msg.Locator.makeInterval
+)
+"SimpleExpression.ml" 120 4197 4236 "SimpleExpression.ml" 120 4197 4237
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 119 4148 4160 "SimpleExpression.ml" 119 4148 4161
+)
+"SimpleExpression.ml" 120 4197 4238 "SimpleExpression.ml" 120 4197 4239
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref r "SimpleExpression.ml" 119 4148 4163 "SimpleExpression.ml" 119 4148 4164
+)
+"SimpleExpression.ml" 120 4197 4205 "SimpleExpression.ml" 120 4197 4239
+call(
+  tail
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 119 4148 4156 "SimpleExpression.ml" 120 4197 4239
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 121 4240 4247 "SimpleExpression.ml" 121 4240 4248
+type(
+  'a
+)
+"SimpleExpression.ml" 121 4240 4252 "SimpleExpression.ml" 121 4240 4272
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 117 4103 4107 "SimpleExpression.ml" 122 4273 4278
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 116 4069 4071 "SimpleExpression.ml" 122 4273 4278
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 115 4046 4065 "SimpleExpression.ml" 122 4273 4278
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 124 4280 4284 "SimpleExpression.ml" 124 4280 4291
+type(
+  ((([> `Binop of 'b * 'a * 'a | `Const of 'c | `Unop of 'd * 'a ] as 'a) ->
+    ([> `Binop of 'b * 'e * 'e | `Const of 'c | `Unop of 'd * 'e ] as 'e)
+    Monad.Checked.t) ->
+   'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+ident(
+  def resolve "SimpleExpression.ml" 130 4495 4495 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 124 4280 4292 "SimpleExpression.ml" 124 4280 4295
+type(
+  ('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t
+)
+ident(
+  def ext "SimpleExpression.ml" 124 4280 4296 "SimpleExpression.ml" 126 4347 4403
+)
+"SimpleExpression.ml" 124 4280 4296 "SimpleExpression.ml" 124 4280 4300
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 125 4303 4305 "SimpleExpression.ml" 126 4347 4403
+)
+"SimpleExpression.ml" 125 4303 4309 "SimpleExpression.ml" 125 4303 4314
+type(
+  ([> `Binop of 'g * 'f * 'f ] as 'f) -> 'h -> 'h
+)
+ident(
+  def reloc "SimpleExpression.ml" 126 4347 4349 "SimpleExpression.ml" 126 4347 4403
+)
+"SimpleExpression.ml" 125 4303 4315 "SimpleExpression.ml" 125 4303 4316
+type(
+  'f
+)
+ident(
+  def x "SimpleExpression.ml" 125 4303 4317 "SimpleExpression.ml" 125 4303 4343
+)
+"SimpleExpression.ml" 125 4303 4317 "SimpleExpression.ml" 125 4303 4318
+type(
+  'h
+)
+ident(
+  def y "SimpleExpression.ml" 125 4303 4321 "SimpleExpression.ml" 125 4303 4343
+)
+"SimpleExpression.ml" 125 4303 4321 "SimpleExpression.ml" 125 4303 4326
+type(
+  Ostap.Msg.Locator.t -> 'h -> 'h
+)
+ident(
+  ext_ref Common.reloc
+)
+"SimpleExpression.ml" 125 4303 4328 "SimpleExpression.ml" 125 4303 4338
+type(
+  'f -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref safeLocate "SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+)
+"SimpleExpression.ml" 125 4303 4339 "SimpleExpression.ml" 125 4303 4340
+type(
+  'f
+)
+ident(
+  int_ref x "SimpleExpression.ml" 125 4303 4315 "SimpleExpression.ml" 125 4303 4316
+)
+"SimpleExpression.ml" 125 4303 4327 "SimpleExpression.ml" 125 4303 4341
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 125 4303 4342 "SimpleExpression.ml" 125 4303 4343
+type(
+  'h
+)
+ident(
+  int_ref y "SimpleExpression.ml" 125 4303 4317 "SimpleExpression.ml" 125 4303 4318
+)
+"SimpleExpression.ml" 125 4303 4321 "SimpleExpression.ml" 125 4303 4343
+call(
+  tail
+)
+type(
+  'h
+)
+"SimpleExpression.ml" 125 4303 4317 "SimpleExpression.ml" 125 4303 4343
+type(
+  'h -> 'h
+)
+"SimpleExpression.ml" 125 4303 4315 "SimpleExpression.ml" 125 4303 4343
+type(
+  'f -> 'h -> 'h
+)
+"SimpleExpression.ml" 126 4347 4349 "SimpleExpression.ml" 126 4347 4353
+type(
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e Monad.Checked.t;
+    const : 'a -> 'c -> 'e Monad.Checked.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Checked.t > ->
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+ident(
+  int_ref cmap "SimpleExpression.ml" 24 614 618 "SimpleExpression.ml" 24 614 622
+)
+"SimpleExpression.ml" 126 4347 4355 "SimpleExpression.ml" 126 4347 4359
+type(
+  ('a -> 'e -> 'e Monad.Checked.t) ->
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e Monad.Checked.t;
+    const : 'a -> 'c -> 'e Monad.Checked.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Checked.t >
+)
+ident(
+  int_ref mapT "SimpleExpression.ml" 28 700 704 "SimpleExpression.ml" 28 700 708
+)
+"SimpleExpression.ml" 126 4347 4365 "SimpleExpression.ml" 126 4347 4369
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 126 4347 4370 "SimpleExpression.ml" 126 4347 4392
+)
+"SimpleExpression.ml" 126 4347 4370 "SimpleExpression.ml" 126 4347 4371
+type(
+  'e
+)
+ident(
+  def e "SimpleExpression.ml" 126 4347 4375 "SimpleExpression.ml" 126 4347 4392
+)
+"SimpleExpression.ml" 126 4347 4379 "SimpleExpression.ml" 126 4347 4384
+type(
+  'a -> 'e -> 'e
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 125 4303 4309 "SimpleExpression.ml" 125 4303 4314
+)
+"SimpleExpression.ml" 126 4347 4385 "SimpleExpression.ml" 126 4347 4389
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 126 4347 4365 "SimpleExpression.ml" 126 4347 4369
+)
+"SimpleExpression.ml" 126 4347 4390 "SimpleExpression.ml" 126 4347 4391
+type(
+  'e
+)
+ident(
+  int_ref e "SimpleExpression.ml" 126 4347 4370 "SimpleExpression.ml" 126 4347 4371
+)
+"SimpleExpression.ml" 126 4347 4378 "SimpleExpression.ml" 126 4347 4392
+call(
+  stack
+)
+type(
+  'e
+)
+"SimpleExpression.ml" 126 4347 4375 "SimpleExpression.ml" 126 4347 4392
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+type(
+  'e -> 'e Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"SimpleExpression.ml" 126 4347 4370 "SimpleExpression.ml" 126 4347 4392
+type(
+  'e -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 126 4347 4360 "SimpleExpression.ml" 126 4347 4393
+type(
+  'a -> 'e -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 126 4347 4354 "SimpleExpression.ml" 126 4347 4394
+call(
+  stack
+)
+type(
+  < binop : 'a -> 'b -> 'e -> 'e -> 'e Monad.Checked.t;
+    const : 'a -> 'c -> 'e Monad.Checked.t;
+    unop : 'a -> 'd -> 'e -> 'e Monad.Checked.t >
+)
+"SimpleExpression.ml" 126 4347 4395 "SimpleExpression.ml" 126 4347 4398
+type(
+  ('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 124 4280 4292 "SimpleExpression.ml" 124 4280 4295
+)
+"SimpleExpression.ml" 126 4347 4399 "SimpleExpression.ml" 126 4347 4403
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 124 4280 4296 "SimpleExpression.ml" 124 4280 4300
+)
+"SimpleExpression.ml" 126 4347 4349 "SimpleExpression.ml" 126 4347 4403
+call(
+  tail
+)
+type(
+  'e Monad.Checked.t
+)
+"SimpleExpression.ml" 125 4303 4305 "SimpleExpression.ml" 126 4347 4403
+type(
+  'e Monad.Checked.t
+)
+"SimpleExpression.ml" 124 4280 4296 "SimpleExpression.ml" 126 4347 4403
+type(
+  'a -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 124 4280 4292 "SimpleExpression.ml" 126 4347 4403
+type(
+  (('a -> 'e Monad.Checked.t) -> 'a -> 'e Monad.Checked.t) ->
+  'a -> 'e Monad.Checked.t
+)
+"SimpleExpression.ml" 130 4495 4499 "SimpleExpression.ml" 130 4495 4505
+type(
+  (([> `Binop of [> `Add | `Div | `Mod | `Mul | `Sub ] * 'b * 'c
+     | `Const of [> `Literal of 'd ]
+     | `Unop of [> `Neg | `Not ] * 'e ]
+    as 'a) ->
+   ([> `Bool | `Int ] as 'f)) ->
+  'a -> 'f
+)
+ident(
+  def typeOf "SimpleExpression.ml" 135 4714 4714 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 130 4495 4506 "SimpleExpression.ml" 130 4495 4509
+type(
+  'a -> 'f
+)
+ident(
+  def ref "SimpleExpression.ml" 130 4495 4512 "SimpleExpression.ml" 133 4700 4712
+)
+"SimpleExpression.ml" 131 4521 4540 "SimpleExpression.ml" 131 4521 4541
+type(
+  'd
+)
+"SimpleExpression.ml" 131 4521 4531 "SimpleExpression.ml" 131 4521 4541
+type(
+  [> `Literal of 'd ] as 'g
+)
+"SimpleExpression.ml" 131 4521 4523 "SimpleExpression.ml" 131 4521 4542
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4552 "SimpleExpression.ml" 131 4521 4556
+type(
+  [> `Neg | `Not ] as 'h
+)
+"SimpleExpression.ml" 131 4521 4558 "SimpleExpression.ml" 131 4521 4559
+type(
+  'e
+)
+"SimpleExpression.ml" 131 4521 4552 "SimpleExpression.ml" 131 4521 4559
+type(
+  'h * 'e
+)
+"SimpleExpression.ml" 131 4521 4545 "SimpleExpression.ml" 131 4521 4560
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4523 "SimpleExpression.ml" 131 4521 4560
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4564 "SimpleExpression.ml" 131 4521 4568
+type(
+  'f
+)
+"SimpleExpression.ml" 131 4521 4578 "SimpleExpression.ml" 131 4521 4579
+type(
+  'g
+)
+"SimpleExpression.ml" 131 4521 4571 "SimpleExpression.ml" 131 4521 4579
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4589 "SimpleExpression.ml" 131 4521 4593
+type(
+  'h
+)
+"SimpleExpression.ml" 131 4521 4595 "SimpleExpression.ml" 131 4521 4596
+type(
+  'e
+)
+"SimpleExpression.ml" 131 4521 4589 "SimpleExpression.ml" 131 4521 4596
+type(
+  'h * 'e
+)
+"SimpleExpression.ml" 131 4521 4582 "SimpleExpression.ml" 131 4521 4597
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4571 "SimpleExpression.ml" 131 4521 4597
+type(
+  'a
+)
+"SimpleExpression.ml" 131 4521 4601 "SimpleExpression.ml" 131 4521 4606
+type(
+  'f
+)
+"SimpleExpression.ml" 132 4607 4617 "SimpleExpression.ml" 132 4607 4619
+type(
+  [> `Add | `Div | `Mod | `Mul | `Sub ] as 'i
+)
+ident(
+  def op "SimpleExpression.ml" 132 4607 4630 "SimpleExpression.ml" 132 4607 4699
+)
+"SimpleExpression.ml" 132 4607 4621 "SimpleExpression.ml" 132 4607 4622
+type(
+  'b
+)
+"SimpleExpression.ml" 132 4607 4624 "SimpleExpression.ml" 132 4607 4625
+type(
+  'c
+)
+"SimpleExpression.ml" 132 4607 4617 "SimpleExpression.ml" 132 4607 4625
+type(
+  'i * 'b * 'c
+)
+"SimpleExpression.ml" 132 4607 4609 "SimpleExpression.ml" 132 4607 4626
+type(
+  'a
+)
+"SimpleExpression.ml" 132 4607 4637 "SimpleExpression.ml" 132 4607 4639
+type(
+  'i
+)
+ident(
+  int_ref op "SimpleExpression.ml" 132 4607 4617 "SimpleExpression.ml" 132 4607 4619
+)
+"SimpleExpression.ml" 132 4607 4645 "SimpleExpression.ml" 132 4607 4649
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4652 "SimpleExpression.ml" 132 4607 4656
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4645 "SimpleExpression.ml" 132 4607 4656
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4659 "SimpleExpression.ml" 132 4607 4663
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4645 "SimpleExpression.ml" 132 4607 4663
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4666 "SimpleExpression.ml" 132 4607 4670
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4645 "SimpleExpression.ml" 132 4607 4670
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4673 "SimpleExpression.ml" 132 4607 4677
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4645 "SimpleExpression.ml" 132 4607 4677
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4681 "SimpleExpression.ml" 132 4607 4685
+type(
+  'f
+)
+"SimpleExpression.ml" 132 4607 4688 "SimpleExpression.ml" 132 4607 4689
+type(
+  'i
+)
+"SimpleExpression.ml" 132 4607 4693 "SimpleExpression.ml" 132 4607 4698
+type(
+  'f
+)
+"SimpleExpression.ml" 132 4607 4630 "SimpleExpression.ml" 132 4607 4699
+type(
+  'f
+)
+"SimpleExpression.ml" 133 4700 4702 "SimpleExpression.ml" 133 4700 4703
+type(
+  'a
+)
+ident(
+  def x "SimpleExpression.ml" 133 4700 4707 "SimpleExpression.ml" 133 4700 4712
+)
+"SimpleExpression.ml" 133 4700 4707 "SimpleExpression.ml" 133 4700 4710
+type(
+  'a -> 'f
+)
+ident(
+  int_ref ref "SimpleExpression.ml" 130 4495 4506 "SimpleExpression.ml" 130 4495 4509
+)
+"SimpleExpression.ml" 133 4700 4711 "SimpleExpression.ml" 133 4700 4712
+type(
+  'a
+)
+ident(
+  int_ref x "SimpleExpression.ml" 133 4700 4702 "SimpleExpression.ml" 133 4700 4703
+)
+"SimpleExpression.ml" 133 4700 4707 "SimpleExpression.ml" 133 4700 4712
+call(
+  tail
+)
+type(
+  'f
+)
+"SimpleExpression.ml" 130 4495 4512 "SimpleExpression.ml" 133 4700 4712
+type(
+  'a -> 'f
+)
+"SimpleExpression.ml" 130 4495 4506 "SimpleExpression.ml" 133 4700 4712
+type(
+  ('a -> 'f) -> 'a -> 'f
+)
+"SimpleExpression.ml" 135 4714 4718 "SimpleExpression.ml" 135 4714 4727
+type(
+  < equal : [> `Bool | `Int ] -> ([> `Bool | `Int ] as 'a) -> bool; .. > ->
+  ((([> `Binop of
+          ([> `And | `Eq | `Ge | `Gt | `Le | `Lt | `Ne | `Or ] as 'c) * 'b *
+          'b
+      | `Const of [< `False | `Literal of 'e | `True ] as 'd
+      | `Unop of [< `Neg | `Not ] * 'b ]
+     as 'b) ->
+    (([> `Binop of 'c * 'f * 'f
+       | `Const of 'd
+       | `Unop of [> `Neg | `Not ] * ('g * 'a) ]
+      as 'g) *
+     'a as 'f)
+    Monad.Checked.t) ->
+   'b -> 'f Monad.Checked.t) ->
+  'b -> 'f Monad.Checked.t
+)
+ident(
+  def typecheck "SimpleExpression.ml" 158 5758 5758 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+type(
+  < equal : [> `Bool | `Int ] -> 'a -> bool; .. > as 'h
+)
+ident(
+  def ts "SimpleExpression.ml" 135 4714 4731 "SimpleExpression.ml" 154 5644 5665
+)
+"SimpleExpression.ml" 135 4714 4731 "SimpleExpression.ml" 135 4714 4734
+type(
+  ('b -> 'f Monad.Checked.t) -> 'b -> 'f Monad.Checked.t
+)
+ident(
+  def ext "SimpleExpression.ml" 135 4714 4735 "SimpleExpression.ml" 154 5644 5665
+)
+"SimpleExpression.ml" 135 4714 4735 "SimpleExpression.ml" 135 4714 4739
+type(
+  'b
+)
+ident(
+  def expr "SimpleExpression.ml" 136 4743 4745 "SimpleExpression.ml" 154 5644 5665
+)
+"SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+type(
+  ([> `Binop of 'j * 'i * 'i ] as 'i) -> 'k -> 'k
+)
+ident(
+  def reloc "SimpleExpression.ml" 137 4787 4789 "SimpleExpression.ml" 154 5644 5665
+)
+"SimpleExpression.ml" 136 4743 4755 "SimpleExpression.ml" 136 4743 4756
+type(
+  'i
+)
+ident(
+  def x "SimpleExpression.ml" 136 4743 4757 "SimpleExpression.ml" 136 4743 4783
+)
+"SimpleExpression.ml" 136 4743 4757 "SimpleExpression.ml" 136 4743 4758
+type(
+  'k
+)
+ident(
+  def y "SimpleExpression.ml" 136 4743 4761 "SimpleExpression.ml" 136 4743 4783
+)
+"SimpleExpression.ml" 136 4743 4761 "SimpleExpression.ml" 136 4743 4766
+type(
+  Ostap.Msg.Locator.t -> 'k -> 'k
+)
+ident(
+  ext_ref Common.reloc
+)
+"SimpleExpression.ml" 136 4743 4768 "SimpleExpression.ml" 136 4743 4778
+type(
+  'i -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref safeLocate "SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+)
+"SimpleExpression.ml" 136 4743 4779 "SimpleExpression.ml" 136 4743 4780
+type(
+  'i
+)
+ident(
+  int_ref x "SimpleExpression.ml" 136 4743 4755 "SimpleExpression.ml" 136 4743 4756
+)
+"SimpleExpression.ml" 136 4743 4767 "SimpleExpression.ml" 136 4743 4781
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 136 4743 4782 "SimpleExpression.ml" 136 4743 4783
+type(
+  'k
+)
+ident(
+  int_ref y "SimpleExpression.ml" 136 4743 4757 "SimpleExpression.ml" 136 4743 4758
+)
+"SimpleExpression.ml" 136 4743 4761 "SimpleExpression.ml" 136 4743 4783
+call(
+  tail
+)
+type(
+  'k
+)
+"SimpleExpression.ml" 136 4743 4757 "SimpleExpression.ml" 136 4743 4783
+type(
+  'k -> 'k
+)
+"SimpleExpression.ml" 136 4743 4755 "SimpleExpression.ml" 136 4743 4783
+type(
+  'i -> 'k -> 'k
+)
+"SimpleExpression.ml" 137 4787 4789 "SimpleExpression.ml" 137 4787 4793
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> ([< `Neg | `Not ] as 'l) -> 'f -> 'f Monad.Checked.t > ->
+  (('b -> 'f Monad.Checked.t) -> 'b -> 'f Monad.Checked.t) ->
+  'b -> 'f Monad.Checked.t
+)
+ident(
+  int_ref cmap "SimpleExpression.ml" 24 614 618 "SimpleExpression.ml" 24 614 622
+)
+"SimpleExpression.ml" 138 4802 4825 "SimpleExpression.ml" 138 4802 4826
+type(
+  'b
+)
+ident(
+  def e "SimpleExpression.ml" 138 4802 4827 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 138 4802 4827 "SimpleExpression.ml" 138 4802 4829
+type(
+  'c
+)
+ident(
+  def op "SimpleExpression.ml" 138 4802 4830 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 138 4802 4830 "SimpleExpression.ml" 138 4802 4831
+type(
+  'f
+)
+ident(
+  def x "SimpleExpression.ml" 138 4802 4832 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 138 4802 4832 "SimpleExpression.ml" 138 4802 4833
+type(
+  'f
+)
+ident(
+  def y "SimpleExpression.ml" 139 4837 4849 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 139 4837 4853 "SimpleExpression.ml" 139 4837 4855
+type(
+  [> `Bool | `Int ]
+)
+ident(
+  def t' "SimpleExpression.ml" 145 5159 5171 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 139 4837 4857 "SimpleExpression.ml" 139 4837 4867
+type(
+  'm * 'a -> ('m * [> `Bool | `Int ], Ostap.Msg.t) Checked.t
+)
+ident(
+  def ensureType "SimpleExpression.ml" 145 5159 5171 "SimpleExpression.ml" 145 5159 5253
+)
+"SimpleExpression.ml" 139 4837 4853 "SimpleExpression.ml" 139 4837 4867
+type(
+  ([> `Bool | `Int ] as 'n) *
+  ('m * 'a -> ('m * ([> `Bool | `Int ] as 'o), Ostap.Msg.t) Checked.t)
+)
+"SimpleExpression.ml" 140 4870 4888 "SimpleExpression.ml" 140 4870 4890
+type(
+  'c
+)
+ident(
+  int_ref op "SimpleExpression.ml" 138 4802 4827 "SimpleExpression.ml" 138 4802 4829
+)
+"SimpleExpression.ml" 141 4906 4920 "SimpleExpression.ml" 141 4906 4924
+type(
+  'c
+)
+"SimpleExpression.ml" 141 4906 4927 "SimpleExpression.ml" 141 4906 4930
+type(
+  'c
+)
+"SimpleExpression.ml" 141 4906 4920 "SimpleExpression.ml" 141 4906 4930
+type(
+  'c
+)
+"SimpleExpression.ml" 141 4906 4934 "SimpleExpression.ml" 141 4906 4939
+type(
+  'n
+)
+"SimpleExpression.ml" 141 4906 4946 "SimpleExpression.ml" 141 4906 4947
+type(
+  'm
+)
+ident(
+  def x "SimpleExpression.ml" 141 4906 4955 "SimpleExpression.ml" 141 4906 4979
+)
+"SimpleExpression.ml" 141 4906 4949 "SimpleExpression.ml" 141 4906 4950
+type(
+  'a
+)
+ident(
+  def t "SimpleExpression.ml" 141 4906 4955 "SimpleExpression.ml" 141 4906 4979
+)
+"SimpleExpression.ml" 141 4906 4946 "SimpleExpression.ml" 141 4906 4950
+type(
+  'm * 'a
+)
+"SimpleExpression.ml" 141 4906 4955 "SimpleExpression.ml" 141 4906 4966
+type(
+  'h -> 'm -> 'a -> 'o -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.bool
+)
+"SimpleExpression.ml" 141 4906 4967 "SimpleExpression.ml" 141 4906 4969
+type(
+  'h
+)
+ident(
+  int_ref ts "SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+)
+"SimpleExpression.ml" 141 4906 4970 "SimpleExpression.ml" 141 4906 4971
+type(
+  'm
+)
+ident(
+  int_ref x "SimpleExpression.ml" 141 4906 4946 "SimpleExpression.ml" 141 4906 4947
+)
+"SimpleExpression.ml" 141 4906 4972 "SimpleExpression.ml" 141 4906 4973
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleExpression.ml" 141 4906 4949 "SimpleExpression.ml" 141 4906 4950
+)
+"SimpleExpression.ml" 141 4906 4974 "SimpleExpression.ml" 141 4906 4979
+type(
+  'o
+)
+"SimpleExpression.ml" 141 4906 4955 "SimpleExpression.ml" 141 4906 4979
+call(
+  tail
+)
+type(
+  ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 141 4906 4941 "SimpleExpression.ml" 141 4906 4979
+type(
+  'm * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 141 4906 4934 "SimpleExpression.ml" 141 4906 4979
+type(
+  'n * ('m * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t)
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 4999
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5003 "SimpleExpression.ml" 142 4982 5006
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 5006
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5010 "SimpleExpression.ml" 142 4982 5013
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 5013
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5017 "SimpleExpression.ml" 142 4982 5020
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 5020
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5024 "SimpleExpression.ml" 142 4982 5027
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 5027
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5031 "SimpleExpression.ml" 142 4982 5034
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 4996 "SimpleExpression.ml" 142 4982 5034
+type(
+  'c
+)
+"SimpleExpression.ml" 142 4982 5038 "SimpleExpression.ml" 142 4982 5043
+type(
+  'n
+)
+"SimpleExpression.ml" 142 4982 5050 "SimpleExpression.ml" 142 4982 5051
+type(
+  'm
+)
+ident(
+  def x "SimpleExpression.ml" 142 4982 5059 "SimpleExpression.ml" 142 4982 5081
+)
+"SimpleExpression.ml" 142 4982 5053 "SimpleExpression.ml" 142 4982 5054
+type(
+  'a
+)
+ident(
+  def t "SimpleExpression.ml" 142 4982 5059 "SimpleExpression.ml" 142 4982 5081
+)
+"SimpleExpression.ml" 142 4982 5050 "SimpleExpression.ml" 142 4982 5054
+type(
+  'm * 'a
+)
+"SimpleExpression.ml" 142 4982 5059 "SimpleExpression.ml" 142 4982 5069
+type(
+  'h -> 'm -> 'a -> 'o -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.int
+)
+"SimpleExpression.ml" 142 4982 5070 "SimpleExpression.ml" 142 4982 5072
+type(
+  'h
+)
+ident(
+  int_ref ts "SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+)
+"SimpleExpression.ml" 142 4982 5073 "SimpleExpression.ml" 142 4982 5074
+type(
+  'm
+)
+ident(
+  int_ref x "SimpleExpression.ml" 142 4982 5050 "SimpleExpression.ml" 142 4982 5051
+)
+"SimpleExpression.ml" 142 4982 5075 "SimpleExpression.ml" 142 4982 5076
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleExpression.ml" 142 4982 5053 "SimpleExpression.ml" 142 4982 5054
+)
+"SimpleExpression.ml" 142 4982 5077 "SimpleExpression.ml" 142 4982 5081
+type(
+  'o
+)
+"SimpleExpression.ml" 142 4982 5059 "SimpleExpression.ml" 142 4982 5081
+call(
+  tail
+)
+type(
+  ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 142 4982 5045 "SimpleExpression.ml" 142 4982 5081
+type(
+  'm * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 142 4982 5038 "SimpleExpression.ml" 142 4982 5081
+type(
+  'n * ('m * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t)
+)
+"SimpleExpression.ml" 143 5082 5096 "SimpleExpression.ml" 143 5082 5097
+type(
+  'c
+)
+"SimpleExpression.ml" 143 5082 5101 "SimpleExpression.ml" 143 5082 5105
+type(
+  'n
+)
+"SimpleExpression.ml" 143 5082 5112 "SimpleExpression.ml" 143 5082 5113
+type(
+  'm
+)
+ident(
+  def x "SimpleExpression.ml" 143 5082 5121 "SimpleExpression.ml" 143 5082 5143
+)
+"SimpleExpression.ml" 143 5082 5115 "SimpleExpression.ml" 143 5082 5116
+type(
+  'a
+)
+ident(
+  def t "SimpleExpression.ml" 143 5082 5121 "SimpleExpression.ml" 143 5082 5143
+)
+"SimpleExpression.ml" 143 5082 5112 "SimpleExpression.ml" 143 5082 5116
+type(
+  'm * 'a
+)
+"SimpleExpression.ml" 143 5082 5121 "SimpleExpression.ml" 143 5082 5131
+type(
+  'h -> 'm -> 'a -> 'o -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.int
+)
+"SimpleExpression.ml" 143 5082 5132 "SimpleExpression.ml" 143 5082 5134
+type(
+  'h
+)
+ident(
+  int_ref ts "SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+)
+"SimpleExpression.ml" 143 5082 5135 "SimpleExpression.ml" 143 5082 5136
+type(
+  'm
+)
+ident(
+  int_ref x "SimpleExpression.ml" 143 5082 5112 "SimpleExpression.ml" 143 5082 5113
+)
+"SimpleExpression.ml" 143 5082 5137 "SimpleExpression.ml" 143 5082 5138
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleExpression.ml" 143 5082 5115 "SimpleExpression.ml" 143 5082 5116
+)
+"SimpleExpression.ml" 143 5082 5139 "SimpleExpression.ml" 143 5082 5143
+type(
+  'o
+)
+"SimpleExpression.ml" 143 5082 5121 "SimpleExpression.ml" 143 5082 5143
+call(
+  tail
+)
+type(
+  ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 143 5082 5107 "SimpleExpression.ml" 143 5082 5143
+type(
+  'm * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 143 5082 5101 "SimpleExpression.ml" 143 5082 5143
+type(
+  'n * ('m * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t)
+)
+"SimpleExpression.ml" 140 4870 4882 "SimpleExpression.ml" 143 5082 5143
+type(
+  'n * ('m * 'a -> ('m * 'o, Ostap.Msg.t) Checked.t)
+)
+"SimpleExpression.ml" 145 5159 5171 "SimpleExpression.ml" 145 5159 5176
+type(
+  ('g * (_[> `Bool | `Int ] as 'p), Ostap.Msg.t) Checked.t *
+  ('g * (_[> `Bool | `Int ] as 'q), Ostap.Msg.t) Checked.t ->
+  (('g * 'p) * ('g * 'q), Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"SimpleExpression.ml" 145 5159 5178 "SimpleExpression.ml" 145 5159 5188
+type(
+  'f -> ('g * 'p, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref ensureType "SimpleExpression.ml" 139 4837 4857 "SimpleExpression.ml" 139 4837 4867
+)
+"SimpleExpression.ml" 145 5159 5189 "SimpleExpression.ml" 145 5159 5190
+type(
+  'f
+)
+ident(
+  int_ref x "SimpleExpression.ml" 138 4802 4830 "SimpleExpression.ml" 138 4802 4831
+)
+"SimpleExpression.ml" 145 5159 5178 "SimpleExpression.ml" 145 5159 5190
+call(
+  stack
+)
+type(
+  ('g * 'p, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 145 5159 5192 "SimpleExpression.ml" 145 5159 5202
+type(
+  'f -> ('g * 'q, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref ensureType "SimpleExpression.ml" 139 4837 4857 "SimpleExpression.ml" 139 4837 4867
+)
+"SimpleExpression.ml" 145 5159 5203 "SimpleExpression.ml" 145 5159 5204
+type(
+  'f
+)
+ident(
+  int_ref y "SimpleExpression.ml" 138 4802 4832 "SimpleExpression.ml" 138 4802 4833
+)
+"SimpleExpression.ml" 145 5159 5192 "SimpleExpression.ml" 145 5159 5204
+call(
+  stack
+)
+type(
+  ('g * 'q, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 145 5159 5177 "SimpleExpression.ml" 145 5159 5205
+type(
+  ('g * 'p, Ostap.Msg.t) Checked.t * ('g * 'q, Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 145 5159 5171 "SimpleExpression.ml" 145 5159 5205
+call(
+  stack
+)
+type(
+  (('g * 'p) * ('g * 'q), Ostap.Msg.t) Checked.t
+)
+"SimpleExpression.ml" 145 5159 5216 "SimpleExpression.ml" 145 5159 5217
+type(
+  ('g * 'p) * ('g * 'q)
+)
+"SimpleExpression.ml" 145 5159 5221 "SimpleExpression.ml" 145 5159 5226
+type(
+  'b -> 'g -> 'g
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+)
+"SimpleExpression.ml" 145 5159 5227 "SimpleExpression.ml" 145 5159 5228
+type(
+  'b
+)
+ident(
+  int_ref e "SimpleExpression.ml" 138 4802 4825 "SimpleExpression.ml" 138 4802 4826
+)
+"SimpleExpression.ml" 145 5159 5238 "SimpleExpression.ml" 145 5159 5240
+type(
+  'c
+)
+ident(
+  int_ref op "SimpleExpression.ml" 138 4802 4827 "SimpleExpression.ml" 138 4802 4829
+)
+"SimpleExpression.ml" 145 5159 5242 "SimpleExpression.ml" 145 5159 5243
+type(
+  'f
+)
+ident(
+  int_ref x "SimpleExpression.ml" 138 4802 4830 "SimpleExpression.ml" 138 4802 4831
+)
+"SimpleExpression.ml" 145 5159 5245 "SimpleExpression.ml" 145 5159 5246
+type(
+  'f
+)
+ident(
+  int_ref y "SimpleExpression.ml" 138 4802 4832 "SimpleExpression.ml" 138 4802 4833
+)
+"SimpleExpression.ml" 145 5159 5237 "SimpleExpression.ml" 145 5159 5247
+type(
+  'c * 'f * 'f
+)
+"SimpleExpression.ml" 145 5159 5229 "SimpleExpression.ml" 145 5159 5248
+type(
+  'g
+)
+"SimpleExpression.ml" 145 5159 5221 "SimpleExpression.ml" 145 5159 5248
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 145 5159 5250 "SimpleExpression.ml" 145 5159 5252
+type(
+  'a
+)
+ident(
+  int_ref t' "SimpleExpression.ml" 139 4837 4853 "SimpleExpression.ml" 139 4837 4855
+)
+"SimpleExpression.ml" 145 5159 5221 "SimpleExpression.ml" 145 5159 5252
+type(
+  'g * 'a
+)
+"SimpleExpression.ml" 145 5159 5211 "SimpleExpression.ml" 145 5159 5253
+type(
+  ('g * 'p) * ('g * 'q) -> 'f
+)
+"SimpleExpression.ml" 145 5159 5171 "SimpleExpression.ml" 145 5159 5253
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+type(
+  (('g * 'p) * ('g * 'q), Ostap.Msg.t) Checked.t ->
+  (('g * 'p) * ('g * 'q) -> 'f) -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"SimpleExpression.ml" 139 4837 4849 "SimpleExpression.ml" 145 5159 5253
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 138 4802 4832 "SimpleExpression.ml" 145 5159 5253
+type(
+  'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 138 4802 4830 "SimpleExpression.ml" 145 5159 5253
+type(
+  'f -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 138 4802 4827 "SimpleExpression.ml" 145 5159 5253
+type(
+  'c -> 'f -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 138 4802 4825 "SimpleExpression.ml" 145 5159 5253
+type(
+  'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t
+)
+type(
+  'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 138 4802 4812 "SimpleExpression.ml" 145 5159 5253
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> 'l -> 'f -> 'f Monad.Checked.t > ->
+  'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 146 5254 5276 "SimpleExpression.ml" 146 5254 5277
+type(
+  'b
+)
+ident(
+  def e "SimpleExpression.ml" 146 5254 5278 "SimpleExpression.ml" 149 5396 5468
+)
+"SimpleExpression.ml" 146 5254 5278 "SimpleExpression.ml" 146 5254 5280
+type(
+  'l
+)
+ident(
+  def op "SimpleExpression.ml" 146 5254 5281 "SimpleExpression.ml" 149 5396 5468
+)
+"SimpleExpression.ml" 146 5254 5283 "SimpleExpression.ml" 146 5254 5284
+type(
+  'g
+)
+ident(
+  def x "SimpleExpression.ml" 147 5298 5310 "SimpleExpression.ml" 149 5396 5468
+)
+"SimpleExpression.ml" 146 5254 5286 "SimpleExpression.ml" 146 5254 5287
+type(
+  'a
+)
+ident(
+  def t "SimpleExpression.ml" 147 5298 5310 "SimpleExpression.ml" 149 5396 5468
+)
+"SimpleExpression.ml" 146 5254 5283 "SimpleExpression.ml" 146 5254 5287
+type(
+  'f
+)
+"SimpleExpression.ml" 146 5254 5282 "SimpleExpression.ml" 146 5254 5293
+type(
+  'f
+)
+ident(
+  def z "SimpleExpression.ml" 147 5298 5310 "SimpleExpression.ml" 149 5396 5468
+)
+"SimpleExpression.ml" 147 5298 5316 "SimpleExpression.ml" 147 5298 5318
+type(
+  'l
+)
+ident(
+  int_ref op "SimpleExpression.ml" 146 5254 5278 "SimpleExpression.ml" 146 5254 5280
+)
+"SimpleExpression.ml" 148 5325 5339 "SimpleExpression.ml" 148 5325 5343
+type(
+  'l
+)
+"SimpleExpression.ml" 148 5325 5347 "SimpleExpression.ml" 148 5325 5357
+type(
+  'h -> 'g -> 'a -> 'a -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Common.int
+)
+"SimpleExpression.ml" 148 5325 5358 "SimpleExpression.ml" 148 5325 5360
+type(
+  'h
+)
+ident(
+  int_ref ts "SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+)
+"SimpleExpression.ml" 148 5325 5362 "SimpleExpression.ml" 148 5325 5367
+type(
+  'b -> 'g -> 'g
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+)
+"SimpleExpression.ml" 148 5325 5368 "SimpleExpression.ml" 148 5325 5369
+type(
+  'b
+)
+ident(
+  int_ref e "SimpleExpression.ml" 146 5254 5276 "SimpleExpression.ml" 146 5254 5277
+)
+"SimpleExpression.ml" 148 5325 5378 "SimpleExpression.ml" 148 5325 5382
+type(
+  [> `Neg | `Not ] as 'r
+)
+"SimpleExpression.ml" 148 5325 5384 "SimpleExpression.ml" 148 5325 5385
+type(
+  'g * 'a
+)
+ident(
+  int_ref z "SimpleExpression.ml" 146 5254 5282 "SimpleExpression.ml" 146 5254 5293
+)
+"SimpleExpression.ml" 148 5325 5377 "SimpleExpression.ml" 148 5325 5386
+type(
+  'r * ('g * 'a)
+)
+"SimpleExpression.ml" 148 5325 5370 "SimpleExpression.ml" 148 5325 5387
+type(
+  'g
+)
+"SimpleExpression.ml" 148 5325 5361 "SimpleExpression.ml" 148 5325 5388
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 148 5325 5389 "SimpleExpression.ml" 148 5325 5390
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleExpression.ml" 146 5254 5286 "SimpleExpression.ml" 146 5254 5287
+)
+"SimpleExpression.ml" 148 5325 5391 "SimpleExpression.ml" 148 5325 5395
+type(
+  'a
+)
+"SimpleExpression.ml" 148 5325 5347 "SimpleExpression.ml" 148 5325 5395
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 149 5396 5410 "SimpleExpression.ml" 149 5396 5414
+type(
+  'l
+)
+"SimpleExpression.ml" 149 5396 5418 "SimpleExpression.ml" 149 5396 5429
+type(
+  'h -> 'g -> 'a -> 'a -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Common.bool
+)
+"SimpleExpression.ml" 149 5396 5430 "SimpleExpression.ml" 149 5396 5432
+type(
+  'h
+)
+ident(
+  int_ref ts "SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 135 4714 4730
+)
+"SimpleExpression.ml" 149 5396 5434 "SimpleExpression.ml" 149 5396 5439
+type(
+  'b -> 'g -> 'g
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+)
+"SimpleExpression.ml" 149 5396 5440 "SimpleExpression.ml" 149 5396 5441
+type(
+  'b
+)
+ident(
+  int_ref e "SimpleExpression.ml" 146 5254 5276 "SimpleExpression.ml" 146 5254 5277
+)
+"SimpleExpression.ml" 149 5396 5450 "SimpleExpression.ml" 149 5396 5454
+type(
+  'r
+)
+"SimpleExpression.ml" 149 5396 5456 "SimpleExpression.ml" 149 5396 5457
+type(
+  'g * 'a
+)
+ident(
+  int_ref z "SimpleExpression.ml" 146 5254 5282 "SimpleExpression.ml" 146 5254 5293
+)
+"SimpleExpression.ml" 149 5396 5449 "SimpleExpression.ml" 149 5396 5458
+type(
+  'r * ('g * 'a)
+)
+"SimpleExpression.ml" 149 5396 5442 "SimpleExpression.ml" 149 5396 5459
+type(
+  'g
+)
+"SimpleExpression.ml" 149 5396 5433 "SimpleExpression.ml" 149 5396 5460
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 149 5396 5461 "SimpleExpression.ml" 149 5396 5462
+type(
+  'a
+)
+ident(
+  int_ref t "SimpleExpression.ml" 146 5254 5286 "SimpleExpression.ml" 146 5254 5287
+)
+"SimpleExpression.ml" 149 5396 5463 "SimpleExpression.ml" 149 5396 5468
+type(
+  'a
+)
+"SimpleExpression.ml" 149 5396 5418 "SimpleExpression.ml" 149 5396 5468
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 147 5298 5310 "SimpleExpression.ml" 149 5396 5468
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 146 5254 5281 "SimpleExpression.ml" 149 5396 5468
+type(
+  'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 146 5254 5278 "SimpleExpression.ml" 149 5396 5468
+type(
+  'l -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 146 5254 5276 "SimpleExpression.ml" 149 5396 5468
+type(
+  'b -> 'l -> 'f -> 'f Monad.Checked.t
+)
+type(
+  'b -> 'l -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 146 5254 5264 "SimpleExpression.ml" 149 5396 5468
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> 'l -> 'f -> 'f Monad.Checked.t > ->
+  'b -> 'l -> 'f -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 150 5469 5492 "SimpleExpression.ml" 150 5469 5493
+type(
+  'b
+)
+ident(
+  def e "SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 153 5581 5643
+)
+"SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 150 5469 5495
+type(
+  'd
+)
+ident(
+  def x "SimpleExpression.ml" 151 5498 5510 "SimpleExpression.ml" 153 5581 5643
+)
+"SimpleExpression.ml" 151 5498 5516 "SimpleExpression.ml" 151 5498 5517
+type(
+  'd
+)
+ident(
+  int_ref x "SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 150 5469 5495
+)
+"SimpleExpression.ml" 152 5523 5546 "SimpleExpression.ml" 152 5523 5547
+type(
+  'e
+)
+"SimpleExpression.ml" 152 5523 5537 "SimpleExpression.ml" 152 5523 5547
+type(
+  'd
+)
+"SimpleExpression.ml" 152 5523 5555 "SimpleExpression.ml" 152 5523 5560
+type(
+  'b -> 'g -> 'g
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+)
+"SimpleExpression.ml" 152 5523 5561 "SimpleExpression.ml" 152 5523 5562
+type(
+  'b
+)
+ident(
+  int_ref e "SimpleExpression.ml" 150 5469 5492 "SimpleExpression.ml" 150 5469 5493
+)
+"SimpleExpression.ml" 152 5523 5571 "SimpleExpression.ml" 152 5523 5572
+type(
+  'd
+)
+ident(
+  int_ref x "SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 150 5469 5495
+)
+"SimpleExpression.ml" 152 5523 5563 "SimpleExpression.ml" 152 5523 5573
+type(
+  'g
+)
+"SimpleExpression.ml" 152 5523 5555 "SimpleExpression.ml" 152 5523 5573
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 152 5523 5575 "SimpleExpression.ml" 152 5523 5579
+type(
+  'a
+)
+"SimpleExpression.ml" 152 5523 5554 "SimpleExpression.ml" 152 5523 5580
+type(
+  'f
+)
+"SimpleExpression.ml" 152 5523 5551 "SimpleExpression.ml" 152 5523 5580
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+type(
+  'f -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"SimpleExpression.ml" 153 5581 5595 "SimpleExpression.ml" 153 5581 5600
+type(
+  'd
+)
+"SimpleExpression.ml" 153 5581 5603 "SimpleExpression.ml" 153 5581 5609
+type(
+  'd
+)
+"SimpleExpression.ml" 153 5581 5595 "SimpleExpression.ml" 153 5581 5609
+type(
+  'd
+)
+"SimpleExpression.ml" 153 5581 5617 "SimpleExpression.ml" 153 5581 5622
+type(
+  'b -> 'g -> 'g
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 136 4743 4749 "SimpleExpression.ml" 136 4743 4754
+)
+"SimpleExpression.ml" 153 5581 5623 "SimpleExpression.ml" 153 5581 5624
+type(
+  'b
+)
+ident(
+  int_ref e "SimpleExpression.ml" 150 5469 5492 "SimpleExpression.ml" 150 5469 5493
+)
+"SimpleExpression.ml" 153 5581 5633 "SimpleExpression.ml" 153 5581 5634
+type(
+  'd
+)
+ident(
+  int_ref x "SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 150 5469 5495
+)
+"SimpleExpression.ml" 153 5581 5625 "SimpleExpression.ml" 153 5581 5635
+type(
+  'g
+)
+"SimpleExpression.ml" 153 5581 5617 "SimpleExpression.ml" 153 5581 5635
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 153 5581 5637 "SimpleExpression.ml" 153 5581 5642
+type(
+  'a
+)
+"SimpleExpression.ml" 153 5581 5616 "SimpleExpression.ml" 153 5581 5643
+type(
+  'f
+)
+"SimpleExpression.ml" 153 5581 5613 "SimpleExpression.ml" 153 5581 5643
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+type(
+  'f -> 'f Monad.Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"SimpleExpression.ml" 151 5498 5510 "SimpleExpression.ml" 153 5581 5643
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 150 5469 5494 "SimpleExpression.ml" 153 5581 5643
+type(
+  'd -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 150 5469 5492 "SimpleExpression.ml" 153 5581 5643
+type(
+  'b -> 'd -> 'f Monad.Checked.t
+)
+type(
+  'b -> 'd -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 150 5469 5479 "SimpleExpression.ml" 153 5581 5643
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> 'l -> 'f -> 'f Monad.Checked.t > ->
+  'b -> 'd -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 137 4787 4794 "SimpleExpression.ml" 154 5644 5656
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> 'l -> 'f -> 'f Monad.Checked.t >
+)
+type(
+  < binop : 'b -> 'c -> 'f -> 'f -> 'f Monad.Checked.t;
+    const : 'b -> 'd -> 'f Monad.Checked.t;
+    unop : 'b -> 'l -> 'f -> 'f Monad.Checked.t >
+)
+"SimpleExpression.ml" 154 5644 5657 "SimpleExpression.ml" 154 5644 5660
+type(
+  ('b -> 'f Monad.Checked.t) -> 'b -> 'f Monad.Checked.t
+)
+ident(
+  int_ref ext "SimpleExpression.ml" 135 4714 4731 "SimpleExpression.ml" 135 4714 4734
+)
+"SimpleExpression.ml" 154 5644 5661 "SimpleExpression.ml" 154 5644 5665
+type(
+  'b
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 135 4714 4735 "SimpleExpression.ml" 135 4714 4739
+)
+"SimpleExpression.ml" 137 4787 4789 "SimpleExpression.ml" 154 5644 5665
+call(
+  tail
+)
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 136 4743 4745 "SimpleExpression.ml" 154 5644 5665
+type(
+  'f Monad.Checked.t
+)
+"SimpleExpression.ml" 135 4714 4735 "SimpleExpression.ml" 154 5644 5665
+type(
+  'b -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 135 4714 4731 "SimpleExpression.ml" 154 5644 5665
+type(
+  (('b -> 'f Monad.Checked.t) -> 'b -> 'f Monad.Checked.t) ->
+  'b -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 135 4714 4728 "SimpleExpression.ml" 154 5644 5665
+type(
+  'h ->
+  (('b -> 'f Monad.Checked.t) -> 'b -> 'f Monad.Checked.t) ->
+  'b -> 'f Monad.Checked.t
+)
+"SimpleExpression.ml" 160 5784 5788 "SimpleExpression.ml" 160 5784 5796
+type(
+  ([> `Binop of
+        [< `Add
+         | `And
+         | `Div
+         | `Eq
+         | `Ge
+         | `Gt
+         | `Le
+         | `Lt
+         | `Mod
+         | `Mul
+         | `Ne
+         | `Or
+         | `Sub
+         > `Add `Div `Mod `Mul `Sub ] *
+        'a * 'a
+    | `Const of [< `False | `Literal of int Monad.Id.t | `True > `Literal ]
+    | `Unop of [ `Neg | `Not ] * 'a ]
+   as 'a) ->
+  [> `Const of [> `False | `Literal of int Monad.Id.t | `True ] ]
+)
+ident(
+  def evaluate "SimpleExpression.ml" 184 6698 6764 "SimpleExpression.ml" 1 0 -1
+)
+"SimpleExpression.ml" 160 5784 5797 "SimpleExpression.ml" 160 5784 5801
+type(
+  'a
+)
+ident(
+  def expr "SimpleExpression.ml" 161 5804 5806 "SimpleExpression.ml" 184 6698 6764
+)
+"SimpleExpression.ml" 161 5804 5810 "SimpleExpression.ml" 161 5804 5811
+type(
+  int Monad.Id.t
+)
+ident(
+  def x "SimpleExpression.ml" 181 6559 6561 "SimpleExpression.ml" 184 6698 6764
+)
+"SimpleExpression.ml" 162 5814 5818 "SimpleExpression.ml" 162 5814 5822
+type(
+  < binop : 'a ->
+            ([< `Add
+              | `And
+              | `Div
+              | `Eq
+              | `Ge
+              | `Gt
+              | `Le
+              | `Lt
+              | `Mod
+              | `Mul
+              | `Ne
+              | `Or
+              | `Sub
+              > `Add `Div `Mod `Mul `Sub ]
+             as 'b) ->
+            int -> int -> int Monad.Id.t;
+    const : 'a ->
+            ([< `False | `Literal of int Monad.Id.t | `True > `Literal ]
+             as 'c) ->
+            int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t > ->
+  (('a -> int Monad.Id.t) -> 'a -> int Monad.Id.t) -> 'a -> int Monad.Id.t
+)
+ident(
+  int_ref imap "SimpleExpression.ml" 20 533 537 "SimpleExpression.ml" 20 533 541
+)
+"SimpleExpression.ml" 164 5838 5860 "SimpleExpression.ml" 164 5838 5861
+type(
+  'a
+)
+"SimpleExpression.ml" 164 5838 5862 "SimpleExpression.ml" 164 5838 5864
+type(
+  'b
+)
+ident(
+  def op "SimpleExpression.ml" 164 5838 5865 "SimpleExpression.ml" 174 6305 6321
+)
+"SimpleExpression.ml" 164 5838 5865 "SimpleExpression.ml" 164 5838 5866
+type(
+  int
+)
+ident(
+  def x "SimpleExpression.ml" 164 5838 5867 "SimpleExpression.ml" 174 6305 6321
+)
+"SimpleExpression.ml" 164 5838 5867 "SimpleExpression.ml" 164 5838 5868
+type(
+  int
+)
+ident(
+  def y "SimpleExpression.ml" 165 5871 5882 "SimpleExpression.ml" 174 6305 6321
+)
+"SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+type(
+  ('d -> 'e -> bool) -> 'd -> 'e -> int
+)
+ident(
+  def l "SimpleExpression.ml" 166 5922 5933 "SimpleExpression.ml" 174 6305 6321
+)
+"SimpleExpression.ml" 165 5871 5888 "SimpleExpression.ml" 165 5871 5889
+type(
+  'd -> 'e -> bool
+)
+ident(
+  def f "SimpleExpression.ml" 165 5871 5890 "SimpleExpression.ml" 165 5871 5918
+)
+"SimpleExpression.ml" 165 5871 5890 "SimpleExpression.ml" 165 5871 5891
+type(
+  'd
+)
+ident(
+  def x "SimpleExpression.ml" 165 5871 5892 "SimpleExpression.ml" 165 5871 5918
+)
+"SimpleExpression.ml" 165 5871 5892 "SimpleExpression.ml" 165 5871 5893
+type(
+  'e
+)
+ident(
+  def y "SimpleExpression.ml" 165 5871 5896 "SimpleExpression.ml" 165 5871 5918
+)
+"SimpleExpression.ml" 165 5871 5899 "SimpleExpression.ml" 165 5871 5900
+type(
+  'd -> 'e -> bool
+)
+ident(
+  int_ref f "SimpleExpression.ml" 165 5871 5888 "SimpleExpression.ml" 165 5871 5889
+)
+"SimpleExpression.ml" 165 5871 5901 "SimpleExpression.ml" 165 5871 5902
+type(
+  'd
+)
+ident(
+  int_ref x "SimpleExpression.ml" 165 5871 5890 "SimpleExpression.ml" 165 5871 5891
+)
+"SimpleExpression.ml" 165 5871 5903 "SimpleExpression.ml" 165 5871 5904
+type(
+  'e
+)
+ident(
+  int_ref y "SimpleExpression.ml" 165 5871 5892 "SimpleExpression.ml" 165 5871 5893
+)
+"SimpleExpression.ml" 165 5871 5899 "SimpleExpression.ml" 165 5871 5904
+call(
+  stack
+)
+type(
+  bool
+)
+"SimpleExpression.ml" 165 5871 5910 "SimpleExpression.ml" 165 5871 5911
+type(
+  int
+)
+"SimpleExpression.ml" 165 5871 5917 "SimpleExpression.ml" 165 5871 5918
+type(
+  int
+)
+"SimpleExpression.ml" 165 5871 5896 "SimpleExpression.ml" 165 5871 5918
+type(
+  int
+)
+"SimpleExpression.ml" 165 5871 5892 "SimpleExpression.ml" 165 5871 5918
+type(
+  'e -> int
+)
+"SimpleExpression.ml" 165 5871 5890 "SimpleExpression.ml" 165 5871 5918
+type(
+  'd -> 'e -> int
+)
+"SimpleExpression.ml" 165 5871 5888 "SimpleExpression.ml" 165 5871 5918
+type(
+  ('d -> 'e -> bool) -> 'd -> 'e -> int
+)
+"SimpleExpression.ml" 166 5922 5937 "SimpleExpression.ml" 166 5922 5938
+type(
+  (bool -> bool -> bool) -> int -> int -> int
+)
+ident(
+  def i "SimpleExpression.ml" 167 5985 5996 "SimpleExpression.ml" 174 6305 6321
+)
+"SimpleExpression.ml" 166 5922 5939 "SimpleExpression.ml" 166 5922 5940
+type(
+  bool -> bool -> bool
+)
+ident(
+  def f "SimpleExpression.ml" 166 5922 5941 "SimpleExpression.ml" 166 5922 5981
+)
+"SimpleExpression.ml" 166 5922 5941 "SimpleExpression.ml" 166 5922 5942
+type(
+  int
+)
+ident(
+  def x "SimpleExpression.ml" 166 5922 5943 "SimpleExpression.ml" 166 5922 5981
+)
+"SimpleExpression.ml" 166 5922 5943 "SimpleExpression.ml" 166 5922 5944
+type(
+  int
+)
+ident(
+  def y "SimpleExpression.ml" 166 5922 5947 "SimpleExpression.ml" 166 5922 5981
+)
+"SimpleExpression.ml" 166 5922 5950 "SimpleExpression.ml" 166 5922 5951
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref f "SimpleExpression.ml" 166 5922 5939 "SimpleExpression.ml" 166 5922 5940
+)
+"SimpleExpression.ml" 166 5922 5953 "SimpleExpression.ml" 166 5922 5954
+type(
+  int
+)
+ident(
+  int_ref x "SimpleExpression.ml" 166 5922 5941 "SimpleExpression.ml" 166 5922 5942
+)
+"SimpleExpression.ml" 166 5922 5957 "SimpleExpression.ml" 166 5922 5958
+type(
+  int
+)
+"SimpleExpression.ml" 166 5922 5953 "SimpleExpression.ml" 166 5922 5958
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"SimpleExpression.ml" 166 5922 5952 "SimpleExpression.ml" 166 5922 5959
+type(
+  bool
+)
+"SimpleExpression.ml" 166 5922 5961 "SimpleExpression.ml" 166 5922 5962
+type(
+  int
+)
+ident(
+  int_ref y "SimpleExpression.ml" 166 5922 5943 "SimpleExpression.ml" 166 5922 5944
+)
+"SimpleExpression.ml" 166 5922 5965 "SimpleExpression.ml" 166 5922 5966
+type(
+  int
+)
+"SimpleExpression.ml" 166 5922 5961 "SimpleExpression.ml" 166 5922 5966
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"SimpleExpression.ml" 166 5922 5960 "SimpleExpression.ml" 166 5922 5967
+type(
+  bool
+)
+"SimpleExpression.ml" 166 5922 5950 "SimpleExpression.ml" 166 5922 5967
+call(
+  stack
+)
+type(
+  bool
+)
+"SimpleExpression.ml" 166 5922 5973 "SimpleExpression.ml" 166 5922 5974
+type(
+  int
+)
+"SimpleExpression.ml" 166 5922 5980 "SimpleExpression.ml" 166 5922 5981
+type(
+  int
+)
+"SimpleExpression.ml" 166 5922 5947 "SimpleExpression.ml" 166 5922 5981
+type(
+  int
+)
+"SimpleExpression.ml" 166 5922 5943 "SimpleExpression.ml" 166 5922 5981
+type(
+  int -> int
+)
+"SimpleExpression.ml" 166 5922 5941 "SimpleExpression.ml" 166 5922 5981
+type(
+  int -> int -> int
+)
+"SimpleExpression.ml" 166 5922 5939 "SimpleExpression.ml" 166 5922 5981
+type(
+  (bool -> bool -> bool) -> int -> int -> int
+)
+"SimpleExpression.ml" 167 5985 6003 "SimpleExpression.ml" 167 5985 6005
+type(
+  'b
+)
+ident(
+  int_ref op "SimpleExpression.ml" 164 5838 5862 "SimpleExpression.ml" 164 5838 5864
+)
+"SimpleExpression.ml" 168 6011 6025 "SimpleExpression.ml" 168 6011 6029
+type(
+  'b
+)
+"SimpleExpression.ml" 168 6011 6033 "SimpleExpression.ml" 168 6011 6036
+type(
+  int -> int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"SimpleExpression.ml" 168 6011 6042 "SimpleExpression.ml" 168 6011 6046
+type(
+  'b
+)
+"SimpleExpression.ml" 168 6011 6050 "SimpleExpression.ml" 168 6011 6053
+type(
+  int -> int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"SimpleExpression.ml" 168 6011 6059 "SimpleExpression.ml" 168 6011 6063
+type(
+  'b
+)
+"SimpleExpression.ml" 168 6011 6067 "SimpleExpression.ml" 168 6011 6072
+type(
+  int -> int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"SimpleExpression.ml" 169 6075 6089 "SimpleExpression.ml" 169 6075 6093
+type(
+  'b
+)
+"SimpleExpression.ml" 169 6075 6097 "SimpleExpression.ml" 169 6075 6100
+type(
+  int -> int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"SimpleExpression.ml" 169 6075 6106 "SimpleExpression.ml" 169 6075 6110
+type(
+  'b
+)
+"SimpleExpression.ml" 169 6075 6114 "SimpleExpression.ml" 169 6075 6119
+type(
+  int -> int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"SimpleExpression.ml" 170 6121 6135 "SimpleExpression.ml" 170 6121 6138
+type(
+  'b
+)
+"SimpleExpression.ml" 170 6121 6143 "SimpleExpression.ml" 170 6121 6144
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 170 6121 6145 "SimpleExpression.ml" 170 6121 6148
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"SimpleExpression.ml" 170 6121 6143 "SimpleExpression.ml" 170 6121 6148
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 170 6121 6152 "SimpleExpression.ml" 170 6121 6155
+type(
+  'b
+)
+"SimpleExpression.ml" 170 6121 6160 "SimpleExpression.ml" 170 6121 6161
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 170 6121 6162 "SimpleExpression.ml" 170 6121 6166
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"SimpleExpression.ml" 170 6121 6160 "SimpleExpression.ml" 170 6121 6166
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 171 6168 6182 "SimpleExpression.ml" 171 6168 6185
+type(
+  'b
+)
+"SimpleExpression.ml" 171 6168 6190 "SimpleExpression.ml" 171 6168 6191
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 171 6168 6192 "SimpleExpression.ml" 171 6168 6196
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"SimpleExpression.ml" 171 6168 6190 "SimpleExpression.ml" 171 6168 6196
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 171 6168 6199 "SimpleExpression.ml" 171 6168 6202
+type(
+  'b
+)
+"SimpleExpression.ml" 171 6168 6207 "SimpleExpression.ml" 171 6168 6208
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 171 6168 6209 "SimpleExpression.ml" 171 6168 6212
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"SimpleExpression.ml" 171 6168 6207 "SimpleExpression.ml" 171 6168 6212
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 172 6214 6228 "SimpleExpression.ml" 172 6214 6231
+type(
+  'b
+)
+"SimpleExpression.ml" 172 6214 6236 "SimpleExpression.ml" 172 6214 6237
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 172 6214 6238 "SimpleExpression.ml" 172 6214 6242
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"SimpleExpression.ml" 172 6214 6236 "SimpleExpression.ml" 172 6214 6242
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 172 6214 6245 "SimpleExpression.ml" 172 6214 6248
+type(
+  'b
+)
+"SimpleExpression.ml" 172 6214 6253 "SimpleExpression.ml" 172 6214 6254
+type(
+  (int -> int -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref l "SimpleExpression.ml" 165 5871 5886 "SimpleExpression.ml" 165 5871 5887
+)
+"SimpleExpression.ml" 172 6214 6255 "SimpleExpression.ml" 172 6214 6258
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"SimpleExpression.ml" 172 6214 6253 "SimpleExpression.ml" 172 6214 6258
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 173 6259 6273 "SimpleExpression.ml" 173 6259 6277
+type(
+  'b
+)
+"SimpleExpression.ml" 173 6259 6281 "SimpleExpression.ml" 173 6259 6282
+type(
+  (bool -> bool -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref i "SimpleExpression.ml" 166 5922 5937 "SimpleExpression.ml" 166 5922 5938
+)
+"SimpleExpression.ml" 173 6259 6283 "SimpleExpression.ml" 173 6259 6287
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"SimpleExpression.ml" 173 6259 6281 "SimpleExpression.ml" 173 6259 6287
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 173 6259 6290 "SimpleExpression.ml" 173 6259 6293
+type(
+  'b
+)
+"SimpleExpression.ml" 173 6259 6298 "SimpleExpression.ml" 173 6259 6299
+type(
+  (bool -> bool -> bool) -> int -> int -> int Monad.Id.t
+)
+ident(
+  int_ref i "SimpleExpression.ml" 166 5922 5937 "SimpleExpression.ml" 166 5922 5938
+)
+"SimpleExpression.ml" 173 6259 6300 "SimpleExpression.ml" 173 6259 6304
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"SimpleExpression.ml" 173 6259 6298 "SimpleExpression.ml" 173 6259 6304
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 167 5985 5996 "SimpleExpression.ml" 174 6305 6317
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 174 6305 6318 "SimpleExpression.ml" 174 6305 6319
+type(
+  int
+)
+ident(
+  int_ref x "SimpleExpression.ml" 164 5838 5865 "SimpleExpression.ml" 164 5838 5866
+)
+"SimpleExpression.ml" 174 6305 6320 "SimpleExpression.ml" 174 6305 6321
+type(
+  int
+)
+ident(
+  int_ref y "SimpleExpression.ml" 164 5838 5867 "SimpleExpression.ml" 164 5838 5868
+)
+"SimpleExpression.ml" 167 5985 5996 "SimpleExpression.ml" 174 6305 6321
+call(
+  tail
+)
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 166 5922 5933 "SimpleExpression.ml" 174 6305 6321
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 165 5871 5882 "SimpleExpression.ml" 174 6305 6321
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 164 5838 5867 "SimpleExpression.ml" 174 6305 6321
+type(
+  int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 164 5838 5865 "SimpleExpression.ml" 174 6305 6321
+type(
+  int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 164 5838 5862 "SimpleExpression.ml" 174 6305 6321
+type(
+  'b -> int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 164 5838 5860 "SimpleExpression.ml" 174 6305 6321
+type(
+  'a -> 'b -> int -> int -> int Monad.Id.t
+)
+type(
+  'a -> 'b -> int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 164 5838 5847 "SimpleExpression.ml" 174 6305 6321
+type(
+  < binop : 'a -> 'b -> int -> int -> int Monad.Id.t;
+    const : 'a -> 'c -> int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t > ->
+  'a -> 'b -> int -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6344 "SimpleExpression.ml" 175 6323 6345
+type(
+  'a
+)
+"SimpleExpression.ml" 175 6323 6346 "SimpleExpression.ml" 175 6323 6348
+type(
+  [ `Neg | `Not ]
+)
+ident(
+  def op "SimpleExpression.ml" 175 6323 6349 "SimpleExpression.ml" 175 6323 6410
+)
+"SimpleExpression.ml" 175 6323 6349 "SimpleExpression.ml" 175 6323 6350
+type(
+  int
+)
+ident(
+  def x "SimpleExpression.ml" 175 6323 6353 "SimpleExpression.ml" 175 6323 6410
+)
+"SimpleExpression.ml" 175 6323 6359 "SimpleExpression.ml" 175 6323 6361
+type(
+  [ `Neg | `Not ]
+)
+ident(
+  int_ref op "SimpleExpression.ml" 175 6323 6346 "SimpleExpression.ml" 175 6323 6348
+)
+"SimpleExpression.ml" 175 6323 6367 "SimpleExpression.ml" 175 6323 6371
+type(
+  [ `Neg | `Not ]
+)
+"SimpleExpression.ml" 175 6323 6376 "SimpleExpression.ml" 175 6323 6377
+type(
+  int
+)
+ident(
+  int_ref x "SimpleExpression.ml" 175 6323 6349 "SimpleExpression.ml" 175 6323 6350
+)
+"SimpleExpression.ml" 175 6323 6375 "SimpleExpression.ml" 175 6323 6377
+type(
+  int Monad.Id.t
+)
+type(
+  int -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"SimpleExpression.ml" 175 6323 6380 "SimpleExpression.ml" 175 6323 6384
+type(
+  [ `Neg | `Not ]
+)
+"SimpleExpression.ml" 175 6323 6391 "SimpleExpression.ml" 175 6323 6392
+type(
+  int
+)
+ident(
+  int_ref x "SimpleExpression.ml" 175 6323 6349 "SimpleExpression.ml" 175 6323 6350
+)
+"SimpleExpression.ml" 175 6323 6395 "SimpleExpression.ml" 175 6323 6396
+type(
+  int
+)
+"SimpleExpression.ml" 175 6323 6391 "SimpleExpression.ml" 175 6323 6396
+type(
+  bool
+)
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"SimpleExpression.ml" 175 6323 6402 "SimpleExpression.ml" 175 6323 6403
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6409 "SimpleExpression.ml" 175 6323 6410
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6388 "SimpleExpression.ml" 175 6323 6410
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6353 "SimpleExpression.ml" 175 6323 6410
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6349 "SimpleExpression.ml" 175 6323 6410
+type(
+  int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6346 "SimpleExpression.ml" 175 6323 6410
+type(
+  [ `Neg | `Not ] -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6344 "SimpleExpression.ml" 175 6323 6410
+type(
+  'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t
+)
+type(
+  'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 175 6323 6332 "SimpleExpression.ml" 175 6323 6410
+type(
+  < binop : 'a -> 'b -> int -> int -> int Monad.Id.t;
+    const : 'a -> 'c -> int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t > ->
+  'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t
+)
+"SimpleExpression.ml" 176 6411 6433 "SimpleExpression.ml" 176 6411 6434
+type(
+  'a
+)
+"SimpleExpression.ml" 176 6411 6455 "SimpleExpression.ml" 176 6411 6456
+type(
+  int Monad.Id.t
+)
+ident(
+  def x "SimpleExpression.ml" 176 6411 6460 "SimpleExpression.ml" 176 6411 6461
+)
+"SimpleExpression.ml" 176 6411 6446 "SimpleExpression.ml" 176 6411 6456
+type(
+  'c
+)
+"SimpleExpression.ml" 176 6411 6460 "SimpleExpression.ml" 176 6411 6461
+type(
+  int Monad.Id.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 176 6411 6455 "SimpleExpression.ml" 176 6411 6456
+)
+"SimpleExpression.ml" 176 6411 6464 "SimpleExpression.ml" 176 6411 6469
+type(
+  'c
+)
+"SimpleExpression.ml" 176 6411 6473 "SimpleExpression.ml" 176 6411 6474
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 176 6411 6477 "SimpleExpression.ml" 176 6411 6483
+type(
+  'c
+)
+"SimpleExpression.ml" 176 6411 6487 "SimpleExpression.ml" 176 6411 6488
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 176 6411 6437 "SimpleExpression.ml" 176 6411 6488
+type(
+  'c -> int Monad.Id.t
+)
+"SimpleExpression.ml" 176 6411 6433 "SimpleExpression.ml" 176 6411 6488
+type(
+  'a -> 'c -> int Monad.Id.t
+)
+type(
+  'a -> 'c -> int Monad.Id.t
+)
+"SimpleExpression.ml" 176 6411 6420 "SimpleExpression.ml" 176 6411 6488
+type(
+  < binop : 'a -> 'b -> int -> int -> int Monad.Id.t;
+    const : 'a -> 'c -> int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t > ->
+  'a -> 'c -> int Monad.Id.t
+)
+"SimpleExpression.ml" 163 5824 5830 "SimpleExpression.ml" 177 6489 6500
+type(
+  < binop : 'a -> 'b -> int -> int -> int Monad.Id.t;
+    const : 'a -> 'c -> int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t >
+)
+type(
+  < binop : 'a -> 'b -> int -> int -> int Monad.Id.t;
+    const : 'a -> 'c -> int Monad.Id.t;
+    unop : 'a -> [ `Neg | `Not ] -> int -> int Monad.Id.t >
+)
+"SimpleExpression.ml" 178 6502 6513 "SimpleExpression.ml" 178 6502 6514
+type(
+  'a -> int Monad.Id.t
+)
+"SimpleExpression.ml" 178 6502 6515 "SimpleExpression.ml" 178 6502 6516
+type(
+  'a
+)
+"SimpleExpression.ml" 178 6502 6520 "SimpleExpression.ml" 178 6502 6525
+type(
+  exn -> int Monad.Id.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"SimpleExpression.ml" 178 6502 6526 "SimpleExpression.ml" 178 6502 6540
+type(
+  exn
+)
+"SimpleExpression.ml" 178 6502 6520 "SimpleExpression.ml" 178 6502 6540
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 178 6502 6515 "SimpleExpression.ml" 178 6502 6540
+type(
+  'a -> int Monad.Id.t
+)
+"SimpleExpression.ml" 178 6502 6508 "SimpleExpression.ml" 178 6502 6541
+type(
+  ('a -> int Monad.Id.t) -> 'a -> int Monad.Id.t
+)
+"SimpleExpression.ml" 179 6543 6549 "SimpleExpression.ml" 179 6543 6553
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 160 5784 5797 "SimpleExpression.ml" 160 5784 5801
+)
+"SimpleExpression.ml" 162 5814 5818 "SimpleExpression.ml" 179 6543 6553
+call(
+  stack
+)
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 181 6559 6565 "SimpleExpression.ml" 181 6559 6570
+type(
+  ([> `Const of [> `False | `Literal of int Monad.Id.t | `True ] ] as 'f) ->
+  'f
+)
+ident(
+  def reloc "SimpleExpression.ml" 182 6600 6602 "SimpleExpression.ml" 184 6698 6764
+)
+"SimpleExpression.ml" 181 6559 6573 "SimpleExpression.ml" 181 6559 6578
+type(
+  Ostap.Msg.Locator.t -> 'f -> 'f
+)
+ident(
+  ext_ref Common.reloc
+)
+"SimpleExpression.ml" 181 6559 6580 "SimpleExpression.ml" 181 6559 6590
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref safeLocate "SimpleExpression.ml" 115 4046 4054 "SimpleExpression.ml" 115 4046 4064
+)
+"SimpleExpression.ml" 181 6559 6591 "SimpleExpression.ml" 181 6559 6595
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 160 5784 5797 "SimpleExpression.ml" 160 5784 5801
+)
+"SimpleExpression.ml" 181 6559 6579 "SimpleExpression.ml" 181 6559 6596
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"SimpleExpression.ml" 181 6559 6573 "SimpleExpression.ml" 181 6559 6596
+call(
+  stack
+)
+type(
+  'f -> 'f
+)
+"SimpleExpression.ml" 182 6600 6608 "SimpleExpression.ml" 182 6600 6614
+type(
+  ('a -> ([> `Bool | `Int ] as 'g)) -> 'a -> 'g
+)
+ident(
+  int_ref typeOf "SimpleExpression.ml" 130 4495 4499 "SimpleExpression.ml" 130 4495 4505
+)
+"SimpleExpression.ml" 182 6600 6620 "SimpleExpression.ml" 182 6600 6621
+type(
+  'a
+)
+"SimpleExpression.ml" 182 6600 6625 "SimpleExpression.ml" 182 6600 6630
+type(
+  exn -> 'g
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"SimpleExpression.ml" 182 6600 6631 "SimpleExpression.ml" 182 6600 6645
+type(
+  exn
+)
+"SimpleExpression.ml" 182 6600 6625 "SimpleExpression.ml" 182 6600 6645
+type(
+  'g
+)
+"SimpleExpression.ml" 182 6600 6615 "SimpleExpression.ml" 182 6600 6646
+type(
+  'a -> 'g
+)
+"SimpleExpression.ml" 182 6600 6647 "SimpleExpression.ml" 182 6600 6651
+type(
+  'a
+)
+ident(
+  int_ref expr "SimpleExpression.ml" 160 5784 5797 "SimpleExpression.ml" 160 5784 5801
+)
+"SimpleExpression.ml" 182 6600 6608 "SimpleExpression.ml" 182 6600 6651
+call(
+  stack
+)
+type(
+  'g
+)
+"SimpleExpression.ml" 183 6657 6661 "SimpleExpression.ml" 183 6657 6665
+type(
+  [ `Bool | `Int ]
+)
+"SimpleExpression.ml" 183 6657 6670 "SimpleExpression.ml" 183 6657 6675
+type(
+  'f -> 'f
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 181 6559 6565 "SimpleExpression.ml" 181 6559 6570
+)
+"SimpleExpression.ml" 183 6657 6694 "SimpleExpression.ml" 183 6657 6695
+type(
+  int Monad.Id.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 161 5804 5810 "SimpleExpression.ml" 161 5804 5811
+)
+"SimpleExpression.ml" 183 6657 6684 "SimpleExpression.ml" 183 6657 6696
+type(
+  [> `False | `Literal of int Monad.Id.t | `True ] as 'h
+)
+"SimpleExpression.ml" 183 6657 6676 "SimpleExpression.ml" 183 6657 6697
+type(
+  'f
+)
+"SimpleExpression.ml" 183 6657 6670 "SimpleExpression.ml" 183 6657 6697
+call(
+  tail
+)
+type(
+  'f
+)
+"SimpleExpression.ml" 184 6698 6702 "SimpleExpression.ml" 184 6698 6707
+type(
+  [ `Bool | `Int ]
+)
+"SimpleExpression.ml" 184 6698 6711 "SimpleExpression.ml" 184 6698 6716
+type(
+  'f -> 'f
+)
+ident(
+  int_ref reloc "SimpleExpression.ml" 181 6559 6565 "SimpleExpression.ml" 181 6559 6570
+)
+"SimpleExpression.ml" 184 6698 6721 "SimpleExpression.ml" 184 6698 6722
+type(
+  int Monad.Id.t
+)
+ident(
+  int_ref x "SimpleExpression.ml" 161 5804 5810 "SimpleExpression.ml" 161 5804 5811
+)
+"SimpleExpression.ml" 184 6698 6725 "SimpleExpression.ml" 184 6698 6726
+type(
+  int Monad.Id.t
+)
+"SimpleExpression.ml" 184 6698 6721 "SimpleExpression.ml" 184 6698 6726
+type(
+  bool
+)
+type(
+  int Monad.Id.t -> int Monad.Id.t -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"SimpleExpression.ml" 184 6698 6739 "SimpleExpression.ml" 184 6698 6744
+type(
+  'h
+)
+"SimpleExpression.ml" 184 6698 6732 "SimpleExpression.ml" 184 6698 6744
+type(
+  'f
+)
+"SimpleExpression.ml" 184 6698 6757 "SimpleExpression.ml" 184 6698 6763
+type(
+  'h
+)
+"SimpleExpression.ml" 184 6698 6750 "SimpleExpression.ml" 184 6698 6763
+type(
+  'f
+)
+"SimpleExpression.ml" 184 6698 6717 "SimpleExpression.ml" 184 6698 6764
+type(
+  'f
+)
+"SimpleExpression.ml" 184 6698 6711 "SimpleExpression.ml" 184 6698 6764
+call(
+  tail
+)
+type(
+  'f
+)
+"SimpleExpression.ml" 182 6600 6602 "SimpleExpression.ml" 184 6698 6764
+type(
+  'f
+)
+"SimpleExpression.ml" 181 6559 6561 "SimpleExpression.ml" 184 6698 6764
+type(
+  'f
+)
+"SimpleExpression.ml" 161 5804 5806 "SimpleExpression.ml" 184 6698 6764
+type(
+  'f
+)
+"SimpleExpression.ml" 160 5784 5797 "SimpleExpression.ml" 184 6698 6764
+type(
+  'a -> 'f
+)

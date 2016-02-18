@@ -1,0 +1,1664 @@
+"Module.ml" 8 139 147 "Module.ml" 8 139 159
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'f * Ostap.Msg.Coord.t ]; .. >
+   as 'a, 'g, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  def declarations "Module.ml" 8 139 141 "Module.ml" 12 281 328
+)
+"Module.ml" 8 139 161 "Module.ml" 8 139 170
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def statement "Module.ml" 8 139 141 "Module.ml" 12 281 328
+)
+"Module.ml" 9 173 177 "Module.ml" 9 173 180
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"Module.ml" 9 173 181 "Module.ml" 9 173 189
+type(
+  string
+)
+"Module.ml" 9 173 177 "Module.ml" 9 173 190
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 9 173 177 "Module.ml" 9 173 190
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 9 173 177 "Module.ml" 9 173 190
+)
+"Module.ml" 9 173 191 "Module.ml" 9 173 196
+type(
+  string
+)
+ident(
+  def name "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+"Module.ml" 9 173 197 "Module.ml" 9 173 202
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.ident
+)
+"Module.ml" 9 173 203 "Module.ml" 9 173 206
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 9 173 203 "Module.ml" 9 173 206
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 9 173 203 "Module.ml" 9 173 206
+)
+"Module.ml" 10 208 214 "Module.ml" 10 208 220
+type(
+  'g
+)
+ident(
+  def decls "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+"Module.ml" 10 208 221 "Module.ml" 10 208 233
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref declarations "Module.ml" 8 139 147 "Module.ml" 8 139 159
+)
+"Module.ml" 11 235 241 "Module.ml" 11 235 247
+type(
+  'h list option
+)
+ident(
+  def body "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+"Module.ml" 11 235 250 "Module.ml" 11 235 253
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"Module.ml" 11 235 254 "Module.ml" 11 235 261
+type(
+  string
+)
+"Module.ml" 11 235 250 "Module.ml" 11 235 262
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 11 235 250 "Module.ml" 11 235 262
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 11 235 250 "Module.ml" 11 235 262
+)
+"Module.ml" 11 235 263 "Module.ml" 11 235 267
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"Module.ml" 11 235 268 "Module.ml" 11 235 277
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref statement "Module.ml" 8 139 161 "Module.ml" 8 139 170
+)
+"Module.ml" 11 235 263 "Module.ml" 11 235 278
+call(
+  tail
+)
+type(
+  'a -> ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 11 235 263 "Module.ml" 11 235 278
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 11 235 263 "Module.ml" 11 235 278
+)
+"Module.ml" 11 235 249 "Module.ml" 11 235 278
+call(
+  stack
+)
+type(
+  ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e -> ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Module.ml" 11 235 248 "Module.ml" 11 235 280
+call(
+  stack
+)
+type(
+  ('a, 'h list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'h list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'h list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"Module.ml" 12 281 285 "Module.ml" 12 281 294
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref moduleEnd "Module.ml" 8 139 141 "Module.ml" 14 333 398
+)
+"Module.ml" 12 281 295 "Module.ml" 12 281 299
+type(
+  string
+)
+ident(
+  int_ref name "Module.ml" 9 173 191 "Module.ml" 9 173 196
+)
+"Module.ml" 12 281 285 "Module.ml" 12 281 300
+call(
+  tail
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 12 281 285 "Module.ml" 12 281 300
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 12 281 285 "Module.ml" 12 281 300
+)
+"Module.ml" 12 281 302 "Module.ml" 12 281 306
+type(
+  string
+)
+ident(
+  int_ref name "Module.ml" 9 173 191 "Module.ml" 9 173 196
+)
+"Module.ml" 12 281 308 "Module.ml" 12 281 313
+type(
+  'g
+)
+ident(
+  int_ref decls "Module.ml" 10 208 214 "Module.ml" 10 208 220
+)
+"Module.ml" 12 281 315 "Module.ml" 12 281 322
+type(
+  'h list option -> 'h list
+)
+ident(
+  ext_ref Common.listify
+)
+"Module.ml" 12 281 323 "Module.ml" 12 281 327
+type(
+  'h list option
+)
+ident(
+  int_ref body "Module.ml" 11 235 241 "Module.ml" 11 235 247
+)
+"Module.ml" 12 281 315 "Module.ml" 12 281 327
+call(
+  stack
+)
+type(
+  'h list
+)
+"Module.ml" 12 281 302 "Module.ml" 12 281 327
+type(
+  string * 'g * 'h list
+)
+"Module.ml" 9 173 177 "Module.ml" 12 281 328
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  string ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'g -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'h list option ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  unit -> string * 'g * 'h list
+)
+type(
+  unit
+)
+ident(
+  def _0 "Module.ml" 12 281 302 "Module.ml" 12 281 327
+)
+type(
+  unit
+)
+type(
+  (unit -> string * 'g * 'h list) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h list option
+)
+ident(
+  def _1 "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+type(
+  ('a, 'h list option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('h list option ->
+   ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'g
+)
+ident(
+  def _2 "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('g -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+ident(
+  def _3 "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  string
+)
+ident(
+  def _4 "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (string ->
+   ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e
+)
+ident(
+  def _5 "Module.ml" 9 173 177 "Module.ml" 12 281 328
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Module.ml" 8 139 141 "Module.ml" 12 281 328
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 8 139 141 "Module.ml" 12 281 328
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 8 139 141 "Module.ml" 12 281 328
+)
+"Module.ml" 14 333 345 "Module.ml" 14 333 357
+type(
+  string
+)
+ident(
+  def expectedName "Module.ml" 14 333 335 "Module.ml" 14 333 398
+)
+"Module.ml" 14 333 361 "Module.ml" 14 333 364
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"Module.ml" 14 333 365 "Module.ml" 14 333 370
+type(
+  string
+)
+"Module.ml" 14 333 361 "Module.ml" 14 333 371
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 14 333 361 "Module.ml" 14 333 371
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 14 333 361 "Module.ml" 14 333 371
+)
+"Module.ml" 14 333 373 "Module.ml" 14 333 379
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.expect
+)
+"Module.ml" 14 333 380 "Module.ml" 14 333 392
+type(
+  string
+)
+ident(
+  int_ref expectedName "Module.ml" 14 333 345 "Module.ml" 14 333 357
+)
+"Module.ml" 14 333 373 "Module.ml" 14 333 393
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 14 333 373 "Module.ml" 14 333 393
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 14 333 373 "Module.ml" 14 333 393
+)
+"Module.ml" 14 333 395 "Module.ml" 14 333 398
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 14 333 395 "Module.ml" 14 333 398
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 14 333 395 "Module.ml" 14 333 398
+)
+"Module.ml" 14 333 360 "Module.ml" 14 333 398
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> unit
+)
+type(
+  unit
+)
+type(
+  'c
+)
+type(
+  ('c -> unit) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Module.ml" 14 333 335 "Module.ml" 14 333 398
+call(
+  tail
+)
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Module.ml" 14 333 335 "Module.ml" 14 333 398
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Module.ml" 14 333 335 "Module.ml" 14 333 398
+)
+"Module.ml" 8 139 141 "Module.ml" 14 333 398
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def moduleEnd "Module.ml" 7 131 131 "Module.ml" 1 0 -1
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'h, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, string * 'g * 'h list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def parse "Module.ml" 7 131 131 "Module.ml" 1 0 -1
+)
+"Module.ml" 23 534 538 "Module.ml" 23 534 543
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  string * 'a * 'b list -> Ostap.Pretty.printer
+)
+ident(
+  def print "Module.ml" 31 762 762 "Module.ml" 1 0 -1
+)
+"Module.ml" 23 534 544 "Module.ml" 23 534 545
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def d "Module.ml" 23 534 546 "Module.ml" 29 751 756
+)
+"Module.ml" 23 534 546 "Module.ml" 23 534 547
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  def s "Module.ml" 23 534 548 "Module.ml" 29 751 756
+)
+"Module.ml" 23 534 549 "Module.ml" 23 534 553
+type(
+  string
+)
+ident(
+  def name "Module.ml" 24 572 574 "Module.ml" 29 751 756
+)
+"Module.ml" 23 534 555 "Module.ml" 23 534 560
+type(
+  'a
+)
+ident(
+  def decls "Module.ml" 24 572 574 "Module.ml" 29 751 756
+)
+"Module.ml" 23 534 562 "Module.ml" 23 534 567
+type(
+  'b list
+)
+ident(
+  def stmts "Module.ml" 24 572 574 "Module.ml" 29 751 756
+)
+"Module.ml" 23 534 549 "Module.ml" 23 534 567
+type(
+  string * 'a * 'b list
+)
+"Module.ml" 24 572 574 "Module.ml" 24 572 580
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"Module.ml" 24 572 582 "Module.ml" 24 572 589
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"Module.ml" 24 572 590 "Module.ml" 24 572 602
+type(
+  (string -> string, unit, string) format
+)
+"Module.ml" 24 572 603 "Module.ml" 24 572 607
+type(
+  string
+)
+ident(
+  int_ref name "Module.ml" 23 534 549 "Module.ml" 23 534 553
+)
+"Module.ml" 24 572 581 "Module.ml" 24 572 608
+call(
+  stack
+)
+type(
+  string
+)
+"Module.ml" 24 572 610 "Module.ml" 24 572 617
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"Module.ml" 24 572 618 "Module.ml" 24 572 627
+type(
+  (string -> string, unit, string) format
+)
+"Module.ml" 24 572 628 "Module.ml" 24 572 632
+type(
+  string
+)
+ident(
+  int_ref name "Module.ml" 23 534 549 "Module.ml" 23 534 553
+)
+"Module.ml" 24 572 609 "Module.ml" 24 572 633
+call(
+  stack
+)
+type(
+  string
+)
+"Module.ml" 25 634 639 "Module.ml" 25 634 643
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"Module.ml" 26 646 653 "Module.ml" 26 646 654
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref d "Module.ml" 23 534 544 "Module.ml" 23 534 545
+)
+"Module.ml" 26 646 655 "Module.ml" 26 646 660
+type(
+  'a
+)
+ident(
+  int_ref decls "Module.ml" 23 534 555 "Module.ml" 23 534 560
+)
+"Module.ml" 26 646 653 "Module.ml" 26 646 660
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 27 663 676 "Module.ml" 27 663 681
+type(
+  'b list
+)
+ident(
+  int_ref stmts "Module.ml" 23 534 562 "Module.ml" 23 534 567
+)
+"Module.ml" 27 663 687 "Module.ml" 27 663 689
+type(
+  'b list
+)
+"Module.ml" 27 663 693 "Module.ml" 27 663 698
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.empty
+)
+"Module.ml" 27 663 701 "Module.ml" 27 663 702
+type(
+  'b list
+)
+"Module.ml" 27 663 706 "Module.ml" 27 663 711
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"Module.ml" 27 663 713 "Module.ml" 27 663 719
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"Module.ml" 27 663 720 "Module.ml" 27 663 727
+type(
+  string
+)
+"Module.ml" 27 663 712 "Module.ml" 27 663 728
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 27 663 730 "Module.ml" 27 663 734
+type(
+  ('b -> Ostap.Pretty.printer) -> 'b list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.mseq
+)
+"Module.ml" 27 663 735 "Module.ml" 27 663 736
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref s "Module.ml" 23 534 546 "Module.ml" 23 534 547
+)
+"Module.ml" 27 663 737 "Module.ml" 27 663 742
+type(
+  'b list
+)
+ident(
+  int_ref stmts "Module.ml" 23 534 562 "Module.ml" 23 534 567
+)
+"Module.ml" 27 663 729 "Module.ml" 27 663 743
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 27 663 706 "Module.ml" 27 663 743
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 27 663 670 "Module.ml" 27 663 743
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 25 634 644 "Module.ml" 28 744 750
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"Module.ml" 25 634 638 "Module.ml" 29 751 756
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 24 572 574 "Module.ml" 29 751 756
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 23 534 548 "Module.ml" 29 751 756
+type(
+  string * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 23 534 546 "Module.ml" 29 751 756
+type(
+  ('b -> Ostap.Pretty.printer) ->
+  string * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 23 534 544 "Module.ml" 29 751 756
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  string * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 31 762 766 "Module.ml" 31 762 773
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) -> 'c * 'a * 'b list -> Ostap.Pretty.printer
+)
+ident(
+  def print_c "Module.ml" 40 1048 1048 "Module.ml" 1 0 -1
+)
+"Module.ml" 31 762 774 "Module.ml" 31 762 775
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def d "Module.ml" 31 762 776 "Module.ml" 36 950 953
+)
+"Module.ml" 31 762 776 "Module.ml" 31 762 777
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  def s "Module.ml" 31 762 778 "Module.ml" 36 950 953
+)
+"Module.ml" 31 762 779 "Module.ml" 31 762 783
+type(
+  'c
+)
+ident(
+  def name "Module.ml" 32 802 804 "Module.ml" 36 950 953
+)
+"Module.ml" 31 762 785 "Module.ml" 31 762 790
+type(
+  'a
+)
+ident(
+  def decls "Module.ml" 32 802 804 "Module.ml" 36 950 953
+)
+"Module.ml" 31 762 792 "Module.ml" 31 762 797
+type(
+  'b list
+)
+ident(
+  def stmts "Module.ml" 32 802 804 "Module.ml" 36 950 953
+)
+"Module.ml" 31 762 779 "Module.ml" 31 762 797
+type(
+  'c * 'a * 'b list
+)
+"Module.ml" 32 802 804 "Module.ml" 32 802 808
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"Module.ml" 33 811 815 "Module.ml" 33 811 816
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref d "Module.ml" 31 762 774 "Module.ml" 31 762 775
+)
+"Module.ml" 33 811 817 "Module.ml" 33 811 822
+type(
+  'a
+)
+ident(
+  int_ref decls "Module.ml" 31 762 785 "Module.ml" 31 762 790
+)
+"Module.ml" 33 811 815 "Module.ml" 33 811 822
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 34 825 829 "Module.ml" 34 825 834
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"Module.ml" 34 825 836 "Module.ml" 34 825 842
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"Module.ml" 34 825 843 "Module.ml" 34 825 878
+type(
+  string
+)
+"Module.ml" 34 825 835 "Module.ml" 34 825 879
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 35 881 888 "Module.ml" 35 881 894
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"Module.ml" 35 881 895 "Module.ml" 35 881 898
+type(
+  string
+)
+"Module.ml" 35 881 899 "Module.ml" 35 881 902
+type(
+  string
+)
+"Module.ml" 35 881 904 "Module.ml" 35 881 920
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"Module.ml" 35 881 922 "Module.ml" 35 881 926
+type(
+  ('b -> Ostap.Pretty.printer) -> 'b list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.mseq
+)
+"Module.ml" 35 881 927 "Module.ml" 35 881 928
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref s "Module.ml" 31 762 776 "Module.ml" 31 762 777
+)
+"Module.ml" 35 881 929 "Module.ml" 35 881 934
+type(
+  'b list
+)
+ident(
+  int_ref stmts "Module.ml" 31 762 792 "Module.ml" 31 762 797
+)
+"Module.ml" 35 881 922 "Module.ml" 35 881 934
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 35 881 936 "Module.ml" 35 881 942
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"Module.ml" 35 881 943 "Module.ml" 35 881 946
+type(
+  string
+)
+"Module.ml" 35 881 936 "Module.ml" 35 881 946
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 35 881 921 "Module.ml" 35 881 947
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"Module.ml" 35 881 903 "Module.ml" 35 881 948
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 35 881 887 "Module.ml" 35 881 949
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 34 825 829 "Module.ml" 35 881 949
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 32 802 809 "Module.ml" 36 950 953
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"Module.ml" 32 802 804 "Module.ml" 36 950 953
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Module.ml" 31 762 778 "Module.ml" 36 950 953
+type(
+  'c * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 31 762 776 "Module.ml" 36 950 953
+type(
+  ('b -> Ostap.Pretty.printer) -> 'c * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 31 762 774 "Module.ml" 36 950 953
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) -> 'c * 'a * 'b list -> Ostap.Pretty.printer
+)
+"Module.ml" 42 1062 1066 "Module.ml" 42 1062 1073
+type(
+  'a ->
+  ('a -> 'b -> ('c, 'd) Checked.t * ('e, 'd) Checked.t) ->
+  ('f -> ('g, 'd) Checked.t) ->
+  'h * 'b * 'f list -> ('h * 'e * 'g list, 'd) Checked.t
+)
+ident(
+  def resolve "Module.ml" 49 1353 1353 "Module.ml" 1 0 -1
+)
+"Module.ml" 42 1062 1074 "Module.ml" 42 1062 1077
+type(
+  'a
+)
+ident(
+  def env "Module.ml" 42 1062 1078 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1078 "Module.ml" 42 1062 1082
+type(
+  'a -> 'b -> ('c, 'd) Checked.t * ('e, 'd) Checked.t
+)
+ident(
+  def decl "Module.ml" 42 1062 1083 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1083 "Module.ml" 42 1062 1087
+type(
+  'f -> ('g, 'd) Checked.t
+)
+ident(
+  def stmt "Module.ml" 42 1062 1088 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1089 "Module.ml" 42 1062 1093
+type(
+  'h
+)
+ident(
+  def name "Module.ml" 43 1111 1113 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1095 "Module.ml" 42 1062 1100
+type(
+  'b
+)
+ident(
+  def decls "Module.ml" 43 1111 1113 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1102 "Module.ml" 42 1062 1107
+type(
+  'f list
+)
+ident(
+  def stmts "Module.ml" 43 1111 1113 "Module.ml" 45 1211 1260
+)
+"Module.ml" 42 1062 1089 "Module.ml" 42 1062 1107
+type(
+  'h * 'b * 'f list
+)
+"Module.ml" 43 1111 1117 "Module.ml" 43 1111 1120
+type(
+  ('c, 'd) Checked.t
+)
+ident(
+  def msg "Module.ml" 44 1148 1150 "Module.ml" 45 1211 1260
+)
+"Module.ml" 43 1111 1122 "Module.ml" 43 1111 1127
+type(
+  ('e, 'd) Checked.t
+)
+ident(
+  def decls "Module.ml" 44 1148 1150 "Module.ml" 45 1211 1260
+)
+"Module.ml" 43 1111 1117 "Module.ml" 43 1111 1127
+type(
+  ('c, 'd) Checked.t * ('e, 'd) Checked.t
+)
+"Module.ml" 43 1111 1130 "Module.ml" 43 1111 1134
+type(
+  'a -> 'b -> ('c, 'd) Checked.t * ('e, 'd) Checked.t
+)
+ident(
+  int_ref decl "Module.ml" 42 1062 1078 "Module.ml" 42 1062 1082
+)
+"Module.ml" 43 1111 1135 "Module.ml" 43 1111 1138
+type(
+  'a
+)
+ident(
+  int_ref env "Module.ml" 42 1062 1074 "Module.ml" 42 1062 1077
+)
+"Module.ml" 43 1111 1139 "Module.ml" 43 1111 1144
+type(
+  'b
+)
+ident(
+  int_ref decls "Module.ml" 42 1062 1095 "Module.ml" 42 1062 1100
+)
+"Module.ml" 43 1111 1130 "Module.ml" 43 1111 1144
+call(
+  stack
+)
+type(
+  ('c, 'd) Checked.t * ('e, 'd) Checked.t
+)
+"Module.ml" 44 1148 1150 "Module.ml" 44 1148 1155
+type(
+  ('c, 'd) Checked.t * ('e * 'g list, 'd) Checked.t ->
+  ('c * ('e * 'g list), 'd) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"Module.ml" 44 1148 1157 "Module.ml" 44 1148 1160
+type(
+  ('c, 'd) Checked.t
+)
+ident(
+  int_ref msg "Module.ml" 43 1111 1117 "Module.ml" 43 1111 1120
+)
+"Module.ml" 44 1148 1162 "Module.ml" 44 1148 1167
+type(
+  ('e, 'd) Checked.t * ('g list, 'd) Checked.t ->
+  ('e * 'g list, 'd) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"Module.ml" 44 1148 1169 "Module.ml" 44 1148 1174
+type(
+  ('e, 'd) Checked.t
+)
+ident(
+  int_ref decls "Module.ml" 43 1111 1122 "Module.ml" 43 1111 1127
+)
+"Module.ml" 44 1148 1176 "Module.ml" 44 1148 1180
+type(
+  ('g, 'd) Checked.t list -> ('g list, 'd) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"Module.ml" 44 1148 1182 "Module.ml" 44 1148 1190
+type(
+  ('f -> ('g, 'd) Checked.t) -> 'f list -> ('g, 'd) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"Module.ml" 44 1148 1191 "Module.ml" 44 1148 1195
+type(
+  'f -> ('g, 'd) Checked.t
+)
+ident(
+  int_ref stmt "Module.ml" 42 1062 1083 "Module.ml" 42 1062 1087
+)
+"Module.ml" 44 1148 1196 "Module.ml" 44 1148 1201
+type(
+  'f list
+)
+ident(
+  int_ref stmts "Module.ml" 42 1062 1102 "Module.ml" 42 1062 1107
+)
+"Module.ml" 44 1148 1181 "Module.ml" 44 1148 1202
+call(
+  stack
+)
+type(
+  ('g, 'd) Checked.t list
+)
+"Module.ml" 44 1148 1176 "Module.ml" 44 1148 1202
+call(
+  stack
+)
+type(
+  ('g list, 'd) Checked.t
+)
+"Module.ml" 44 1148 1168 "Module.ml" 44 1148 1203
+type(
+  ('e, 'd) Checked.t * ('g list, 'd) Checked.t
+)
+"Module.ml" 44 1148 1162 "Module.ml" 44 1148 1203
+call(
+  stack
+)
+type(
+  ('e * 'g list, 'd) Checked.t
+)
+"Module.ml" 44 1148 1156 "Module.ml" 44 1148 1204
+type(
+  ('c, 'd) Checked.t * ('e * 'g list, 'd) Checked.t
+)
+"Module.ml" 44 1148 1150 "Module.ml" 44 1148 1204
+call(
+  stack
+)
+type(
+  ('c * ('e * 'g list), 'd) Checked.t
+)
+"Module.ml" 45 1211 1219 "Module.ml" 45 1211 1220
+type(
+  'c
+)
+"Module.ml" 45 1211 1223 "Module.ml" 45 1211 1228
+type(
+  'e
+)
+ident(
+  def decls "Module.ml" 45 1211 1241 "Module.ml" 45 1211 1259
+)
+"Module.ml" 45 1211 1230 "Module.ml" 45 1211 1235
+type(
+  'g list
+)
+ident(
+  def stmts "Module.ml" 45 1211 1241 "Module.ml" 45 1211 1259
+)
+"Module.ml" 45 1211 1223 "Module.ml" 45 1211 1235
+type(
+  'e * 'g list
+)
+"Module.ml" 45 1211 1219 "Module.ml" 45 1211 1236
+type(
+  'c * ('e * 'g list)
+)
+"Module.ml" 45 1211 1241 "Module.ml" 45 1211 1245
+type(
+  'h
+)
+ident(
+  int_ref name "Module.ml" 42 1062 1089 "Module.ml" 42 1062 1093
+)
+"Module.ml" 45 1211 1247 "Module.ml" 45 1211 1252
+type(
+  'e
+)
+ident(
+  int_ref decls "Module.ml" 45 1211 1223 "Module.ml" 45 1211 1228
+)
+"Module.ml" 45 1211 1254 "Module.ml" 45 1211 1259
+type(
+  'g list
+)
+ident(
+  int_ref stmts "Module.ml" 45 1211 1230 "Module.ml" 45 1211 1235
+)
+"Module.ml" 45 1211 1241 "Module.ml" 45 1211 1259
+type(
+  'h * 'e * 'g list
+)
+"Module.ml" 45 1211 1213 "Module.ml" 45 1211 1260
+type(
+  'c * ('e * 'g list) -> 'h * 'e * 'g list
+)
+"Module.ml" 44 1148 1150 "Module.ml" 45 1211 1260
+call(
+  tail
+)
+type(
+  ('h * 'e * 'g list, 'd) Checked.t
+)
+type(
+  ('c * ('e * 'g list), 'd) Checked.t ->
+  ('c * ('e * 'g list) -> 'h * 'e * 'g list) ->
+  ('h * 'e * 'g list, 'd) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"Module.ml" 43 1111 1113 "Module.ml" 45 1211 1260
+type(
+  ('h * 'e * 'g list, 'd) Checked.t
+)
+"Module.ml" 42 1062 1088 "Module.ml" 45 1211 1260
+type(
+  'h * 'b * 'f list -> ('h * 'e * 'g list, 'd) Checked.t
+)
+"Module.ml" 42 1062 1083 "Module.ml" 45 1211 1260
+type(
+  ('f -> ('g, 'd) Checked.t) ->
+  'h * 'b * 'f list -> ('h * 'e * 'g list, 'd) Checked.t
+)
+"Module.ml" 42 1062 1078 "Module.ml" 45 1211 1260
+type(
+  ('a -> 'b -> ('c, 'd) Checked.t * ('e, 'd) Checked.t) ->
+  ('f -> ('g, 'd) Checked.t) ->
+  'h * 'b * 'f list -> ('h * 'e * 'g list, 'd) Checked.t
+)
+"Module.ml" 42 1062 1074 "Module.ml" 45 1211 1260
+type(
+  'a ->
+  ('a -> 'b -> ('c, 'd) Checked.t * ('e, 'd) Checked.t) ->
+  ('f -> ('g, 'd) Checked.t) ->
+  'h * 'b * 'f list -> ('h * 'e * 'g list, 'd) Checked.t
+)
+"Module.ml" 49 1353 1357 "Module.ml" 49 1353 1366
+type(
+  ('a -> ('b, 'c) Checked.t) ->
+  ('d -> ('e, 'c) Checked.t) ->
+  'f * 'a * 'd list -> ('f * 'b * 'e list, 'c) Checked.t
+)
+ident(
+  def typecheck "Module.ml" 51 1455 1501 "Module.ml" 1 0 -1
+)
+"Module.ml" 49 1353 1367 "Module.ml" 49 1353 1371
+type(
+  'a -> ('b, 'c) Checked.t
+)
+ident(
+  def decl "Module.ml" 49 1353 1372 "Module.ml" 51 1455 1501
+)
+"Module.ml" 49 1353 1372 "Module.ml" 49 1353 1376
+type(
+  'd -> ('e, 'c) Checked.t
+)
+ident(
+  def stmt "Module.ml" 49 1353 1377 "Module.ml" 51 1455 1501
+)
+"Module.ml" 49 1353 1378 "Module.ml" 49 1353 1382
+type(
+  'f
+)
+ident(
+  def name "Module.ml" 50 1400 1402 "Module.ml" 51 1455 1501
+)
+"Module.ml" 49 1353 1384 "Module.ml" 49 1353 1389
+type(
+  'a
+)
+ident(
+  def decls "Module.ml" 50 1400 1402 "Module.ml" 51 1455 1501
+)
+"Module.ml" 49 1353 1391 "Module.ml" 49 1353 1396
+type(
+  'd list
+)
+ident(
+  def stmts "Module.ml" 50 1400 1402 "Module.ml" 51 1455 1501
+)
+"Module.ml" 49 1353 1378 "Module.ml" 49 1353 1396
+type(
+  'f * 'a * 'd list
+)
+"Module.ml" 50 1400 1402 "Module.ml" 50 1400 1407
+type(
+  ('b, 'c) Checked.t * ('e list, 'c) Checked.t ->
+  ('b * 'e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"Module.ml" 50 1400 1409 "Module.ml" 50 1400 1413
+type(
+  'a -> ('b, 'c) Checked.t
+)
+ident(
+  int_ref decl "Module.ml" 49 1353 1367 "Module.ml" 49 1353 1371
+)
+"Module.ml" 50 1400 1414 "Module.ml" 50 1400 1419
+type(
+  'a
+)
+ident(
+  int_ref decls "Module.ml" 49 1353 1384 "Module.ml" 49 1353 1389
+)
+"Module.ml" 50 1400 1409 "Module.ml" 50 1400 1419
+call(
+  stack
+)
+type(
+  ('b, 'c) Checked.t
+)
+"Module.ml" 50 1400 1421 "Module.ml" 50 1400 1425
+type(
+  ('e, 'c) Checked.t list -> ('e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"Module.ml" 50 1400 1427 "Module.ml" 50 1400 1435
+type(
+  ('d -> ('e, 'c) Checked.t) -> 'd list -> ('e, 'c) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"Module.ml" 50 1400 1436 "Module.ml" 50 1400 1440
+type(
+  'd -> ('e, 'c) Checked.t
+)
+ident(
+  int_ref stmt "Module.ml" 49 1353 1372 "Module.ml" 49 1353 1376
+)
+"Module.ml" 50 1400 1441 "Module.ml" 50 1400 1446
+type(
+  'd list
+)
+ident(
+  int_ref stmts "Module.ml" 49 1353 1391 "Module.ml" 49 1353 1396
+)
+"Module.ml" 50 1400 1426 "Module.ml" 50 1400 1447
+call(
+  stack
+)
+type(
+  ('e, 'c) Checked.t list
+)
+"Module.ml" 50 1400 1421 "Module.ml" 50 1400 1447
+call(
+  stack
+)
+type(
+  ('e list, 'c) Checked.t
+)
+"Module.ml" 50 1400 1408 "Module.ml" 50 1400 1448
+type(
+  ('b, 'c) Checked.t * ('e list, 'c) Checked.t
+)
+"Module.ml" 50 1400 1402 "Module.ml" 50 1400 1448
+call(
+  stack
+)
+type(
+  ('b * 'e list, 'c) Checked.t
+)
+"Module.ml" 51 1455 1463 "Module.ml" 51 1455 1468
+type(
+  'b
+)
+ident(
+  def decls "Module.ml" 51 1455 1480 "Module.ml" 51 1455 1500
+)
+"Module.ml" 51 1455 1470 "Module.ml" 51 1455 1475
+type(
+  'e list
+)
+ident(
+  def stmts "Module.ml" 51 1455 1480 "Module.ml" 51 1455 1500
+)
+"Module.ml" 51 1455 1463 "Module.ml" 51 1455 1475
+type(
+  'b * 'e list
+)
+"Module.ml" 51 1455 1481 "Module.ml" 51 1455 1485
+type(
+  'f
+)
+ident(
+  int_ref name "Module.ml" 49 1353 1378 "Module.ml" 49 1353 1382
+)
+"Module.ml" 51 1455 1487 "Module.ml" 51 1455 1492
+type(
+  'b
+)
+ident(
+  int_ref decls "Module.ml" 51 1455 1463 "Module.ml" 51 1455 1468
+)
+"Module.ml" 51 1455 1494 "Module.ml" 51 1455 1499
+type(
+  'e list
+)
+ident(
+  int_ref stmts "Module.ml" 51 1455 1470 "Module.ml" 51 1455 1475
+)
+"Module.ml" 51 1455 1480 "Module.ml" 51 1455 1500
+type(
+  'f * 'b * 'e list
+)
+"Module.ml" 51 1455 1457 "Module.ml" 51 1455 1501
+type(
+  'b * 'e list -> 'f * 'b * 'e list
+)
+"Module.ml" 50 1400 1402 "Module.ml" 51 1455 1501
+call(
+  tail
+)
+type(
+  ('f * 'b * 'e list, 'c) Checked.t
+)
+type(
+  ('b * 'e list, 'c) Checked.t ->
+  ('b * 'e list -> 'f * 'b * 'e list) -> ('f * 'b * 'e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"Module.ml" 49 1353 1377 "Module.ml" 51 1455 1501
+type(
+  'f * 'a * 'd list -> ('f * 'b * 'e list, 'c) Checked.t
+)
+"Module.ml" 49 1353 1372 "Module.ml" 51 1455 1501
+type(
+  ('d -> ('e, 'c) Checked.t) ->
+  'f * 'a * 'd list -> ('f * 'b * 'e list, 'c) Checked.t
+)
+"Module.ml" 49 1353 1367 "Module.ml" 51 1455 1501
+type(
+  ('a -> ('b, 'c) Checked.t) ->
+  ('d -> ('e, 'c) Checked.t) ->
+  'f * 'a * 'd list -> ('f * 'b * 'e list, 'c) Checked.t
+)

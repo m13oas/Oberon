@@ -1,0 +1,46 @@
+MODULE Test;
+  CONST p = 0+1+2;
+  VAR x, y, z, i : INTEGER;
+      f : BOOLEAN;
+
+  PROCEDURE Mok (VAR x, y, z : INTEGER; a, b, c : BOOLEAN);
+  CONST o = 0;
+  VAR t : INTEGER;
+  PROCEDURE Inner;
+  BEGIN
+    t := 0
+  END Inner;
+  BEGIN    
+    x := 0
+  END Mok;
+
+  PROCEDURE Inc (x : INTEGER);
+  BEGIN
+    Mok (z, y, z, TRUE, FALSE, TRUE)
+  END Inc;
+
+  BEGIN
+    Mok (y, y, y, TRUE, TRUE, TRUE);
+    IF (x > 0) & f THEN y := x ELSE y := z END;
+    WHILE f DO
+      IF f THEN x := 1
+      ELSIF f THEN x := 2; y := 4*(x+z)
+      ELSIF f THEN x := 3 ELSE y := 0
+      END
+    END;
+
+    CASE x OF
+      1: x := 100 |
+      2: x := 200 |
+      3..5: x := 400; y := x+z
+      ELSE x := 0
+    END;
+
+   
+    WHILE x < 100 DO x := x+1 END;
+
+    FOR i := 0 TO 200 DO
+      x := x+1; y := x * 100 DIV 2
+    END
+
+END Test.

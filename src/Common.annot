@@ -1,0 +1,3734 @@
+"Common.ml" 4 27 31 "Common.ml" 4 27 38
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+ident(
+  def keyword "Common.ml" 17 448 448 "Common.ml" 1 0 -1
+)
+"Common.ml" 5 42 59 "Common.ml" 5 42 76
+call(
+  stack
+)
+"Common.ml" 6 80 86 "Common.ml" 6 80 87
+type(
+  S.t
+)
+ident(
+  def s "Common.ml" 15 393 395 "Common.ml" 15 393 446
+)
+"Common.ml" 7 91 95 "Common.ml" 7 91 105
+type(
+  (S.elt -> S.t -> S.t) -> S.elt list -> S.t -> S.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"Common.ml" 8 106 112 "Common.ml" 8 106 117
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"Common.ml" 9 123 130 "Common.ml" 9 123 134
+type(
+  S.elt
+)
+"Common.ml" 9 123 139 "Common.ml" 9 123 145
+type(
+  S.elt
+)
+"Common.ml" 9 123 147 "Common.ml" 9 123 154
+type(
+  S.elt
+)
+"Common.ml" 9 123 156 "Common.ml" 9 123 162
+type(
+  S.elt
+)
+"Common.ml" 9 123 166 "Common.ml" 9 123 171
+type(
+  S.elt
+)
+"Common.ml" 9 123 174 "Common.ml" 9 123 182
+type(
+  S.elt
+)
+"Common.ml" 9 123 187 "Common.ml" 9 123 192
+type(
+  S.elt
+)
+"Common.ml" 9 123 198 "Common.ml" 9 123 205
+type(
+  S.elt
+)
+"Common.ml" 9 123 209 "Common.ml" 9 123 215
+type(
+  S.elt
+)
+"Common.ml" 10 218 225 "Common.ml" 10 218 232
+type(
+  S.elt
+)
+"Common.ml" 10 218 234 "Common.ml" 10 218 238
+type(
+  S.elt
+)
+"Common.ml" 10 218 242 "Common.ml" 10 218 247
+type(
+  S.elt
+)
+"Common.ml" 10 218 251 "Common.ml" 10 218 256
+type(
+  S.elt
+)
+"Common.ml" 10 218 261 "Common.ml" 10 218 265
+type(
+  S.elt
+)
+"Common.ml" 10 218 269 "Common.ml" 10 218 280
+type(
+  S.elt
+)
+"Common.ml" 10 218 282 "Common.ml" 10 218 288
+type(
+  S.elt
+)
+"Common.ml" 10 218 293 "Common.ml" 10 218 297
+type(
+  S.elt
+)
+"Common.ml" 10 218 304 "Common.ml" 10 218 309
+type(
+  S.elt
+)
+"Common.ml" 11 313 320 "Common.ml" 11 313 324
+type(
+  S.elt
+)
+"Common.ml" 11 313 329 "Common.ml" 11 313 333
+type(
+  S.elt
+)
+"Common.ml" 11 313 337 "Common.ml" 11 313 344
+type(
+  S.elt
+)
+"Common.ml" 11 313 346 "Common.ml" 11 313 354
+type(
+  S.elt
+)
+"Common.ml" 11 313 356 "Common.ml" 11 313 363
+type(
+  S.elt
+)
+"Common.ml" 9 123 129 "Common.ml" 12 364 371
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+type(
+  S.elt list
+)
+"Common.ml" 13 373 379 "Common.ml" 13 373 386
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"Common.ml" 7 91 95 "Common.ml" 13 373 386
+call(
+  stack
+)
+type(
+  S.t
+)
+"Common.ml" 15 393 399 "Common.ml" 15 393 403
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def name "Common.ml" 15 393 407 "Common.ml" 15 393 446
+)
+"Common.ml" 15 393 407 "Common.ml" 15 393 412
+type(
+  S.elt -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"Common.ml" 15 393 414 "Common.ml" 15 393 438
+type(
+  Ostap.Matcher.Token.t -> S.elt
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"Common.ml" 15 393 439 "Common.ml" 15 393 443
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref name "Common.ml" 15 393 399 "Common.ml" 15 393 403
+)
+"Common.ml" 15 393 413 "Common.ml" 15 393 444
+call(
+  stack
+)
+type(
+  S.elt
+)
+"Common.ml" 15 393 445 "Common.ml" 15 393 446
+type(
+  S.t
+)
+ident(
+  int_ref s "Common.ml" 6 80 86 "Common.ml" 6 80 87
+)
+"Common.ml" 15 393 407 "Common.ml" 15 393 446
+call(
+  tail
+)
+type(
+  bool
+)
+"Common.ml" 15 393 395 "Common.ml" 15 393 446
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+"Common.ml" 6 80 82 "Common.ml" 15 393 446
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+"Common.ml" 5 42 44 "Common.ml" 15 393 446
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+"Common.ml" 23 493 547 "Common.ml" 23 493 551
+type(
+  'a -> int
+)
+ident(
+  def hash "Common.ml" 23 493 567 "Common.ml" 23 493 587
+)
+"Common.ml" 23 493 554 "Common.ml" 23 493 566
+type(
+  'a -> int
+)
+ident(
+  ext_ref Hashtbl.hash
+)
+"Common.ml" 23 493 571 "Common.ml" 23 493 576
+type(
+  'b -> 'b -> bool
+)
+ident(
+  def equal "Common.ml" 23 493 583 "Common.ml" 23 493 587
+)
+"Common.ml" 23 493 579 "Common.ml" 23 493 583
+type(
+  'b -> 'b -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"Common.ml" 23 493 508 "Common.ml" 23 493 588
+call(
+  stack
+)
+"Common.ml" 25 590 599 "Common.ml" 25 590 600
+type(
+  Ostap.Msg.Locator.t H.t
+)
+ident(
+  def t "Common.ml" 26 638 642 "Common.ml" 30 795 800
+)
+"Common.ml" 25 590 624 "Common.ml" 25 590 632
+type(
+  int -> Ostap.Msg.Locator.t H.t
+)
+ident(
+  ext_ref H.create
+)
+"Common.ml" 25 590 633 "Common.ml" 25 590 637
+type(
+  int
+)
+"Common.ml" 25 590 624 "Common.ml" 25 590 637
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t H.t
+)
+"Common.ml" 26 638 646 "Common.ml" 26 638 652
+type(
+  'c -> Ostap.Msg.Locator.t -> unit
+)
+ident(
+  def attach "Common.ml" 27 684 688 "Common.ml" 30 795 800
+)
+"Common.ml" 26 638 654 "Common.ml" 26 638 655
+type(
+  'c
+)
+ident(
+  def k "Common.ml" 26 638 656 "Common.ml" 26 638 683
+)
+"Common.ml" 26 638 656 "Common.ml" 26 638 657
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def v "Common.ml" 26 638 660 "Common.ml" 26 638 683
+)
+"Common.ml" 26 638 660 "Common.ml" 26 638 665
+type(
+  Ostap.Msg.Locator.t H.t -> H.key -> Ostap.Msg.Locator.t -> unit
+)
+ident(
+  ext_ref H.add
+)
+"Common.ml" 26 638 666 "Common.ml" 26 638 667
+type(
+  Ostap.Msg.Locator.t H.t
+)
+ident(
+  int_ref t "Common.ml" 25 590 599 "Common.ml" 25 590 600
+)
+"Common.ml" 26 638 669 "Common.ml" 26 638 678
+type(
+  'c -> H.key
+)
+ident(
+  ext_ref Obj.magic
+)
+"Common.ml" 26 638 679 "Common.ml" 26 638 680
+type(
+  'c
+)
+ident(
+  int_ref k "Common.ml" 26 638 654 "Common.ml" 26 638 655
+)
+"Common.ml" 26 638 668 "Common.ml" 26 638 681
+type(
+  H.key
+)
+"Common.ml" 26 638 682 "Common.ml" 26 638 683
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref v "Common.ml" 26 638 656 "Common.ml" 26 638 657
+)
+"Common.ml" 26 638 660 "Common.ml" 26 638 683
+call(
+  tail
+)
+type(
+  unit
+)
+"Common.ml" 26 638 656 "Common.ml" 26 638 683
+type(
+  Ostap.Msg.Locator.t -> unit
+)
+"Common.ml" 26 638 654 "Common.ml" 26 638 683
+type(
+  'c -> Ostap.Msg.Locator.t -> unit
+)
+"Common.ml" 27 684 692 "Common.ml" 27 684 699
+type(
+  'd -> Ostap.Msg.Locator.t
+)
+ident(
+  def ulocate "Common.ml" 28 729 733 "Common.ml" 30 795 800
+)
+"Common.ml" 27 684 700 "Common.ml" 27 684 701
+type(
+  'd
+)
+ident(
+  def k "Common.ml" 27 684 706 "Common.ml" 27 684 728
+)
+"Common.ml" 27 684 706 "Common.ml" 27 684 712
+type(
+  Ostap.Msg.Locator.t H.t -> H.key -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref H.find
+)
+"Common.ml" 27 684 713 "Common.ml" 27 684 714
+type(
+  Ostap.Msg.Locator.t H.t
+)
+ident(
+  int_ref t "Common.ml" 25 590 599 "Common.ml" 25 590 600
+)
+"Common.ml" 27 684 716 "Common.ml" 27 684 725
+type(
+  'd -> H.key
+)
+ident(
+  ext_ref Obj.magic
+)
+"Common.ml" 27 684 726 "Common.ml" 27 684 727
+type(
+  'd
+)
+ident(
+  int_ref k "Common.ml" 27 684 700 "Common.ml" 27 684 701
+)
+"Common.ml" 27 684 715 "Common.ml" 27 684 728
+type(
+  H.key
+)
+"Common.ml" 27 684 706 "Common.ml" 27 684 728
+call(
+  tail
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 27 684 700 "Common.ml" 27 684 728
+type(
+  'd -> Ostap.Msg.Locator.t
+)
+"Common.ml" 28 729 737 "Common.ml" 28 729 743
+type(
+  'e -> Ostap.Msg.Locator.t
+)
+ident(
+  def locate "Common.ml" 28 729 793 "Common.ml" 30 795 800
+)
+"Common.ml" 28 729 745 "Common.ml" 28 729 746
+type(
+  'e
+)
+ident(
+  def k "Common.ml" 28 729 751 "Common.ml" 28 729 793
+)
+"Common.ml" 28 729 755 "Common.ml" 28 729 762
+type(
+  'e -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref ulocate "Common.ml" 27 684 692 "Common.ml" 27 684 699
+)
+"Common.ml" 28 729 763 "Common.ml" 28 729 764
+type(
+  'e
+)
+ident(
+  int_ref k "Common.ml" 28 729 745 "Common.ml" 28 729 746
+)
+"Common.ml" 28 729 755 "Common.ml" 28 729 764
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 28 729 770 "Common.ml" 28 729 779
+type(
+  exn
+)
+"Common.ml" 28 729 783 "Common.ml" 28 729 793
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 28 729 751 "Common.ml" 28 729 793
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 28 729 745 "Common.ml" 28 729 793
+type(
+  'e -> Ostap.Msg.Locator.t
+)
+"Common.ml" 33 811 817 "Common.ml" 33 811 821
+type(
+  (< coord : 'a; loc : Ostap.Msg.Locator.t; pos : 'b;
+     skip : 'b -> 'a -> [> `Skipped of 'c * Ostap.Msg.Coord.t ]; .. >,
+   'd, < add : 'e -> 'e; .. > as 'e)
+  Ostap.Combinators.parse
+)
+ident(
+  def item "Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+)
+"Common.ml" 33 811 824 "Common.ml" 33 811 826
+type(
+  < coord : 'a; loc : Ostap.Msg.Locator.t; pos : 'b;
+    skip : 'b -> 'a -> [> `Skipped of 'c * Ostap.Msg.Coord.t ]; .. >
+  as 'f
+)
+ident(
+  def l "Common.ml" 33 811 824 "Common.ml" 37 1010 1013
+)
+"Common.ml" 33 811 826 "Common.ml" 33 811 827
+type(
+  ('f, 'f, 'e) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.lift
+)
+"Common.ml" 33 811 828 "Common.ml" 33 811 830
+type(
+  'd
+)
+ident(
+  def x "Common.ml" 33 811 824 "Common.ml" 37 1010 1013
+)
+"Common.ml" 33 811 830 "Common.ml" 33 811 834
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+ident(
+  int_ref item "Common.ml" 33 811 817 "Common.ml" 33 811 821
+)
+"Common.ml" 33 811 835 "Common.ml" 33 811 837
+type(
+  'f
+)
+ident(
+  def r "Common.ml" 34 841 845 "Common.ml" 36 1004 1009
+)
+"Common.ml" 33 811 837 "Common.ml" 33 811 838
+type(
+  ('f, 'f, 'e) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.lift
+)
+"Common.ml" 34 841 849 "Common.ml" 34 841 852
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def loc "Common.ml" 35 947 951 "Common.ml" 36 1004 1009
+)
+"Common.ml" 34 841 861 "Common.ml" 34 841 862
+type(
+  'f
+)
+ident(
+  int_ref l "Common.ml" 33 811 824 "Common.ml" 33 811 826
+)
+"Common.ml" 34 841 861 "Common.ml" 34 841 867
+call(
+  stack
+)
+type(
+  'b -> 'a -> ([> `Skipped of 'c * Ostap.Msg.Coord.t ] as 'g)
+)
+"Common.ml" 34 841 868 "Common.ml" 34 841 869
+type(
+  'f
+)
+ident(
+  int_ref l "Common.ml" 33 811 824 "Common.ml" 33 811 826
+)
+"Common.ml" 34 841 868 "Common.ml" 34 841 873
+call(
+  stack
+)
+type(
+  'b
+)
+"Common.ml" 34 841 874 "Common.ml" 34 841 875
+type(
+  'f
+)
+ident(
+  int_ref l "Common.ml" 33 811 824 "Common.ml" 33 811 826
+)
+"Common.ml" 34 841 874 "Common.ml" 34 841 881
+call(
+  stack
+)
+type(
+  'a
+)
+"Common.ml" 34 841 861 "Common.ml" 34 841 881
+type(
+  'g
+)
+"Common.ml" 34 841 897 "Common.ml" 34 841 898
+type(
+  'c
+)
+"Common.ml" 34 841 900 "Common.ml" 34 841 903
+type(
+  Ostap.Msg.Coord.t
+)
+ident(
+  def loc "Common.ml" 34 841 908 "Common.ml" 34 841 929
+)
+"Common.ml" 34 841 897 "Common.ml" 34 841 903
+type(
+  'c * Ostap.Msg.Coord.t
+)
+"Common.ml" 34 841 887 "Common.ml" 34 841 904
+type(
+  'g
+)
+"Common.ml" 34 841 926 "Common.ml" 34 841 929
+type(
+  Ostap.Msg.Coord.t
+)
+ident(
+  int_ref loc "Common.ml" 34 841 900 "Common.ml" 34 841 903
+)
+"Common.ml" 34 841 908 "Common.ml" 34 841 929
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 34 841 932 "Common.ml" 34 841 933
+type(
+  'g
+)
+"Common.ml" 34 841 937 "Common.ml" 34 841 938
+type(
+  'f
+)
+ident(
+  int_ref l "Common.ml" 33 811 824 "Common.ml" 33 811 826
+)
+"Common.ml" 34 841 937 "Common.ml" 34 841 942
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 34 841 855 "Common.ml" 34 841 942
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 35 947 951 "Common.ml" 35 947 962
+type(
+  'd -> Ostap.Msg.Locator.t -> unit
+)
+ident(
+  int_ref Trap.attach "Common.ml" 26 638 646 "Common.ml" 26 638 652
+)
+"Common.ml" 35 947 963 "Common.ml" 35 947 964
+type(
+  'd
+)
+ident(
+  int_ref x "Common.ml" 33 811 828 "Common.ml" 33 811 830
+)
+"Common.ml" 35 947 966 "Common.ml" 35 947 990
+type(
+  Ostap.Msg.Locator.t -> Ostap.Msg.Locator.t -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Ostap.Msg.Locator.makeInterval
+)
+"Common.ml" 35 947 991 "Common.ml" 35 947 994
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref loc "Common.ml" 34 841 849 "Common.ml" 34 841 852
+)
+"Common.ml" 35 947 995 "Common.ml" 35 947 996
+type(
+  'f
+)
+ident(
+  int_ref r "Common.ml" 33 811 835 "Common.ml" 33 811 837
+)
+"Common.ml" 35 947 995 "Common.ml" 35 947 1000
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 35 947 965 "Common.ml" 35 947 1001
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 35 947 951 "Common.ml" 35 947 1001
+call(
+  stack
+)
+type(
+  unit
+)
+"Common.ml" 36 1004 1008 "Common.ml" 36 1004 1009
+type(
+  'd
+)
+ident(
+  int_ref x "Common.ml" 33 811 828 "Common.ml" 33 811 830
+)
+"Common.ml" 35 947 951 "Common.ml" 36 1004 1009
+type(
+  'd
+)
+"Common.ml" 34 841 845 "Common.ml" 36 1004 1009
+type(
+  'd
+)
+"Common.ml" 33 811 824 "Common.ml" 37 1010 1013
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'f -> ('f, 'd, 'e) Ostap.Combinators.parse
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+type(
+  'd -> ('f, 'd, 'e) Ostap.Combinators.parse
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+type(
+  'f -> 'd
+)
+type(
+  'f
+)
+ident(
+  def _0 "Common.ml" 34 841 845 "Common.ml" 36 1004 1009
+)
+type(
+  ('f -> 'd) ->
+  ('f, 'f, 'e) Ostap.Combinators.parse ->
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'd
+)
+ident(
+  def _1 "Common.ml" 33 811 824 "Common.ml" 37 1010 1013
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse ->
+  ('d -> ('f, 'd, 'e) Ostap.Combinators.parse) ->
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'f
+)
+ident(
+  def _2 "Common.ml" 33 811 824 "Common.ml" 37 1010 1013
+)
+type(
+  ('f, 'f, 'e) Ostap.Combinators.parse ->
+  ('f -> ('f, 'd, 'e) Ostap.Combinators.parse) ->
+  ('f, 'd, 'e) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+call(
+  tail
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse ->
+  'f -> ('f, 'd, 'e) Ostap.Combinators.result
+)
+type(
+  'f -> ('f, 'd, 'e) Ostap.Combinators.result
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.result
+)
+type(
+  'f
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+)
+type(
+  'f
+)
+ident(
+  def _ostap_stream "Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+)
+type(
+  ('f, 'd, 'e) Ostap.Combinators.parse ->
+  'f -> ('f, 'd, 'e) Ostap.Combinators.result
+)
+ident(
+  def loc "Common.ml" 32 803 803 "Common.ml" 1 0 -1
+)
+"Common.ml" 41 1025 1034 "Common.ml" 41 1025 1037
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t; pos : 'c;
+     skip : 'c -> 'b -> [> `Skipped of 'd * Ostap.Msg.Coord.t ]; .. >
+   as 'a, string, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  'a -> ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref loc "Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+)
+"Common.ml" 41 1025 1045 "Common.ml" 41 1025 1048
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def id "Common.ml" 42 1077 1109 "Common.ml" 43 1123 1217
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def id "Common.ml" 41 1025 1057 "Common.ml" 41 1025 1073
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def id "Common.ml" 44 1218 1254 "Common.ml" 44 1218 1281
+)
+"Common.ml" 41 1025 1048 "Common.ml" 41 1025 1053
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 41 1025 1048 "Common.ml" 41 1025 1053
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 41 1025 1048 "Common.ml" 41 1025 1053
+)
+"Common.ml" 41 1025 1057 "Common.ml" 41 1025 1060
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"Common.ml" 41 1025 1062 "Common.ml" 41 1025 1069
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+ident(
+  int_ref keyword "Common.ml" 4 27 31 "Common.ml" 4 27 38
+)
+"Common.ml" 41 1025 1070 "Common.ml" 41 1025 1072
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref id "Common.ml" 41 1025 1045 "Common.ml" 41 1025 1048
+)
+"Common.ml" 41 1025 1061 "Common.ml" 41 1025 1073
+call(
+  stack
+)
+type(
+  bool
+)
+"Common.ml" 41 1025 1057 "Common.ml" 41 1025 1073
+type(
+  bool
+)
+"Common.ml" 42 1077 1109 "Common.ml" 42 1077 1121
+type(
+  Ostap.Msg.t -> Ostap.Reason.t
+)
+"Common.ml" 43 1123 1158 "Common.ml" 43 1123 1166
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"Common.ml" 43 1123 1167 "Common.ml" 43 1123 1188
+type(
+  string
+)
+"Common.ml" 43 1123 1189 "Common.ml" 43 1123 1193
+type(
+  string array
+)
+"Common.ml" 43 1123 1195 "Common.ml" 43 1123 1212
+type(
+  Ostap.Matcher.Token.t -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Ostap.Matcher.Token.loc
+)
+"Common.ml" 43 1123 1213 "Common.ml" 43 1123 1215
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref id "Common.ml" 41 1025 1045 "Common.ml" 41 1025 1048
+)
+"Common.ml" 43 1123 1194 "Common.ml" 43 1123 1216
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 43 1123 1157 "Common.ml" 43 1123 1217
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"Common.ml" 42 1077 1109 "Common.ml" 43 1123 1217
+call(
+  tail
+)
+type(
+  Ostap.Reason.t
+)
+"Common.ml" 44 1218 1254 "Common.ml" 44 1218 1278
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"Common.ml" 44 1218 1279 "Common.ml" 44 1218 1281
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref id "Common.ml" 41 1025 1045 "Common.ml" 41 1025 1048
+)
+"Common.ml" 44 1218 1254 "Common.ml" 44 1218 1281
+call(
+  tail
+)
+type(
+  string
+)
+"Common.ml" 41 1025 1045 "Common.ml" 44 1218 1282
+call(
+  stack
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  Ostap.Matcher.Token.t -> Ostap.Reason.t
+)
+type(
+  (Ostap.Matcher.Token.t -> Ostap.Reason.t) option
+)
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+type(
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (Ostap.Matcher.Token.t -> bool) ->
+  (Ostap.Matcher.Token.t -> Ostap.Reason.t) option ->
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.guard
+)
+type(
+  Ostap.Matcher.Token.t -> string
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _0 "Common.ml" 44 1218 1254 "Common.ml" 44 1218 1281
+)
+type(
+  (Ostap.Matcher.Token.t -> string) ->
+  ('a, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"Common.ml" 41 1025 1038 "Common.ml" 44 1218 1283
+call(
+  tail
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 41 1025 1038 "Common.ml" 44 1218 1283
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 41 1025 1038 "Common.ml" 44 1218 1283
+)
+"Common.ml" 41 1025 1034 "Common.ml" 44 1218 1284
+call(
+  tail
+)
+type(
+  'a -> ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 41 1025 1034 "Common.ml" 44 1218 1284
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 41 1025 1034 "Common.ml" 44 1218 1284
+)
+"Common.ml" 41 1025 1027 "Common.ml" 44 1218 1284
+type(
+  'a -> ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 41 1025 1027 "Common.ml" 44 1218 1284
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 41 1025 1027 "Common.ml" 44 1218 1284
+)
+"Common.ml" 45 1286 1297 "Common.ml" 45 1286 1300
+type(
+  (< coord : 'f;
+     getLITERAL : ('e, Ostap.Matcher.Token.t, < add : 'g -> 'g; .. > as 'g)
+                  Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t; pos : 'h;
+     skip : 'h -> 'f -> [> `Skipped of 'i * Ostap.Msg.Coord.t ]; .. >
+   as 'e, string, 'g)
+  Ostap.Combinators.parse -> 'e -> ('e, string, 'g) Ostap.Combinators.result
+)
+ident(
+  int_ref loc "Common.ml" 33 811 813 "Common.ml" 37 1010 1013
+)
+"Common.ml" 45 1286 1308 "Common.ml" 45 1286 1311
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def lt "Common.ml" 45 1286 1320 "Common.ml" 45 1286 1347
+)
+"Common.ml" 45 1286 1311 "Common.ml" 45 1286 1318
+call(
+  tail
+)
+type(
+  ('e, Ostap.Matcher.Token.t, 'g) Ostap.Combinators.parse
+)
+type(
+  ('e, Ostap.Matcher.Token.t, 'g) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 45 1286 1311 "Common.ml" 45 1286 1318
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "Common.ml" 45 1286 1311 "Common.ml" 45 1286 1318
+)
+"Common.ml" 45 1286 1320 "Common.ml" 45 1286 1344
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"Common.ml" 45 1286 1345 "Common.ml" 45 1286 1347
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref lt "Common.ml" 45 1286 1308 "Common.ml" 45 1286 1311
+)
+"Common.ml" 45 1286 1320 "Common.ml" 45 1286 1347
+call(
+  tail
+)
+type(
+  string
+)
+"Common.ml" 45 1286 1308 "Common.ml" 45 1286 1348
+type(
+  Ostap.Matcher.Token.t -> string
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _0 "Common.ml" 45 1286 1320 "Common.ml" 45 1286 1347
+)
+type(
+  (Ostap.Matcher.Token.t -> string) ->
+  ('e, Ostap.Matcher.Token.t, 'g) Ostap.Combinators.parse ->
+  ('e, string, 'g) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"Common.ml" 45 1286 1301 "Common.ml" 45 1286 1349
+call(
+  tail
+)
+type(
+  ('e, string, 'g) Ostap.Combinators.parse
+)
+type(
+  ('e, string, 'g) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 45 1286 1301 "Common.ml" 45 1286 1349
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "Common.ml" 45 1286 1301 "Common.ml" 45 1286 1349
+)
+"Common.ml" 45 1286 1297 "Common.ml" 45 1286 1350
+call(
+  tail
+)
+type(
+  'e -> ('e, string, 'g) Ostap.Combinators.result
+)
+type(
+  ('e, string, 'g) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 45 1286 1297 "Common.ml" 45 1286 1350
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "Common.ml" 45 1286 1297 "Common.ml" 45 1286 1350
+)
+"Common.ml" 45 1286 1288 "Common.ml" 45 1286 1350
+type(
+  'e -> ('e, string, 'g) Ostap.Combinators.result
+)
+type(
+  ('e, string, 'g) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 45 1286 1288 "Common.ml" 45 1286 1350
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "Common.ml" 45 1286 1288 "Common.ml" 45 1286 1350
+)
+"Common.ml" 46 1352 1358 "Common.ml" 46 1352 1362
+type(
+  (< look : string ->
+            ('j, 'k, < add : 'l -> 'l; .. > as 'l) Ostap.Combinators.result;
+     .. >
+   as 'j, 'm, 'l)
+  Ostap.Combinators.parse
+)
+ident(
+  def item "Common.ml" 46 1352 1354 "Common.ml" 46 1352 1390
+)
+"Common.ml" 46 1352 1365 "Common.ml" 46 1352 1371
+type(
+  ('j, 'k, 'l) Ostap.Combinators.parse ->
+  ('j, 'm, 'l) Ostap.Combinators.parse ->
+  'j -> ('j, 'm list, 'l) Ostap.Combinators.result
+)
+ident(
+  ext_ref Ostap.Util.listBy
+)
+"Common.ml" 46 1352 1379 "Common.ml" 46 1352 1382
+call(
+  tail
+)
+type(
+  'j -> ('j, 'k, 'l) Ostap.Combinators.result
+)
+type(
+  ('j, 'k, 'l) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('j, 'k, 'l) Ostap.Combinators.result
+)
+type(
+  'j
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 46 1352 1379 "Common.ml" 46 1352 1382
+)
+type(
+  'j
+)
+ident(
+  def _ostap_stream "Common.ml" 46 1352 1379 "Common.ml" 46 1352 1382
+)
+"Common.ml" 46 1352 1372 "Common.ml" 46 1352 1383
+type(
+  ('j, 'k, 'l) Ostap.Combinators.parse
+)
+type(
+  ('j, 'k, 'l) Ostap.Combinators.result
+)
+type(
+  'j
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 46 1352 1372 "Common.ml" 46 1352 1383
+)
+type(
+  'j
+)
+ident(
+  def _ostap_stream "Common.ml" 46 1352 1372 "Common.ml" 46 1352 1383
+)
+"Common.ml" 46 1352 1385 "Common.ml" 46 1352 1389
+type(
+  ('j, 'm, 'l) Ostap.Combinators.parse
+)
+ident(
+  int_ref item "Common.ml" 46 1352 1358 "Common.ml" 46 1352 1362
+)
+"Common.ml" 46 1352 1365 "Common.ml" 46 1352 1390
+call(
+  tail
+)
+type(
+  'j -> ('j, 'm list, 'l) Ostap.Combinators.result
+)
+type(
+  ('j, 'm list, 'l) Ostap.Combinators.result
+)
+type(
+  'j
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 46 1352 1365 "Common.ml" 46 1352 1390
+)
+type(
+  'j
+)
+ident(
+  def _ostap_stream "Common.ml" 46 1352 1365 "Common.ml" 46 1352 1390
+)
+"Common.ml" 46 1352 1354 "Common.ml" 46 1352 1390
+type(
+  ('j, 'm, 'l) Ostap.Combinators.parse ->
+  'j -> ('j, 'm list, 'l) Ostap.Combinators.result
+)
+type(
+  'j -> ('j, 'm list, 'l) Ostap.Combinators.result
+)
+type(
+  ('j, 'm list, 'l) Ostap.Combinators.result
+)
+type(
+  'j
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 46 1352 1354 "Common.ml" 46 1352 1390
+)
+type(
+  'j
+)
+ident(
+  def _ostap_stream "Common.ml" 46 1352 1354 "Common.ml" 46 1352 1390
+)
+"Common.ml" 47 1392 1398 "Common.ml" 47 1392 1402
+type(
+  string
+)
+ident(
+  def name "Common.ml" 47 1392 1394 "Common.ml" 47 1392 1427
+)
+"Common.ml" 47 1392 1407 "Common.ml" 47 1392 1411
+type(
+  string
+)
+ident(
+  int_ref name "Common.ml" 47 1392 1398 "Common.ml" 47 1392 1402
+)
+"Common.ml" 47 1392 1414 "Common.ml" 47 1392 1419
+type(
+  string
+)
+"Common.ml" 47 1392 1407 "Common.ml" 47 1392 1419
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Common.ml" 47 1392 1422 "Common.ml" 47 1392 1426
+type(
+  string
+)
+ident(
+  int_ref name "Common.ml" 47 1392 1398 "Common.ml" 47 1392 1402
+)
+"Common.ml" 47 1392 1405 "Common.ml" 47 1392 1427
+call(
+  tail
+)
+type(
+  < regexp : string -> string -> 'n; .. > -> 'n
+)
+type(
+  'n
+)
+type(
+  string -> string -> 'n
+)
+type(
+  < regexp : string -> string -> 'n; .. > as 'o
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 47 1392 1405 "Common.ml" 47 1392 1427
+)
+type(
+  'o
+)
+ident(
+  def _ostap_stream "Common.ml" 47 1392 1405 "Common.ml" 47 1392 1427
+)
+"Common.ml" 47 1392 1394 "Common.ml" 47 1392 1427
+type(
+  string -> 'o -> 'n
+)
+type(
+  'o -> 'n
+)
+type(
+  'n
+)
+type(
+  'o
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 47 1392 1394 "Common.ml" 47 1392 1427
+)
+type(
+  'o
+)
+ident(
+  def _ostap_stream "Common.ml" 47 1392 1394 "Common.ml" 47 1392 1427
+)
+"Common.ml" 48 1429 1438 "Common.ml" 48 1429 1442
+type(
+  string
+)
+ident(
+  def name "Common.ml" 48 1429 1431 "Common.ml" 48 1429 1454
+)
+"Common.ml" 48 1429 1445 "Common.ml" 48 1429 1448
+type(
+  string -> 'o -> 'n
+)
+ident(
+  int_ref key "Common.ml" 41 1025 1027 "Common.ml" 48 1429 1454
+)
+"Common.ml" 48 1429 1449 "Common.ml" 48 1429 1453
+type(
+  string
+)
+ident(
+  int_ref name "Common.ml" 48 1429 1438 "Common.ml" 48 1429 1442
+)
+"Common.ml" 48 1429 1445 "Common.ml" 48 1429 1454
+call(
+  tail
+)
+type(
+  'o -> 'n
+)
+type(
+  'n
+)
+type(
+  'o
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 48 1429 1445 "Common.ml" 48 1429 1454
+)
+type(
+  'o
+)
+ident(
+  def _ostap_stream "Common.ml" 48 1429 1445 "Common.ml" 48 1429 1454
+)
+"Common.ml" 48 1429 1431 "Common.ml" 48 1429 1454
+type(
+  string -> 'o -> 'n
+)
+type(
+  'o -> 'n
+)
+type(
+  'n
+)
+type(
+  'o
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 48 1429 1431 "Common.ml" 48 1429 1454
+)
+type(
+  'o
+)
+ident(
+  def _ostap_stream "Common.ml" 48 1429 1431 "Common.ml" 48 1429 1454
+)
+"Common.ml" 41 1025 1027 "Common.ml" 48 1429 1454
+type(
+  string -> 'o -> 'n
+)
+ident(
+  def expect "Common.ml" 40 1017 1017 "Common.ml" 1 0 -1
+)
+type(
+  string -> 'o -> 'n
+)
+ident(
+  def key "Common.ml" 40 1017 1017 "Common.ml" 1 0 -1
+)
+type(
+  ('j, 'm, 'l) Ostap.Combinators.parse ->
+  'j -> ('j, 'm list, 'l) Ostap.Combinators.result
+)
+ident(
+  def seq "Common.ml" 40 1017 1017 "Common.ml" 1 0 -1
+)
+type(
+  'e -> ('e, string, 'g) Ostap.Combinators.result
+)
+ident(
+  def literal "Common.ml" 40 1017 1017 "Common.ml" 1 0 -1
+)
+type(
+  'a -> ('a, string, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def ident "Common.ml" 40 1017 1017 "Common.ml" 1 0 -1
+)
+"Common.ml" 52 1466 1473 "Common.ml" 52 1466 1477
+type(
+  (< look : string ->
+            ('a, 'b, < add : 'c -> 'c; .. > as 'c) Ostap.Combinators.result;
+     .. >
+   as 'a, 'd, 'c)
+  Ostap.Combinators.parse
+)
+ident(
+  def item "Common.ml" 52 1466 1468 "Common.ml" 54 1567 1570
+)
+"Common.ml" 52 1466 1480 "Common.ml" 52 1466 1482
+type(
+  'd option list
+)
+ident(
+  def x "Common.ml" 53 1502 1506 "Common.ml" 53 1502 1566
+)
+"Common.ml" 52 1466 1482 "Common.ml" 52 1466 1485
+type(
+  ('a, 'd option, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'd option list, 'c) Ostap.Combinators.result
+)
+ident(
+  int_ref seq "Common.ml" 41 1025 1027 "Common.ml" 48 1429 1454
+)
+"Common.ml" 52 1466 1492 "Common.ml" 52 1466 1496
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse
+)
+ident(
+  int_ref item "Common.ml" 52 1466 1473 "Common.ml" 52 1466 1477
+)
+"Common.ml" 52 1466 1492 "Common.ml" 52 1466 1497
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  ('a, 'd option, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"Common.ml" 52 1466 1486 "Common.ml" 52 1466 1498
+call(
+  tail
+)
+type(
+  ('a, 'd option, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd option, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 52 1466 1486 "Common.ml" 52 1466 1498
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 52 1466 1486 "Common.ml" 52 1466 1498
+)
+"Common.ml" 52 1466 1482 "Common.ml" 52 1466 1499
+call(
+  tail
+)
+type(
+  ('a, 'd option list, 'c) Ostap.Combinators.parse
+)
+type(
+  ('a, 'd option list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 52 1466 1482 "Common.ml" 52 1466 1499
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 52 1466 1482 "Common.ml" 52 1466 1499
+)
+"Common.ml" 53 1502 1506 "Common.ml" 53 1502 1518
+type(
+  'd list list -> 'd list
+)
+ident(
+  ext_ref List.flatten
+)
+"Common.ml" 53 1502 1520 "Common.ml" 53 1502 1528
+type(
+  ('d option -> 'd list) -> 'd option list -> 'd list list
+)
+ident(
+  ext_ref List.map
+)
+"Common.ml" 53 1502 1544 "Common.ml" 53 1502 1545
+type(
+  'd
+)
+ident(
+  def x "Common.ml" 53 1502 1549 "Common.ml" 53 1502 1552
+)
+"Common.ml" 53 1502 1539 "Common.ml" 53 1502 1545
+type(
+  'd option
+)
+"Common.ml" 53 1502 1550 "Common.ml" 53 1502 1551
+type(
+  'd
+)
+ident(
+  int_ref x "Common.ml" 53 1502 1544 "Common.ml" 53 1502 1545
+)
+"Common.ml" 53 1502 1549 "Common.ml" 53 1502 1552
+type(
+  'd list
+)
+type(
+  'd list
+)
+"Common.ml" 53 1502 1555 "Common.ml" 53 1502 1556
+type(
+  'd option
+)
+"Common.ml" 53 1502 1560 "Common.ml" 53 1502 1562
+type(
+  'd list
+)
+"Common.ml" 53 1502 1529 "Common.ml" 53 1502 1563
+type(
+  'd option -> 'd list
+)
+"Common.ml" 53 1502 1564 "Common.ml" 53 1502 1565
+type(
+  'd option list
+)
+ident(
+  int_ref x "Common.ml" 52 1466 1480 "Common.ml" 52 1466 1482
+)
+"Common.ml" 53 1502 1519 "Common.ml" 53 1502 1566
+call(
+  stack
+)
+type(
+  'd list list
+)
+"Common.ml" 53 1502 1506 "Common.ml" 53 1502 1566
+call(
+  tail
+)
+type(
+  'd list
+)
+"Common.ml" 52 1466 1480 "Common.ml" 54 1567 1570
+type(
+  'd option list -> 'd list
+)
+type(
+  'd option list
+)
+ident(
+  def _0 "Common.ml" 53 1502 1506 "Common.ml" 53 1502 1566
+)
+type(
+  ('d option list -> 'd list) ->
+  ('a, 'd option list, 'c) Ostap.Combinators.parse ->
+  ('a, 'd list, 'c) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"Common.ml" 52 1466 1468 "Common.ml" 54 1567 1570
+call(
+  tail
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'd list, 'c) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'd list, 'c) Ostap.Combinators.result
+)
+type(
+  ('a, 'd list, 'c) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Common.ml" 52 1466 1468 "Common.ml" 54 1567 1570
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Common.ml" 52 1466 1468 "Common.ml" 54 1567 1570
+)
+type(
+  ('a, 'd, 'c) Ostap.Combinators.parse ->
+  'a -> ('a, 'd list, 'c) Ostap.Combinators.result
+)
+ident(
+  def oseq "Common.ml" 51 1458 1458 "Common.ml" 1 0 -1
+)
+"Common.ml" 57 1574 1578 "Common.ml" 57 1574 1584
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  def locate "Common.ml" 58 1605 1605 "Common.ml" 1 0 -1
+)
+"Common.ml" 57 1574 1592 "Common.ml" 57 1574 1603
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref Trap.locate "Common.ml" 28 729 737 "Common.ml" 28 729 743
+)
+"Common.ml" 58 1605 1609 "Common.ml" 58 1605 1616
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  def ulocate "Common.ml" 59 1636 1636 "Common.ml" 1 0 -1
+)
+"Common.ml" 58 1605 1623 "Common.ml" 58 1605 1635
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref Trap.ulocate "Common.ml" 27 684 692 "Common.ml" 27 684 699
+)
+"Common.ml" 59 1636 1640 "Common.ml" 59 1636 1645
+type(
+  Ostap.Msg.Locator.t -> 'a -> 'a
+)
+ident(
+  def reloc "Common.ml" 61 1676 1676 "Common.ml" 1 0 -1
+)
+"Common.ml" 59 1636 1646 "Common.ml" 59 1636 1649
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def loc "Common.ml" 59 1636 1650 "Common.ml" 59 1636 1674
+)
+"Common.ml" 59 1636 1650 "Common.ml" 59 1636 1651
+type(
+  'a
+)
+ident(
+  def x "Common.ml" 59 1636 1654 "Common.ml" 59 1636 1674
+)
+"Common.ml" 59 1636 1654 "Common.ml" 59 1636 1665
+type(
+  'a -> Ostap.Msg.Locator.t -> unit
+)
+ident(
+  int_ref Trap.attach "Common.ml" 26 638 646 "Common.ml" 26 638 652
+)
+"Common.ml" 59 1636 1666 "Common.ml" 59 1636 1667
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 59 1636 1650 "Common.ml" 59 1636 1651
+)
+"Common.ml" 59 1636 1668 "Common.ml" 59 1636 1671
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref loc "Common.ml" 59 1636 1646 "Common.ml" 59 1636 1649
+)
+"Common.ml" 59 1636 1654 "Common.ml" 59 1636 1671
+call(
+  stack
+)
+type(
+  unit
+)
+"Common.ml" 59 1636 1673 "Common.ml" 59 1636 1674
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 59 1636 1650 "Common.ml" 59 1636 1651
+)
+"Common.ml" 59 1636 1654 "Common.ml" 59 1636 1674
+type(
+  'a
+)
+"Common.ml" 59 1636 1650 "Common.ml" 59 1636 1674
+type(
+  'a -> 'a
+)
+"Common.ml" 59 1636 1646 "Common.ml" 59 1636 1674
+type(
+  Ostap.Msg.Locator.t -> 'a -> 'a
+)
+"Common.ml" 61 1676 1680 "Common.ml" 61 1676 1687
+type(
+  'a list option -> 'a list
+)
+ident(
+  def listify "Common.ml" 63 1725 1725 "Common.ml" 1 0 -1
+)
+"Common.ml" 61 1676 1699 "Common.ml" 61 1676 1703
+type(
+  'a list option
+)
+"Common.ml" 61 1676 1707 "Common.ml" 61 1676 1709
+type(
+  'a list
+)
+"Common.ml" 61 1676 1717 "Common.ml" 61 1676 1718
+type(
+  'a list
+)
+ident(
+  def l "Common.ml" 61 1676 1722 "Common.ml" 61 1676 1723
+)
+"Common.ml" 61 1676 1712 "Common.ml" 61 1676 1718
+type(
+  'a list option
+)
+"Common.ml" 61 1676 1722 "Common.ml" 61 1676 1723
+type(
+  'a list
+)
+ident(
+  int_ref l "Common.ml" 61 1676 1717 "Common.ml" 61 1676 1718
+)
+"Common.ml" 61 1676 1690 "Common.ml" 61 1676 1723
+type(
+  'a list option -> 'a list
+)
+"Common.ml" 65 1744 1748 "Common.ml" 65 1744 1754
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  def sblock "Common.ml" 66 1796 1796 "Common.ml" 1 0 -1
+)
+"Common.ml" 65 1744 1755 "Common.ml" 65 1744 1756
+type(
+  string
+)
+ident(
+  def a "Common.ml" 65 1744 1757 "Common.ml" 65 1744 1795
+)
+"Common.ml" 65 1744 1757 "Common.ml" 65 1744 1758
+type(
+  string
+)
+ident(
+  def b "Common.ml" 65 1744 1759 "Common.ml" 65 1744 1795
+)
+"Common.ml" 65 1744 1759 "Common.ml" 65 1744 1760
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  def c "Common.ml" 65 1744 1763 "Common.ml" 65 1744 1795
+)
+"Common.ml" 65 1744 1763 "Common.ml" 65 1744 1768
+type(
+  Ostap.Pretty.printer ->
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.block
+)
+"Common.ml" 65 1744 1773 "Common.ml" 65 1744 1779
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"Common.ml" 65 1744 1780 "Common.ml" 65 1744 1781
+type(
+  string
+)
+ident(
+  int_ref a "Common.ml" 65 1744 1755 "Common.ml" 65 1744 1756
+)
+"Common.ml" 65 1744 1772 "Common.ml" 65 1744 1782
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 65 1744 1784 "Common.ml" 65 1744 1790
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"Common.ml" 65 1744 1791 "Common.ml" 65 1744 1792
+type(
+  string
+)
+ident(
+  int_ref b "Common.ml" 65 1744 1757 "Common.ml" 65 1744 1758
+)
+"Common.ml" 65 1744 1783 "Common.ml" 65 1744 1793
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 65 1744 1794 "Common.ml" 65 1744 1795
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  int_ref c "Common.ml" 65 1744 1759 "Common.ml" 65 1744 1760
+)
+"Common.ml" 65 1744 1763 "Common.ml" 65 1744 1795
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 65 1744 1759 "Common.ml" 65 1744 1795
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"Common.ml" 65 1744 1757 "Common.ml" 65 1744 1795
+type(
+  string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"Common.ml" 65 1744 1755 "Common.ml" 65 1744 1795
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+"Common.ml" 66 1796 1800 "Common.ml" 66 1796 1804
+type(
+  ('a -> Ostap.Pretty.printer) -> 'a list -> Ostap.Pretty.printer
+)
+ident(
+  def mseq "Common.ml" 67 1858 1858 "Common.ml" 1 0 -1
+)
+"Common.ml" 66 1796 1807 "Common.ml" 66 1796 1808
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def a "Common.ml" 66 1796 1809 "Common.ml" 66 1796 1856
+)
+"Common.ml" 66 1796 1809 "Common.ml" 66 1796 1810
+type(
+  'a list
+)
+ident(
+  def b "Common.ml" 66 1796 1815 "Common.ml" 66 1796 1856
+)
+"Common.ml" 66 1796 1815 "Common.ml" 66 1796 1821
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.vboxed
+)
+"Common.ml" 66 1796 1825 "Common.ml" 66 1796 1845
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySemicolonBreak
+)
+"Common.ml" 66 1796 1847 "Common.ml" 66 1796 1850
+type(
+  ('a -> Ostap.Pretty.printer) -> 'a list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"Common.ml" 66 1796 1851 "Common.ml" 66 1796 1852
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref a "Common.ml" 66 1796 1807 "Common.ml" 66 1796 1808
+)
+"Common.ml" 66 1796 1853 "Common.ml" 66 1796 1854
+type(
+  'a list
+)
+ident(
+  int_ref b "Common.ml" 66 1796 1809 "Common.ml" 66 1796 1810
+)
+"Common.ml" 66 1796 1846 "Common.ml" 66 1796 1855
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"Common.ml" 66 1796 1824 "Common.ml" 66 1796 1856
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 66 1796 1815 "Common.ml" 66 1796 1856
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 66 1796 1809 "Common.ml" 66 1796 1856
+type(
+  'a list -> Ostap.Pretty.printer
+)
+"Common.ml" 66 1796 1807 "Common.ml" 66 1796 1856
+type(
+  ('a -> Ostap.Pretty.printer) -> 'a list -> Ostap.Pretty.printer
+)
+"Common.ml" 67 1858 1862 "Common.ml" 67 1858 1866
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  def pseq "Common.ml" 68 1912 1912 "Common.ml" 1 0 -1
+)
+"Common.ml" 67 1858 1869 "Common.ml" 67 1858 1870
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def a "Common.ml" 67 1858 1877 "Common.ml" 67 1858 1910
+)
+"Common.ml" 67 1858 1877 "Common.ml" 67 1858 1883
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.vboxed
+)
+"Common.ml" 67 1858 1887 "Common.ml" 67 1858 1907
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySemicolonBreak
+)
+"Common.ml" 67 1858 1908 "Common.ml" 67 1858 1909
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref a "Common.ml" 67 1858 1869 "Common.ml" 67 1858 1870
+)
+"Common.ml" 67 1858 1886 "Common.ml" 67 1858 1910
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 67 1858 1877 "Common.ml" 67 1858 1910
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 67 1858 1869 "Common.ml" 67 1858 1910
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"Common.ml" 68 1912 1916 "Common.ml" 68 1912 1920
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  def vert "Common.ml" 69 1956 1956 "Common.ml" 1 0 -1
+)
+"Common.ml" 68 1912 1923 "Common.ml" 68 1912 1924
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def a "Common.ml" 68 1912 1931 "Common.ml" 68 1912 1955
+)
+"Common.ml" 68 1912 1931 "Common.ml" 68 1912 1937
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.vboxed
+)
+"Common.ml" 68 1912 1941 "Common.ml" 68 1912 1952
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listByBreak
+)
+"Common.ml" 68 1912 1953 "Common.ml" 68 1912 1954
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref a "Common.ml" 68 1912 1923 "Common.ml" 68 1912 1924
+)
+"Common.ml" 68 1912 1940 "Common.ml" 68 1912 1955
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 68 1912 1931 "Common.ml" 68 1912 1955
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 68 1912 1923 "Common.ml" 68 1912 1955
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"Common.ml" 69 1956 1960 "Common.ml" 69 1956 1963
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  def hov "Common.ml" 71 2008 2008 "Common.ml" 1 0 -1
+)
+"Common.ml" 69 1956 1967 "Common.ml" 69 1956 1968
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  def a "Common.ml" 69 1956 1975 "Common.ml" 69 1956 2004
+)
+"Common.ml" 69 1956 1975 "Common.ml" 69 1956 1983
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.hovboxed
+)
+"Common.ml" 69 1956 1985 "Common.ml" 69 1956 2001
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listBySpaceBreak
+)
+"Common.ml" 69 1956 2002 "Common.ml" 69 1956 2003
+type(
+  Ostap.Pretty.printer list
+)
+ident(
+  int_ref a "Common.ml" 69 1956 1967 "Common.ml" 69 1956 1968
+)
+"Common.ml" 69 1956 1984 "Common.ml" 69 1956 2004
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 69 1956 1975 "Common.ml" 69 1956 2004
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"Common.ml" 69 1956 1967 "Common.ml" 69 1956 2004
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+"Common.ml" 73 2023 2027 "Common.ml" 73 2023 2039
+type(
+  ('a -> ('b * 'c, 'd) Checked.t) ->
+  'a list -> (('b * 'c) list, 'd) Checked.t * ('b * 'c) list
+)
+ident(
+  def resolveDecls "Common.ml" 85 2251 2251 "Common.ml" 1 0 -1
+)
+"Common.ml" 73 2023 2040 "Common.ml" 73 2023 2041
+type(
+  'a -> ('b * 'c, 'd) Checked.t
+)
+ident(
+  def f "Common.ml" 73 2023 2042 "Common.ml" 83 2229 2249
+)
+"Common.ml" 73 2023 2042 "Common.ml" 73 2023 2043
+type(
+  'a list
+)
+ident(
+  def t "Common.ml" 74 2046 2048 "Common.ml" 83 2229 2249
+)
+"Common.ml" 74 2046 2052 "Common.ml" 74 2046 2053
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+ident(
+  def m "Common.ml" 83 2229 2231 "Common.ml" 83 2229 2249
+)
+"Common.ml" 74 2046 2055 "Common.ml" 74 2046 2056
+type(
+  ('b * 'c) list
+)
+ident(
+  def c "Common.ml" 83 2229 2231 "Common.ml" 83 2229 2249
+)
+"Common.ml" 74 2046 2052 "Common.ml" 74 2046 2056
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 74 2046 2059 "Common.ml" 74 2046 2073
+type(
+  (('b * 'c, 'd) Checked.t list * ('b * 'c) list ->
+   'a -> ('b * 'c, 'd) Checked.t list * ('b * 'c) list) ->
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list ->
+  'a list -> ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+ident(
+  ext_ref List.fold_left
+)
+"Common.ml" 75 2075 2086 "Common.ml" 75 2075 2087
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+ident(
+  def m "Common.ml" 75 2075 2092 "Common.ml" 78 2171 2193
+)
+"Common.ml" 75 2075 2089 "Common.ml" 75 2075 2090
+type(
+  ('b * 'c) list
+)
+ident(
+  def c "Common.ml" 75 2075 2092 "Common.ml" 78 2171 2193
+)
+"Common.ml" 75 2075 2086 "Common.ml" 75 2075 2090
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 75 2075 2092 "Common.ml" 75 2075 2093
+type(
+  'a
+)
+ident(
+  def x "Common.ml" 76 2098 2106 "Common.ml" 78 2171 2193
+)
+"Common.ml" 76 2098 2112 "Common.ml" 76 2098 2113
+type(
+  'a -> ('b * 'c, 'd) Checked.t
+)
+ident(
+  int_ref f "Common.ml" 73 2023 2040 "Common.ml" 73 2023 2041
+)
+"Common.ml" 76 2098 2114 "Common.ml" 76 2098 2115
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 75 2075 2092 "Common.ml" 75 2075 2093
+)
+"Common.ml" 76 2098 2112 "Common.ml" 76 2098 2115
+call(
+  stack
+)
+type(
+  ('b * 'c, 'd) Checked.t
+)
+"Common.ml" 77 2121 2135 "Common.ml" 77 2121 2139
+type(
+  'b
+)
+ident(
+  def name "Common.ml" 77 2121 2151 "Common.ml" 77 2121 2170
+)
+"Common.ml" 77 2121 2141 "Common.ml" 77 2121 2146
+type(
+  'c
+)
+ident(
+  def value "Common.ml" 77 2121 2151 "Common.ml" 77 2121 2170
+)
+"Common.ml" 77 2121 2131 "Common.ml" 77 2121 2147
+type(
+  ('b * 'c, 'd) Checked.t
+)
+type(
+  'b * 'c
+)
+"Common.ml" 77 2121 2151 "Common.ml" 77 2121 2152
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+ident(
+  int_ref m "Common.ml" 75 2075 2086 "Common.ml" 75 2075 2087
+)
+"Common.ml" 77 2121 2155 "Common.ml" 77 2121 2159
+type(
+  'b
+)
+ident(
+  int_ref name "Common.ml" 77 2121 2135 "Common.ml" 77 2121 2139
+)
+"Common.ml" 77 2121 2161 "Common.ml" 77 2121 2166
+type(
+  'c
+)
+ident(
+  int_ref value "Common.ml" 77 2121 2141 "Common.ml" 77 2121 2146
+)
+"Common.ml" 77 2121 2154 "Common.ml" 77 2121 2167
+type(
+  'b * 'c
+)
+"Common.ml" 77 2121 2169 "Common.ml" 77 2121 2170
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref c "Common.ml" 75 2075 2089 "Common.ml" 75 2075 2090
+)
+"Common.ml" 77 2121 2154 "Common.ml" 77 2121 2170
+type(
+  ('b * 'c) list
+)
+"Common.ml" 77 2121 2151 "Common.ml" 77 2121 2170
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 78 2171 2181 "Common.ml" 78 2171 2182
+type(
+  ('b * 'c, 'd) Checked.t
+)
+ident(
+  def x "Common.ml" 78 2171 2186 "Common.ml" 78 2171 2193
+)
+"Common.ml" 78 2171 2186 "Common.ml" 78 2171 2187
+type(
+  ('b * 'c, 'd) Checked.t
+)
+ident(
+  int_ref x "Common.ml" 78 2171 2181 "Common.ml" 78 2171 2182
+)
+"Common.ml" 78 2171 2189 "Common.ml" 78 2171 2190
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+ident(
+  int_ref m "Common.ml" 75 2075 2086 "Common.ml" 75 2075 2087
+)
+"Common.ml" 78 2171 2186 "Common.ml" 78 2171 2190
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+"Common.ml" 78 2171 2192 "Common.ml" 78 2171 2193
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref c "Common.ml" 75 2075 2089 "Common.ml" 75 2075 2090
+)
+"Common.ml" 78 2171 2186 "Common.ml" 78 2171 2193
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 76 2098 2106 "Common.ml" 78 2171 2193
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 75 2075 2092 "Common.ml" 78 2171 2193
+type(
+  'a -> ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 75 2075 2080 "Common.ml" 79 2194 2200
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list ->
+  'a -> ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 80 2202 2208 "Common.ml" 80 2202 2210
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+"Common.ml" 80 2202 2212 "Common.ml" 80 2202 2214
+type(
+  ('b * 'c) list
+)
+"Common.ml" 80 2202 2207 "Common.ml" 80 2202 2215
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 81 2217 2222 "Common.ml" 81 2217 2223
+type(
+  'a list
+)
+ident(
+  int_ref t "Common.ml" 73 2023 2042 "Common.ml" 73 2023 2043
+)
+"Common.ml" 74 2046 2059 "Common.ml" 81 2217 2223
+call(
+  stack
+)
+type(
+  ('b * 'c, 'd) Checked.t list * ('b * 'c) list
+)
+"Common.ml" 83 2229 2231 "Common.ml" 83 2229 2235
+type(
+  ('b * 'c, 'd) Checked.t list -> (('b * 'c) list, 'd) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"Common.ml" 83 2229 2236 "Common.ml" 83 2229 2237
+type(
+  ('b * 'c, 'd) Checked.t list
+)
+ident(
+  int_ref m "Common.ml" 74 2046 2052 "Common.ml" 74 2046 2053
+)
+"Common.ml" 83 2229 2231 "Common.ml" 83 2229 2237
+call(
+  stack
+)
+type(
+  (('b * 'c) list, 'd) Checked.t
+)
+"Common.ml" 83 2229 2239 "Common.ml" 83 2229 2247
+type(
+  ('b * 'c) list -> ('b * 'c) list
+)
+ident(
+  ext_ref List.rev
+)
+"Common.ml" 83 2229 2248 "Common.ml" 83 2229 2249
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref c "Common.ml" 74 2046 2055 "Common.ml" 74 2046 2056
+)
+"Common.ml" 83 2229 2239 "Common.ml" 83 2229 2249
+call(
+  stack
+)
+type(
+  ('b * 'c) list
+)
+"Common.ml" 83 2229 2231 "Common.ml" 83 2229 2249
+type(
+  (('b * 'c) list, 'd) Checked.t * ('b * 'c) list
+)
+"Common.ml" 74 2046 2048 "Common.ml" 83 2229 2249
+type(
+  (('b * 'c) list, 'd) Checked.t * ('b * 'c) list
+)
+"Common.ml" 73 2023 2042 "Common.ml" 83 2229 2249
+type(
+  'a list -> (('b * 'c) list, 'd) Checked.t * ('b * 'c) list
+)
+"Common.ml" 73 2023 2040 "Common.ml" 83 2229 2249
+type(
+  ('a -> ('b * 'c, 'd) Checked.t) ->
+  'a list -> (('b * 'c) list, 'd) Checked.t * ('b * 'c) list
+)
+"Common.ml" 85 2251 2255 "Common.ml" 85 2251 2259
+type(
+  string -> string array -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  def fail "Common.ml" 86 2307 2307 "Common.ml" 1 0 -1
+)
+"Common.ml" 85 2251 2260 "Common.ml" 85 2251 2261
+type(
+  string
+)
+ident(
+  def s "Common.ml" 85 2251 2262 "Common.ml" 85 2251 2305
+)
+"Common.ml" 85 2251 2262 "Common.ml" 85 2251 2266
+type(
+  string array
+)
+ident(
+  def args "Common.ml" 85 2251 2267 "Common.ml" 85 2251 2305
+)
+"Common.ml" 85 2251 2267 "Common.ml" 85 2251 2268
+type(
+  'a
+)
+ident(
+  def z "Common.ml" 85 2251 2272 "Common.ml" 85 2251 2305
+)
+"Common.ml" 85 2251 2278 "Common.ml" 85 2251 2286
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"Common.ml" 85 2251 2287 "Common.ml" 85 2251 2288
+type(
+  string
+)
+ident(
+  int_ref s "Common.ml" 85 2251 2260 "Common.ml" 85 2251 2261
+)
+"Common.ml" 85 2251 2289 "Common.ml" 85 2251 2293
+type(
+  string array
+)
+ident(
+  int_ref args "Common.ml" 85 2251 2262 "Common.ml" 85 2251 2266
+)
+"Common.ml" 85 2251 2295 "Common.ml" 85 2251 2301
+type(
+  'a -> Ostap.Msg.Locator.t
+)
+ident(
+  int_ref locate "Common.ml" 57 1574 1578 "Common.ml" 57 1574 1584
+)
+"Common.ml" 85 2251 2302 "Common.ml" 85 2251 2303
+type(
+  'a
+)
+ident(
+  int_ref z "Common.ml" 85 2251 2267 "Common.ml" 85 2251 2268
+)
+"Common.ml" 85 2251 2294 "Common.ml" 85 2251 2304
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"Common.ml" 85 2251 2278 "Common.ml" 85 2251 2304
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"Common.ml" 85 2251 2277 "Common.ml" 85 2251 2305
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"Common.ml" 85 2251 2272 "Common.ml" 85 2251 2305
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 85 2251 2267 "Common.ml" 85 2251 2305
+type(
+  'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 85 2251 2262 "Common.ml" 85 2251 2305
+type(
+  string array -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 85 2251 2260 "Common.ml" 85 2251 2305
+type(
+  string -> string array -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2311 "Common.ml" 86 2307 2315
+type(
+  < equal : [> `Bool ] -> 'a -> bool; .. > ->
+  'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  def bool "Common.ml" 87 2412 2412 "Common.ml" 1 0 -1
+)
+"Common.ml" 86 2307 2316 "Common.ml" 86 2307 2318
+type(
+  < equal : [> `Bool ] -> 'a -> bool; .. > as 'd
+)
+ident(
+  def ts "Common.ml" 86 2307 2319 "Common.ml" 86 2307 2410
+)
+"Common.ml" 86 2307 2319 "Common.ml" 86 2307 2320
+type(
+  'b
+)
+ident(
+  def z "Common.ml" 86 2307 2321 "Common.ml" 86 2307 2410
+)
+"Common.ml" 86 2307 2321 "Common.ml" 86 2307 2322
+type(
+  'a
+)
+ident(
+  def t "Common.ml" 86 2307 2323 "Common.ml" 86 2307 2410
+)
+"Common.ml" 86 2307 2323 "Common.ml" 86 2307 2325
+type(
+  'c
+)
+ident(
+  def t' "Common.ml" 86 2307 2328 "Common.ml" 86 2307 2410
+)
+"Common.ml" 86 2307 2331 "Common.ml" 86 2307 2333
+type(
+  'd
+)
+ident(
+  int_ref ts "Common.ml" 86 2307 2316 "Common.ml" 86 2307 2318
+)
+"Common.ml" 86 2307 2331 "Common.ml" 86 2307 2339
+call(
+  stack
+)
+type(
+  ([> `Bool ] as 'e) -> 'a -> bool
+)
+"Common.ml" 86 2307 2340 "Common.ml" 86 2307 2345
+type(
+  'e
+)
+"Common.ml" 86 2307 2346 "Common.ml" 86 2307 2347
+type(
+  'a
+)
+ident(
+  int_ref t "Common.ml" 86 2307 2321 "Common.ml" 86 2307 2322
+)
+"Common.ml" 86 2307 2331 "Common.ml" 86 2307 2347
+type(
+  bool
+)
+"Common.ml" 86 2307 2357 "Common.ml" 86 2307 2358
+type(
+  'b
+)
+ident(
+  int_ref z "Common.ml" 86 2307 2319 "Common.ml" 86 2307 2320
+)
+"Common.ml" 86 2307 2360 "Common.ml" 86 2307 2362
+type(
+  'c
+)
+ident(
+  int_ref t' "Common.ml" 86 2307 2323 "Common.ml" 86 2307 2325
+)
+"Common.ml" 86 2307 2356 "Common.ml" 86 2307 2363
+type(
+  'b * 'c
+)
+"Common.ml" 86 2307 2353 "Common.ml" 86 2307 2363
+call(
+  tail
+)
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+type(
+  'b * 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"Common.ml" 86 2307 2369 "Common.ml" 86 2307 2373
+type(
+  string -> string array -> 'b -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref fail "Common.ml" 85 2251 2255 "Common.ml" 85 2251 2259
+)
+"Common.ml" 86 2307 2374 "Common.ml" 86 2307 2403
+type(
+  string
+)
+"Common.ml" 86 2307 2404 "Common.ml" 86 2307 2408
+type(
+  string array
+)
+"Common.ml" 86 2307 2409 "Common.ml" 86 2307 2410
+type(
+  'b
+)
+ident(
+  int_ref z "Common.ml" 86 2307 2319 "Common.ml" 86 2307 2320
+)
+"Common.ml" 86 2307 2369 "Common.ml" 86 2307 2410
+call(
+  tail
+)
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2328 "Common.ml" 86 2307 2410
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2323 "Common.ml" 86 2307 2410
+type(
+  'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2321 "Common.ml" 86 2307 2410
+type(
+  'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2319 "Common.ml" 86 2307 2410
+type(
+  'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 86 2307 2316 "Common.ml" 86 2307 2410
+type(
+  'd -> 'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2416 "Common.ml" 87 2412 2419
+type(
+  < equal : [> `Int ] -> 'a -> bool; .. > ->
+  'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  def int "Common.ml" 88 2517 2517 "Common.ml" 1 0 -1
+)
+"Common.ml" 87 2412 2421 "Common.ml" 87 2412 2423
+type(
+  < equal : [> `Int ] -> 'a -> bool; .. > as 'd
+)
+ident(
+  def ts "Common.ml" 87 2412 2424 "Common.ml" 87 2412 2515
+)
+"Common.ml" 87 2412 2424 "Common.ml" 87 2412 2425
+type(
+  'b
+)
+ident(
+  def z "Common.ml" 87 2412 2426 "Common.ml" 87 2412 2515
+)
+"Common.ml" 87 2412 2426 "Common.ml" 87 2412 2427
+type(
+  'a
+)
+ident(
+  def t "Common.ml" 87 2412 2428 "Common.ml" 87 2412 2515
+)
+"Common.ml" 87 2412 2428 "Common.ml" 87 2412 2430
+type(
+  'c
+)
+ident(
+  def t' "Common.ml" 87 2412 2433 "Common.ml" 87 2412 2515
+)
+"Common.ml" 87 2412 2436 "Common.ml" 87 2412 2438
+type(
+  'd
+)
+ident(
+  int_ref ts "Common.ml" 87 2412 2421 "Common.ml" 87 2412 2423
+)
+"Common.ml" 87 2412 2436 "Common.ml" 87 2412 2444
+call(
+  stack
+)
+type(
+  ([> `Int ] as 'e) -> 'a -> bool
+)
+"Common.ml" 87 2412 2445 "Common.ml" 87 2412 2449
+type(
+  'e
+)
+"Common.ml" 87 2412 2451 "Common.ml" 87 2412 2452
+type(
+  'a
+)
+ident(
+  int_ref t "Common.ml" 87 2412 2426 "Common.ml" 87 2412 2427
+)
+"Common.ml" 87 2412 2436 "Common.ml" 87 2412 2452
+type(
+  bool
+)
+"Common.ml" 87 2412 2462 "Common.ml" 87 2412 2463
+type(
+  'b
+)
+ident(
+  int_ref z "Common.ml" 87 2412 2424 "Common.ml" 87 2412 2425
+)
+"Common.ml" 87 2412 2465 "Common.ml" 87 2412 2467
+type(
+  'c
+)
+ident(
+  int_ref t' "Common.ml" 87 2412 2428 "Common.ml" 87 2412 2430
+)
+"Common.ml" 87 2412 2461 "Common.ml" 87 2412 2468
+type(
+  'b * 'c
+)
+"Common.ml" 87 2412 2458 "Common.ml" 87 2412 2468
+call(
+  tail
+)
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+type(
+  'b * 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"Common.ml" 87 2412 2474 "Common.ml" 87 2412 2478
+type(
+  string -> string array -> 'b -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref fail "Common.ml" 85 2251 2255 "Common.ml" 85 2251 2259
+)
+"Common.ml" 87 2412 2479 "Common.ml" 87 2412 2508
+type(
+  string
+)
+"Common.ml" 87 2412 2509 "Common.ml" 87 2412 2513
+type(
+  string array
+)
+"Common.ml" 87 2412 2514 "Common.ml" 87 2412 2515
+type(
+  'b
+)
+ident(
+  int_ref z "Common.ml" 87 2412 2424 "Common.ml" 87 2412 2425
+)
+"Common.ml" 87 2412 2474 "Common.ml" 87 2412 2515
+call(
+  tail
+)
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2433 "Common.ml" 87 2412 2515
+type(
+  ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2428 "Common.ml" 87 2412 2515
+type(
+  'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2426 "Common.ml" 87 2412 2515
+type(
+  'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2424 "Common.ml" 87 2412 2515
+type(
+  'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 87 2412 2421 "Common.ml" 87 2412 2515
+type(
+  'd -> 'b -> 'a -> 'c -> ('b * 'c, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2521 "Common.ml" 88 2517 2525
+type(
+  < equal : 'a -> 'b -> bool; string : 'a -> string; .. > ->
+  'a -> 'b -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  def same "Common.ml" 89 2630 2630 "Common.ml" 1 0 -1
+)
+"Common.ml" 88 2517 2526 "Common.ml" 88 2517 2528
+type(
+  < equal : 'a -> 'b -> bool; string : 'a -> string; .. > as 'd
+)
+ident(
+  def ts "Common.ml" 88 2517 2529 "Common.ml" 88 2517 2629
+)
+"Common.ml" 88 2517 2529 "Common.ml" 88 2517 2530
+type(
+  'a
+)
+ident(
+  def z "Common.ml" 88 2517 2531 "Common.ml" 88 2517 2629
+)
+"Common.ml" 88 2517 2531 "Common.ml" 88 2517 2532
+type(
+  'b
+)
+ident(
+  def x "Common.ml" 88 2517 2533 "Common.ml" 88 2517 2629
+)
+"Common.ml" 88 2517 2533 "Common.ml" 88 2517 2534
+type(
+  'c
+)
+ident(
+  def y "Common.ml" 88 2517 2538 "Common.ml" 88 2517 2629
+)
+"Common.ml" 88 2517 2541 "Common.ml" 88 2517 2543
+type(
+  'd
+)
+ident(
+  int_ref ts "Common.ml" 88 2517 2526 "Common.ml" 88 2517 2528
+)
+"Common.ml" 88 2517 2541 "Common.ml" 88 2517 2549
+call(
+  stack
+)
+type(
+  'a -> 'b -> bool
+)
+"Common.ml" 88 2517 2550 "Common.ml" 88 2517 2551
+type(
+  'a
+)
+ident(
+  int_ref z "Common.ml" 88 2517 2529 "Common.ml" 88 2517 2530
+)
+"Common.ml" 88 2517 2552 "Common.ml" 88 2517 2553
+type(
+  'b
+)
+ident(
+  int_ref x "Common.ml" 88 2517 2531 "Common.ml" 88 2517 2532
+)
+"Common.ml" 88 2517 2541 "Common.ml" 88 2517 2553
+type(
+  bool
+)
+"Common.ml" 88 2517 2562 "Common.ml" 88 2517 2564
+type(
+  unit
+)
+"Common.ml" 88 2517 2559 "Common.ml" 88 2517 2564
+call(
+  tail
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"Common.ml" 88 2517 2570 "Common.ml" 88 2517 2574
+type(
+  string -> string array -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref fail "Common.ml" 85 2251 2255 "Common.ml" 85 2251 2259
+)
+"Common.ml" 88 2517 2575 "Common.ml" 88 2517 2611
+type(
+  string
+)
+"Common.ml" 88 2517 2614 "Common.ml" 88 2517 2616
+type(
+  'd
+)
+ident(
+  int_ref ts "Common.ml" 88 2517 2526 "Common.ml" 88 2517 2528
+)
+"Common.ml" 88 2517 2614 "Common.ml" 88 2517 2623
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"Common.ml" 88 2517 2624 "Common.ml" 88 2517 2625
+type(
+  'a
+)
+ident(
+  int_ref z "Common.ml" 88 2517 2529 "Common.ml" 88 2517 2530
+)
+"Common.ml" 88 2517 2614 "Common.ml" 88 2517 2625
+type(
+  string
+)
+"Common.ml" 88 2517 2612 "Common.ml" 88 2517 2627
+type(
+  string array
+)
+"Common.ml" 88 2517 2628 "Common.ml" 88 2517 2629
+type(
+  'c
+)
+ident(
+  int_ref y "Common.ml" 88 2517 2533 "Common.ml" 88 2517 2534
+)
+"Common.ml" 88 2517 2570 "Common.ml" 88 2517 2629
+call(
+  tail
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2538 "Common.ml" 88 2517 2629
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2533 "Common.ml" 88 2517 2629
+type(
+  'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2531 "Common.ml" 88 2517 2629
+type(
+  'b -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2529 "Common.ml" 88 2517 2629
+type(
+  'a -> 'b -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 88 2517 2526 "Common.ml" 88 2517 2629
+type(
+  'd -> 'a -> 'b -> 'c -> (unit, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 89 2630 2634 "Common.ml" 89 2630 2639
+type(
+  string -> string -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  def wrong "Common.ml" 91 2714 2714 "Common.ml" 1 0 -1
+)
+"Common.ml" 89 2630 2640 "Common.ml" 89 2630 2643
+type(
+  string
+)
+ident(
+  def cat "Common.ml" 89 2630 2644 "Common.ml" 89 2630 2712
+)
+"Common.ml" 89 2630 2644 "Common.ml" 89 2630 2645
+type(
+  string
+)
+ident(
+  def n "Common.ml" 89 2630 2646 "Common.ml" 89 2630 2712
+)
+"Common.ml" 89 2630 2646 "Common.ml" 89 2630 2647
+type(
+  'a
+)
+ident(
+  def z "Common.ml" 89 2630 2651 "Common.ml" 89 2630 2712
+)
+"Common.ml" 89 2630 2651 "Common.ml" 89 2630 2655
+type(
+  string -> string array -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref fail "Common.ml" 85 2251 2255 "Common.ml" 85 2251 2259
+)
+"Common.ml" 89 2630 2656 "Common.ml" 89 2630 2699
+type(
+  string
+)
+"Common.ml" 89 2630 2702 "Common.ml" 89 2630 2703
+type(
+  string
+)
+ident(
+  int_ref n "Common.ml" 89 2630 2644 "Common.ml" 89 2630 2645
+)
+"Common.ml" 89 2630 2705 "Common.ml" 89 2630 2708
+type(
+  string
+)
+ident(
+  int_ref cat "Common.ml" 89 2630 2640 "Common.ml" 89 2630 2643
+)
+"Common.ml" 89 2630 2700 "Common.ml" 89 2630 2710
+type(
+  string array
+)
+"Common.ml" 89 2630 2711 "Common.ml" 89 2630 2712
+type(
+  'a
+)
+ident(
+  int_ref z "Common.ml" 89 2630 2646 "Common.ml" 89 2630 2647
+)
+"Common.ml" 89 2630 2651 "Common.ml" 89 2630 2712
+call(
+  tail
+)
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 89 2630 2646 "Common.ml" 89 2630 2712
+type(
+  'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 89 2630 2644 "Common.ml" 89 2630 2712
+type(
+  string -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 89 2630 2640 "Common.ml" 89 2630 2712
+type(
+  string -> string -> 'a -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 91 2714 2718 "Common.ml" 91 2714 2723
+type(
+  ('a -> 'b) -> 'a -> 'b
+)
+ident(
+  def apply "Common.ml" 92 2734 2734 "Common.ml" 1 0 -1
+)
+"Common.ml" 91 2714 2724 "Common.ml" 91 2714 2725
+type(
+  'a -> 'b
+)
+ident(
+  def f "Common.ml" 91 2714 2726 "Common.ml" 91 2714 2733
+)
+"Common.ml" 91 2714 2726 "Common.ml" 91 2714 2727
+type(
+  'a
+)
+ident(
+  def x "Common.ml" 91 2714 2730 "Common.ml" 91 2714 2733
+)
+"Common.ml" 91 2714 2730 "Common.ml" 91 2714 2731
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "Common.ml" 91 2714 2724 "Common.ml" 91 2714 2725
+)
+"Common.ml" 91 2714 2732 "Common.ml" 91 2714 2733
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 91 2714 2726 "Common.ml" 91 2714 2727
+)
+"Common.ml" 91 2714 2730 "Common.ml" 91 2714 2733
+call(
+  tail
+)
+type(
+  'b
+)
+"Common.ml" 91 2714 2726 "Common.ml" 91 2714 2733
+type(
+  'a -> 'b
+)
+"Common.ml" 91 2714 2724 "Common.ml" 91 2714 2733
+type(
+  ('a -> 'b) -> 'a -> 'b
+)
+"Common.ml" 92 2734 2738 "Common.ml" 92 2734 2740
+type(
+  'a -> 'a
+)
+ident(
+  def id "Common.ml" 93 2752 2752 "Common.ml" 1 0 -1
+)
+"Common.ml" 92 2734 2744 "Common.ml" 92 2734 2745
+type(
+  'a
+)
+ident(
+  def x "Common.ml" 92 2734 2750 "Common.ml" 92 2734 2751
+)
+"Common.ml" 92 2734 2750 "Common.ml" 92 2734 2751
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 92 2734 2744 "Common.ml" 92 2734 2745
+)
+"Common.ml" 92 2734 2744 "Common.ml" 92 2734 2751
+type(
+  'a -> 'a
+)
+"Common.ml" 93 2752 2756 "Common.ml" 93 2752 2760
+type(
+  ('a -> 'b) -> 'a -> 'c -> 'b
+)
+ident(
+  def lift "Common.ml" 94 2781 2781 "Common.ml" 1 0 -1
+)
+"Common.ml" 93 2752 2762 "Common.ml" 93 2752 2763
+type(
+  'a -> 'b
+)
+ident(
+  def x "Common.ml" 93 2752 2764 "Common.ml" 93 2752 2780
+)
+"Common.ml" 93 2752 2764 "Common.ml" 93 2752 2765
+type(
+  'a
+)
+ident(
+  def y "Common.ml" 93 2752 2768 "Common.ml" 93 2752 2780
+)
+"Common.ml" 93 2752 2772 "Common.ml" 93 2752 2773
+type(
+  'c
+)
+"Common.ml" 93 2752 2777 "Common.ml" 93 2752 2778
+type(
+  'a -> 'b
+)
+ident(
+  int_ref x "Common.ml" 93 2752 2762 "Common.ml" 93 2752 2763
+)
+"Common.ml" 93 2752 2779 "Common.ml" 93 2752 2780
+type(
+  'a
+)
+ident(
+  int_ref y "Common.ml" 93 2752 2764 "Common.ml" 93 2752 2765
+)
+"Common.ml" 93 2752 2777 "Common.ml" 93 2752 2780
+call(
+  tail
+)
+type(
+  'b
+)
+"Common.ml" 93 2752 2768 "Common.ml" 93 2752 2780
+type(
+  'c -> 'b
+)
+"Common.ml" 93 2752 2764 "Common.ml" 93 2752 2780
+type(
+  'a -> 'c -> 'b
+)
+"Common.ml" 93 2752 2762 "Common.ml" 93 2752 2780
+type(
+  ('a -> 'b) -> 'a -> 'c -> 'b
+)
+"Common.ml" 94 2781 2785 "Common.ml" 94 2781 2791
+type(
+  'a -> 'b -> 'a
+)
+ident(
+  def return "Common.ml" 95 2808 2808 "Common.ml" 1 0 -1
+)
+"Common.ml" 94 2781 2792 "Common.ml" 94 2781 2793
+type(
+  'a
+)
+ident(
+  def x "Common.ml" 94 2781 2797 "Common.ml" 94 2781 2807
+)
+"Common.ml" 94 2781 2801 "Common.ml" 94 2781 2802
+type(
+  'b
+)
+"Common.ml" 94 2781 2806 "Common.ml" 94 2781 2807
+type(
+  'a
+)
+ident(
+  int_ref x "Common.ml" 94 2781 2792 "Common.ml" 94 2781 2793
+)
+"Common.ml" 94 2781 2797 "Common.ml" 94 2781 2807
+type(
+  'b -> 'a
+)
+"Common.ml" 94 2781 2792 "Common.ml" 94 2781 2807
+type(
+  'a -> 'b -> 'a
+)
+"Common.ml" 95 2808 2812 "Common.ml" 95 2808 2816
+type(
+  (('a -> 'b) -> 'c -> 'd) -> (('e -> 'f) -> 'b) -> ('a -> 'f) -> 'c -> 'd
+)
+ident(
+  def ++ "Common.ml" 97 2877 2877 "Common.ml" 1 0 -1
+)
+"Common.ml" 95 2808 2817 "Common.ml" 95 2808 2818
+type(
+  ('a -> 'b) -> 'c -> 'd
+)
+ident(
+  def x "Common.ml" 95 2808 2819 "Common.ml" 95 2808 2875
+)
+"Common.ml" 95 2808 2819 "Common.ml" 95 2808 2820
+type(
+  ('e -> 'f) -> 'b
+)
+ident(
+  def y "Common.ml" 95 2808 2823 "Common.ml" 95 2808 2875
+)
+"Common.ml" 95 2808 2827 "Common.ml" 95 2808 2830
+type(
+  'a -> 'f
+)
+ident(
+  def ext "Common.ml" 95 2808 2831 "Common.ml" 95 2808 2875
+)
+"Common.ml" 95 2808 2831 "Common.ml" 95 2808 2832
+type(
+  'c
+)
+ident(
+  def s "Common.ml" 95 2808 2836 "Common.ml" 95 2808 2875
+)
+"Common.ml" 95 2808 2836 "Common.ml" 95 2808 2837
+type(
+  ('a -> 'b) -> 'c -> 'd
+)
+ident(
+  int_ref x "Common.ml" 95 2808 2817 "Common.ml" 95 2808 2818
+)
+"Common.ml" 95 2808 2843 "Common.ml" 95 2808 2847
+type(
+  'a
+)
+ident(
+  def self "Common.ml" 95 2808 2851 "Common.ml" 95 2808 2872
+)
+"Common.ml" 95 2808 2851 "Common.ml" 95 2808 2852
+type(
+  ('e -> 'f) -> 'b
+)
+ident(
+  int_ref y "Common.ml" 95 2808 2819 "Common.ml" 95 2808 2820
+)
+"Common.ml" 95 2808 2858 "Common.ml" 95 2808 2859
+type(
+  'e
+)
+"Common.ml" 95 2808 2863 "Common.ml" 95 2808 2866
+type(
+  'a -> 'f
+)
+ident(
+  int_ref ext "Common.ml" 95 2808 2827 "Common.ml" 95 2808 2830
+)
+"Common.ml" 95 2808 2867 "Common.ml" 95 2808 2871
+type(
+  'a
+)
+ident(
+  int_ref self "Common.ml" 95 2808 2843 "Common.ml" 95 2808 2847
+)
+"Common.ml" 95 2808 2863 "Common.ml" 95 2808 2871
+call(
+  tail
+)
+type(
+  'f
+)
+"Common.ml" 95 2808 2853 "Common.ml" 95 2808 2872
+type(
+  'e -> 'f
+)
+"Common.ml" 95 2808 2851 "Common.ml" 95 2808 2872
+call(
+  tail
+)
+type(
+  'b
+)
+"Common.ml" 95 2808 2838 "Common.ml" 95 2808 2873
+type(
+  'a -> 'b
+)
+"Common.ml" 95 2808 2874 "Common.ml" 95 2808 2875
+type(
+  'c
+)
+ident(
+  int_ref s "Common.ml" 95 2808 2831 "Common.ml" 95 2808 2832
+)
+"Common.ml" 95 2808 2836 "Common.ml" 95 2808 2875
+call(
+  tail
+)
+type(
+  'd
+)
+"Common.ml" 95 2808 2831 "Common.ml" 95 2808 2875
+type(
+  'c -> 'd
+)
+"Common.ml" 95 2808 2823 "Common.ml" 95 2808 2875
+type(
+  ('a -> 'f) -> 'c -> 'd
+)
+"Common.ml" 95 2808 2819 "Common.ml" 95 2808 2875
+type(
+  (('e -> 'f) -> 'b) -> ('a -> 'f) -> 'c -> 'd
+)
+"Common.ml" 95 2808 2817 "Common.ml" 95 2808 2875
+type(
+  (('a -> 'b) -> 'c -> 'd) -> (('e -> 'f) -> 'b) -> ('a -> 'f) -> 'c -> 'd
+)
+"Common.ml" 97 2877 2881 "Common.ml" 97 2877 2886
+type(
+  ('a, 'b,
+   < retrieve : [> `First of int ] ->
+                [> `Desc ] ->
+                (Ostap.Msg.Locator.t *
+                 [< `Comment of string * 'c | `Msg of Ostap.Msg.t ] list)
+                list;
+     .. >)
+  Ostap.Combinators.result -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  def check "Common.ml" 103 3118 3123 "Common.ml" 1 0 -1
+)
+"Common.ml" 97 2877 2887 "Common.ml" 97 2877 2888
+type(
+  ('a, 'b,
+   < retrieve : [> `First of int ] ->
+                [> `Desc ] ->
+                (Ostap.Msg.Locator.t *
+                 [< `Comment of string * 'c | `Msg of Ostap.Msg.t ] list)
+                list;
+     .. >
+   as 'd)
+  Ostap.Combinators.result
+)
+ident(
+  def x "Common.ml" 98 2892 2894 "Common.ml" 103 3118 3123
+)
+"Common.ml" 98 2892 2894 "Common.ml" 98 2892 2912
+type(
+  ('a, 'b, 'd) Ostap.Combinators.result ->
+  ('b -> ('b, Ostap.Msg.t) Checked.t) ->
+  ('d option -> ('b, Ostap.Msg.t) Checked.t) -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Ostap.Combinators.unwrap
+)
+"Common.ml" 98 2892 2913 "Common.ml" 98 2892 2914
+type(
+  ('a, 'b, 'd) Ostap.Combinators.result
+)
+ident(
+  int_ref x "Common.ml" 97 2877 2887 "Common.ml" 97 2877 2888
+)
+"Common.ml" 98 2892 2920 "Common.ml" 98 2892 2921
+type(
+  'b
+)
+ident(
+  def x "Common.ml" 98 2892 2925 "Common.ml" 98 2892 2929
+)
+"Common.ml" 98 2892 2928 "Common.ml" 98 2892 2929
+type(
+  'b
+)
+ident(
+  int_ref x "Common.ml" 98 2892 2920 "Common.ml" 98 2892 2921
+)
+"Common.ml" 98 2892 2925 "Common.ml" 98 2892 2929
+call(
+  tail
+)
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+type(
+  'b -> ('b, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"Common.ml" 98 2892 2915 "Common.ml" 98 2892 2930
+type(
+  'b -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 99 2932 2947 "Common.ml" 99 2932 2950
+type(
+  'd
+)
+ident(
+  def err "Common.ml" 100 2955 2962 "Common.ml" 102 3102 3117
+)
+"Common.ml" 99 2932 2942 "Common.ml" 99 2932 2950
+type(
+  'd option
+)
+"Common.ml" 100 2955 2967 "Common.ml" 100 2955 2970
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def loc "Common.ml" 101 3017 3024 "Common.ml" 102 3102 3117
+)
+"Common.ml" 100 2955 2972 "Common.ml" 100 2955 2973
+type(
+  [< `Comment of string * 'c | `Msg of Ostap.Msg.t ] as 'e
+)
+ident(
+  def m "Common.ml" 101 3017 3024 "Common.ml" 102 3102 3117
+)
+"Common.ml" 100 2955 2977 "Common.ml" 100 2955 2978
+type(
+  'e list
+)
+"Common.ml" 100 2955 2972 "Common.ml" 100 2955 2978
+type(
+  'e list
+)
+"Common.ml" 100 2955 2967 "Common.ml" 100 2955 2978
+type(
+  Ostap.Msg.Locator.t * 'e list
+)
+"Common.ml" 100 2955 2966 "Common.ml" 100 2955 2979
+type(
+  (Ostap.Msg.Locator.t * 'e list) list
+)
+type(
+  (Ostap.Msg.Locator.t * 'e list) list
+)
+"Common.ml" 100 2955 2982 "Common.ml" 100 2955 2985
+type(
+  'd
+)
+ident(
+  int_ref err "Common.ml" 99 2932 2947 "Common.ml" 99 2932 2950
+)
+"Common.ml" 100 2955 2982 "Common.ml" 100 2955 2994
+call(
+  stack
+)
+type(
+  ([> `First of int ] as 'f) ->
+  ([> `Desc ] as 'g) -> (Ostap.Msg.Locator.t * 'e list) list
+)
+"Common.ml" 100 2955 3003 "Common.ml" 100 2955 3004
+type(
+  int
+)
+"Common.ml" 100 2955 2995 "Common.ml" 100 2955 3005
+type(
+  'f
+)
+"Common.ml" 100 2955 3006 "Common.ml" 100 2955 3013
+type(
+  'g
+)
+"Common.ml" 100 2955 2982 "Common.ml" 100 2955 3013
+type(
+  (Ostap.Msg.Locator.t * 'e list) list
+)
+"Common.ml" 101 3017 3028 "Common.ml" 101 3017 3029
+type(
+  Ostap.Msg.t
+)
+ident(
+  def m "Common.ml" 102 3102 3109 "Common.ml" 102 3102 3117
+)
+"Common.ml" 101 3017 3039 "Common.ml" 101 3017 3040
+type(
+  'e
+)
+ident(
+  int_ref m "Common.ml" 100 2955 2972 "Common.ml" 100 2955 2973
+)
+"Common.ml" 101 3017 3051 "Common.ml" 101 3017 3052
+type(
+  Ostap.Msg.t
+)
+ident(
+  def m "Common.ml" 101 3017 3056 "Common.ml" 101 3017 3057
+)
+"Common.ml" 101 3017 3046 "Common.ml" 101 3017 3052
+type(
+  'e
+)
+"Common.ml" 101 3017 3056 "Common.ml" 101 3017 3057
+type(
+  Ostap.Msg.t
+)
+ident(
+  int_ref m "Common.ml" 101 3017 3051 "Common.ml" 101 3017 3052
+)
+"Common.ml" 101 3017 3070 "Common.ml" 101 3017 3071
+type(
+  string
+)
+ident(
+  def s "Common.ml" 101 3017 3079 "Common.ml" 101 3017 3098
+)
+"Common.ml" 101 3017 3073 "Common.ml" 101 3017 3074
+type(
+  'c
+)
+"Common.ml" 101 3017 3070 "Common.ml" 101 3017 3074
+type(
+  string * 'c
+)
+"Common.ml" 101 3017 3060 "Common.ml" 101 3017 3075
+type(
+  'e
+)
+"Common.ml" 101 3017 3079 "Common.ml" 101 3017 3087
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"Common.ml" 101 3017 3088 "Common.ml" 101 3017 3089
+type(
+  string
+)
+ident(
+  int_ref s "Common.ml" 101 3017 3070 "Common.ml" 101 3017 3071
+)
+"Common.ml" 101 3017 3090 "Common.ml" 101 3017 3094
+type(
+  string array
+)
+"Common.ml" 101 3017 3095 "Common.ml" 101 3017 3098
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref loc "Common.ml" 100 2955 2967 "Common.ml" 100 2955 2970
+)
+"Common.ml" 101 3017 3079 "Common.ml" 101 3017 3098
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"Common.ml" 101 3017 3033 "Common.ml" 101 3017 3098
+type(
+  Ostap.Msg.t
+)
+"Common.ml" 102 3102 3115 "Common.ml" 102 3102 3116
+type(
+  Ostap.Msg.t
+)
+ident(
+  int_ref m "Common.ml" 101 3017 3028 "Common.ml" 101 3017 3029
+)
+"Common.ml" 102 3102 3114 "Common.ml" 102 3102 3117
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"Common.ml" 102 3102 3109 "Common.ml" 102 3102 3117
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 101 3017 3024 "Common.ml" 102 3102 3117
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 100 2955 2962 "Common.ml" 102 3102 3117
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 99 2932 2936 "Common.ml" 103 3118 3123
+type(
+  'd option -> ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 98 2892 2894 "Common.ml" 103 3118 3123
+call(
+  tail
+)
+type(
+  ('b, Ostap.Msg.t) Checked.t
+)
+"Common.ml" 97 2877 2887 "Common.ml" 103 3118 3123
+type(
+  ('a, 'b, 'd) Ostap.Combinators.result -> ('b, Ostap.Msg.t) Checked.t
+)

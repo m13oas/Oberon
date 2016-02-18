@@ -1,0 +1,6472 @@
+"ProcDecl.ml" 7 127 146 "ProcDecl.ml" 7 127 149
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'f * Ostap.Msg.Coord.t ]; .. >
+   as 'a, 'g, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  def typ "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 9 233 236
+)
+"ProcDecl.ml" 7 127 152 "ProcDecl.ml" 7 127 155
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"ProcDecl.ml" 7 127 156 "ProcDecl.ml" 7 127 167
+type(
+  string
+)
+"ProcDecl.ml" 7 127 152 "ProcDecl.ml" 7 127 168
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 7 127 152 "ProcDecl.ml" 7 127 168
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 7 127 152 "ProcDecl.ml" 7 127 168
+)
+"ProcDecl.ml" 7 127 169 "ProcDecl.ml" 7 127 174
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 7 127 152 "ProcDecl.ml" 9 233 236
+)
+"ProcDecl.ml" 7 127 174 "ProcDecl.ml" 7 127 179
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.ident
+)
+"ProcDecl.ml" 7 127 180 "ProcDecl.ml" 7 127 185
+type(
+  ([> `Val | `Var ] * string * 'g) list option
+)
+ident(
+  def args "ProcDecl.ml" 8 210 214 "ProcDecl.ml" 8 210 232
+)
+"ProcDecl.ml" 7 127 185 "ProcDecl.ml" 7 127 201
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (([> `Val | `Var ] as 'h) * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  int_ref formalParameters "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 7 127 202 "ProcDecl.ml" 7 127 205
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "ProcDecl.ml" 7 127 146 "ProcDecl.ml" 7 127 149
+)
+"ProcDecl.ml" 7 127 185 "ProcDecl.ml" 7 127 206
+call(
+  tail
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 7 127 185 "ProcDecl.ml" 7 127 206
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 7 127 185 "ProcDecl.ml" 7 127 206
+)
+"ProcDecl.ml" 7 127 185 "ProcDecl.ml" 7 127 207
+call(
+  stack
+)
+type(
+  ('a, ('h * string * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, ('h * string * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"ProcDecl.ml" 8 210 214 "ProcDecl.ml" 8 210 218
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 7 127 169 "ProcDecl.ml" 7 127 174
+)
+"ProcDecl.ml" 8 210 220 "ProcDecl.ml" 8 210 227
+type(
+  ('h * string * 'g) list option -> ('h * string * 'g) list
+)
+ident(
+  ext_ref Common.listify
+)
+"ProcDecl.ml" 8 210 228 "ProcDecl.ml" 8 210 232
+type(
+  ('h * string * 'g) list option
+)
+ident(
+  int_ref args "ProcDecl.ml" 7 127 180 "ProcDecl.ml" 7 127 185
+)
+"ProcDecl.ml" 8 210 220 "ProcDecl.ml" 8 210 232
+call(
+  stack
+)
+type(
+  ('h * string * 'g) list
+)
+"ProcDecl.ml" 8 210 214 "ProcDecl.ml" 8 210 232
+type(
+  string * ('h * string * 'g) list
+)
+"ProcDecl.ml" 7 127 152 "ProcDecl.ml" 9 233 236
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  string ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('h * string * 'g) list option -> string * ('h * string * 'g) list
+)
+type(
+  ('h * string * 'g) list option
+)
+ident(
+  def _0 "ProcDecl.ml" 8 210 214 "ProcDecl.ml" 8 210 232
+)
+type(
+  (('h * string * 'g) list option -> string * ('h * string * 'g) list) ->
+  ('a, ('h * string * 'g) list option, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  string
+)
+ident(
+  def _1 "ProcDecl.ml" 7 127 152 "ProcDecl.ml" 9 233 236
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (string ->
+   ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e
+)
+ident(
+  def _2 "ProcDecl.ml" 7 127 152 "ProcDecl.ml" 9 233 236
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e ->
+   ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 7 127 129 "ProcDecl.ml" 9 233 236
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 9 233 236
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 9 233 236
+)
+"ProcDecl.ml" 10 238 257 "ProcDecl.ml" 10 238 260
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def typ "ProcDecl.ml" 10 238 240 "ProcDecl.ml" 13 412 415
+)
+"ProcDecl.ml" 10 238 263 "ProcDecl.ml" 10 238 267
+type(
+  'e option
+)
+ident(
+  def var "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+)
+"ProcDecl.ml" 10 238 267 "ProcDecl.ml" 10 238 270
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"ProcDecl.ml" 10 238 271 "ProcDecl.ml" 10 238 276
+type(
+  string
+)
+"ProcDecl.ml" 10 238 267 "ProcDecl.ml" 10 238 277
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 10 238 267 "ProcDecl.ml" 10 238 277
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 10 238 267 "ProcDecl.ml" 10 238 277
+)
+"ProcDecl.ml" 10 238 267 "ProcDecl.ml" 10 238 278
+call(
+  stack
+)
+type(
+  ('a, 'e option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'e option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"ProcDecl.ml" 10 238 279 "ProcDecl.ml" 10 238 284
+type(
+  string list
+)
+ident(
+  def args "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+)
+"ProcDecl.ml" 10 238 284 "ProcDecl.ml" 10 238 288
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, string list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Ostap.Util.list
+)
+"ProcDecl.ml" 10 238 289 "ProcDecl.ml" 10 238 294
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.ident
+)
+"ProcDecl.ml" 10 238 284 "ProcDecl.ml" 10 238 295
+call(
+  tail
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 10 238 284 "ProcDecl.ml" 10 238 295
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 10 238 284 "ProcDecl.ml" 10 238 295
+)
+"ProcDecl.ml" 10 238 296 "ProcDecl.ml" 10 238 299
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 10 238 296 "ProcDecl.ml" 10 238 299
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 10 238 296 "ProcDecl.ml" 10 238 299
+)
+"ProcDecl.ml" 10 238 300 "ProcDecl.ml" 10 238 304
+type(
+  'g
+)
+ident(
+  def typ "ProcDecl.ml" 11 310 313 "ProcDecl.ml" 12 369 411
+)
+"ProcDecl.ml" 10 238 304 "ProcDecl.ml" 10 238 307
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "ProcDecl.ml" 10 238 257 "ProcDecl.ml" 10 238 260
+)
+"ProcDecl.ml" 11 310 317 "ProcDecl.ml" 11 310 318
+type(
+  [> `Val | `Var ]
+)
+ident(
+  def m "ProcDecl.ml" 12 369 373 "ProcDecl.ml" 12 369 411
+)
+"ProcDecl.ml" 11 310 327 "ProcDecl.ml" 11 310 330
+type(
+  'e option
+)
+ident(
+  int_ref var "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 10 238 267
+)
+"ProcDecl.ml" 11 310 341 "ProcDecl.ml" 11 310 342
+type(
+  'e
+)
+"ProcDecl.ml" 11 310 336 "ProcDecl.ml" 11 310 342
+type(
+  'e option
+)
+"ProcDecl.ml" 11 310 346 "ProcDecl.ml" 11 310 350
+type(
+  [> `Val | `Var ] as 'i
+)
+"ProcDecl.ml" 11 310 353 "ProcDecl.ml" 11 310 357
+type(
+  'e option
+)
+"ProcDecl.ml" 11 310 361 "ProcDecl.ml" 11 310 365
+type(
+  'i
+)
+"ProcDecl.ml" 11 310 321 "ProcDecl.ml" 11 310 365
+type(
+  'i
+)
+"ProcDecl.ml" 12 369 373 "ProcDecl.ml" 12 369 381
+type(
+  (string -> 'h * string * 'g) -> string list -> ('h * string * 'g) list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 12 369 387 "ProcDecl.ml" 12 369 390
+type(
+  string
+)
+ident(
+  def arg "ProcDecl.ml" 12 369 394 "ProcDecl.ml" 12 369 405
+)
+"ProcDecl.ml" 12 369 394 "ProcDecl.ml" 12 369 395
+type(
+  'h
+)
+ident(
+  int_ref m "ProcDecl.ml" 11 310 317 "ProcDecl.ml" 11 310 318
+)
+"ProcDecl.ml" 12 369 397 "ProcDecl.ml" 12 369 400
+type(
+  string
+)
+ident(
+  int_ref arg "ProcDecl.ml" 12 369 387 "ProcDecl.ml" 12 369 390
+)
+"ProcDecl.ml" 12 369 402 "ProcDecl.ml" 12 369 405
+type(
+  'g
+)
+ident(
+  int_ref typ "ProcDecl.ml" 10 238 300 "ProcDecl.ml" 10 238 304
+)
+"ProcDecl.ml" 12 369 394 "ProcDecl.ml" 12 369 405
+type(
+  'h * string * 'g
+)
+"ProcDecl.ml" 12 369 382 "ProcDecl.ml" 12 369 406
+type(
+  string -> 'h * string * 'g
+)
+"ProcDecl.ml" 12 369 407 "ProcDecl.ml" 12 369 411
+type(
+  string list
+)
+ident(
+  int_ref args "ProcDecl.ml" 10 238 279 "ProcDecl.ml" 10 238 284
+)
+"ProcDecl.ml" 12 369 373 "ProcDecl.ml" 12 369 411
+call(
+  tail
+)
+type(
+  ('h * string * 'g) list
+)
+"ProcDecl.ml" 11 310 313 "ProcDecl.ml" 12 369 411
+type(
+  ('h * string * 'g) list
+)
+"ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e option ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  string list ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'g -> ('h * string * 'g) list
+)
+type(
+  'g
+)
+ident(
+  def _0 "ProcDecl.ml" 11 310 313 "ProcDecl.ml" 12 369 411
+)
+type(
+  ('g -> ('h * string * 'g) list) ->
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'c
+)
+ident(
+  def _1 "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c ->
+   ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  string list
+)
+ident(
+  def _2 "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+)
+type(
+  ('a, string list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (string list ->
+   ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e option
+)
+ident(
+  def _3 "ProcDecl.ml" 10 238 263 "ProcDecl.ml" 13 412 415
+)
+type(
+  ('a, 'e option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e option ->
+   ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 10 238 240 "ProcDecl.ml" 13 412 415
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 10 238 240 "ProcDecl.ml" 13 412 415
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 10 238 240 "ProcDecl.ml" 13 412 415
+)
+"ProcDecl.ml" 14 417 436 "ProcDecl.ml" 14 417 439
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def typ "ProcDecl.ml" 14 417 419 "ProcDecl.ml" 16 524 527
+)
+"ProcDecl.ml" 14 417 442 "ProcDecl.ml" 14 417 445
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 442 "ProcDecl.ml" 14 417 445
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 442 "ProcDecl.ml" 14 417 445
+)
+"ProcDecl.ml" 14 417 446 "ProcDecl.ml" 14 417 451
+type(
+  ('h * string * 'g) list list option
+)
+ident(
+  def args "ProcDecl.ml" 14 417 442 "ProcDecl.ml" 16 524 527
+)
+"ProcDecl.ml" 14 417 451 "ProcDecl.ml" 14 417 454
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.seq
+)
+"ProcDecl.ml" 14 417 461 "ProcDecl.ml" 14 417 477
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref parameterSection "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 14 417 478 "ProcDecl.ml" 14 417 481
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "ProcDecl.ml" 14 417 436 "ProcDecl.ml" 14 417 439
+)
+"ProcDecl.ml" 14 417 461 "ProcDecl.ml" 14 417 482
+call(
+  tail
+)
+type(
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 461 "ProcDecl.ml" 14 417 482
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 461 "ProcDecl.ml" 14 417 482
+)
+"ProcDecl.ml" 14 417 455 "ProcDecl.ml" 14 417 483
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 455 "ProcDecl.ml" 14 417 483
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 455 "ProcDecl.ml" 14 417 483
+)
+"ProcDecl.ml" 14 417 451 "ProcDecl.ml" 14 417 484
+call(
+  tail
+)
+type(
+  ('a, ('h * string * 'g) list list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 451 "ProcDecl.ml" 14 417 484
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 451 "ProcDecl.ml" 14 417 484
+)
+"ProcDecl.ml" 14 417 451 "ProcDecl.ml" 14 417 485
+call(
+  stack
+)
+type(
+  ('a, ('h * string * 'g) list list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, ('h * string * 'g) list list option, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"ProcDecl.ml" 14 417 486 "ProcDecl.ml" 14 417 489
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 486 "ProcDecl.ml" 14 417 489
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 486 "ProcDecl.ml" 14 417 489
+)
+"ProcDecl.ml" 15 492 496 "ProcDecl.ml" 15 492 508
+type(
+  ('h * string * 'g) list list -> ('h * string * 'g) list
+)
+ident(
+  ext_ref List.flatten
+)
+"ProcDecl.ml" 15 492 510 "ProcDecl.ml" 15 492 517
+type(
+  ('h * string * 'g) list list option -> ('h * string * 'g) list list
+)
+ident(
+  ext_ref Common.listify
+)
+"ProcDecl.ml" 15 492 518 "ProcDecl.ml" 15 492 522
+type(
+  ('h * string * 'g) list list option
+)
+ident(
+  int_ref args "ProcDecl.ml" 14 417 446 "ProcDecl.ml" 14 417 451
+)
+"ProcDecl.ml" 15 492 509 "ProcDecl.ml" 15 492 523
+call(
+  stack
+)
+type(
+  ('h * string * 'g) list list
+)
+"ProcDecl.ml" 15 492 496 "ProcDecl.ml" 15 492 523
+call(
+  tail
+)
+type(
+  ('h * string * 'g) list
+)
+"ProcDecl.ml" 14 417 442 "ProcDecl.ml" 16 524 527
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'c -> ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('h * string * 'g) list list option ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('h * string * 'g) list
+)
+type(
+  'c
+)
+ident(
+  def _0 "ProcDecl.ml" 15 492 496 "ProcDecl.ml" 15 492 523
+)
+type(
+  'c
+)
+type(
+  ('c -> ('h * string * 'g) list) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  ('h * string * 'g) list list option
+)
+ident(
+  def _1 "ProcDecl.ml" 14 417 442 "ProcDecl.ml" 16 524 527
+)
+type(
+  ('a, ('h * string * 'g) list list option, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  (('h * string * 'g) list list option ->
+   ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+ident(
+  def _2 "ProcDecl.ml" 14 417 442 "ProcDecl.ml" 16 524 527
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c ->
+   ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 14 417 419 "ProcDecl.ml" 16 524 527
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 14 417 419 "ProcDecl.ml" 16 524 527
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 14 417 419 "ProcDecl.ml" 16 524 527
+)
+"ProcDecl.ml" 17 529 545 "ProcDecl.ml" 17 529 549
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def decl "ProcDecl.ml" 17 529 531 "ProcDecl.ml" 17 529 590
+)
+"ProcDecl.ml" 17 529 551 "ProcDecl.ml" 17 529 555
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def stmt "ProcDecl.ml" 17 529 531 "ProcDecl.ml" 17 529 590
+)
+"ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 562
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref decl "ProcDecl.ml" 17 529 545 "ProcDecl.ml" 17 529 549
+)
+"ProcDecl.ml" 17 529 565 "ProcDecl.ml" 17 529 568
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"ProcDecl.ml" 17 529 569 "ProcDecl.ml" 17 529 576
+type(
+  string
+)
+"ProcDecl.ml" 17 529 565 "ProcDecl.ml" 17 529 577
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 17 529 565 "ProcDecl.ml" 17 529 577
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 17 529 565 "ProcDecl.ml" 17 529 577
+)
+"ProcDecl.ml" 17 529 578 "ProcDecl.ml" 17 529 582
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.oseq
+)
+"ProcDecl.ml" 17 529 583 "ProcDecl.ml" 17 529 587
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 17 529 551 "ProcDecl.ml" 17 529 555
+)
+"ProcDecl.ml" 17 529 578 "ProcDecl.ml" 17 529 588
+call(
+  tail
+)
+type(
+  'a -> ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 17 529 578 "ProcDecl.ml" 17 529 588
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 17 529 578 "ProcDecl.ml" 17 529 588
+)
+"ProcDecl.ml" 17 529 564 "ProcDecl.ml" 17 529 588
+call(
+  stack
+)
+type(
+  ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e -> ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 17 529 563 "ProcDecl.ml" 17 529 590
+call(
+  stack
+)
+type(
+  ('a, 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'k list, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 590
+call(
+  tail
+)
+type(
+  'j -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'k list option -> 'j * 'k list option
+)
+type(
+  'j * 'k list option
+)
+type(
+  'k list option
+)
+ident(
+  int_ref _0 "ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 590
+)
+type(
+  'j
+)
+ident(
+  int_ref _1 "ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 590
+)
+type(
+  'k list option
+)
+ident(
+  def _0 "ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 590
+)
+type(
+  'k list option
+)
+type(
+  ('k list option -> 'j * 'k list option) ->
+  ('a, 'k list option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'j
+)
+ident(
+  def _1 "ProcDecl.ml" 17 529 558 "ProcDecl.ml" 17 529 590
+)
+type(
+  'j
+)
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('j -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 17 529 531 "ProcDecl.ml" 17 529 590
+call(
+  tail
+)
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 17 529 531 "ProcDecl.ml" 17 529 590
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 17 529 531 "ProcDecl.ml" 17 529 590
+)
+"ProcDecl.ml" 18 592 615 "ProcDecl.ml" 18 592 618
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def typ "ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 18 592 620 "ProcDecl.ml" 18 592 624
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def decl "ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 18 592 626 "ProcDecl.ml" 18 592 630
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def stmt "ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 19 633 640 "ProcDecl.ml" 19 633 644
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 19 633 646 "ProcDecl.ml" 19 633 650
+type(
+  ('h * string * 'g) list
+)
+ident(
+  def args "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 19 633 640 "ProcDecl.ml" 19 633 650
+type(
+  string * ('h * string * 'g) list
+)
+"ProcDecl.ml" 19 633 656 "ProcDecl.ml" 19 633 672
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  int_ref procedureHeading "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 19 633 673 "ProcDecl.ml" 19 633 676
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "ProcDecl.ml" 18 592 615 "ProcDecl.ml" 18 592 618
+)
+"ProcDecl.ml" 19 633 656 "ProcDecl.ml" 19 633 677
+call(
+  tail
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 19 633 656 "ProcDecl.ml" 19 633 677
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 19 633 656 "ProcDecl.ml" 19 633 677
+)
+"ProcDecl.ml" 19 633 678 "ProcDecl.ml" 19 633 681
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 19 633 678 "ProcDecl.ml" 19 633 681
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 19 633 678 "ProcDecl.ml" 19 633 681
+)
+"ProcDecl.ml" 20 683 690 "ProcDecl.ml" 20 683 695
+type(
+  'j
+)
+ident(
+  def decls "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 20 683 697 "ProcDecl.ml" 20 683 701
+type(
+  'k list option
+)
+ident(
+  def body "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 20 683 690 "ProcDecl.ml" 20 683 701
+type(
+  'j * 'k list option
+)
+"ProcDecl.ml" 20 683 706 "ProcDecl.ml" 20 683 719
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref procedureBody "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 20 683 720 "ProcDecl.ml" 20 683 724
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref decl "ProcDecl.ml" 18 592 620 "ProcDecl.ml" 18 592 624
+)
+"ProcDecl.ml" 20 683 726 "ProcDecl.ml" 20 683 730
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 18 592 626 "ProcDecl.ml" 18 592 630
+)
+"ProcDecl.ml" 20 683 706 "ProcDecl.ml" 20 683 731
+call(
+  tail
+)
+type(
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 20 683 706 "ProcDecl.ml" 20 683 731
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 20 683 706 "ProcDecl.ml" 20 683 731
+)
+"ProcDecl.ml" 21 733 738 "ProcDecl.ml" 21 733 750
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref procedureEnd "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 21 733 751 "ProcDecl.ml" 21 733 755
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 19 633 640 "ProcDecl.ml" 19 633 644
+)
+"ProcDecl.ml" 21 733 738 "ProcDecl.ml" 21 733 756
+call(
+  tail
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 21 733 738 "ProcDecl.ml" 21 733 756
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 21 733 738 "ProcDecl.ml" 21 733 756
+)
+"ProcDecl.ml" 22 759 763 "ProcDecl.ml" 22 759 767
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 19 633 640 "ProcDecl.ml" 19 633 644
+)
+"ProcDecl.ml" 22 759 769 "ProcDecl.ml" 22 759 773
+type(
+  ('h * string * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 19 633 646 "ProcDecl.ml" 19 633 650
+)
+"ProcDecl.ml" 22 759 775 "ProcDecl.ml" 22 759 780
+type(
+  'j
+)
+ident(
+  int_ref decls "ProcDecl.ml" 20 683 690 "ProcDecl.ml" 20 683 695
+)
+"ProcDecl.ml" 22 759 782 "ProcDecl.ml" 22 759 789
+type(
+  'k list option -> 'k list
+)
+ident(
+  ext_ref Common.listify
+)
+"ProcDecl.ml" 22 759 790 "ProcDecl.ml" 22 759 794
+type(
+  'k list option
+)
+ident(
+  int_ref body "ProcDecl.ml" 20 683 697 "ProcDecl.ml" 20 683 701
+)
+"ProcDecl.ml" 22 759 782 "ProcDecl.ml" 22 759 794
+call(
+  stack
+)
+type(
+  'k list
+)
+"ProcDecl.ml" 22 759 763 "ProcDecl.ml" 22 759 794
+type(
+  string * ('h * string * 'g) list * 'j * 'k list
+)
+"ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  string * ('h * string * 'g) list ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  'c ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  'j * 'k list option ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  unit -> string * ('h * string * 'g) list * 'j * 'k list
+)
+type(
+  unit
+)
+ident(
+  def _0 "ProcDecl.ml" 22 759 763 "ProcDecl.ml" 22 759 794
+)
+type(
+  unit
+)
+type(
+  (unit -> string * ('h * string * 'g) list * 'j * 'k list) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'j * 'k list option
+)
+ident(
+  def _1 "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+type(
+  ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('j * 'k list option ->
+   ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+ident(
+  def _2 "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c ->
+   ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  string * ('h * string * 'g) list
+)
+ident(
+  def _3 "ProcDecl.ml" 19 633 638 "ProcDecl.ml" 23 795 798
+)
+type(
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  (string * ('h * string * 'g) list ->
+   ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+   Ostap.Combinators.parse) ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 18 592 594 "ProcDecl.ml" 23 795 798
+)
+"ProcDecl.ml" 24 800 815 "ProcDecl.ml" 24 800 827
+type(
+  string
+)
+ident(
+  def expectedName "ProcDecl.ml" 24 800 802 "ProcDecl.ml" 24 800 868
+)
+"ProcDecl.ml" 24 800 831 "ProcDecl.ml" 24 800 834
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"ProcDecl.ml" 24 800 835 "ProcDecl.ml" 24 800 840
+type(
+  string
+)
+"ProcDecl.ml" 24 800 831 "ProcDecl.ml" 24 800 841
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 24 800 831 "ProcDecl.ml" 24 800 841
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 24 800 831 "ProcDecl.ml" 24 800 841
+)
+"ProcDecl.ml" 24 800 843 "ProcDecl.ml" 24 800 849
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.expect
+)
+"ProcDecl.ml" 24 800 850 "ProcDecl.ml" 24 800 862
+type(
+  string
+)
+ident(
+  int_ref expectedName "ProcDecl.ml" 24 800 815 "ProcDecl.ml" 24 800 827
+)
+"ProcDecl.ml" 24 800 843 "ProcDecl.ml" 24 800 863
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 24 800 843 "ProcDecl.ml" 24 800 863
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 24 800 843 "ProcDecl.ml" 24 800 863
+)
+"ProcDecl.ml" 24 800 865 "ProcDecl.ml" 24 800 868
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 24 800 865 "ProcDecl.ml" 24 800 868
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 24 800 865 "ProcDecl.ml" 24 800 868
+)
+"ProcDecl.ml" 24 800 830 "ProcDecl.ml" 24 800 868
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  'e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> unit
+)
+type(
+  unit
+)
+type(
+  'c
+)
+type(
+  ('c -> unit) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"ProcDecl.ml" 24 800 802 "ProcDecl.ml" 24 800 868
+call(
+  tail
+)
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 24 800 802 "ProcDecl.ml" 24 800 868
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 24 800 802 "ProcDecl.ml" 24 800 868
+)
+"ProcDecl.ml" 25 870 878 "ProcDecl.ml" 25 870 881
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def typ "ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 25 870 883 "ProcDecl.ml" 25 870 887
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def decl "ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 25 870 889 "ProcDecl.ml" 25 870 893
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  def stmt "ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 25 870 896 "ProcDecl.ml" 25 870 916
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  int_ref procedureDeclaration "ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 25 870 917 "ProcDecl.ml" 25 870 920
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "ProcDecl.ml" 25 870 878 "ProcDecl.ml" 25 870 881
+)
+"ProcDecl.ml" 25 870 922 "ProcDecl.ml" 25 870 926
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref decl "ProcDecl.ml" 25 870 883 "ProcDecl.ml" 25 870 887
+)
+"ProcDecl.ml" 25 870 928 "ProcDecl.ml" 25 870 932
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 25 870 889 "ProcDecl.ml" 25 870 893
+)
+"ProcDecl.ml" 25 870 896 "ProcDecl.ml" 25 870 933
+call(
+  tail
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 25 870 896 "ProcDecl.ml" 25 870 933
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 25 870 896 "ProcDecl.ml" 25 870 933
+)
+"ProcDecl.ml" 25 870 896 "ProcDecl.ml" 25 870 934
+type(
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.parse ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.some
+)
+"ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "ProcDecl.ml" 25 870 872 "ProcDecl.ml" 25 870 934
+)
+"ProcDecl.ml" 7 127 129 "ProcDecl.ml" 25 870 934
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, (string * ('h * string * 'g) list * 'j * 'k list) list,
+   Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  def parse "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  string -> 'a -> ('a, unit, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def procedureEnd "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list * 'j * 'k list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  def procedureDeclaration "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  ('a, 'j, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, 'k, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, 'j * 'k list option, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def procedureBody "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def formalParameters "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, ('h * string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def parameterSection "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a ->
+  ('a, string * ('h * string * 'g) list, Ostap.Reason.t)
+  Ostap.Combinators.result
+)
+ident(
+  def procedureHeading "ProcDecl.ml" 6 119 119 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 33 1057 1061 "ProcDecl.ml" 33 1057 1066
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  def print "ProcDecl.ml" 59 1803 1803 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 33 1057 1067 "ProcDecl.ml" 33 1057 1070
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "ProcDecl.ml" 33 1057 1071 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 33 1057 1071 "ProcDecl.ml" 33 1057 1075
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  def decl "ProcDecl.ml" 33 1057 1076 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 33 1057 1076 "ProcDecl.ml" 33 1057 1080
+type(
+  'c -> Ostap.Pretty.printer
+)
+ident(
+  def stmt "ProcDecl.ml" 34 1083 1085 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 34 1083 1089 "ProcDecl.ml" 34 1083 1098
+type(
+  [< `Val | `Var ] * string * 'a -> Ostap.Pretty.printer
+)
+ident(
+  def parameter "ProcDecl.ml" 40 1235 1237 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 34 1083 1100 "ProcDecl.ml" 34 1083 1101
+type(
+  [< `Val | `Var ] as 'd
+)
+ident(
+  def v "ProcDecl.ml" 35 1114 1118 "ProcDecl.ml" 38 1222 1227
+)
+"ProcDecl.ml" 34 1083 1103 "ProcDecl.ml" 34 1083 1107
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 35 1114 1118 "ProcDecl.ml" 38 1222 1227
+)
+"ProcDecl.ml" 34 1083 1109 "ProcDecl.ml" 34 1083 1110
+type(
+  'a
+)
+ident(
+  def t "ProcDecl.ml" 35 1114 1118 "ProcDecl.ml" 38 1222 1227
+)
+"ProcDecl.ml" 34 1083 1100 "ProcDecl.ml" 34 1083 1110
+type(
+  'd * string * 'a
+)
+"ProcDecl.ml" 35 1114 1118 "ProcDecl.ml" 35 1114 1121
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"ProcDecl.ml" 36 1124 1137 "ProcDecl.ml" 36 1124 1138
+type(
+  'd
+)
+ident(
+  int_ref v "ProcDecl.ml" 34 1083 1100 "ProcDecl.ml" 34 1083 1101
+)
+"ProcDecl.ml" 36 1124 1144 "ProcDecl.ml" 36 1124 1148
+type(
+  'd
+)
+"ProcDecl.ml" 36 1124 1153 "ProcDecl.ml" 36 1124 1159
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 36 1124 1160 "ProcDecl.ml" 36 1124 1165
+type(
+  string
+)
+"ProcDecl.ml" 36 1124 1153 "ProcDecl.ml" 36 1124 1165
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 36 1124 1152 "ProcDecl.ml" 36 1124 1166
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 36 1124 1169 "ProcDecl.ml" 36 1124 1173
+type(
+  'd
+)
+"ProcDecl.ml" 36 1124 1177 "ProcDecl.ml" 36 1124 1179
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 36 1124 1130 "ProcDecl.ml" 36 1124 1180
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 37 1183 1190 "ProcDecl.ml" 37 1183 1196
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 37 1183 1197 "ProcDecl.ml" 37 1183 1201
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 34 1083 1103 "ProcDecl.ml" 34 1083 1107
+)
+"ProcDecl.ml" 37 1183 1190 "ProcDecl.ml" 37 1183 1201
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 37 1183 1203 "ProcDecl.ml" 37 1183 1209
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 37 1183 1210 "ProcDecl.ml" 37 1183 1213
+type(
+  string
+)
+"ProcDecl.ml" 37 1183 1203 "ProcDecl.ml" 37 1183 1213
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 37 1183 1215 "ProcDecl.ml" 37 1183 1218
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "ProcDecl.ml" 33 1057 1067 "ProcDecl.ml" 33 1057 1070
+)
+"ProcDecl.ml" 37 1183 1219 "ProcDecl.ml" 37 1183 1220
+type(
+  'a
+)
+ident(
+  int_ref t "ProcDecl.ml" 34 1083 1109 "ProcDecl.ml" 34 1083 1110
+)
+"ProcDecl.ml" 37 1183 1215 "ProcDecl.ml" 37 1183 1220
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 37 1183 1189 "ProcDecl.ml" 37 1183 1221
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 36 1124 1130 "ProcDecl.ml" 37 1183 1221
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ProcDecl.ml" 35 1114 1122 "ProcDecl.ml" 38 1222 1227
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 35 1114 1118 "ProcDecl.ml" 38 1222 1227
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 34 1083 1099 "ProcDecl.ml" 38 1222 1227
+type(
+  'd * string * 'a -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 40 1235 1241 "ProcDecl.ml" 40 1235 1257
+type(
+  ([< `Val | `Var ] * string * 'a) list -> Ostap.Pretty.printer
+)
+ident(
+  def formalParameters "ProcDecl.ml" 41 1307 1309 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 40 1235 1258 "ProcDecl.ml" 40 1235 1262
+type(
+  (([< `Val | `Var ] as 'e) * string * 'a) list
+)
+ident(
+  def args "ProcDecl.ml" 40 1235 1265 "ProcDecl.ml" 40 1235 1303
+)
+"ProcDecl.ml" 40 1235 1265 "ProcDecl.ml" 40 1235 1271
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.rboxed
+)
+"ProcDecl.ml" 40 1235 1273 "ProcDecl.ml" 40 1235 1280
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.hvboxed
+)
+"ProcDecl.ml" 40 1235 1282 "ProcDecl.ml" 40 1235 1286
+type(
+  ('e * string * 'a -> Ostap.Pretty.printer) ->
+  ('e * string * 'a) list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.mseq
+)
+"ProcDecl.ml" 40 1235 1287 "ProcDecl.ml" 40 1235 1296
+type(
+  'e * string * 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref parameter "ProcDecl.ml" 34 1083 1089 "ProcDecl.ml" 34 1083 1098
+)
+"ProcDecl.ml" 40 1235 1297 "ProcDecl.ml" 40 1235 1301
+type(
+  ('e * string * 'a) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 40 1235 1258 "ProcDecl.ml" 40 1235 1262
+)
+"ProcDecl.ml" 40 1235 1281 "ProcDecl.ml" 40 1235 1302
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 40 1235 1272 "ProcDecl.ml" 40 1235 1303
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 40 1235 1265 "ProcDecl.ml" 40 1235 1303
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 40 1235 1258 "ProcDecl.ml" 40 1235 1303
+type(
+  ('e * string * 'a) list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 41 1307 1313 "ProcDecl.ml" 41 1307 1326
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  def procedureBody "ProcDecl.ml" 50 1499 1501 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 41 1307 1327 "ProcDecl.ml" 41 1307 1332
+type(
+  'b
+)
+ident(
+  def decls "ProcDecl.ml" 41 1307 1333 "ProcDecl.ml" 48 1488 1493
+)
+"ProcDecl.ml" 41 1307 1333 "ProcDecl.ml" 41 1307 1338
+type(
+  'c list
+)
+ident(
+  def stmts "ProcDecl.ml" 42 1341 1345 "ProcDecl.ml" 48 1488 1493
+)
+"ProcDecl.ml" 42 1341 1345 "ProcDecl.ml" 42 1341 1349
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 43 1352 1359 "ProcDecl.ml" 43 1352 1363
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref decl "ProcDecl.ml" 33 1057 1071 "ProcDecl.ml" 33 1057 1075
+)
+"ProcDecl.ml" 43 1352 1364 "ProcDecl.ml" 43 1352 1369
+type(
+  'b
+)
+ident(
+  int_ref decls "ProcDecl.ml" 41 1307 1327 "ProcDecl.ml" 41 1307 1332
+)
+"ProcDecl.ml" 43 1352 1359 "ProcDecl.ml" 43 1352 1369
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 43 1352 1358 "ProcDecl.ml" 43 1352 1370
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 44 1373 1386 "ProcDecl.ml" 44 1373 1391
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 41 1307 1333 "ProcDecl.ml" 41 1307 1338
+)
+"ProcDecl.ml" 45 1398 1407 "ProcDecl.ml" 45 1398 1409
+type(
+  'c list
+)
+"ProcDecl.ml" 45 1398 1414 "ProcDecl.ml" 45 1398 1419
+type(
+  Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.empty
+)
+"ProcDecl.ml" 45 1398 1413 "ProcDecl.ml" 45 1398 1420
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 46 1422 1431 "ProcDecl.ml" 46 1422 1432
+type(
+  'c list
+)
+"ProcDecl.ml" 46 1422 1438 "ProcDecl.ml" 46 1422 1443
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"ProcDecl.ml" 46 1422 1445 "ProcDecl.ml" 46 1422 1451
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 46 1422 1452 "ProcDecl.ml" 46 1422 1459
+type(
+  string
+)
+"ProcDecl.ml" 46 1422 1444 "ProcDecl.ml" 46 1422 1460
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 46 1422 1462 "ProcDecl.ml" 46 1422 1466
+type(
+  ('c -> Ostap.Pretty.printer) -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.mseq
+)
+"ProcDecl.ml" 46 1422 1467 "ProcDecl.ml" 46 1422 1471
+type(
+  'c -> Ostap.Pretty.printer
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 33 1057 1076 "ProcDecl.ml" 33 1057 1080
+)
+"ProcDecl.ml" 46 1422 1472 "ProcDecl.ml" 46 1422 1477
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 41 1307 1333 "ProcDecl.ml" 41 1307 1338
+)
+"ProcDecl.ml" 46 1422 1461 "ProcDecl.ml" 46 1422 1478
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 46 1422 1438 "ProcDecl.ml" 46 1422 1478
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 46 1422 1437 "ProcDecl.ml" 46 1422 1479
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 44 1373 1379 "ProcDecl.ml" 47 1480 1487
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 43 1352 1358 "ProcDecl.ml" 47 1480 1487
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ProcDecl.ml" 42 1341 1350 "ProcDecl.ml" 48 1488 1493
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 42 1341 1345 "ProcDecl.ml" 48 1488 1493
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 41 1307 1333 "ProcDecl.ml" 48 1488 1493
+type(
+  'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 41 1307 1327 "ProcDecl.ml" 48 1488 1493
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 50 1499 1505 "ProcDecl.ml" 50 1499 1516
+type(
+  string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c list ->
+  Ostap.Pretty.printer
+)
+ident(
+  def declaration "ProcDecl.ml" 57 1743 1745 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 50 1499 1518 "ProcDecl.ml" 50 1499 1522
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 55 1732 1737
+)
+"ProcDecl.ml" 50 1499 1524 "ProcDecl.ml" 50 1499 1528
+type(
+  (([< `Val | `Var ] as 'f) * string * 'a) list
+)
+ident(
+  def args "ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 55 1732 1737
+)
+"ProcDecl.ml" 50 1499 1530 "ProcDecl.ml" 50 1499 1535
+type(
+  'b
+)
+ident(
+  def decls "ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 55 1732 1737
+)
+"ProcDecl.ml" 50 1499 1537 "ProcDecl.ml" 50 1499 1542
+type(
+  'c list
+)
+ident(
+  def stmts "ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 55 1732 1737
+)
+"ProcDecl.ml" 50 1499 1518 "ProcDecl.ml" 50 1499 1542
+type(
+  string * ('f * string * 'a) list * 'b * 'c list
+)
+"ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 51 1546 1554
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 52 1557 1563 "ProcDecl.ml" 52 1557 1566
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"ProcDecl.ml" 52 1557 1568 "ProcDecl.ml" 52 1557 1574
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 52 1557 1575 "ProcDecl.ml" 52 1557 1586
+type(
+  string
+)
+"ProcDecl.ml" 52 1557 1568 "ProcDecl.ml" 52 1557 1586
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 52 1557 1588 "ProcDecl.ml" 52 1557 1594
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 52 1557 1595 "ProcDecl.ml" 52 1557 1599
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 50 1499 1518 "ProcDecl.ml" 50 1499 1522
+)
+"ProcDecl.ml" 52 1557 1588 "ProcDecl.ml" 52 1557 1599
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 52 1557 1601 "ProcDecl.ml" 52 1557 1604
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"ProcDecl.ml" 52 1557 1606 "ProcDecl.ml" 52 1557 1622
+type(
+  ('f * string * 'a) list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref formalParameters "ProcDecl.ml" 40 1235 1241 "ProcDecl.ml" 40 1235 1257
+)
+"ProcDecl.ml" 52 1557 1623 "ProcDecl.ml" 52 1557 1627
+type(
+  ('f * string * 'a) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 50 1499 1524 "ProcDecl.ml" 50 1499 1528
+)
+"ProcDecl.ml" 52 1557 1606 "ProcDecl.ml" 52 1557 1627
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 52 1557 1629 "ProcDecl.ml" 52 1557 1635
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 52 1557 1636 "ProcDecl.ml" 52 1557 1639
+type(
+  string
+)
+"ProcDecl.ml" 52 1557 1629 "ProcDecl.ml" 52 1557 1639
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 52 1557 1605 "ProcDecl.ml" 52 1557 1640
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 52 1557 1601 "ProcDecl.ml" 52 1557 1640
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 52 1557 1567 "ProcDecl.ml" 52 1557 1641
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 52 1557 1563 "ProcDecl.ml" 52 1557 1641
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 53 1643 1649 "ProcDecl.ml" 53 1643 1662
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref procedureBody "ProcDecl.ml" 41 1307 1313 "ProcDecl.ml" 41 1307 1326
+)
+"ProcDecl.ml" 53 1643 1663 "ProcDecl.ml" 53 1643 1668
+type(
+  'b
+)
+ident(
+  int_ref decls "ProcDecl.ml" 50 1499 1530 "ProcDecl.ml" 50 1499 1535
+)
+"ProcDecl.ml" 53 1643 1669 "ProcDecl.ml" 53 1643 1674
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 50 1499 1537 "ProcDecl.ml" 50 1499 1542
+)
+"ProcDecl.ml" 53 1643 1649 "ProcDecl.ml" 53 1643 1674
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 54 1676 1682 "ProcDecl.ml" 54 1676 1685
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"ProcDecl.ml" 54 1676 1687 "ProcDecl.ml" 54 1676 1693
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 54 1676 1694 "ProcDecl.ml" 54 1676 1699
+type(
+  string
+)
+"ProcDecl.ml" 54 1676 1687 "ProcDecl.ml" 54 1676 1699
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 54 1676 1701 "ProcDecl.ml" 54 1676 1704
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"ProcDecl.ml" 54 1676 1706 "ProcDecl.ml" 54 1676 1712
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 54 1676 1713 "ProcDecl.ml" 54 1676 1717
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 50 1499 1518 "ProcDecl.ml" 50 1499 1522
+)
+"ProcDecl.ml" 54 1676 1706 "ProcDecl.ml" 54 1676 1717
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 54 1676 1719 "ProcDecl.ml" 54 1676 1725
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 54 1676 1726 "ProcDecl.ml" 54 1676 1729
+type(
+  string
+)
+"ProcDecl.ml" 54 1676 1719 "ProcDecl.ml" 54 1676 1729
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 54 1676 1705 "ProcDecl.ml" 54 1676 1730
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 54 1676 1701 "ProcDecl.ml" 54 1676 1730
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 54 1676 1686 "ProcDecl.ml" 54 1676 1731
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 54 1676 1682 "ProcDecl.ml" 54 1676 1731
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 51 1546 1555 "ProcDecl.ml" 55 1732 1737
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 51 1546 1550 "ProcDecl.ml" 55 1732 1737
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 50 1499 1517 "ProcDecl.ml" 55 1732 1737
+type(
+  string * ('f * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 57 1743 1754 "ProcDecl.ml" 57 1743 1756
+type(
+  (string * (([< `Val | `Var ] as 'g) * string * 'a) list * 'b * 'c list)
+  list
+)
+"ProcDecl.ml" 57 1743 1760 "ProcDecl.ml" 57 1743 1762
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 57 1743 1765 "ProcDecl.ml" 57 1743 1766
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list
+)
+ident(
+  def t "ProcDecl.ml" 57 1743 1770 "ProcDecl.ml" 57 1743 1801
+)
+"ProcDecl.ml" 57 1743 1771 "ProcDecl.ml" 57 1743 1775
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 57 1743 1777 "ProcDecl.ml" 57 1743 1785
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 57 1743 1786 "ProcDecl.ml" 57 1743 1797
+type(
+  string * ('g * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref declaration "ProcDecl.ml" 50 1499 1505 "ProcDecl.ml" 50 1499 1516
+)
+"ProcDecl.ml" 57 1743 1798 "ProcDecl.ml" 57 1743 1799
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list
+)
+ident(
+  int_ref t "ProcDecl.ml" 57 1743 1765 "ProcDecl.ml" 57 1743 1766
+)
+"ProcDecl.ml" 57 1743 1776 "ProcDecl.ml" 57 1743 1800
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 57 1743 1771 "ProcDecl.ml" 57 1743 1800
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 57 1743 1770 "ProcDecl.ml" 57 1743 1801
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 57 1743 1745 "ProcDecl.ml" 57 1743 1801
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 50 1499 1501 "ProcDecl.ml" 57 1743 1801
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 41 1307 1309 "ProcDecl.ml" 57 1743 1801
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 40 1235 1237 "ProcDecl.ml" 57 1743 1801
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 34 1083 1085 "ProcDecl.ml" 57 1743 1801
+type(
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 33 1057 1076 "ProcDecl.ml" 57 1743 1801
+type(
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 33 1057 1071 "ProcDecl.ml" 57 1743 1801
+type(
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 33 1057 1067 "ProcDecl.ml" 57 1743 1801
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 59 1803 1807 "ProcDecl.ml" 59 1803 1821
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c ->
+  Ostap.Pretty.printer
+)
+ident(
+  def print_header_c "ProcDecl.ml" 68 2132 2132 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 59 1803 1822 "ProcDecl.ml" 59 1803 1825
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "ProcDecl.ml" 59 1803 1826 "ProcDecl.ml" 66 2063 2130
+)
+"ProcDecl.ml" 59 1803 1827 "ProcDecl.ml" 59 1803 1831
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 60 1847 1849 "ProcDecl.ml" 66 2063 2130
+)
+"ProcDecl.ml" 59 1803 1833 "ProcDecl.ml" 59 1803 1837
+type(
+  (([< `Val | `Var ] as 'd) * string * 'a) list
+)
+ident(
+  def args "ProcDecl.ml" 60 1847 1849 "ProcDecl.ml" 66 2063 2130
+)
+"ProcDecl.ml" 59 1803 1839 "ProcDecl.ml" 59 1803 1840
+type(
+  'b
+)
+"ProcDecl.ml" 59 1803 1842 "ProcDecl.ml" 59 1803 1843
+type(
+  'c
+)
+"ProcDecl.ml" 59 1803 1827 "ProcDecl.ml" 59 1803 1843
+type(
+  string * ('d * string * 'a) list * 'b * 'c
+)
+"ProcDecl.ml" 60 1847 1853 "ProcDecl.ml" 60 1847 1862
+type(
+  [< `Val | `Var ] * string * 'a -> Ostap.Pretty.printer
+)
+ident(
+  def parameter "ProcDecl.ml" 63 1962 1964 "ProcDecl.ml" 66 2063 2130
+)
+"ProcDecl.ml" 60 1847 1864 "ProcDecl.ml" 60 1847 1865
+type(
+  [< `Val | `Var ] as 'e
+)
+ident(
+  def v "ProcDecl.ml" 61 1879 1883 "ProcDecl.ml" 61 1879 1953
+)
+"ProcDecl.ml" 60 1847 1867 "ProcDecl.ml" 60 1847 1871
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 61 1879 1883 "ProcDecl.ml" 61 1879 1953
+)
+"ProcDecl.ml" 60 1847 1873 "ProcDecl.ml" 60 1847 1874
+type(
+  'a
+)
+ident(
+  def t "ProcDecl.ml" 61 1879 1883 "ProcDecl.ml" 61 1879 1953
+)
+"ProcDecl.ml" 60 1847 1864 "ProcDecl.ml" 60 1847 1874
+type(
+  'e * string * 'a
+)
+"ProcDecl.ml" 61 1879 1883 "ProcDecl.ml" 61 1879 1886
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "ProcDecl.ml" 59 1803 1822 "ProcDecl.ml" 59 1803 1825
+)
+"ProcDecl.ml" 61 1879 1888 "ProcDecl.ml" 61 1879 1894
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 61 1879 1903 "ProcDecl.ml" 61 1879 1904
+type(
+  'e
+)
+ident(
+  int_ref v "ProcDecl.ml" 60 1847 1864 "ProcDecl.ml" 60 1847 1865
+)
+"ProcDecl.ml" 61 1879 1910 "ProcDecl.ml" 61 1879 1914
+type(
+  'e
+)
+"ProcDecl.ml" 61 1879 1918 "ProcDecl.ml" 61 1879 1921
+type(
+  string
+)
+"ProcDecl.ml" 61 1879 1923 "ProcDecl.ml" 61 1879 1927
+type(
+  'e
+)
+"ProcDecl.ml" 61 1879 1931 "ProcDecl.ml" 61 1879 1933
+type(
+  string
+)
+"ProcDecl.ml" 61 1879 1896 "ProcDecl.ml" 61 1879 1934
+type(
+  string
+)
+"ProcDecl.ml" 61 1879 1937 "ProcDecl.ml" 61 1879 1941
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 60 1847 1867 "ProcDecl.ml" 60 1847 1871
+)
+"ProcDecl.ml" 61 1879 1944 "ProcDecl.ml" 61 1879 1949
+type(
+  string
+)
+"ProcDecl.ml" 61 1879 1937 "ProcDecl.ml" 61 1879 1949
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ProcDecl.ml" 61 1879 1896 "ProcDecl.ml" 61 1879 1949
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ProcDecl.ml" 61 1879 1895 "ProcDecl.ml" 61 1879 1950
+call(
+  stack
+)
+type(
+  string
+)
+"ProcDecl.ml" 61 1879 1887 "ProcDecl.ml" 61 1879 1951
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 61 1879 1952 "ProcDecl.ml" 61 1879 1953
+type(
+  'a
+)
+ident(
+  int_ref t "ProcDecl.ml" 60 1847 1873 "ProcDecl.ml" 60 1847 1874
+)
+"ProcDecl.ml" 61 1879 1883 "ProcDecl.ml" 61 1879 1953
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 60 1847 1863 "ProcDecl.ml" 61 1879 1953
+type(
+  'e * string * 'a -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 63 1962 1968 "ProcDecl.ml" 63 1962 1984
+type(
+  ([< `Val | `Var ] * string * 'a) list -> Ostap.Pretty.printer
+)
+ident(
+  def formalParameters "ProcDecl.ml" 66 2063 2065 "ProcDecl.ml" 66 2063 2130
+)
+"ProcDecl.ml" 63 1962 1985 "ProcDecl.ml" 63 1962 1989
+type(
+  (([< `Val | `Var ] as 'f) * string * 'a) list
+)
+ident(
+  def args "ProcDecl.ml" 64 1992 1996 "ProcDecl.ml" 64 1992 2057
+)
+"ProcDecl.ml" 64 1992 1996 "ProcDecl.ml" 64 1992 2002
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.rboxed
+)
+"ProcDecl.ml" 64 1992 2004 "ProcDecl.ml" 64 1992 2011
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.hvboxed
+)
+"ProcDecl.ml" 64 1992 2013 "ProcDecl.ml" 64 1992 2029
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.listByCommaBreak
+)
+"ProcDecl.ml" 64 1992 2031 "ProcDecl.ml" 64 1992 2039
+type(
+  ('f * string * 'a -> Ostap.Pretty.printer) ->
+  ('f * string * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 64 1992 2040 "ProcDecl.ml" 64 1992 2049
+type(
+  'f * string * 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref parameter "ProcDecl.ml" 60 1847 1853 "ProcDecl.ml" 60 1847 1862
+)
+"ProcDecl.ml" 64 1992 2050 "ProcDecl.ml" 64 1992 2054
+type(
+  ('f * string * 'a) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 63 1962 1985 "ProcDecl.ml" 63 1962 1989
+)
+"ProcDecl.ml" 64 1992 2030 "ProcDecl.ml" 64 1992 2055
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 64 1992 2012 "ProcDecl.ml" 64 1992 2056
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 64 1992 2003 "ProcDecl.ml" 64 1992 2057
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 64 1992 1996 "ProcDecl.ml" 64 1992 2057
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 63 1962 1985 "ProcDecl.ml" 64 1992 2057
+type(
+  ('f * string * 'a) list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 66 2063 2065 "ProcDecl.ml" 66 2063 2068
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"ProcDecl.ml" 66 2063 2070 "ProcDecl.ml" 66 2063 2076
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 66 2063 2077 "ProcDecl.ml" 66 2063 2083
+type(
+  string
+)
+"ProcDecl.ml" 66 2063 2070 "ProcDecl.ml" 66 2063 2083
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 66 2063 2085 "ProcDecl.ml" 66 2063 2091
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 66 2063 2093 "ProcDecl.ml" 66 2063 2097
+type(
+  string
+)
+ident(
+  int_ref name "ProcDecl.ml" 59 1803 1827 "ProcDecl.ml" 59 1803 1831
+)
+"ProcDecl.ml" 66 2063 2100 "ProcDecl.ml" 66 2063 2105
+type(
+  string
+)
+"ProcDecl.ml" 66 2063 2093 "ProcDecl.ml" 66 2063 2105
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ProcDecl.ml" 66 2063 2092 "ProcDecl.ml" 66 2063 2106
+call(
+  stack
+)
+type(
+  string
+)
+"ProcDecl.ml" 66 2063 2085 "ProcDecl.ml" 66 2063 2106
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 66 2063 2108 "ProcDecl.ml" 66 2063 2124
+type(
+  ('d * string * 'a) list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref formalParameters "ProcDecl.ml" 63 1962 1968 "ProcDecl.ml" 63 1962 1984
+)
+"ProcDecl.ml" 66 2063 2125 "ProcDecl.ml" 66 2063 2129
+type(
+  ('d * string * 'a) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 59 1803 1833 "ProcDecl.ml" 59 1803 1837
+)
+"ProcDecl.ml" 66 2063 2108 "ProcDecl.ml" 66 2063 2129
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 66 2063 2069 "ProcDecl.ml" 66 2063 2130
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 66 2063 2065 "ProcDecl.ml" 66 2063 2130
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 63 1962 1964 "ProcDecl.ml" 66 2063 2130
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 60 1847 1849 "ProcDecl.ml" 66 2063 2130
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 59 1803 1826 "ProcDecl.ml" 66 2063 2130
+type(
+  string * ('d * string * 'a) list * 'b * 'c -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 59 1803 1822 "ProcDecl.ml" 66 2063 2130
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  string * ('d * string * 'a) list * 'b * 'c -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 68 2132 2136 "ProcDecl.ml" 68 2132 2149
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  def print_proto_c "ProcDecl.ml" 72 2289 2289 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 68 2132 2150 "ProcDecl.ml" 68 2132 2153
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "ProcDecl.ml" 69 2156 2158 "ProcDecl.ml" 70 2227 2285
+)
+"ProcDecl.ml" 69 2156 2162 "ProcDecl.ml" 69 2156 2173
+type(
+  string * ([< `Val | `Var ] * string * 'a) list * 'd * 'e ->
+  Ostap.Pretty.printer
+)
+ident(
+  def declaration "ProcDecl.ml" 70 2227 2229 "ProcDecl.ml" 70 2227 2285
+)
+"ProcDecl.ml" 69 2156 2174 "ProcDecl.ml" 69 2156 2175
+type(
+  string * (([< `Val | `Var ] as 'f) * string * 'a) list * 'd * 'e
+)
+ident(
+  def p "ProcDecl.ml" 69 2156 2178 "ProcDecl.ml" 69 2156 2223
+)
+"ProcDecl.ml" 69 2156 2178 "ProcDecl.ml" 69 2156 2182
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 69 2156 2184 "ProcDecl.ml" 69 2156 2187
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"ProcDecl.ml" 69 2156 2189 "ProcDecl.ml" 69 2156 2203
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  string * ('f * string * 'a) list * 'd * 'e -> Ostap.Pretty.printer
+)
+ident(
+  int_ref print_header_c "ProcDecl.ml" 59 1803 1807 "ProcDecl.ml" 59 1803 1821
+)
+"ProcDecl.ml" 69 2156 2204 "ProcDecl.ml" 69 2156 2207
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "ProcDecl.ml" 68 2132 2150 "ProcDecl.ml" 68 2132 2153
+)
+"ProcDecl.ml" 69 2156 2208 "ProcDecl.ml" 69 2156 2209
+type(
+  string * ('f * string * 'a) list * 'd * 'e
+)
+ident(
+  int_ref p "ProcDecl.ml" 69 2156 2174 "ProcDecl.ml" 69 2156 2175
+)
+"ProcDecl.ml" 69 2156 2189 "ProcDecl.ml" 69 2156 2209
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 69 2156 2211 "ProcDecl.ml" 69 2156 2217
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 69 2156 2218 "ProcDecl.ml" 69 2156 2221
+type(
+  string
+)
+"ProcDecl.ml" 69 2156 2211 "ProcDecl.ml" 69 2156 2221
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 69 2156 2188 "ProcDecl.ml" 69 2156 2222
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 69 2156 2184 "ProcDecl.ml" 69 2156 2222
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 69 2156 2183 "ProcDecl.ml" 69 2156 2223
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 69 2156 2178 "ProcDecl.ml" 69 2156 2223
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 69 2156 2174 "ProcDecl.ml" 69 2156 2223
+type(
+  string * ('f * string * 'a) list * 'd * 'e -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 70 2227 2238 "ProcDecl.ml" 70 2227 2240
+type(
+  (string * (([< `Val | `Var ] as 'g) * string * 'a) list * 'b * 'c) list
+)
+"ProcDecl.ml" 70 2227 2244 "ProcDecl.ml" 70 2227 2246
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 70 2227 2249 "ProcDecl.ml" 70 2227 2250
+type(
+  (string * ('g * string * 'a) list * 'b * 'c) list
+)
+ident(
+  def t "ProcDecl.ml" 70 2227 2254 "ProcDecl.ml" 70 2227 2285
+)
+"ProcDecl.ml" 70 2227 2255 "ProcDecl.ml" 70 2227 2259
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 70 2227 2261 "ProcDecl.ml" 70 2227 2269
+type(
+  (string * ('g * string * 'a) list * 'b * 'c -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 70 2227 2270 "ProcDecl.ml" 70 2227 2281
+type(
+  string * ('g * string * 'a) list * 'b * 'c -> Ostap.Pretty.printer
+)
+ident(
+  int_ref declaration "ProcDecl.ml" 69 2156 2162 "ProcDecl.ml" 69 2156 2173
+)
+"ProcDecl.ml" 70 2227 2282 "ProcDecl.ml" 70 2227 2283
+type(
+  (string * ('g * string * 'a) list * 'b * 'c) list
+)
+ident(
+  int_ref t "ProcDecl.ml" 70 2227 2249 "ProcDecl.ml" 70 2227 2250
+)
+"ProcDecl.ml" 70 2227 2260 "ProcDecl.ml" 70 2227 2284
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 70 2227 2255 "ProcDecl.ml" 70 2227 2284
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 70 2227 2254 "ProcDecl.ml" 70 2227 2285
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 70 2227 2229 "ProcDecl.ml" 70 2227 2285
+type(
+  (string * ('g * string * 'a) list * 'b * 'c) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 69 2156 2158 "ProcDecl.ml" 70 2227 2285
+type(
+  (string * ('g * string * 'a) list * 'b * 'c) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 68 2132 2150 "ProcDecl.ml" 70 2227 2285
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string * ('g * string * 'a) list * 'b * 'c) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 72 2289 2293 "ProcDecl.ml" 72 2289 2300
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  def print_c "ProcDecl.ml" 92 2801 2801 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 72 2289 2301 "ProcDecl.ml" 72 2289 2304
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "ProcDecl.ml" 72 2289 2305 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 72 2289 2305 "ProcDecl.ml" 72 2289 2309
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  def decl "ProcDecl.ml" 72 2289 2310 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 72 2289 2310 "ProcDecl.ml" 72 2289 2314
+type(
+  'c -> Ostap.Pretty.printer
+)
+ident(
+  def stmt "ProcDecl.ml" 73 2317 2319 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 73 2317 2323 "ProcDecl.ml" 73 2317 2336
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  def procedureBody "ProcDecl.ml" 82 2497 2499 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 73 2317 2337 "ProcDecl.ml" 73 2317 2342
+type(
+  'b
+)
+ident(
+  def decls "ProcDecl.ml" 73 2317 2343 "ProcDecl.ml" 80 2486 2491
+)
+"ProcDecl.ml" 73 2317 2343 "ProcDecl.ml" 73 2317 2348
+type(
+  'c list
+)
+ident(
+  def stmts "ProcDecl.ml" 74 2351 2355 "ProcDecl.ml" 80 2486 2491
+)
+"ProcDecl.ml" 74 2351 2355 "ProcDecl.ml" 74 2351 2359
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 75 2362 2369 "ProcDecl.ml" 75 2362 2373
+type(
+  'b -> Ostap.Pretty.printer
+)
+ident(
+  int_ref decl "ProcDecl.ml" 72 2289 2305 "ProcDecl.ml" 72 2289 2309
+)
+"ProcDecl.ml" 75 2362 2374 "ProcDecl.ml" 75 2362 2379
+type(
+  'b
+)
+ident(
+  int_ref decls "ProcDecl.ml" 73 2317 2337 "ProcDecl.ml" 73 2317 2342
+)
+"ProcDecl.ml" 75 2362 2369 "ProcDecl.ml" 75 2362 2379
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 75 2362 2368 "ProcDecl.ml" 75 2362 2380
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 76 2383 2396 "ProcDecl.ml" 76 2383 2401
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 73 2317 2343 "ProcDecl.ml" 73 2317 2348
+)
+"ProcDecl.ml" 77 2408 2417 "ProcDecl.ml" 77 2408 2419
+type(
+  'c list
+)
+"ProcDecl.ml" 77 2408 2423 "ProcDecl.ml" 77 2408 2425
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 78 2427 2436 "ProcDecl.ml" 78 2427 2437
+type(
+  'c list
+)
+"ProcDecl.ml" 78 2427 2443 "ProcDecl.ml" 78 2427 2446
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"ProcDecl.ml" 78 2427 2448 "ProcDecl.ml" 78 2427 2452
+type(
+  ('c -> Ostap.Pretty.printer) -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.mseq
+)
+"ProcDecl.ml" 78 2427 2453 "ProcDecl.ml" 78 2427 2457
+type(
+  'c -> Ostap.Pretty.printer
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 72 2289 2310 "ProcDecl.ml" 72 2289 2314
+)
+"ProcDecl.ml" 78 2427 2458 "ProcDecl.ml" 78 2427 2463
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 73 2317 2343 "ProcDecl.ml" 73 2317 2348
+)
+"ProcDecl.ml" 78 2427 2448 "ProcDecl.ml" 78 2427 2463
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 78 2427 2465 "ProcDecl.ml" 78 2427 2471
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"ProcDecl.ml" 78 2427 2472 "ProcDecl.ml" 78 2427 2475
+type(
+  string
+)
+"ProcDecl.ml" 78 2427 2465 "ProcDecl.ml" 78 2427 2475
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 78 2427 2447 "ProcDecl.ml" 78 2427 2476
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 78 2427 2443 "ProcDecl.ml" 78 2427 2476
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 78 2427 2442 "ProcDecl.ml" 78 2427 2477
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 76 2383 2389 "ProcDecl.ml" 79 2478 2485
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 75 2362 2368 "ProcDecl.ml" 79 2478 2485
+type(
+  Ostap.Pretty.printer list ->
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"ProcDecl.ml" 74 2351 2360 "ProcDecl.ml" 80 2486 2491
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 74 2351 2355 "ProcDecl.ml" 80 2486 2491
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 73 2317 2343 "ProcDecl.ml" 80 2486 2491
+type(
+  'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 73 2317 2337 "ProcDecl.ml" 80 2486 2491
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 82 2497 2503 "ProcDecl.ml" 82 2497 2514
+type(
+  string * ([< `Val | `Var ] * string * 'a) list * 'b * 'c list ->
+  Ostap.Pretty.printer
+)
+ident(
+  def declaration "ProcDecl.ml" 88 2651 2653 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 82 2497 2517 "ProcDecl.ml" 82 2497 2521
+type(
+  string
+)
+ident(
+  def name "ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+)
+"ProcDecl.ml" 82 2497 2523 "ProcDecl.ml" 82 2497 2527
+type(
+  (([< `Val | `Var ] as 'd) * string * 'a) list
+)
+ident(
+  def args "ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+)
+"ProcDecl.ml" 82 2497 2529 "ProcDecl.ml" 82 2497 2534
+type(
+  'b
+)
+ident(
+  def decls "ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+)
+"ProcDecl.ml" 82 2497 2536 "ProcDecl.ml" 82 2497 2541
+type(
+  'c list
+)
+ident(
+  def stmts "ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+)
+"ProcDecl.ml" 82 2497 2517 "ProcDecl.ml" 82 2497 2541
+type(
+  string * ('d * string * 'a) list * 'b * 'c list
+)
+"ProcDecl.ml" 82 2497 2516 "ProcDecl.ml" 82 2497 2547
+type(
+  string * ('d * string * 'a) list * 'b * 'c list
+)
+ident(
+  def p "ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+)
+"ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 83 2551 2559
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 84 2562 2568 "ProcDecl.ml" 84 2562 2582
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  string * ('d * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref print_header_c "ProcDecl.ml" 59 1803 1807 "ProcDecl.ml" 59 1803 1821
+)
+"ProcDecl.ml" 84 2562 2583 "ProcDecl.ml" 84 2562 2586
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "ProcDecl.ml" 72 2289 2301 "ProcDecl.ml" 72 2289 2304
+)
+"ProcDecl.ml" 84 2562 2587 "ProcDecl.ml" 84 2562 2588
+type(
+  string * ('d * string * 'a) list * 'b * 'c list
+)
+ident(
+  int_ref p "ProcDecl.ml" 82 2497 2516 "ProcDecl.ml" 82 2497 2547
+)
+"ProcDecl.ml" 84 2562 2568 "ProcDecl.ml" 84 2562 2588
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 85 2590 2596 "ProcDecl.ml" 85 2590 2602
+type(
+  string -> string -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.sblock
+)
+"ProcDecl.ml" 85 2590 2603 "ProcDecl.ml" 85 2590 2606
+type(
+  string
+)
+"ProcDecl.ml" 85 2590 2607 "ProcDecl.ml" 85 2590 2610
+type(
+  string
+)
+"ProcDecl.ml" 85 2590 2612 "ProcDecl.ml" 85 2590 2625
+type(
+  'b -> 'c list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref procedureBody "ProcDecl.ml" 73 2317 2323 "ProcDecl.ml" 73 2317 2336
+)
+"ProcDecl.ml" 85 2590 2626 "ProcDecl.ml" 85 2590 2631
+type(
+  'b
+)
+ident(
+  int_ref decls "ProcDecl.ml" 82 2497 2529 "ProcDecl.ml" 82 2497 2534
+)
+"ProcDecl.ml" 85 2590 2632 "ProcDecl.ml" 85 2590 2637
+type(
+  'c list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 82 2497 2536 "ProcDecl.ml" 82 2497 2541
+)
+"ProcDecl.ml" 85 2590 2611 "ProcDecl.ml" 85 2590 2638
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 85 2590 2596 "ProcDecl.ml" 85 2590 2638
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 83 2551 2560 "ProcDecl.ml" 86 2640 2645
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 83 2551 2555 "ProcDecl.ml" 86 2640 2645
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 82 2497 2515 "ProcDecl.ml" 86 2640 2645
+type(
+  string * ('d * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer
+)
+"ProcDecl.ml" 88 2651 2662 "ProcDecl.ml" 88 2651 2664
+type(
+  (string * (([< `Val | `Var ] as 'e) * string * 'a) list * 'b * 'c list)
+  list
+)
+"ProcDecl.ml" 88 2651 2668 "ProcDecl.ml" 88 2651 2670
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 88 2651 2673 "ProcDecl.ml" 88 2651 2674
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list) list
+)
+ident(
+  def t "ProcDecl.ml" 88 2651 2678 "ProcDecl.ml" 88 2651 2709
+)
+"ProcDecl.ml" 88 2651 2679 "ProcDecl.ml" 88 2651 2683
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"ProcDecl.ml" 88 2651 2685 "ProcDecl.ml" 88 2651 2693
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer) ->
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 88 2651 2694 "ProcDecl.ml" 88 2651 2705
+type(
+  string * ('e * string * 'a) list * 'b * 'c list -> Ostap.Pretty.printer
+)
+ident(
+  int_ref declaration "ProcDecl.ml" 82 2497 2503 "ProcDecl.ml" 82 2497 2514
+)
+"ProcDecl.ml" 88 2651 2706 "ProcDecl.ml" 88 2651 2707
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list) list
+)
+ident(
+  int_ref t "ProcDecl.ml" 88 2651 2673 "ProcDecl.ml" 88 2651 2674
+)
+"ProcDecl.ml" 88 2651 2684 "ProcDecl.ml" 88 2651 2708
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 88 2651 2679 "ProcDecl.ml" 88 2651 2708
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"ProcDecl.ml" 88 2651 2678 "ProcDecl.ml" 88 2651 2709
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 88 2651 2653 "ProcDecl.ml" 88 2651 2709
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 82 2497 2499 "ProcDecl.ml" 88 2651 2709
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 73 2317 2319 "ProcDecl.ml" 88 2651 2709
+type(
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 72 2289 2310 "ProcDecl.ml" 88 2651 2709
+type(
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 72 2289 2305 "ProcDecl.ml" 88 2651 2709
+type(
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 72 2289 2301 "ProcDecl.ml" 88 2651 2709
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  ('b -> Ostap.Pretty.printer) ->
+  ('c -> Ostap.Pretty.printer) ->
+  (string * ('e * string * 'a) list * 'b * 'c list) list ->
+  Ostap.Pretty.printer list
+)
+"ProcDecl.ml" 94 2815 2819 "ProcDecl.ml" 94 2815 2826
+type(
+  bool ->
+  (< compositeType : [> `Bool | `Int | `User of 'b ] -> bool;
+     down : 'c -> 'd; getInternal : 'c -> 'e; up : unit -> 'f;
+     update : 'c ->
+              [> `Param of 'e * ([> `Bool | `Int | `User of 'b ] as 'g)
+               | `Proc of 'e * (([> `Var ] as 'h) * 'c * 'g) list
+               | `VParam of 'e * 'g ] ->
+              (unit, Ostap.Msg.t) Checked.t;
+     .. >
+   as 'a) ->
+  ('i -> ([> `Bool | `Int | `User of 'b ], Ostap.Msg.t) Checked.t) ->
+  ('a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t) ->
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def resolve "ProcDecl.ml" 164 5292 5292 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 94 2815 2827 "ProcDecl.ml" 94 2815 2837
+type(
+  bool
+)
+ident(
+  def restricted "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+type(
+  'a
+)
+ident(
+  def env "ProcDecl.ml" 94 2815 2842 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 94 2815 2842 "ProcDecl.ml" 94 2815 2845
+type(
+  'i -> ([> `Bool | `Int | `User of 'b ] as 'n, Ostap.Msg.t) Checked.t
+)
+ident(
+  def typ "ProcDecl.ml" 94 2815 2846 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 94 2815 2846 "ProcDecl.ml" 94 2815 2850
+type(
+  'a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t
+)
+ident(
+  def decl "ProcDecl.ml" 94 2815 2851 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 94 2815 2851 "ProcDecl.ml" 94 2815 2855
+type(
+  'l -> ('m, Ostap.Msg.t) Checked.t
+)
+ident(
+  def stmt "ProcDecl.ml" 94 2815 2856 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 94 2815 2856 "ProcDecl.ml" 94 2815 2862
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list
+)
+ident(
+  def pdecls "ProcDecl.ml" 95 2865 2867 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 95 2865 2871 "ProcDecl.ml" 95 2865 2882
+type(
+  (([> `Var ] as 'o) * 'p * 'i) list ->
+  (('o * 'p * [> `Bool | `Int | `User of 'b ]) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def resolveArgs "ProcDecl.ml" 121 3756 3758 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 95 2865 2883 "ProcDecl.ml" 95 2865 2887
+type(
+  ('o * 'p * 'i) list
+)
+ident(
+  def args "ProcDecl.ml" 96 2890 2894 "ProcDecl.ml" 119 3745 3750
+)
+"ProcDecl.ml" 96 2890 2894 "ProcDecl.ml" 96 2890 2898
+type(
+  ('o * 'p * ([> `Bool | `Int | `User of 'b ] as 'q), Ostap.Msg.t) Checked.t
+  list -> (('o * 'p * 'q) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 97 2901 2907 "ProcDecl.ml" 97 2901 2915
+type(
+  ('o * 'p * 'i -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t) ->
+  ('o * 'p * 'i) list -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 98 2917 2931 "ProcDecl.ml" 98 2917 2932
+type(
+  'o
+)
+ident(
+  def v "ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 117 3717 3729
+)
+"ProcDecl.ml" 98 2917 2934 "ProcDecl.ml" 98 2917 2938
+type(
+  'p
+)
+ident(
+  def name "ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 117 3717 3729
+)
+"ProcDecl.ml" 98 2917 2940 "ProcDecl.ml" 98 2917 2941
+type(
+  'i
+)
+ident(
+  def t "ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 117 3717 3729
+)
+"ProcDecl.ml" 98 2917 2931 "ProcDecl.ml" 98 2917 2941
+type(
+  'o * 'p * 'i
+)
+"ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 99 2947 2961
+type(
+  'i -> ('n, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref typ "ProcDecl.ml" 94 2815 2842 "ProcDecl.ml" 94 2815 2845
+)
+"ProcDecl.ml" 99 2947 2962 "ProcDecl.ml" 99 2947 2963
+type(
+  'i
+)
+ident(
+  int_ref t "ProcDecl.ml" 98 2917 2940 "ProcDecl.ml" 98 2917 2941
+)
+"ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 99 2947 2963
+call(
+  stack
+)
+type(
+  ('n, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 101 2993 3014 "ProcDecl.ml" 101 2993 3015
+type(
+  'b
+)
+"ProcDecl.ml" 101 2993 3008 "ProcDecl.ml" 101 2993 3015
+type(
+  'n
+)
+"ProcDecl.ml" 101 2993 3018 "ProcDecl.ml" 101 2993 3023
+type(
+  'n
+)
+"ProcDecl.ml" 101 2993 3008 "ProcDecl.ml" 101 2993 3023
+type(
+  'n
+)
+"ProcDecl.ml" 101 2993 3026 "ProcDecl.ml" 101 2993 3030
+type(
+  'n
+)
+"ProcDecl.ml" 101 2993 3008 "ProcDecl.ml" 101 2993 3030
+type(
+  'n
+)
+"ProcDecl.ml" 101 2993 3007 "ProcDecl.ml" 101 2993 3036
+type(
+  'n
+)
+ident(
+  def t "ProcDecl.ml" 102 3041 3055 "ProcDecl.ml" 111 3459 3474
+)
+"ProcDecl.ml" 102 3041 3062 "ProcDecl.ml" 102 3041 3063
+type(
+  'o
+)
+ident(
+  int_ref v "ProcDecl.ml" 98 2917 2931 "ProcDecl.ml" 98 2917 2932
+)
+"ProcDecl.ml" 103 3069 3086 "ProcDecl.ml" 103 3069 3090
+type(
+  'o
+)
+"ProcDecl.ml" 103 3069 3097 "ProcDecl.ml" 103 3069 3098
+type(
+  'o
+)
+ident(
+  int_ref v "ProcDecl.ml" 98 2917 2931 "ProcDecl.ml" 98 2917 2932
+)
+"ProcDecl.ml" 103 3069 3100 "ProcDecl.ml" 103 3069 3104
+type(
+  'p
+)
+ident(
+  int_ref name "ProcDecl.ml" 98 2917 2934 "ProcDecl.ml" 98 2917 2938
+)
+"ProcDecl.ml" 103 3069 3106 "ProcDecl.ml" 103 3069 3107
+type(
+  'q
+)
+ident(
+  int_ref t "ProcDecl.ml" 101 2993 3007 "ProcDecl.ml" 101 2993 3036
+)
+"ProcDecl.ml" 103 3069 3096 "ProcDecl.ml" 103 3069 3108
+type(
+  'o * 'p * 'q
+)
+"ProcDecl.ml" 103 3069 3094 "ProcDecl.ml" 103 3069 3108
+call(
+  tail
+)
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+type(
+  'o * 'p * 'q -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"ProcDecl.ml" 104 3109 3126 "ProcDecl.ml" 104 3109 3127
+type(
+  'o
+)
+"ProcDecl.ml" 104 3109 3134 "ProcDecl.ml" 104 3109 3137
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 104 3109 3134 "ProcDecl.ml" 104 3109 3151
+call(
+  stack
+)
+type(
+  ([> `Bool | `Int | `User of 'b ] as 'r) -> bool
+)
+"ProcDecl.ml" 104 3109 3152 "ProcDecl.ml" 104 3109 3153
+type(
+  'r
+)
+ident(
+  int_ref t "ProcDecl.ml" 101 2993 3007 "ProcDecl.ml" 101 2993 3036
+)
+"ProcDecl.ml" 104 3109 3134 "ProcDecl.ml" 104 3109 3153
+type(
+  bool
+)
+"ProcDecl.ml" 105 3155 3188 "ProcDecl.ml" 105 3155 3202
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"ProcDecl.ml" 106 3204 3239 "ProcDecl.ml" 106 3204 3291
+type(
+  string
+)
+"ProcDecl.ml" 107 3293 3328 "ProcDecl.ml" 107 3293 3332
+type(
+  string array
+)
+"ProcDecl.ml" 108 3334 3370 "ProcDecl.ml" 108 3334 3376
+type(
+  'p -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"ProcDecl.ml" 108 3334 3377 "ProcDecl.ml" 108 3334 3381
+type(
+  'p
+)
+ident(
+  int_ref name "ProcDecl.ml" 98 2917 2934 "ProcDecl.ml" 98 2917 2938
+)
+"ProcDecl.ml" 108 3334 3369 "ProcDecl.ml" 108 3334 3382
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"ProcDecl.ml" 105 3155 3188 "ProcDecl.ml" 108 3334 3382
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"ProcDecl.ml" 105 3155 3187 "ProcDecl.ml" 109 3383 3416
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"ProcDecl.ml" 105 3155 3182 "ProcDecl.ml" 109 3383 3416
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 110 3417 3447 "ProcDecl.ml" 110 3417 3448
+type(
+  'o
+)
+ident(
+  int_ref v "ProcDecl.ml" 98 2917 2931 "ProcDecl.ml" 98 2917 2932
+)
+"ProcDecl.ml" 110 3417 3450 "ProcDecl.ml" 110 3417 3454
+type(
+  'p
+)
+ident(
+  int_ref name "ProcDecl.ml" 98 2917 2934 "ProcDecl.ml" 98 2917 2938
+)
+"ProcDecl.ml" 110 3417 3456 "ProcDecl.ml" 110 3417 3457
+type(
+  'q
+)
+ident(
+  int_ref t "ProcDecl.ml" 101 2993 3007 "ProcDecl.ml" 101 2993 3036
+)
+"ProcDecl.ml" 110 3417 3446 "ProcDecl.ml" 110 3417 3458
+type(
+  'o * 'p * 'q
+)
+"ProcDecl.ml" 110 3417 3444 "ProcDecl.ml" 110 3417 3458
+call(
+  tail
+)
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+type(
+  'o * 'p * 'q -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"ProcDecl.ml" 104 3109 3131 "ProcDecl.ml" 110 3417 3458
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 102 3041 3055 "ProcDecl.ml" 111 3459 3474
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 112 3490 3504 "ProcDecl.ml" 112 3490 3505
+type(
+  'n
+)
+"ProcDecl.ml" 112 3490 3515 "ProcDecl.ml" 112 3490 3529
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"ProcDecl.ml" 113 3531 3558 "ProcDecl.ml" 113 3531 3613
+type(
+  string
+)
+"ProcDecl.ml" 114 3615 3643 "ProcDecl.ml" 114 3615 3647
+type(
+  string array
+)
+"ProcDecl.ml" 115 3649 3678 "ProcDecl.ml" 115 3649 3684
+type(
+  'p -> Ostap.Msg.Locator.t
+)
+ident(
+  ext_ref Common.locate
+)
+"ProcDecl.ml" 115 3649 3685 "ProcDecl.ml" 115 3649 3689
+type(
+  'p
+)
+ident(
+  int_ref name "ProcDecl.ml" 98 2917 2934 "ProcDecl.ml" 98 2917 2938
+)
+"ProcDecl.ml" 115 3649 3677 "ProcDecl.ml" 115 3649 3690
+call(
+  stack
+)
+type(
+  Ostap.Msg.Locator.t
+)
+"ProcDecl.ml" 112 3490 3515 "ProcDecl.ml" 115 3649 3690
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"ProcDecl.ml" 112 3490 3514 "ProcDecl.ml" 116 3691 3716
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"ProcDecl.ml" 112 3490 3509 "ProcDecl.ml" 116 3691 3716
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 100 2971 2982 "ProcDecl.ml" 117 3717 3729
+type(
+  'n -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 99 2947 2958 "ProcDecl.ml" 117 3717 3729
+call(
+  tail
+)
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+type(
+  ('n, Ostap.Msg.t) Checked.t ->
+  ('n -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t) ->
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"ProcDecl.ml" 98 2917 2925 "ProcDecl.ml" 118 3730 3739
+type(
+  'o * 'p * 'i -> ('o * 'p * 'q, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 118 3730 3740 "ProcDecl.ml" 118 3730 3744
+type(
+  ('o * 'p * 'i) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 95 2865 2883 "ProcDecl.ml" 95 2865 2887
+)
+"ProcDecl.ml" 96 2890 2899 "ProcDecl.ml" 119 3745 3750
+call(
+  stack
+)
+type(
+  ('o * 'p * 'q, Ostap.Msg.t) Checked.t list
+)
+"ProcDecl.ml" 96 2890 2894 "ProcDecl.ml" 119 3745 3750
+call(
+  tail
+)
+type(
+  (('o * 'p * 'q) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 95 2865 2883 "ProcDecl.ml" 119 3745 3750
+type(
+  ('o * 'p * 'i) list -> (('o * 'p * 'q) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 121 3756 3762 "ProcDecl.ml" 121 3756 3767
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def inner "ProcDecl.ml" 144 4610 4612 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3774
+type(
+  'c
+)
+ident(
+  def name "ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 121 3756 3776 "ProcDecl.ml" 121 3756 3780
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  def args "ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 121 3756 3782 "ProcDecl.ml" 121 3756 3787
+type(
+  'j
+)
+ident(
+  def decls "ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 121 3756 3789 "ProcDecl.ml" 121 3756 3794
+type(
+  'l list
+)
+ident(
+  def stmts "ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3794
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list
+)
+"ProcDecl.ml" 121 3756 3769 "ProcDecl.ml" 121 3756 3800
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list
+)
+ident(
+  def t "ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 122 3804 3812 "ProcDecl.ml" 122 3804 3817
+type(
+  'e
+)
+ident(
+  def iname "ProcDecl.ml" 123 3844 3848 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 122 3804 3820 "ProcDecl.ml" 122 3804 3823
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 122 3804 3820 "ProcDecl.ml" 122 3804 3835
+call(
+  stack
+)
+type(
+  'c -> 'e
+)
+"ProcDecl.ml" 122 3804 3836 "ProcDecl.ml" 122 3804 3840
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3774
+)
+"ProcDecl.ml" 122 3804 3820 "ProcDecl.ml" 122 3804 3840
+type(
+  'e
+)
+"ProcDecl.ml" 123 3844 3848 "ProcDecl.ml" 123 3844 3851
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 123 3844 3848 "ProcDecl.ml" 123 3844 3856
+call(
+  stack
+)
+type(
+  'c -> 'd
+)
+"ProcDecl.ml" 123 3844 3857 "ProcDecl.ml" 123 3844 3861
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3774
+)
+"ProcDecl.ml" 123 3844 3848 "ProcDecl.ml" 123 3844 3861
+type(
+  'd
+)
+"ProcDecl.ml" 124 3863 3871 "ProcDecl.ml" 124 3863 3876
+type(
+  ('h * 'e * 'g) list
+)
+ident(
+  def args' "ProcDecl.ml" 125 3946 3950 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 124 3863 3879 "ProcDecl.ml" 124 3863 3887
+type(
+  ('h * 'c * 'g -> 'h * 'e * 'g) ->
+  ('h * 'c * 'g) list -> ('h * 'e * 'g) list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 124 3863 3894 "ProcDecl.ml" 124 3863 3895
+type(
+  'h
+)
+ident(
+  def v "ProcDecl.ml" 124 3863 3909 "ProcDecl.ml" 124 3863 3935
+)
+"ProcDecl.ml" 124 3863 3897 "ProcDecl.ml" 124 3863 3901
+type(
+  'c
+)
+ident(
+  def name "ProcDecl.ml" 124 3863 3909 "ProcDecl.ml" 124 3863 3935
+)
+"ProcDecl.ml" 124 3863 3903 "ProcDecl.ml" 124 3863 3904
+type(
+  'g
+)
+ident(
+  def t "ProcDecl.ml" 124 3863 3909 "ProcDecl.ml" 124 3863 3935
+)
+"ProcDecl.ml" 124 3863 3894 "ProcDecl.ml" 124 3863 3904
+type(
+  'h * 'c * 'g
+)
+"ProcDecl.ml" 124 3863 3909 "ProcDecl.ml" 124 3863 3910
+type(
+  'h
+)
+ident(
+  int_ref v "ProcDecl.ml" 124 3863 3894 "ProcDecl.ml" 124 3863 3895
+)
+"ProcDecl.ml" 124 3863 3912 "ProcDecl.ml" 124 3863 3915
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 124 3863 3912 "ProcDecl.ml" 124 3863 3927
+call(
+  stack
+)
+type(
+  'c -> 'e
+)
+"ProcDecl.ml" 124 3863 3928 "ProcDecl.ml" 124 3863 3932
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 124 3863 3897 "ProcDecl.ml" 124 3863 3901
+)
+"ProcDecl.ml" 124 3863 3912 "ProcDecl.ml" 124 3863 3932
+type(
+  'e
+)
+"ProcDecl.ml" 124 3863 3934 "ProcDecl.ml" 124 3863 3935
+type(
+  'g
+)
+ident(
+  int_ref t "ProcDecl.ml" 124 3863 3903 "ProcDecl.ml" 124 3863 3904
+)
+"ProcDecl.ml" 124 3863 3909 "ProcDecl.ml" 124 3863 3935
+type(
+  'h * 'e * 'g
+)
+"ProcDecl.ml" 124 3863 3888 "ProcDecl.ml" 124 3863 3936
+type(
+  'h * 'c * 'g -> 'h * 'e * 'g
+)
+"ProcDecl.ml" 124 3863 3937 "ProcDecl.ml" 124 3863 3941
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 121 3756 3776 "ProcDecl.ml" 121 3756 3780
+)
+"ProcDecl.ml" 124 3863 3879 "ProcDecl.ml" 124 3863 3941
+call(
+  stack
+)
+type(
+  ('h * 'e * 'g) list
+)
+"ProcDecl.ml" 125 3946 3954 "ProcDecl.ml" 125 3946 3958
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  def msg' "ProcDecl.ml" 134 4207 4211 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 125 3946 3961 "ProcDecl.ml" 125 3946 3965
+type(
+  (unit, Ostap.Msg.t) Checked.t list -> (unit list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 126 3968 3974 "ProcDecl.ml" 126 3968 3982
+type(
+  ('h * 'c * 'g -> (unit, Ostap.Msg.t) Checked.t) ->
+  ('h * 'c * 'g) list -> (unit, Ostap.Msg.t) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 127 3984 3998 "ProcDecl.ml" 127 3984 3999
+type(
+  'h
+)
+ident(
+  def v "ProcDecl.ml" 128 4014 4025 "ProcDecl.ml" 129 4061 4154
+)
+"ProcDecl.ml" 127 3984 4001 "ProcDecl.ml" 127 3984 4005
+type(
+  'c
+)
+ident(
+  def name "ProcDecl.ml" 128 4014 4025 "ProcDecl.ml" 129 4061 4154
+)
+"ProcDecl.ml" 127 3984 4007 "ProcDecl.ml" 127 3984 4008
+type(
+  'g
+)
+ident(
+  def t "ProcDecl.ml" 128 4014 4025 "ProcDecl.ml" 129 4061 4154
+)
+"ProcDecl.ml" 127 3984 3998 "ProcDecl.ml" 127 3984 4008
+type(
+  'h * 'c * 'g
+)
+"ProcDecl.ml" 128 4014 4029 "ProcDecl.ml" 128 4014 4034
+type(
+  'e
+)
+ident(
+  def iname "ProcDecl.ml" 129 4061 4072 "ProcDecl.ml" 129 4061 4154
+)
+"ProcDecl.ml" 128 4014 4037 "ProcDecl.ml" 128 4014 4040
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 128 4014 4037 "ProcDecl.ml" 128 4014 4052
+call(
+  stack
+)
+type(
+  'c -> 'e
+)
+"ProcDecl.ml" 128 4014 4053 "ProcDecl.ml" 128 4014 4057
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 127 3984 4001 "ProcDecl.ml" 127 3984 4005
+)
+"ProcDecl.ml" 128 4014 4037 "ProcDecl.ml" 128 4014 4057
+type(
+  'e
+)
+"ProcDecl.ml" 129 4061 4072 "ProcDecl.ml" 129 4061 4075
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 129 4061 4072 "ProcDecl.ml" 129 4061 4082
+call(
+  tail
+)
+type(
+  'c ->
+  ([> `Param of 'e * 'g
+    | `Proc of 'e * ('h * 'c * 'g) list
+    | `VParam of 'e * 'g ]
+   as 's) ->
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 129 4061 4083 "ProcDecl.ml" 129 4061 4087
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 127 3984 4001 "ProcDecl.ml" 127 3984 4005
+)
+"ProcDecl.ml" 129 4061 4095 "ProcDecl.ml" 129 4061 4096
+type(
+  'h
+)
+ident(
+  int_ref v "ProcDecl.ml" 127 3984 3998 "ProcDecl.ml" 127 3984 3999
+)
+"ProcDecl.ml" 129 4061 4102 "ProcDecl.ml" 129 4061 4106
+type(
+  'h
+)
+"ProcDecl.ml" 129 4061 4119 "ProcDecl.ml" 129 4061 4124
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 128 4014 4029 "ProcDecl.ml" 128 4014 4034
+)
+"ProcDecl.ml" 129 4061 4126 "ProcDecl.ml" 129 4061 4127
+type(
+  'g
+)
+ident(
+  int_ref t "ProcDecl.ml" 127 3984 4007 "ProcDecl.ml" 127 3984 4008
+)
+"ProcDecl.ml" 129 4061 4118 "ProcDecl.ml" 129 4061 4128
+type(
+  'e * 'g
+)
+"ProcDecl.ml" 129 4061 4110 "ProcDecl.ml" 129 4061 4128
+type(
+  's
+)
+"ProcDecl.ml" 129 4061 4131 "ProcDecl.ml" 129 4061 4132
+type(
+  'h
+)
+"ProcDecl.ml" 129 4061 4144 "ProcDecl.ml" 129 4061 4149
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 128 4014 4029 "ProcDecl.ml" 128 4014 4034
+)
+"ProcDecl.ml" 129 4061 4151 "ProcDecl.ml" 129 4061 4152
+type(
+  'g
+)
+ident(
+  int_ref t "ProcDecl.ml" 127 3984 4007 "ProcDecl.ml" 127 3984 4008
+)
+"ProcDecl.ml" 129 4061 4143 "ProcDecl.ml" 129 4061 4153
+type(
+  'e * 'g
+)
+"ProcDecl.ml" 129 4061 4136 "ProcDecl.ml" 129 4061 4153
+type(
+  's
+)
+"ProcDecl.ml" 129 4061 4088 "ProcDecl.ml" 129 4061 4154
+type(
+  's
+)
+"ProcDecl.ml" 129 4061 4072 "ProcDecl.ml" 129 4061 4154
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 128 4014 4025 "ProcDecl.ml" 129 4061 4154
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 127 3984 3992 "ProcDecl.ml" 130 4155 4164
+type(
+  'h * 'c * 'g -> (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 131 4166 4174 "ProcDecl.ml" 131 4166 4178
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 121 3756 3776 "ProcDecl.ml" 121 3756 3780
+)
+"ProcDecl.ml" 125 3946 3966 "ProcDecl.ml" 132 4179 4184
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t list
+)
+"ProcDecl.ml" 125 3946 3961 "ProcDecl.ml" 132 4179 4184
+call(
+  stack
+)
+type(
+  (unit list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 132 4179 4190 "ProcDecl.ml" 132 4179 4196
+type(
+  unit -> unit list -> unit
+)
+ident(
+  ext_ref Common.return
+)
+"ProcDecl.ml" 132 4179 4197 "ProcDecl.ml" 132 4179 4199
+type(
+  unit
+)
+"ProcDecl.ml" 132 4179 4190 "ProcDecl.ml" 132 4179 4199
+call(
+  stack
+)
+type(
+  unit list -> unit
+)
+"ProcDecl.ml" 125 3946 3961 "ProcDecl.ml" 132 4179 4199
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  (unit list, Ostap.Msg.t) Checked.t ->
+  (unit list -> unit) -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 134 4207 4215 "ProcDecl.ml" 134 4207 4220
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  def msg'' "ProcDecl.ml" 135 4248 4252 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 134 4207 4222 "ProcDecl.ml" 134 4207 4227
+type(
+  ('k, Ostap.Msg.t) Checked.t
+)
+ident(
+  def decls "ProcDecl.ml" 135 4248 4252 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 134 4207 4215 "ProcDecl.ml" 134 4207 4227
+type(
+  (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 134 4207 4230 "ProcDecl.ml" 134 4207 4234
+type(
+  'a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref decl "ProcDecl.ml" 94 2815 2846 "ProcDecl.ml" 94 2815 2850
+)
+"ProcDecl.ml" 134 4207 4235 "ProcDecl.ml" 134 4207 4238
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 134 4207 4239 "ProcDecl.ml" 134 4207 4244
+type(
+  'j
+)
+ident(
+  int_ref decls "ProcDecl.ml" 121 3756 3782 "ProcDecl.ml" 121 3756 3787
+)
+"ProcDecl.ml" 134 4207 4230 "ProcDecl.ml" 134 4207 4244
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 135 4248 4255 "ProcDecl.ml" 135 4248 4265
+type(
+  bool
+)
+ident(
+  int_ref restricted "ProcDecl.ml" 94 2815 2827 "ProcDecl.ml" 94 2815 2837
+)
+"ProcDecl.ml" 135 4248 4271 "ProcDecl.ml" 135 4248 4277
+type(
+  (unit, Ostap.Msg.t) Checked.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"ProcDecl.ml" 135 4248 4279 "ProcDecl.ml" 135 4248 4282
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 135 4248 4279 "ProcDecl.ml" 135 4248 4289
+call(
+  stack
+)
+type(
+  'c -> 's -> (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 135 4248 4290 "ProcDecl.ml" 135 4248 4294
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3774
+)
+"ProcDecl.ml" 135 4248 4303 "ProcDecl.ml" 135 4248 4308
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 122 3804 3812 "ProcDecl.ml" 122 3804 3817
+)
+"ProcDecl.ml" 135 4248 4310 "ProcDecl.ml" 135 4248 4314
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 121 3756 3776 "ProcDecl.ml" 121 3756 3780
+)
+"ProcDecl.ml" 135 4248 4302 "ProcDecl.ml" 135 4248 4315
+type(
+  'e * ('h * 'c * 'g) list
+)
+"ProcDecl.ml" 135 4248 4295 "ProcDecl.ml" 135 4248 4316
+type(
+  's
+)
+"ProcDecl.ml" 135 4248 4278 "ProcDecl.ml" 135 4248 4317
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 135 4248 4271 "ProcDecl.ml" 135 4248 4317
+type(
+  unit
+)
+"ProcDecl.ml" 135 4248 4252 "ProcDecl.ml" 135 4248 4317
+type(
+  unit
+)
+"ProcDecl.ml" 136 4319 4327 "ProcDecl.ml" 136 4319 4332
+type(
+  ('m list, Ostap.Msg.t) Checked.t
+)
+ident(
+  def stmts "ProcDecl.ml" 137 4365 4369 "ProcDecl.ml" 142 4599 4604
+)
+"ProcDecl.ml" 136 4319 4335 "ProcDecl.ml" 136 4319 4339
+type(
+  ('m, Ostap.Msg.t) Checked.t list -> ('m list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 136 4319 4341 "ProcDecl.ml" 136 4319 4349
+type(
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  'l list -> ('m, Ostap.Msg.t) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 136 4319 4350 "ProcDecl.ml" 136 4319 4354
+type(
+  'l -> ('m, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 94 2815 2851 "ProcDecl.ml" 94 2815 2855
+)
+"ProcDecl.ml" 136 4319 4355 "ProcDecl.ml" 136 4319 4360
+type(
+  'l list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 121 3756 3789 "ProcDecl.ml" 121 3756 3794
+)
+"ProcDecl.ml" 136 4319 4340 "ProcDecl.ml" 136 4319 4361
+call(
+  stack
+)
+type(
+  ('m, Ostap.Msg.t) Checked.t list
+)
+"ProcDecl.ml" 136 4319 4335 "ProcDecl.ml" 136 4319 4361
+call(
+  stack
+)
+type(
+  ('m list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 137 4365 4369 "ProcDecl.ml" 137 4365 4372
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 137 4365 4369 "ProcDecl.ml" 137 4365 4375
+call(
+  stack
+)
+type(
+  unit -> 'f
+)
+"ProcDecl.ml" 137 4365 4376 "ProcDecl.ml" 137 4365 4378
+type(
+  unit
+)
+"ProcDecl.ml" 137 4365 4369 "ProcDecl.ml" 137 4365 4378
+type(
+  'f
+)
+"ProcDecl.ml" 138 4381 4389 "ProcDecl.ml" 138 4381 4399
+type(
+  bool
+)
+ident(
+  int_ref restricted "ProcDecl.ml" 94 2815 2827 "ProcDecl.ml" 94 2815 2837
+)
+"ProcDecl.ml" 138 4381 4405 "ProcDecl.ml" 138 4381 4408
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 138 4381 4405 "ProcDecl.ml" 138 4381 4415
+call(
+  stack
+)
+type(
+  'c -> 's -> (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 138 4381 4416 "ProcDecl.ml" 138 4381 4420
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 121 3756 3770 "ProcDecl.ml" 121 3756 3774
+)
+"ProcDecl.ml" 138 4381 4429 "ProcDecl.ml" 138 4381 4434
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 122 3804 3812 "ProcDecl.ml" 122 3804 3817
+)
+"ProcDecl.ml" 138 4381 4436 "ProcDecl.ml" 138 4381 4440
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 121 3756 3776 "ProcDecl.ml" 121 3756 3780
+)
+"ProcDecl.ml" 138 4381 4428 "ProcDecl.ml" 138 4381 4441
+type(
+  'e * ('h * 'c * 'g) list
+)
+"ProcDecl.ml" 138 4381 4421 "ProcDecl.ml" 138 4381 4442
+type(
+  's
+)
+"ProcDecl.ml" 138 4381 4405 "ProcDecl.ml" 138 4381 4442
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 138 4381 4451 "ProcDecl.ml" 138 4381 4453
+type(
+  unit
+)
+"ProcDecl.ml" 138 4381 4448 "ProcDecl.ml" 138 4381 4453
+call(
+  stack
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+type(
+  unit -> (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"ProcDecl.ml" 138 4381 4385 "ProcDecl.ml" 138 4381 4454
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 139 4461 4465 "ProcDecl.ml" 139 4461 4471
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t ->
+  unit -> ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Common.return
+)
+"ProcDecl.ml" 140 4474 4480 "ProcDecl.ml" 140 4474 4485
+type(
+  (unit list, Ostap.Msg.t) Checked.t * ('m list * 'k, Ostap.Msg.t) Checked.t ->
+  (unit list * ('m list * 'k), Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"ProcDecl.ml" 140 4474 4487 "ProcDecl.ml" 140 4474 4491
+type(
+  (unit, Ostap.Msg.t) Checked.t list -> (unit list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 140 4474 4493 "ProcDecl.ml" 140 4474 4497
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref msg' "ProcDecl.ml" 125 3946 3954 "ProcDecl.ml" 125 3946 3958
+)
+"ProcDecl.ml" 140 4474 4499 "ProcDecl.ml" 140 4474 4504
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref msg'' "ProcDecl.ml" 134 4207 4215 "ProcDecl.ml" 134 4207 4220
+)
+"ProcDecl.ml" 140 4474 4492 "ProcDecl.ml" 140 4474 4505
+type(
+  (unit, Ostap.Msg.t) Checked.t list
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t list
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t list
+)
+"ProcDecl.ml" 140 4474 4487 "ProcDecl.ml" 140 4474 4505
+call(
+  stack
+)
+type(
+  (unit list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 140 4474 4507 "ProcDecl.ml" 140 4474 4512
+type(
+  ('m list, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t ->
+  ('m list * 'k, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"ProcDecl.ml" 140 4474 4514 "ProcDecl.ml" 140 4474 4519
+type(
+  ('m list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 136 4319 4327 "ProcDecl.ml" 136 4319 4332
+)
+"ProcDecl.ml" 140 4474 4521 "ProcDecl.ml" 140 4474 4526
+type(
+  ('k, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref decls "ProcDecl.ml" 134 4207 4222 "ProcDecl.ml" 134 4207 4227
+)
+"ProcDecl.ml" 140 4474 4513 "ProcDecl.ml" 140 4474 4527
+type(
+  ('m list, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 140 4474 4507 "ProcDecl.ml" 140 4474 4527
+call(
+  stack
+)
+type(
+  ('m list * 'k, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 140 4474 4486 "ProcDecl.ml" 140 4474 4528
+type(
+  (unit list, Ostap.Msg.t) Checked.t * ('m list * 'k, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 140 4474 4480 "ProcDecl.ml" 140 4474 4528
+call(
+  stack
+)
+type(
+  (unit list * ('m list * 'k), Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 141 4535 4547 "ProcDecl.ml" 141 4535 4548
+type(
+  unit list
+)
+"ProcDecl.ml" 141 4535 4551 "ProcDecl.ml" 141 4535 4556
+type(
+  'm list
+)
+ident(
+  def stmts "ProcDecl.ml" 141 4535 4569 "ProcDecl.ml" 141 4535 4597
+)
+"ProcDecl.ml" 141 4535 4558 "ProcDecl.ml" 141 4535 4563
+type(
+  'k
+)
+ident(
+  def decls "ProcDecl.ml" 141 4535 4569 "ProcDecl.ml" 141 4535 4597
+)
+"ProcDecl.ml" 141 4535 4551 "ProcDecl.ml" 141 4535 4563
+type(
+  'm list * 'k
+)
+"ProcDecl.ml" 141 4535 4547 "ProcDecl.ml" 141 4535 4564
+type(
+  unit list * ('m list * 'k)
+)
+"ProcDecl.ml" 141 4535 4570 "ProcDecl.ml" 141 4535 4575
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 122 3804 3812 "ProcDecl.ml" 122 3804 3817
+)
+"ProcDecl.ml" 141 4535 4577 "ProcDecl.ml" 141 4535 4582
+type(
+  ('h * 'e * 'g) list
+)
+ident(
+  int_ref args' "ProcDecl.ml" 124 3863 3871 "ProcDecl.ml" 124 3863 3876
+)
+"ProcDecl.ml" 141 4535 4584 "ProcDecl.ml" 141 4535 4589
+type(
+  'k
+)
+ident(
+  int_ref decls "ProcDecl.ml" 141 4535 4558 "ProcDecl.ml" 141 4535 4563
+)
+"ProcDecl.ml" 141 4535 4591 "ProcDecl.ml" 141 4535 4596
+type(
+  'm list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 141 4535 4551 "ProcDecl.ml" 141 4535 4556
+)
+"ProcDecl.ml" 141 4535 4569 "ProcDecl.ml" 141 4535 4597
+type(
+  'e * ('h * 'e * 'g) list * 'k * 'm list
+)
+"ProcDecl.ml" 141 4535 4541 "ProcDecl.ml" 141 4535 4598
+type(
+  unit list * ('m list * 'k) -> 'e * ('h * 'e * 'g) list * 'k * 'm list
+)
+"ProcDecl.ml" 140 4474 4480 "ProcDecl.ml" 141 4535 4598
+type(
+  (unit list * ('m list * 'k), Ostap.Msg.t) Checked.t ->
+  (unit list * ('m list * 'k) -> 'e * ('h * 'e * 'g) list * 'k * 'm list) ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 139 4461 4472 "ProcDecl.ml" 142 4599 4604
+call(
+  stack
+)
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 139 4461 4465 "ProcDecl.ml" 142 4599 4604
+call(
+  stack
+)
+type(
+  unit -> ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 138 4381 4385 "ProcDecl.ml" 142 4599 4604
+call(
+  tail
+)
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t ->
+  (unit -> ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t) ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"ProcDecl.ml" 137 4365 4369 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 136 4319 4323 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 135 4248 4252 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 134 4207 4211 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 125 3946 3950 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 124 3863 3867 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 123 3844 3848 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 122 3804 3808 "ProcDecl.ml" 142 4599 4604
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 121 3756 3768 "ProcDecl.ml" 142 4599 4604
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 144 4610 4616 "ProcDecl.ml" 144 4610 4622
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u ->
+  ('c * ('h * 'c * 'g) list * 't * 'u, Ostap.Msg.t) Checked.t
+)
+ident(
+  def update "ProcDecl.ml" 148 4760 4762 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 144 4610 4625 "ProcDecl.ml" 144 4610 4629
+type(
+  'c
+)
+ident(
+  def name "ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 144 4610 4631 "ProcDecl.ml" 144 4610 4635
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  def args "ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 144 4610 4637 "ProcDecl.ml" 144 4610 4642
+type(
+  't
+)
+ident(
+  def decls "ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 144 4610 4644 "ProcDecl.ml" 144 4610 4649
+type(
+  'u
+)
+ident(
+  def stmts "ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 144 4610 4625 "ProcDecl.ml" 144 4610 4649
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u
+)
+"ProcDecl.ml" 144 4610 4624 "ProcDecl.ml" 144 4610 4655
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u
+)
+ident(
+  def t "ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 145 4659 4667 "ProcDecl.ml" 145 4659 4672
+type(
+  'e
+)
+ident(
+  def iname "ProcDecl.ml" 146 4699 4703 "ProcDecl.ml" 146 4699 4754
+)
+"ProcDecl.ml" 145 4659 4675 "ProcDecl.ml" 145 4659 4678
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 145 4659 4675 "ProcDecl.ml" 145 4659 4690
+call(
+  stack
+)
+type(
+  'c -> 'e
+)
+"ProcDecl.ml" 145 4659 4691 "ProcDecl.ml" 145 4659 4695
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 144 4610 4625 "ProcDecl.ml" 144 4610 4629
+)
+"ProcDecl.ml" 145 4659 4675 "ProcDecl.ml" 145 4659 4695
+type(
+  'e
+)
+"ProcDecl.ml" 146 4699 4703 "ProcDecl.ml" 146 4699 4706
+type(
+  'a
+)
+ident(
+  int_ref env "ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 94 2815 2841
+)
+"ProcDecl.ml" 146 4699 4703 "ProcDecl.ml" 146 4699 4713
+call(
+  stack
+)
+type(
+  'c -> 's -> (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 146 4699 4714 "ProcDecl.ml" 146 4699 4718
+type(
+  'c
+)
+ident(
+  int_ref name "ProcDecl.ml" 144 4610 4625 "ProcDecl.ml" 144 4610 4629
+)
+"ProcDecl.ml" 146 4699 4727 "ProcDecl.ml" 146 4699 4732
+type(
+  'e
+)
+ident(
+  int_ref iname "ProcDecl.ml" 145 4659 4667 "ProcDecl.ml" 145 4659 4672
+)
+"ProcDecl.ml" 146 4699 4734 "ProcDecl.ml" 146 4699 4738
+type(
+  ('h * 'c * 'g) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 144 4610 4631 "ProcDecl.ml" 144 4610 4635
+)
+"ProcDecl.ml" 146 4699 4726 "ProcDecl.ml" 146 4699 4739
+type(
+  'e * ('h * 'c * 'g) list
+)
+"ProcDecl.ml" 146 4699 4719 "ProcDecl.ml" 146 4699 4740
+type(
+  's
+)
+"ProcDecl.ml" 146 4699 4703 "ProcDecl.ml" 146 4699 4740
+type(
+  (unit, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 146 4699 4746 "ProcDecl.ml" 146 4699 4752
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u ->
+  unit -> 'c * ('h * 'c * 'g) list * 't * 'u
+)
+ident(
+  ext_ref Common.return
+)
+"ProcDecl.ml" 146 4699 4753 "ProcDecl.ml" 146 4699 4754
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u
+)
+ident(
+  int_ref t "ProcDecl.ml" 144 4610 4624 "ProcDecl.ml" 144 4610 4655
+)
+"ProcDecl.ml" 146 4699 4746 "ProcDecl.ml" 146 4699 4754
+call(
+  stack
+)
+type(
+  unit -> 'c * ('h * 'c * 'g) list * 't * 'u
+)
+"ProcDecl.ml" 146 4699 4703 "ProcDecl.ml" 146 4699 4754
+call(
+  tail
+)
+type(
+  ('c * ('h * 'c * 'g) list * 't * 'u, Ostap.Msg.t) Checked.t
+)
+type(
+  (unit, Ostap.Msg.t) Checked.t ->
+  (unit -> 'c * ('h * 'c * 'g) list * 't * 'u) ->
+  ('c * ('h * 'c * 'g) list * 't * 'u, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 145 4659 4663 "ProcDecl.ml" 146 4699 4754
+type(
+  ('c * ('h * 'c * 'g) list * 't * 'u, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 144 4610 4623 "ProcDecl.ml" 146 4699 4754
+type(
+  'c * ('h * 'c * 'g) list * 't * 'u ->
+  ('c * ('h * 'c * 'g) list * 't * 'u, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 148 4760 4766 "ProcDecl.ml" 148 4760 4775
+type(
+  ('v * (([> `Var ] as 'w) * 'x * [> `Bool | `Int | `User of 'b ]) list *
+   'y * 'z -> ('a1, Ostap.Msg.t) Checked.t) ->
+  'v * ('w * 'x * 'i) list * 'y * 'z -> ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+ident(
+  def checkProc "ProcDecl.ml" 154 4908 4910 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 148 4760 4776 "ProcDecl.ml" 148 4760 4777
+type(
+  'v * ('w * 'x * ([> `Bool | `Int | `User of 'b ] as 'b1)) list * 'y * 'z ->
+  ('a1, Ostap.Msg.t) Checked.t
+)
+ident(
+  def f "ProcDecl.ml" 148 4760 4778 "ProcDecl.ml" 152 4897 4902
+)
+"ProcDecl.ml" 148 4760 4779 "ProcDecl.ml" 148 4760 4783
+type(
+  'v
+)
+ident(
+  def name "ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 152 4897 4902
+)
+"ProcDecl.ml" 148 4760 4785 "ProcDecl.ml" 148 4760 4789
+type(
+  ('w * 'x * 'i) list
+)
+ident(
+  def args "ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 152 4897 4902
+)
+"ProcDecl.ml" 148 4760 4791 "ProcDecl.ml" 148 4760 4792
+type(
+  'y
+)
+ident(
+  def d "ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 152 4897 4902
+)
+"ProcDecl.ml" 148 4760 4794 "ProcDecl.ml" 148 4760 4795
+type(
+  'z
+)
+ident(
+  def s "ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 152 4897 4902
+)
+"ProcDecl.ml" 148 4760 4779 "ProcDecl.ml" 148 4760 4795
+type(
+  'v * ('w * 'x * 'i) list * 'y * 'z
+)
+"ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 149 4799 4814
+type(
+  ('w * 'x * 'i) list -> (('w * 'x * 'b1) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref resolveArgs "ProcDecl.ml" 95 2865 2871 "ProcDecl.ml" 95 2865 2882
+)
+"ProcDecl.ml" 149 4799 4815 "ProcDecl.ml" 149 4799 4819
+type(
+  ('w * 'x * 'i) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 148 4760 4785 "ProcDecl.ml" 148 4760 4789
+)
+"ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 149 4799 4819
+call(
+  stack
+)
+type(
+  (('w * 'x * 'b1) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 150 4827 4836 "ProcDecl.ml" 150 4827 4840
+type(
+  ('w * 'x * 'b1) list
+)
+ident(
+  def args "ProcDecl.ml" 151 4845 4852 "ProcDecl.ml" 151 4845 4896
+)
+"ProcDecl.ml" 151 4845 4852 "ProcDecl.ml" 151 4845 4853
+type(
+  'v * ('w * 'x * 'b1) list * 'y * 'z -> ('a1, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref f "ProcDecl.ml" 148 4760 4776 "ProcDecl.ml" 148 4760 4777
+)
+"ProcDecl.ml" 151 4845 4855 "ProcDecl.ml" 151 4845 4859
+type(
+  'v
+)
+ident(
+  int_ref name "ProcDecl.ml" 148 4760 4779 "ProcDecl.ml" 148 4760 4783
+)
+"ProcDecl.ml" 151 4845 4861 "ProcDecl.ml" 151 4845 4865
+type(
+  ('w * 'x * 'b1) list
+)
+ident(
+  int_ref args "ProcDecl.ml" 150 4827 4836 "ProcDecl.ml" 150 4827 4840
+)
+"ProcDecl.ml" 151 4845 4867 "ProcDecl.ml" 151 4845 4868
+type(
+  'y
+)
+ident(
+  int_ref d "ProcDecl.ml" 148 4760 4791 "ProcDecl.ml" 148 4760 4792
+)
+"ProcDecl.ml" 151 4845 4870 "ProcDecl.ml" 151 4845 4871
+type(
+  'z
+)
+ident(
+  int_ref s "ProcDecl.ml" 148 4760 4794 "ProcDecl.ml" 148 4760 4795
+)
+"ProcDecl.ml" 151 4845 4854 "ProcDecl.ml" 151 4845 4872
+type(
+  'v * ('w * 'x * 'b1) list * 'y * 'z
+)
+"ProcDecl.ml" 151 4845 4852 "ProcDecl.ml" 151 4845 4872
+call(
+  stack
+)
+type(
+  ('a1, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 151 4845 4883 "ProcDecl.ml" 151 4845 4884
+type(
+  'a1
+)
+ident(
+  def x "ProcDecl.ml" 151 4845 4888 "ProcDecl.ml" 151 4845 4895
+)
+"ProcDecl.ml" 151 4845 4888 "ProcDecl.ml" 151 4845 4892
+type(
+  'v
+)
+ident(
+  int_ref name "ProcDecl.ml" 148 4760 4779 "ProcDecl.ml" 148 4760 4783
+)
+"ProcDecl.ml" 151 4845 4894 "ProcDecl.ml" 151 4845 4895
+type(
+  'a1
+)
+ident(
+  int_ref x "ProcDecl.ml" 151 4845 4883 "ProcDecl.ml" 151 4845 4884
+)
+"ProcDecl.ml" 151 4845 4888 "ProcDecl.ml" 151 4845 4895
+type(
+  'v * 'a1
+)
+"ProcDecl.ml" 151 4845 4878 "ProcDecl.ml" 151 4845 4896
+type(
+  'a1 -> 'v * 'a1
+)
+"ProcDecl.ml" 151 4845 4852 "ProcDecl.ml" 151 4845 4896
+call(
+  tail
+)
+type(
+  ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+type(
+  ('a1, Ostap.Msg.t) Checked.t ->
+  ('a1 -> 'v * 'a1) -> ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 150 4827 4831 "ProcDecl.ml" 152 4897 4902
+type(
+  ('w * 'x * 'b1) list -> ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 149 4799 4803 "ProcDecl.ml" 152 4897 4902
+call(
+  tail
+)
+type(
+  ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+type(
+  (('w * 'x * 'b1) list, Ostap.Msg.t) Checked.t ->
+  (('w * 'x * 'b1) list -> ('v * 'a1, Ostap.Msg.t) Checked.t) ->
+  ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?->> )
+)
+"ProcDecl.ml" 148 4760 4778 "ProcDecl.ml" 152 4897 4902
+type(
+  'v * ('w * 'x * 'i) list * 'y * 'z -> ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 148 4760 4776 "ProcDecl.ml" 152 4897 4902
+type(
+  ('v * ('w * 'x * 'b1) list * 'y * 'z -> ('a1, Ostap.Msg.t) Checked.t) ->
+  'v * ('w * 'x * 'i) list * 'y * 'z -> ('v * 'a1, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 154 4908 4913 "ProcDecl.ml" 154 4908 4923
+type(
+  bool
+)
+ident(
+  int_ref restricted "ProcDecl.ml" 94 2815 2827 "ProcDecl.ml" 94 2815 2837
+)
+"ProcDecl.ml" 156 4932 4940 "ProcDecl.ml" 156 4932 4941
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  def m "ProcDecl.ml" 157 5000 5004 "ProcDecl.ml" 157 5000 5052
+)
+"ProcDecl.ml" 156 4932 4943 "ProcDecl.ml" 156 4932 4949
+type(
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list
+)
+ident(
+  def pdecls "ProcDecl.ml" 157 5000 5004 "ProcDecl.ml" 157 5000 5052
+)
+"ProcDecl.ml" 156 4932 4940 "ProcDecl.ml" 156 4932 4949
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list
+)
+"ProcDecl.ml" 156 4932 4952 "ProcDecl.ml" 156 4932 4971
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list ->
+   ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list), Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"ProcDecl.ml" 156 4932 4973 "ProcDecl.ml" 156 4932 4982
+type(
+  ('c * ('h * 'c * 'g) list * 'j * 'l list ->
+   ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t) ->
+  'c * ('h * 'c * 'i) list * 'j * 'l list ->
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list), Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref checkProc "ProcDecl.ml" 148 4760 4766 "ProcDecl.ml" 148 4760 4775
+)
+"ProcDecl.ml" 156 4932 4983 "ProcDecl.ml" 156 4932 4988
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref inner "ProcDecl.ml" 121 3756 3762 "ProcDecl.ml" 121 3756 3767
+)
+"ProcDecl.ml" 156 4932 4972 "ProcDecl.ml" 156 4932 4989
+call(
+  stack
+)
+type(
+  'c * ('h * 'c * 'i) list * 'j * 'l list ->
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list), Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 156 4932 4990 "ProcDecl.ml" 156 4932 4996
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list
+)
+ident(
+  int_ref pdecls "ProcDecl.ml" 94 2815 2856 "ProcDecl.ml" 94 2815 2862
+)
+"ProcDecl.ml" 156 4932 4952 "ProcDecl.ml" 156 4932 4996
+call(
+  stack
+)
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list
+)
+"ProcDecl.ml" 157 5000 5004 "ProcDecl.ml" 157 5000 5009
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t *
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t ->
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"ProcDecl.ml" 157 5000 5011 "ProcDecl.ml" 157 5000 5012
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  int_ref m "ProcDecl.ml" 156 4932 4940 "ProcDecl.ml" 156 4932 4941
+)
+"ProcDecl.ml" 157 5000 5018 "ProcDecl.ml" 157 5000 5021
+type(
+  'c list * ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"ProcDecl.ml" 157 5000 5023 "ProcDecl.ml" 157 5000 5033
+type(
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list ->
+  'c list * ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+ident(
+  ext_ref List.split
+)
+"ProcDecl.ml" 157 5000 5034 "ProcDecl.ml" 157 5000 5040
+type(
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list
+)
+ident(
+  int_ref pdecls "ProcDecl.ml" 156 4932 4943 "ProcDecl.ml" 156 4932 4949
+)
+"ProcDecl.ml" 157 5000 5022 "ProcDecl.ml" 157 5000 5041
+call(
+  stack
+)
+type(
+  'c list * ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+"ProcDecl.ml" 157 5000 5017 "ProcDecl.ml" 157 5000 5042
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+"ProcDecl.ml" 157 5000 5014 "ProcDecl.ml" 157 5000 5042
+call(
+  stack
+)
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( !! )
+)
+"ProcDecl.ml" 157 5000 5010 "ProcDecl.ml" 157 5000 5043
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list, Ostap.Msg.t)
+  Checked.t *
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 157 5000 5004 "ProcDecl.ml" 157 5000 5043
+call(
+  stack
+)
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t
+)
+"ProcDecl.ml" 157 5000 5049 "ProcDecl.ml" 157 5000 5052
+type(
+  ('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list *
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"ProcDecl.ml" 157 5000 5004 "ProcDecl.ml" 157 5000 5052
+call(
+  tail
+)
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+type(
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t ->
+  (('c * ('e * ('h * 'e * 'g) list * 'k * 'm list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list) ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 156 4932 4936 "ProcDecl.ml" 157 5000 5052
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 159 5060 5068 "ProcDecl.ml" 159 5060 5069
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  def m "ProcDecl.ml" 160 5129 5133 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 159 5060 5071 "ProcDecl.ml" 159 5060 5077
+type(
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list
+)
+ident(
+  def pdecls "ProcDecl.ml" 160 5129 5133 "ProcDecl.ml" 160 5129 5200
+)
+"ProcDecl.ml" 159 5060 5068 "ProcDecl.ml" 159 5060 5077
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list
+)
+"ProcDecl.ml" 159 5060 5080 "ProcDecl.ml" 159 5060 5099
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list ->
+   ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list), Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list
+)
+ident(
+  ext_ref Common.resolveDecls
+)
+"ProcDecl.ml" 159 5060 5101 "ProcDecl.ml" 159 5060 5110
+type(
+  ('c * ('h * 'c * 'g) list * 'j * 'l list ->
+   ('c * ('h * 'c * 'g) list * 'j * 'l list, Ostap.Msg.t) Checked.t) ->
+  'c * ('h * 'c * 'i) list * 'j * 'l list ->
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list), Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref checkProc "ProcDecl.ml" 148 4760 4766 "ProcDecl.ml" 148 4760 4775
+)
+"ProcDecl.ml" 159 5060 5111 "ProcDecl.ml" 159 5060 5117
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list ->
+  ('c * ('h * 'c * 'g) list * 'j * 'l list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref update "ProcDecl.ml" 144 4610 4616 "ProcDecl.ml" 144 4610 4622
+)
+"ProcDecl.ml" 159 5060 5100 "ProcDecl.ml" 159 5060 5118
+call(
+  stack
+)
+type(
+  'c * ('h * 'c * 'i) list * 'j * 'l list ->
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list), Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 159 5060 5119 "ProcDecl.ml" 159 5060 5125
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list
+)
+ident(
+  int_ref pdecls "ProcDecl.ml" 94 2815 2856 "ProcDecl.ml" 94 2815 2862
+)
+"ProcDecl.ml" 159 5060 5080 "ProcDecl.ml" 159 5060 5125
+call(
+  stack
+)
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t * ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list
+)
+"ProcDecl.ml" 160 5129 5133 "ProcDecl.ml" 160 5129 5138
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t *
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t ->
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"ProcDecl.ml" 160 5129 5140 "ProcDecl.ml" 160 5129 5141
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t
+)
+ident(
+  int_ref m "ProcDecl.ml" 159 5060 5068 "ProcDecl.ml" 159 5060 5069
+)
+"ProcDecl.ml" 160 5129 5143 "ProcDecl.ml" 160 5129 5147
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 160 5129 5149 "ProcDecl.ml" 160 5129 5157
+type(
+  ('c * ('h * 'c * 'g) list * 'j * 'l list ->
+   ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'g) list * 'j * 'l list) list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 160 5129 5158 "ProcDecl.ml" 160 5129 5163
+type(
+  'c * ('h * 'c * 'g) list * 'j * 'l list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref inner "ProcDecl.ml" 121 3756 3762 "ProcDecl.ml" 121 3756 3767
+)
+"ProcDecl.ml" 160 5129 5165 "ProcDecl.ml" 160 5129 5168
+type(
+  'c list * ('c * ('h * 'c * 'g) list * 'j * 'l list) list ->
+  ('c * ('h * 'c * 'g) list * 'j * 'l list) list
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"ProcDecl.ml" 160 5129 5170 "ProcDecl.ml" 160 5129 5180
+type(
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list ->
+  'c list * ('c * ('h * 'c * 'g) list * 'j * 'l list) list
+)
+ident(
+  ext_ref List.split
+)
+"ProcDecl.ml" 160 5129 5181 "ProcDecl.ml" 160 5129 5187
+type(
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list
+)
+ident(
+  int_ref pdecls "ProcDecl.ml" 159 5060 5071 "ProcDecl.ml" 159 5060 5077
+)
+"ProcDecl.ml" 160 5129 5169 "ProcDecl.ml" 160 5129 5188
+call(
+  stack
+)
+type(
+  'c list * ('c * ('h * 'c * 'g) list * 'j * 'l list) list
+)
+"ProcDecl.ml" 160 5129 5164 "ProcDecl.ml" 160 5129 5189
+type(
+  ('c * ('h * 'c * 'g) list * 'j * 'l list) list
+)
+"ProcDecl.ml" 160 5129 5148 "ProcDecl.ml" 160 5129 5190
+call(
+  stack
+)
+type(
+  ('e * ('h * 'e * 'g) list * 'k * 'm list, Ostap.Msg.t) Checked.t list
+)
+"ProcDecl.ml" 160 5129 5143 "ProcDecl.ml" 160 5129 5190
+call(
+  stack
+)
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 160 5129 5139 "ProcDecl.ml" 160 5129 5191
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list, Ostap.Msg.t)
+  Checked.t *
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 160 5129 5133 "ProcDecl.ml" 160 5129 5191
+call(
+  stack
+)
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t
+)
+"ProcDecl.ml" 160 5129 5197 "ProcDecl.ml" 160 5129 5200
+type(
+  ('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list *
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+  ('e * ('h * 'e * 'g) list * 'k * 'm list) list
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"ProcDecl.ml" 160 5129 5133 "ProcDecl.ml" 160 5129 5200
+call(
+  tail
+)
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+type(
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t)
+  Checked.t ->
+  (('c * ('c * ('h * 'c * 'g) list * 'j * 'l list)) list *
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list ->
+   ('e * ('h * 'e * 'g) list * 'k * 'm list) list) ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 159 5060 5064 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 154 4908 4910 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 148 4760 4762 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 144 4610 4612 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 121 3756 3758 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 95 2865 2867 "ProcDecl.ml" 160 5129 5200
+type(
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2856 "ProcDecl.ml" 160 5129 5200
+type(
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2851 "ProcDecl.ml" 160 5129 5200
+type(
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2846 "ProcDecl.ml" 160 5129 5200
+type(
+  ('a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t) ->
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2842 "ProcDecl.ml" 160 5129 5200
+type(
+  ('i -> ('n, Ostap.Msg.t) Checked.t) ->
+  ('a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t) ->
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2838 "ProcDecl.ml" 160 5129 5200
+type(
+  'a ->
+  ('i -> ('n, Ostap.Msg.t) Checked.t) ->
+  ('a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t) ->
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 94 2815 2827 "ProcDecl.ml" 160 5129 5200
+type(
+  bool ->
+  'a ->
+  ('i -> ('n, Ostap.Msg.t) Checked.t) ->
+  ('a -> 'j -> (unit, Ostap.Msg.t) Checked.t * ('k, Ostap.Msg.t) Checked.t) ->
+  ('l -> ('m, Ostap.Msg.t) Checked.t) ->
+  ('c * ('h * 'c * 'i) list * 'j * 'l list) list ->
+  (('e * ('h * 'e * 'g) list * 'k * 'm list) list, Ostap.Msg.t) Checked.t
+)
+"ProcDecl.ml" 164 5292 5296 "ProcDecl.ml" 164 5292 5305
+type(
+  ('a -> ('b, 'c) Checked.t) ->
+  ('d -> ('e, 'c) Checked.t) ->
+  ('f * 'g * 'a * 'd list) list ->
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)
+ident(
+  def typecheck "ProcDecl.ml" 172 5522 5525 "ProcDecl.ml" 1 0 -1
+)
+"ProcDecl.ml" 164 5292 5306 "ProcDecl.ml" 164 5292 5310
+type(
+  'a -> ('b, 'c) Checked.t
+)
+ident(
+  def decl "ProcDecl.ml" 164 5292 5311 "ProcDecl.ml" 172 5522 5525
+)
+"ProcDecl.ml" 164 5292 5311 "ProcDecl.ml" 164 5292 5315
+type(
+  'd -> ('e, 'c) Checked.t
+)
+ident(
+  def stmt "ProcDecl.ml" 164 5292 5316 "ProcDecl.ml" 172 5522 5525
+)
+"ProcDecl.ml" 164 5292 5316 "ProcDecl.ml" 164 5292 5317
+type(
+  ('f * 'g * 'a * 'd list) list
+)
+ident(
+  def p "ProcDecl.ml" 165 5320 5322 "ProcDecl.ml" 172 5522 5525
+)
+"ProcDecl.ml" 165 5320 5322 "ProcDecl.ml" 165 5320 5326
+type(
+  ('f * 'g * 'b * 'e list, 'c) Checked.t list ->
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 166 5329 5333 "ProcDecl.ml" 166 5329 5341
+type(
+  ('f * 'g * 'a * 'd list -> ('f * 'g * 'b * 'e list, 'c) Checked.t) ->
+  ('f * 'g * 'a * 'd list) list ->
+  ('f * 'g * 'b * 'e list, 'c) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 167 5343 5355 "ProcDecl.ml" 167 5343 5359
+type(
+  'f
+)
+ident(
+  def name "ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 169 5447 5504
+)
+"ProcDecl.ml" 167 5343 5361 "ProcDecl.ml" 167 5343 5365
+type(
+  'g
+)
+ident(
+  def args "ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 169 5447 5504
+)
+"ProcDecl.ml" 167 5343 5367 "ProcDecl.ml" 167 5343 5372
+type(
+  'a
+)
+ident(
+  def decls "ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 169 5447 5504
+)
+"ProcDecl.ml" 167 5343 5374 "ProcDecl.ml" 167 5343 5379
+type(
+  'd list
+)
+ident(
+  def stmts "ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 169 5447 5504
+)
+"ProcDecl.ml" 167 5343 5355 "ProcDecl.ml" 167 5343 5379
+type(
+  'f * 'g * 'a * 'd list
+)
+"ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 168 5385 5399
+type(
+  ('b, 'c) Checked.t * ('e list, 'c) Checked.t ->
+  ('b * 'e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.tuple
+)
+"ProcDecl.ml" 168 5385 5401 "ProcDecl.ml" 168 5385 5405
+type(
+  'a -> ('b, 'c) Checked.t
+)
+ident(
+  int_ref decl "ProcDecl.ml" 164 5292 5306 "ProcDecl.ml" 164 5292 5310
+)
+"ProcDecl.ml" 168 5385 5406 "ProcDecl.ml" 168 5385 5411
+type(
+  'a
+)
+ident(
+  int_ref decls "ProcDecl.ml" 167 5343 5367 "ProcDecl.ml" 167 5343 5372
+)
+"ProcDecl.ml" 168 5385 5401 "ProcDecl.ml" 168 5385 5411
+call(
+  stack
+)
+type(
+  ('b, 'c) Checked.t
+)
+"ProcDecl.ml" 168 5385 5413 "ProcDecl.ml" 168 5385 5417
+type(
+  ('e, 'c) Checked.t list -> ('e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.list
+)
+"ProcDecl.ml" 168 5385 5419 "ProcDecl.ml" 168 5385 5427
+type(
+  ('d -> ('e, 'c) Checked.t) -> 'd list -> ('e, 'c) Checked.t list
+)
+ident(
+  ext_ref List.map
+)
+"ProcDecl.ml" 168 5385 5428 "ProcDecl.ml" 168 5385 5432
+type(
+  'd -> ('e, 'c) Checked.t
+)
+ident(
+  int_ref stmt "ProcDecl.ml" 164 5292 5311 "ProcDecl.ml" 164 5292 5315
+)
+"ProcDecl.ml" 168 5385 5433 "ProcDecl.ml" 168 5385 5438
+type(
+  'd list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 167 5343 5374 "ProcDecl.ml" 167 5343 5379
+)
+"ProcDecl.ml" 168 5385 5418 "ProcDecl.ml" 168 5385 5439
+call(
+  stack
+)
+type(
+  ('e, 'c) Checked.t list
+)
+"ProcDecl.ml" 168 5385 5413 "ProcDecl.ml" 168 5385 5439
+call(
+  stack
+)
+type(
+  ('e list, 'c) Checked.t
+)
+"ProcDecl.ml" 168 5385 5400 "ProcDecl.ml" 168 5385 5440
+type(
+  ('b, 'c) Checked.t * ('e list, 'c) Checked.t
+)
+"ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 168 5385 5440
+call(
+  stack
+)
+type(
+  ('b * 'e list, 'c) Checked.t
+)
+"ProcDecl.ml" 169 5447 5462 "ProcDecl.ml" 169 5447 5467
+type(
+  'b
+)
+ident(
+  def decls "ProcDecl.ml" 169 5447 5479 "ProcDecl.ml" 169 5447 5503
+)
+"ProcDecl.ml" 169 5447 5469 "ProcDecl.ml" 169 5447 5474
+type(
+  'e list
+)
+ident(
+  def stmts "ProcDecl.ml" 169 5447 5479 "ProcDecl.ml" 169 5447 5503
+)
+"ProcDecl.ml" 169 5447 5462 "ProcDecl.ml" 169 5447 5474
+type(
+  'b * 'e list
+)
+"ProcDecl.ml" 169 5447 5479 "ProcDecl.ml" 169 5447 5483
+type(
+  'f
+)
+ident(
+  int_ref name "ProcDecl.ml" 167 5343 5355 "ProcDecl.ml" 167 5343 5359
+)
+"ProcDecl.ml" 169 5447 5485 "ProcDecl.ml" 169 5447 5489
+type(
+  'g
+)
+ident(
+  int_ref args "ProcDecl.ml" 167 5343 5361 "ProcDecl.ml" 167 5343 5365
+)
+"ProcDecl.ml" 169 5447 5491 "ProcDecl.ml" 169 5447 5496
+type(
+  'b
+)
+ident(
+  int_ref decls "ProcDecl.ml" 169 5447 5462 "ProcDecl.ml" 169 5447 5467
+)
+"ProcDecl.ml" 169 5447 5498 "ProcDecl.ml" 169 5447 5503
+type(
+  'e list
+)
+ident(
+  int_ref stmts "ProcDecl.ml" 169 5447 5469 "ProcDecl.ml" 169 5447 5474
+)
+"ProcDecl.ml" 169 5447 5479 "ProcDecl.ml" 169 5447 5503
+type(
+  'f * 'g * 'b * 'e list
+)
+"ProcDecl.ml" 169 5447 5456 "ProcDecl.ml" 169 5447 5504
+type(
+  'b * 'e list -> 'f * 'g * 'b * 'e list
+)
+"ProcDecl.ml" 168 5385 5394 "ProcDecl.ml" 169 5447 5504
+call(
+  tail
+)
+type(
+  ('f * 'g * 'b * 'e list, 'c) Checked.t
+)
+type(
+  ('b * 'e list, 'c) Checked.t ->
+  ('b * 'e list -> 'f * 'g * 'b * 'e list) ->
+  ('f * 'g * 'b * 'e list, 'c) Checked.t
+)
+ident(
+  ext_ref Checked.( -?-> )
+)
+"ProcDecl.ml" 167 5343 5349 "ProcDecl.ml" 170 5505 5512
+type(
+  'f * 'g * 'a * 'd list -> ('f * 'g * 'b * 'e list, 'c) Checked.t
+)
+"ProcDecl.ml" 171 5514 5520 "ProcDecl.ml" 171 5514 5521
+type(
+  ('f * 'g * 'a * 'd list) list
+)
+ident(
+  int_ref p "ProcDecl.ml" 164 5292 5316 "ProcDecl.ml" 164 5292 5317
+)
+"ProcDecl.ml" 165 5320 5327 "ProcDecl.ml" 172 5522 5525
+call(
+  stack
+)
+type(
+  ('f * 'g * 'b * 'e list, 'c) Checked.t list
+)
+"ProcDecl.ml" 165 5320 5322 "ProcDecl.ml" 172 5522 5525
+call(
+  tail
+)
+type(
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)
+"ProcDecl.ml" 164 5292 5316 "ProcDecl.ml" 172 5522 5525
+type(
+  ('f * 'g * 'a * 'd list) list ->
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)
+"ProcDecl.ml" 164 5292 5311 "ProcDecl.ml" 172 5522 5525
+type(
+  ('d -> ('e, 'c) Checked.t) ->
+  ('f * 'g * 'a * 'd list) list ->
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)
+"ProcDecl.ml" 164 5292 5306 "ProcDecl.ml" 172 5522 5525
+type(
+  ('a -> ('b, 'c) Checked.t) ->
+  ('d -> ('e, 'c) Checked.t) ->
+  ('f * 'g * 'a * 'd list) list ->
+  (('f * 'g * 'b * 'e list) list, 'c) Checked.t
+)

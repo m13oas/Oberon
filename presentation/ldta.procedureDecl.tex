@@ -1,0 +1,12 @@
+\osprule{procedureHeading}{[typ]}{\osrblock{\osrterm{PROCEDURE}\osbr \osrnonterm{ident}\osbr \osropt{\osrnonterm{formalParameters}\osrargs{typ}}\osbr \osropt{\osrblock{\osrterm{``:''}\osbr typ}}}}
+
+\osprule{parameterSection}{[typ]}{\osrblock{\osropt{\osrterm{VAR}}\osbr \osrnonterm{list}\osrargs{\osrnonterm{ident}}\osbr \osrterm{``:''}\osbr typ}}
+
+\osprule{formalParameters}{[typ]}{\osrblock{\osrterm{``(''}\osbr \osropt{\osrnonterm{sequence}\osrargs{\osrnonterm{parameterSection}\osrargs{typ}}}\osbr \osrterm{``)''}}}
+
+\osprule{procedureBody}{[decl][stmt]}{\osrblock{decl\osbr \osropt{\osrblock{\osrterm{BEGIN}\osbr \osrnonterm{sequence}\osrargs{stmt}}}}}
+
+\osprule{procedureDeclaration}{[typ][decl][stmt]}{\osrblock{\osrnonterm{procedureHeading}\osrargs{typ}\osbr \osrterm{``;''}\osbr \osrnonterm{procedureBody}\osrargs{decl}\osrargs{stmt}\osbr \osrnonterm{procedureEnd}\osrargs{\osrnonterm{name}}}}
+
+\osrule{procedureEnd}{\osrblock{\osrterm{END}\osbr \osrterm{expectedName}\osbr \osrterm{``;''}}}
+

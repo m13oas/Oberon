@@ -1,0 +1,803 @@
+"TypeDecl.ml" 6 119 132 "TypeDecl.ml" 6 119 135
+type(
+  (< coord : 'b;
+     getIDENT : ('a, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                Ostap.Combinators.result;
+     loc : Ostap.Msg.Locator.t;
+     look : string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result;
+     pos : 'd;
+     regexp : string ->
+              string -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result;
+     skip : 'd -> 'b -> [> `Skipped of 'f * Ostap.Msg.Coord.t ]; .. >
+   as 'a, 'g, Ostap.Reason.t)
+  Ostap.Combinators.parse
+)
+ident(
+  def typ "TypeDecl.ml" 6 119 126 "TypeDecl.ml" 6 119 174
+)
+"TypeDecl.ml" 6 119 139 "TypeDecl.ml" 6 119 142
+type(
+  string -> 'a -> ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  ext_ref Common.key
+)
+"TypeDecl.ml" 6 119 143 "TypeDecl.ml" 6 119 149
+type(
+  string
+)
+"TypeDecl.ml" 6 119 139 "TypeDecl.ml" 6 119 150
+call(
+  tail
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "TypeDecl.ml" 6 119 139 "TypeDecl.ml" 6 119 150
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "TypeDecl.ml" 6 119 139 "TypeDecl.ml" 6 119 150
+)
+"TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 157
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Common.ident
+)
+"TypeDecl.ml" 6 119 159 "TypeDecl.ml" 6 119 162
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "TypeDecl.ml" 6 119 159 "TypeDecl.ml" 6 119 162
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "TypeDecl.ml" 6 119 159 "TypeDecl.ml" 6 119 162
+)
+"TypeDecl.ml" 6 119 163 "TypeDecl.ml" 6 119 166
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  int_ref typ "TypeDecl.ml" 6 119 132 "TypeDecl.ml" 6 119 135
+)
+"TypeDecl.ml" 6 119 168 "TypeDecl.ml" 6 119 171
+call(
+  tail
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, 'c, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "TypeDecl.ml" 6 119 168 "TypeDecl.ml" 6 119 171
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "TypeDecl.ml" 6 119 168 "TypeDecl.ml" 6 119 171
+)
+"TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 171
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  string -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'g -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'c -> string * 'g
+)
+type(
+  string * 'g
+)
+type(
+  'g
+)
+ident(
+  int_ref _0 "TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 171
+)
+type(
+  string
+)
+ident(
+  int_ref _1 "TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 171
+)
+type(
+  'c
+)
+type(
+  ('c -> string * 'g) ->
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g
+)
+ident(
+  def _0 "TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 171
+)
+type(
+  'g
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('g -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'c
+)
+type(
+  ('a, 'c, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('c -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  string
+)
+ident(
+  def _1 "TypeDecl.ml" 6 119 152 "TypeDecl.ml" 6 119 171
+)
+type(
+  string
+)
+type(
+  ('a, string, Ostap.Reason.t) Ostap.Combinators.parse ->
+  (string -> ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"TypeDecl.ml" 6 119 151 "TypeDecl.ml" 6 119 174
+call(
+  tail
+)
+type(
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  ('a, string * 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.many
+)
+"TypeDecl.ml" 6 119 138 "TypeDecl.ml" 6 119 174
+type(
+  'e -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+type(
+  'e
+)
+type(
+  ('a, 'e, Ostap.Reason.t) Ostap.Combinators.parse ->
+  ('e -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse) ->
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"TypeDecl.ml" 6 119 126 "TypeDecl.ml" 6 119 174
+call(
+  tail
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "TypeDecl.ml" 6 119 126 "TypeDecl.ml" 6 119 174
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "TypeDecl.ml" 6 119 126 "TypeDecl.ml" 6 119 174
+)
+type(
+  ('a, 'g, Ostap.Reason.t) Ostap.Combinators.parse ->
+  'a -> ('a, (string * 'g) list, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  def parse "TypeDecl.ml" 6 119 119 "TypeDecl.ml" 1 0 -1
+)
+"TypeDecl.ml" 13 297 301 "TypeDecl.ml" 13 297 306
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  def print "TypeDecl.ml" 23 525 525 "TypeDecl.ml" 1 0 -1
+)
+"TypeDecl.ml" 13 297 307 "TypeDecl.ml" 13 297 310
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "TypeDecl.ml" 13 297 313 "TypeDecl.ml" 21 514 523
+)
+"TypeDecl.ml" 14 322 324 "TypeDecl.ml" 14 322 326
+type(
+  (string * 'a) list
+)
+"TypeDecl.ml" 14 322 330 "TypeDecl.ml" 14 322 332
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 15 333 335 "TypeDecl.ml" 15 333 336
+type(
+  (string * 'a) list
+)
+ident(
+  def t "TypeDecl.ml" 15 333 341 "TypeDecl.ml" 21 514 523
+)
+"TypeDecl.ml" 15 333 342 "TypeDecl.ml" 15 333 347
+type(
+  Ostap.Pretty.printer -> Ostap.Pretty.printer -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.plock
+)
+"TypeDecl.ml" 15 333 349 "TypeDecl.ml" 15 333 355
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 15 333 356 "TypeDecl.ml" 15 333 362
+type(
+  string
+)
+"TypeDecl.ml" 15 333 348 "TypeDecl.ml" 15 333 363
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 16 364 375 "TypeDecl.ml" 16 364 379
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"TypeDecl.ml" 17 380 393 "TypeDecl.ml" 17 380 396
+type(
+  (string * 'a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"TypeDecl.ml" 17 380 403 "TypeDecl.ml" 17 380 407
+type(
+  string
+)
+ident(
+  def name "TypeDecl.ml" 17 380 415 "TypeDecl.ml" 17 380 469
+)
+"TypeDecl.ml" 17 380 409 "TypeDecl.ml" 17 380 410
+type(
+  'a
+)
+ident(
+  def t "TypeDecl.ml" 17 380 415 "TypeDecl.ml" 17 380 469
+)
+"TypeDecl.ml" 17 380 403 "TypeDecl.ml" 17 380 410
+type(
+  string * 'a
+)
+"TypeDecl.ml" 17 380 415 "TypeDecl.ml" 17 380 418
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"TypeDecl.ml" 17 380 420 "TypeDecl.ml" 17 380 423
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"TypeDecl.ml" 17 380 425 "TypeDecl.ml" 17 380 431
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 17 380 432 "TypeDecl.ml" 17 380 436
+type(
+  string
+)
+ident(
+  int_ref name "TypeDecl.ml" 17 380 403 "TypeDecl.ml" 17 380 407
+)
+"TypeDecl.ml" 17 380 425 "TypeDecl.ml" 17 380 436
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 438 "TypeDecl.ml" 17 380 444
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 17 380 445 "TypeDecl.ml" 17 380 448
+type(
+  string
+)
+"TypeDecl.ml" 17 380 438 "TypeDecl.ml" 17 380 448
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 450 "TypeDecl.ml" 17 380 453
+type(
+  'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "TypeDecl.ml" 13 297 307 "TypeDecl.ml" 13 297 310
+)
+"TypeDecl.ml" 17 380 454 "TypeDecl.ml" 17 380 455
+type(
+  'a
+)
+ident(
+  int_ref t "TypeDecl.ml" 17 380 409 "TypeDecl.ml" 17 380 410
+)
+"TypeDecl.ml" 17 380 450 "TypeDecl.ml" 17 380 455
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 424 "TypeDecl.ml" 17 380 456
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 17 380 420 "TypeDecl.ml" 17 380 456
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 458 "TypeDecl.ml" 17 380 464
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 17 380 465 "TypeDecl.ml" 17 380 468
+type(
+  string
+)
+"TypeDecl.ml" 17 380 458 "TypeDecl.ml" 17 380 468
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 419 "TypeDecl.ml" 17 380 469
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 17 380 415 "TypeDecl.ml" 17 380 469
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 17 380 397 "TypeDecl.ml" 17 380 470
+type(
+  string * 'a -> Ostap.Pretty.printer
+)
+"TypeDecl.ml" 18 472 486 "TypeDecl.ml" 18 472 487
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref t "TypeDecl.ml" 15 333 335 "TypeDecl.ml" 15 333 336
+)
+"TypeDecl.ml" 17 380 392 "TypeDecl.ml" 19 488 501
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 16 364 374 "TypeDecl.ml" 20 502 513
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 15 333 342 "TypeDecl.ml" 20 502 513
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 15 333 341 "TypeDecl.ml" 21 514 523
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 13 297 313 "TypeDecl.ml" 21 514 523
+type(
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 13 297 307 "TypeDecl.ml" 21 514 523
+type(
+  ('a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 23 525 529 "TypeDecl.ml" 23 525 536
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  def print_c "TypeDecl.ml" 29 719 728 "TypeDecl.ml" 1 0 -1
+)
+"TypeDecl.ml" 23 525 537 "TypeDecl.ml" 23 525 540
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  def typ "TypeDecl.ml" 23 525 543 "TypeDecl.ml" 29 719 728
+)
+"TypeDecl.ml" 24 552 554 "TypeDecl.ml" 24 552 556
+type(
+  (string * 'a) list
+)
+"TypeDecl.ml" 24 552 560 "TypeDecl.ml" 24 552 562
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 25 563 565 "TypeDecl.ml" 25 563 566
+type(
+  (string * 'a) list
+)
+ident(
+  def t "TypeDecl.ml" 25 563 571 "TypeDecl.ml" 29 719 728
+)
+"TypeDecl.ml" 25 563 572 "TypeDecl.ml" 25 563 576
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.vert
+)
+"TypeDecl.ml" 26 577 588 "TypeDecl.ml" 26 577 591
+type(
+  (string * 'a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+ident(
+  ext_ref List.map
+)
+"TypeDecl.ml" 26 577 598 "TypeDecl.ml" 26 577 602
+type(
+  string
+)
+ident(
+  def name "TypeDecl.ml" 26 577 610 "TypeDecl.ml" 26 577 681
+)
+"TypeDecl.ml" 26 577 604 "TypeDecl.ml" 26 577 605
+type(
+  'a
+)
+ident(
+  def t "TypeDecl.ml" 26 577 610 "TypeDecl.ml" 26 577 681
+)
+"TypeDecl.ml" 26 577 598 "TypeDecl.ml" 26 577 605
+type(
+  string * 'a
+)
+"TypeDecl.ml" 26 577 610 "TypeDecl.ml" 26 577 613
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.seq
+)
+"TypeDecl.ml" 26 577 615 "TypeDecl.ml" 26 577 618
+type(
+  Ostap.Pretty.printer list -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Common.hov
+)
+"TypeDecl.ml" 26 577 620 "TypeDecl.ml" 26 577 626
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 26 577 627 "TypeDecl.ml" 26 577 636
+type(
+  string
+)
+"TypeDecl.ml" 26 577 620 "TypeDecl.ml" 26 577 636
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 638 "TypeDecl.ml" 26 577 641
+type(
+  Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer
+)
+ident(
+  int_ref typ "TypeDecl.ml" 23 525 537 "TypeDecl.ml" 23 525 540
+)
+"TypeDecl.ml" 26 577 643 "TypeDecl.ml" 26 577 649
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 26 577 651 "TypeDecl.ml" 26 577 655
+type(
+  string
+)
+ident(
+  int_ref name "TypeDecl.ml" 26 577 598 "TypeDecl.ml" 26 577 602
+)
+"TypeDecl.ml" 26 577 658 "TypeDecl.ml" 26 577 663
+type(
+  string
+)
+"TypeDecl.ml" 26 577 651 "TypeDecl.ml" 26 577 663
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"TypeDecl.ml" 26 577 650 "TypeDecl.ml" 26 577 664
+call(
+  stack
+)
+type(
+  string
+)
+"TypeDecl.ml" 26 577 642 "TypeDecl.ml" 26 577 665
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 666 "TypeDecl.ml" 26 577 667
+type(
+  'a
+)
+ident(
+  int_ref t "TypeDecl.ml" 26 577 604 "TypeDecl.ml" 26 577 605
+)
+"TypeDecl.ml" 26 577 638 "TypeDecl.ml" 26 577 667
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 619 "TypeDecl.ml" 26 577 668
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 26 577 615 "TypeDecl.ml" 26 577 668
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 670 "TypeDecl.ml" 26 577 676
+type(
+  string -> Ostap.Pretty.printer
+)
+ident(
+  ext_ref Ostap.Pretty.string
+)
+"TypeDecl.ml" 26 577 677 "TypeDecl.ml" 26 577 680
+type(
+  string
+)
+"TypeDecl.ml" 26 577 670 "TypeDecl.ml" 26 577 680
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 614 "TypeDecl.ml" 26 577 681
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 26 577 610 "TypeDecl.ml" 26 577 681
+call(
+  tail
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 26 577 592 "TypeDecl.ml" 26 577 682
+type(
+  string * 'a -> Ostap.Pretty.printer
+)
+"TypeDecl.ml" 27 683 695 "TypeDecl.ml" 27 683 696
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref t "TypeDecl.ml" 25 563 565 "TypeDecl.ml" 25 563 566
+)
+"TypeDecl.ml" 26 577 587 "TypeDecl.ml" 28 697 708
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 25 563 572 "TypeDecl.ml" 28 697 708
+call(
+  stack
+)
+type(
+  Ostap.Pretty.printer
+)
+"TypeDecl.ml" 25 563 571 "TypeDecl.ml" 29 719 728
+type(
+  Ostap.Pretty.printer list
+)
+type(
+  Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 23 525 543 "TypeDecl.ml" 29 719 728
+type(
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
+"TypeDecl.ml" 23 525 537 "TypeDecl.ml" 29 719 728
+type(
+  (Ostap.Pretty.printer -> 'a -> Ostap.Pretty.printer) ->
+  (string * 'a) list -> Ostap.Pretty.printer list
+)
