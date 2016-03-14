@@ -7,7 +7,56 @@ open List
 module Mapper (M : Monad.S) =
   struct
     open M
-    let rec gmap t ref cexpr expr ext stmt =
+    let rec gmap t ref cexpr expr ext (stmt: [>`Case of 
+	                                              ( [> `Binop of
+							         [> `Add
+								 | `And
+								 | `Div
+								 | `Eq
+								 | `Ge
+								 | `Gt
+								 | `Le
+								 | `Lt
+								 | `Mod
+								 | `Mul
+								 | `Ne
+								 | `Or
+								 | `Sub ] *
+								   'h * 'h
+						       | `Const of [> `False | `Literal of int | `True ]
+						       | `Unop of [> `Neg | `Not ] * 'h ]
+							 as 'h ) * 
+					               ([> `Atom of
+							         [> `Binop of
+                              						   [> `Add 
+									   | `And
+									   | `Div
+									   | `Eq
+									   | `Ge
+									   | `Gt
+									   | `Le
+									   | `Lt
+									   | `Mod
+									   | `Mul
+									   | `Ne
+									   | `Or
+									   | `Sub ] *
+									     'i * 'i
+								 | `Const of [> `False | `Literal of int | `True ]
+								 | `Unop of [> `Neg | `Not ] * 'i ]
+								   as 'i
+							| `Interval of 'i * 'i ]
+							   list * 'self list) list * 'self list
+					     | `For of 'g * 'h * 'h * 'i option * 'self list] ) =
+(*for L3					     | `Call of
+						 string * 'h list *
+						   [> `Proc of string * ([ `Val | `Var ] * String.t * ([> `Bool
+												       | `Int
+												       | `User of
+													   String.t * string *
+													     ([> `Bool | `Int | `User of 'n ] as 'o) as 'n ]
+													  as 'm) ) list ]*)
+ 
       let self = gmap t ref cexpr expr ext in
       match stmt with
       | `For (i, l, u, s, b) -> 

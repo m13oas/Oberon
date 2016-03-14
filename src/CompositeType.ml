@@ -7,7 +7,31 @@ open List
 module Mapper (M : Monad.S) =
   struct
     open M
-    let rec gmap t expr ext typ = 
+    let rec gmap t expr ext (typ: [> `Array of
+                                         ([> `Binop of
+					     [< `Add
+					     | `And
+					     | `Div
+					     | `Eq
+					     | `Ge
+					     | `Gt
+					     | `Le
+					     | `Lt
+					     | `Mod
+					     | `Mul
+					     | `Ne
+					     | `Or
+					     | `Sub ] *
+					       'b * 'b
+					  | `Const of [ `False | `Literal of int | `True ]
+					  | `Field of 'b * string
+					  | `Index of 'b * 'b
+					  | `Unop of [ `Neg | `Not ] * 'b ]
+					     as 'b) * 'a
+				  | `Bool
+				  | `Int
+				  | `Record of (string * 'a) list
+				(*L5? | `User of 'f * string * 'g*) ] as 'a) = 
       let self = gmap t expr ext in
       match typ with
       | `Array (s, typ) -> tuple (expr s, self typ) >>= (fun (s, typ') -> t#array typ s typ')
