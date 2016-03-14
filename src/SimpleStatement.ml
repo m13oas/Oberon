@@ -1,13 +1,63 @@
 open Common
 open Ostap.Util
 open List
+open SimpleExpression
 
+(*
+[> `Assign of
+            ([> `Binop of
+                  [< `Add
+                   | `And
+                   | `Div
+                   | `Eq
+                   | `Ge
+                   | `Gt
+                   | `Le
+                   | `Lt
+                   | `Mod
+                   | `Mul
+                   | `Ne
+                   | `Or
+                   | `Sub
+                   > `Add `Div `Mod `Mul `Sub ] *
+                  'd * 'd
+              | `Const of [ `False | `Literal of int | `True ]
+              | `Ident of string
+              | `Unop of [ `Neg | `Not ] * 'd ]
+             as 'd) *
+            'd
+        | `If of ('d * 'c list) list * 'c list
+        | `While of 'd * 'c list ]
+
+
+*)
 (* ------------------------------------- Generic transformer ------------------------ *)
 
 module Mapper (M : Monad.S) =
   struct
     open M
-    let rec gmap t ref expr ext stmt =
+    let rec gmap t ref expr ext (stmt: [> `Assign of ([> `Binop of
+                                                                      [< `Add
+								      | `And
+								      | `Div
+								      | `Eq
+								      | `Ge
+								      | `Gt
+								      | `Le
+								      | `Lt
+								      | `Mod
+								      | `Mul
+								      | `Ne
+								      | `Or
+								      | `Sub ] *
+									'a * 'a
+						      | `Const of [ `False | `Literal of int | `True ]
+						      | `Unop of [ `Neg | `Not ] * 'a
+						       ] as 'a) * 'a
+				       | `If of ('a * 'b list) list * 'b list
+				       | `While of 'a * 'b list]
+					 as 'b) =
+
       let self = gmap t ref expr ext in
       match stmt with
       | `Assign (x, y) -> tuple (ref x, expr y) >>= (fun (x, y) -> t#assign stmt x y)
@@ -40,7 +90,10 @@ ostap (
     assignment[ref][expr] 
   | ifStatement[expr][stmt] 
   | whileStatement[expr][stmt];
-  assignment[ref][expr]: dst:ref ":=" src:expr {`Assign (dst, src)};
+  assignment[ref][expr]: 
+    dst:ref ":=" src:expr {
+      `Assign (dst, src)
+  };
   ifStatement[expr][stmt]: 
     key["IF"] cond:expr 
        key["THEN"] thenPart:oseq[stmt]
