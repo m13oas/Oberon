@@ -2,21 +2,21 @@ open Common
 open Ostap.Pretty
 open Ostap.Util
 open List
-(*
-type 'self expression = [ `Binop of [< `Add | `And | `Div | `Eq | `Ge | `Gt | `Le | `Lt | `Mod | `Mul | `Ne | `Or | `Sub > `Add `Div `Mod `Mul `Sub ] * 'self * 'self 
-			| `Unop  of [  `Neg | `Not ]                                                                                                  * 'self
-			| `Const of [  `True | `False | `Literal of int] ]
-*)
+
+type binop = [ `Add | `And | `Div | `Eq | `Ge | `Gt | `Le | `Lt | `Mod | `Mul | `Ne | `Or | `Sub]
+
+type 'expr expr =  [ `Binop of binop * 'expr * 'expr 
+(*		   | `Ident of String.t*)
+		   | `Unop  of [ `Neg | `Not ] * 'expr
+		   | `Const of [`True | `False | `Literal of int]
+		   ]
 (* ------------------------------------ Generic transformer ------------------------- *)
 
 module Mapper (M : Monad.S) =
   struct
 (*    type 'a expr = 'a mytype*)
     open M
-    let rec gmap t ext (expr:[> `Binop of [< `Add | `And | `Div | `Eq | `Ge | `Gt | `Le | `Lt | `Mod | `Mul | `Ne | `Or | `Sub] * 'self * 'self 
-			     |  `Unop  of [ `Neg | `Not ] * 'self
-			     |  `Const of [`True | `False | `Literal of int]
-			     ]) = 
+    let rec gmap t ext (expr) = 
       let self = gmap t ext in
       match expr with
       | `Binop (op, x, y) -> tuple (self x, self y) >>= (fun (x, y) -> t#binop expr op x y)

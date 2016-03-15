@@ -3,60 +3,18 @@ open Ostap.Util
 open List
 open SimpleExpression
 
-(*
-[> `Assign of
-            ([> `Binop of
-                  [< `Add
-                   | `And
-                   | `Div
-                   | `Eq
-                   | `Ge
-                   | `Gt
-                   | `Le
-                   | `Lt
-                   | `Mod
-                   | `Mul
-                   | `Ne
-                   | `Or
-                   | `Sub
-                   > `Add `Div `Mod `Mul `Sub ] *
-                  'd * 'd
-              | `Const of [ `False | `Literal of int | `True ]
-              | `Ident of string
-              | `Unop of [ `Neg | `Not ] * 'd ]
-             as 'd) *
-            'd
-        | `If of ('d * 'c list) list * 'c list
-        | `While of 'd * 'c list ]
 
+type 'expr exp = [> 'expr SimpleExpression.expr] as 'expr
+type ('stmt, 'expr) stmt  = [`Assign of 'expr * 'stmt
+		  | `If of ('expr * 'stmt list) list * 'stmt list
+		  | `While of 'expr * 'stmt list]
 
-*)
 (* ------------------------------------- Generic transformer ------------------------ *)
 
 module Mapper (M : Monad.S) =
   struct
     open M
-    let rec gmap t ref expr ext (stmt: [> `Assign of ([> `Binop of
-                                                                      [< `Add
-								      | `And
-								      | `Div
-								      | `Eq
-								      | `Ge
-								      | `Gt
-								      | `Le
-								      | `Lt
-								      | `Mod
-								      | `Mul
-								      | `Ne
-								      | `Or
-								      | `Sub ] *
-									'a * 'a
-						      | `Const of [ `False | `Literal of int | `True ]
-						      | `Unop of [ `Neg | `Not ] * 'a
-						       ] as 'a) * 'a
-				       | `If of ('a * 'b list) list * 'b list
-				       | `While of 'a * 'b list]
-					 as 'b) =
+    let rec gmap t ref expr ext (stmt) =
 
       let self = gmap t ref expr ext in
       match stmt with
