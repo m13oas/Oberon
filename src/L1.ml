@@ -2,6 +2,16 @@ open Ostap.Pretty
 open Common
 open List
 
+(* ----------------------------------------- Types ---------------------------------- *)
+
+@type ('expr, 'id) l1_expr = [`Ident of 'id | 'expr SimpleExpression.expr] with gmap, foldl
+
+class ['e, 'c] eval = object 
+  inherit ['e, unit, GT.int, 'c, unit, GT.int, unit, GT.int] @l1_expr
+  inherit ['e] SimpleExpression.eval
+  method c_Ident _ s id = id.GT.fx ()
+end  
+
 (* ----------------------------------------- Parser --------------------------------- *)
 
 module Parse =
@@ -89,10 +99,18 @@ module Resolve =
 
     let destination env expr = reference lookupDest env noext expr
 
-    let constantExpr env expr = 
+    let constantExpr 
+      = fun env expr -> 
       SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr -?->> 
       (fun expr -> 
-         try !! (reloc (locate expr) (SimpleExpression.evaluate expr))
+         try !! (reloc (locate expr) (*SimpleExpression.evaluate expr*) 
+                       (let rec eval inh e = 
+                          GT.transform(l1_expr) 
+                             (GT.lift (fun _ -> 0)) 
+                             (GT.lift (fun _ -> 0)) 
+                             (new eval) inh e 
+                        in SimpleExpression.wrap expr (eval () expr))
+                )
          with Division_by_zero -> 
            Fail[Ostap.Msg.make "division by zero during constant expression evaluation" 
                   [||] 

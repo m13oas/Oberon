@@ -3,13 +3,15 @@ open Ostap.Pretty
 open Ostap.Util
 open List
 
-type binop = [ `Add | `And | `Div | `Eq | `Ge | `Gt | `Le | `Lt | `Mod | `Mul | `Ne | `Or | `Sub]
+@type binop = [ `Add | `And | `Div | `Eq | `Ge | `Gt | `Le | `Lt | `Mod | `Mul | `Ne | `Or | `Sub] with gmap, foldl
+@type unop  = [`Neg | `Not] with gmap, foldl
+@type const = [`True | `False | `Literal of GT.int] with gmap, foldl
 
-type 'expr expr =  [ `Binop of binop * 'expr * 'expr 
-(*		   | `Ident of String.t*)
-		   | `Unop  of [ `Neg | `Not ] * 'expr
-		   | `Const of [`True | `False | `Literal of int]
-		   ]
+@type 'expr expr =  [ `Binop of binop * 'expr * 'expr 
+                    | `Unop  of unop * 'expr
+		    | `Const of const
+		    ] with gmap, foldl
+
 (* ------------------------------------ Generic transformer ------------------------- *)
 
 module Mapper (M : Monad.S) =
@@ -46,7 +48,7 @@ let l = Ostap.Matcher.Token.loc
 
 let rec parse reference s = 
   let binop t x y = `Binop (t, x, y) in
-  expr loc [|
+  Ostap.Util.expr loc [|
    `Nona , List.map (fun (s, t) -> ostap($(s)), binop t) 
            ["=", `Eq; "#", `Ne; "<=", `Le; "<", `Lt; ">=", `Ge; ">", `Gt];
    `Lefta, List.map (fun (s, t) -> s, binop t)
@@ -165,6 +167,30 @@ let typecheck ts ext expr =
 
 exception Not_a_constant
 
+class ['e] eval = object inherit ['e, unit, GT.int, unit, GT.int] @expr
+  method c_Binop inh s op x y = 
+    let l f x y = if f x y then 1 else 0 in
+    let i f x y = if f (x > 0) (y > 0) then 1 else 0 in
+    (match op with
+     | `Add -> (+)    | `Sub -> (-)    | `Mul -> ( * )  
+     | `Div -> (/)    | `Mod -> (mod) 
+     | `Eq  -> l (=)  | `Ne  -> l (<>) 
+     | `Le  -> l (<=) | `Lt  -> l (<) 
+     | `Ge  -> l (>=) | `Gt  -> l (>)
+     | `And -> i (&&) | `Or  -> i (||)
+    ) (x.GT.fx inh) (y.GT.fx inh)
+  method c_Unop i s op x = 
+    (fun x -> match op with `Neg -> -x | `Not -> if x > 0 then 0 else 1)
+    (x.GT.fx i)
+  method c_Const _ _ = function `Literal x -> x | `True -> 1 | `False -> 0
+end
+
+let wrap e x =
+  let reloc = reloc (safeLocate e) in
+  match typeOf (fun _ -> raise Not_a_constant) e with
+  | `Int  -> reloc (`Const (`Literal x))
+  | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
+
 let evaluate expr =
   let x =
     imap 
@@ -190,3 +216,4 @@ let evaluate expr =
   match typeOf (fun _ -> raise Not_a_constant) expr with
   | `Int  -> reloc (`Const (`Literal x))
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
+

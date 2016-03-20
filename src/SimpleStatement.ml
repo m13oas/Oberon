@@ -3,7 +3,6 @@ open Ostap.Util
 open List
 open SimpleExpression
 
-
 type 'expr exp = [> 'expr SimpleExpression.expr] as 'expr
 type ('stmt, 'expr) stmt  = [`Assign of 'expr * 'stmt
 		  | `If of ('expr * 'stmt list) list * 'stmt list

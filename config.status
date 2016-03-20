@@ -427,10 +427,9 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/alexander/CourseWork/ldta-2011'
+ac_pwd='/home/db/develop/Oberon'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
-MKDIR_P='/bin/mkdir -p'
 AWK='mawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
@@ -592,10 +591,10 @@ S["LIBOBJS"]=""
 S["ac_aux_dir"]="config"
 S["DEBUG"]=""
 S["LOG"]=""
-S["META"]="/home/alexander/.opam/system/lib/ostap/META"
-S["EXTRA_CMA"]=" str.cma typeutil.cma settings.cma checked.cma ostap.cmo"
-S["MODULE_INCLUDES"]=" -I /home/alexander/.opam/system/lib/typeutil -I /home/alexander/.opam/system/lib/settings -I /home/alexander/.opam/system/lib/checked -I /home/alex"\
-"ander/.opam/system/lib/ostap"
+S["META"]="/usr/local/lib/ocaml/4.01.0/ostap/META"
+S["EXTRA_CMA"]=" str.cma typeutil.cma settings.cma checked.cma GT.cma ostap.cmo"
+S["MODULE_INCLUDES"]=" -I /usr/local/lib/ocaml/4.01.0/typeutil -I /usr/local/lib/ocaml/4.01.0/settings -I /usr/local/lib/ocaml/4.01.0/checked -I /usr/local/lib/ocaml/4.01"\
+".0/GT -I /usr/local/lib/ocaml/4.01.0/ostap"
 S["PARSER_INCLUDES"]=""
 S["CFLAGS"]=""
 S["SITELIBDIR"]=""
@@ -607,7 +606,7 @@ S["OCAMLFIND"]="ocamlfind"
 S["have_ocamlfind"]="yes"
 S["CAMLP5_FALSE"]="#"
 S["CAMLP5_TRUE"]=""
-S["CAMLP5LIB"]="/home/alexander/.opam/system/lib/camlp5"
+S["CAMLP5LIB"]="/usr/lib/ocaml/camlp5"
 S["CAMLP5R"]="camlp5r"
 S["CAMLP5O"]="camlp5o"
 S["P5FLAGS"]="$(AM_P5FLAGS)"
@@ -617,16 +616,16 @@ S["have_camlp5o"]="yes"
 S["have_camlp5"]="yes"
 S["CAMLP4_FALSE"]="#"
 S["CAMLP4_TRUE"]=""
-S["CAMLP4LIB"]="/usr/local/lib/ocaml/camlp4"
-S["CAMLP4RF"]="camlp4rf"
+S["CAMLP4LIB"]="/usr/lib/ocaml/camlp4"
+S["CAMLP4RF"]=""
 S["CAMLP4R"]="camlp4r"
-S["CAMLP4OF"]="camlp4of"
+S["CAMLP4OF"]=""
 S["CAMLP4O"]="camlp4o"
 S["P4FLAGS"]="$(AM_P4FLAGS)"
 S["CAMLP4"]="camlp4"
-S["have_camlp4rf"]="yes"
+S["have_camlp4rf"]="no"
 S["have_camlp4r"]="yes"
-S["have_camlp4of"]="yes"
+S["have_camlp4of"]="no"
 S["have_camlp4o"]="yes"
 S["have_camlp4"]="yes"
 S["OCAMLYACC"]="ocamlyacc"
@@ -639,8 +638,8 @@ S["OCAMLMKLIB"]="ocamlmklib"
 S["OCAMLMKTOP"]="ocamlmktop"
 S["OCAMLDEP"]="ocamldep"
 S["OCAMLOPT"]="ocamlopt.opt"
-S["OCAMLLIB"]="/usr/local/lib/ocaml"
-S["OCAMLVERSION"]="4.02.3"
+S["OCAMLLIB"]="/usr/lib/ocaml"
+S["OCAMLVERSION"]="4.01.0"
 S["OFLAGS"]="$(AM_OFLAGS)"
 S["BFLAGS"]="$(AM_BFLAGS)"
 S["OCAMLC"]="ocamlc.opt"
@@ -654,30 +653,24 @@ S["have_ocamloptdotopt"]="yes"
 S["have_ocamlcdotopt"]="yes"
 S["have_ocamlopt"]="yes"
 S["have_ocamlc"]="yes"
-S["AM_BACKSLASH"]="\\"
-S["AM_DEFAULT_VERBOSITY"]="1"
-S["AM_DEFAULT_V"]="$(AM_DEFAULT_VERBOSITY)"
-S["AM_V"]="$(V)"
-S["am__untar"]="$${TAR-tar} xf -"
-S["am__tar"]="$${TAR-tar} chof - \"$$tardir\""
-S["AMTAR"]="$${TAR-tar}"
+S["am__untar"]="${AMTAR} xf -"
+S["am__tar"]="${AMTAR} chof - \"$$tardir\""
+S["AMTAR"]="${SHELL} /home/db/develop/Oberon/config/missing --run tar"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="mawk"
-S["mkdir_p"]="$(MKDIR_P)"
-S["MKDIR_P"]="/bin/mkdir -p"
-S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
+S["mkdir_p"]="mkdir -p --"
+S["INSTALL_STRIP_PROGRAM"]="${SHELL} $(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/install-sh"
-S["MAKEINFO"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/missing automake-1.14"
-S["AUTOCONF"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/alexander/CourseWork/ldta-2011/config/missing aclocal-1.14"
+S["install_sh"]="/home/db/develop/Oberon/config/install-sh"
+S["MAKEINFO"]="${SHELL} /home/db/develop/Oberon/config/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/db/develop/Oberon/config/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/db/develop/Oberon/config/missing --run automake-1.9"
+S["AUTOCONF"]="${SHELL} /home/db/develop/Oberon/config/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/db/develop/Oberon/config/missing --run aclocal-1.9"
 S["VERSION"]=""
 S["PACKAGE"]="ldta2011"
 S["CYGPATH_W"]="echo"
-S["am__isrc"]=""
 S["INSTALL_DATA"]="${INSTALL} -m 644"
 S["INSTALL_SCRIPT"]="${INSTALL}"
 S["INSTALL_PROGRAM"]="${INSTALL}"
@@ -907,11 +900,6 @@ ac_abs_srcdir=$ac_abs_top_srcdir$ac_dir_suffix
   [\\/$]* | ?:[\\/]* ) ac_INSTALL=$INSTALL ;;
   *) ac_INSTALL=$ac_top_build_prefix$INSTALL ;;
   esac
-  ac_MKDIR_P=$MKDIR_P
-  case $MKDIR_P in
-  [\\/$]* | ?:[\\/]* ) ;;
-  */*) ac_MKDIR_P=$ac_top_build_prefix$MKDIR_P ;;
-  esac
 # If the template does not know about datarootdir, expand it.
 # FIXME: This hack should be removed a few years after 2.60.
 ac_datarootdir_hack=; ac_datarootdir_seen=
@@ -968,7 +956,6 @@ s&@builddir@&$ac_builddir&;t t
 s&@abs_builddir@&$ac_abs_builddir&;t t
 s&@abs_top_builddir@&$ac_abs_top_builddir&;t t
 s&@INSTALL@&$ac_INSTALL&;t t
-s&@MKDIR_P@&$ac_MKDIR_P&;t t
 $ac_datarootdir_hack
 "
 eval sed \"\$ac_sed_extra\" "$ac_file_inputs" | $AWK -f "$ac_tmp/subs.awk" \

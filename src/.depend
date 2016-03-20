@@ -16,16 +16,16 @@ VarDecl.cmo : Common.cmo
 VarDecl.cmx : Common.cmx
 SimpleExpression.cmo : Monad.cmo Common.cmo
 SimpleExpression.cmx : Monad.cmx Common.cmx
-SimpleStatement.cmo : Monad.cmo Common.cmo
-SimpleStatement.cmx : Monad.cmx Common.cmx
-ExtendedStatement.cmo : Monad.cmo Common.cmo
-ExtendedStatement.cmx : Monad.cmx Common.cmx
+SimpleStatement.cmo : SimpleExpression.cmo Monad.cmo Common.cmo
+SimpleStatement.cmx : SimpleExpression.cmx Monad.cmx Common.cmx
+ExtendedStatement.cmo : SimpleStatement.cmo Monad.cmo Common.cmo
+ExtendedStatement.cmx : SimpleStatement.cmx Monad.cmx Common.cmx
 ProcDecl.cmo : Common.cmo
 ProcDecl.cmx : Common.cmx
 TypeDecl.cmo : Common.cmo
 TypeDecl.cmx : Common.cmx
-CompositeType.cmo : Monad.cmo Common.cmo
-CompositeType.cmx : Monad.cmx Common.cmx
+CompositeType.cmo : SimpleExpression.cmo Monad.cmo Common.cmo
+CompositeType.cmx : SimpleExpression.cmx Monad.cmx Common.cmx
 L1.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
     PrimitiveType.cmo Namespace.cmo Module.cmo Lexer.cmo ConstDecl.cmo \
     Common.cmo
