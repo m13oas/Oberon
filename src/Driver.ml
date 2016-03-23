@@ -18,7 +18,7 @@ let _ =
     ]
     (fun _ -> [])
   in
-  let languages = [|L1.top; L2.top; L3.top; L4.top; L5.top|] in
+  let languages = [|L1.top (*; L2.top; L3.top; L4.top; L5.top*)|] in
   let _ :: args = Array.to_list Sys.argv in  
   let perFile l conf file =
     let source, errors, pp, c, lifted = 
@@ -72,6 +72,7 @@ let _ =
     let skip _ = () in                                               
     let l = l (read source) in
     (match conf.get "p" with Some Flag -> verify (output pp) (l#print ()) | _ -> ());
+(*
     (match conf.get "r" with Some Flag -> verify skip (l#resolve ()) | _ -> ());
     (match conf.get "t" with Some Flag -> verify skip (l#typecheck ()) | _ -> ());
     (match conf.get "c" with 
@@ -79,6 +80,7 @@ let _ =
         verify (fun _ -> verify (output2 (lifted, c)) (l#generate ())) (l#typecheck ())
      | _ -> ()
     );
+*)
     if lazy_is_val errors then close_out (force errors)
   in
   match options args with
