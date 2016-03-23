@@ -12,6 +12,7 @@ open List
 		    | `Const of const
 		    ] with gmap, foldl
 
+(*
 (* ------------------------------------ Generic transformer ------------------------- *)
 
 module Mapper (M : Monad.S) =
@@ -40,7 +41,7 @@ let mapT f = object
                method unop  expr op x   = f expr (`Unop (op, x))
                method const expr x      = f expr (`Const x)
              end
-
+*)
 (* ----------------------------------------- Parser --------------------------------- *)
 
 let r = Ostap.Matcher.Token.repr
@@ -76,6 +77,13 @@ and ostap (
 
 (* ------------------------------------ Pretty-printer ------------------------------ *)
 
+let imap = invalid_arg ""
+
+(*
+class ['e] gprint ps =
+  object inherit ... @expr
+  end
+*)
 let gprint ps ext expr =
   let b x = hovboxed (listBySpaceBreak x) in
   let op (s, p) = string s, p in
@@ -104,6 +112,7 @@ let print ext expr =
             | `False     -> string "FALSE", 0
           end) ext expr
 
+(*
 let print_c ext expr = 
   gprint (object
             method unop = function `Not -> "!", 0 | `Neg -> "-", 0
@@ -117,9 +126,10 @@ let print_c ext expr =
             | `True      -> string "1", 0 
             | `False     -> string "0", 0
           end) ext expr
-
+*)
 (* ------------------------------------- Name resolver ------------------------------ *)
 
+(*
 open Checked 
 
 let rec safeLocate e =
@@ -134,7 +144,8 @@ let rec safeLocate e =
 let resolve ext expr =
   let reloc x y = reloc (safeLocate x) y in
   cmap (mapT (fun expr e -> !! (reloc expr e))) ext expr
-
+*)
+(*
 (* -------------------------------------- Typechecker ------------------------------- *)
 
 let typeOf ref = function
@@ -162,7 +173,7 @@ let typecheck ts ext expr =
             | `Literal _ -> !! (reloc e (`Const x), `Int)
             | `True | `False -> !! (reloc e (`Const x), `Bool)
         end) ext expr 
-
+*)
 (* --------------------------------------- Evaluator -------------------------------- *)
 
 exception Not_a_constant
@@ -184,7 +195,7 @@ class ['e] eval = object inherit ['e, unit, GT.int, unit, GT.int] @expr
     (x.GT.fx i)
   method c_Const _ _ = function `Literal x -> x | `True -> 1 | `False -> 0
 end
-
+(*
 let wrap e x =
   let reloc = reloc (safeLocate e) in
   match typeOf (fun _ -> raise Not_a_constant) e with
@@ -217,3 +228,4 @@ let evaluate expr =
   | `Int  -> reloc (`Const (`Literal x))
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
 
+*)

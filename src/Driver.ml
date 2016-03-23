@@ -72,8 +72,8 @@ let _ =
     let skip _ = () in                                               
     let l = l (read source) in
     (match conf.get "p" with Some Flag -> verify (output pp) (l#print ()) | _ -> ());
-    (match conf.get "r" with Some Flag -> verify skip (l#resolve ()) | _ -> ());
 (*
+    (match conf.get "r" with Some Flag -> verify skip (l#resolve ()) | _ -> ());
     (match conf.get "t" with Some Flag -> verify skip (l#typecheck ()) | _ -> ());
     (match conf.get "c" with 
      | Some Flag -> 

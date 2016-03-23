@@ -6,6 +6,7 @@ open List
 
 @type ('expr, 'id) l1_expr = [`Ident of 'id | 'expr SimpleExpression.expr] with gmap, foldl
 
+
 class ['e, 'c] eval = object 
   inherit ['e, unit, GT.int, 'c, unit, GT.int, unit, GT.int] @l1_expr
   inherit ['e] SimpleExpression.eval
@@ -50,6 +51,7 @@ module Print =
 
 open Checked
 
+(*
 module Resolve =
   struct
 
@@ -190,7 +192,7 @@ module Typecheck =
      Module.typecheck (declarations PrimitiveType.ts) (stmt PrimitiveType.ts expr apply) m
 
   end
-
+*)
 (* ------------------------------------------ Toplevel ------------------------------ *)
 
 open Lazy
@@ -198,17 +200,17 @@ open Checked
 
 let empty _ = "(*** not supported ***)", "/*** not supported ***/"
 
-let toplevel generate (parse, print, resolve (*, typecheck*)) source =
+let toplevel generate (parse, print (*, resolve, typecheck*)) source =
   let parsed   = lazy_from_fun (fun _ -> check (parse (new Lexer.t source))) in
-  let resolved = lazy_from_fun (fun _ -> force parsed -?->> resolve) in  
 (*
+  let resolved = lazy_from_fun (fun _ -> force parsed -?->> resolve) in  
   let checked  = lazy_from_fun (fun _ -> force resolved -?->> (fun (t, _) -> typecheck t)) in
 *)
   object
     method parse     () = force parsed   -?-> return ()
     method print     () = force parsed   -?-> (fun t -> Ostap.Pretty.toString (print t))
-    method resolve   () = force resolved -?-> return ()
 (*
+    method resolve   () = force resolved -?-> return ()
     method typecheck () = force checked  -?-> (fun x -> return ())
     method generate  () = force resolved -?-> generate
 *)
@@ -217,5 +219,5 @@ let toplevel generate (parse, print, resolve (*, typecheck*)) source =
 let toplevel0 s t = toplevel empty s t
 let top source = 
   toplevel0 
-     (Parse.program, Print.program, Resolve.program (*, Typecheck.program SimpleStatement.typecheck*)) 
+     (Parse.program, Print.program(*, Resolve.program , Typecheck.program SimpleStatement.typecheck*)) 
      source

@@ -14,8 +14,8 @@ ConstDecl.cmo : Common.cmo
 ConstDecl.cmx : Common.cmx
 VarDecl.cmo : Common.cmo
 VarDecl.cmx : Common.cmx
-SimpleExpression.cmo : Monad.cmo Common.cmo
-SimpleExpression.cmx : Monad.cmx Common.cmx
+SimpleExpression.cmo : Common.cmo
+SimpleExpression.cmx : Common.cmx
 SimpleStatement.cmo : SimpleExpression.cmo Monad.cmo Common.cmo
 SimpleStatement.cmx : SimpleExpression.cmx Monad.cmx Common.cmx
 ExtendedStatement.cmo : SimpleStatement.cmo Monad.cmo Common.cmo
@@ -27,10 +27,8 @@ TypeDecl.cmx : Common.cmx
 CompositeType.cmo : SimpleExpression.cmo Monad.cmo Common.cmo
 CompositeType.cmx : SimpleExpression.cmx Monad.cmx Common.cmx
 L1.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
-    PrimitiveType.cmo Namespace.cmo Module.cmo Lexer.cmo ConstDecl.cmo \
-    Common.cmo
+    PrimitiveType.cmo Module.cmo Lexer.cmo ConstDecl.cmo Common.cmo
 L1.cmx : VarDecl.cmx TypeDecl.cmx SimpleStatement.cmx SimpleExpression.cmx \
-    PrimitiveType.cmx Namespace.cmx Module.cmx Lexer.cmx ConstDecl.cmx \
-    Common.cmx
+    PrimitiveType.cmx Module.cmx Lexer.cmx ConstDecl.cmx Common.cmx
 Driver.cmo : L1.cmo
 Driver.cmx : L1.cmx

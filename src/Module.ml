@@ -28,6 +28,7 @@ let print d s (name, decls, stmts) =
      ]
     )    
 
+(*
 let print_c d s (name, decls, stmts) = 
   vert [
     d decls; 
@@ -50,3 +51,4 @@ let typecheck decl stmt (name, decls, stmts) =
   tuple (decl decls, list (List.map stmt stmts)) -?-> 
   (fun (decls, stmts) -> (name, decls, stmts))
 
+*)
