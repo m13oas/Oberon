@@ -32,23 +32,5 @@ L1.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
 L1.cmx : VarDecl.cmx TypeDecl.cmx SimpleStatement.cmx SimpleExpression.cmx \
     PrimitiveType.cmx Namespace.cmx Module.cmx Lexer.cmx ConstDecl.cmx \
     Common.cmx
-L2.cmo : SimpleStatement.cmo SimpleExpression.cmo PrimitiveType.cmo \
-    Module.cmo L1.cmo ExtendedStatement.cmo Common.cmo
-L2.cmx : SimpleStatement.cmx SimpleExpression.cmx PrimitiveType.cmx \
-    Module.cmx L1.cmx ExtendedStatement.cmx Common.cmx
-L3.cmo : SimpleExpression.cmo ProcDecl.cmo PrimitiveType.cmo Module.cmo \
-    L2.cmo L1.cmo Common.cmo
-L3.cmx : SimpleExpression.cmx ProcDecl.cmx PrimitiveType.cmx Module.cmx \
-    L2.cmx L1.cmx Common.cmx
-L4.cmo : VarDecl.cmo TypeDecl.cmo SimpleStatement.cmo SimpleExpression.cmo \
-    ProcDecl.cmo PrimitiveType.cmo Monad.cmo Module.cmo Lexer.cmo L3.cmo \
-    L2.cmo L1.cmo ExtendedStatement.cmo CompositeType.cmo Common.cmo
-L4.cmx : VarDecl.cmx TypeDecl.cmx SimpleStatement.cmx SimpleExpression.cmx \
-    ProcDecl.cmx PrimitiveType.cmx Monad.cmx Module.cmx Lexer.cmx L3.cmx \
-    L2.cmx L1.cmx ExtendedStatement.cmx CompositeType.cmx Common.cmx
-L5.cmo : SimpleStatement.cmo SimpleExpression.cmo L4.cmo L3.cmo L1.cmo \
-    ExtendedStatement.cmo Common.cmo
-L5.cmx : SimpleStatement.cmx SimpleExpression.cmx L4.cmx L3.cmx L1.cmx \
-    ExtendedStatement.cmx Common.cmx
-Driver.cmo : L5.cmo L4.cmo L3.cmo L2.cmo L1.cmo
-Driver.cmx : L5.cmx L4.cmx L3.cmx L2.cmx L1.cmx
+Driver.cmo : L1.cmo
+Driver.cmx : L1.cmx

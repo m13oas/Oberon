@@ -4,7 +4,8 @@ SUBDIRS =
 # type in sources here
 SOURCES = Monad.ml Common.ml Namespace.ml Lexer.ml PrimitiveType.ml Module.ml \
 ConstDecl.ml VarDecl.ml SimpleExpression.ml SimpleStatement.ml ExtendedStatement.ml ProcDecl.ml  \
-TypeDecl.ml CompositeType.ml L1.ml L2.ml L3.ml L4.ml L5.ml Driver.ml 
+TypeDecl.ml CompositeType.ml L1.ml Driver.ml 
+# # L2.ml L3.ml L4.ml L5.ml 
 MLI = 
 
 include $(top_srcdir)/m4/Makefile.am.vars
