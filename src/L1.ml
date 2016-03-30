@@ -4,21 +4,37 @@ open List
 
 (* ----------------------------------------- Types ---------------------------------- *)
 
-@type ('expr, 'id) l1_expr = [`Ident of 'id | 'expr SimpleExpression.expr] with gmap, foldl
+@type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
+@type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr SimpleExpression.expr] with gmap, foldl
 
+class ['ref] print_ref = object
+  inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
 
-class ['e, 'c] eval = object 
-  inherit ['e, unit, GT.int, 'c, unit, GT.int, unit, GT.int] @l1_expr
-  inherit ['e] SimpleExpression.eval
-  method c_Ident _ s id = id.GT.fx ()
-end  
+class ['ref] eval_ref = object 
+  inherit ['ref, unit, GT.int, unit, GT.int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
+
+class ['expr, 'ref] eval = object 
+  inherit ['expr, unit, GT.int, 'ref, unit, GT.int, unit, GT.int] @l1_expr
+  inherit ['expr] SimpleExpression.eval
+  inherit ['ref] eval_ref
+end
+
+class ['expr, 'ref] print ps = object
+  inherit ['expr, unit, printer * int, 'ref, unit, printer * int, unit, printer * int] @l1_expr
+  inherit ['expr] SimpleExpression.print ps
+  inherit ['ref]  print_ref
+end
 
 (* ----------------------------------------- Parser --------------------------------- *)
 
 module Parse =
-  struct 
-    ostap (
-      reference: loc[ostap(name:ident {`Ident name})];
+  struct
+    ostap (reference: loc[ostap(name:ident {`Ident name})]) 
+    ostap (      
       expression: !(SimpleExpression.parse)[reference];
       declarations[typ]: c:!(ConstDecl.parse)[expression]? 
                          t:!(TypeDecl.parse)[typ]?
@@ -34,17 +50,24 @@ module Parse =
 
 module Print =
   struct
-    let reference, expression, declarations, statement, program =
-      let rec ref = function `Ident s -> string s, 0 | x -> expr x 
-      and expr s  = SimpleExpression.print (return ref) s in
-      let ref  x  = fst (ref  x) in
-      let expr x  = fst (expr x) in
+    let expression, declarations, statement, program =
+      let reference r = GT.transform(l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print_ref) () r in
+      let rec expr e = GT.transform(l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print SimpleExpression.ob_ps) () e in
+      let expr x = fst (expr x) in (*принтер*)
+      let reference x = fst (reference x) in
       let decl expr typ (c, t, v) = 
         vert ((ConstDecl.print expr c) @ (TypeDecl.print typ t) @ (VarDecl.print typ v)) 
       in  
-      let stmt expr ext s = SimpleStatement.print expr ext s in
-      ref, expr, decl, stmt, 
-      (fun m -> Module.print (decl expr PrimitiveType.print) (stmt expr apply) m)
+      let rec stmt s = 
+        GT.transform(SimpleStatement.stmt) 
+            (GT.lift stmt) 
+            (GT.lift reference) (*ref*)
+            (GT.lift expr)(*expr*)
+            (new SimpleStatement.print SimpleStatement.ob_ps)
+            ()
+            s
+      in
+      expr, decl, stmt, (fun m -> Module.print (decl expr PrimitiveType.print) stmt m)
   end
 
 (* --------------------------------------- Name resolver ---------------------------- *)
@@ -221,3 +244,4 @@ let top source =
   toplevel0 
      (Parse.program, Print.program(*, Resolve.program , Typecheck.program SimpleStatement.typecheck*)) 
      source
+

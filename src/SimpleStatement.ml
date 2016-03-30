@@ -3,10 +3,9 @@ open Ostap.Util
 open List
 open SimpleExpression
 
-type 'expr exp = [> 'expr SimpleExpression.expr] as 'expr
-type ('stmt, 'expr) stmt  = [`Assign of 'expr * 'stmt
-		  | `If of ('expr * 'stmt list) list * 'stmt list
-		  | `While of 'expr * 'stmt list]
+@type ('stmt, 'ref, 'expr) stmt  = [ `Assign of 'ref * 'expr
+				   | `If     of (('expr, 'stmt GT.list)GT.pair) GT.list * 'stmt GT.list
+				   | `While  of 'expr * 'stmt GT.list] with gmap, foldl
 
 (* ------------------------------------- Generic transformer ------------------------ *)
 
@@ -21,7 +20,7 @@ module Mapper (M : Monad.S) =
       | `If (b, e) -> 
            tuple (list (map (fun (e, s) -> tuple (expr e, list (map self s)) >= (fun (e, s) -> e, s)) b),
                   list (map self e)
-           ) >>= (fun (b, e) -> t#ifc stmt b e) 
+           ) >>= (fun (b, e) -> t#ifc stmt b e) (*обход пары двух списков, где первый аргумент - пара из expr и списка stmt*)
       | `While  (c, b) -> tuple (expr c, list (map self b)) >>= (fun (c, b) -> t#whilec stmt c b)
       | x -> ext self x
   end
@@ -66,21 +65,53 @@ ostap (
 )
 
 (* --------------------------------------Pretty-printer ----------------------------- *)
-
 open Ostap.Pretty
 
-let gprint ps expr ext stmt =
+class ['stmt, 'ref, 'expr] print tstmt = object
+  inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt
+  method c_Assign _ _  ref expr   = tstmt#assign (ref.GT.fx ()) (expr.GT.fx ())
+  method c_If     _ _ ifprt elprt = invalid_arg ""
+(*    let branch typ (cond, thenPart) = invalid_arg ""
+      hov [tstmt#ifHead typ (cond.GT.fx ()); tstmt#thenPart (tstmt#seq thenPart)] in
+      match ifprt with
+      | [head] -> hov ([branch `If head] @ (tstmt#elsePart (elprt.GT.fx ())))
+      | _ -> hov ["a"]
+      | head::branches -> 
+	vert ([branch `If head] @ 
+		 (map (branch `Elsif) branches) @ 
+		 (tstmt#elsePart (elprt.GT.fx () ) )
+	     )*)
+  method c_While _ _ expr stmt = invalid_arg ""
+(*    let print_list stmt = tstmt#seq (List.map (fun t -> (t.GT.fx ()) stmt)) in
+    let print_list stmt = tstmt#seq (List.fold_left (fun acc t -> acc :: (t.GT.fx ())) [] stmt) in
+    plock (tstmt#whileHead (expr.GT.fx ())) (tstmt#whileBody (print_list stmt))*)
+end 
+
+let ob_ps = object(self)
+  method seq       x   = pseq x
+  method assign    d s = hov [d; string ":="; s]
+  method whileHead c   = listBySpace [string "WHILE"; c]
+  method whileBody s   = sblock "DO" "END" s(*принтер*)
+  method thenPart  s   = hov [string "THEN"; s]
+  method ifHead    t c = hov [string (match t with `If -> "IF" | `Elsif -> "ELSIF"); c]
+  method elsePart = function
+  | []    -> [string "END"] 
+  | stmts -> [hov [string "ELSE"; self#seq stmts]; string "END"]
+end
+
+let gprint ps(*трансформатор*) expr(*выражение, которое в состоянии?*) ext stmt =
   imap 
     (object 
        method assign _ x y = ps#assign x y
        method ifc _ b e =
          let branch typ (cond, thenPart) = 
-           hov [ps#ifHead typ cond; ps#thenPart (ps#seq thenPart)]
+           hov(*что-то вроде упаковки в коробку*) [ps#ifHead typ cond; ps#thenPart (ps#seq thenPart)]
          in
          match b with 
          | [head] -> hov ([branch `If head] @ (ps#elsePart e))
          | head::branches -> 
              vert ([branch `If head] @ 
+
                    (map (branch `Elsif) branches) @ 
                    (ps#elsePart e)
              )
@@ -88,17 +119,18 @@ let gprint ps expr ext stmt =
      end
     ) expr expr ext stmt
 
+
 let print expr ext stmt = 
   gprint (object(self)
-            method seq       x   = pseq x 
-            method assign    d s = hov [d; string ":="; s]
-            method whileHead c   = listBySpace [string "WHILE"; c]
-            method whileBody s   = sblock "DO" "END" s
-            method thenPart  s   = hov [string "THEN"; s]
-            method ifHead    t c = hov [string (match t with `If -> "IF" | `Elsif -> "ELSIF"); c]
+            method seq       x   = pseq x (*видимо, генерит какую-то последовательность, но почему то без разделителей и прочего*)
+            method assign    d s = hov [d; string ":="; s] (*тут изи, просто упаковываем вкоробку, d  - expr, s - stmt*)
+            method whileHead c   = listBySpace [string "WHILE"; c](*принт элементов, разделенных проблелом, с - expr*)
+            method whileBody s   = sblock "DO" "END" s(*не нашел, но подозреваю, что принт s между "DO" и "While", s - stmt*)
+            method thenPart  s   = hov [string "THEN"; s](*упаковка в коробку и принт, s - stmt*)
+            method ifHead    t c = hov [string (match t with `If -> "IF" | `Elsif -> "ELSIF"); c](*упаковка в коробку строки IF и с, c - принт expr*)
             method elsePart = function
             | []    -> [string "END"] 
-            | stmts -> [hov [string "ELSE"; self#seq stmts]; string "END"]
+            | stmts -> [hov [string "ELSE"; self#seq stmts]; string "END"] (*если есть else, то упаковываем в список коробку строку "ELSE", последовательность выражений и строку "END"; иначе просто список со строкой "END"*)
           end) expr ext stmt
 
 let print_c expr ext stmt = 

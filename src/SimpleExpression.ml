@@ -17,7 +17,6 @@ open List
 
 module Mapper (M : Monad.S) =
   struct
-(*    type 'a expr = 'a mytype*)
     open M
     let rec gmap t ext (expr) = 
       let self = gmap t ext in
@@ -77,40 +76,57 @@ and ostap (
 
 (* ------------------------------------ Pretty-printer ------------------------------ *)
 
-let imap = invalid_arg ""
 
-(*
-class ['e] gprint ps =
-  object inherit ... @expr
-  end
-*)
-let gprint ps ext expr =
-  let b x = hovboxed (listBySpaceBreak x) in
-  let op (s, p) = string s, p in
-  let w p' (x, p) = if p' < p then rboxed x else x in 
+class ['expr] print texpr = object 
+  inherit ['expr, unit, printer * int, unit, printer*int] @expr
+  method c_Const _ _   x       = texpr#const x
+  method c_Unop  _ _ o x       = 
+    let b x = hovboxed (listBySpaceBreak x) in
+    let op (s, p) = string s, p in
+    let w p' (x, p) = if p' < p then rboxed x else x in
+    let s, p = op (texpr#unop o) in 
+    b [s; w p (x.GT.fx ())], p
+  method c_Binop _ _ o x y     = 
+    let b x = hovboxed (listBySpaceBreak x) in
+    let op (s, p) = string s, p in
+    let w p' (x, p) = if p' < p then rboxed x else x in
+    let s, p = op (texpr#binop o) in b [w  p (x.GT.fx ()); s; w p (y.GT.fx ())], p
+end
+
+let gprint (ps (*трансформатор*)) (ext(*расширение выражения*)) (expr(*выражение*)) =
+  let b x = hovboxed (listBySpaceBreak x) in(*печать с пробелами*)
+  let op (s, p) = string s, p in(*оператор функции превращается в строку и порядок*)
+  let w p' (x, p) = if p' < p then rboxed x else x in (*используя порядок, определяет где именно ставить скобки*)
+  let imap = invalid_arg "" in
   imap  
     (object 
-       method binop _ o x y = let s, p = op (ps#binop o) in b [w p x; s; w p y], p
-       method unop  _ o x   = let s, p = op (ps#unop o) in b [s; w p x], p
+       method binop _ o(*конструктор*) x y(*аргументы*) = 
+	 let s, p = op (ps#binop o) in (*обратный паттерн матчинг*)
+	     b [w p x; s; w p y], p(*возвращает пару из printera и порядка (чтобы в случае чего ставить скобки)*)
+       method unop  _ o x   = let s, p = op (ps#unop o) in (*обратный паттерн матчинг*)
+			      b [s; w p x], p
        method const _   x   = ps#const x
      end
     )
     ext
     expr
 
+let ob_ps = 
+object
+  method unop = function `Not -> "~", 0 | `Neg -> "-", 0
+  method binop  = function 
+  | `Mul -> "*" , 1 | `Div -> "DIV", 1 | `Mod -> "MOD", 1 | `And -> "&", 1
+  | `Add -> "+" , 2 | `Sub -> "-"  , 2 | `Or  -> "OR" , 2 
+  | `Le  -> "<=", 3 | `Lt  -> "<"  , 3 | `Ge  -> ">=" , 3 | `Gt  -> ">", 3 
+  | `Ne  -> "#" , 3 | `Eq  -> "="  , 3 
+  method const = function 
+  | `Literal s -> int s         , 0 
+  | `True      -> string "TRUE" , 0 
+  | `False     -> string "FALSE", 0
+end
+
 let print ext expr = 
-  gprint (object
-            method unop = function `Not -> "~", 0 | `Neg -> "-", 0
-            method binop  = function 
-            | `Mul -> "*" , 1 | `Div -> "DIV", 1 | `Mod -> "MOD", 1 | `And -> "&", 1
-            | `Add -> "+" , 2 | `Sub -> "-"  , 2 | `Or  -> "OR" , 2 
-            | `Le  -> "<=", 3 | `Lt  -> "<"  , 3 | `Ge  -> ">=" , 3 | `Gt  -> ">", 3 
-            | `Ne  -> "#" , 3 | `Eq  -> "="  , 3 
-            method const = function 
-            | `Literal s -> int s         , 0 
-            | `True      -> string "TRUE" , 0 
-            | `False     -> string "FALSE", 0
-          end) ext expr
+  gprint ob_ps ext expr
 
 (*
 let print_c ext expr = 
