@@ -3,17 +3,15 @@ open Ostap.Util
 open List
 open SimpleExpression
 
-@type ('stmt, 'ref, 'expr) stmt  = [ `Assign of 'ref * 'expr
-				   | `If     of (('expr, 'stmt GT.list)GT.pair) GT.list * 'stmt GT.list
-				   | `While  of 'expr * 'stmt GT.list] with gmap, foldl
-
+@type ('stmt, 'ref, 'expr) stmt = [ `Assign of 'ref * 'expr
+				   | `If     of (('expr, (('stmt, 'ref, 'expr) stmt) GT.list)GT.pair) GT.list * (('stmt, 'ref, 'expr) stmt) GT.list
+				   | `While  of 'expr * (('stmt, 'ref, 'expr) stmt  GT.list)] with gmap, foldl
 (* ------------------------------------- Generic transformer ------------------------ *)
 
 module Mapper (M : Monad.S) =
   struct
     open M
     let rec gmap t ref expr ext (stmt) =
-
       let self = gmap t ref expr ext in
       match stmt with
       | `Assign (x, y) -> tuple (ref x, expr y) >>= (fun (x, y) -> t#assign stmt x y)
@@ -67,8 +65,8 @@ ostap (
 (* --------------------------------------Pretty-printer ----------------------------- *)
 open Ostap.Pretty
 
-class ['stmt, 'ref, 'expr] print tstmt = object
-  inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt
+class ['stmt, 'ref, 'expr] print tstmt = object(self)
+  inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt as statementobj
   method c_Assign _ _  ref expr   = tstmt#assign (ref.GT.fx ()) (expr.GT.fx ())
   method c_If     _ _ ifprt elprt = invalid_arg ""
 (*    let branch typ (cond, thenPart) = invalid_arg ""
@@ -81,10 +79,15 @@ class ['stmt, 'ref, 'expr] print tstmt = object
 		 (map (branch `Elsif) branches) @ 
 		 (tstmt#elsePart (elprt.GT.fx () ) )
 	     )*)
-  method c_While _ _ expr stmt = invalid_arg ""
-(*    let print_list stmt = tstmt#seq (List.map (fun t -> (t.GT.fx ()) stmt)) in
-    let print_list stmt = tstmt#seq (List.fold_left (fun acc t -> acc :: (t.GT.fx ())) [] stmt) in
-    plock (tstmt#whileHead (expr.GT.fx ())) (tstmt#whileBody (print_list stmt))*)
+  method c_While _ syn expr stmt = invalid_arg ""
+(*    let mapstmt (stm: (('stmt, 'ref, 'expr) stmt) GT.list) = 
+      List.map (fun x -> 
+      match x with
+      | `Assign (ref, expr) ->self#c_Assign () syn.GT.x (ref.GT.x) (expr.GT.x)
+      | `If (a, b) -> invalid_arg ""
+      | `While _ -> invalid_arg "") stm (*invalid_arg "good type"*) in
+(* List.map (fun y -> y.GT.f y.GT.tp#) stm*)
+    plock (tstmt#whileHead (expr.GT.fx ())) (tstmt#whileBody (tstmt#seq (mapstmt stmt))) *)
 end 
 
 let ob_ps = object(self)
@@ -118,7 +121,6 @@ let gprint ps(*трансформатор*) expr(*выражение, котор
        method whilec _ c b = plock (ps#whileHead c) (ps#whileBody (ps#seq b))
      end
     ) expr expr ext stmt
-
 
 let print expr ext stmt = 
   gprint (object(self)
