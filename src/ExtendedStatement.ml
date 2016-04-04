@@ -3,11 +3,11 @@ open Ostap.Util
 open List
 open SimpleStatement
 
-type ('atom, 'expr) at = [> `Atom of 'expr
-			 | `Interval of 'expr * 'expr] as 'atom
+@type ('atom, 'expr, 'ref) at = [ `Atom of ('expr, 'ref) L1.l1_expr
+			  | `Interval of ('expr, 'ref) L1.l1_expr * ('expr, 'ref) L1.l1_expr] with gmap, foldl
 
-type ('stmt, 'expr, 'atom) extstmt = [> `Case of 'expr * ('atom list * 'stmt list) list * 'stmt list
-				     | `For of (*not expr*)'expr * 'expr * 'expr * 'expr option * 'stmt list] as 'stmt
+@type ('stmt, 'atom, 'expr, 'ref) extstmt = [ `Case of 'ref * ('atom GT.list * 'stmt GT.list) GT.list * 'stmt GT.list
+				      | `For of 'ref * 'expr * 'expr * (('expr, 'ref) L1.l1_expr) GT.option * 'stmt GT.list] with gmap, foldl
 
 (* ------------------------------------- Generic transformer ------------------------ *)
 
@@ -90,6 +90,10 @@ ostap (
 
 open Ostap.Pretty
 
+(*class ['stmt, 'expr, 'atom] print testmt = object
+  inherit ['stmt, unit, printer, 'expr, unit, printer, 'atom, unit, printer] @extstmt
+  method c_For _ _ 
+*)
 let print expr ext stmt =
   imap  
     (object
