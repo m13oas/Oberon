@@ -4,8 +4,10 @@ open List
 open SimpleExpression
 
 @type ('stmt, 'ref, 'expr) stmt = [ `Assign of 'ref * 'expr
-				   | `If     of (('expr, (('stmt, 'ref, 'expr) stmt) GT.list)GT.pair) GT.list * (('stmt, 'ref, 'expr) stmt) GT.list
-				   | `While  of 'expr * (('stmt, 'ref, 'expr) stmt  GT.list)] with gmap, foldl
+				  | `If     of (('expr, ((('stmt, 'ref, 'expr) stmt) GT.list)
+				                )GT.pair) GT.list * 
+                                               (('stmt, 'ref, 'expr) stmt) GT.list
+				  | `While  of 'expr * (('stmt, 'ref, 'expr) stmt  GT.list)] with gmap, foldl
 (* ------------------------------------- Generic transformer ------------------------ *)
 
 module Mapper (M : Monad.S) =
@@ -16,7 +18,9 @@ module Mapper (M : Monad.S) =
       match stmt with
       | `Assign (x, y) -> tuple (ref x, expr y) >>= (fun (x, y) -> t#assign stmt x y)
       | `If (b, e) -> 
-           tuple (list (map (fun (e, s) -> tuple (expr e, list (map self s)) >= (fun (e, s) -> e, s)) b),
+           tuple (list 
+		    (map (fun (e, s) -> tuple (expr e, list (map self s)) >= (fun (e, s) -> e, s))
+		       b),
                   list (map self e)
            ) >>= (fun (b, e) -> t#ifc stmt b e) (*обход пары двух списков, где первый аргумент - пара из expr и списка stmt*)
       | `While  (c, b) -> tuple (expr c, list (map self b)) >>= (fun (c, b) -> t#whilec stmt c b)
@@ -66,28 +70,25 @@ ostap (
 open Ostap.Pretty
 
 class ['stmt, 'ref, 'expr] print tstmt = object(self)
-  inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt as statementobj
+  inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt
   method c_Assign _ _  ref expr   = tstmt#assign (ref.GT.fx ()) (expr.GT.fx ())
-  method c_If     _ _ ifprt elprt = invalid_arg ""
-(*    let branch typ (cond, thenPart) = invalid_arg ""
-      hov [tstmt#ifHead typ (cond.GT.fx ()); tstmt#thenPart (tstmt#seq thenPart)] in
-      match ifprt with
-      | [head] -> hov ([branch `If head] @ (tstmt#elsePart (elprt.GT.fx ())))
-      | _ -> hov ["a"]
-      | head::branches -> 
-	vert ([branch `If head] @ 
-		 (map (branch `Elsif) branches) @ 
-		 (tstmt#elsePart (elprt.GT.fx () ) )
-	     )*)
-  method c_While _ syn expr stmt = invalid_arg ""
-(*    let mapstmt (stm: (('stmt, 'ref, 'expr) stmt) GT.list) = 
-      List.map (fun x -> 
-      match x with
-      | `Assign (ref, expr) ->self#c_Assign () syn.GT.x (ref.GT.x) (expr.GT.x)
-      | `If (a, b) -> invalid_arg ""
-      | `While _ -> invalid_arg "") stm (*invalid_arg "good type"*) in
-(* List.map (fun y -> y.GT.f y.GT.tp#) stm*)
-    plock (tstmt#whileHead (expr.GT.fx ())) (tstmt#whileBody (tstmt#seq (mapstmt stmt))) *)
+  method c_If     _ a ifprt elprt =
+    let rec expr e = GT.transform(SimpleExpression.l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.l1_print SimpleExpression.ob_ps) () e in
+    let expr x = fst (expr x) in
+    let b, e = (List.map (fun (x, y) -> ((expr x), (List.map (fun l -> a.GT.f () l) y))) ifprt), (List.map (fun x -> a.GT.f () x) elprt) in
+    let branch typ (cond, thenPart) = 
+           hov [tstmt#ifHead typ cond; tstmt#thenPart (tstmt#seq thenPart)]
+         in
+         match b with 
+         | [head] -> hov ([branch `If head] @ (tstmt#elsePart e))
+         | head::branches -> 
+             vert ([branch `If head] @ 
+
+                   (map (branch `Elsif) branches) @ 
+                   (tstmt#elsePart e)
+             )
+  method c_While _ a expr stmt =
+    plock (tstmt#whileHead (expr.GT.fx ())) (tstmt#whileBody (tstmt#seq (List.map (fun x -> a.GT.f () x) stmt)))
 end 
 
 let ob_ps = object(self)

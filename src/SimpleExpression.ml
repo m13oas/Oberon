@@ -11,7 +11,6 @@ open List
                     | `Unop  of unop * 'expr
 		    | `Const of const
 		    ] with gmap, foldl
-
 (*
 (* ------------------------------------ Generic transformer ------------------------- *)
 
@@ -75,7 +74,6 @@ and ostap (
 )
 
 (* ------------------------------------ Pretty-printer ------------------------------ *)
-
 
 class ['expr] print texpr = object 
   inherit ['expr, unit, printer * int, unit, printer*int] @expr
@@ -161,9 +159,30 @@ let resolve ext expr =
   let reloc x y = reloc (safeLocate x) y in
   cmap (mapT (fun expr e -> !! (reloc expr e))) ext expr
 *)
-(*
+
 (* -------------------------------------- Typechecker ------------------------------- *)
 
+(*class ['expr] typecheck ts = object
+  inherit ['expr, unit, boolean * Ostap.Msg.Locator.t, unit, boolean] @expr
+  method c_Const _ _ c = 
+    let reloc x y = reloc (safeLocate x) y in
+    match c with
+    | `Literal _ -> !! reloc (*что-то, видимо expr*) (`Const x), `Int
+    | `True | `False -> !! reloc (*что-то*) (`Const x), `Bool
+  method c_Unop _ _ op e = invalid_arg ""
+    match op with
+    | `Neg -> Common.int ts (reloc (*expr?*) (`Unop (`Neg, e))) (snd (e)) `Int
+    | `Not -> Common.bool ts (reloc (*expr?*) (`Unop (`Not, e))) t `Bool
+  mathod c_Binop _ _ op x y = invalid_arg ""
+    let t', ensureType = 
+    match op with
+    | `And | `Or -> `Bool, fun (x, t) -> Common.bool ts x t `Bool  
+    | `Eq  | `Ne  | `Le  | `Lt  | `Ge  | `Gt -> `Bool, fun (x, t) -> Common.int ts x t `Int
+    | _ -> `Int, fun (x, t) -> Common.int ts x t `Int
+    in
+   
+*)
+(*
 let typeOf ref = function
 | `Const (`Literal _) | `Unop (`Neg, _) -> `Int | `Const _ | `Unop (`Not, _) -> `Bool
 | `Binop (op, _, _) -> (match op with `Add | `Sub | `Mul | `Mod | `Div -> `Int | _ -> `Bool)
@@ -245,3 +264,29 @@ let evaluate expr =
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
 
 *)
+
+
+@type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
+@type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr expr] with gmap, foldl
+
+class ['ref] print_ref = object
+  inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
+
+class ['ref] eval_ref = object 
+  inherit ['ref, unit, GT.int, unit, GT.int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
+
+class ['expr, 'ref] l1_eval = object 
+  inherit ['expr, unit, GT.int, 'ref, unit, GT.int, unit, GT.int] @l1_expr
+  inherit ['expr] eval
+  inherit ['ref] eval_ref
+end
+
+class ['expr, 'ref] l1_print ps = object
+  inherit ['expr, unit, printer * int, 'ref, unit, printer * int, unit, printer * int] @l1_expr
+  inherit ['expr] print ps
+  inherit ['ref]  print_ref
+end

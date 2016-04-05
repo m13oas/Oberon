@@ -51,8 +51,8 @@ module Parse =
 module Print =
   struct
     let expression, declarations, statement, program =
-      let reference r = GT.transform(l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print_ref) () r in
-      let rec expr e = GT.transform(l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print SimpleExpression.ob_ps) () e in
+      let reference r = GT.transform(SimpleExpression.l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.print_ref) () r in
+      let rec expr e = GT.transform(SimpleExpression.l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.l1_print SimpleExpression.ob_ps) () e in
       let expr x = fst (expr x) in (*принтер*)
       let reference x = fst (reference x) in
       let decl expr typ (c, t, v) = 
@@ -61,8 +61,8 @@ module Print =
       let rec stmt s = 
         GT.transform(SimpleStatement.stmt) 
             (GT.lift stmt) 
-            (GT.lift reference) (*ref*)
-            (GT.lift expr)(*expr*)
+            (GT.lift reference)
+            (GT.lift expr)
             (new SimpleStatement.print SimpleStatement.ob_ps)
             ()
             s
