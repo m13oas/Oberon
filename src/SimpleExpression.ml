@@ -131,8 +131,8 @@ let rec safeLocate e =
      | _ -> Ostap.Msg.Locator.No
     )
 
-class ['expr, 'e] resolve = object
-  inherit ['expr, 'e,  ('e, Ostap.Msg.t) Checked.t, 'e, ('e, Ostap.Msg.t) Checked.t] @expr
+class ['expr, 'e] resolve env = object
+  inherit ['expr, unit,  ('e, Ostap.Msg.t) Checked.t, 'unit, ('e, Ostap.Msg.t) Checked.t] @expr
   method c_Const inh a   x       = 
     let generate x = `Const x in
     !! (Common.reloc (safeLocate (generate x)) (generate x))
