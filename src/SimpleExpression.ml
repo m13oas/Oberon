@@ -1,3 +1,4 @@
+
 open Common
 open Ostap.Pretty
 open Ostap.Util
@@ -11,7 +12,7 @@ open List
                     | `Unop  of unop * 'expr
 		    | `Const of const
 		    ] with gmap, foldl
-(*
+
 (* ------------------------------------ Generic transformer ------------------------- *)
 
 module Mapper (M : Monad.S) =
@@ -39,7 +40,7 @@ let mapT f = object
                method unop  expr op x   = f expr (`Unop (op, x))
                method const expr x      = f expr (`Const x)
              end
-*)
+
 (* ----------------------------------------- Parser --------------------------------- *)
 
 let r = Ostap.Matcher.Token.repr
@@ -90,25 +91,6 @@ class ['expr] print texpr = object
     let w p' (x, p) = if p' < p then rboxed x else x in
     let s, p = op (texpr#binop o) in b [w  p (x.GT.fx ()); s; w p (y.GT.fx ())], p
 end
-
-let gprint (ps (*трансформатор*)) (ext(*расширение выражения*)) (expr(*выражение*)) =
-  let b x = hovboxed (listBySpaceBreak x) in(*печать с пробелами*)
-  let op (s, p) = string s, p in(*оператор функции превращается в строку и порядок*)
-  let w p' (x, p) = if p' < p then rboxed x else x in (*используя порядок, определяет где именно ставить скобки*)
-  let imap = invalid_arg "" in
-  imap  
-    (object 
-       method binop _ o(*конструктор*) x y(*аргументы*) = 
-	 let s, p = op (ps#binop o) in (*обратный паттерн матчинг*)
-	     b [w p x; s; w p y], p(*возвращает пару из printera и порядка (чтобы в случае чего ставить скобки)*)
-       method unop  _ o x   = let s, p = op (ps#unop o) in (*обратный паттерн матчинг*)
-			      b [s; w p x], p
-       method const _   x   = ps#const x
-     end
-    )
-    ext
-    expr
-
 let ob_ps = 
 object
   method unop = function `Not -> "~", 0 | `Neg -> "-", 0
@@ -123,27 +105,21 @@ object
   | `False     -> string "FALSE", 0
 end
 
-let print ext expr = 
-  gprint ob_ps ext expr
-
-(*
-let print_c ext expr = 
-  gprint (object
-            method unop = function `Not -> "!", 0 | `Neg -> "-", 0
-            method binop  = function
-            | `Mul -> "*" , 1 | `Div -> "/" , 1 | `Mod -> "%" , 1 | `And -> "&&", 1
-            | `Add -> "+" , 2 | `Sub -> "-" , 2 | `Or  -> "||", 2 
-            | `Le  -> "<=", 3 | `Lt  -> "<" , 3 | `Ge  -> ">=", 3 | `Gt  -> ">" , 3 
-            | `Ne  -> "!=", 3 | `Eq  -> "==", 3
-            method const = function 
-            | `Literal s -> int s     , 0 
-            | `True      -> string "1", 0 
-            | `False     -> string "0", 0
-          end) ext expr
-*)
+let ob_ps_c =
+  object
+    method unop = function `Not -> "!", 0 | `Neg -> "-", 0
+    method binop  = function
+    | `Mul -> "*" , 1 | `Div -> "/" , 1 | `Mod -> "%" , 1 | `And -> "&&", 1
+    | `Add -> "+" , 2 | `Sub -> "-" , 2 | `Or  -> "||", 2 
+    | `Le  -> "<=", 3 | `Lt  -> "<" , 3 | `Ge  -> ">=", 3 | `Gt  -> ">" , 3 
+    | `Ne  -> "!=", 3 | `Eq  -> "==", 3
+    method const = function 
+    | `Literal s -> int s     , 0 
+    | `True      -> string "1", 0 
+    | `False     -> string "0", 0
+  end
 (* ------------------------------------- Name resolver ------------------------------ *)
 
-(*
 open Checked 
 
 let rec safeLocate e =
@@ -155,10 +131,22 @@ let rec safeLocate e =
      | _ -> Ostap.Msg.Locator.No
     )
 
+class ['expr, 'e] resolve = object
+  inherit ['expr, 'e,  ('e, Ostap.Msg.t) Checked.t, 'e, ('e, Ostap.Msg.t) Checked.t] @expr
+  method c_Const inh a   x       = 
+    let generate x = `Const x in
+    !! (Common.reloc (safeLocate (generate x)) (generate x))
+  method c_Unop  inh a op x       = 
+    let generate op x = `Unop op x in
+    !! (Common.reloc (safeLocate (generate op x)) (generate op (x.GT.fx inh)) )
+  method c_Binop inh a op x y     =
+    let generate op x y = `Binop (op, x, y) in
+    !! (Common.reloc (safeLocate (generate op x.GT.x y.GT.x) ) (generate op (x.GT.fx inh) (y.GT.fx inh)) )
+end
+
 let resolve ext expr =
   let reloc x y = reloc (safeLocate x) y in
   cmap (mapT (fun expr e -> !! (reloc expr e))) ext expr
-*)
 
 (* -------------------------------------- Typechecker ------------------------------- *)
 
@@ -182,7 +170,7 @@ let resolve ext expr =
     in
    
 *)
-(*
+
 let typeOf ref = function
 | `Const (`Literal _) | `Unop (`Neg, _) -> `Int | `Const _ | `Unop (`Not, _) -> `Bool
 | `Binop (op, _, _) -> (match op with `Add | `Sub | `Mul | `Mod | `Div -> `Int | _ -> `Bool)
@@ -208,7 +196,7 @@ let typecheck ts ext expr =
             | `Literal _ -> !! (reloc e (`Const x), `Int)
             | `True | `False -> !! (reloc e (`Const x), `Bool)
         end) ext expr 
-*)
+
 (* --------------------------------------- Evaluator -------------------------------- *)
 
 exception Not_a_constant
@@ -264,8 +252,6 @@ let evaluate expr =
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
 
 *)
-
-
 @type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
 @type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr expr] with gmap, foldl
 
