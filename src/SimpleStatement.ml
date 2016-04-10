@@ -73,9 +73,7 @@ class ['stmt, 'ref, 'expr] print tstmt = object(self)
   inherit ['stmt, unit, printer, 'ref, unit, printer, 'expr, unit, printer, unit, printer] @stmt
   method c_Assign _ _  ref expr   = tstmt#assign (ref.GT.fx ()) (expr.GT.fx ())
   method c_If     _ a ifprt elprt =
-    let rec expr e = GT.transform(SimpleExpression.l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.l1_print SimpleExpression.ob_ps) () e in
-    let expr x = fst (expr x) in
-    let b, e = (List.map (fun (x, y) -> ((expr x), (List.map (fun l -> a.GT.f () l) y))) ifprt), (List.map (fun x -> a.GT.f () x) elprt) in
+    let b, e = (List.map (fun (x, y) -> ((a.GT.t#expr () x), (GT.gmap(GT.list) (a.GT.f ()) y))) ifprt),(GT.gmap(GT.list) (a.GT.f ()) elprt) in
     let branch typ (cond, thenPart) = 
            hov [tstmt#ifHead typ cond; tstmt#thenPart (tstmt#seq thenPart)]
          in
