@@ -1,4 +1,3 @@
-
 open Common
 open Ostap.Pretty
 open Ostap.Util
@@ -13,6 +12,9 @@ open List
 		    | `Const of const
 		    ] with gmap, foldl
 
+@type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
+
+@type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr expr] with gmap, foldl
 (* ------------------------------------ Generic transformer ------------------------- *)
 
 module Mapper (M : Monad.S) =
@@ -131,17 +133,14 @@ let rec safeLocate e =
      | _ -> Ostap.Msg.Locator.No
     )
 
-class ['expr, 'e] resolve env = object
-  inherit ['expr, unit,  ('e, Ostap.Msg.t) Checked.t, 'unit, ('e, Ostap.Msg.t) Checked.t] @expr
-  method c_Const inh a   x       = 
-    let generate x = `Const x in
-    !! (Common.reloc (safeLocate (generate x)) (generate x))
+class ['expr, 'env, 'r] resolve_expr = object
+  inherit ['expr, 'env,  'expr, 'env, ('r, Ostap.Msg.t) Checked.t] @expr
+  method c_Const inh a   (x:const)       =
+    !! (Common.reloc (safeLocate (`Const x)) (`Const x))
   method c_Unop  inh a op x       = 
-    let generate op x = `Unop op x in
-    !! (Common.reloc (safeLocate (generate op x)) (generate op (x.GT.fx inh)) )
+    !! (Common.reloc (safeLocate (`Unop op x.GT.x)) (`Unop op (x.GT.fx inh)) )
   method c_Binop inh a op x y     =
-    let generate op x y = `Binop (op, x, y) in
-    !! (Common.reloc (safeLocate (generate op x.GT.x y.GT.x) ) (generate op (x.GT.fx inh) (y.GT.fx inh)) )
+    !! (Common.reloc (safeLocate (`Binop op x.GT.x y.GT.x) ) (`Binop op (x.GT.fx inh) (y.GT.fx inh)) )
 end
 
 let resolve ext expr =
@@ -224,7 +223,7 @@ let wrap e x =
   match typeOf (fun _ -> raise Not_a_constant) e with
   | `Int  -> reloc (`Const (`Literal x))
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
-
+*)
 let evaluate expr =
   let x =
     imap 
@@ -250,10 +249,6 @@ let evaluate expr =
   match typeOf (fun _ -> raise Not_a_constant) expr with
   | `Int  -> reloc (`Const (`Literal x))
   | `Bool -> reloc (if x > 0 then `Const `True else `Const `False)
-
-*)
-@type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
-@type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr expr] with gmap, foldl
 
 class ['ref] print_ref = object
   inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref

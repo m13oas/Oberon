@@ -51,29 +51,26 @@ module Resolve =
     (*передавать функцию трансформации через функцию и тогда не нужен наследуемый*)
     class ['ref, 'env, 'r] resolve_const_ref = object
       inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_ref
-      method c_Ident inh a s = 
+      method c_Ident inh a x = x.GT.fx inh(*
 	let generate x = `Ident s.GT.x in 
 	let reloc = reloc (locate (generate s)) in
 	inh#lookupConst s.GT.x
-	-?->   (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))
+	-?->   (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))*)
     end
       
     class ['ref, 'env, 'r] resolve_ref = object
       inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_ref
-      method c_Ident inh a x = 
-	let reloc = reloc (locate (`Ident x.GT.x)) in
-	 inh#lookupVar x.GT.x
-	-?-> (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))
+      method c_Ident inh a x = x.GT.fx inh
     end
       
-    class ['expr, 'ref, 'env, 'r] l1_resolve_conref = object
-    inherit ['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
-      inherit ['expr, 'env, 'r] SimpleExpression.resolve_expr
-      inherit ['ref, 'env, 'r] resolve_const_ref
+    class ['expr, 'ref, 'env, 'r, 'r1] l1_resolve_conref = object
+    inherit ['expr, 'env1, 'expr, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
+    inherit ['expr, 'env1, 'r1] SimpleExpression.resolve_expr
+    inherit ['ref, 'env, 'r] resolve_const_ref
     end
-      
+    
     class ['expr, 'ref, 'env, 'r] l1_resolve_ref = object
-      inherit ['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
+      inherit ['expr, 'env, 'expr, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
       inherit ['expr, 'env, 'r] SimpleExpression.resolve_expr
       inherit ['ref, 'env, 'r] resolve_ref
     end
@@ -128,19 +125,14 @@ module Resolve =
           env#lookupVar expr -?-> 
 	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) (new resolve_ref) env expr
 
-    let cExpr env expr = 
-            SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr
-	
-    let constantExprGT env expr = 
-      let rec res_expr env expr =
-	  GT.transform(SimpleExpression.expr) (res_expr) (new SimpleExpression.resolve_expr) env expr in
-      GT.transform(SimpleExpression.l1_expr) (res_expr) (fun env expr -> 
+    let constantExpr env expr = 
+      GT.transform(SimpleExpression.l1_expr) (fun env expr -> expr)
+	(fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookupConst expr -?-> 
-	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) (new l1_resolve_conref) env expr
-
-    let constantExpr env expr = 
-      SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr -?->> 
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
+	(new l1_resolve_conref) env expr
+(*      SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr*) -?->> 
       (fun expr -> 
          try !! (reloc (locate expr) (SimpleExpression.evaluate expr))
          with Division_by_zero -> 
@@ -151,9 +143,7 @@ module Resolve =
       )
 
     let expression env expr =
-      let rec res env expr = 
-	GT.transform(SimpleExpression.expr) (res) (new SimpleExpression.resolve_expr) env expr in
-      expr env expr
+	GT.transform(SimpleExpression.expr) (fun env expr -> expr) (new SimpleExpression.resolve_expr) env expr
 
     let declarations typ env (c, t, v) =
       let mc, c = 
