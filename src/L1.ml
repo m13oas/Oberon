@@ -2,6 +2,10 @@ open Ostap.Pretty
 open Common
 open List
 
+@type 'ref l1_ref = [`Ident of 'ref] with gmap, foldl
+
+@type ('expr, 'ref) l1_expr = [ 'ref l1_ref | 'expr SimpleExpression.expr] with gmap, foldl
+
 (* ----------------------------------------- Parser --------------------------------- *)
 
 module Parse =
@@ -21,12 +25,23 @@ module Parse =
 
 (* -------------------------------------- Pretty-printer ---------------------------- *)
 
+class ['ref] print_ref = object
+  inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
+
+class ['expr, 'ref] l1_print ps = object
+  inherit ['expr, unit, printer * int, 'ref, unit, printer * int, unit, printer * int] @l1_expr
+  inherit ['expr] SimpleExpression.print ps
+  inherit ['ref]  print_ref
+end
+
 module Print =
   struct
     let expression, declarations, statement, program =
-      let reference r = GT.transform(SimpleExpression.l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.print_ref) () r in
-      let rec expr e = GT.transform(SimpleExpression.l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new SimpleExpression.l1_print SimpleExpression.ob_ps) () e in
-      let expr x = fst (expr x) in (*принтер*)
+      let reference r = GT.transform(l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print_ref) () r in
+      let rec expr e = GT.transform(l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new l1_print SimpleExpression.ob_ps) () e in
+      let expr x = fst (expr x) in
       let reference x = fst (reference x) in
       let decl expr typ (c, t, v) = 
         vert ((ConstDecl.print expr c) @ (TypeDecl.print typ t) @ (VarDecl.print typ v)) 
@@ -48,29 +63,24 @@ open Checked
 
 module Resolve =
   struct
-    (*передавать функцию трансформации через функцию и тогда не нужен наследуемый*)
     class ['ref, 'env, 'r] resolve_const_ref = object
-      inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_ref
-      method c_Ident inh a x = x.GT.fx inh(*
-	let generate x = `Ident s.GT.x in 
-	let reloc = reloc (locate (generate s)) in
-	inh#lookupConst s.GT.x
-	-?->   (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))*)
+      inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
+      method c_Ident inh a x = x.GT.fx inh
     end
       
     class ['ref, 'env, 'r] resolve_ref = object
-      inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_ref
+      inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
       method c_Ident inh a x = x.GT.fx inh
     end
       
     class ['expr, 'ref, 'env, 'r, 'r1] l1_resolve_conref = object
-    inherit ['expr, 'env1, 'expr, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
+    inherit ['expr, 'env1, 'expr, 'ref, 'env, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
     inherit ['expr, 'env1, 'r1] SimpleExpression.resolve_expr
     inherit ['ref, 'env, 'r] resolve_const_ref
     end
     
-    class ['expr, 'ref, 'env, 'r] l1_resolve_ref = object
-      inherit ['expr, 'env, 'expr, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.l1_expr
+    class ['expr, 'ref, 'env, 'r] l1_resolve_expr = object
+      inherit ['expr, 'env, 'expr, 'ref, 'env, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
       inherit ['expr, 'env, 'r] SimpleExpression.resolve_expr
       inherit ['ref, 'env, 'r] resolve_ref
     end
@@ -120,19 +130,19 @@ module Resolve =
     | x -> invalid_arg ""
 
     let destination env expr = 
-      GT.transform(SimpleExpression.l1_ref) (fun env expr -> 
+      GT.transform(l1_ref) (fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookupVar expr -?-> 
 	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) (new resolve_ref) env expr
 
     let constantExpr env expr = 
-      GT.transform(SimpleExpression.l1_expr) (fun env expr -> expr)
+(*      GT.transform(l1_expr) (fun env expr -> expr)
 	(fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookupConst expr -?-> 
 	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
-	(new l1_resolve_conref) env expr
-(*      SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr*) -?->> 
+	(new l1_resolve_expr) env expr*)
+	SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr -?->> 
       (fun expr -> 
          try !! (reloc (locate expr) (SimpleExpression.evaluate expr))
          with Division_by_zero -> 
@@ -141,9 +151,22 @@ module Resolve =
                   (locate expr)
            ]
       )
-
+    let expressionGT env expr = 
+      GT.transform(l1_expr) (fun env expr -> expr)
+	(fun env expr -> 
+	  let reloc = reloc (locate (`Ident expr)) in
+          env#lookup expr -?-> 
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
+	(new l1_resolve_conref) env expr
+      
     let expression env expr =
-	GT.transform(SimpleExpression.expr) (fun env expr -> expr) (new SimpleExpression.resolve_expr) env expr
+(*      GT.transform(l1_expr) (fun env expr -> expr)
+	(fun env expr -> 
+	  let reloc = reloc (locate (`Ident expr)) in
+          env#lookup expr -?-> 
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
+	(new l1_resolve_conref) env expr*)
+	SimpleExpression.resolve (reference lookup env) expr
 
     let declarations typ env (c, t, v) =
       let mc, c = 
@@ -188,9 +211,9 @@ module Resolve =
       -?-> (fun x -> x, env#namer ())
 
 end
-(*
-(* --------------------------------------- Typechecker ------------------------------ *)
 
+(* --------------------------------------- Typechecker ------------------------------ *)
+(*
 module Typecheck =
   struct
  
@@ -203,7 +226,7 @@ module Typecheck =
     | `Ident (_, `Var (_, t)) as x -> !! (x, t)
     | x -> ext x
 
-    let declarations ts (c, t, v) =
+    let declarations (ts: < equal : [> `Bool | `Int ] -> [> `Bool | `Int ] -> bool; .. >) (c, t, v) =
       let mc, c = 
         resolveDecls (fun x -> SimpleExpression.typecheck ts reference (snd x) -?-> return x) c 
       in
@@ -217,22 +240,34 @@ module Typecheck =
 *)
 (* ------------------------------------------ Toplevel ------------------------------ *)
 
+class ['ref] eval_ref = object 
+  inherit ['ref, unit, GT.int, unit, GT.int] @l1_ref
+  method c_Ident _ _ id = id.GT.fx ()
+end
+
+class ['expr, 'ref] l1_eval = object 
+  inherit ['expr, unit, GT.int, 'ref, unit, GT.int, unit, GT.int] @l1_expr
+  inherit ['expr] SimpleExpression.eval
+  inherit ['ref] eval_ref
+end
+
+
 open Lazy
 open Checked 
 
 let empty _ = "(*** not supported ***)", "/*** not supported ***/"
 
-let toplevel generate (parse, print (*, resolve, typecheck*)) source =
+let toplevel generate (parse, print, resolve (*, typecheck*)) source =
   let parsed   = lazy_from_fun (fun _ -> check (parse (new Lexer.t source))) in
-(*
   let resolved = lazy_from_fun (fun _ -> force parsed -?->> resolve) in  
+(*
   let checked  = lazy_from_fun (fun _ -> force resolved -?->> (fun (t, _) -> typecheck t)) in
 *)
   object
     method parse     () = force parsed   -?-> return ()
     method print     () = force parsed   -?-> (fun t -> Ostap.Pretty.toString (print t))
-(*
     method resolve   () = force resolved -?-> return ()
+(*
     method typecheck () = force checked  -?-> (fun x -> return ())
     method generate  () = force resolved -?-> generate
 *)
@@ -241,6 +276,6 @@ let toplevel generate (parse, print (*, resolve, typecheck*)) source =
 let toplevel0 s t = toplevel empty s t
 let top source = 
   toplevel0 
-     (Parse.program, Print.program(*, Resolve.program , Typecheck.program SimpleStatement.typecheck*)) 
+     (Parse.program, Print.program, Resolve.program (*, Typecheck.program SimpleStatement.typecheck*)) 
      source
 
