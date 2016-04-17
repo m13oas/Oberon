@@ -3,19 +3,18 @@ open Ostap.Util
 open List
 open SimpleStatement
 
-@type ('atom, 'expr, 'ref) at = [ `Atom of ('expr, 'ref) L1.l1_expr
-			  | `Interval of ('expr, 'ref) L1.l1_expr * ('expr, 'ref) L1.l1_expr] with gmap, foldl
+@type ('expr) atom = [ `Atom of 'expr
+		     | `Interval of 'expr * 'expr] with gmap, foldl
 
 @type ('stmt, 'atom, 'expr, 'ref) extstmt = [ `Case of 'ref * ('atom GT.list * 'stmt GT.list) GT.list * 'stmt GT.list
-				      | `For of 'ref * 'expr * 'expr * (('expr, 'ref) L1.l1_expr) GT.option * 'stmt GT.list] with gmap, foldl
+					    | `For of 'ref * 'expr * 'expr * 'expr GT.option * 'stmt GT.list] with gmap, foldl
 
 (* ------------------------------------- Generic transformer ------------------------ *)
 
 module Mapper (M : Monad.S) =
   struct
     open M
-    let rec gmap t ref cexpr expr ext (stmt) =
- 
+    let rec gmap t ref cexpr expr ext (stmt) = 
       let self = gmap t ref cexpr expr ext in
       match stmt with
       | `For (i, l, u, s, b) -> 
@@ -90,10 +89,75 @@ ostap (
 
 open Ostap.Pretty
 
-(*class ['stmt, 'expr, 'atom] print testmt = object
-  inherit ['stmt, unit, printer, 'expr, unit, printer, 'atom, unit, printer] @extstmt
-  method c_For _ _ 
-*)
+class ['expr] print_atom = object
+  inherit ['expr, unit, printer, unit, printer] @atom
+  method c_Atom     _ aug expr = (aug.GT.t#expr () expr)
+  method c_Interval _ aug a b  = hov [(aug.GT.t#expr () a); string ".."; (aug.GT.t#expr () b)]
+end
+
+class ['stmt, 'atom, 'expr, 'ref] print testmt = object
+  inherit ['stmt, unit, printer, 'atom, unit, printer, 'expr, unit, printer, 'ref, unit, printer, unit, printer] @extstmt
+  inherit ['atom] print_atom
+(*  inherit ['expr, 'ref] L1.l1_print SimpleExpression.ob_ps*)
+  method c_For _ a i l u s b = (*invalid_arg ""*)
+    plock 
+      (listBySpace ([string "FOR"; (a.GT.t#ref () i); string ":="; (a.GT.t#expr () l); string "TO"; (a.GT.t#expr () u)] @ 
+                       match s with None -> [] | Some s -> [string "BY"; (a.GT.t#expr () s)]
+       )
+      )
+      (sblock "DO" "END" (pseq (GT.gmap(GT.list) (a.GT.t#stmt ()) b)))
+  
+  method c_Case _ a e b elsePart =
+    let caseCond c =      
+           hov [
+             listByCommaBreak 
+               (GT.gmap(GT.list) (a.GT.t#atom ()) c);
+             string ":"
+           ]
+         in
+    block 
+           (listBySpace[string "CASE"; (a.GT.t#ref () e); string "OF"]) 
+           (string "END") 
+           (vert [
+              listBy 
+                (seq[string " |"; break]) 
+                (map (fun (c, s) -> plock (caseCond c) (pseq (GT.gmap(GT.list) (a.GT.t#stmt ()) s))) b);
+              match elsePart with [] -> empty | s -> plock (string "ELSE ") (pseq (GT.gmap(GT.list) (a.GT.t#stmt ()) s))
+            ]
+           )
+end
+
+let ob_ext = object
+  method forc _ i l u s b = 
+    plock 
+      (listBySpace ([string "FOR"; i; string ":="; l; string "TO"; u] @ 
+                       match s with None -> [] | Some s -> [string "BY"; s]
+       )
+      )
+      (sblock "DO" "END" (pseq b))
+  method case _ e b elsePart =
+    let caseCond c =
+      hov [
+        listByCommaBreak 
+          (map 
+             (function `Atom c -> c | `Interval (x, y) -> hov [x; string ".."; y]) 
+             c
+          );
+        string ":"
+      ]
+    in
+    block 
+      (listBySpace[string "CASE"; e; string "OF"]) 
+      (string "END") 
+      (vert [
+        listBy 
+          (seq[string " |"; break]) 
+          (map (fun (c, s) -> plock (caseCond c) (pseq s)) b);
+        match elsePart with [] -> empty | s -> plock (string "ELSE ") (pseq s)
+       ]
+      )
+end
+
 let print expr ext stmt =
   imap  
     (object
