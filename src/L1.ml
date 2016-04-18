@@ -25,19 +25,19 @@ module Parse =
 
 (* -------------------------------------- Pretty-printer ---------------------------- *)
 
-class ['ref] print_ref = object
-  inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref
-  method c_Ident _ _ id = id.GT.fx ()
-end
-
-class ['expr, 'ref] l1_print ps = object
-  inherit ['expr, unit, printer * int, 'ref, unit, printer * int, unit, printer * int] @l1_expr
-  inherit ['expr] SimpleExpression.print ps
-  inherit ['ref]  print_ref
-end
-
 module Print =
   struct
+    class ['ref] print_ref = object
+      inherit ['ref, unit, Ostap.Pretty.printer * int, unit, Ostap.Pretty.printer * int] @l1_ref
+      method c_Ident _ _ id = id.GT.fx ()
+    end
+
+    class ['expr, 'ref] l1_print ps = object
+      inherit ['expr, unit, printer * int, 'ref, unit, printer * int, unit, printer * int] @l1_expr
+      inherit ['expr] SimpleExpression.print ps
+      inherit ['ref]  print_ref
+    end
+
     let expression, declarations, statement, program =
       let reference r = GT.transform(l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print_ref) () r in
       let rec expr e = GT.transform(l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new l1_print SimpleExpression.ob_ps) () e in
@@ -72,19 +72,19 @@ module Resolve =
       inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
       method c_Ident inh a x = x.GT.fx inh
     end
-      
-    class ['expr, 'ref, 'env, 'r, 'r1] l1_resolve_conref = object
-    inherit ['expr, 'env1, 'expr, 'ref, 'env, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
-    inherit ['expr, 'env1, 'r1] SimpleExpression.resolve_expr
-    inherit ['ref, 'env, 'r] resolve_const_ref
+
+    class ['expr, 'ref, 'env, 'r] l1_resolve_conexpr_old = object
+      inherit ['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
+      inherit ['expr, 'env, 'r] SimpleExpression.resolve
+      inherit ['ref, 'env, 'r] resolve_const_ref
+    end  
+
+    class ['expr, 'ref, 'env, 'r] l1_resolve_expr = object
+      inherit ['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
+      inherit ['expr, 'env, 'r] SimpleExpression.resolve
+      inherit ['ref, 'env, 'r] resolve_const_ref
     end
     
-    class ['expr, 'ref, 'env, 'r] l1_resolve_expr = object
-      inherit ['expr, 'env, 'expr, 'ref, 'env, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
-      inherit ['expr, 'env, 'r] SimpleExpression.resolve_expr
-      inherit ['ref, 'env, 'r] resolve_ref
-    end
-
     class ['a] env =
       object(self)
         val idents = Namespace.make "identifier"
@@ -136,13 +136,16 @@ module Resolve =
 	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) (new resolve_ref) env expr
 
     let constantExpr env expr = 
-(*      GT.transform(l1_expr) (fun env expr -> expr)
-	(fun env expr -> 
+      let rec res env expr =
+	GT.transform(l1_expr) (res)
+	  (
+	    fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookupConst expr -?-> 
-	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
-	(new l1_resolve_expr) env expr*)
-	SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr -?->> 
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
+	  )
+	  (new l1_resolve_conexpr_old) env expr in
+      res env expr -?->> 
       (fun expr -> 
          try !! (reloc (locate expr) (SimpleExpression.evaluate expr))
          with Division_by_zero -> 
@@ -151,22 +154,32 @@ module Resolve =
                   (locate expr)
            ]
       )
-    let expressionGT env expr = 
-      GT.transform(l1_expr) (fun env expr -> expr)
-	(fun env expr -> 
+
+    let expressionGT env expr =
+      let rec res env expr =
+	GT.transform(l1_expr) (res)
+	  (
+	    fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookup expr -?-> 
-	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
-	(new l1_resolve_conref) env expr
-      
-    let expression env expr =
-(*      GT.transform(l1_expr) (fun env expr -> expr)
-	(fun env expr -> 
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
+	  )
+	  (new l1_resolve_conexpr_old) env expr in
+      res env expr
+  
+(*стандартный l1_expr*)
+    let expression env (expr) =
+      let rec res env expr =
+	GT.transform(l1_expr) (res)
+	  (
+	    fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
           env#lookup expr -?-> 
-	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))) 
-	(new l1_resolve_conref) env expr*)
-	SimpleExpression.resolve (reference lookup env) expr
+	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
+	  )
+	  (new l1_resolve_conexpr_old) env expr in
+      res env expr
+(*	SimpleExpression.resolve (reference lookup env) expr*)
 
     let declarations typ env (c, t, v) =
       let mc, c = 
@@ -213,10 +226,23 @@ module Resolve =
 end
 
 (* --------------------------------------- Typechecker ------------------------------ *)
-(*
+
 module Typecheck =
   struct
  
+(*    class['expr, 'ref, 'ts, 'r] l1_typecheck ts = object
+      inherit['expr, 'ts, 'r, 'ref, 'ts, 'r, 'ts, ('r, Ostap.Msg.t) Checked.t] @l1_expr
+      inherit['expr, 'ts, 'r] SimpleExpression.typecheck (SimpleExpression.tch_ob ts)
+      method c_Ident inh a x =
+	let rec typeOfConst = function 
+	  | (`Ident (_, (`Const _ as v))) -> SimpleExpression.typeOf typeOfConst v 
+	  | _ -> invalid_arg "" in
+	match x.GT.x with
+	| (_, `Const _) -> !! (`Ident x.GT.x, typeOfConst x.GT.x)
+	| (_, `Var (_, t)) -> !! (`Ident x.GT.x,t)
+	| x -> invalid_arg""
+    end
+*)
     let rec typeOfConst = function 
     | (`Ident (_, (`Const _ as v))) -> SimpleExpression.typeOf typeOfConst v 
     | _ -> invalid_arg ""
@@ -228,7 +254,7 @@ module Typecheck =
 
     let declarations (ts: < equal : [> `Bool | `Int ] -> [> `Bool | `Int ] -> bool; .. >) (c, t, v) =
       let mc, c = 
-        resolveDecls (fun x -> SimpleExpression.typecheck ts reference (snd x) -?-> return x) c 
+        resolveDecls (fun x -> SimpleExpression.typecheck ts reference ((snd x)) -?-> return x) c 
       in
       mc -?-> return (c, t, v)
 
@@ -237,7 +263,7 @@ module Typecheck =
      Module.typecheck (declarations PrimitiveType.ts) (stmt PrimitiveType.ts expr apply) m
 
   end
-*)
+
 (* ------------------------------------------ Toplevel ------------------------------ *)
 
 class ['ref] eval_ref = object 
@@ -257,25 +283,24 @@ open Checked
 
 let empty _ = "(*** not supported ***)", "/*** not supported ***/"
 
-let toplevel generate (parse, print, resolve (*, typecheck*)) source =
+let toplevel generate (parse, print, resolve, typecheck) source =
   let parsed   = lazy_from_fun (fun _ -> check (parse (new Lexer.t source))) in
   let resolved = lazy_from_fun (fun _ -> force parsed -?->> resolve) in  
-(*
+
   let checked  = lazy_from_fun (fun _ -> force resolved -?->> (fun (t, _) -> typecheck t)) in
-*)
+
   object
     method parse     () = force parsed   -?-> return ()
     method print     () = force parsed   -?-> (fun t -> Ostap.Pretty.toString (print t))
     method resolve   () = force resolved -?-> return ()
-(*
     method typecheck () = force checked  -?-> (fun x -> return ())
-    method generate  () = force resolved -?-> generate
+(*    method generate  () = force resolved -?-> generate
 *)
   end
 
 let toplevel0 s t = toplevel empty s t
 let top source = 
   toplevel0 
-     (Parse.program, Print.program, Resolve.program (*, Typecheck.program SimpleStatement.typecheck*)) 
+     (Parse.program, Print.program, Resolve.program , Typecheck.program SimpleStatement.typecheck) 
      source
 
