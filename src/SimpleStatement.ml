@@ -34,7 +34,7 @@ let cmap t ref expr ext stmt =
 let mapT f = object
                method assign stmt x y = f stmt (`Assign (x, y))
                method ifc    stmt b e = f stmt (`If     (b, e))
-               method whilec stmt c b = f stmt (`While  (c, b))
+               method whilec stmt c (b: 'a list) = f stmt (`While  (c, b))
              end
 
 (* ----------------------------------------- Parser --------------------------------- *)
@@ -112,6 +112,25 @@ open Checked
 let resolve ref expr ext stmt =
   let reloc x y = reloc (locate x) y in
   cmap (mapT (fun stmt s -> !!(reloc stmt s))) ref expr ext stmt
+
+class['stmt, 'ref, 'expr, 'envs, 'rs, 'envr, 'rr, 'enve, 're, 'env, 'r] resolve = object
+  inherit ['stmt, 'envs, ('rs, Ostap.Msg.t) Checked.t, 'ref, 'envr, ('rr, Ostap.Msg.t) Checked.t, 'expr, 'enve, ('re, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @stmt
+  method c_Assign inh a ref expr = 
+    tuple (ref.GT.fx inh, expr.GT.fx inh) -?->> 
+      (fun (x, y) -> !!(reloc (locate (`Assign ref.GT.x expr.GT.x)) (`Assign x y)))
+  method c_If inh a ifprt thprt =
+    tuple (
+      list 
+	(
+	  (GT.gmap(GT.list) (fun (e, s) -> tuple ((a.GT.t#expr inh e, list (GT.gmap(GT.list) (a.GT.f inh) s) ) )
+	   -?-> (fun (e, s) -> e, s)))
+	    ifprt),  
+      list (GT.gmap(GT.list) (a.GT.f inh) thprt)) -?->> 
+      (fun (x, y) -> !! (Common.reloc (locate (`If ifprt thprt)) (`If (x, y))))
+  method c_While inh a expr stmt = 
+    tuple ((expr.GT.fx inh), list ((GT.gmap(GT.list) (a.GT.f inh ) stmt))) -?->> 
+      (fun (x, y) -> !! (Common.reloc (locate (`While expr.GT.x stmt)) (`While x y)) )
+end
 
 (* --------------------------------------- Typechecker ------------------------------ *)
 

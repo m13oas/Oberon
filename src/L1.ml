@@ -122,13 +122,6 @@ module Resolve =
 
     let noext x = fail "not a reference" [||] x
 
-    let reference lookup env ext = function
-    | `Ident name as ref -> 
-        let reloc = reloc (locate ref) in
-        lookup env name -?-> 
-      (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
-    | x -> invalid_arg ""
-
     let destination env expr = 
       GT.transform(l1_ref) (fun env expr -> 
 	  let reloc = reloc (locate (`Ident expr)) in
@@ -154,20 +147,7 @@ module Resolve =
                   (locate expr)
            ]
       )
-
-    let expressionGT env expr =
-      let rec res env expr =
-	GT.transform(l1_expr) (res)
-	  (
-	    fun env expr -> 
-	  let reloc = reloc (locate (`Ident expr)) in
-          env#lookup expr -?-> 
-	    (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
-	  )
-	  (new l1_resolve_conexpr_old) env expr in
-      res env expr
   
-(*стандартный l1_expr*)
     let expression env (expr) =
       let rec res env expr =
 	GT.transform(l1_expr) (res)
@@ -179,7 +159,6 @@ module Resolve =
 	  )
 	  (new l1_resolve_conexpr_old) env expr in
       res env expr
-(*	SimpleExpression.resolve (reference lookup env) expr*)
 
     let declarations typ env (c, t, v) =
       let mc, c = 
@@ -219,8 +198,11 @@ module Resolve =
       Module.resolve
         env
         (declarations PrimitiveType.resolve)
-        (SimpleStatement.resolve (destination env) (expression env) apply)
-        m
+    (let rec resstmt env stmt = 
+      GT.transform(SimpleStatement.stmt) (resstmt) (destination) (expression) (new SimpleStatement.resolve) (env) (stmt) in
+    resstmt env) m
+(*        (SimpleStatement.resolve (destination env) (expression env) apply)
+        m*)
       -?-> (fun x -> x, env#namer ())
 
 end
@@ -229,32 +211,48 @@ end
 
 module Typecheck =
   struct
- 
-(*    class['expr, 'ref, 'ts, 'r] l1_typecheck ts = object
-      inherit['expr, 'ts, 'r, 'ref, 'ts, 'r, 'ts, ('r, Ostap.Msg.t) Checked.t] @l1_expr
-      inherit['expr, 'ts, 'r] SimpleExpression.typecheck (SimpleExpression.tch_ob ts)
-      method c_Ident inh a x =
-	let rec typeOfConst = function 
-	  | (`Ident (_, (`Const _ as v))) -> SimpleExpression.typeOf typeOfConst v 
-	  | _ -> invalid_arg "" in
-	match x.GT.x with
-	| (_, `Const _) -> !! (`Ident x.GT.x, typeOfConst x.GT.x)
-	| (_, `Var (_, t)) -> !! (`Ident x.GT.x,t)
-	| x -> invalid_arg""
-    end
-*)
+    
     let rec typeOfConst = function 
     | (`Ident (_, (`Const _ as v))) -> SimpleExpression.typeOf typeOfConst v 
     | _ -> invalid_arg ""
-
+(*
+    class ['ref, 'env, 'r] tch_const_ref = object
+      inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
+      method c_Ident inh a x = 
+	match x.GT.x with
+	  | (_, `Const _) as x -> !! (`Ident x, typeOfConst (`Ident x))
+	  | (_, `Var (_, t)) as x -> !! (`Ident x, t)
+	  | l -> invalid_arg""
+    end
+      
+    class['expr, 'ref, 'ts, 'r] l1_typecheck = object
+      inherit['expr, 'ts, ('r, Ostap.Msg.t) Checked.t, 'ref, 'ts, ('r, Ostap.Msg.t) Checked.t, 'ts, ('r, Ostap.Msg.t) Checked.t] @l1_expr
+      inherit['expr, 'ts, 'r] SimpleExpression.typecheck
+      inherit['res, 'ts, 'r] tch_const_ref
+    end
+*)
     let reference ext = function
     | `Ident (_, `Const _) as x -> !! (x, typeOfConst x)
     | `Ident (_, `Var (_, t)) as x -> !! (x, t)
-    | x -> ext x
+    | x -> invalid_arg""
 
-    let declarations (ts: < equal : [> `Bool | `Int ] -> [> `Bool | `Int ] -> bool; .. >) (c, t, v) =
+    let declarations ts (c, t, v) =
       let mc, c = 
-        resolveDecls (fun x -> SimpleExpression.typecheck ts reference ((snd x)) -?-> return x) c 
+        resolveDecls (fun x -> 
+(*	  let rec tch ts x = 
+	    GT.transform(l1_expr) 
+	      (tch) 
+	      (fun ts y  ->
+		match y with
+		| (_, `Const _) as x -> !! (`Ident y, typeOfConst (`Ident y))
+		| (_, `Var (_, t)) as x -> !! (`Ident y, t)
+		| x -> tch ts x)			 
+	      (new l1_typecheck) 
+	      ts 
+	      x in
+	  tch ts (snd x)*)
+	  SimpleExpression.typecheck ts reference ((snd x))
+	  -?-> return x) c(*какой-то лист*)
       in
       mc -?-> return (c, t, v)
 
