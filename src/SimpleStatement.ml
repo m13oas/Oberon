@@ -145,3 +145,26 @@ let typecheck ts expr ext stmt =
           method whilec _ ((y, ct) as c) b =
             Common.bool ts y ct `Bool -?-> (fun _ -> `While (c, b))  
         end) expr expr ext stmt
+
+
+class['stmt, 'ref, 'expr, 'envs, 'ts, 'envr, 'tr, 'enve, 'te, 'env, 't] typecheck = object
+  inherit ['stmt, 'envs, ('ts, Ostap.Msg.t) Checked.t, 'ref, 'envr, ('tr, Ostap.Msg.t) Checked.t, 'expr, 'enve, ('te, Ostap.Msg.t) Checked.t, 'env, ('t, Ostap.Msg.t) Checked.t] @stmt
+  method c_Assign inh a ref expr = 
+    tuple (ref.GT.fx inh, expr.GT.fx inh) -?->> 
+      (fun (((_, dt) as d), ((y, st) as s)) -> 
+	if inh#primitive dt && inh#primitive st
+        then Common.same inh dt st y -?-> (fun _ -> `Assign (d, s))
+        else Fail [Ostap.Msg.make "assignment is allowed only for primitive types" [||] (locate y)])
+  method c_If inh a ifprt thprt = 
+    tuple (
+      list 
+	(
+	  (GT.gmap(GT.list) (fun (e, s) -> tuple ((a.GT.t#expr inh e, list (GT.gmap(GT.list) (a.GT.f inh) s) ) )
+	   -?-> (fun (e, s) -> e, s)))
+	    ifprt),  
+      list (GT.gmap(GT.list) (a.GT.f inh) thprt)) -?->> 
+      (fun (b, e) -> ?| (List.map (fun ((y, t), _) -> Common.bool inh y t `Bool) b) -?-> (fun _ -> `If (b, e)) )
+  method c_While inh a expr stmt = 
+    tuple ((expr.GT.fx inh), list ((GT.gmap(GT.list) (a.GT.f inh ) stmt))) -?->> 
+      (fun (((y, ct) as c), b) -> Common.bool inh y ct `Bool -?-> (fun _ -> `While (c, b))  )
+end
