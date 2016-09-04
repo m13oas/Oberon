@@ -3,6 +3,9 @@ open Common
 open List
 open Ostap.Util
 
+@type ('stmt, 'expr, 'ref) l3_stmt = [ ('stmt, 'expr, 'ref) l2_stmt
+					    | `Call of string * 'expr ] with gmap, foldl
+
 (* ----------------------------------------- Parser --------------------------------- *)
 
 module Parse =

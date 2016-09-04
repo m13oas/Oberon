@@ -90,7 +90,6 @@ class ['expr] print texpr = object
     let w p' (x, p) = if p' < p then rboxed x else x in
     let s, p = op (texpr#binop o) in b [w  p (x.GT.fx ()); s; w p (y.GT.fx ())], p
 end
-
 let ob_ps = 
 object
   method unop = function `Not -> "~", 0 | `Neg -> "-", 0
@@ -104,7 +103,6 @@ object
   | `True      -> string "TRUE" , 0 
   | `False     -> string "FALSE", 0
 end
-
 let ob_ps_c =
   object
     method unop = function `Not -> "!", 0 | `Neg -> "-", 0
@@ -135,20 +133,6 @@ let resolve ext expr =
   let reloc x y = reloc (safeLocate x) y in
   cmap (mapT (fun expr e -> !! (reloc expr e))) ext expr
 
-class ['expr, 'env, 'r] resolve = object
-  inherit ['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @expr
-  constraint 'r = [> 'r expr ]
-  method c_Const inh a   x       = 
-    !! (Common.reloc (safeLocate (a.GT.x)) (`Const x))
-  method c_Unop  inh aug op x       =
-    let generate op x = `Unop op x in
-    x.GT.fx inh -?->>
-    (fun a -> !! (Common.reloc (safeLocate (aug.GT.x)) (generate op a) ))
-  method c_Binop inh aug op x y     = 
-    let generate op x y = `Binop (op, x, y) in
-    tuple (x.GT.fx inh, y.GT.fx inh) -?->>
-    (fun (a, b) -> !! (Common.reloc (safeLocate (aug.GT.x) ) (generate op a b) ))
-end
 
 (* -------------------------------------- Typechecker ------------------------------- *)
 
@@ -157,40 +141,35 @@ let typeOf ref = function
 | `Binop (op, _, _) -> (match op with `Add | `Sub | `Mul | `Mod | `Div -> `Int | _ -> `Bool)
 | x -> ref x
 
-(*
-self x >>= (fun x -> t#unop expr op x)
-
-  method unop e op ((x, t) as z) = 
-  match op with 
-  | `Neg -> Common.int ts (reloc e (`Unop (`Neg, z))) t `Int
-  | `Not -> Common.bool ts (reloc e (`Unop (`Not, z))) t `Bool
-*)
-class ['expr, 'ts,'r] typecheck = object
-  inherit ['expr, 'ts, ('r, Ostap.Msg.t) Checked.t, 'ts, ('r, Ostap.Msg.t) Checked.t] @expr
-  method c_Const inh s c = 
+class ['expr, 'ts, 'r] typecheck = object
+  inherit ['expr, 'ts, ('r, Ostap.Msg.t) Checked.t, 
+                  'ts, ('r, Ostap.Msg.t) Checked.t] @expr
+  constraint 'r = ('f expr * [> `Int | `Bool] as 'f)
+  method c_Const inh aug c = 
     let reloc x y = reloc (safeLocate x) y in
     match c with
-    | `Literal _ -> !! (reloc (s.GT.x) (`Const c), `Int)
-    | `True | `False -> !! (reloc (s.GT.x) (`Const c), `Bool)
-  method c_Unop inh s op x = 
+    | `Literal _ -> !! (reloc aug.GT.x (`Const c), `Int)
+    | `True | `False -> !! (reloc aug.GT.x (`Const c), `Bool)
+  method c_Unop inh aug op x = 
     let reloc x y = reloc (safeLocate x) y in
     (x.GT.fx inh) -?->> (fun ((a,t) as z) ->
-      match op with 
-      | `Neg -> Common.int inh (reloc s.GT.x (`Unop (`Neg, z))) t `Int
-      | `Not -> Common.bool inh (reloc s.GT.x (`Unop (`Not, z))) t `Bool)
-  method c_Binop inh s op a b = invalid_arg""
-(*    let reloc x y = reloc (safeLocate x) y in
-    tuple (a.GT.fx inh, b.GT.fx inh) -?->> (fun (x, y) ->	
+      match op with (*(reloc aug.GT.x (`Unop (`Neg, z))) -> 'expr - результат*)
+      | `Neg -> Common.int inh (reloc aug.GT.x (`Unop (`Neg, z))) t `Int
+      | `Not -> Common.bool inh (reloc aug.GT.x (`Unop (`Not, z))) t `Bool)
+  method c_Binop inh aug op a b = 
+    let reloc x y = reloc (safeLocate x) y in
+    tuple (a.GT.fx inh, b.GT.fx inh) -?->> (fun (x, y) -> 
       let t', ensureType =
       match op with          
       | `And | `Or -> `Bool, fun ( l, t) -> Common.bool inh l t `Bool  
       | `Eq  | `Ne  | `Le  | `Lt  | `Ge  | `Gt -> `Bool, fun (l, t) -> Common.int inh l t `Int
       | _ -> `Int, fun (l, t) -> Common.int inh l t `Int
     in
-      tuple (ensureType x, ensureType y) -?-> (fun _ -> reloc s.GT.x (`Binop (op, x, y)), t'))*)
+      tuple (ensureType x, ensureType y) -?-> (fun _ -> reloc aug.GT.x (`Binop (op, x, y)), t'))
 end
 
-let typecheck ts ext (expr) = 
+
+let typecheck ts ext (expr: [>('a) expr]) =
   let reloc x y = reloc (safeLocate x) y in
   cmap (object
           method unop e op ((x, t) as z) = 

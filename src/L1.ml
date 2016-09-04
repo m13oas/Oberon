@@ -28,6 +28,7 @@ module Parse =
     ostap (reference: loc[ostap(name:ident {`Ident name})]) 
     ostap (      
       expression: !(SimpleExpression.parse)[reference];
+
       declarations[typ]: c:!(ConstDecl.parse)[expression]? 
                          t:!(TypeDecl.parse)[typ]?
                          v:!(VarDecl.parse)[typ]? {
@@ -53,24 +54,24 @@ module Print =
       inherit ['ref]  print_ref
     end
 
-    let expression, declarations, statement, program =
+    let reference, expression, declarations, statement, program =
       let reference r = GT.transform(l1_ref) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new print_ref) () r in
       let rec expr e = GT.transform(l1_expr) (GT.lift expr) (GT.lift (fun s -> Ostap.Pretty.string s, 0)) (new l1_print SimpleExpression.ob_ps) () e in
       let expr x = fst (expr x) in
-      let reference x = fst (reference x) in
+      let referenc x = fst (reference x) in
       let decl expr typ (c, t, v) = 
         vert ((ConstDecl.print expr c) @ (TypeDecl.print typ t) @ (VarDecl.print typ v)) 
       in  
       let rec stmt s = 
         GT.transform(SimpleStatement.stmt) 
             (GT.lift stmt) 
-            (GT.lift reference)
+            (GT.lift referenc)
             (GT.lift expr)
             (new SimpleStatement.print SimpleStatement.ob_ps)
             ()
             s
       in
-      expr, decl, stmt, (fun m -> Module.print (decl expr PrimitiveType.print) stmt m)
+      referenc, expr, decl, stmt, (fun m -> Module.print (decl expr PrimitiveType.print) stmt m)
   end
 
 (* --------------------------------------- Name resolver ---------------------------- *)
@@ -78,33 +79,58 @@ open Checked
 
 module Resolve =
   struct
-    class ['ref, 'env, 'r2, 'r] resolve_const_ref = object
-      inherit ['ref, 'env, 'ref, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
-      constraint 'r = [> ('ref * 'r2) l1_ref]
-      method c_Ident inh a x = 
-	let reloc = reloc (locate a.GT.x) in
-        inh#lookupConst x.GT.x -?-> 
-	  (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))
+
+  let rec safeLocate e =
+  try ulocate e with Not_found ->
+    (match e with
+     | `Binop (_, x, y) ->
+        let l, r = safeLocate x, safeLocate y in
+        Ostap.Msg.Locator.makeInterval l r
+     | _ -> Ostap.Msg.Locator.No
+    )
+
+  class ['expr, 'env, 'rexpr, 'r] resolve = object
+  inherit ['expr, 'env, 'rexpr, 'env, 'r] @SimpleExpression.expr
+  constraint 'r = ([> `Const of SimpleExpression.const | `Ident of 'e * 'c ] as 'd, Ostap.Msg.t) Checked.t
+  method c_Const inh aug   x      =  (*В комментариях верный вызов (через aug), но он возвращает не то что нужно*)
+    !! (Common.reloc (safeLocate (*aug.GT.x*)(`Const x) ) (`Const x))
+  method c_Unop  inh aug op x   = invalid_arg""
+    (*let generate op x = `Unop op x in
+    x.GT.fx inh -?->>
+    (fun a -> !! (Common.reloc (safeLocate (*aug.GT.x*)(`Unop op x) ) (generate op a) ))*)
+  method c_Binop inh aug op x y = invalid_arg""
+    (*let generate op x y = `Binop (op, x, y) in
+    tuple (x.GT.fx inh, y.GT.fx inh) -?->>
+    (fun (a, b) -> !! (Common.reloc (safeLocate (aug.GT.x) ) (generate op a b) ))*)
+end
+      (*lookUp - преобразователь для ref, возвращает ('rref, Ostap.Msg.t) Checked.t*)
+      (*но сама функция возвращает ([> `Ident of 'd * 'rref ], Ostap.Msg.t) Checked.t
+    где 'd - результат extactInternal*)
+    class ['ref, 'env, 'rref, 'r] resolve_ref = object
+      inherit ['ref, 'env, 'rref, 'env, 'r] @l1_ref
+      constraint 'rref = ((([> `Const of
+                                  [> `Const of SimpleExpression.const | `Ident of 'e * 'c ] as 'd ]
+                             as 'c), Ostap.Msg.t) Checked.t)
+      constraint 'r = ('d, Ostap.Msg.t) Checked.t
+      method c_Ident inh aug x = 
+      let reloc = reloc (locate aug.GT.x) in
+      (*преобразуем ref так как описано в GT.transform*)
+        aug.GT.t#ref inh x.GT.x -?-> 
+        (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))
     end
-      
-    class ['ref, 'env, 'r2, 'r] resolve_ref = object
-      inherit ['ref, 'env, ('r2, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
-      constraint 'r = [> ('ref * 'r2) l1_ref]
-      method c_Ident inh a x = 
-	let reloc = reloc (locate (a.GT.x)) in
-(*        inh#lookupVar*) x.GT.fx inh -?-> 
-	  (function `Const x -> reloc x | x -> reloc (`Ident (inh#extractInternal x, x)))
+        
+    class ['expr, 'ref, 'env, 'rexpr, 'rref, 'r] l1_resolve = object
+      inherit ['expr, 'env, 'rexpr, 
+               'ref,  'env, 'rref,
+	                    'env, 'r] @l1_expr
+      inherit ['ref, 'env, 'rref, 'r] resolve_ref
+      inherit ['expr, 'env, 'rexpr, 'r] resolve
+      constraint 'rref = ((([> `Const of
+                                  [> `Const of SimpleExpression.const | `Ident of 'e * 'c ] as 'd ]
+                             as 'c), Ostap.Msg.t) Checked.t)
+      constraint 'r = ([> `Const of SimpleExpression.const | `Ident of 'e * 'c ] as 'd, Ostap.Msg.t) Checked.t
     end
-(*        
-    class ['expr, 'ref, 'env, 'rexpr, 'rref, 'r] l1_resolve_conexpr_old = object
-      inherit ['expr, 'env, ('rexpr, Ostap.Msg.t) Checked.t, 
-	       'ref, 'env, 'ref, 
-	             'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
-      inherit ['ref, 'env, 'rref, 'r] resolve_const_ref
-      inherit ['expr, 'env, 'rexpr] SimpleExpression.resolve
-      constraint 'r = [> ('rexpr, ('ref * 'rref)) l1_expr]
-    end
-      *)
+
     class ['a] env =
       object(self)
         val idents = Namespace.make "identifier"
@@ -146,22 +172,29 @@ module Resolve =
       | `Ident name as ref -> 
         let reloc = reloc (locate ref) in
         lookup env name -?-> 
-        (function `Const x -> reloc x | x -> reloc (`Ident (env#extractInternal x, x)))
+        (function `Const (x: [> `Const of SimpleExpression.const]) -> reloc x 
+          | (x: [> `Const of
+                                  [> `Ident of 'e * 'c ] as 'd ]) 
+            -> reloc (`Ident (env#extractInternal x, x)))
       | x -> fail "not a reference" [||] x
 	
     let destination env = function
-      | `Ident name as ref -> 
+      | `Ident name as ref ->
 	  GT.transform(l1_ref) (fun env expr -> env#lookupVar expr) (new resolve_ref) env ref
       | x -> noext x
 
-    let constantExpr env (expr: ('a, 'b)l1_expr) = 
-(*      let rec res env (expr) =
-	GT.transform(l1_expr) 
-	  (res)
-	  (fun a b -> b )	  
-	  (new l1_resolve_conexpr_old) env expr in
-      res env expr*)
-      SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr -?->> 
+    let constantExpr env (expr: ('a, 'b) l1_expr) =	
+      let rec res env (expr) =
+        GT.transform(l1_expr) 
+        (fun env expr -> res env expr) (*преобразование еxpr*)
+        (fun env expr -> env#lookupConst expr )	(*преобразование ref*)  
+        (new l1_resolve) (*класс трансформер*)
+        env (*inh атрибут*)
+        expr (*что преобразовываем*)
+        in
+        res env expr
+        (*SimpleExpression.resolve (reference (fun env -> env#lookupConst) env) expr*)
+-?->> 
       (fun expr ->  
         try !! (reloc (locate expr) (*(let rec eval inh expr = 
 					GT.transform(l1_expr) 
@@ -177,14 +210,19 @@ module Resolve =
            ]
       )
   
-    let expression env expr = SimpleExpression.resolve (reference lookup env) expr
-(*      let rec res env expr =
-	GT.transform(l1_expr) (res)
-	  (fun a b -> b
-	  )
-	  (new l1_resolve_conexpr_old) env expr in
-      res env expr*)
-
+    let expression env expr = 
+SimpleExpression.resolve (reference lookup env) expr
+(*      let rec res_expr env expr = 
+	GT.transform(SimpleExpression.expr) 
+	  (res_expr)
+	  (new SimpleExpression.resolve) env expr in
+      let rec res env expr =
+	GT.transform(l1_expr) 
+	  (res)
+	  (fun env expr -> env#lookup expr)
+	  (new l1_resolve) env expr in
+      res env expr
+*)
     let declarations typ env (c, t, v) =
       let mc, c = 
         resolveDecls 
@@ -240,43 +278,81 @@ module Typecheck =
     | (`Ident (_, (`Const _ as v))) -> SimpleExpression.typeOf typeOfConst v 
     | _ -> invalid_arg ""
 
-    class ['ref, 'env, 'r] tch_ref = object
+    let rec safeLocate e =
+  try ulocate e with Not_found ->
+    (match e with
+     | `Binop (_, x, y) ->
+        let l, r = safeLocate x, safeLocate y in
+        Ostap.Msg.Locator.makeInterval l r
+     | _ -> Ostap.Msg.Locator.No
+    )
+
+    class ['expr, 'ts, 'r] typecheck = object
+  inherit ['expr, 'ts, ('r, Ostap.Msg.t) Checked.t, 
+                  'ts, ('r, Ostap.Msg.t) Checked.t] @SimpleExpression.expr
+  constraint 'r = (('f, 'l) l1_expr * 'a)
+  method c_Const inh aug c = invalid_arg""
+(*    let reloc x y = reloc (safeLocate x) y in
+    match c with
+    | `Literal _ -> !! (reloc aug.GT.x (`Const c), `Int)
+    | `True | `False -> !! (reloc aug.GT.x (`Const c), `Bool)*)
+  method c_Unop inh aug op x = invalid_arg""
+(*)    let reloc x y = reloc (safeLocate x) y in
+    (x.GT.fx inh) -?->> (fun ((a,t) as z) ->
+      match op with (*(reloc aug.GT.x (`Unop (`Neg, z))) -> 'expr - результат*)
+      | `Neg -> Common.int inh (reloc aug.GT.x (`Unop (`Neg, z))) t `Int
+      | `Not -> Common.bool inh (reloc aug.GT.x (`Unop (`Not, z))) t `Bool)*)
+  method c_Binop inh aug op a b = invalid_arg""
+(*)    let reloc x y = reloc (safeLocate x) y in
+    tuple (a.GT.fx inh, b.GT.fx inh) -?->> (fun (x, y) -> 
+      let t', ensureType =
+      match op with          
+      | `And | `Or -> `Bool, fun ( l, t) -> Common.bool inh l t `Bool  
+      | `Eq  | `Ne  | `Le  | `Lt  | `Ge  | `Gt -> `Bool, fun (l, t) -> Common.int inh l t `Int
+      | _ -> `Int, fun (l, t) -> Common.int inh l t `Int
+    in
+      tuple (ensureType x, ensureType y) -?-> (fun _ -> reloc aug.GT.x (`Binop (op, x, y)), t'))*)
+end
+
+
+    class ['ref, 'env, 'r] typecheck_ref = object
       inherit ['ref, 'env, ('r, Ostap.Msg.t) Checked.t, 'env, ('r, Ostap.Msg.t) Checked.t] @l1_ref
-      method c_Ident inh a ref = invalid_arg""
-(*	match a.GT.x with
-	| `Ident (_, `Const _) as x -> !! (x, typeOfConst x)
-	| `Ident (_, `Var (_, t)) as x -> !! (x, t)
-	| x -> invalid_arg""*)
+      constraint 'r = (('f, 'l) l1_expr * 'a)
+      method c_Ident inh a ref = 
+	      match a.GT.x with
+        | `Ident (_, `Const _) as x -> !! (x, typeOfConst x)
+        | `Ident (_, `Var (_, t)) as x -> !! (x, t)
     end
-(*      
-    class['expr, 'ref, 'env, 'b] l1_typecheck = object
-      inherit['res, 'env, ('expr, 'ref) l1_expr * 'b] tch_ref
-      inherit['expr, 'env, 'expr * 'b] SimpleExpression.typecheck
-      inherit['expr, 'env, ('expr * 'b, Ostap.Msg.t) Checked.t, 
-	      'ref, 'env, (('expr, 'ref) l1_expr * 'b, Ostap.Msg.t) Checked.t, 
-	      'env, (('expr, 'ref) l1_expr * 'b, Ostap.Msg.t) Checked.t] @l1_expr
+
+    class['expr, 'ref, 'env, 'r] l1_typecheck = object
+      inherit['ref, 'env, 'r] typecheck_ref
+      inherit['expr, 'env, 'r] typecheck
+      inherit['expr, 'env, ('r, Ostap.Msg.t) Checked.t, 
+              'ref, 'env, ('r, Ostap.Msg.t) Checked.t, 
+                    'env, ('r, Ostap.Msg.t) Checked.t] @l1_expr
+      constraint 'r = (('f, 'l) l1_expr * 'a)
     end
-*)      
+
     let ref ext = function
        | `Ident (_, `Const _) as x -> !! (x, typeOfConst x)
 
     let reference ext = function
-    | `Ident (_, `Const _) as x -> !! (x, typeOfConst x)
+    | `Ident (_, `Const _) as x-> !! (x, typeOfConst x)
     | `Ident (_, `Var (_, t)) as x -> !! (x, t)
     | x -> invalid_arg""
 
     let declarations ts (c, t, v) =
       let mc, c = 
-        resolveDecls (fun x -> 
-(*	let rec tch env expr =
+        resolveDecls (fun x ->
+	(*let rec tch env expr =
 	    GT.transform(l1_expr) 
-	      (tch) 
-	      (fun a b -> b)			 
+	      (tch)			 
+        (tch)
 	      (new l1_typecheck) 
 	      ts 
-	      x in
+	      expr in
 	tch ts (snd x)*)
-	    SimpleExpression.typecheck ts reference ((snd x))
+	    SimpleExpression.typecheck ts reference (snd x) 
 	  -?-> return x) c(*какой-то лист*)
       in
       mc -?-> return (c, t, v)
@@ -312,7 +388,7 @@ let toplevel generate (parse, print, resolve, typecheck) source =
     method print     () = force parsed   -?-> (fun t -> Ostap.Pretty.toString (print t))
     method resolve   () = force resolved -?-> return ()
     method typecheck () = force checked  -?-> (fun x -> return ())
-(*    method generate  () = force resolved -?-> generate
+ (*  method generate  () = force resolved -?-> generate
 *)
   end
 
